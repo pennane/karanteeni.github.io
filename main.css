@@ -2,6 +2,10 @@
 .tekstinocolor {
   display: none !important;
 }
+a {
+text-decoration: none;
+	color: dodgerblue;
+}
 body {
   overflow-y:scroll;
   margin:0;
