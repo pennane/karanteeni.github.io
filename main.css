@@ -96,6 +96,7 @@ h1 {
 }
 .kara_taulukko {
   border-collapse: collapse;
+	table-layout:fixed;
 }
 .kara_taulukko tr  {
  	background-color: #777777;
