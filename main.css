@@ -9,13 +9,18 @@ body {
   text-align: left;
   background-color: #555555 !important; 
 }
-
 .kara_center {
  width: 60%;
   margin-left: auto;
   margin-right: auto;
   
 }
+@media only screen and (max-width: 768px) {
+.kara_center {
+ width: 95%;
+	}
+}
+
 .kara_header {
  width: 100%;
 }
