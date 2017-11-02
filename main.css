@@ -12,6 +12,8 @@ body {
   padding-top: 40px;
   text-align: left;
   background-color: #555555 !important; 
+    background-image: url('images/real_cf.png');
+    background-repeat: repeat;
 }
 .kara_center {
  width: 60%;
@@ -64,9 +66,10 @@ border-top-right-radius: 5px;
   width: 100%;
   padding-top: 15px;
   padding-bottom: 15px;
-  background-color: #555555;
+  background-color: #C72B26;/*#555555;*/
   color: #eee;
   font-size: 22px;
+    box-shadow: inset 0px 0px 101px 0px rgba(0,0,0,0.27);
 }
 .kara_ipname {
   color: gold;
@@ -76,7 +79,7 @@ border-top-right-radius: 5px;
   padding: 10px;
   color: white;
   background-color: #444444;
-  font-family: 'Roboto', 'Trebuchet MS';
+  font-family: 'Roboto', 'Trebuchet MS', sans-serif;
   border-radius: 3px;
   margin-bottom: 4px;
   transition: background-color, 0.3s;
@@ -96,7 +99,7 @@ h1 {
   display: block;
   margin-bottom: 15px;
   padding-bottom: 5px;
-  color: #999999;
+  color: #A96262;
 }
 .kara_taulukko {
   border-collapse: collapse;
@@ -135,4 +138,10 @@ body::-webkit-scrollbar-thumb
 }
 .kara_tasot_a {
   background-color: #999999;
+}
+
+.kara_kylasivut {
+    margin-top: 25px;
+    padding: 5px;
+    font-family: 'Roboto', 'Trebuchet MS', sans-serif;
 }
