@@ -51,7 +51,9 @@
 	
 	Karanteeni on suomalainen Minecraft- palvelin, jossa pelataan Survival ja Creative pelimuotoja.<br />
 &nbsp;
-<div class="kara_ipbox"><span class="kara_ipname">IP</span><br>karanteeni.tk<br><span style="font-size: 15px;color:rgba(255,255,255,0.3);">tai 151.80.78.212:28373</span></div>
+<div class="kara_ipbox"><div class="ribbon" alt="Paikalla" style="
+    zoom: 1.3;
+"><span id="k_online">...</span></div><span class="kara_ipname">IP</span><br>karanteeni.tk<br><span style="font-size: 15px;color:rgba(255,255,255,0.3);">tai 151.80.78.212:28373</span></div>
 <br />
 <br />
 Karanteeni on perustettu 10.6.2016 ja sen omistaa Emmazki, Jomeee ja Nuubles.<br />
@@ -943,4 +945,17 @@ break;
   gtag('js', new Date());
 
   gtag('config', 'UA-109280624-1');
+</script>
+	<script src="https://mcapi.us/scripts/minecraft.js"></script>
+<script>
+  MinecraftAPI.getServerStatus('151.80.78.212', {
+    port: 28373 // optional, only if you need a custom port
+  }, function (err, status) {
+    if (err) {
+      return document.querySelector('.server-status').innerHTML = '?';
+    }
+
+    // you can change these to your own message!
+    document.getElementByID('#k_online').innerHTML = status.players.now.toString() + "/" + status.players.max.toString();
+  });
 </script>
