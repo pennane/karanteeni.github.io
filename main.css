@@ -46,7 +46,7 @@ border-top-right-radius: 5px;
 }
 .kara_content {
  	width: 100%; 
-  background-color: #777777;
+  background-color: #cccc00;
 
 }
 .kara_nav {
@@ -83,7 +83,7 @@ border-top-right-radius: 5px;
   width: calc(100% - 20px);
   padding: 10px;
   color: white;
-  background-color: #444444;
+  background-color: #7f7f00;
   font-family: 'Roboto', 'Trebuchet MS', sans-serif;
   border-radius: 3px;
   margin-bottom: 4px;
@@ -91,7 +91,7 @@ border-top-right-radius: 5px;
   cursor: pointer;
 }
 .kara_nav_item:hover {
-  background-color: #555555;
+  background-color: #666600;
 }
 .kara_nav_sel {
   background-color: #777777;
