@@ -3885,7 +3885,7 @@ input[type="button"].btn-block {
 .nav-link {
   display: block;
   padding: 0.5rem 1rem;
-  color: white; !important;
+  color: white !important;
 }
 
 .nav-link:hover, .nav-link:focus {
@@ -9036,6 +9036,8 @@ a.text-dark:hover, a.text-dark:focus {
     position: absolute;
     line-height: 60px;
     height: 60px;
+    width: 100%;
+    background-color: rgb(52,58,64);
 }
 
 /*----------------------- Preloader -----------------------*/
