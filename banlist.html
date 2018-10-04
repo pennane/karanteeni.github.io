@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <!-- Metatagit -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Karanteeni v2</title>
+
+    <!-- Bootstrap Js -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="vendor/js/tooltip.js"></script>
+
+    <!-- Custom Js / APIs -->
+    <script src="vendor/js/include.js"></script>
+
+    <!-- Bootstrap CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom -->
+    <style>
+      body {
+        padding-top: 54px;
+      }
+      @media (min-width: 992px) {
+        body {
+          padding-top: 56px;
+        }
+      }
+
+    </style>
+
+  </head>
+
+  <body data-spy="scroll" data-target="#banlist" background="assets/images/9.png">
+
+    <!-- Navbar -->
+    <nav karainclude-html="assets/includes/navbar.html" class="navbar navbar-expand-lg navbar-dark karanav fixed-top"></nav><br><br>
+
+    <!-- Sisältö -->
+    <div class="container text-white">
+      <div class="alert alert-danger">
+        Varoitus! Tämä sivu on erittäin epätoimiva ja vaarallinen.
+      </div>
+        <div class="col-lg-12 text-center">
+          <div class="card card-body bg-dark-transparent">
+              <h1 class="mt-5">Rangaistukset</h1>
+              <p class="lead">Tämä sivu on erittäin kesken. :)</p>
+                <table id="banlist" class="table">
+                  <thead>
+                      <tr>
+                          <th scope="col">Pelaaja</th>
+                          <th scope="col">Syy</th>
+                          <th scope="col">Annettu</th>
+                          <th scope="col">Päättyy</th>
+                          <th scope="col">Ylläpitäjä</th>
+                      </tr>
+                  </thead>
+                  <tbody>
+
+                  </tbody>
+                  </table><br><br>
+          </div>
+        </div>
+    <script>includeHTML();</script>
+    <script>
+    var tbody = document.querySelector('tbody');
+
+    var finalArray;
+
+    var request = new XMLHttpRequest();
+    request.open("GET", "https://raw.githubusercontent.com/Karanteeni/karanteeni.github.io/master/banned-players.json", true);
+    request.send();
+
+    request.onload = function() {
+    	var banlist = request.response;
+    	//Muunnetaan 1D arrayksi
+    	var bans = JSON.parse(banlist);
+    	//Muunnetaan 2D arrayksi
+    	var convertedArray = convertArray(bans);
+    	//Asetetaan julkinen muuttuja
+    	finalArray = convertedArray;
+
+    	//Järjestä array
+    	finalArray = customOrder(finalArray, 0, true);
+
+    	//Asetetaan näkyviin
+    	showBans(finalArray);
+    }
+
+    /**
+    * Aseta bannit näkyviin listalle
+    * HUOM! LISÄÄ LISTAN TYHJENNYS TÄHÄN JOS HALUTAAN UUDELLEENJÄRJESTÄÄ TAI ERI LISTATYYPPI!
+    */
+    function showBans(banlist) {
+    	for (var i = 0; i < banlist.length; i++) {
+    		var trow = document.createElement('tr');
+    		var tdname = document.createElement('td');
+    		var tdreason = document.createElement('td');
+    		var tdcreated = document.createElement('td');
+    		var tdexpires = document.createElement('td');
+    		var tdsource = document.createElement('td');
+
+    		tdname.textContent = banlist[i][0];
+    		tdreason.textContent = banlist[i][1];
+    		tdcreated.textContent = banlist[i][2];
+    		tdexpires.textContent = banlist[i][3];
+    		tdsource.textContent = banlist[i][4];
+
+    		trow.appendChild(tdname);
+    		trow.appendChild(tdreason);
+    		trow.appendChild(tdcreated);
+    		trow.appendChild(tdexpires);
+    		trow.appendChild(tdsource);
+
+    		tbody.appendChild(trow);
+    	}
+    }
+
+    /**
+    * Muunna 2D arrayksi
+    */
+    function convertArray(list)
+    {
+    	var array = [];
+
+    	for(var i = 0; i < list.length; i++)
+    	{
+    		array.push([list[i].name, list[i].reason, list[i].created, list[i].expires, list[i].source]);
+    	}
+
+    	return array;
+    }
+
+    /**
+    * Järkkää array oikeaan järkkään columnin perusteella
+    */
+    function customOrder(ar, column, direction)
+    {
+    	for(var i = 0; i < ar.length; i++)
+    	{
+    		for(var j = 0; j < ar.length; j++)
+    		{
+    			if(direction)
+    			{
+    				if(ar[i][column] > ar[j][column])
+    				{
+    					var tmp = ar[i];
+    					ar[i] = ar[j];
+    					ar[j] = tmp;
+    				}
+    			}
+    			else
+    			{
+    				if(ar[i][column] < ar[j][column])
+    				{
+    					var tmp = ar[i];
+    					ar[i] = ar[j];
+    					ar[j] = tmp;
+    				}
+    			}
+    		}
+    	}
+
+    	return ar;
+    }
+    </script>
+
+  </body>
+
+</html>

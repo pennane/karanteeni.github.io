@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="shortcut icon" type="image/png" href="favicon.ico"/>
+
+    <title>Karanteeni v2</title>
+
+    <!-- Bootstrap Js -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="vendor/js/tooltip.js"></script>
+    <script src="vendor/js/preloader.js"></script>
+
+    <!-- Custom Js / APIs -->
+    <script src="vendor/js/include.js"></script>
+    <script src="https://use.gameapis.net/mc/query/players/151.80.78.212:28373"></script>
+    <script>
+            var xmlhttp = new XMLHttpRequest();
+            xmlhttp.onreadystatechange = function() {
+                if (this.readyState == 4 && this.status == 200) {
+                    var kara = JSON.parse(this.responseText);
+                    document.getElementById("status").innerHTML = kara.status ? '<span class="text-success">Päällä</span>' : '';
+                    document.getElementById("online").innerHTML = kara.players.online;
+                    document.getElementById("ip").innerHTML = kara.hostname + ":" + kara.port + " / karanteeni.tk";
+                    } else {
+                        document.getElementById("status").innerHTML = '<p class="text-danger">Pois päältä</p>';
+                        document.getElementById("online").innerHTML = "0";
+                        document.getElementById("ip").innerHTML = "Osoitteen kysely epäonnistui. Palvelin on pois päältä."
+                    }
+                };
+            xmlhttp.open("GET", "https://use.gameapis.net/mc/query/players/151.80.78.212:28373", true);
+            xmlhttp.send();
+    </script>
+
+    <!-- Bootstrap CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom -->
+    <style>
+      body {
+        padding-top: 54px;
+      }
+      @media (min-width: 992px) {
+        body {
+          padding-top: 56px;
+        }
+      }
+
+    </style>
+
+  </head>
+  <!--  onload="preLoader()" -->
+  <body background="assets/images/9.png">
+    <!-- <div id="loader" karainclude-html="assets/includes/preloader.html"></div> -->
+<!-- <div id="wrapper" style="opacity: 0;"> -->
+
+    <!-- Navbar -->
+    <nav karainclude-html="assets/includes/navbar.html" class="navbar navbar-expand-lg navbar-dark karanav fixed-top"></nav><br><br>
+
+    <!-- Sisältö -->
+    <div class="container text-white">
+        <div class="col-lg-12 text-center">
+          <div class="card card-body bg-dark-transparent">
+              <h1 class="mt-5">Karanteeni</h1>
+              <p class="lead">Serveri, joka vangitsee sinut!</p>
+              <p class="mb-0">IP: <span id="ip"></span><br>
+              Pelaajia paikalla: <span id="online"></span><br>
+              Palvelimen status: <span id="status"></span></p><br><br>
+              <blockquote title="#vainylläpitojutut" class="blockquote text-dark border border-danger">
+              <p id="lainaus"></p>
+              <footer class="blockquote-footer"><cite id="by"></cite></footer>
+              </blockquote><br><br>
+
+              <!-- Ilmoitukset
+              <div class="card">
+                  <div class="card-header" style="background-color: #711d22;">
+                      <button class="btn btn-link" style="color: white; text-decoration: none;" type="button" data-toggle="collapse" data-target="#collapse1" aria-expanded="true" aria-controls="collapse1">
+                          Ilmoituksen otsikko
+                      </button>
+                  </div>
+                  <div id="collapse1" class="collapse show">
+                      <div class="card-body" style="background-color: #ff0; color: #000;">
+                          Tämä on testi-ilmoitus. En tiedä näyttääkö se hyvältä tietokoneella tai mobiililaitteella, mutta se ei minua kiinnosta. Haluan nähdä miltä se näyttää.
+                      </div>
+                  </div>
+              </div><br><br>
+              <div class="card">
+                  <div class="card-header" style="background-color: #711d22;">
+                      <button class="btn btn-link" style="color: white; text-decoration: none;" type="button" data-toggle="collapse" data-target="#collapse2" aria-expanded="true" aria-controls="collapse2">
+                          Ilmoitusnumero kaksi
+                      </button>
+                  </div>
+                  <div id="collapse2" class="collapse">
+                      <div class="card-body" style="background-color: #ff0; color: #000;">
+                          Toinen ilmoitus, jonka tosin saa auki klikkaamalla.
+                      </div>
+                  </div>
+              </div> -->
+          </div>
+    </div>
+    <script src="vendor/js/jutut.js"></script>
+    <script>includeHTML();</script>
+    </div>
+  </body>
+
+</html>
