@@ -33,10 +33,6 @@ Paketissa tulee mukana kaksi ylläpitosivua, joista voi valita mieleisensä muok
 
 `index.html` sisältää preloaderin, jota voi käyttää tarvittaessa. Sivusto ei kuitenkaan ole ladattaessa raskas, joten en ajatellut, että se olisi tarpeellista laittaa, joten jätin koodin elämään vain kommenttina. Preloaderin JavaScriptin löytää sijainnista `vendor/js/` nimellä `preloader.js`.
 
-### Banlist
-
-Banlist on hieman vaiheessa, en rehellisesti sanottuna jaksanut keskittyä sen tekemiseen täysillä jäätyäni siihen jumiin. Vaikka idea olikin oma eikä suoraan toivottu ominaisuus, harmittaa, että se jäi kesken. Mikäli sille tulee käyttöä, sen arrayn voi järjestää uudelleen mieluusti päivämäärän mukaan, parsee se niin, että päivämäärässä näkyy vain kuukaudet, päivät ja vuosi, sekä kellonaika 24 tunnin kellolla. Lisäksi sen oli tarkoitus näyttää vain viimeisimmät 10-50 bannia servulla, alustavasti ei siis olisi ollut mahdollista kaivaa vuosien takaa vanhoja banneja, vaikka sen olisin lisännyt myöhemmin. Tämä ei kuitenkaan tarkoita sitä, ettenkö sitä voisi jatkaa, mutta todennäköisesti itse saatan hylätä sen kokonaan.
-
 ### #vainylläpitojutut
 
 "Vain ylläpitojutut" ovat koottu etusivulle JavaScriptin avulla. Kyseisiä juttuja voi lisätä sijainnissa `vendor/js/` nimellä `jutut.js`. Skriptin sisällytys löytyy riviltä 107 tiedostosta `index.html`. Alla on vielä esimerkkimalli ``jutut.js` sisällöstä.
@@ -48,17 +44,8 @@ Banlist on hieman vaiheessa, en rehellisesti sanottuna jaksanut keskittyä sen t
        }
 ```
 
-### Pelaaja-arvot
-
-Pelaaja-arvot ovat muokattavissa samalla tavalla kuin navigaatiopalkkikin. Pelaaja-arvojen taulukko löytyy sijainnista `assets/includes` nimellä `taulukko.html`. Tiedosto on helppo ymmärtää itsessään. Alla on vielä esimerkki riviltä 56 tiedostossa `yleistietoa.html`. 
-
-```html
-<div karainclude-html="assets/includes/taulukko.html"></div><br>
-```
-
 ## Tiedettyjä "ongelmia"
 
-* Tooltipit eivät saa Bootstrap luokkaa pelaaja-arvotaulukossa (syynä todennäköisesti se, että taulukko kutsutaan ulkopuolelta samalla tavalla kuin navbar ja tooltip vaatii JavaScriptin)
 * Lahjoitussivu ei mobiilissa ole ihan niin täydellinen kuin se voisi olla
 
 ## Teemat
