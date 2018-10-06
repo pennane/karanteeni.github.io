@@ -1,126 +1,152 @@
-            <script src="vendor/js/tooltip.js"></script>
-             <center><p>
-              <button class="btn btn-eloton" type="button" data-toggle="collapse" data-target="#reloton" aria-expanded="false" aria-controls="reloton">
-                Eloton
-              </button>
-              <button class="btn btn-raihnas" type="button" data-toggle="collapse" data-target="#rraihnas" aria-expanded="false" aria-controls="rraihnas">
-                Raihnas
-              </button>
-              <button class="btn btn-sisukas" type="button" data-toggle="collapse" data-target="#rsisukas" aria-expanded="false" aria-controls="rsisukas">
-                Sisukas
-              </button>
-              <button class="btn btn-parantuva" type="button" data-toggle="collapse" data-target="#rparantuva" aria-expanded="false" aria-controls="rparantuva">
-                Parantuva
-              </button>
-              <button class="btn btn-immuuni" type="button" data-toggle="collapse" data-target="#rimmuuni" aria-expanded="false" aria-controls="rimmuuni">
-                Immuuni
-              </button>
-              <button class="btn btn-parantaja" type="button" data-toggle="collapse" data-target="#rparantaja" aria-expanded="false" aria-controls="rparantaja">
-                Parantaja
-              </button>
-            </p></center>
-            <div class="collapse text-left" id="reloton">
-              <div class="card card-body">
-                Eloton on aloitusrankki, jonka saat heti palvelimelle liittyessäsi. Elottomalla on seuraavat oikeudet: <br><br>
-                <ul>
-                    <li>/avaa</li>
-                    <li>/avaakaikille</li>
-                    <li>/back</li>
-                    <li>/checkban</li>
-                    <li>/crea</li>
-                    <li>/kit Aloitus</li>
-                    <li>/sethome (1 kappale)</li>
-                    <li>/lay</li>
-                    <li>/list</li>
-                    <li>/lunastavote</li>
-                    <li>/msg</li>
-                    <li>/near</li>
-                    <li>/+oikeudet nimi (lisää oikeudet pelaajalle palikkaan, /-oikeudet taasen poistaa oikeudet)</li>
-                    <li>/peliaika (/pa, /ar)</li>
-                    <li>/pennipeli (myös /lotto)</li>
-                    <li>/recipe</li>
-                    <li>/reply</li>
-                    <li>/report</li>
-                    <li>/rtp</li>
-                    <li>/seen</li>
-                    <li>/sit</li>
-                    <li>/spawn</li>
-                    <li>/tpa</li>
-                    <li>/tpahere</li>
-                    <li>/tpignore</li>
-                    <li>/valikko</li>
-                    <li>/vote</li>
-                    <li>/warp(s)</li>
-                    <li>/whois</li>
-                </ul>
-              </div>
-            </div><br>
-            <div class="collapse text-left" id="rraihnas">
-              <div class="card card-body">
-                Raihnas on toinen rankki, jonka saat pelattuasi palvelimella yhteensä viisi tuntia (5h). Raihnaalla, tietystikin on Elottoman oikeudet, sekä seuraavat oikeudet: <br><br>
-                <ul>
-                    <li>/kit Raihnas (korvaa /kit Aloitus)</li>
-                    <li>/hat</li>
-                    <li>/sethome (2 kappaletta)</li>
-                    <li>/compass</li>
-                    <li>/workbench</li>
-                </ul>
-              </div>
-            </div><br>
-            <div class="collapse text-left" id="rsisukas">
-              <div class="card card-body">
-                Sisukas on kolmas rankki, jonka saat pelattuasi palvelimella yhteensä yhden päivän (1d). Kuten aikaisemmin, Sisukkaalla on Raihnaan oikeudet, sekä seuraavat oikeudet: <br><br>
-                <ul>
-                    <li>/kit Sisukas (korvaa /kit Raihnas)</li>
-                    <li>/sethome (6 kappaletta)</li>
-                    <li>/enderchest</li>
-                    <li><b><span data-toggle="tooltip" data-placement="right" title="Taikamatto, 5x5 kokoinen lasimatto allasi, jolla voit leijua ilmassa, sekä lentää.">/mc*</span></b></li>
-                    <li>/mc light</li>
-                    <li>/near</li>
-                    <li><b><span data-toggle="tooltip" data-placement="right" title="Voit äänestää äänestyksissä puolesta ja vastaan.">/vk n / vk y*</span></b></li>
-                </ul>
-              </div>
-            </div><br>
-            <div class="collapse text-left" id="rparantuva">
-              <div class="card card-body">
-                Parantuva on neljäs rankki, jonka saat pelattuasi palvelimella yhteensä viisi päivää (5d). Parantuvalla on seuraavat lisäoikeudet: <br><br>
-                <ul>
-                    <li>/kit Parantuva (korvaa /kit Sisukas)</li>
-                    <li>/sethome (8 kappaletta)</li>
-                    <li>/jump</li>
-                    <li>/mc tools</li>
-                    <li><b><span data-toggle="tooltip" data-placement="right" title="Nimen täytyy olla samankaltainen Minecraft nimesi kanssa tunnistautumisen vuoksi.">/nick*</span></b></li>
-                    <li>/tppos</li>
-                    <li><b><span data-toggle="tooltip" data-placement="right" title="Voit aloittaa äänestyksen pelaajan hiljentämistä (20min) tai pelaajan potkimista varten.">/votemute /votekick*</span></b></li>
-                    <li>/weather</li>
-                    <li>Voit hakata Spawnereita ilman Silk Touch -hakkua, sekä kirjoittaa kyltteihin väreillä.</li>
-                </ul>
-              </div>
-            </div><br>
-            <div class="collapse text-left" id="rimmuuni">
-              <div class="card card-body">
-                Immuuni on viides rankki, jonka saat pelattuasi palvelimella yhteensä kymmenen päivää (10d). Immuunilla on seuraavat lisäoikeudet: <br><br>
-                <ul>
-                    <li>/kit Immuuni (korvaa /kit Parantuva)</li>
-                    <li>/sethome (12 kappaletta)</li>
-                    <li>/fly</li>
-                    <li><b><span data-toggle="tooltip" data-placement="right" title="Nimeää kädessäsi olevan tavaran. (Voi käyttää värejä)">/nimeä*</span></b></li>
-                    <li>/spawner</li>
-                    <li>/time set</li>
-                    <li>/tp</li>
-                    <li>/tptoggle</li>
-                </ul>
-              </div>
-            </div><br>
-            <div class="collapse text-left" id="rparantaja">
-              <div class="card card-body">
-                Parantaja on tällä hetkellä viimeinen rankki, jonka saat pelattuasi palvelimella yhteensä 30 päivää (30d). Parantajilla on seuraavat lisäoikeudet: <br><br>
-                <ul>
-                    <li>/kit Parantaja (korvaa /kit Immuuni)</li>
-                    <li>/sethome (16 kappaletta)</li>
-                    <li>/jail</li>
-                    <li>/kick</li>
-                    <li>/mute</li>
-                </ul>
-              </div>
-            </div><br>
+    <!-- Bootstrap Js -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="vendor/js/tooltip.js"></script>
+
+    <!-- Bootstrap CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+<center><p>
+ <button class="btn btn-eloton" type="button" data-toggle="collapse" data-target="#reloton" aria-expanded="false" aria-controls="reloton">
+   Eloton
+ </button>
+ <button class="btn btn-raihnas" type="button" data-toggle="collapse" data-target="#rraihnas" aria-expanded="false" aria-controls="rraihnas">
+   Raihnas
+ </button>
+ <button class="btn btn-sisukas" type="button" data-toggle="collapse" data-target="#rsisukas" aria-expanded="false" aria-controls="rsisukas">
+   Sisukas
+ </button>
+ <button class="btn btn-parantuva" type="button" data-toggle="collapse" data-target="#rparantuva" aria-expanded="false" aria-controls="rparantuva">
+   Parantuva
+ </button>
+ <button class="btn btn-immuuni" type="button" data-toggle="collapse" data-target="#rimmuuni" aria-expanded="false" aria-controls="rimmuuni">
+   Immuuni
+ </button>
+ <button class="btn btn-parantaja" type="button" data-toggle="collapse" data-target="#rparantaja" aria-expanded="false" aria-controls="rparantaja">
+   Parantaja
+ </button>
+ <button class="btn btn-nekromantikko" type="button" data-toggle="collapse" data-target="#rnekromantikko" aria-expanded="false" aria-controls="rnekromantikko">
+   Nekromantikko
+ </button>
+ <button class="btn btn-kuolematon" type="button" data-toggle="collapse" data-target="#rkuolematon" aria-expanded="false" aria-controls="rkuolematon">
+   Kuolematon
+ </button>
+</p></center>
+<div class="collapse text-left" id="reloton">
+ <div class="card card-body">
+   Eloton on aloitusrankki, jonka saat heti palvelimelle liittyessäsi. Elottomalla on seuraavat oikeudet: <br><br>
+   <ul>
+       <li>/avaa</li>
+       <li>/avaakaikille</li>
+       <li>/back</li>
+       <li>/checkban</li>
+       <li>/crea</li>
+       <li>/kit Aloitus</li>
+       <li>/sethome (1 kappale)</li>
+       <li>/lay</li>
+       <li>/list</li>
+       <li>/lunastavote</li>
+       <li>/msg</li>
+       <li>/near</li>
+       <li>/+oikeudet nimi (lisää oikeudet pelaajalle palikkaan, /-oikeudet taasen poistaa oikeudet)</li>
+       <li>/peliaika (/pa, /ar)</li>
+       <li>/pennipeli (myös /lotto)</li>
+       <li>/recipe</li>
+       <li>/reply</li>
+       <li>/report</li>
+       <li>/rtp</li>
+       <li>/seen</li>
+       <li>/sit</li>
+       <li>/spawn</li>
+       <li>/tpa</li>
+       <li>/tpahere</li>
+       <li>/tpignore</li>
+       <li>/valikko</li>
+       <li>/vote</li>
+       <li>/warp(s)</li>
+       <li>/whois</li>
+   </ul>
+ </div>
+</div><br>
+<div class="collapse text-left" id="rraihnas">
+ <div class="card card-body">
+   Raihnas on toinen rankki, jonka saat pelattuasi palvelimella yhteensä viisi tuntia (5h). Raihnaalla, tietystikin on Elottoman oikeudet, sekä seuraavat oikeudet: <br><br>
+   <ul>
+       <li>/kit Raihnas (korvaa /kit Aloitus)</li>
+       <li>/hat</li>
+       <li>/sethome (2 kappaletta)</li>
+       <li>/compass</li>
+       <li>/workbench</li>
+   </ul>
+ </div>
+</div><br>
+<div class="collapse text-left" id="rsisukas">
+ <div class="card card-body">
+   Sisukas on kolmas rankki, jonka saat pelattuasi palvelimella yhteensä yhden päivän (1d). Kuten aikaisemmin, Sisukkaalla on Raihnaan oikeudet, sekä seuraavat oikeudet: <br><br>
+   <ul>
+       <li>/kit Sisukas (korvaa /kit Raihnas)</li>
+       <li>/sethome (6 kappaletta)</li>
+       <li>/enderchest</li>
+       <li><b><span data-toggle="tooltip" data-placement="right" title="Taikamatto, 5x5 kokoinen lasimatto allasi, jolla voit leijua ilmassa, sekä lentää.">/mc*</span></b></li>
+       <li>/mc light</li>
+       <li>/near</li>
+       <li><b><span data-toggle="tooltip" data-placement="right" title="Voit äänestää äänestyksissä puolesta ja vastaan.">/vk n / vk y*</span></b></li>
+   </ul>
+ </div>
+</div><br>
+<div class="collapse text-left" id="rparantuva">
+ <div class="card card-body">
+   Parantuva on neljäs rankki, jonka saat pelattuasi palvelimella yhteensä viisi päivää (5d). Parantuvalla on seuraavat lisäoikeudet: <br><br>
+   <ul>
+       <li>/kit Parantuva (korvaa /kit Sisukas)</li>
+       <li>/sethome (8 kappaletta)</li>
+       <li>/jump</li>
+       <li>/mc tools</li>
+       <li><b><span data-toggle="tooltip" data-placement="right" title="Nimen täytyy olla samankaltainen Minecraft nimesi kanssa tunnistautumisen vuoksi.">/nick*</span></b></li>
+       <li>/tppos</li>
+       <li><b><span data-toggle="tooltip" data-placement="right" title="Voit aloittaa äänestyksen pelaajan hiljentämistä (20min) tai pelaajan potkimista varten.">/votemute /votekick*</span></b></li>
+       <li>/weather</li>
+       <li>Voit hakata Spawnereita ilman Silk Touch -hakkua, sekä kirjoittaa kyltteihin väreillä.</li>
+   </ul>
+ </div>
+</div><br>
+<div class="collapse text-left" id="rimmuuni">
+ <div class="card card-body">
+   Immuuni on viides rankki, jonka saat pelattuasi palvelimella yhteensä kymmenen päivää (10d). Immuunilla on seuraavat lisäoikeudet: <br><br>
+   <ul>
+       <li>/kit Immuuni (korvaa /kit Parantuva)</li>
+       <li>/sethome (12 kappaletta)</li>
+       <li>/fly</li>
+       <li><b><span data-toggle="tooltip" data-placement="right" title="Nimeää kädessäsi olevan tavaran. (Voi käyttää värejä)">/nimeä*</span></b></li>
+       <li>/spawner</li>
+       <li>/time set</li>
+       <li>/tp</li>
+       <li>/tptoggle</li>
+   </ul>
+ </div>
+</div><br>
+<div class="collapse text-left" id="rparantaja">
+ <div class="card card-body">
+   Parantajan saat pelattuasi palvelimella yhteensä 30 päivää (30d). Parantajilla on seuraavat lisäoikeudet: <br><br>
+   <ul>
+       <li>/kit Parantaja (korvaa /kit Immuuni)</li>
+       <li>/sethome (16 kappaletta)</li>
+       <li>/jail</li>
+       <li>/kick</li>
+       <li>/mute</li>
+   </ul>
+ </div>
+</div><br>
+<div class="collapse text-left" id="rnekromantikko">
+ <div class="card card-body">
+   Nekromantikkoon vaaditaan 60 päivän (60d) peliaika. Huhut kertovat, että Nekromantikot eivät vielä ole ennustaneet 18 kotipisteen lisäksi muita lisäoikeuksia.
+ </div>
+</div><br>
+<div class="collapse text-left" id="rkuolematon">
+ <div class="card card-body">
+   Jotta sinulle voidaan myöntää viimeinen peliaika-arvo ja täten tunnustaa Kuolemattomaksi, peliaikasi täytyy olla 100 päivää (100d). Kuolemattomilla on seuraavat lisäoikeudet: <br><br>
+   <ul>
+     <li><span data-toggle="tooltip" data-placement="right" title="Gordon Freeman ei sano mitään Half-Life -pelisarjassa. Lisäoikeuksia ei vielä ole.">... <em>-Gordon Freeman</em></span></li>
+   </ul>
+ </div>
+</div><br>

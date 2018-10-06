@@ -2405,6 +2405,18 @@ fieldset:disabled a.btn {
     border-color: #ffff55;
 }
 
+.btn-nekromantikko {
+  color: #000;
+  background-color: #AA00AA;
+  border-color: #AA00AA;
+}
+
+.btn-kuolematon {
+  color: #000;
+  background-color: #FF55FF;
+  border-color: #FF55FF;
+}
+
 .btn-primary {
   color: #fff;
   background-color: #007bff;
@@ -4388,7 +4400,7 @@ input[type="button"].btn-block {
   flex-direction: column;
   min-width: 0;
   word-wrap: break-word;
-  background-color: #000;
+  background-color: #5c5c5c;
   background-clip: border-box;
   border: 1px solid rgba(0, 0, 0, 0.125);
   border-radius: 0.25rem;
