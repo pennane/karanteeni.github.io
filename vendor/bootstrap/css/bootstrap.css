@@ -4,7 +4,7 @@
  * Copyright 2011-2018 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  */
-:root {
+ :root {
   --eloton: #555555;
   --raihnas: #ff5555;
   --sisukas: #55ff55;
@@ -59,6 +59,16 @@ html {
 @-ms-viewport {
   width: device-width;
 }
+
+@font-face {
+  font-family: 'Rexlia';
+  src: url('/assets/fonts/rexlia.woff2') format('woff2'),
+       url('/assets/fonts/rexlia.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
 
 article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
   display: block;
