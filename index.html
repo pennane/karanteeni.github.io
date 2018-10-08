@@ -25,13 +25,15 @@
             xmlhttp.onreadystatechange = function() {
                 if (this.readyState == 4 && this.status == 200) {
                     var kara = JSON.parse(this.responseText);
-                    document.getElementById("status").innerHTML = kara.status ? '<span class="text-success">Päällä</span>' : '';
+                    document.getElementById("status").style.backgroundColor = "darkgreen";
+                    document.getElementById("statusbor").setAttribute("style", "border: 4px solid darkgreen;");
                     document.getElementById("online").innerHTML = kara.players.online;
-                    document.getElementById("ip").innerHTML = kara.hostname + ":" + kara.port + " / karanteeni.tk";
+                    document.getElementById("ip").innerHTML = '<p>karanteeni.net</p>' + kara.hostname + ":" + kara.port;
                     } else {
-                        document.getElementById("status").innerHTML = '<p class="text-danger">Pois päältä</p>';
-                        document.getElementById("online").innerHTML = "0";
-                        document.getElementById("ip").innerHTML = "Osoitteen kysely epäonnistui. Palvelin on pois päältä."
+                        document.getElementById("status").style.backgroundColor = "red";
+                        document.getElementById("statusbor").setAttribute("style", "border: 4px solid red;");
+                        document.getElementById("online").innerHTML = "Pelaajia ei ole paikalla.";
+                        document.getElementById("ip").innerHTML = "Osoitteen kysely epäonnistui."
                     }
                 };
             xmlhttp.open("GET", "https://use.gameapis.net/mc/query/players/151.80.78.212:28373", true);
@@ -44,6 +46,9 @@
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=M+PLUS+1p" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
 
     <!-- Custom -->
     <style>
@@ -68,20 +73,56 @@
     <nav karainclude-html="assets/includes/navbar.html" class="navbar navbar-expand-lg navbar-dark karanav fixed-top"></nav><br><br>
 
     <!-- Sisältö -->
-    <div class="container text-white">
-        <div class="col-lg-12 text-center">
-          <div class="card card-body bg-dark-transparent" style="margin-bottom: 1.2em; font-family: 'M Plus 1p' !important;">
-              <h1 class="mt-5">Karanteeni</h1>
-              <p class="lead">Serveri, joka vangitsee sinut!</p>
-              <p class="mb-0">IP: <span id="ip"></span><br>
-              Pelaajia paikalla: <span id="online"></span><br>
-              Palvelimen status: <span id="status"></span></p><br><br>
-              <blockquote title="#vainylläpitojutut" class="blockquote text-dark border border-danger">
-              <p id="lainaus"></p>
-              <footer class="blockquote-footer"><cite id="by"></cite></footer>
-              </blockquote><br><br>
-
-              <!-- Ilmoitukset
+    <div class="container-fluid text-white">
+        <div class="row">
+            <div class="col-lg-3 text-center" style="margin-bottom: 1.2em;">
+                <div id="statusbor" class="card bg-dark-transparent">
+                    <h5 class="card-header" style="background-color: darkgrey;" id="ip"></h5>
+                    <div class="card-body">
+                        <img src="./assets/images/server-icon.png">
+                        <p class="card-text">Pelaajia paikalla:</p>
+                    </div>
+                    <div id="status" class="card-footer">
+                        <span class="card-text" id="online"></span>
+                    </div>
+                    <!-- <p class="mb-0">IP: <span id="ip"></span><br>
+                        Pelaajia paikalla: <span id="online"></span><br>
+                        Palvelimen status: <span id="status"></span>
+                    </p> -->
+                </div>
+                <div class="card card-body bg-dark-transparent" style="margin-top: 1.2em; font-size: 40px;">
+                        <!-- <ul class="list-unstyled" style="display: inline-block">
+                            <li>
+                                <a href="https://discord.gg/rhgYZNs" target="_blank" style="color: #7289DA"><i class="fab fa-discord"></i></a>
+                            </li>
+                            <li>
+                                <a href="https://twitter.com/Karanteeni" target="_blank" style="color: #00C6FF"><i class="fab fa-twitter-square"></i></a>
+                            </li>
+                            <li>
+                                <a href="https://www.youtube.com/channel/UC0E-bE8csGh0jnFW6i9Unsw" target="_blank" style="color: #FF0000"><i class="fab fa-youtube-square"></i></a>
+                            </li>
+                        </ul> -->
+                        <div style="display: inline-block;">
+                            <a href="https://discord.gg/rhgYZNs" target="_blank" style="color: #7289DA; padding: 20px; font-size: 70px; width: 50px; text-align: center;"><i class="fab fa-discord"></i></a>
+                            <a href="https://twitter.com/Karanteeni" target="_blank" style="color: #00C6FF; padding: 20px; font-size: 70px; width: 50px; text-align: center;"><i class="fab fa-twitter-square"></i></a>
+                            <a href="https://www.youtube.com/channel/UC0E-bE8csGh0jnFW6i9Unsw" target="_blank" style="color: #FF0000; padding: 20px; font-size: 70px; width: 50px; text-align: center;"><i class="fab fa-youtube-square"></i></a>
+                        </div>
+                        
+                </div>
+            </div>
+            <div class="col-lg-6 text-center">
+            <div class="card card-body bg-dark-transparent" style="margin-bottom: 1.2em; font-family: 'M Plus 1p' !important;">
+                <h1 class="mt-5">Karanteeni</h1>
+                <p class="lead">Serveri, joka vangitsee sinut!</p>
+                <br><br>
+                <blockquote title="#vainylläpitojutut" class="blockquote text-dark border border-danger">
+                <p id="lainaus"></p>
+                <footer class="blockquote-footer"><cite id="by"></cite></footer>
+                </blockquote><br><br>
+            </div>
+            </div>
+        </div>
+            <!-- Ilmoitukset
               <div class="card">
                   <div class="card-header" style="background-color: #711d22;">
                       <button class="btn btn-link" style="color: white; text-decoration: none;" type="button" data-toggle="collapse" data-target="#collapse1" aria-expanded="true" aria-controls="collapse1">
@@ -106,12 +147,9 @@
                       </div>
                   </div>
               </div> -->
-          </div>
-    </div>
     </div>
     <script src="vendor/js/jutut.js"></script>
     <script>includeHTML();</script>
-    <footer style="position: absolute; bottom: 0;" karainclude-html="assets/includes/footer.html" class="footer text-white"></footer>
   </body>
 
 </html>
