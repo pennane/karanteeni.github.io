@@ -183,7 +183,13 @@ a {
   -webkit-text-decoration-skip: objects;
 }
 
-a:hover {
+/* a:hover {
+  color: #FFD700;
+  text-decoration: none;
+  text-shadow: 2px 2px 5px rgba(255, 215, 0, 1);
+} */
+
+#link:hover {
   color: #FFD700;
   text-decoration: none;
   text-shadow: 2px 2px 5px rgba(255, 215, 0, 1);
@@ -2416,7 +2422,7 @@ fieldset:disabled a.btn {
 }
 
 .btn-nekromantikko {
-  color: #000;
+  color: #fff;
   background-color: #AA00AA;
   border-color: #AA00AA;
 }
