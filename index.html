@@ -31,14 +31,14 @@
                         document.getElementById("online").innerHTML = kara.players.online;
                         document.getElementById("ip").innerHTML = '<p>karanteeni.net</p>' + kara.hostname + ":" + kara.port;
                     }
-                    } else {
+                } else {
                         document.getElementById("status").style.backgroundColor = "darkred";
                         document.getElementById("statusbor").style.border = "solid 4px darkred";
                         document.getElementById("online").innerHTML = "Pelaajia ei ole paikalla.";
                         document.getElementById("ip").innerHTML = "Osoitteen kysely epäonnistui. Palvelin ei ole päällä."
                     }
                 };
-            xmlhttp.open("GET", "https://use.gameapis.net/mc/query/players/151.80.78.212:28373", "true");
+            xmlhttp.open("GET", "https://use.gameapis.net/mc/query/players/151.80.78.212:28373", true);
             xmlhttp.send();
     </script>
 
