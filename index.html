@@ -60,7 +60,7 @@
             <div class="col-lg-3 text-center" style="margin-bottom: 1.2em;">
                 <div id="statusbor" class="card bg-dark-transparent">
                     <h5 class="card-header" style="background-color: darkgrey;" id="ip">Palvelinta ei ole määritetty.</h5>
-                    <div id="server" class="card-body">
+                    <div id="server" class="card-body" style="padding-bottom: 0.5rem !important;">
                     </div>
                     <div id="status" class="card-footer">
                         <span class="card-text" id="online"></span>
@@ -142,7 +142,7 @@
                     document.getElementById("statusbor").style.border = "solid 4px darkgreen";
                     document.getElementById("online").innerHTML = kara.players["online"];
                     document.getElementById("ip").innerHTML = '<p>karanteeni.net</p>' + kara["hostname"] + ":" + kara["port"];
-                    document.getElementById("server").innerHTML = '<img src="./assets/images/server-icon.png"><p class="card-text">Pelaajia paikalla:</p>';
+                    document.getElementById("server").innerHTML = '<img src="./assets/images/server-icon.png"><p class="card-text" style="padding-top: 1rem;">Pelaajia paikalla:</p>';
                 }
             } else {
                     document.getElementById("status").style.backgroundColor = "darkred";
