@@ -20,27 +20,6 @@
     <!-- Custom Js / APIs -->
     <script src="vendor/js/include.js"></script>
     <script src="https://use.gameapis.net/mc/query/players/151.80.78.212:28373"></script>
-    <script>
-            var xmlhttp = new XMLHttpRequest();
-            xmlhttp.onreadystatechange = function() {
-                if (this.readyState == 4 && this.status == 200) {
-                    var kara = JSON.parse(this.responseText);
-                    if (kara.status === true) {
-                        document.getElementById("status").style.backgroundColor = "darkgreen";
-                        document.getElementById("statusbor").style.border = "solid 4px darkgreen";
-                        document.getElementById("online").innerHTML = kara.players.online;
-                        document.getElementById("ip").innerHTML = '<p>karanteeni.net</p>' + kara.hostname + ":" + kara.port;
-                    }
-                } else {
-                        document.getElementById("status").style.backgroundColor = "darkred";
-                        document.getElementById("statusbor").style.border = "solid 4px darkred";
-                        document.getElementById("online").innerHTML = "Pelaajia ei ole paikalla.";
-                        document.getElementById("ip").innerHTML = "Osoitteen kysely epäonnistui. Palvelin ei ole päällä."
-                    }
-                };
-            xmlhttp.open("GET", "https://use.gameapis.net/mc/query/players/151.80.78.212:28373", true);
-            xmlhttp.send();
-    </script>
 
     <!-- Bootstrap CSS -->
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -80,10 +59,8 @@
         <div class="row">
             <div class="col-lg-3 text-center" style="margin-bottom: 1.2em;">
                 <div id="statusbor" class="card bg-dark-transparent">
-                    <h5 class="card-header" style="background-color: darkgrey;" id="ip"></h5>
-                    <div class="card-body">
-                        <img src="./assets/images/server-icon.png">
-                        <p class="card-text">Pelaajia paikalla:</p>
+                    <h5 class="card-header" style="background-color: darkgrey;" id="ip">Palvelinta ei ole määritetty.</h5>
+                    <div id="server" class="card-body">
                     </div>
                     <div id="status" class="card-footer">
                         <span class="card-text" id="online"></span>
@@ -93,7 +70,7 @@
                         Palvelimen status: <span id="status"></span>
                     </p> -->
                 </div>
-                <div class="card card-body bg-dark-transparent" style="margin-top: 1.2em; font-size: 40px;">
+                <div class="card card-body bg-dark-transparent" style="margin-top: 1.2em; font-size: 40px; padding: 0rem; border-radius: 0rem !important;">
                         <!-- <ul class="list-unstyled" style="display: inline-block">
                             <li>
                                 <a href="https://discord.gg/rhgYZNs" target="_blank" style="color: #7289DA"><i class="fab fa-discord"></i></a>
@@ -106,15 +83,15 @@
                             </li>
                         </ul> -->
                         <div style="display: inline-block;">
-                            <a href="https://discord.gg/rhgYZNs" target="_blank" style="color: #7289DA; padding: 20px; font-size: 70px; width: 50px; text-align: center;"><i class="fab fa-discord somepalikka"></i></a>
-                            <a href="https://twitter.com/Karanteeni" target="_blank" style="color: #00C6FF; padding: 20px; font-size: 70px; width: 50px; text-align: center;"><i class="fab fa-twitter-square somepalikka"></i></a>
-                            <a href="https://www.youtube.com/channel/UC0E-bE8csGh0jnFW6i9Unsw" target="_blank" style="color: #FF0000; padding: 20px; font-size: 70px; width: 50px; text-align: center;"><i class="fab fa-youtube-square somepalikka"></i></a>
+                            <a href="https://discord.gg/rhgYZNs" target="_blank" style="color: #7289DA; font-size: 70px; width: 50px; text-align: center;"><i class="fab fa-discord someicon"></i></a>
+                            <a href="https://twitter.com/Karanteeni" target="_blank" style="color: #00C6FF; padding: 20px; font-size: 70px; width: 50px; text-align: center;"><i class="fab fa-twitter-square someicon"></i></a>
+                            <a href="https://www.youtube.com/channel/UC0E-bE8csGh0jnFW6i9Unsw" target="_blank" style="color: #FF0000; font-size: 70px; width: 50px; text-align: center;"><i class="fab fa-youtube-square someicon"></i></a>
                         </div>
                         
                 </div>
             </div>
             <div class="col-lg-6 text-center">
-            <div class="card card-body bg-dark-transparent" style="margin-bottom: 1.2em; font-family: 'Source Sans Pro' !important;">
+            <div class="card card-body bg-dark-transparent" style="margin-bottom: 1.2em; font-family: 'Source Sans Pro' !important; border-radius: 0rem !important;">
                 <h1 class="mt-5">Karanteeni</h1>
                 <p class="lead">Serveri, joka vangitsee sinut!</p>
                 <br><br>
@@ -153,6 +130,31 @@
     </div>
     <script src="vendor/js/jutut.js"></script>
     <script>includeHTML();</script>
+    <script type="application/javascript">
+        var xmlhttp = new XMLHttpRequest();
+        var url = "https://use.gameapis.net/mc/query/players/151.80.78.212:28373.json";
+        xmlhttp.onreadystatechange = function() {
+            if (this.readyState == 4 && this.status == 200) {
+                var stabox = this.responseText;
+                var kara = JSON.parse(stabox);
+                if (kara["status"] === true) {
+                    document.getElementById("status").style.backgroundColor = "darkgreen";
+                    document.getElementById("statusbor").style.border = "solid 4px darkgreen";
+                    document.getElementById("online").innerHTML = kara.players["online"];
+                    document.getElementById("ip").innerHTML = '<p>karanteeni.net</p>' + kara["hostname"] + ":" + kara["port"];
+                    document.getElementById("server").innerHTML = '<img src="./assets/images/server-icon.png"><p class="card-text">Pelaajia paikalla:</p>';
+                }
+            } else {
+                    document.getElementById("status").style.backgroundColor = "darkred";
+                    document.getElementById("statusbor").style.border = "solid 4px darkred";
+                    document.getElementById("online").innerHTML = "Pelaajia ei ole paikalla.";
+                    document.getElementById("ip").innerHTML = "Osoitteen kysely epäonnistui. Palvelin ei ole päällä."
+                    document.getElementById("server").innerHTML = '<img src="./assets/images/server-icon.png">';
+                }
+            };
+        xmlhttp.open("GET", url, true);
+        xmlhttp.send();
+    </script>
   </body>
 
 </html>
