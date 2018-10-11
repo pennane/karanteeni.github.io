@@ -47,6 +47,22 @@
         {
           teksti: "Vois käydä kuolemassa.",
           kuuluisuus: "LouNii"
+        },
+        {
+          teksti: "eN voI hYviN",
+          kuuluisuus: "Jomeee"
+        },
+        {
+          teksti: "Vesi ei oo oikeeta.",
+          kuuluisuus: "Jomeee"
+        },
+        {
+          teksti: "Ruoka on syötävää.",
+          kuuluisuus: "Nuubles"
+        },
+        {
+          teksti: "Vesistä kuuluu putkien äänet.",
+          kuuluisuus: "Nuubles"
         }
       ];
       var lainaus = lainaukset[Math.floor(Math.random() * lainaukset.length)];
