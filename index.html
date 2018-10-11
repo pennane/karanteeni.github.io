@@ -141,7 +141,7 @@
                     document.getElementById("status").style.backgroundColor = "darkgreen";
                     document.getElementById("statusbor").style.border = "solid 4px darkgreen";
                     document.getElementById("online").innerHTML = kara.players["online"];
-                    document.getElementById("ip").innerHTML = '<p>karanteeni.net</p>' + kara["hostname"] + ":" + kara["port"];
+                    document.getElementById("ip").innerHTML = '<p>karanteeni.net</p>' + '<p id="numip" onclick="copyIp(this)">' + kara["hostname"] + ":" + kara["port"] + '</p>';
                     document.getElementById("server").innerHTML = '<img src="./assets/images/server-icon.png"><p class="card-text" style="padding-top: 1rem;">Pelaajia paikalla:</p>';
                 }
             } else {
@@ -154,6 +154,29 @@
             };
         xmlhttp.open("GET", url, true);
         xmlhttp.send();
+    </script>
+    <script type="application/javascript">
+        function copyIp(element) {
+            var range, selection, worked;
+
+            if (document.body.createTextRange) {
+                range = document.body.createTextRange();
+                range.moveToElementText(element);
+                range.select();
+            } else if (window.getSelection) {
+                selection = window.getSelection();        
+                range = document.createRange();
+                range.selectNodeContents(element);
+                selection.removeAllRanges();
+                selection.addRange(range);
+            }
+            
+            try {
+                document.execCommand('copy');
+            }
+            catch (err) {
+            }
+        }
     </script>
   </body>
 
