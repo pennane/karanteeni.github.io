@@ -27,6 +27,9 @@
     <link href="https://fonts.googleapis.com/css?family=M+PLUS+1p" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
 
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
+
     <!-- Custom -->
     <style>
       body {
@@ -55,8 +58,11 @@
               <p class="lead">Tiedot Karanteenin rankeista.</p>
               <p class="mb-0 text-left text-lg-justify">Karanteenissa on kahdeksan peliaikaan perustuvaa tasoa / rankkia, joista kuusi tuo <b>lisäominaisuuksia</b> ajan kuluessa. Tasosi nousee automaattisesti kun vaadittu peliaika on saavutettu. Mikäli olet AFK, peliaikaa ei tällöin kerry. Peliajan näkee komennolla <code>/peliaika</code> ja muiden <code>/peliaika pelaajan_nimi</code></p><br>
               <p class="mb-0 text-left text-lg-justify">Serverillä on tavallisten rankkien lisäksi tasot Lojaali ja Youtube. Lojaalit pelaajat olivat edellisellä serverillämme vippejä, joten heidän aikoinaan ostamat ominaisuudet siirtyivät tänne rankille Lojaali. Nyt, kun vippien (joihin sisältyy fly, tai muita vastaavia etuja) myyminen on kiellettyä Minecraftin eulassa, olemme siirtyneet serveriin, missä hyvät ominaisuudet tulevat peliajan mukaan. Youtube-rankin saavat henkilöt, joiden kanavalla on vähintään 50 tilaajaa ja jotka tekevät hyvän esittelyvideon Karanteenista. Rankkiin käy myös aktiivinen videosarja palvelimelta. Rankin mukana tulee /kit Youtube, mutta muuten hyvät ominaisuudet tulee tavallisten tasojen tapaan pelaamalla.</p><br>
-              <p class="mb-0 text-left text-lg-justify">Tässä on painikkeita (värikoodi on samanlainen palvelimella etuliitteessä), joita painamalla näet kunkin rankin oikeudet. Jokaisen tason mukana tulee myös uusi kit eli tavarapakki, jonka saat komennolla /kit (tason nimi). Jos et tiedä mitä joku komento tekee, kysy rohkeasti ylläpidolta!</p>
-              <center><p style="margin-top: 2.5em;">
+              <p class="mb-0 text-left text-lg-justify">Tässä on painikkeita (värikoodi on samanlainen palvelimella etuliitteessä), joita painamalla näet kunkin rankin oikeudet. Jokaisen tason mukana tulee myös uusi kit eli tavarapakki, jonka saat komennolla /kit (tason nimi). Jos et tiedä mitä joku komento tekee, kysy rohkeasti ylläpidolta!</p><br>
+              <div class="alert alert-danger" style="margin: auto; margin-bottom: 1.2em; margin-top: 1.2em;" role="alert">
+                Huom! Kitit eivät vielä toimi oikein.
+              </div>              
+              <p style="margin-top: 2.5em;">
                 <button class="btn btn-eloton" type="button" data-toggle="collapse" data-target="#reloton" aria-expanded="false" aria-controls="reloton">
                   Eloton
                 </button>
@@ -81,7 +87,7 @@
                 <button class="btn btn-kuolematon" type="button" data-toggle="collapse" data-target="#rkuolematon" aria-expanded="false" aria-controls="rkuolematon">
                   Kuolematon
                 </button>
-               </p></center>
+               </p>
                <div class="collapse text-left" id="reloton">
                 <div class="card card-body">
                   Eloton on aloitusrankki, jonka saat heti palvelimelle liittyessäsi. Elottomalla on seuraavat oikeudet: <br><br>
