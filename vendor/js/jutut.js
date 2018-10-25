@@ -63,6 +63,14 @@
         {
           teksti: "Vesistä kuuluu putkien äänet.",
           kuuluisuus: "Nuubles"
+        },
+        {
+          teksti: "mirrsststsddstsrs",
+          kuuluisuus: "Kana kirjoittamassa"
+        },
+        {
+          teksti: "Mun isän talossa on kaks kerrosta päällekkäin, toinen on toisen päällä mut toinen ei",
+          kuuluisuus: "Nuubles"
         }
       ];
       var lainaus = lainaukset[Math.floor(Math.random() * lainaukset.length)];
