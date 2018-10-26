@@ -4429,6 +4429,15 @@ input[type="button"].btn-block {
   color: #fff;
 }
 
+.yp-img {
+  border: 1px solid red; 
+  border-bottom: 1px solid red; 
+  border-radius: 0.80rem; 
+  margin-left: 15px; 
+  margin-right: 15px; 
+  background-color: white;
+}
+
 .card {
   position: relative;
   display: -ms-flexbox;
