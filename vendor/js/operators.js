@@ -199,7 +199,7 @@ function giveOp(jsonObj) {
 
         builder.parentNode.insertBefore(row, builder.nextSibling);
       }
-=======
+
 var requestURL = '/vendor/js/operators.json';
 var request = new XMLHttpRequest();
 request.open('GET', requestURL);
