@@ -11,7 +11,7 @@ xmlhttp.onreadystatechange = function() {
             if (kara.players["online"] == "0") {
                 document.getElementById("online").innerHTML = "Pelaajia ei ole paikalla.";
             }
-            document.getElementById("ip").innerHTML = "<p>mc.karanteeni.net</p>" + "<p id='numip'>" + kara["hostname"] + ":" + kara["port"] + "&nbsp;<button class='btn btn-outline-dark btn-tooltip show' data-toggle='tooltip' data-placement='top' title='Paina tästä kopioidaksesi IP-osoite.' onclick='copyIp(document.getElementById(\"numip\"));'><i class='fas fa-copy'></i></button></p>";
+            document.getElementById("ip").innerHTML = "<p>mc.karanteeni.net</p>" + "<p id='numip'>" + kara["hostname"] + ":" + kara["port"] + "<button style='margin: auto; margin-top: 10px;' class='btn btn-outline-dark btn-tooltip show' data-toggle='tooltip' data-placement='top' title='Paina tästä kopioidaksesi IP-osoite.' onclick='copyIp(document.getElementById(\"numip\"));'><i class='fas fa-copy'></i></button></p>";
             document.getElementById("server").innerHTML = '<img src="./assets/images/server-icon.png"><p class="card-text" style="padding-top: 1rem;">Pelaajia paikalla:</p>';
         }
     } else {
