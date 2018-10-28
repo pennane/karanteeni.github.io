@@ -60,4 +60,67 @@
             "uuid": "5e7bc86309d447bd8bf8a8b0d0713b5c"
         }
     ]
+=======
+{
+    "omistajat": [
+        {
+            "nimi": "Jomeee",
+            "kuvaus": "Lyhyt esimerkkikuvaus.",
+            "uuid": "5b9a03483c15472b8bd8987134cf9f1d"
+        },
+        {
+            "nimi": "Nuubles",
+            "kuvaus": "Lyhyt esimerkkikuvaus.",
+            "uuid": "d4ef4bc2db26462c9793389ba56d2818"
+        }
+    ],
+    "adminit": [
+        {
+            "nimi": "viuwi",
+            "kuvaus": "Lyhyt esimerkkikuvaus.",
+            "uuid": "72c7765aec184ee4a7aefc07ebf6a824"
+        },
+        {
+            "nimi": "Naxray",
+            "kuvaus": "Semi-kokenut ylläpitäjä ja web-kehittäjä since 2015.",
+            "uuid": "05c0c0ead62240d4b8a20d4ec986c039"
+        },
+        {
+            "nimi": "lakanakana",
+            "kuvaus": "Lyhyt esimerkkikuvaus.",
+            "uuid": "78cf984cf45241b9bdd600cc4677c7d9"
+        },
+        {
+            "nimi": "Whimsy85",
+            "kuvaus": "Lyhyt esimerkkikuvaus.",
+            "uuid": "a7f0616020e144d3880444ffe854c16d"
+        },
+        {
+            "nimi": "Ougii_Lewe",
+            "kuvaus": "Lyhyt esimerkkikuvaus.",
+            "uuid": "5cab2b2a16dc410491ff40fa6920d01d"
+        },
+        {
+            "nimi": "aam05",
+            "kuvaus": "Lyhyt esimerkkikuvaus.",
+            "uuid": "14491b11b57d4a4c84621387ff2b9c31"
+        }
+    ],
+    "rakentajat": [
+        {
+            "nimi": "PreGauris",
+            "kuvaus": "Lyhyt esimerkkikuvaus.",
+            "uuid": "eaa677e2710d41faaed5b258cf31fdd7"
+        },
+        {
+            "nimi": "Asheline",
+            "kuvaus": "Lyhyt esimerkkikuvaus.",
+            "uuid": "ca5f9868d9bc4a02b63d5fa2e48a8326"
+        },
+        {
+            "nimi": "Phansu_OwO",
+            "kuvaus": "Lyhyt esimerkkikuvaus.",
+            "uuid": "5e7bc86309d447bd8bf8a8b0d0713b5c"
+        }
+    ]
 }
