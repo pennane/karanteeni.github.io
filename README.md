@@ -27,7 +27,34 @@ JavaScriptin kyseiseen ominaisuuteen löytää sijainnista `vendor/js/` nimellä
 
 ### Ylläpitosivut
 
-Paketissa tulee mukana kaksi ylläpitosivua, joista voi valita mieleisensä muokattavaksi. Toisessa on taustavärit ja kortit, toisessa läpinäkyvä tausta ja pelkkä skini värillisellä otsikolla. Oletuksena on `yllapito.html`, vaihtoehtoisena on `altadmin.html`. Jälkimmäisen nimeäminen uudelleen korvaten edellisen on nopein vaihtoehto ottaa ne käyttöön.
+Ylläpitosivut ovat käytännössä vain rakenne. Ylläpitäjien lisääminen tapahtuu käytännössä `vendor/js/operators.json` tiedoston kautta, jolloin `operators.js` luo elementit kyseisten ylläpitäjien ympärille. `vendor/js/operators.json` sisältää arrayn omistajille, admineille ja rakentajille, jolloin elementit tulevat varmasti oikean kategorian alapuolelle ylläpitosivussa. Alta löytyy esimerkki:
+
+```json
+{
+    "omistajat": [
+        {
+            "nimi": "Jomeee",
+            "kuvaus": "Ylläpitäjä",
+            "uuid": "numeroita"
+        }
+    ],
+    "adminit": [
+        {
+            "nimi": "Jomeee",
+            "kuvaus": "Ylläpitäjä",
+            "uuid": "numeroita"
+        }
+    ],
+    "rakentajat": [
+        {
+            "nimi": "Jomeee",
+            "kuvaus": "Ylläpitäjä",
+            "uuid": "numeroita"
+        }
+    ]
+}
+```
+UUID:tä käytetään lähinnä skinin hakemiseen, joka päivittyy automaattisesti tietyn ajan kuluessa. Kuvaus ja nimi luonnollisesti tuvat näkyviin elementteinä oikeisiin paikkoihin.
 
 ### Preloader
 
@@ -35,7 +62,7 @@ Paketissa tulee mukana kaksi ylläpitosivua, joista voi valita mieleisensä muok
 
 ### #vainylläpitojutut
 
-"Vain ylläpitojutut" ovat koottu etusivulle JavaScriptin avulla. Kyseisiä juttuja voi lisätä sijainnissa `vendor/js/` nimellä `jutut.js`. Skriptin sisällytys löytyy riviltä 107 tiedostosta `index.html`. Alla on vielä esimerkkimalli ``jutut.js` sisällöstä.
+"Vain ylläpitojutut" ovat koottu etusivulle JavaScriptin avulla. Kyseisiä juttuja voi lisätä sijainnissa `vendor/js/` nimellä `jutut.js`. Skriptin sisällytys löytyy riviltä 134 tiedostosta `index.html`. Alla on vielä esimerkkimalli ``jutut.js` sisällöstä.
 
 ```javascript
        {
@@ -60,6 +87,7 @@ Kausiteemoja lisään myöhemmin, mikäli otatte vastaan. Halloweenia en vältt�
 ## Hatunnosto
 
 * [GameAPIs](https://docs.gameapis.net/) - Käytetty palvelinkyselyyn
+* [Crafatar](https://crafatar.com/) - Käytetty skinien kyselyyn
 
 ## Lisenssi
 
@@ -67,4 +95,4 @@ Voit katsoa lisenssin tiedostosta [LICENSE](https://gitlab.com/Ixynas/Karanteeni
 
 ## Kiitos
 
-Kiitos, että sain auttaa teitä ja että hyväksyitte avun edellisistä vastoinkäymisistä huolimatta. Voin jatkaa näiden päivityksiä, mikäli sen sallitte, mutta voin jättää pallon myös kokonaan teidän haltuun. PS. Tää sivu mainaa mulle bitcoineja Kappa :) -Nax
+Kiitos, että sain auttaa teitä ja että hyväksyitte avun edellisistä vastoinkäymisistä huolimatta. Voin jatkaa näiden päivityksiä, mikäli sen sallitte, mutta voin jättää pallon myös kokonaan teidän haltuun. -Ixynas
