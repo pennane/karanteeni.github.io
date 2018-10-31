@@ -7,8 +7,8 @@ request.send();
 request.onload = function() {
     var operators = request.response;
     giveOp(operators);
-    giveAdm(operators)
-    giveBuild(operators)
+    giveAdm(operators);
+    giveBuild(operators);
 }
 
 var builder = document.getElementById('Rakentajat');
