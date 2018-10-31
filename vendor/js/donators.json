@@ -2,6 +2,12 @@
     "lahjoittajat": [
         {
             "pvm": "31.10.18",
+            "nimi": "n1kon",
+            "amount": "50€",
+            "heart": "♥"
+        },
+        {
+            "pvm": "31.10.18",
             "nimi": "JosifDzugasvili",
             "amount": "60€",
             "heart": "♥"
@@ -10,6 +16,12 @@
             "pvm": "17.10.18",
             "nimi": "Koire",
             "amount": "10€",
+            "heart": "♥"
+        },
+        {
+            "pvm": "22.08.18",
+            "nimi": "Whimsy85",
+            "amount": "60€",
             "heart": "♥"
         },
         {
@@ -22,6 +34,12 @@
             "pvm": "01.08.18",
             "nimi": "RetuPoika",
             "amount": "50€",
+            "heart": "♥"
+        },
+        {
+            "pvm": "05.07.18",
+            "nimi": "Whimsy85",
+            "amount": "60€",
             "heart": "♥"
         },
         {
@@ -63,6 +81,12 @@
         {
             "pvm": "29.10.17",
             "nimi": "Kirje",
+            "amount": "10€",
+            "heart": "♥"
+        },
+        {
+            "pvm": "21.08.17",
+            "nimi": "Joq",
             "amount": "10€",
             "heart": "♥"
         },
