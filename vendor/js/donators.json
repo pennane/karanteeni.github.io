@@ -1,6 +1,18 @@
 {
     "lahjoittajat": [
         {
+            "pvm": "01.11.18",
+            "nimi": "Naxray",
+            "amount": "50€",
+            "heart": "♥"
+        },
+        {
+            "pvm": "01.11.18",
+            "nimi": "TheHVP",
+            "amount": "10€",
+            "heart": "♥"
+        },
+        {
             "pvm": "31.10.18",
             "nimi": "n1kon",
             "amount": "50€",
@@ -40,6 +52,12 @@
             "pvm": "05.07.18",
             "nimi": "Whimsy85",
             "amount": "60€",
+            "heart": "♥"
+        },
+        {
+            "pvm": "12.05.18",
+            "nimi": "Laamaz",
+            "amount": "10€",
             "heart": "♥"
         },
         {
