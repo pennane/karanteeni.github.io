@@ -71,6 +71,26 @@
         {
           teksti: "Mun isän talossa on kaks kerrosta päällekkäin, toinen on toisen päällä mut toinen ei",
           kuuluisuus: "Nuubles"
+        },
+        {
+          teksti: "Nax, 19 / 2 = 8",
+          kuuluisuus: "lakanakana"
+        },
+        {
+          teksti: "ftyctycycytcytcycxytctyrcyuvcytfcucu",
+          kuuluisuus: "Nuubles"
+        },
+        {
+          teksti: "Gana on kaunis goblin.",
+          kuuluisuus: "Nuubles"
+        },
+        {
+          teksti: "Mikä päivä on itsenäisyyspäivä?",
+          kuuluisuus: "Nuubles"
+        },
+        {
+          teksti: "Mun kengässä on kivenpohja. :(",
+          kuuluisuus: "Nuubles"
         }
       ];
       var lainaus = lainaukset[Math.floor(Math.random() * lainaukset.length)];
