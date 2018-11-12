@@ -12,14 +12,14 @@ request.onload = function() {
 }
 
 var builder = document.getElementById('Rakentajat');
-var owner = document.getElementById('Omistajat')
+var owner = document.getElementById('Omistajat');
 var admin = document.getElementById('Adminit');
 
 function giveOp(jsonObj) {
 
     var owners = jsonObj['omistajat'];
     var admins = jsonObj['adminit'];
-    var builders = jsonObj['rakentajat']
+    var builders = jsonObj['rakentajat'];
 
     var row = document.createElement('div');
     row.className = 'row';
@@ -142,7 +142,7 @@ function giveOp(jsonObj) {
 
   function giveBuild(jsonObj) {
 
-    var builders = jsonObj['rakentajat']
+    var builders = jsonObj['rakentajat'];
 
     var row = document.createElement('div');
     row.className = 'row';
