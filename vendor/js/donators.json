@@ -1,6 +1,12 @@
 {
     "lahjoittajat": [
         {
+            "pvm": "14.11.18",
+            "nimi": "n1kon",
+            "amount": "50€",
+            "heart": "♥"
+        },
+        {
             "pvm": "01.11.18",
             "nimi": "Naxray",
             "amount": "50€",
