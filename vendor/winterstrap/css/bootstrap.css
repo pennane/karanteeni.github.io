@@ -4010,10 +4010,6 @@ input[type="button"].btn-block {
   display: block;
 }
 
-.karanav {
-    background-color: #3F69AA;
-}
-
 .navbar {
   position: relative;
   display: -ms-flexbox;
