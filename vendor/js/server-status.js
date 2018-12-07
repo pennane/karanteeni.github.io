@@ -1,5 +1,5 @@
 var xmlhttp = new XMLHttpRequest();
-var url = "https://use.gameapis.net/mc/query/players/151.80.78.212:28373.json";
+var url = "https://api.mcsrvstat.us/1/151.80.78.212:28373";
 xmlhttp.onreadystatechange = function() {
     if (this.readyState == 4 && this.status == 200) {
         var stabox = this.responseText;
