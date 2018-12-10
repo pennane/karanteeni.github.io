@@ -1,5 +1,9 @@
 /* Aloitus */
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     padding-top: 0px !important;
 }
@@ -7,6 +11,16 @@ body {
 /* Aloitus End */
 
 /* Elementticlassit */
+
+#toTop {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 99;
+    padding: 15px;
+    border-radius: 4px;
+}
 
 .hr {
     border-color: #fff;

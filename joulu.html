@@ -14,13 +14,13 @@
     <!-- Bootstrap Js -->
     <script src="vendor/jquery/jquery.min.js"></script>
     <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-    <script src="vendor/js/preloader.js"></script>
-    <script src="vendor/js/tooltip.js"></script>
-    <script src="vendor/js/snowstorm.js"></script>
+    <script src="modules/Preloader/preloader.js"></script>
+    <script src="modules/Tooltip/tooltip.js"></script>
+    <script src="modules/Snowstorm/snowstorm.js"></script>
 
     <!-- Custom Js / APIs -->
-    <script src="vendor/js/include.js"></script>
-    <script src="https://use.gameapis.net/mc/query/players/151.80.78.212:28373"></script>
+    <script src="modules/Include/include.js"></script>
+    <script src="modules/ScrollToTop/scrollto.js"></script>
 
     <!-- Bootstrap CSS -->
     <link href="vendor/winterstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -50,6 +50,7 @@
   </head>
   <!--  onload="preLoader()" -->
   <body>
+    <button class="btn btn-dark" onclick="topFunction()" id="toTop" title="Takaisin ylös"><i class="fas fa-arrow-up"></i></button>
     <!-- <div id="loader" karainclude-html="assets/includes/preloader.html"></div> -->
 <!-- <div id="wrapper" style="opacity: 0;"> -->
 
@@ -64,10 +65,12 @@
                     <h1 class="display-5" style="margin-top: 1.2em; color: white;">Jouluaattoon on enää</h1>
                     <h1 class="display-4 countdown" id="jouluaatto"></h1>
                 </div>
-                <h1 class="display-4">Talvipäivitys sivuille</h1>
+                <h1 class="display-4"><b>Talvipäivitys sivuille</b></h1>
                 <p class="lead">
-                    Hoi! Tämänpäiväinen talvipäivitys tuo tullessaan uuden semiruman ulkoasun etusivulle, talvisen "lumimyrskyn", päivälaskurin jouluaattoon,
-                     sekä uuden palvelimen statuskyselyn. Tämän lisäksi myös säännöt on jaettu kolmeen eri kategoriaan. Ylläpito toivottaa kaikille hyvää joulunodotusta.
+                    Hoi! Tämänpäiväinen talvipäivitys tuo tullessaan uuden väliaikaisen ulkoasun etusivulle, talvisen "lumimyrskyn", päivälaskurin jouluaattoon,
+                     sekä uuden palvelimen statuskyselyn. Tämän lisäksi myös säännöt on jaettu nykyisin kolmeen eri kategoriaan, ladattavat
+                      muutoslokit vaihdettu omalle sivulleen nähtäväksi päivämääriin lajiteltuna, sekä
+                      lisätty Back-to-the-top nuoli oikealle alhaalle sivua rullatessa alaspäin. <br><br><em>Hyvää joulun odotusta kaikille!</em>
                 </p>
             </div>
     </div>
@@ -148,11 +151,11 @@
                   </div>
               </div> -->
     </div>
-    <script src="vendor/js/jutut.js"></script>
+    <script src="modules/Jutut/jutut.js"></script>
     <script>includeHTML();</script>
-    <script src="vendor/js/server-status.js" type="application/javascript"></script>
-    <script src="vendor/js/copy.js" type="application/javascript"></script>
-    <script src="vendor/js/countdown.js"></script>
+    <script src="modules/ServerStatus/server-status.js" type="application/javascript"></script>
+    <script src="modules/CopyIP/copy.js" type="application/javascript"></script>
+    <script src="modules/Countdown/countdown.js"></script>
   </body>
 
 </html>
