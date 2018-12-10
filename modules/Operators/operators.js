@@ -1,4 +1,4 @@
-var requestURL = '/vendor/js/operators.json';
+var requestURL = '/modules/Operators/operators.json';
 var request = new XMLHttpRequest();
 request.open('GET', requestURL);
 request.responseType = 'json';

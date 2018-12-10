@@ -1,4 +1,4 @@
-var requestURL = '/vendor/js/donators.json';
+var requestURL = '/modules/Donators/donators.json';
 var request = new XMLHttpRequest();
 request.open('GET', requestURL);
 request.responseType = 'json';
