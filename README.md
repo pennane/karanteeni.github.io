@@ -8,7 +8,7 @@ ja sitten se, että kuka ikinä tätä lukeekaan ymmärtää nämä "ohjeet".
 
 ## Muokkaaminen
 
-**Yleistä:** JavaScriptit löytyy kansiosta `vendor/js/`, taustakuvat (sekä yleensäkin muut kuvat) löytää kansiosta `assets/images/` ja skinit löytää kansiosta `assets/skins/`. Paketti myös sisältää pohjasivun, jolla voit luoda samantyylisen sivun helposti tarvittaessa.
+**Yleistä:** JavaScript moduulit löytyy kansiosta `/modules`, taustakuvat (sekä yleensäkin muut kuvat) löytää kansiosta `/assets/images/` ja skinit löytää kansiosta `/assets/skins/`, joille toistaiseksi ei ole mitään käyttöä. Paketti myös sisältää pohjasivun, jolla voit luoda samantyylisen sivun helposti tarvittaessa.
 
 ### Palvelinkysely
 
@@ -16,18 +16,18 @@ Etusivulla (`index.html`) on palvelinkysely, joka näyttää palvelimen IP:n, pe
 
 ### Navigaatiopalkki
 
-Navigaatiopalkki ei ole missään HTML-tiedostossa "omansa", vaan on ladattu JavaScriptilla omasta HTML-tiedostosta, joka sijaitsee `assets/includes/` kansiossa nimellä `navbar.html`. Kyseistä tiedostoa muokkaamalla muutat jokaisen HTML-sivun navigaatiopalkkia **samanaikaisesti**. Allaolevat kaksi riviä kuuluisi näkyä jokaisessa tiedostossa. Luokat voi asettaa normaalisti `<nav>` attribuuttiin, kuten on toimittu.
+Navigaatiopalkki ei ole missään HTML-tiedostossa "omansa", vaan on ladattu JavaScriptilla omasta HTML-tiedostosta, joka sijaitsee `/assets/includes/` kansiossa nimellä `navbar.html` tai `navnew.html`. Kyseistä tiedostoa muokkaamalla muutat jokaisen HTML-sivun navigaatiopalkkia **samanaikaisesti**. Allaolevat kaksi riviä kuuluisi näkyä jokaisessa tiedostossa. Luokat voi asettaa normaalisti `<nav>` attribuuttiin, kuten on toimittu.
 
 ```html
 <!-- Navbar -->
 <nav karainclude-html="assets/includes/navbar.html" class="navbar navbar-expand-lg navbar-dark karanav fixed-top"></nav><br><br>
 ```
 
-JavaScriptin kyseiseen ominaisuuteen löytää sijainnista `vendor/js/` nimellä `include.js`.
+JavaScriptin kyseiseen ominaisuuteen löytää sijainnista `/modules/Include/` nimellä `include.js`.
 
 ### Ylläpitosivut
 
-Ylläpitosivut ovat käytännössä vain rakenne. Ylläpitäjien lisääminen tapahtuu käytännössä `vendor/js/operators.json` tiedoston kautta, jolloin `operators.js` luo elementit kyseisten ylläpitäjien ympärille. `vendor/js/operators.json` sisältää arrayn omistajille, admineille ja rakentajille, jolloin elementit tulevat varmasti oikean kategorian alapuolelle ylläpitosivussa. Alta löytyy esimerkki:
+Ylläpitosivut ovat käytännössä vain rakenne. Ylläpitäjien lisääminen tapahtuu käytännössä `/modules/Operators/operators.json` tiedoston kautta, jolloin `operators.js` luo elementit kyseisten ylläpitäjien ympärille. `/modules/Operators/operators.json` sisältää arrayn omistajille, admineille ja rakentajille, jolloin elementit tulevat varmasti oikean kategorian alapuolelle ylläpitosivussa. Alta löytyy esimerkki:
 
 ```json
 {
@@ -58,11 +58,11 @@ UUID:tä käytetään lähinnä skinin hakemiseen, joka päivittyy automaattises
 
 ### Preloader
 
-`index.html` sisältää preloaderin, jota voi käyttää tarvittaessa. Sivusto ei kuitenkaan ole ladattaessa raskas, joten en ajatellut, että se olisi tarpeellista laittaa, joten jätin koodin elämään vain kommenttina. Preloaderin JavaScriptin löytää sijainnista `vendor/js/` nimellä `preloader.js`.
+`index.html` sisältää preloaderin, jota voi käyttää tarvittaessa. Sivusto ei kuitenkaan ole ladattaessa raskas, joten en ajatellut, että se olisi tarpeellista laittaa, joten jätin koodin elämään vain kommenttina. Preloaderin JavaScriptin löytää sijainnista `/modules/Preloader/` nimellä `preloader.js`.
 
 ### #vainylläpitojutut
 
-"Vain ylläpitojutut" ovat koottu etusivulle JavaScriptin avulla. Kyseisiä juttuja voi lisätä sijainnissa `vendor/js/` nimellä `jutut.js`. Skriptin sisällytys löytyy riviltä 134 tiedostosta `index.html`. Alla on vielä esimerkkimalli ``jutut.js` sisällöstä.
+"Vain ylläpitojutut" ovat koottu etusivulle JavaScriptin avulla. Kyseisiä juttuja voi lisätä sijainnissa `/modules/Jutut/` nimellä `jutut.js`. Skriptin sisällytys löytyy riviltä 134 tiedostosta `index.html`. Alla on vielä esimerkkimalli ``jutut.js` sisällöstä.
 
 ```javascript
        {
@@ -73,11 +73,7 @@ UUID:tä käytetään lähinnä skinin hakemiseen, joka päivittyy automaattises
 
 ## Tiedettyjä "ongelmia"
 
-* Lahjoitussivu ei mobiilissa ole ihan niin täydellinen kuin se voisi olla
-
-## Teemat
-
-Kausiteemoja lisään myöhemmin, mikäli otatte vastaan. Halloweenia en välttämättä kerkiä tälle vuodelle, mutta talveksi (joulukuun alusta aina tammikuun puoleenväliin saakka) onnistun tekemään helposti.
+* Toistaiseksi kaikki ovat ominaisuuksia.
 
 ## Kasattu
 
@@ -86,7 +82,7 @@ Kausiteemoja lisään myöhemmin, mikäli otatte vastaan. Halloweenia en vältt�
 
 ## Hatunnosto
 
-* [GameAPIs](https://docs.gameapis.net/) - Käytetty palvelinkyselyyn
+* [Minecraft Server Status](https://mcsrvstat.us/) - Käytetty palvelinkyselyyn
 * [Crafatar](https://crafatar.com/) - Käytetty skinien kyselyyn
 
 ## Lisenssi

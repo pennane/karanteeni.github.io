@@ -1,0 +1,9 @@
+.content {
+    border: solid 1px black;
+    box-shadow: 1px 1px 3px;
+    background-color: white;
+}
+
+h1 {
+    padding: 1.2rem 0 1.2rem 0;
+}
