@@ -1,0 +1,31 @@
+{
+    "muutokset": [
+        {
+            "joulukuu": [
+                {
+                    "kuukausi": "Joulukuu 2018",
+                    "pvm": "13.12.",
+                    "teksti": "• Fixattu rtp bugi, jolloin pelaajat eivät päätyneet negatiivisiin koordinaatteihin \\n • Kitit ovat nyt toiminnassa"
+                }
+            ],
+            "marraskuu": [
+                {
+                    "kuukausi": "Marraskuu 2018",
+                    "pvm": "Oh no!",
+                    "teksti": "Marraskuussa ei ole tapahtunut mitään muutoksia. :("
+                }
+            ],
+            "lokakuu": [
+                {
+                    "kuukausi": "Lokakuu 2018",
+                    "pvm": "28.10.",
+                    "teksti": "• Voikukkia voi taas laittaa ruukkuihin \\n • Succ -enchatut työkalut kuluvat normaalisti \\n • Korjattu bugi offline warnien kanssa \\n • Loret katoavat normaalisti enchauksen kadotessa \\n • Lentomatot eivät hajota enää lasipaneeleita \\n • Lentomattoihin värit"
+                },
+                {
+                    "pvm": "18.10.",
+                    "teksti": "• Spigotin versio palautettu taaksepäin"
+                }
+            ]
+        }
+    ]
+}
