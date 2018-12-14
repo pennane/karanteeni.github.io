@@ -8,6 +8,10 @@
     border-color: #fff;
 }
 
+#changes .btn-link, .btn-link:hover {
+    color: yellow;
+}
+
 /* Elementticlassit End */
 
 /* Navbar */
