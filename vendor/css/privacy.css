@@ -1,7 +1,20 @@
+html {
+    scroll-behavior: smooth;
+}
+
 .content {
     border: solid 1px black;
     box-shadow: 1px 1px 3px;
     background-color: white;
+    word-wrap: break-word;
+}
+
+a {
+    color: blue;
+}
+
+a:hover {
+    text-decoration: underline;
 }
 
 h1 {
