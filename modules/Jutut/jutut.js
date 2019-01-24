@@ -13,26 +13,6 @@
           kuuluisuus: "Nuubles"
         },
         {
-          teksti: "Se korjaantuu sit edellises päivitykses.",
-          kuuluisuus: "Jomeee"
-        },
-        {
-          teksti: "Jome sä just resettasit ton <b>netherin</b> ja ny on jo <b>dragoni</b> tapettu.",
-          kuuluisuus: "lakanakana"
-        },
-        {
-          teksti: "Siinä oli Suomi ja vähänniikö Amerikka ja ei-Amerikka.",
-          kuuluisuus: "Nuubles ja maantiede"
-        },
-        {
-          teksti: "Ruoho on grass suomeksi.",
-          kuuluisuus: "Nuubles"
-        },
-        {
-          teksti: "Tykkään veden hengittämisestä.",
-          kuuluisuus: "Jomeee"
-        },
-        {
           teksti: "Koitin nipistää seinää, mut en onnistunu.",
           kuuluisuus: "Nuubles"
         },
@@ -43,10 +23,6 @@
         {
           teksti: "Onko mahollista tehä yhen blockin kokosia blockeja?",
           kuuluisuus: "Nuubles"
-        },
-        {
-          teksti: "Vois käydä kuolemassa.",
-          kuuluisuus: "LouNii"
         },
         {
           teksti: "eN voI hYviN",
@@ -90,6 +66,18 @@
         },
         {
           teksti: "Mun kengässä on kivenpohja. :(",
+          kuuluisuus: "Nuubles"
+        },
+        {
+          teksti: "Kara ei oo meidän servu",
+          kuuluisuus: "Nuubles"
+        },
+        {
+          teksti: "Sä voisit despawnaa",
+          kuuluisuus: "lakanakana => Nuubles"
+        },
+        {
+          teksti: "Makaroni maistuu ihan spagetilta",
           kuuluisuus: "Nuubles"
         }
       ];
