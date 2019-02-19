@@ -19,6 +19,11 @@
     <!-- Custom Js / APIs -->
     <script src="modules/Include/include.js"></script>
 
+    <!-- React -->
+    <script src="modules/React/react.development.js"></script>
+    <script src="modules/React/babel.min.js"></script>
+    <script src="modules/React/react-dom.development.js"></script>
+
     <!-- Bootstrap CSS -->
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="vendor/css/style_regular.css">
@@ -49,7 +54,7 @@
   <body background="assets/images/9.png" onload="$('#donMod').modal('show')">
 
     <!-- Navbar -->
-    <nav karainclude-html="assets/includes/navbar.html" class="navbar navbar-expand-lg navbar-dark karanav fixed-top"></nav><br><br>
+    <div id="nav"></div> <br><br>
 
     <!-- Modal -->
     <div class="modal fade" id="donMod" tabindex="-1" role="dialog" aria-labelledby="ModalLabel" aria-hidden="true">
@@ -103,8 +108,13 @@
           </div>
         </div>
     </div>
-    <script>includeHTML();</script>
     <script src="modules/Donators/donators.js"></script>
+    <footer id="footer" class="footer"></footer>
+
+    <!-- Components -->
+    <script src="./assets/components/navbar.jsx" type="text/jsx"></script>
+    <script src="./assets/components/footer.jsx" type="text/jsx"></script>
+    
   </body>
 
 </html>

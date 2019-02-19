@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="shortcut icon" type="image/png" href="favicon.ico"/>
+
+    <title>Karanteeni</title>
+
+    <!-- Bootstrap Js -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="modules/Tooltip/tooltip.js"></script>
+
+    <!-- Custom Js / APIs -->
+    <script src="modules/Include/include.js"></script>
+
+    <!-- React -->
+    <script src="modules/React/react.development.js"></script>
+    <script src="modules/React/babel.min.js"></script>
+    <script src="modules/React/react-dom.development.js"></script>
+
+    <!-- Bootstrap CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="vendor/css/style_regular.css">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=M+PLUS+1p" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
+
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
+
+    <!-- Custom -->
+    <style>
+      body {
+        padding-top: 54px;
+      }
+      @media (min-width: 992px) {
+        body {
+          padding-top: 56px;
+        }
+      }
+
+    </style>
+
+  </head>
+
+  <body background="assets/images/9.png">
+
+    <!-- Navbar -->
+    <div id="nav"></div> <br><br>
+
+    <!-- Sisältö -->
+    <div class="container text-white">
+        <div class="col-lg-12 text-center">
+          <div class="card card-body bg-dark-transparent" style="margin-bottom: 1.2em; font-family: 'Source Sans Pro' !important;">
+              <h1 class="mt-5">Hae ylläpitoon!</h1><br>
+              <p class="lead">Karanteenin ylläpitoarvojärjestys on muuttunut. Sen seurauksena olemme avanneet avoimet hakemukset kaikille.</p>
+              <p class="mb-0 text-left text-lg-justify">Karanteenissa on pitkän aikaa ollut tasan kaksi
+                <span data-toggle="tooltip" data-placement="top" title="Omistajaa ei lasketa, sillä sinne ei ole mahdollista päästä."><b>ylläpitoarvoa</b></span>,
+               Rakentaja ja Admin. Tähän on kuitenkin tehty muutoksia, joka mahdollistaa nyt avoimet hakemukset ylläpitoon. Uusia ylläpitoarvoja on kaksi, kokonaismäärän ollessa neljä.
+             Hakemuksien ollessa edelleen vapaamuotoisia, kriteerit ovat kuitenkin muuttuneet.</p><br><br>
+             <h2 class="mt-5">Kriteerit</h2>
+             <p class="mb-0 text-left text-lg-justify">Pelaajien täytyy täyttää allaolevat kriteerit ollakseen valmis hakemaan ylläpitoon.</p>
+             <h4 class="mt-5">Moderaattori</h4>
+             <p class="mb-0 text-left text-lg-justify">
+            Moderaattoreiden pelikokemus palvelimella on tärkeää. Siksi minimivaatimus on asetettu Parantuvan kohdalle (5d), jotta
+             ylläpitoon hakeva pelaaja on päässyt perille palvelimen toimintatavoista. Kuitenkaan pelaaja-arvo itsessään ei välttämättä ole riittävä, mikäli pelaajan aktiivisuus on heikkoa.
+              Ikävaatimukseksi ollaan asetettu 15. Moderaattoriksi hakevalla pelaajalla ei saa olla rangaistushistoriaa.
+             Rangaistushistoriaksi lasketaan aktiiviset varoitukset ja porttikiellot. Chat-käytöksen tulisi olla asiallista ja sopivaa, kuitenkaan ei tarvitse olla vakava hapannaama, vaan voi
+             ottaa asioita myös rennosti ja huumorintajun omaaminen on sallittu.<br><br>
+             Moderaattorin tehtäviin pääsääntöisesti kuuluu chatin valvominen. Ikäsuosituksista saatetaan poiketa.
+           </p>
+           <h4 class="mt-5">Rakentaja</h4>
+           <p class="mb-0 text-left text-lg-justify">
+          Rakentajilla on lähes samat kriteerit kuin Moderaattorilla, vaikka chatin valvominen ei heidän ensisijaisiin tarpeisiin kuulukaan. Tämä johtuu siitä, että Rakentajilla on mahdollisuus
+          poistaa häiriköijät palvelimelta, mikäli muuta ylläpitoa ei ole tai ei saa paikalle. Rakentajien pääsääntöinen mittari on rakennustaidot ja mielikuvitus. Minimivaatimuksina
+          Parantuva, ikäsuositus 15, sekä yleinen aktiivisuus palvelimella.<br><br>
+           Rakentajan tehtäviin pääsääntöisesti kuuluu ympäristön luontia rakentamalla rakennuksia tai muokkaamalla maastoa. Ikäsuosituksista saatetaan poiketa.
+         </p>
+         <h2 class="mt-5">Lopputekstit</h2>
+         <p class="mb-0 text-left text-lg-justify">
+           Mikäli koet täyttäväsi kriteerit, voit lähettää hakemuksen osoitteeseen <a href="mailto:mckaranteeni@gmail.com" id="link">mckaranteeni@gmail.com</a>.<br>
+           Kiitämme etukäteen kaikista lähetetyistä hakemuksista ja toivotamme onnea matkaan. :)
+         </p>
+          </div>
+        </div>
+    </div>
+    <footer id="footer" class="footer"></footer>
+    <!-- Compnents -->
+    <script src="./assets/components/navbar.jsx" type="text/jsx"></script>
+    <script src="./assets/components/footer.jsx" type="text/jsx"></script>
+
+  </body>
+
+</html>

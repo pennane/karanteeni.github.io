@@ -19,6 +19,11 @@
     <!-- Custom Js / APIs -->
     <script src="modules/Include/include.js"></script>
 
+    <!-- React -->
+    <script src="modules/React/react.development.js"></script>
+    <script src="modules/React/babel.min.js"></script>
+    <script src="modules/React/react-dom.development.js"></script>
+
     <!-- Bootstrap CSS -->
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="vendor/css/style_regular.css">
@@ -49,7 +54,7 @@
   <body background="assets/images/9.png">
 
     <!-- Navbar -->
-    <nav karainclude-html="assets/includes/navbar.html" class="navbar navbar-expand-lg navbar-dark karanav fixed-top"></nav><br><br>
+    <div id="nav"></div> <br><br>
 
     <!-- Sisältö -->
     <div class="container text-white">
@@ -90,7 +95,11 @@
           </div>
         </div>
     </div>
-    <script>includeHTML();</script>
+    <footer id="footer" class="footer"></footer>
+
+    <!-- Components -->
+    <script src="./assets/components/navbar.jsx" type="text/jsx"></script>
+    <script src="./assets/components/footer.jsx" type="text/jsx"></script>
   </body>
 
 </html>

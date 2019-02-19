@@ -19,6 +19,11 @@
     <!-- Custom Js / APIs -->
     <script src="modules/Include/include.js"></script>
 
+    <!-- React -->
+    <script src="modules/React/react.development.js"></script>
+    <script src="modules/React/babel.min.js"></script>
+    <script src="modules/React/react-dom.development.js"></script>
+
     <!-- Bootstrap CSS -->
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="vendor/css/style_regular.css">
@@ -49,7 +54,7 @@
   <body background="assets/images/9.png">
 
     <!-- Navbar -->
-    <nav karainclude-html="assets/includes/navbar.html" class="navbar navbar-expand-lg navbar-dark karanav fixed-top"></nav><br><br>
+    <div id="nav"></div><br><br>
 
     <!-- Sisältö -->
     <div class="container text-white">
@@ -60,164 +65,20 @@
               <p class="mb-0 text-left text-lg-justify">Karanteenissa on kahdeksan peliaikaan perustuvaa tasoa / rankkia, joista seitsemän tuo <b>lisäominaisuuksia</b> ajan kuluessa. Tasosi nousee automaattisesti kun vaadittu peliaika on saavutettu. Mikäli olet AFK, peliaikaa ei tällöin kerry. Peliajan näkee komennolla <code>/peliaika</code> ja muiden <code>/peliaika pelaajan_nimi</code></p><br>
               <p class="mb-0 text-left text-lg-justify">Serverillä on tavallisten rankkien lisäksi tasot Lojaali ja Youtube. Lojaalit pelaajat olivat edellisellä serverillämme vippejä, joten heidän aikoinaan ostamat ominaisuudet siirtyivät tänne rankille Lojaali. Nyt, kun vippien (joihin sisältyy fly, tai muita vastaavia etuja) myyminen on kiellettyä Minecraftin eulassa, olemme siirtyneet serveriin, missä hyvät ominaisuudet tulevat peliajan mukaan. Youtube-rankin saavat henkilöt, joiden kanavalla on vähintään 50 tilaajaa ja jotka tekevät hyvän esittelyvideon Karanteenista. Rankkiin käy myös aktiivinen videosarja palvelimelta. Rankin mukana tulee /kit Youtube, mutta muuten hyvät ominaisuudet tulee tavallisten tasojen tapaan pelaamalla.</p><br>
               <p class="mb-0 text-left text-lg-justify">Tässä on painikkeita (värikoodi on samanlainen palvelimella etuliitteessä), joita painamalla näet kunkin rankin oikeudet. Jokaisen tason mukana tulee myös uusi kit eli tavarapakki, jonka saat komennolla /kit (tason nimi). Jos et tiedä mitä joku komento tekee, kysy rohkeasti ylläpidolta!</p><br>             
-              <p style="margin-top: 2.5em;">
-                <button class="btn btn-eloton" type="button" data-toggle="collapse" data-target="#reloton" aria-expanded="false" aria-controls="reloton">
-                  Eloton
-                </button>
-                <button class="btn btn-raihnas" type="button" data-toggle="collapse" data-target="#rraihnas" aria-expanded="false" aria-controls="rraihnas">
-                  Raihnas
-                </button>
-                <button class="btn btn-sisukas" type="button" data-toggle="collapse" data-target="#rsisukas" aria-expanded="false" aria-controls="rsisukas">
-                  Sisukas
-                </button>
-                <button class="btn btn-parantuva" type="button" data-toggle="collapse" data-target="#rparantuva" aria-expanded="false" aria-controls="rparantuva">
-                  Parantuva
-                </button>
-                <button class="btn btn-immuuni" type="button" data-toggle="collapse" data-target="#rimmuuni" aria-expanded="false" aria-controls="rimmuuni">
-                  Immuuni
-                </button>
-                <button class="btn btn-parantaja" type="button" data-toggle="collapse" data-target="#rparantaja" aria-expanded="false" aria-controls="rparantaja">
-                  Parantaja
-                </button>
-                <button class="btn btn-nekromantikko" type="button" data-toggle="collapse" data-target="#rnekromantikko" aria-expanded="false" aria-controls="rnekromantikko">
-                  Nekromantikko
-                </button>
-                <button class="btn btn-kuolematon" type="button" data-toggle="collapse" data-target="#rkuolematon" aria-expanded="false" aria-controls="rkuolematon">
-                  Kuolematon
-                </button>
-               </p>
-               <div class="collapse text-left" id="reloton">
-                <div class="card card-body">
-                  Eloton on aloitusrankki, jonka saat heti palvelimelle liittyessäsi. Elottomalla on seuraavat oikeudet: <br><br>
-                  <ul>
-                      <li>/avaa</li>
-                      <li>/avaakaikille</li>
-                      <li>/back</li>
-                      <li>/checkban</li>
-                      <li>/crea</li>
-                      <li>/kit Aloitus</li>
-                      <li>/sethome (1 kappale)</li>
-                      <li>/lay</li>
-                      <li>/list</li>
-                      <li>/lunastavote</li>
-                      <li>/msg</li>
-                      <li>/near</li>
-                      <li>/+oikeudet nimi (lisää oikeudet pelaajalle palikkaan, /-oikeudet taasen poistaa oikeudet)</li>
-                      <li>/peliaika (/pa, /ar)</li>
-                      <li>/pennipeli (myös /lotto)</li>
-                      <li>/recipe</li>
-                      <li>/reply</li>
-                      <li>/report</li>
-                      <li>/rtp</li>
-                      <li>/seen</li>
-                      <li>/sit</li>
-                      <li>/spawn</li>
-                      <li>/tpa</li>
-                      <li>/tpahere</li>
-                      <li>/tpignore</li>
-                      <li>/valikko</li>
-                      <li>/vote</li>
-                      <li>/warp(s)</li>
-                      <li>/whois</li>
-                  </ul>
-                </div>
-               </div><br>
-               <div class="collapse text-left" id="rraihnas">
-                <div class="card card-body">
-                  Raihnas on toinen rankki, jonka saat pelattuasi palvelimella yhteensä viisi tuntia (5h). Raihnaalla, tietystikin on Elottoman oikeudet, sekä seuraavat oikeudet: <br><br>
-                  <ul>
-                      <li>/kit Raihnas</li>
-                      <li>/hat</li>
-                      <li>/sethome (2 kappaletta)</li>
-                      <li>/compass</li>
-                      <li>/workbench</li>
-                  </ul>
-                </div>
-               </div><br>
-               <div class="collapse text-left" id="rsisukas">
-                <div class="card card-body">
-                  Sisukas on kolmas rankki, jonka saat pelattuasi palvelimella yhteensä yhden päivän (1d). Kuten aikaisemmin, Sisukkaalla on Raihnaan oikeudet, sekä seuraavat oikeudet: <br><br>
-                  <ul>
-                      <li>/kit Sisukas (korvaa /kit Raihnas)</li>
-                      <li>/sethome (6 kappaletta)</li>
-                      <li>/enderchest</li>
-                      <li><b><span data-toggle="tooltip" data-placement="right" title="Taikamatto, 5x5 kokoinen lasimatto allasi, jolla voit leijua ilmassa, sekä lentää.">/mc*</span></b></li>
-                      <li>/mc light</li>
-                      <li>/near</li>
-                      <li><b><span data-toggle="tooltip" data-placement="right" title="Voit äänestää äänestyksissä puolesta ja vastaan.">/vk n / vk y*</span></b></li>
-                      <li><b><span data-toggle="tooltip" data-placement="right" title="Vaalean harmaa (oletus) ja läpinäkyvä">Kaksi uutta väriä taikamattoon (mc)*</span></b></li>
-                  </ul>
-                </div>
-               </div><br>
-               <div class="collapse text-left" id="rparantuva">
-                <div class="card card-body">
-                  Parantuva on neljäs rankki, jonka saat pelattuasi palvelimella yhteensä viisi päivää (5d). Parantuvalla on seuraavat lisäoikeudet: <br><br>
-                  <ul>
-                      <li>/kit Parantuva (korvaa /kit Sisukas)</li>
-                      <li>/sethome (8 kappaletta)</li>
-                      <li>/jump</li>
-                      <li>/mc tools</li>
-                      <li><b><span data-toggle="tooltip" data-placement="right" title="Nimen täytyy olla samankaltainen Minecraft nimesi kanssa tunnistautumisen vuoksi.">/nick*</span></b></li>
-                      <li><b><span data-toggle="tooltip" data-placement="right" title="Voit teleporttaa X, Y ja Z koordinaatteihin.">/tp x y z*</span></b></li>
-                      <li><b><span data-toggle="tooltip" data-placement="right" title="Voit aloittaa äänestyksen pelaajan hiljentämistä (20min) tai pelaajan potkimista varten.">/rankaise votemute /rankaise votekick*</span></b></li>
-                      <li>Voit hakata Spawnereita ilman Silk Touch -hakkua <b>(huom. Tarvitset silti hakun!)</b>, sekä kirjoittaa kyltteihin väreillä.</li>
-                      <li><b><span data-toggle="tooltip" data-placement="right" title="Valkoinen, harmaa ja sininen">Kolme uutta väriä taikamattoon (mc)*</span></b></li>
-                  </ul>
-                </div>
-               </div><br>
-               <div class="collapse text-left" id="rimmuuni">
-                <div class="card card-body">
-                  Immuuni on viides rankki, jonka saat pelattuasi palvelimella yhteensä kymmenen päivää (10d). Immuunilla on seuraavat lisäoikeudet: <br><br>
-                  <ul>
-                      <li>/kit Immuuni (korvaa /kit Parantuva)</li>
-                      <li>/day</li>
-                      <li>/sethome (12 kappaletta)</li>
-                      <li>/fly</li>
-                      <li><b><span data-toggle="tooltip" data-placement="right" title="Nimeää kädessäsi olevan tavaran. (Voi käyttää värejä)">/nimeä*</span></b></li>
-                      <li><b><span data-toggle="tooltip" data-placement="right" title="Vaihtaa olemassa olevan spawnerin. Pro tip: Aseta spawner maahan ja katso sitä kohti ennen komennon suorittamista.">/spawner*</span></b></li>
-                      <li>/tp</li>
-                      <li>/tptoggle</li>
-                      <li><b><span data-toggle="tooltip" data-placement="right" title="Keltainen ja ruskea">Kaksi uutta väriä taikamattoon (mc)*</span></b></li>
-                  </ul>
-                </div>
-               </div><br>
-               <div class="collapse text-left" id="rparantaja">
-                <div class="card card-body">
-                  Parantajan saat pelattuasi palvelimella yhteensä 30 päivää (30d). Parantajilla on seuraavat lisäoikeudet: <br><br>
-                  <ul>
-                      <li>/kit Parantaja (korvaa /kit Immuuni)</li>
-                      <li>/sethome (16 kappaletta)</li>
-                      <li>/jail</li>
-                      <li>/kick</li>
-                      <li>/mute</li>
-                      <li><b><span data-toggle="tooltip" data-placement="right" title="Lime ja musta">Kaksi uutta väriä taikamattoon (mc)*</span></b></li>
-                  </ul>
-                </div>
-               </div><br>
-               <div class="collapse text-left" id="rnekromantikko">
-                <div class="card card-body">
-                  Nekromantikkoon vaaditaan 60 päivän (60d) peliaika. Nekromantikolla on seuraavat lisäoikeudet: <br><br>
-                  <ul>
-                    <li><span data-toggle="tooltip" data-placement="right" title="Laittaa blokkien tarkastelun päälle, jolla näkee kaikki sen blokin tiedot."><b>/co i*</b></span></li>
-                    <li>/kit Nekromantikko (korvaa /kit Parantaja)</li>
-                    <li>/sethome (18 kappaletta)</li>
-                    <li><b><span data-toggle="tooltip" data-placement="right" title="Magenta ja punainen">Kaksi uutta väriä taikamattoon (mc)*</span></b></li>
-                  </ul>
-                </div>
-               </div><br>
-               <div class="collapse text-left" id="rkuolematon">
-                <div class="card card-body">
-                  Jotta sinulle voidaan myöntää viimeinen pelaaja-arvo ja täten tunnustaa Kuolemattomaksi, peliaikasi täytyy olla 100 päivää (100d). Kuolemattomilla on seuraavat lisäoikeudet: <br><br>
-                  <ul>
-                    <li>/kit Kuolematon (korvaa /kit Nekromantikko)</li>
-                    <li><b><span data-toggle="tooltip" data-placement="right" title="Pinkki, syaani, purppura, oranssi, vihreä ja vaalean sininen">Kuusi uutta väriä taikamattoon (mc)*</span></b></li>
-                  </ul>
-                </div>
-               </div><br>
+              <div id="painikkeet"></div>
+              <div id="rankit"></div>
+               <br>
+               <br>
           </div>
         </div>
     </div>
-    <script>includeHTML();</script>
+    <footer id="footer" class="footer"></footer>
+
+    <!-- React Components -->
+    <script src="./assets/components/navbar.jsx" type="text/jsx"></script>
+    <script src="./assets/components/rank_buttons.jsx" type="text/jsx"></script>
+    <script src="./assets/components/ranks.jsx" type="text/jsx"></script>
+    <script src="./assets/components/footer.jsx" type="text/jsx"></script>
 
   </body>
 

@@ -1,6 +1,8 @@
 /* Aloitus */
 
-/* Aloitus End */
+body {
+    background: rgb(40,44,52);
+}
 
 /* Elementticlassit */
 
@@ -8,25 +10,78 @@
     border-color: #fff;
 }
 
+.mbot {
+    margin-bottom: 1.2rem;
+}
+
 #changes .btn-link, .btn-link:hover {
     color: yellow;
 }
 
-/* Elementticlassit End */
+/* Taustat */
+
+.bg-karaui {
+    background: rgb(40,44,52);
+}
+
+.bg-image {
+    background: url("/assets/images/9.png") fixed;
+}
 
 /* Navbar */
 
 .karanav {
-    background-color: #711d22;
+    background-color: rgb(32,35,42);
+    font-family: 'Open Sans', sans-serif !important;
 }
 
-.nav-item:hover {
-    background: -moz-linear-gradient(top, rgba(255,255,255,0) 0%, rgba(58, 4, 5, 1) 100%) !important; /* FF3.6-15 */
-    background: -webkit-linear-gradient(top, rgba(255,255,255,0) 0%,rgba(58, 4, 5, 1) 100%) !important; /* Chrome10-25,Safari5.1-6 */
-    background: linear-gradient(to bottom, rgba(255,255,255,0) 0%,rgba(58, 4, 5, 1) 100%) !important; /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+.nav-link {
+    transition: 0.2s ease-out;
+    -webkit-transition: 0.2s ease-out;
+    -o-transition: 0.2s ease-out;
+    -moz-transition: 0.2s ease-out;
 }
 
-/* Navbar End */
+.nav-link:hover {
+    color: rgb(255,0,0) !important;
+}
+
+.nav-item::after {
+    content:'';
+    display:block;
+    width:0px;
+    height:2px;
+    background:rgb(255,0,0);
+    transition: 0.2s;
+}
+
+.nav-item:hover::after{
+    width:100%;
+}
+
+.nav-link{
+    padding:15px 5px;
+    transition: 0.2s;
+}
+
+/* Dropdown */
+
+.dropdown-menu {
+    background: rgb(32,35,42) !important;
+    text-align: center !important;
+}
+
+.dropdown-menu.collapsing {
+    display: block;
+}
+
+.dropdown-item {
+    align-content: center !important;
+}
+
+.dropdown-item:hover {
+    color: rgb(255,0,0) !important;
+}
 
 /* Jumbotron */
 
@@ -34,18 +89,150 @@
     border-radius: 0rem !important;
 }
 
-/* Jumbotron End */
-
 /* Someikonit */
 
 .someicon {
     transition: transform .2s;
 }
-  
+
   .someicon:hover {
     -ms-transform: scale(1.2); /* IE 9 */
     -webkit-transform: scale(1.2); /* Safari 3-8 */
     transform: scale(1.2);
 }
 
-/* Someikonit End */
+/* Rankkinapit */
+
+.btn-eloton {
+    color: #fff;
+    background-color: #555555;
+    border-color: #555555;
+}
+
+.btn-eloton-outline {
+    color: #fff;
+    background: transparent;
+    border-color: #fff;
+}
+
+.btn-raihnas {
+    color: #fff;
+    background-color: #ff5555;
+    border-color: #ff5555;
+}
+
+.btn-raihnas-outline {
+    color: #ff5555;
+    background: transparent;
+    border-color: #ff5555;
+}
+
+.btn-sisukas {
+    color: #000;
+    background-color: #55ff55;
+    border-color: #55ff55;
+}
+
+.btn-sisukas-outline {
+    color: #55ff55;
+    background: transparent;
+    border-color: #55ff55;
+}
+
+.btn-parantuva {
+    color: #000;
+    background-color: #ffaa00;
+    border-color: #ffaa00;
+}
+
+.btn-parantuva-outline {
+    color: #ffaa00;
+    background: transparent;
+    border-color: #ffaa00;
+}
+
+.btn-immuuni {
+    color: #000;
+    background-color: #55ffff;
+    border-color: #55ffff;
+}
+
+.btn-immuuni-outline {
+    color: #55ffff;
+    background: transparent;
+    border-color: #55ffff;
+}
+
+.btn-parantaja {
+    color: #000;
+    background-color: #ffff55;
+    border-color: #ffff55;
+}
+
+.btn-parantaja-outline {
+    color: #ffff55;
+    background: transparent;
+    border-color: #ffff55;
+}
+
+.btn-nekromantikko {
+  color: #fff;
+  background-color: #AA00AA;
+  border-color: #AA00AA;
+}
+
+.btn-nekromantikko-outline {
+    color: #AA00AA;
+    background: transparent;
+    border-color: #AA00AA;
+  }
+
+.btn-kuolematon {
+  color: #000;
+  background-color: #FF55FF;
+  border-color: #FF55FF;
+}
+
+.btn-kuolematon-outline {
+  color: #FF55FF;
+  background: transparent;
+  border-color: #FF55FF;
+}
+
+.btn {
+    border-radius: 0rem;
+}
+
+.kara-btn:hover {
+    color: rgb(255,0,0);
+    background: transparent;
+    border-color: rgb(255,0,0);
+}
+
+/* Muut napit */
+
+.translation {
+    top: 20px;
+    position: absolute;
+    right: 20px;
+}
+
+/* Sisältö */
+
+.content {
+    font-family: 'Open Sans', sans-serif;
+}
+
+.card {
+    background: rgba(92,92,92,0.9);
+    border-radius: 0;
+}
+
+.footer {
+    background: rgb(40,44,52);
+    color: white;
+}
+
+.text-float-right {
+    float: right;
+}

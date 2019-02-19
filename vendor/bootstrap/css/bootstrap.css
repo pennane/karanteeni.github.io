@@ -2388,54 +2388,6 @@ fieldset:disabled a.btn {
   pointer-events: none;
 }
 
-.btn-eloton {
-    color: #fff;
-    background-color: #555555;
-    border-color: #555555;
-}
-
-.btn-raihnas {
-    color: #fff;
-    background-color: #ff5555;
-    border-color: #ff5555;
-}
-
-.btn-sisukas {
-    color: #000;
-    background-color: #55ff55;
-    border-color: #55ff55;
-}
-
-.btn-parantuva {
-    color: #000;
-    background-color: #ffaa00;
-    border-color: #ffaa00;
-}
-
-.btn-immuuni {
-    color: #000;
-    background-color: #55ffff;
-    border-color: #55ffff;
-}
-
-.btn-parantaja {
-    color: #000;
-    background-color: #ffff55;
-    border-color: #ffff55;
-}
-
-.btn-nekromantikko {
-  color: #fff;
-  background-color: #AA00AA;
-  border-color: #AA00AA;
-}
-
-.btn-kuolematon {
-  color: #000;
-  background-color: #FF55FF;
-  border-color: #FF55FF;
-}
-
 .btn-primary {
   color: #fff;
   background-color: #007bff;
