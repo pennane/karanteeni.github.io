@@ -5,11 +5,17 @@
 
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="">
+    <meta name="description" content="Karanteeni on suomalainen Minecraft palvelin.">
     <meta name="author" content="">
     <link rel="shortcut icon" type="image/png" href="favicon.ico"/>
+    <meta property="og:image" content="https://dev.karanteeni.xyz/assets/images/server-icon.png" />
 
     <title>Karanteeni</title>
+
+    <!-- React -->
+    <script src="modules/React/react.development.js"></script>
+    <script src="modules/React/babel.min.js"></script>
+    <script src="modules/React/react-dom.development.js"></script>
 
     <!-- Bootstrap Js -->
     <script src="vendor/jquery/jquery.min.js"></script>
@@ -25,7 +31,7 @@
     <link rel="stylesheet" href="vendor/css/style_regular.css">
 
     <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=M+PLUS+1p" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
 
@@ -47,95 +53,54 @@
 
   </head>
   <!--  onload="preLoader()" -->
-  <body background="assets/images/9.png">
+  <body>
     <!-- <div id="loader" karainclude-html="assets/includes/preloader.html"></div> -->
 <!-- <div id="wrapper" style="opacity: 0;"> -->
 
     <!-- Navbar -->
-    <nav karainclude-html="assets/includes/navbar.html" class="navbar navbar-expand-lg navbar-dark karanav fixed-top"></nav><br><br>
+    <div id="nav"></div>
 
     <!-- Sisältö -->
-    <div class="container-fluid text-white">
-        <div class="row">
-            <div class="col-lg-3 text-center" style="margin-bottom: 1.2em;">
-                <div id="statusbor" class="card bg-dark-transparent">
-                    <h5 class="card-header" style="background-color: darkgrey;" id="ip">Palvelinta ei ole määritetty.</h5>
-                    <div id="server" class="card-body" style="padding-bottom: 0.5rem !important;">
-                        <img src="https://vignette.wikia.nocookie.net/diepio/images/5/57/Pepe.png/revision/latest?cb=20161005095219" width="252" height="240">
-                    </div>
-                    <div id="status" class="card-footer">
-                        <span class="card-text" id="online">Rajapinta on rikki, ongelma korjataan pian.</span>
-                    </div>
-                    <!-- <p class="mb-0">IP: <span id="ip"></span><br>
-                        Pelaajia paikalla: <span id="online"></span><br>
-                        Palvelimen status: <span id="status"></span>
-                    </p> -->
-                </div>
-                <div class="card card-body bg-dark-transparent" style="margin-top: 1.2em; font-size: 40px; padding: 0rem; border-radius: 0rem !important;">
-                        <!-- <ul class="list-unstyled" style="display: inline-block">
-                            <li>
-                                <a href="https://discord.gg/rhgYZNs" target="_blank" style="color: #7289DA"><i class="fab fa-discord"></i></a>
-                            </li>
-                            <li>
-                                <a href="https://twitter.com/Karanteeni" target="_blank" style="color: #00C6FF"><i class="fab fa-twitter-square"></i></a>
-                            </li>
-                            <li>
-                                <a href="https://www.youtube.com/channel/UC0E-bE8csGh0jnFW6i9Unsw" target="_blank" style="color: #FF0000"><i class="fab fa-youtube-square"></i></a>
-                            </li>
-                        </ul> -->
-                        <div style="display: inline-block;">
-                            <a href="https://discord.gg/rhgYZNs" target="_blank" style="color: #7289DA; font-size: 70px; width: 50px; text-align: center;"><i class="fab fa-discord someicon"></i></a>
-                            <a href="https://twitter.com/Karanteeni" target="_blank" style="color: #00C6FF; padding: 20px; font-size: 70px; width: 50px; text-align: center;"><i class="fab fa-twitter-square someicon"></i></a>
-                            <a href="https://www.youtube.com/channel/UC0E-bE8csGh0jnFW6i9Unsw" target="_blank" style="color: #FF0000; font-size: 70px; width: 50px; text-align: center;"><i class="fab fa-youtube-square someicon"></i></a>
-                        </div>
-                        
-                </div>
-            </div>
-            <div class="col-lg-6 text-center">
-                <div class="card card-body bg-dark-transparent" style="margin-bottom: 1.2em; font-family: 'Source Sans Pro' !important; border-radius: 0rem !important;">
-                    <h1 class="mt-5">Karanteeni</h1>
-                    <p style="margin-bottom: 1.2em;" class="lead">Serveri, joka vangitsee sinut!</p>
-                    <blockquote style="margin-bottom: 1.2em;" title="#vainylläpitojutut" class="blockquote text-dark border border-danger">
-                    <p id="lainaus"></p>
-                    <footer class="blockquote-footer"><cite id="by"></cite></footer>
-                    </blockquote>
-                    <p>
-                        Hei sinä, joka et käytä Discordia! Meillä on olemassa muutosloki myös sinulle, jotta et missaisi palvelimen tärkeitä päivityksiä! <br><br>
-                        <a style="margin-top: 1.2em;" class="btn btn-dark" role="button" href="muutokset">Muutoksiin &nbsp;<i class="fas fa-arrow-right"></i></a>
-                    </p>
+    <div class="jumbotron bg-karaui">
+        <div class="container text-white text-center">
+            <h1 class="display-4"><b>Karanteeni</b></h1>
+            <p class="lead">
+                Serveri, joka vangitsee sinut!
+            </p>
+            <blockquote style="margin-bottom: 1.2em;" title="#vainylläpitojutut" class="blockquote text-dark border border-danger">
+                <p id="lainaus"></p>
+                <footer class="blockquote-footer"><cite id="by"></cite></footer>
+            </blockquote>
+            <p>Sivustomme kattaa palvelimen muutoslokin.</p>
+            <div id="changelog_button"></div>
+        </div>
+    </div>
+    <div class="container-fluid bg-image">
+        <div class="container pt-3 pb-3">
+            <div class="card card-body text-white content">
+                <h1 id="title">Karanteeni UI</h1>
+                <div id="content">
+                 <p>Karanteeni UI:ksi nimetty käyttöliittymä Karan verkkosivuille on saapunut. Päivitys poistaa valitettavasti palvelimen statuskyselyn
+                  tiettyjen ongelmien vuoksi. Edellisten verkkosivujen väritys oli liian kirkas, eikä sopinut yksi yhteen, tummat teemat ovat suosiossa, sekä
+                  joidenkin mielipidekyselyiden vuoksi päädyimme luomaan tumman ulkoasun. Parannuksia, kuten ennenkin, saa ehdottaa.</p>
+                  <p>
+                    Ulkoasu tulee pysymään tällaisena vielä pitkään, vaikka tekninen toteutus muuttuisikin erilaiseksi. Meillä on toistaiseksi myös
+                    muita suunnitelmia sivujen osalle, jotka tulevat voimaan vasta myöhemmin.
+                  </p>
                 </div>
             </div>
         </div>
-            <!-- Ilmoitukset
-              <div class="card">
-                  <div class="card-header" style="background-color: #711d22;">
-                      <button class="btn btn-link" style="color: white; text-decoration: none;" type="button" data-toggle="collapse" data-target="#collapse1" aria-expanded="true" aria-controls="collapse1">
-                          Ilmoituksen otsikko
-                      </button>
-                  </div>
-                  <div id="collapse1" class="collapse show">
-                      <div class="card-body" style="background-color: #ff0; color: #000;">
-                          Tämä on testi-ilmoitus. En tiedä näyttääkö se hyvältä tietokoneella tai mobiililaitteella, mutta se ei minua kiinnosta. Haluan nähdä miltä se näyttää.
-                      </div>
-                  </div>
-              </div><br><br>
-              <div class="card">
-                  <div class="card-header" style="background-color: #711d22;">
-                      <button class="btn btn-link" style="color: white; text-decoration: none;" type="button" data-toggle="collapse" data-target="#collapse2" aria-expanded="true" aria-controls="collapse2">
-                          Ilmoitusnumero kaksi
-                      </button>
-                  </div>
-                  <div id="collapse2" class="collapse">
-                      <div class="card-body" style="background-color: #ff0; color: #000;">
-                          Toinen ilmoitus, jonka tosin saa auki klikkaamalla.
-                      </div>
-                  </div>
-              </div> -->
     </div>
+    <footer id="footer" class="footer"></footer>
+
     <script src="modules/Jutut/jutut.js"></script>
-    <script>includeHTML();</script>
     <script src="modules/CopyIP/copy.js" type="application/javascript"></script>
-    <script src="modules/ServerStatus/server-status.js"></script>
+    <!-- <script src="modules/ServerStatus/server-status.js"></script> -->
+
+    <!-- Components -->
+    <script src="./assets/components/navbar.jsx" type="text/jsx"></script>
+    <script src="./assets/components/changelog_button.jsx" type="text/jsx"></script>
+    <script src="./assets/components/footer.jsx" type="text/jsx"></script>
   </body>
 
 </html>
