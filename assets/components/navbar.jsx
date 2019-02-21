@@ -14,8 +14,17 @@ class Navbar extends React.Component {
                         <a className="nav-link" href="index"><i className="fas fa-home"></i>&nbsp;&nbsp;Etusivu
                         </a>
                         </li>
-                        <li className="nav-item">
-                            <a href="yleistietoa" className="nav-link"><i className="fas fa-info"></i>&nbsp;&nbsp;Yleistietoa</a>
+                        <li className="nav-item dropdown">
+                        <a className="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-target="#rc" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <i className="fas fa-info"></i>&nbsp;&nbsp;Yleistietoa
+                        </a>
+                            <div className="dropdown-menu collapse" aria-labelledby="navbarDropdown">
+                            <h6 className="dropdown-header">Yleistietoa</h6>
+                            <a className="dropdown-item" href="yleistietoa"><i className="fas fa-info"></i>&nbsp;&nbsp;Yleistietoa</a>
+                            <a className="dropdown-item" href="recipes"><i className="fas fa-hammer"></i>&nbsp;&nbsp;Custom Recipet</a>
+                            <div className="dropdown-divider"></div>
+                            <a href="hoks" className="dropdown-item"><i className="fas fa-thumbs-up"></i>&nbsp;&nbsp;Hyvä tietää!</a>
+                            </div>
                         </li>
                         <li className="nav-item dropdown">
                         <a className="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-target="#dd" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -25,8 +34,6 @@ class Navbar extends React.Component {
                             <h6 className="dropdown-header">Säännöt</h6>
                             <a className="dropdown-item" href="saannot"><i className="fas fa-cross"></i>&nbsp;&nbsp;Survivalin säännöt</a>
                             <a className="dropdown-item" href="chat-saannot"><i className="fas fa-comments"></i>&nbsp;&nbsp;Chat-säännöt</a>
-                            <div className="dropdown-divider"></div>
-                            <a href="hoks" className="dropdown-item"><i className="fas fa-thumbs-up"></i>&nbsp;&nbsp;Hyvä tietää!</a>
                             </div>
                         </li>
                         <li className="nav-item">

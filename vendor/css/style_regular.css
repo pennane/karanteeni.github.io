@@ -236,3 +236,8 @@ body {
 .text-float-right {
     float: right;
 }
+
+/* Figure */
+.figure-caption {
+    color: white !important;
+}
