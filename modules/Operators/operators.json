@@ -24,7 +24,7 @@
         },
         {
             "nimi": "Naxray",
-            "kuvaus": "Semi-kokenut ylläpitäjä ja web-kehittäjä vuodesta 2015.",
+            "kuvaus": "Karanteenin toinen tekninen säätäjä, sekä ylläpitäjä.",
             "uuid": "05c0c0ead62240d4b8a20d4ec986c039"
         },
         {
@@ -36,11 +36,6 @@
             "nimi": "Ougii_Lewe",
             "kuvaus": "Entinen rakentaja, nykyinen admin. Pelannut Minecraftia jo vuodesta 2010!",
             "uuid": "5cab2b2a16dc410491ff40fa6920d01d"
-        },
-        {
-            "nimi": "aam05",
-            "kuvaus": "Tämä kuvaus on joko hukassa, kateissa tai kanissa.",
-            "uuid": "14491b11b57d4a4c84621387ff2b9c31"
         }
     ],
     "rakentajat": [
@@ -53,11 +48,6 @@
             "nimi": "Asheline",
             "kuvaus": "Gauriksen apulainen, pelannut Minecraftia vuodesta 2011.",
             "uuid": "ca5f9868d9bc4a02b63d5fa2e48a8326"
-        },
-        {
-            "nimi": "Phanteh",
-            "kuvaus": "Modernin taiteen rakentaja. Käski keksiä jännän kuvauksen.",
-            "uuid": "5e7bc86309d447bd8bf8a8b0d0713b5c"
         }
     ]
 }
