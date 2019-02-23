@@ -105,6 +105,7 @@ class Ranks extends React.Component {
                   <ul>
                       <li>/kit Parantaja (korvaa /kit Immuuni)</li>
                       <li>/sethome (16 kappaletta)</li>
+                      <li><b><span data-toggle="tooltip" data-placement="right" title="Secret thing">AntiXray*</span></b></li>
                       <li>/jail</li>
                       <li>/kick</li>
                       <li>/mute</li>
