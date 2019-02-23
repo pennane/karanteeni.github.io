@@ -3,8 +3,8 @@
 class Footer extends React.Component {
     render() {
         return (
-            <div class="container">
-                &copy; Karanteeni 2019 <span class="text-float-right">Karanteeni UI</span>
+            <div className="container">
+                &copy; Karanteeni 2019 <span className="text-float-right">Karanteeni UI</span>
             </div>
         )
     }
