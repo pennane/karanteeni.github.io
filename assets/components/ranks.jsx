@@ -23,6 +23,7 @@ class Ranks extends React.Component {
                       <li>/+oikeudet nimi (lisää oikeudet pelaajalle palikkaan, /-oikeudet taasen poistaa oikeudet)</li>
                       <li>/peliaika (/pa, /ar)</li>
                       <li>/pennipeli (myös /lotto)</li>
+                      <li>/realname</li>
                       <li>/recipe</li>
                       <li>/reply</li>
                       <li>/report</li>
@@ -46,7 +47,7 @@ class Ranks extends React.Component {
                   <ul>
                       <li>/kit Raihnas</li>
                       <li>/hat</li>
-                      <li>/sethome (2 kappaletta)</li>
+                      <li>/sethome</li>
                       <li>/compass</li>
                       <li>/workbench</li>
                   </ul><br/>
@@ -56,7 +57,7 @@ class Ranks extends React.Component {
                 <div className="card card-body">
                   <p>Sisukas on kolmas rankki, jonka saat pelattuasi palvelimella yhteensä yhden päivän (1d). Kuten aikaisemmin, Sisukkaalla on Raihnaan oikeudet, sekä seuraavat oikeudet: </p><br/><br/>
                   <ul>
-                      <li>/kit Sisukas (korvaa /kit Raihnas)</li>
+                      <li>/kit Sisukas</li>
                       <li>/sethome (6 kappaletta)</li>
                       <li>/enderchest</li>
                       <li><b><span data-toggle="tooltip" data-placement="right" title="Taikamatto, 5x5 kokoinen lasimatto allasi, jolla voit leijua ilmassa, sekä lentää.">/mc*</span></b></li>
@@ -71,7 +72,7 @@ class Ranks extends React.Component {
                 <div className="card card-body">
                 <p>Parantuva on neljäs rankki, jonka saat pelattuasi palvelimella yhteensä viisi päivää (5d). Parantuvalla on seuraavat lisäoikeudet:</p> <br/><br/>
                   <ul>
-                      <li>/kit Parantuva (korvaa /kit Sisukas)</li>
+                      <li>/kit Parantuva</li>
                       <li>/sethome (8 kappaletta)</li>
                       <li>/jump</li>
                       <li>/mc tools</li>
@@ -87,8 +88,7 @@ class Ranks extends React.Component {
                 <div className="card card-body">
                   <p>Immuuni on viides rankki, jonka saat pelattuasi palvelimella yhteensä kymmenen päivää (10d). Immuunilla on seuraavat lisäoikeudet:</p> <br/><br/>
                   <ul>
-                      <li>/kit Immuuni (korvaa /kit Parantuva)</li>
-                      <li>/day</li>
+                      <li>/kit Immuuni</li>
                       <li>/sethome (12 kappaletta)</li>
                       <li>/fly</li>
                       <li><b><span data-toggle="tooltip" data-placement="right" title="Nimeää kädessäsi olevan tavaran. (Voi käyttää värejä)">/nimeä*</span></b></li>
@@ -103,9 +103,9 @@ class Ranks extends React.Component {
                 <div className="card card-body" >
                   <p>Parantajan saat pelattuasi palvelimella yhteensä 30 päivää (30d). Parantajilla on seuraavat lisäoikeudet:</p> <br/><br/>
                   <ul>
-                      <li>/kit Parantaja (korvaa /kit Immuuni)</li>
+                      <li>/kit Parantaja</li>
                       <li>/sethome (16 kappaletta)</li>
-                      <li><b><span data-toggle="tooltip" data-placement="right" title="Secret thing">AntiXray*</span></b></li>
+                      <li><b><span data-toggle="tooltip" data-placement="right" title="* SALAISTA TIETOA *">AntiXray*</span></b></li>
                       <li>/jail</li>
                       <li>/kick</li>
                       <li>/mute</li>
@@ -117,7 +117,7 @@ class Ranks extends React.Component {
                   <p>Nekromantikkoon vaaditaan 60 päivän (60d) peliaika. Nekromantikolla on seuraavat lisäoikeudet:</p> <br/><br/>
                   <ul>
                     <li><span data-toggle="tooltip" data-placement="right" title="Laittaa blokkien tarkastelun päälle, jolla näkee kaikki sen blokin tiedot."><b>/co i*</b></span></li>
-                    <li>/kit Nekromantikko (korvaa /kit Parantaja)</li>
+                    <li>/kit Nekromantikko</li>
                     <li>/sethome (18 kappaletta)</li>
                     <li><b><span data-toggle="tooltip" data-placement="right" title="Magenta ja punainen">Kaksi uutta väriä taikamattoon (mc)*</span></b></li>
                   </ul><br/>
@@ -126,7 +126,7 @@ class Ranks extends React.Component {
                 <div className="card card-body">
                   <p>Jotta sinulle voidaan myöntää viimeinen pelaaja-arvo ja täten tunnustaa Kuolemattomaksi, peliaikasi täytyy olla 100 päivää (100d). Kuolemattomilla on seuraavat lisäoikeudet: </p><br/><br/>
                   <ul>
-                    <li>/kit Kuolematon (korvaa /kit Nekromantikko)</li>
+                    <li>/kit Kuolematon</li>
                     <li><b><span data-toggle="tooltip" data-placement="right" title="Pinkki, syaani, purppura, oranssi, vihreä ja vaalean sininen">Kuusi uutta väriä taikamattoon (mc)*</span></b></li>
                   </ul>
                 </div>
