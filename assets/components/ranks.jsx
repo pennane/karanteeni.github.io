@@ -39,57 +39,25 @@ class RankButtons extends React.Component {
 function Ranks(props) {
   return (
     <div>
+      <Eloton rank={props.rank} />
+      <Raihnas rank={props.rank} />
+      <Sisukas rank={props.rank} />
+      <Parantuva rank={props.rank} />
+      <Immuuni rank={props.rank} />
+      <Parantaja rank={props.rank} />
+      <Nekromantikko rank={props.rank} />    
+      <Kuolematon rank={props.name} />
+    </div>
+  );
+}
+
+function Eloton(props) {
+  return (
     <div className="collapse text-left mbot" id="reloton">
-        <div className="card card-body">
-          Eloton on aloitusrankki, jonka saat heti palvelimelle liittyessäsi. Elottomalla on seuraavat oikeudet: <br/><br/>
-          <ElotonCmd cmd={props.cmd} />
-        </div>
-        </div>
-    <div className="collapse text-left mbot" id="rraihnas">
-        <div className="card card-body">
-          <p>Raihnas on toinen rankki, jonka saat pelattuasi palvelimella yhteensä viisi tuntia (5h). Raihnaalla, tietystikin on Elottoman oikeudet, sekä seuraavat oikeudet: </p><br/><br/>
-          <RaihnasCmd cmd={props.cmd} />
-          </div>
-    </div>
-       <div className="collapse text-left mbot" id="rsisukas">
-        <div className="card card-body">
-          <p>Sisukas on kolmas rankki, jonka saat pelattuasi palvelimella yhteensä yhden päivän (1d). Kuten aikaisemmin, Sisukkaalla on Raihnaan oikeudet, sekä seuraavat oikeudet: </p><br/><br/>
-          <SisukasCmd cmd={props.cmd} />
-          <br/>
-        </div>
-        </div>
-       <div className="collapse text-left mbot" id="rparantuva">
-        <div className="card card-body">
-        <p>Parantuva on neljäs rankki, jonka saat pelattuasi palvelimella yhteensä viisi päivää (5d). Parantuvalla on seuraavat lisäoikeudet:</p> <br/><br/>
-        <ParantuvaCmd cmd={props.cmd} />
-          <br/>
-          </div>
-          </div>
-       <div className="collapse text-left mbot" id="rimmuuni">
-        <div className="card card-body">
-          <p>Immuuni on viides rankki, jonka saat pelattuasi palvelimella yhteensä kymmenen päivää (10d). Immuunilla on seuraavat lisäoikeudet:</p> <br/><br/>
-          <ImmuuniCmd cmd={props.cmd} />
-          <br/>
-          </div>
-          </div>
-       <div className="collapse text-left mbot" id="rparantaja" >
-        <div className="card card-body" >
-          <p>Parantajan saat pelattuasi palvelimella yhteensä 30 päivää (30d). Parantajilla on seuraavat lisäoikeudet:</p> <br/><br/>
-          <ParantajaCmd cmd={props.cmd} />
-          <br/>
-          </div></div>
-       <div className="collapse text-left mbot" id="rnekromantikko">
-        <div className="card card-body">
-          <p>Nekromantikkoon vaaditaan 60 päivän (60d) peliaika. Nekromantikolla on seuraavat lisäoikeudet:</p> <br/><br/>
-          <NekroCmd cmd={props.cmd} />
-          <br/>
-          </div></div>
-       <div className="collapse text-left mbot" id="rkuolematon">
-        <div className="card card-body">
-          <p>Jotta sinulle voidaan myöntää viimeinen pelaaja-arvo ja täten tunnustaa Kuolemattomaksi, peliaikasi täytyy olla 100 päivää (100d). Kuolemattomilla on seuraavat lisäoikeudet: </p><br/><br/>
-          <KuoliCmd cmd={props.cmd} />
-        </div>
-    </div>
+      <div className="card card-body">
+        Eloton on aloitusrankki, jonka saat heti palvelimelle liittyessäsi. Elottomalla on seuraavat oikeudet: <br/><br/>
+        <ElotonCmd cmd={props.cmd} />
+      </div>
     </div>
   );
 }
@@ -131,6 +99,17 @@ function ElotonCmd(props) {
   );
 }
 
+function Raihnas(props) {
+  return (
+    <div className="collapse text-left mbot" id="rraihnas">
+      <div className="card card-body">
+        <p>Raihnas on toinen rankki, jonka saat pelattuasi palvelimella yhteensä viisi tuntia (5h). Raihnaalla, tietystikin on Elottoman oikeudet, sekä seuraavat oikeudet: </p><br/><br/>
+        <RaihnasCmd cmd={props.cmd} />
+      </div>
+    </div>
+  );
+}
+
 function RaihnasCmd(props) {
   return (
     <ul>
@@ -140,6 +119,18 @@ function RaihnasCmd(props) {
       <li>/compass</li>
       <li>/workbench</li>
     </ul>
+  );
+}
+
+function Sisukas(props) {
+  return (
+    <div className="collapse text-left mbot" id="rsisukas">
+      <div className="card card-body">
+        <p>Sisukas on kolmas rankki, jonka saat pelattuasi palvelimella yhteensä yhden päivän (1d). Kuten aikaisemmin, Sisukkaalla on Raihnaan oikeudet, sekä seuraavat oikeudet: </p><br/><br/>
+        <SisukasCmd cmd={props.cmd} />
+        <br/>
+      </div>
+    </div>
   );
 }
 
@@ -158,6 +149,18 @@ function SisukasCmd(props) {
   );
 }
 
+function Parantuva(props) {
+  return (
+    <div className="collapse text-left mbot" id="rparantuva">
+      <div className="card card-body">
+        <p>Parantuva on neljäs rankki, jonka saat pelattuasi palvelimella yhteensä viisi päivää (5d). Parantuvalla on seuraavat lisäoikeudet:</p> <br/><br/>
+        <ParantuvaCmd cmd={props.cmd} />
+        <br/>
+      </div>
+    </div>
+  );
+}
+
 function ParantuvaCmd(props) {
   return (
     <ul>
@@ -170,6 +173,18 @@ function ParantuvaCmd(props) {
       <li><b><span data-toggle="tooltip" data-placement="right" title="Voit aloittaa äänestyksen pelaajan hiljentämistä (20min) tai pelaajan potkimista varten.">/rankaise votemute /rankaise votekick*</span></b></li>
       <li>Voit hakata Spawnereita ilman Silk Touch -hakkua <b>(huom. Tarvitset silti hakun!)</b>, sekä kirjoittaa kyltteihin väreillä.</li>              <li><b><span data-toggle="tooltip" data-placement="right" title="Valkoinen, harmaa ja sininen">Kolme uutta väriä taikamattoon (mc)*</span></b></li>
     </ul>
+  );
+}
+
+function Immuuni(props) {
+  return (
+    <div className="collapse text-left mbot" id="rimmuuni">
+      <div className="card card-body">
+        <p>Immuuni on viides rankki, jonka saat pelattuasi palvelimella yhteensä kymmenen päivää (10d). Immuunilla on seuraavat lisäoikeudet:</p> <br/><br/>
+        <ImmuuniCmd cmd={props.cmd} />
+        <br/>
+      </div>
+    </div>
   );
 }
 
@@ -188,6 +203,18 @@ function ImmuuniCmd(props) {
   );
 }
 
+function Parantaja(props) {
+  return (
+    <div className="collapse text-left mbot" id="rparantaja" >
+      <div className="card card-body" >
+        <p>Parantajan saat pelattuasi palvelimella yhteensä 30 päivää (30d). Parantajilla on seuraavat lisäoikeudet:</p> <br/><br/>
+        <ParantajaCmd cmd={props.cmd} />
+        <br/>
+      </div>
+    </div>
+  );
+}
+
 function ParantajaCmd(props) {
   return (
     <ul>
@@ -202,6 +229,18 @@ function ParantajaCmd(props) {
   );
 }
 
+function Nekromantikko(props) {
+  return (
+    <div className="collapse text-left mbot" id="rnekromantikko">
+      <div className="card card-body">
+        <p>Nekromantikkoon vaaditaan 60 päivän (60d) peliaika. Nekromantikolla on seuraavat lisäoikeudet:</p> <br/><br/>
+        <NekroCmd cmd={props.cmd} />
+        <br/>
+      </div>
+    </div>
+  );
+}
+
 function NekroCmd(props) {
   return (
     <ul>
@@ -210,6 +249,17 @@ function NekroCmd(props) {
       <li>/sethome (18 kappaletta)</li>
       <li><b><span data-toggle="tooltip" data-placement="right" title="Magenta ja punainen">Kaksi uutta väriä taikamattoon (mc)*</span></b></li>
     </ul>
+  );
+}
+
+function Kuolematon(props) {
+  return (
+    <div className="collapse text-left mbot" id="rkuolematon">
+      <div className="card card-body">
+        <p>Jotta sinulle voidaan myöntää viimeinen pelaaja-arvo ja täten tunnustaa Kuolemattomaksi, peliaikasi täytyy olla 100 päivää (100d). Kuolemattomilla on seuraavat lisäoikeudet: </p><br/><br/>
+        <KuoliCmd cmd={props.cmd} />
+      </div>
+    </div>
   );
 }
 
