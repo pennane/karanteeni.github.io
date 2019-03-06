@@ -5,9 +5,10 @@
 
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="">
+    <meta name="description" content="Custom recipet">
     <meta name="author" content="">
     <link rel="shortcut icon" type="image/png" href="favicon.ico"/>
+    <meta property="og:image" content="https://dev.karanteeni.xyz/assets/images/server-icon.png" />
 
     <title>Karanteeni</title>
 
@@ -57,65 +58,12 @@
     <div id="nav"></div> <br><br>
 
     <!-- Sisältö -->
-    <div class="container text-white">
-        <div class="col-lg-12 text-center">
-          <div class="card card-body bg-dark-transparent" style="margin-bottom: 1.2em; font-family: 'Source Sans Pro' !important;">
-              <h1 class="mt-5">Custom Reseptit</h1>
-              <p class="lead">Karanteenilla on omia reseptejä, wohoo.</p>
-              <figure class="figure mb-5">
-                <img src="assets/images/recipes/chainmail_armor.png" alt="" class="img-fluid">
-                <figcaption class="figure-caption">
-                  Chainmail Armorit rakennetaan iron bareista samalla tavalla kuin normaalit armorit. Tarvittava raaka-aine on iron bar.
-                </figcaption>
-              </figure>
-              <figure class="figure mb-5">
-                <img src="assets/images/recipes/fire_coral.png" alt="" class="img-fluid">
-                <figcaption class="figure-caption">
-                  Coral faneja voi muuttaa Coraleiksi.
-                </figcaption>
-              </figure>
-              <figure class="figure mb-5">
-                <img src="assets/images/recipes/plank.png" alt="" class="img-fluid">
-                <figcaption class="figure-caption">
-                  Laittamalla kaksi slabia päällekkäin mistä tahansa puumateriaalista tekee siitä kokonaisen plankin.
-                </figcaption>
-              </figure>
-              <figure class="figure mb-5">
-                <img src="assets/images/recipes/player_head.png" alt="" class="img-fluid">
-                <figcaption class="figure-caption">
-                  Voit tehdä pelaajan pään. :) Raaka-aineina Bone block, Emerald, Diamond, Golden Apple ja Rotten flesh.
-                </figcaption>
-              </figure>
-              <figure class="figure mb-5">
-                <img src="assets/images/recipes/skeleton_head.png" alt="" class="img-fluid">
-                <figcaption class="figure-caption">
-                  Voit tehdä myös Skeletonin pään. Raaka-aineina Golden Apple, Bone ja Bone block.
-                </figcaption>
-              </figure>
-              <figure class="figure mb-5">
-                <img src="assets/images/recipes/zombie_head.png" alt="" class="img-fluid">
-                <figcaption class="figure-caption">
-                  Ja Zombien pään. Raaka-aineina Golden Apple, Bone block ja Rotten flesh. :o
-                </figcaption>
-              </figure>
-              <figure class="figure mb-5">
-                <img src="assets/images/recipes/smelt_gravel.png" alt="" class="img-fluid">
-                <figcaption class="figure-caption">
-                  Voit sulattaa stonea graveliksi.
-                </figcaption>
-              </figure>
-              <figure class="figure mb-5">
-                <img src="assets/images/recipes/smelt_sand.png" alt="" class="img-fluid">
-                <figcaption class="figure-caption">
-                  Ja gravelia hiekaksi, mahdollistaen lasin tekemisen stonesta. :)
-                </figcaption>
-              </figure>
-          </div>
-        </div>
-    </div>
+    <div id="recipes" class="container text-white"></div>
+
     <footer id="footer" class="footer"></footer>
     <!-- Compnents -->
     <script src="./assets/components/navbar.jsx" type="text/jsx"></script>
+    <script src="./assets/components/recipes.jsx" type="text/jsx"></script>
     <script src="./assets/components/footer.jsx" type="text/jsx"></script>
 
   </body>
