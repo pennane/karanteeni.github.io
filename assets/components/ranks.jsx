@@ -46,7 +46,7 @@ function Ranks(props) {
       <Immuuni rank={props.rank} />
       <Parantaja rank={props.rank} />
       <Nekromantikko rank={props.rank} />    
-      <Kuolematon rank={props.name} />
+      <Kuolematon rank={props.rank} />
     </div>
   );
 }
@@ -115,7 +115,7 @@ function RaihnasCmd(props) {
     <ul>
       <li>/kit Raihnas</li>
       <li>/hat</li>
-      <li>/sethome</li>
+      <li>/sethome (2 kappaletta)</li>
       <li>/compass</li>
       <li>/workbench</li>
     </ul>
