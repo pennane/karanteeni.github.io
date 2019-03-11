@@ -99,6 +99,7 @@ class Navbar extends React.Component {
                             
                             <DropDownCollapseMenu title="Ylläpito" labelClassName="fas fa-users">
                                 <DropDownItem icon="fas fa-users" url="yllapito" title="Ylläpito" />
+                                <DropDownItem icon="fas fa-file-alt" url="yphaku" title="Hae ylläpitoon!" />
                             </DropDownCollapseMenu>
 
                             <NavLink icon="fas fa-globe-africa" url="maailmat" title="Maailmat" />
