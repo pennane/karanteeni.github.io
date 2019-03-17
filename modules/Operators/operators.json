@@ -38,6 +38,18 @@
             "uuid": "5cab2b2a16dc410491ff40fa6920d01d"
         }
     ],
+    "operaattorit": [
+        {
+            
+        }
+    ],
+    "moderaattorit": [
+        {
+            "nimi": "joppeownaaja",
+            "kuvaus": "Karanteenin ensimmäinen moderaattori :)",
+            "uuid": "534a19d0566248f8aa9d06f6d1732e04"
+        }
+    ],
     "rakentajat": [
         {
             "nimi": "PreGauris",
