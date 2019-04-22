@@ -11,7 +11,7 @@ class Month extends React.Component {
     }
     render() {
         return (
-            <div className='card border-gold'>
+            <div className='card bg-transparent border-gold'>
                 <div class='card-header' id={this.props.month + '_1'}>
                     <h5 class='mb-0'>
                         <button className='btn btn-link' type='button' data-toggle='collapse' data-target={'#' + this.props.month} aria-expanded='false' aria-controls={this.props.month}>
@@ -93,8 +93,41 @@ class ChangeLog extends React.Component {
     render() {
         return (
             <div className='accordion text-left'>
+                <Month month='huhtikuu2019' btntext='Huhtikuu 2019'>
+                    <Changebody month='huhtikuu2019' showing>
+                        <ChangeDate date='21.04.2019'/>
+                        <ul>
+                            <Changelist change='/rankit näyttää myös prefixit'/>
+                            <Changelist change='Korjattu tabin IP-osoite'/>
+                            <Changelist change='Fixattu ylläpitotyötä haittaavia asioita'/>
+                        </ul>
+                        <ChangeDate date='18.04.2019'/>
+                        <ul>
+                            <Changelist change='Succ enchant ei enää kadota tavaroita, jos invi on täynnä.'/>
+                            <Changelist change='Edellä mainittu enchant ei myöskään ime tavaroitasi inviin, kun hajotat container blockin (chest, shulker box jne.) ja koska yllämainittu muutos on tapahtunut, et voi myöskään kadottaa niitä enää.'/>
+                            <Changelist change='Lisätty /rules komento, joka antaa sääntökirjan inviin (tai pudottaa maahan mikäli täynnä) ja antaa sinulle suoran linkin, jonne voit mennä lukemaan'/>
+                        </ul>
+                    </Changebody>
+                </Month>
                 <Month month='maaliskuu2019' btntext='Maaliskuu 2019'>
-                    <Changebody month='maaliskuu2019' showing>
+                    <Changebody month='maaliskuu2019' showing={false}>
+                        <ChangeDate date='29.03.2019'/>
+                        <ul>
+                            <Changelist change='Varoituslistan lopussa näkyy nyt teksti muistutuksena, että voitte kysyä lisätietoa ylläpidolta'/>
+                            <Changelist change='Lisätty lisätietoihin merkintä maailmasta ja koordinaateista missä se on annettu (vältetään tuplavaroituksia)'/>
+                            <Changelist change='Korjattu asioita Mod / Op (ja lisää vielä varmasti korjataankin)'/>
+                            <Changelist change='Väärä viesti ylläpidon potkimisesta korjattu'/>
+                        </ul>
+                        <ChangeDate date='24.03.2019'/>
+                        <ul>
+                            <Changelist change='Pelaajan liittyessä palvelimelle, palvelin ilmoittaa varoitusten lukumäärästä, jos niitä on'/>
+                            <Changelist change='Pelaajan saadessa varoitus, pelaaja potkitaan jälleen palvelimelta varoituksen syyllä. Kolmannesta varoituksesta viikon automaattinen porttikielto varoitusrajan täyttymisestä'/>
+                            <Changelist change='Moderaattoreita ja Operaattoreita ei voida enää hiljentää'/>
+                            <Changelist change='Ylläpitoa yleisesti ei voida enää potkia (antaa vielä väärän viestin, korjataan tulevaisuudessa)'/>
+                            <Changelist change='Moderaattorit ja Operaattorit näkevät nyt kun joku potkitaan, hiljennetään, tai jotakuta varoitetaan'/>
+                            <Changelist change='Salainen tieto ei näy, mikäli ylläpito on "afk" :-D'/>
+                            <Changelist change='Asetettu punaisen näytön oletusarvo epätodeksi kun uusi pelaaja liittyy serverille.'/>
+                        </ul>
                         <ChangeDate date='20.03.2019'/>
                         <ul>
                             <Changelist change={['PvP-maailmassa ei ', 
@@ -113,7 +146,7 @@ class ChangeLog extends React.Component {
                        <ChangeDate date='16.03.2019'/>
                        <ul>
                            <Changelist change='Lisätty /yphaku komento'/>
-                           <Changelist change='Korjattu automaattibannien ban iterointi'/>
+                           <Changelist change='Korjattu automaattibannien iterointi jokaisen itemin kohdalla'/>
                        </ul>
                        <ChangeDate date='10.03.2019'/>
                        <ul>
@@ -195,6 +228,11 @@ class ChangeLog extends React.Component {
                             <Changelist change='Rtp teleporttaa nyt myös negatiivisille koordinaateille'/>
                             <Changelist change='Kyltti lisätty sallittuihin blokkeihin hissin kanssa'/>
                         </ul>
+                    </Changebody>
+                </Month>
+                <Month month='marraskuu2018' btntext='Marraskuu 2018'>
+                    <Changebody month='marraskuu2018' showing={false}>
+                        <ChangeDate date='Vuoden pimein kuukausi on näyttäytynyt.'/>
                     </Changebody>
                 </Month>
                 <Month month='lokakuu2018' btntext='Lokakuu 2018'>
