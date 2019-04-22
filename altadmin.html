@@ -5,10 +5,9 @@
 
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="Custom recipet">
+    <meta name="description" content="">
     <meta name="author" content="">
     <link rel="shortcut icon" type="image/png" href="favicon.ico"/>
-    <meta property="og:image" content="https://dev.karanteeni.xyz/assets/images/server-icon.png" />
 
     <title>Karanteeni</title>
 
@@ -20,14 +19,8 @@
     <!-- Custom Js / APIs -->
     <script src="modules/Include/include.js"></script>
 
-    <!-- React -->
-    <script src="modules/React/react.production.min.js"></script>
-    <script src="modules/React/babel.min.js"></script>
-    <script src="modules/React/react-dom.production.min.js"></script>
-
     <!-- Bootstrap CSS -->
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="vendor/css/style_minecraft.css">
 
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
@@ -35,8 +28,8 @@
     <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
 
     <!-- FontAwesome Icons -->
-    <link rel="stylesheet" href="vendor/FontAwesome/all.min.css">
-    
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
+
     <!-- Custom -->
     <style>
       body {
@@ -55,17 +48,26 @@
   <body background="assets/images/9.png">
 
     <!-- Navbar -->
-    <div id="nav"></div> <br><br>
+    <nav karainclude-html="assets/includes/navbar.html" class="navbar navbar-expand-lg navbar-dark karanav fixed-top"></nav><br><br>
 
     <!-- Sisältö -->
-    <div id="recipes" class="container text-white"></div>
+    <div class="container text-white">
+        <div class="col-lg-12 text-center">
+          <div class="card card-body bg-dark-transparent" style="margin-bottom: 1.2em; font-family: 'Source Sans Pro' !important; border-radius: 0rem !important;">
+              <h1 class="mt-5">Ylläpito</h1>
+              <p class="lead"><em>Hyvät naiset ja herrat, palvelimen henkilökunta.</em></p><br>
+              <h3 class="mt-5" id="Omistajat">Omistajat<hr><br></h3>
+                
+              <h3 class="mt-5" id="Adminit">Adminit<hr><br></h3>
+              
+                <h3 class="mt-5" id="Rakentajat">Rakentajat<hr><br></h3>
 
-    <footer id="footer" class="footer"></footer>
-    <!-- Compnents -->
-    <script src="./assets/components/navbar.jsx" type="text/jsx"></script>
-    <script src="./assets/components/recipes.jsx" type="text/jsx"></script>
-    <script src="./assets/components/footer.jsx" type="text/jsx"></script>
-
+            </div>
+          </div>
+        </div>
+    </div> 
+    <script>includeHTML();</script>
+    <script src="modules/Operators/operators.js"></script>
   </body>
 
 </html>

@@ -2,7 +2,7 @@
 
 Peruspaske sivut (HTML, CSS, JS) :D
 
-Versio: 2.7.0
+Versio: 3.0.0
 
 ## "Hei pukki, mullois vaan yks toive... että maailmassa olisi rauha..."
 
@@ -79,7 +79,7 @@ UUID:tä käytetään lähinnä skinin hakemiseen, joka päivittyy automaattises
 
 ## Kasattu
 
-* [Bootstrap](https://getbootstrap.com/docs/4.1/getting-started/introduction/) - Frontend Web-kehys (CSS)
+* [Bootstrap](https://getbootstrap.com/) - Frontend Web-kehys (CSS)
 * [React](https://reactjs.org/) - Frontend Web-kehys (JavaScript)
 * [jQuery](https://jquery.com/) - JavaScript kirjasto
 
