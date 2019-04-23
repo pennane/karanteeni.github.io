@@ -314,6 +314,11 @@ footer {
     border-color: rgb(255,175,2);
 }
 
+.toast-success {
+    background-color: rgba(9,9,9,0.7) !important;
+    box-shadow: 0 0 12px rgb(255,175,2) !important
+}
+
 /* Muut napit 
 *
 *
