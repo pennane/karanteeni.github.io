@@ -2,7 +2,7 @@
 
 Peruspaske sivut (HTML, CSS, JS) :D
 
-Versio: 3.0.5
+Versio: 3.1.0
 
 ## "Hei pukki, mullois vaan yks toive... että maailmassa olisi rauha..."
 
@@ -86,6 +86,9 @@ UUID:tä käytetään lähinnä skinin hakemiseen, joka päivittyy automaattises
 ## Hatunnosto
 
 * [Crafatar](https://crafatar.com/) - Käytetty skinien kyselyyn
+* [Minecraft Server Status](https://mcsrvstat.us/) - Käytetty palvelimen statukseen
+* [Clipboard.js](https://clipboardjs.com/) - Käytetty elementtien kopioimiseen leikepöydälle
+* [Toastr](https://toastrjs.com/) - Käytetty paahtoleipien paahtamiseen
 
 ## Lisenssi
 

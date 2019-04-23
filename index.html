@@ -24,10 +24,13 @@
 
     <!-- Custom Js / APIs -->
     <script src="modules/Include/include.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/2.1.4/toastr.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.0/clipboard.min.js"></script>
 
     <!-- Bootstrap CSS -->
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="vendor/css/style_minecraft.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/2.1.4/toastr.min.css">
 
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
@@ -161,8 +164,34 @@
     <footer id="footer" class="footer mt-auto"></footer>
 
     <script src="modules/Jutut/jutut.js"></script>
-    <script src="modules/CopyIP/copy.js" type="application/javascript"></script>
     <script src="modules/ServerStatus/server-status.js"></script>
+    <script>
+      var clipboard = new ClipboardJS('.btn');
+      clipboard.on('success', function(e) {
+
+        toastr.options = {
+          "closeButton": false,
+          "debug": false,
+          "newestOnTop": false,
+          "progressBar": false,
+          "positionClass": "toast-bottom-center",
+          "preventDuplicates": false,
+          "onclick": null,
+          "showDuration": "300",
+          "hideDuration": "1000",
+          "timeOut": "5000",
+          "extendedTimeOut": "1000",
+          "showEasing": "swing",
+          "hideEasing": "linear",
+          "showMethod": "fadeIn",
+          "hideMethod": "fadeOut"
+        }
+        Command: toastr["success"](e.text, "Kopioitu leikepöydälle")
+      });
+      clipboard.on('error', function(e) {
+          console.log(e);
+      });
+    </script>
 
     <!-- Components -->
     <script src="./assets/components/menu.jsx" type="text/jsx"></script>

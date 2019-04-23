@@ -12,7 +12,7 @@ xmlhttp.onreadystatechange = function() {
             if (kara.players["online"] == "0") {
                 document.getElementById("online").innerHTML = "Pelaajia ei ole paikalla.";
             }
-            document.getElementById("ip").innerHTML = "mc.karanteeni.net" + '<br>' + kara["ip"] + ":" + kara["port"] + "&nbsp;&nbsp;<button style='margin: auto; margin-top: 10px;' class='btn btn-outline-light btn-tooltip show' data-toggle='tooltip' data-placement='top' title='Paina tästä kopioidaksesi IP-osoite.' onclick='copyIp(document.getElementById(\"numip\"));'><i class='fas fa-copy'></i></button>";
+            document.getElementById("ip").innerHTML = "mc.karanteeni.net" + '<br>' + '<p id="numip">' + kara["ip"] + ":" + kara["port"] + '</p>' + "&nbsp;&nbsp;<button style='margin: auto; margin-top: 10px;' class='btn btn-outline-light btn-tooltip show' data-toggle='tooltip' data-placement='top' title='Paina tästä kopioidaksesi IP-osoite.' data-clipboard-target='#numip''><i class='fas fa-copy'></i></button>";
         }
     } else {
             document.getElementById("status").style.color = "red";
