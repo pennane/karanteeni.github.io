@@ -6,30 +6,27 @@ class FrequentlyAskedQuestions extends React.Component {
             <div class="accordion" id="faqAccordion">
                 <Divider name='Yleinen'/>
                     <Accordion id='yle1' question='Koska palvelin saa 1.14 päivityksen?' target='ylecol1' answer='No Estimated Time of Arrival is provided.'/>
-                    <Accordion id='yle2' question='Minkä lumousten kanssa Tuhoaminen ei ole yhteensopiva?' target='ylecol2' answer='Vaikka tuhoamiseen voi laittaa lumouksia kiinni,
+                    <Accordion id='yle2' question='Minkä lumousten kanssa Tuhoaminen ei ole yhteensopiva?' target='ylecol2' answer='Vaikka Tuhoamiseen voi laittaa lumouksia kiinni,
                     se ei ole yhteensopiva mm. Mendingin, Fortunen, Succ:n, Sulatuksen tai Silk Touchin kanssa, ja näin ollen rikkoo hakkusi.'/>
-                    <Accordion id='yle3' question='Saanko asettaa kodin Netheriin tai Endiin?' target='ylecol3' answer='Saat, mutta emme suosittele. Nether ja End resetoidaan
-                    kuukauden välein, mikä voi aiheuttaa kodin korruptoitumista ja sinun kuoleman. Tämä tarkoittaa siis sitä, että saatat kuolla jos käytät kotia resetoinnin jälkeen.
-                    Ylläpito ei ole velvollinen palauttamaan tavaroitasi.' />
-                    <Accordion id='yle4' question='Voinko käyttää palvelimen muita omia lumouksia?' target='ylecol4' answer='Voit. Ota huomioon, että palvelimen omat lumoukset
+                    <Accordion id='yle3' question='Voinko käyttää palvelimen muita omia lumouksia?' target='ylecol3' answer='Voit. Ota huomioon, että palvelimen omat lumoukset
                     ovat rikki ja kehitysvaiheessa. Näin ollen emme voi taata niiden yhteensopivuutta keskenään tai vanillan lumouksien kanssa.'/>
-                    <Accordion id='yle5' question='Tahtoisin ylläpitäjäksi. Kuinka voin saavuttaa sen?' target='ylecol5' answer={['Käy lukemassa ohjeet ',
+                    <Accordion id='yle4' question='Tahtoisin ylläpitäjäksi. Kuinka voin saavuttaa sen?' target='ylecol4' answer={['Käy lukemassa ohjeet ',
                     <a id="link" href="/yphaku">täältä</a>, ' ja lähetä hakemus Karanteenin sähköpostiin.']}/>
-                    <Accordion id='yle6' question='Kuinka monta blockia spawnissa on?' target='ylecol6' answer={['On. ', <em>-PreGauris</em>]}/>
-                    <Accordion id='yle7' question='Apua! Ei ole oikeuksia komentoon, vaikka pitäisi olla.' target='ylecol7' answer='Koita poistua palvelimelta ja liittyä
-                    uudelleen. Ihme ja kumma tämä korjaa suurimman osan oikeusongelmistani.'/>
+                    <Accordion id='yle5' question='Kuinka monta blockia spawnissa on?' target='ylecol5' answer={['On. ', <em>-PreGauris</em>]}/>
+                    <Accordion id='yle6' question='Apua! Ei ole oikeuksia komentoon, vaikka pitäisi olla.' target='ylecol6' answer='Koita poistua palvelimelta ja liittyä
+                    uudelleen. Ihme ja kumma tämä korjaa suurimman osan oikeusongelmista.'/>
 
                 <Divider name='Suojaus'/>
-                    <Accordion id='prot1' question='Miten voin suojata alueeni?' target='protcol1' answer='Ylläpitäjä suojaa alueen. Mikäli aiot luoda kylän, voit päättää
-                    alueelle nimen. Warpin kylälle saa vasta, kun kylällä on 15 asukasta.'/>
+                    <Accordion id='prot1' question='Miten voin suojata alueeni?' target='protcol1' answer='Ylläpitäjä suojaa alueen ja suojaukseen vaaditaan talon alku.
+                    Mikäli aiot luoda kylän, voit päättää alueelle nimen. Warpin kylälle saa vasta, kun kylällä on 15 asukasta.'/>
                     <Accordion id='prot2' question='Apua! Taloani on grieffattu!' target='protcol2' answer='Ei hätää. Pääset Karanteenin Discordiin /discord komennolla, tai voit
                     nykäistä jo paikalla olevaa ylläpitäjää hihasta. Joka tapauksessa saat grieffatun talosi kuntoon, sekä tavarat takaisin. Grieffaaja sitä vastoin saa porttikiellon
                     palvelimelle.'/>
                     <Accordion id='prot3' question='Kuinka annan kaverilleni oikeudet alueeseen?' target='protcol3' answer={['Oikeudet alueeseen voit antaa komennolla ',
-                    <code>/trust suojauksen_nimi pelaajan_nimi</code>, ' seisen suojauksen sisällä. Suojauksen nimen saat selville komennolla /rg i, kun seisot sen päällä.']}/>
+                    <code>/trust suojauksen_nimi pelaajan_nimi</code>, ' seisten suojauksen sisällä. Suojauksen nimen saat selville komennolla /rg i, kun seisot sen päällä.']}/>
                     <Accordion id='prot4' question='Kuinka annan kaverilleni oikeudet chesteihin ja uuneihin?' target='protcol4' answer={['Voit antaa oikeudet kyseisiin blockeihin ',
                     'katsomalla blockia ja kirjoittamalla komennon ', <code>/+oikeudet pelaajan_nimi</code>, '. Tämän jälkeen kaverillasi on oikeudet avata kyseinen arkku.',
-                    'Komento toimii myös muihin container blockeihin.']}/>
+                    ' Komento toimii myös muihin container blockeihin.']}/>
 
                 <Divider name='Ekonomia'/>
                     <Accordion id='eco1' question='Kuinka voin luoda arkkukaupan?' target='ecol1' answer='Voit luoda arkkukaupan lyömällä arkkua tavara kädessä ja Shift
@@ -47,6 +44,9 @@ class FrequentlyAskedQuestions extends React.Component {
                     <Accordion id='home2' question='En pysty teleporttaamaan, poistamaan tai asettamaan koteja. Internal error, wat do?' target='homecol2' answer='Sano lähimmälle
                     ylläpitäjälle asiasta. Todennäköisesti joku tai jotkin kodeistasi ovat korruptoituneet ja joudumme poistamaan ne manuaalisesti. Mikäli ylläpitoa ei ole paikalla,
                     liity Karanteenin Discord palvelimelle ja kerro ongelmastasi hohhoijaa:lle, Jomelle tai Nuublesille.'/>
+                    <Accordion id='home3' question='Saanko asettaa kodin Netheriin tai Endiin?' target='homecol3' answer='Saat, mutta emme suosittele. Nether ja End resetoidaan
+                    kuukauden välein, mikä voi aiheuttaa kodin korruptoitumista ja sinun kuoleman. Tämä tarkoittaa siis sitä, että saatat kuolla jos käytät kotia resetoinnin jälkeen.
+                    Ylläpito ei ole velvollinen palauttamaan tavaroitasi.'/>
             </div>
         )
     }
