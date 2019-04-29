@@ -430,6 +430,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .content {
     font-family: 'Open Sans', sans-serif;
+    border: 2px solid #000;
 }
 
 .card {
@@ -437,6 +438,20 @@ h1, h2, h3, h4, h5, h6 {
     border-radius: 0;
     height: 100%;
     font-family: Arial, Helvetica, sans-serif;
+}
+
+.figure {
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    margin: auto;
+    border: 1px solid #000;
+}
+
+.figure-caption {
+    font-size: 100%;
+    background: rgba(9,9,9,0.7);
+    padding: 1.25rem;
 }
 
 .card-white {
