@@ -443,7 +443,6 @@ h1, h2, h3, h4, h5, h6 {
 .figure {
     display: flex;
     flex-direction: column;
-    width: 400px;
     margin: auto;
     border: 1px solid #000;
 }
@@ -452,6 +451,7 @@ h1, h2, h3, h4, h5, h6 {
     font-size: 100%;
     background: rgba(9,9,9,0.7);
     padding: 1.25rem;
+    width: 100%;
 }
 
 .card-white {

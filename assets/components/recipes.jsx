@@ -16,7 +16,7 @@ class RecipeList extends React.Component {
 
 function Recipes(props) {
     return (
-        <div>
+        <div className="col-lg-6 m-auto text-center">
             <Chainmail recipe={props.recipe} />
             <Coral recipe={props.recipe} />
             <Plank recipe={props.recipe} />
