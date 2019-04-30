@@ -1,6 +1,12 @@
 {
     "lahjoittajat": [
         {
+            "pvm": "30.04.18",
+            "nimi": "FinDarz",
+            "amount": "6,03€",
+            "heart": "♥"
+        },
+        {
             "pvm": "14.11.18",
             "nimi": "n1kon",
             "amount": "50€",
