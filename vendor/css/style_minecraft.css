@@ -34,6 +34,7 @@ footer {
 /* Identifierit */
 
 #link {
+    color: #cc0 !important;
     text-decoration: none;
 }
 
@@ -58,6 +59,10 @@ footer {
 
 .hr{
     border-color: #fff;
+}
+
+.alert-link:hover {
+    text-decoration: underline !important;
 }
 
 .mbot {
@@ -359,6 +364,12 @@ h1, h2, h3, h4, h5, h6 {
     padding-bottom: 15px;
 }
 
+.vertical-align {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 /* Colors */
 .c-eloton {
     color: #fff !important;
@@ -438,6 +449,21 @@ h1, h2, h3, h4, h5, h6 {
     border-radius: 0;
     height: 100%;
     font-family: Arial, Helvetica, sans-serif;
+}
+
+.accordion>.card .card-header {
+    padding: 0 0 0 0.75rem !important;
+    border-left: 5px solid #FFAF02;
+}
+
+.accordion>.card {
+    border: none;
+    border-radius: 0;
+    margin-bottom: 0.625rem;
+}
+
+.accordion>.card .card-header:first-child {
+    border-radius: 0;
 }
 
 .figure {
