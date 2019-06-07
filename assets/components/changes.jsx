@@ -93,8 +93,30 @@ class ChangeLog extends React.Component {
     render() {
         return (
             <div className='accordion text-left'>
+                <Month month='kesakuu2019' btntext='Kesäkuu 2019'>
+                    <Changebody month='kesakuu2019' showing>
+                        <ChangeDate date='07.06.2019'/>
+                        <ul>
+                            <Changelist change={['Korjattu xp exploit kokonaisuudessaan ', <b>(Huom! Viesti etusivulla on edelleen voimassa!)</b>,'']}/>
+                            <Changelist change='XP pullojen heitto Creativessa on taas mahdollista'/>
+                            <Changelist change='Potion Effectit jäivät voimaan maailmaa vaihdettaessa -> Fixed'/>
+                            <Changelist change='Fixattu Creativen viesti /level komennosta'/>
+                        </ul>
+                        <ChangeDate date='06.06.2019'/>
+                        <ul>
+                            <Changelist change='Korjattu Mod / Op kohdalla rankaisutimerin käynnistyminen'/>
+                            <Changelist change='Lisätty /rspawn alias rtp komennolle'/>
+                            <Changelist change='Estetty Enchanted Bottlen heittäminen Creativessa'/>
+                        </ul>
+                    </Changebody>
+                </Month>
+                <Month month='toukokuu2019' btntext='Toukokuu 2019'>
+                    <Changebody month='toukokuu2019' showing={false}>
+                        <ChangeDate date='I have nothing to say.'/>
+                    </Changebody>
+                </Month>
                 <Month month='huhtikuu2019' btntext='Huhtikuu 2019'>
-                    <Changebody month='huhtikuu2019' showing>
+                    <Changebody month='huhtikuu2019' showing={false}>
                         <ChangeDate date='21.04.2019'/>
                         <ul>
                             <Changelist change='/rankit näyttää myös prefixit'/>
