@@ -28,6 +28,10 @@ function Recipes(props) {
             <SmeltGravel recipe={props.recipe} />
             <br/>
             <SmeltSand recipe={props.recipe} />
+            <br/>
+            <XpBot recipe={props.recipe}/>
+            <br/>
+            <Dirt recipe={props.recipe}/>
         </div>
     )
 }
@@ -212,6 +216,52 @@ function SmeltSCap(props) {
     return (
         <figcaption className="figure-caption">
             Ja gravelia hiekaksi, mahdollistaen lasin tekemisen stonesta. :)
+        </figcaption>
+    )
+}
+
+function XpBot(props) {
+    return (
+        <figure className="figure mb-5">
+            <XpBotImg img={props.img} />
+            <XpBotCap cap={props.cap} />
+        </figure>
+    )
+}
+
+function XpBotImg(props) {
+    return (
+        <img src="assets/images/recipes/xp_bottle.png" alt="" className="img-fluid" />
+    )
+}
+
+function XpBotCap(props) {
+    return (
+        <figcaption className="figure-caption">
+            Enchanted Bottle on myös mahdollista koota. ;)
+        </figcaption>
+    )
+}
+
+function Dirt(props) {
+    return (
+        <figure className="figure mb-5">
+            <DirtImg img={props.img} />
+            <DirtCap cap={props.cap} />
+        </figure>
+    )
+}
+
+function DirtImg(props) {
+    return (
+        <img src="assets/images/recipes/dirt.png" alt="" className="img-fluid" />
+    )
+}
+
+function DirtCap(props) {
+    return (
+        <figcaption className="figure-caption">
+            Meemi.
         </figcaption>
     )
 }
