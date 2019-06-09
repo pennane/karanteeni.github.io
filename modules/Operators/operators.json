@@ -40,7 +40,9 @@
     ],
     "operaattorit": [
         {
-            
+            "nimi": "Irontank_01",
+            "kuvaus": "\"Öy öy, give me your diamonds kid.\"",
+            "uuid": "5d56328849f44d1b97bb97c437a3f625"
         }
     ],
     "moderaattorit": [
@@ -48,11 +50,6 @@
             "nimi": "joppeownaaja",
             "kuvaus": "\"5 vuoden jälkeen ei ole vielläkään selvinnyt että kuka joi joppeownaajan vaapukkamehut.\"",
             "uuid": "534a19d0566248f8aa9d06f6d1732e04"
-        },
-        {
-            "nimi": "Irontank_01",
-            "kuvaus": "\"Öy öy, give me your diamonds kid.\"",
-            "uuid": "5d56328849f44d1b97bb97c437a3f625"
         }
     ],
     "rakentajat": [

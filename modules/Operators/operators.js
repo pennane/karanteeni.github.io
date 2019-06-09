@@ -8,6 +8,7 @@ request.onload = function() {
     var operators = request.response;
     giveOp(operators);
     giveAdm(operators);
+    giveOperator(operators);
     giveMod(operators);
     giveBuild(operators);
 }
@@ -22,9 +23,12 @@ function giveOp(jsonObj) {
 
     var owners = jsonObj['omistajat'];
     var admins = jsonObj['adminit'];
-    var Ops = jsonObj['operaattorit'];
+    var smods = jsonObj['operaattorit'];
     var mods = jsonObj['moderaattorit'];
     var builders = jsonObj['rakentajat'];
+
+    var hr = document.createElement('hr');
+    var br = document.createElement('br');
 
     var row = document.createElement('div');
     row.className = 'row';
@@ -79,11 +83,17 @@ function giveOp(jsonObj) {
       card.appendChild(cardBody);
       cardBody.appendChild(cardText);
 
-      owner.parentNode.insertBefore(row, owner.nextSibling)
+      owner.parentNode.insertBefore(row, owner.nextSibling);
+      row.parentNode.insertBefore(hr, owner.nextSibling);
+      row.parentNode.insertBefore(br, hr.nextSibling);
+      
     }
   }
 
   function giveAdm(jsonObj) {
+
+    var hr = document.createElement('hr');
+    var br = document.createElement('br');
 
     var admins = jsonObj['adminit'];
 
@@ -142,17 +152,23 @@ function giveOp(jsonObj) {
         cardBody.appendChild(cardText);
   
         admin.parentNode.insertBefore(row, admin.nextSibling)
+        row.parentNode.insertBefore(hr, admin.nextSibling);
+        row.parentNode.insertBefore(br, hr.nextSibling);
       }
   }
 
-  /* function giveOperator(jsonObj) {
-    var Ops = jsonObj['operaattorit'];
+    function giveOperator(jsonObj) {
+
+    var smods = jsonObj['operaattorit'];
+
+    var hr = document.createElement('hr');
+    var br = document.createElement('br');
 
     var row = document.createElement('div');
     row.className = 'row';
     row.style.textAlign = 'center';
 
-    for (var i = 0; i < Ops.length; i++) {
+    for (var i = 0; i < smods.length; i++) {
       var col = document.createElement('div');
       col.className = 'col-sm';
       col.style.marginBottom = '20px';
@@ -169,7 +185,7 @@ function giveOp(jsonObj) {
       var cardTitle = document.createElement('h5');
       cardTitle.className = 'card-title';
       cardTitle.style.paddingTop = '15px';
-      cardTitle.textContent = Ops[i].nimi;
+      cardTitle.textContent = smods[i].nimi;
 
       var ypImg = document.createElement('div');
       ypImg.className = 'yp-img';
@@ -180,7 +196,7 @@ function giveOp(jsonObj) {
       ypskin.style.marginTop = '1.2em';
       ypskin.style.marginBottom = '1.2em';
       ypskin.style.height = '225px';
-      ypskin.setAttribute('src', 'https://crafatar.com/renders/body/' + Ops[i].uuid);
+      ypskin.setAttribute('src', 'https://crafatar.com/renders/body/' + smods[i].uuid);
 
       var cardBody = document.createElement('div');
       cardBody.className = 'card-body';
@@ -190,7 +206,7 @@ function giveOp(jsonObj) {
 
       var cardText = document.createElement('p');
       cardText.className = 'card-text';
-      cardText.textContent = Ops[i].kuvaus;
+      cardText.textContent = smods[i].kuvaus;
   
       row.appendChild(col);
       col.appendChild(card);
@@ -201,11 +217,17 @@ function giveOp(jsonObj) {
       cardBody.appendChild(cardText);
 
       op.parentNode.insertBefore(row, op.nextSibling);
+      row.parentNode.insertBefore(hr, op.nextSibling);
+      row.parentNode.insertBefore(br, hr.nextSibling);
     }
-  } */
+  }
 
   function giveMod(jsonObj) {
+
     var mods = jsonObj['moderaattorit'];
+
+    var hr = document.createElement('hr');
+    var br = document.createElement('br');
 
     var row = document.createElement('div');
     row.className = 'row';
@@ -261,12 +283,17 @@ function giveOp(jsonObj) {
       cardBody.appendChild(cardText);
 
       mod.parentNode.insertBefore(row, mod.nextSibling);
+      row.parentNode.insertBefore(hr, mod.nextSibling);
+      row.parentNode.insertBefore(br, hr.nextSibling);
   }
 }
 
   function giveBuild(jsonObj) {
 
     var builders = jsonObj['rakentajat'];
+
+    var hr = document.createElement('hr');
+    var br = document.createElement('br');
 
     var row = document.createElement('div');
     row.className = 'row';
@@ -322,5 +349,7 @@ function giveOp(jsonObj) {
         cardBody.appendChild(cardText);
 
         builder.parentNode.insertBefore(row, builder.nextSibling);
+        row.parentNode.insertBefore(hr, builder.nextSibling);
+        row.parentNode.insertBefore(br, hr.nextSibling);
       }
   }
