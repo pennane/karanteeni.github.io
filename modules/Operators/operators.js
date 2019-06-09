@@ -222,7 +222,7 @@ function giveOp(jsonObj) {
     }
   }
 
-  /*function giveMod(jsonObj) {
+  function giveMod(jsonObj) {
 
     var mods = jsonObj['moderaattorit'];
 
@@ -233,7 +233,7 @@ function giveOp(jsonObj) {
     row.className = 'row';
     row.style.textAlign = 'center';
 
-    for (var i = 0; i < mods.length; i++) {
+    /*for (var i = 0; i < mods.length; i++) {
 
       var col = document.createElement('div');
       col.className = 'col-sm';
@@ -285,8 +285,8 @@ function giveOp(jsonObj) {
       mod.parentNode.insertBefore(row, mod.nextSibling);
       row.parentNode.insertBefore(hr, mod.nextSibling);
       row.parentNode.insertBefore(br, hr.nextSibling);
-  }
-}*/
+  } */
+}
 
   function giveBuild(jsonObj) {
 
