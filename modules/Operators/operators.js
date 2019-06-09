@@ -222,7 +222,7 @@ function giveOp(jsonObj) {
     }
   }
 
-  function giveMod(jsonObj) {
+  /*function giveMod(jsonObj) {
 
     var mods = jsonObj['moderaattorit'];
 
@@ -286,7 +286,7 @@ function giveOp(jsonObj) {
       row.parentNode.insertBefore(hr, mod.nextSibling);
       row.parentNode.insertBefore(br, hr.nextSibling);
   }
-}
+}*/
 
   function giveBuild(jsonObj) {
 
