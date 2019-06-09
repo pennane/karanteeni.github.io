@@ -403,6 +403,28 @@ h1, h2, h3, h4, h5, h6 {
     color: #FF55FF !important;
 }
 
+.omistaja {
+    color: #5555FF !important;
+}
+
+.admop {
+    color: #FF55FF !important;
+}
+
+.buildmod {
+    color: #AA00AA !important;
+}
+
+.tag::before {
+    content: "[";
+    color: #ffaa00 !important;
+}
+
+.tag::after {
+    content: "]";
+    color: #ffaa00 !important;
+}
+
 .yp-jutut {
     height: 125px;
     font-size: 1rem !important;
