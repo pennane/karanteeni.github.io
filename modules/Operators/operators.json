@@ -24,7 +24,7 @@
         },
         {
             "nimi": "Naxray",
-            "kuvaus": "Karanteenin toinen tekninen säätäjä, sekä ylläpitäjä hyvin ansaitulla lomalla!",
+            "kuvaus": "I have nothing to say.",
             "uuid": "05c0c0ead62240d4b8a20d4ec986c039"
         },
         {
@@ -43,13 +43,16 @@
             "nimi": "Irontank_01",
             "kuvaus": "\"Öy öy, give me your diamonds kid.\"",
             "uuid": "5d56328849f44d1b97bb97c437a3f625"
-        }
-    ],
-    "moderaattorit": [
+        },
         {
             "nimi": "joppeownaaja",
             "kuvaus": "\"5 vuoden jälkeen ei ole vielläkään selvinnyt että kuka joi joppeownaajan vaapukkamehut.\"",
             "uuid": "534a19d0566248f8aa9d06f6d1732e04"
+        }
+    ],
+    "moderaattorit": [
+        {
+
         }
     ],
     "rakentajat": [
