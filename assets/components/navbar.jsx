@@ -93,6 +93,7 @@ class Navbar extends React.Component {
 
                             <DropDownCollapseMenu title="Säännöt" dataTarget="#dd" labelClassName="fas fa-exclamation">
                                 <DropDownItem icon="fas fa-book-open" url="saannot" title="Survivalin säännöt" />
+                                <DropDownItem icon="fas fa-tools" url="creasaannot" title="Creativen säännöt" />
                                 <DropDownItem icon="fas fa-comments" url="chat-saannot" title="Chat-säännöt" />
                             </DropDownCollapseMenu>
 
