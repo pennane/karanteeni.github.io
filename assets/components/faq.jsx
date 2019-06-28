@@ -5,7 +5,7 @@ class FrequentlyAskedQuestions extends React.Component {
         return(
             <div class="accordion" id="faqAccordion">
                 <Divider id='yleinen' name='Yleinen'/>
-                    <Accordion id='yle1' question='Koska palvelin saa 1.14 päivityksen?' target='ylecol1' answer='No Estimated Time of Arrival is provided.'/>
+                    <Accordion id='yle1' question='Koska palvelin saa 1.14 päivityksen?' target='ylecol1' answer='¯\_(ツ)_/¯'/>
                     <Accordion id='yle2' question='Minkä lumousten kanssa Tuhoaminen ei ole yhteensopiva?' target='ylecol2' answer='Vaikka Tuhoamiseen voi laittaa lumouksia kiinni,
                     se ei ole yhteensopiva mm. Mendingin, Fortunen, Succ:n, Sulatuksen tai Silk Touchin kanssa, ja näin ollen rikkoo hakkusi.'/>
                     <Accordion id='yle3' question='Voinko käyttää palvelimen muita omia lumouksia?' target='ylecol3' answer='Voit. Ota huomioon, että palvelimen omat lumoukset
