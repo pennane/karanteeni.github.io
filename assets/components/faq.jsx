@@ -61,6 +61,15 @@ class FrequentlyAskedQuestions extends React.Component {
                     <Accordion id='home3' question='Saanko asettaa kodin Netheriin tai Endiin?' target='homecol3' answer='Saat, mutta emme suosittele. Nether ja End resetoidaan
                     kuukauden välein, mikä voi aiheuttaa kodin korruptoitumista ja sinun kuoleman. Tämä tarkoittaa siis sitä, että saatat kuolla jos käytät kotia resetoinnin jälkeen.
                     Ylläpito ei ole velvollinen palauttamaan tavaroitasi.'/>
+                
+                <Divider id='rangaistukset' name='Rangaistukset'/>
+                    <Accordion id='pun1' question='Montako rangaistusta voin saada?' target='puncol1' answer='Riippuu käyttäytymisestäsi servulla. Toistaiseksi annamme korkeintaan kaksi porttikieltoa, joista
+                    jälkimmäinen on aina ikuinen, jos ensimmäinen on ollut yli viiden (5) päivän mittainen.'/>
+                    <Accordion id='pun2' question='Mitä rankaisumenetelmiä teillä on olemassa?' target='puncol2' answer='Hiljennykset, varoitukset, sekä porttikiellot. Kolme varoitusta on
+                    aina viikon porttikielto.'/>
+                    <Accordion id='pun3' question='Sain rangaistuksen turhasta!' target='puncol3' answer='Liity Karanteenin Discordiin ja kerro asiasi #apua -kanavalla.
+                    Muista, että vaikka jokin ei olisi kiellettyä säännöissä, siitä voidaan silti rangaista. Ylläpitäjien näkemykset voivat myös erota toisistaan, jonka vuoksi
+                    keskustele rangaistuksesta rangaistuksen antajan kanssa.'/>
             </div>
         )
     }
