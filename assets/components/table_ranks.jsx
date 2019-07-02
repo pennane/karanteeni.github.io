@@ -143,10 +143,6 @@ class ElotonRaihnas extends React.Component {
                             <Command info={false} command='/hat'/>
                             <Command info={false} command='/workbench'/>
                         </CommandRow>
-                        <CommandRow>
-                            <Command info={false} command='/compass'/>
-                            <Command info={false}/>
-                        </CommandRow>
                     </Body>
                 </Structure>
             </div>

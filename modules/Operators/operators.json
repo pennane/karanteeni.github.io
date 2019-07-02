@@ -2,57 +2,59 @@
     "omistajat": [
         {
             "nimi": "Jomeee",
-            "kuvaus": "Määrittää palvelimen pluginit ja hoitaa mapresetit.",
+            "kuvaus": "Tällä hetkellä työtön. Yrittää toimia yhteisön hyväksi enemmän. Opettelee piakkoin Javaa ja alkaa ohjelmoimaan plugineita (aamen).",
             "uuid": "5b9a03483c15472b8bd8987134cf9f1d"
         },
         {
             "nimi": "Nuubles",
-            "kuvaus": "Ohjelmoi palvelimen pluginit, sekä vastaa uusista ominaisuuksista.",
+            "kuvaus": "Epäaktiivinen palvelimella. Säätää tulevaa päivitystä aina kun ei ole ignoraamassa.",
             "uuid": "d4ef4bc2db26462c9793389ba56d2818"
         }
     ],
     "adminit": [
         {
             "nimi": "viuwi",
-            "kuvaus": "Ylläpitäjä, joka silloin tällöin käy servulla vahtimassa.",
+            "kuvaus": "Ylläpitäjä, joka käy paikalla hyvällä tuurilla kerran kuukaudessa.",
             "uuid": "72c7765aec184ee4a7aefc07ebf6a824"
         },
         {
             "nimi": "LouNii",
-            "kuvaus": "Potentiaalinen admin. Minecraftin parissa vuodesta 2012.",
+            "kuvaus": "Adminina taitava, nykyään ei jaksa vaan pelata.",
             "uuid": "d347193d8b794a389158074681bc32f8"
         },
         {
             "nimi": "Naxray",
-            "kuvaus": "I have nothing to say.",
+            "kuvaus": "Pitää hajoavaa serveriä kasassa (ellei ole hermolomalla).",
             "uuid": "05c0c0ead62240d4b8a20d4ec986c039"
         },
         {
             "nimi": "lakanakana",
-            "kuvaus": "\"My minecraft house brings all the creepers to the yard and damn right it's better than yours.\"",
+            "kuvaus": "Nuublesin tyttis - hoitaa jopa hommansa kunhan jaksaa pelata.",
             "uuid": "78cf984cf45241b9bdd600cc4677c7d9"
         },
         {
             "nimi": "Ougii_Lewe",
-            "kuvaus": "Entinen rakentaja, nykyinen admin. Pelannut Minecraftia jo vuodesta 2010!",
+            "kuvaus": "Ei pelaa servulla, mutta rakentaa uutta spawnia.",
             "uuid": "5cab2b2a16dc410491ff40fa6920d01d"
         }
     ],
     "operaattorit": [
         {
             "nimi": "Irontank_01",
-            "kuvaus": "\"Öy öy, give me your diamonds kid.\"",
+            "kuvaus": "Aktiivinen ylläpitäjä, ehkä hieman rasisti.",
             "uuid": "5d56328849f44d1b97bb97c437a3f625"
         },
         {
             "nimi": "joppeownaaja",
-            "kuvaus": "\"5 vuoden jälkeen ei ole vielläkään selvinnyt että kuka joi joppeownaajan vaapukkamehut.\"",
+            "kuvaus": "Joku joppe, joka tuli servulle ylläpidon painostuksesta Jomea kohtaan. Onhan se kai ihan hyvä.",
             "uuid": "534a19d0566248f8aa9d06f6d1732e04"
         }
     ],
     "moderaattorit": [
         {
-
+            "nimi": "Susse",
+            "kuvaus": "Sitkeä ja sisukas, joka pääsi vasta toisella yrittämällä moderaattoriksi.",
+            "uuid": "144b79b3-71c0-4e7e-b466-f94d36d0caed"
         }
     ],
     "rakentajat": [
@@ -63,7 +65,7 @@
         },
         {
             "nimi": "Asheline",
-            "kuvaus": "Gauriksen apulainen, pelannut Minecraftia vuodesta 2011.",
+            "kuvaus": "Osaa rakentaa ja hoitaa siinä sivussa muita yp:n hommia.",
             "uuid": "ca5f9868d9bc4a02b63d5fa2e48a8326"
         }
     ]
