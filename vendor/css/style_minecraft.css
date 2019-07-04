@@ -73,6 +73,10 @@ footer {
     color: yellow;
 }
 
+#commands {
+    background: rgba(32,35,42,1);
+}
+
 /* Taustat */
 
 .bg-karaui {
