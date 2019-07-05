@@ -1,4 +1,9 @@
-/* Aloitus */
+/* 
+*  Created by Naxray
+*  Copyright 2019
+*/
+
+/* Elementit */
 
 html {
     height: 100%;
@@ -31,6 +36,8 @@ footer {
     width: 100%;
 }
 
+/* Elementit End */
+
 /* Identifierit */
 
 #link {
@@ -51,9 +58,15 @@ footer {
       1px 1px 0 #000;
 }
 
-.yp h5 {
-    color: black !important;
+#changes .btn-link, .btn-link:hover {
+    color: yellow;
 }
+
+#commands {
+    background: rgba(32,35,42,1);
+}
+
+/* Identifierit End */
 
 /* Elementticlassit */
 
@@ -69,13 +82,7 @@ footer {
     margin-bottom: 1.2rem;
 }
 
-#changes .btn-link, .btn-link:hover {
-    color: yellow;
-}
-
-#commands {
-    background: rgba(32,35,42,1);
-}
+/* Elementticlassit End */
 
 /* Taustat */
 
@@ -90,6 +97,8 @@ footer {
     background-size: cover;
     background-attachment: fixed;
 }
+
+/* Taustat End */
 
 /* Navbar */
 
@@ -149,6 +158,8 @@ footer {
     transition: 0.2s;
 }
 
+/* Navbar End */
+
 /* Dropdown */
 
 .dropdown-menu {
@@ -180,6 +191,8 @@ footer {
     align-items: center;
 }
 
+/* Dropdown End */
+
 /* Jumbotron */
 
 .jumbotron {
@@ -197,6 +210,8 @@ footer {
     background-size: cover;
 }
 
+/* Jumbotron End */
+
 /* Someikonit */
 
 .someicon {
@@ -209,7 +224,9 @@ footer {
     transform: scale(1.2);
 }
 
-/* Rankkinapit */
+/* Someikonit End */
+
+/* Napit */
 
 .btn-eloton {
     color: #fff;
@@ -323,17 +340,23 @@ footer {
     border-color: rgb(255,175,2);
 }
 
+.btn-link {
+    color: #cc0;
+}
+
+.btn-link:hover {
+    color: gold;
+    text-shadow: 2px 2px 5px rgba(255,215,0,1)
+}
+
+/* Napit End */
+
+/* Finetuning */
+
 .toast-success {
     background-color: rgba(9,9,9,0.7) !important;
     box-shadow: 0 0 12px rgb(255,175,2) !important
 }
-
-/* Muut napit 
-*
-*
-*/
-
-/* Finetuning */
 
 .shadowy {
     -webkit-box-shadow: 5px 5px 20px 1px rgba(0,0,0,0.75);
@@ -373,6 +396,69 @@ h1, h2, h3, h4, h5, h6 {
     align-items: center;
     justify-content: center;
 }
+
+.text-float-right {
+    float: right;
+}
+
+/* Finetuning End */
+
+/* Accordion */
+
+.accordion>.card .card-header {
+    padding: 0 0 0 0.75rem !important;
+    border-left: 5px solid #FFAF02;
+}
+
+.accordion>.card {
+    border: none;
+    border-radius: 0;
+    margin-bottom: 0.625rem;
+}
+
+.accordion>.card .card-header:first-child {
+    border-radius: 0;
+}
+
+/* Accordion End */
+
+/* Card */
+
+.card {
+    background: rgba(32,35,42,1);
+    border-radius: 0;
+    height: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.card-title {
+    font-family: 'Fira Sans', sans-serif;
+}
+
+.card-white {
+    background: rgba(255,255,255,1) !important;
+}
+
+/* Card End */
+
+/* Figure */
+
+.figure {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    border: 1px solid #000;
+}
+
+.figure-caption {
+    font-size: 100%;
+    background: rgba(9,9,9,0.7);
+    padding: 1.25rem;
+    width: 100%;
+    color: white !important;
+}
+
+/* Figure End */
 
 /* Colors */
 .c-eloton {
@@ -429,6 +515,10 @@ h1, h2, h3, h4, h5, h6 {
     color: #ffaa00 !important;
 }
 
+/* Colors End */
+
+/* Yp */
+
 .yp-jutut {
     height: 125px;
     font-size: 1rem !important;
@@ -463,51 +553,17 @@ h1, h2, h3, h4, h5, h6 {
     background-color: #fff;
 }
 
+.yp h5 {
+    color: black !important;
+}
+
+/* Yp End */
+
 /* Sisältö */
 
 .content {
     font-family: 'Open Sans', sans-serif;
     border: 2px solid #000;
-}
-
-.card {
-    background: rgba(32,35,42,1);
-    border-radius: 0;
-    height: 100%;
-    font-family: Arial, Helvetica, sans-serif;
-}
-
-.accordion>.card .card-header {
-    padding: 0 0 0 0.75rem !important;
-    border-left: 5px solid #FFAF02;
-}
-
-.accordion>.card {
-    border: none;
-    border-radius: 0;
-    margin-bottom: 0.625rem;
-}
-
-.accordion>.card .card-header:first-child {
-    border-radius: 0;
-}
-
-.figure {
-    display: flex;
-    flex-direction: column;
-    margin: auto;
-    border: 1px solid #000;
-}
-
-.figure-caption {
-    font-size: 100%;
-    background: rgba(9,9,9,0.7);
-    padding: 1.25rem;
-    width: 100%;
-}
-
-.card-white {
-    background: rgba(255,255,255,1) !important;
 }
 
 .footer {
@@ -517,20 +573,4 @@ h1, h2, h3, h4, h5, h6 {
     height: 60px;
 }
 
-.text-float-right {
-    float: right;
-}
-
-/* Figure */
-.figure-caption {
-    color: white !important;
-}
-
-.btn-link {
-    color: #cc0;
-}
-
-.btn-link:hover {
-    color: gold;
-    text-shadow: 2px 2px 5px rgba(255,215,0,1)
-}
+/* Sisältö End */
