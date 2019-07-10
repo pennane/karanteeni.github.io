@@ -1,6 +1,12 @@
 {
     "lahjoittajat": [
         {
+            "pvm": "07.07.19",
+            "nimi": "Jokni",
+            "amount": "13,16€",
+            "heart": "♥"
+        },
+        {
             "pvm": "28.06.19",
             "nimi": "McNalleKarhux",
             "amount": "0,48€",

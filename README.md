@@ -2,7 +2,7 @@
 
 Peruspaske sivut (HTML, CSS, JS) :D
 
-Versio: 3.6.2
+Versio: 3.6.3
 
 ## "Hei pukki, mullois vaan yks toive... että maailmassa olisi rauha..."
 
@@ -25,7 +25,7 @@ Navigaatiopalkki (samoin kuin moni muu komponentti) on toteutettu Reactilla. Jok
 <script src="./assets/components/navbar.jsx" type="text/jsx"></script>
 ```
 
-Jokainen komponentti toimii samalla tavalla. Muita komponentteja esimerkiksi ovat muutoslokin nappi (`changelog_button.jsx`), footer (`footer.jsx`), pelaaja-arvot (`ranks.jsx`), sekä reseptit (`recipes.jsx`).
+Jokainen komponentti toimii samalla tavalla. Muita komponentteja esimerkiksi ovat muutoslokin nappi (`changelog_button.jsx`), footer (`footer.jsx`), pelaaja-arvot (`table_ranks.jsx`), sekä reseptit (`recipes.jsx`).
 
 ### Ylläpitosivut
 
