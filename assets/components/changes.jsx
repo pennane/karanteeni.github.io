@@ -93,8 +93,23 @@ class ChangeLog extends React.Component {
     render() {
         return (
             <div className='accordion text-left'>
+                <Month month='heinakuu2019' btntext='Heinäkuu 2019'>
+                    <Changebody month='heinakuu2019' showing>
+                        <ChangeDate date='17.07.2019'/>
+                        <ul>
+                            <Changelist change='Korjattu tpa komennon kriittinen hajoaminen liittyen edelliseen korjaukseen'/>
+                            <Changelist change='Korjattu msg komento pelaajan ollessa Vanish'/>
+                            <Changelist change='Tpa pyyntö vanhentuu nyt automaattisesti pelaajan lähtiessä palvelimelta'/>
+                        </ul>
+                        <ChangeDate date='10.07.2019'/>
+                        <ul>
+                            <Changelist change='Korjattu /seenin näkyminen Vanish pelaajilla'/>
+                            <Changelist change='Korjattu bugi Vanishin kanssa, joka salli pelaajien teleporttaamisen Vanish pelaajiin'/>
+                        </ul>
+                    </Changebody>
+                </Month>
                 <Month month='kesakuu2019' btntext='Kesäkuu 2019'>
-                    <Changebody month='kesakuu2019' showing>
+                    <Changebody month='kesakuu2019' showing={false}>
                         <ChangeDate date='29.06.2019'/>
                         <ul>
                             <Changelist change='Korjattu /lunastavote'/>
