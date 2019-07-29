@@ -24,7 +24,7 @@ var FrequentlyAskedQuestions = function (_React$Component) {
                 "div",
                 { "class": "accordion", id: "faqAccordion" },
                 React.createElement(Divider, { id: "yleinen", name: "Yleinen" }),
-                React.createElement(Accordion, { id: "yle1", question: "Koska palvelin saa 1.14 p\xE4ivityksen?", target: "ylecol1", answer: "\xAF\\_(\u30C4)_/\xAF" }),
+                React.createElement(Accordion, { id: "yle1", question: "Koska palvelin saa 1.14 p\xE4ivityksen?", target: "ylecol1", answer: "Karanteeni saa mapresetin 11. elokuuta ja alkaa py\xF6rim\xE4\xE4n 1.14.4 versiolla." }),
                 React.createElement(Accordion, { id: "yle2", question: "Mink\xE4 lumousten kanssa Tuhoaminen ei ole yhteensopiva?", target: "ylecol2", answer: "Vaikka Tuhoamiseen voi laittaa lumouksia kiinni,\r se ei ole yhteensopiva mm. Mendingin, Fortunen, Succ:n, Sulatuksen tai Silk Touchin kanssa, ja n\xE4in ollen rikkoo hakkusi." }),
                 React.createElement(Accordion, { id: "yle3", question: "Voinko k\xE4ytt\xE4\xE4 palvelimen muita omia lumouksia?", target: "ylecol3", answer: "Voit. Ota huomioon, ett\xE4 palvelimen omat lumoukset\r ovat rikki ja kehitysvaiheessa. N\xE4in ollen emme voi taata niiden yhteensopivuutta kesken\xE4\xE4n tai vanillan lumouksien kanssa." }),
                 React.createElement(Accordion, { id: "yle4", question: "Tahtoisin yll\xE4pit\xE4j\xE4ksi. Kuinka voin saavuttaa sen?", target: "ylecol4", answer: ['Käy lukemassa ohjeet ', React.createElement(
