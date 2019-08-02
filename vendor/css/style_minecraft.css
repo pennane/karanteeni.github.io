@@ -122,7 +122,7 @@ footer {
 }
 
 .nav-link:hover {
-    background-color: rgba(255, 255, 255, .16)
+    background-color: rgba(31, 31, 31, 0.56)
 }
 
 .nav-item {
@@ -186,7 +186,12 @@ footer {
     justify-content: center;
     align-items: center;
     flex: 1 1 auto;
-    flex-direction: column
+    flex-direction: column;
+    box-sizing: border-box
+}
+
+.custom-jumbo-header {
+    padding: 0 2em;
 }
 
 .custom-jumbo-quote {
@@ -522,12 +527,11 @@ h1, h2, h3, h4, h5, h6 {
     flex-direction: column;
     justify-content: center;
     padding: .5em .6em;
-    width: 420px;
-    max-width: 70vw;
+    width: 400px;
+    max-width: 70%;
     min-width: 350px;
-    box-sizing: content-box;
+    box-sizing: border-box;
     height: 130px;
-    
 }
 
 .badge-danger {
