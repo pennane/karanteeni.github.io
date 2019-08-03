@@ -45,7 +45,8 @@ var Structure = function (_React$Component2) {
         _this2.state = {
             name: _this2.props.name,
             time: _this2.props.time,
-            color: _this2.props.color /* c-rankinnimi */
+            color: _this2.props.color, /* c-rankinnimi */
+            bgColor: _this2.props.bgColor
         };
         return _this2;
     }
@@ -65,8 +66,13 @@ var Structure = function (_React$Component2) {
                         React.createElement(
                             'h5',
                             { className: this.state.color + 'card-title' },
-                            this.props.name,
-                            ' ',
+                            '',
+                            '',
+                            React.createElement(
+                                'span',
+                                { className: this.state.bgColor + 'rank-name-text'},
+                                this.props.name
+                            ),
                             React.createElement(
                                 'span',
                                 { className: 'time' },
@@ -254,7 +260,7 @@ var ElotonRaihnas = function (_React$Component8) {
                 { className: 'row' },
                 React.createElement(
                     Structure,
-                    { name: 'Eloton', time: '0h', color: 'c-eloton ' },
+                    { name: 'Eloton', time: '0h', color: 'c-eloton ', bgColor: 'g-eloton ' },
                     React.createElement(
                         Body,
                         null,
@@ -268,7 +274,7 @@ var ElotonRaihnas = function (_React$Component8) {
                 ),
                 React.createElement(
                     Structure,
-                    { name: 'Raihnas', time: '5h', color: 'c-raihnas ' },
+                    { name: 'Raihnas', time: '5h', color: 'c-raihnas ', bgColor: 'g-raihnas ' },
                     React.createElement(
                         Body,
                         null,
@@ -310,7 +316,7 @@ var SisukasParantuva = function (_React$Component9) {
                 { className: 'row' },
                 React.createElement(
                     Structure,
-                    { name: 'Sisukas', time: '1d', color: 'c-sisukas ' },
+                    { name: 'Sisukas', time: '1d', color: 'c-sisukas ', bgColor: 'g-sisukas ' },
                     React.createElement(
                         Body,
                         null,
@@ -348,7 +354,7 @@ var SisukasParantuva = function (_React$Component9) {
                 ),
                 React.createElement(
                     Structure,
-                    { name: 'Parantuva', time: '5d', color: 'c-parantuva ' },
+                    { name: 'Parantuva', time: '5d', color: 'c-parantuva ', bgColor: 'g-parantuva ' },
                     React.createElement(
                         Body,
                         null,
@@ -408,7 +414,7 @@ var ImmuuniParantaja = function (_React$Component10) {
                 { 'class': 'row' },
                 React.createElement(
                     Structure,
-                    { name: 'Immuuni', time: '10d', color: 'c-immuuni ' },
+                    { name: 'Immuuni', time: '10d', color: 'c-immuuni ', bgColor: 'g-immuuni ' },
                     React.createElement(
                         Body,
                         null,
@@ -446,7 +452,7 @@ var ImmuuniParantaja = function (_React$Component10) {
                 ),
                 React.createElement(
                     Structure,
-                    { name: 'Parantaja', time: '30d', color: 'c-parantaja ' },
+                    { name: 'Parantaja', time: '30d', color: 'c-parantaja ', bgColor: 'g-parantaja ' },
                     React.createElement(
                         Body,
                         null,
@@ -501,7 +507,7 @@ var NekroKuolematon = function (_React$Component11) {
                 { 'class': 'row' },
                 React.createElement(
                     Structure,
-                    { name: 'Nekromantikko', time: '60d', color: 'c-nekromantikko ' },
+                    { name: 'Nekromantikko', time: '60d', color: 'c-nekromantikko ', bgColor: 'g-nekromantikko ' },
                     React.createElement(
                         Body,
                         null,
@@ -527,7 +533,7 @@ var NekroKuolematon = function (_React$Component11) {
                 ),
                 React.createElement(
                     Structure,
-                    { name: 'Kuolematon', time: '100d', color: 'c-kuolematon ' },
+                    { name: 'Kuolematon', time: '100d', color: 'c-kuolematon ', bgColor: 'g-kuolematon ' },
                     React.createElement(
                         Body,
                         null,
