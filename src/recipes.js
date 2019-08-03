@@ -77,7 +77,7 @@ function Chainmail(props) {
 }
 
 function CmailImg(props) {
-    return React.createElement("img", { src: "assets/images/recipes/chainmail_armor.png", alt: "", className: "img-fluid" });
+    return React.createElement("img", { src: "assets/images/recipes/chainmail_armor.png", alt: "", className: "img-fluid recipe" });
 }
 
 function CmailCap(props) {
@@ -98,7 +98,7 @@ function Coral(props) {
 }
 
 function CoralImg(props) {
-    return React.createElement("img", { src: "assets/images/recipes/fire_coral.png", alt: "", className: "img-fluid" });
+    return React.createElement("img", { src: "assets/images/recipes/fire_coral.png", alt: "", className: "img-fluid recipe" });
 }
 
 function CoralCap(props) {
@@ -119,7 +119,7 @@ function Plank(props) {
 }
 
 function PlankImg(props) {
-    return React.createElement("img", { src: "assets/images/recipes/plank.png", alt: "", className: "img-fluid" });
+    return React.createElement("img", { src: "assets/images/recipes/plank.png", alt: "", className: "img-fluid recipe" });
 }
 
 function PlankCap(props) {
@@ -140,7 +140,7 @@ function PHead(props) {
 }
 
 function PHeadImg(props) {
-    return React.createElement("img", { src: "assets/images/recipes/player_head.png", alt: "", className: "img-fluid" });
+    return React.createElement("img", { src: "assets/images/recipes/player_head.png", alt: "", className: "img-fluid recipe" });
 }
 
 function PHeadCap(props) {
@@ -161,7 +161,7 @@ function ZHead(props) {
 }
 
 function ZHeadImg(props) {
-    return React.createElement("img", { src: "assets/images/recipes/zombie_head.png", alt: "", className: "img-fluid" });
+    return React.createElement("img", { src: "assets/images/recipes/zombie_head.png", alt: "", className: "img-fluid recipe" });
 }
 
 function ZHeadCap(props) {
@@ -182,7 +182,7 @@ function SkelHead(props) {
 }
 
 function SkelHeadImg(props) {
-    return React.createElement("img", { src: "assets/images/recipes/skeleton_head.png", alt: "", className: "img-fluid" });
+    return React.createElement("img", { src: "assets/images/recipes/skeleton_head.png", alt: "", className: "img-fluid recipe" });
 }
 
 function SkelHeadCap(props) {
@@ -203,7 +203,7 @@ function SmeltGravel(props) {
 }
 
 function SmeltGImg(props) {
-    return React.createElement("img", { src: "assets/images/recipes/smelt_gravel.png", alt: "", className: "img-fluid" });
+    return React.createElement("img", { src: "assets/images/recipes/smelt_gravel.png", alt: "", className: "img-fluid recipe" });
 }
 
 function SmeltGCap(props) {
@@ -224,7 +224,7 @@ function SmeltSand(props) {
 }
 
 function SmeltSImg(props) {
-    return React.createElement("img", { src: "assets/images/recipes/smelt_sand.png", alt: "", className: "img-fluid" });
+    return React.createElement("img", { src: "assets/images/recipes/smelt_sand.png", alt: "", className: "img-fluid recipe" });
 }
 
 function SmeltSCap(props) {
@@ -245,7 +245,7 @@ function XpBot(props) {
 }
 
 function XpBotImg(props) {
-    return React.createElement("img", { src: "assets/images/recipes/xp_bottle.png", alt: "", className: "img-fluid" });
+    return React.createElement("img", { src: "assets/images/recipes/xp_bottle.png", alt: "", className: "img-fluid recipe" });
 }
 
 function XpBotCap(props) {
@@ -266,7 +266,7 @@ function Dirt(props) {
 }
 
 function DirtImg(props) {
-    return React.createElement("img", { src: "assets/images/recipes/dirt.png", alt: "", className: "img-fluid" });
+    return React.createElement("img", { src: "assets/images/recipes/dirt.png", alt: "", className: "img-fluid recipe" });
 }
 
 function DirtCap(props) {
