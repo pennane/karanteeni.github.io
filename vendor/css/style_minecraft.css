@@ -38,6 +38,11 @@ footer {
     width: 100%
 }
 
+/* Elementit End */
+
+/* Identifierit */
+
+
 #link {
     color: #cc0 !important;
     text-decoration: none
@@ -64,6 +69,10 @@ footer {
 .bolder {
     font-weight: 500
 }
+
+/* Identifierit End */
+
+/* Elementticlassit */
 
 .container-fluid {
     padding-bottom: 1em;
@@ -93,6 +102,10 @@ footer {
     background-size: cover;
     background-attachment: fixed
 }
+
+/* Taustat End */
+
+/* Navbar */
 
 @font-face {
     font-family: Minecraftia;
@@ -138,6 +151,10 @@ footer {
     text-align: left
 }
 
+/* Navbar End */
+
+/* Dropdown */
+
 .dropdown-header {
     text-shadow: 3px 2px 0 rgba(0, 0, 0, .3) !important
 }
@@ -168,6 +185,10 @@ footer {
     justify-content: center;
     align-items: center
 }
+
+/* Dropdown End */
+
+/* Pääsivun jumbotron ja sen elementit */
 
 .custom-jumbo {
     margin-bottom: 0;
@@ -226,6 +247,10 @@ footer {
     background-size: cover
 }
 
+/*  Pääsivun jumbotron end */
+
+/* Someikonit */
+
 .someicon {
     transition: transform .2s
 }
@@ -235,6 +260,10 @@ footer {
     -webkit-transform: scale(1.2);
     transform: scale(1.2)
 }
+
+/* Someikonit End */
+
+/* Napit */
 
 .btn-eloton {
     color: #fff;
@@ -357,6 +386,11 @@ footer {
     text-shadow: 2px 2px 5px rgba(255, 215, 0, 1)
 }
 
+/* Napit End */
+
+/* Finetuning */
+
+
 .toast-success {
     background-color: rgba(9, 9, 9, .7) !important;
     box-shadow: 0 0 12px #ffaf02 !important
@@ -418,6 +452,10 @@ h1, h2, h3, h4, h5, h6 {
     float: right
 }
 
+/* Finetuning End */
+
+/* Accordion */
+
 .accordion>.card .card-header {
     padding: 0 0 0 .75rem !important;
     border-left: 5px solid #ffaf02
@@ -448,6 +486,11 @@ h1, h2, h3, h4, h5, h6 {
     background: rgba(255, 255, 255, 1) !important
 }
 
+/* Accordion End */
+
+/* Card */
+
+
 .figure {
     display: flex;
     flex-direction: column;
@@ -461,6 +504,14 @@ h1, h2, h3, h4, h5, h6 {
     color: #f3f3f3 !important;
     font-size: 1.1em;
     padding: 1.25rem 1.8rem;
+}
+
+/* Figure End */
+
+/* Colors */
+
+.server-ip {
+    color: #ff7885;
 }
 
 .c-eloton {
@@ -517,6 +568,10 @@ h1, h2, h3, h4, h5, h6 {
     color: #fa0 !important
 }
 
+/* Colors End */
+
+/* Yp */
+
 .yp-jutut {
     font-size: 1rem !important;
     background: url(/../assets/images/sign.png);
@@ -532,10 +587,6 @@ h1, h2, h3, h4, h5, h6 {
     min-width: 350px;
     box-sizing: border-box;
     height: 130px;
-}
-
-.badge-danger {
-    font-style: italic;
 }
 
 .blockquote-footer {
@@ -562,10 +613,9 @@ h1, h2, h3, h4, h5, h6 {
     color: #000 !important
 }
 
-.img-fluid {
-    max-width: 100%;
-    height: auto;
-}
+/* Yp End */
+
+/* Reseptien kuvat*/
 
 .img-fluid.recipe {
     max-width: 100%;
@@ -577,14 +627,16 @@ h1, h2, h3, h4, h5, h6 {
     image-rendering: pixelated;
 }
 
+/* Reseptien kuvat End */
+
+/* Sisältö */
+
 .content {
     font-family: 'Inter', sans-serif;
     box-shadow: 1px 2px 1px 0 rgba(0, 0, 0, .1)
 }
 
-.server-ip {
-    color: #ff7885;
-}
+
 
 .footer {
     background-color: #282c34;
@@ -594,3 +646,5 @@ h1, h2, h3, h4, h5, h6 {
     padding: 1.5em 0;
     font-size: 0.96em;
 }
+
+/* Sisältö End */
