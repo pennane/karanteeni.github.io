@@ -54,16 +54,16 @@ function giveOp(jsonObj) {
         col.style.marginBottom = '20px';
   
         var card = document.createElement('div');
-        card.className = 'card yp-card';
+        card.className = 'card yp-card owner';
   
         var cardTitle = document.createElement('h5');
-        cardTitle.className = 'card-title yp-card-title';
+        cardTitle.className = 'card-title yp-card-title owner';
         cardTitle.textContent = owners[i].nimi;
   
         var ypImg = createYpImageElement(owners[i].uuid, "owner")
   
         var cardBody = document.createElement('div');
-        cardBody.className = 'card-body yp-card-body';
+        cardBody.className = 'card-body yp-card-body owner';
   
         var cardText = document.createElement('p');
         cardText.className = 'card-text';
@@ -111,13 +111,13 @@ function giveOp(jsonObj) {
           card.className = 'card yp-card';
     
           var cardTitle = document.createElement('h5');
-          cardTitle.className = 'card-title yp-card-title';
+          cardTitle.className = 'card-title yp-card-title admin';
           cardTitle.textContent = admins[i].nimi;
     
           var ypImg = createYpImageElement(admins[i].uuid, "admin")
     
           var cardBody = document.createElement('div');
-          cardBody.className = 'card-body yp-card-body';
+          cardBody.className = 'card-body yp-card-body admin';
     
           var cardText = document.createElement('p');
           cardText.className = 'card-text';
@@ -159,16 +159,16 @@ function giveOp(jsonObj) {
         col.style.marginBottom = '20px';
   
         var card = document.createElement('div');
-        card.className = 'card yp-card';
+        card.className = 'card yp-card smod';
   
         var cardTitle = document.createElement('h5');
-        cardTitle.className = 'card-title yp-card-title';
+        cardTitle.className = 'card-title yp-card-title smod';
         cardTitle.textContent = smods[i].nimi;
   
         var ypImg = createYpImageElement(smods[i].uuid, "smod")
   
         var cardBody = document.createElement('div');
-        cardBody.className = 'card-body yp-card-body';
+        cardBody.className = 'card-body yp-card-body smod';
   
         var cardText = document.createElement('p');
         cardText.className = 'card-text';
@@ -211,16 +211,16 @@ function giveOp(jsonObj) {
         col.style.marginBottom = '20px';
   
         var card = document.createElement('div');
-        card.className = 'card yp-card';
+        card.className = 'card yp-card mod';
   
         var cardTitle = document.createElement('h5');
-        cardTitle.className = 'card-title yp-card-title';
+        cardTitle.className = 'card-title yp-card-title mod';
         cardTitle.textContent = mods[i].nimi;
   
         var ypImg = createYpImageElement(mods[i].uuid, "mod")
   
         var cardBody = document.createElement('div');
-        cardBody.className = 'card-body yp-card-body';
+        cardBody.className = 'card-body yp-card-body mod';
   
         var cardText = document.createElement('p');
         cardText.className = 'card-text';
@@ -265,16 +265,16 @@ function giveOp(jsonObj) {
           col.style.marginBottom = '20px';
     
           var card = document.createElement('div');
-          card.className = 'card yp-card';
+          card.className = 'card yp-card builder';
     
           var cardTitle = document.createElement('h5');
-          cardTitle.className = 'card-title yp-card-title';
+          cardTitle.className = 'card-title yp-card-title builder';
           cardTitle.textContent = builders[i].nimi;
     
           var ypImg = createYpImageElement(builders[i].uuid, "builder")
     
           var cardBody = document.createElement('div');
-          cardBody.className = 'card-body yp-card-body';
+          cardBody.className = 'card-body yp-card-body builder';
     
           var cardText = document.createElement('p');
           cardText.className = 'card-text';
