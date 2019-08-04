@@ -2,7 +2,7 @@
 
 Peruspaske sivut (HTML, CSS, JS) :D
 
-Versio: 3.7.1
+Versio: 3.8.0
 
 ## "Hei pukki, mullois vaan yks toive... että maailmassa olisi rauha..."
 
@@ -10,22 +10,21 @@ ja sitten se, että kuka ikinä tätä lukeekaan ymmärtää nämä "ohjeet".
 
 ## Muokkaaminen
 
-**Yleistä:** JavaScript moduulit löytyy kansiosta `/modules`, taustakuvat (sekä yleensäkin muut kuvat) löytää kansiosta `/assets/images/` ja skinit löytää kansiosta `/assets/skins/`, joille toistaiseksi ei ole mitään käyttöä. Paketti myös sisältää pohjasivun, jolla voit luoda samantyylisen sivun helposti tarvittaessa.
-React -komponentit löytyy kansiosta `/assets/components`.
+**Yleistä:** JavaScript moduulit löytyy kansiosta `/modules`, taustakuvat (sekä yleensäkin muut kuvat) löytää kansiosta `/assets/images/` ja skinit löytää kansiosta `/assets/skins/`, joille toistaiseksi ei ole mitään käyttöä. Paketti myös sisältää pohjasivun, jolla voit luoda samantyylisen sivun helposti tarvittaessa, mutta ei sisällä JSX-komponentteja. Komponentit täytyy esikääntää selaimelle luettavaksi JavaScriptiksi.
 
 ### React komponentit
 
-Navigaatiopalkki (samoin kuin moni muu komponentti) on toteutettu Reactilla. Jokaisessa tiedostossa on erikseen script tagit kyseiseen JSX komponenttiin.
+Navigaatiopalkki (samoin kuin moni muu komponentti) on toteutettu Reactilla. Jokaisessa tiedostossa on erikseen script tagit kyseiseen komponenttiin.
 
 ```html
 <!-- Navbar -->
 <div id="nav"></div>
 
 <!-- Sivun alalaidassa erikseen script tagi, joka kutsuu kyseisen JSX komponentin. -->
-<script src="./assets/components/navbar.jsx" type="text/jsx"></script>
+<script src="./src/navbar.js"></script>
 ```
 
-Jokainen komponentti toimii samalla tavalla. Muita komponentteja esimerkiksi ovat muutoslokin nappi (`changelog_button.jsx`), footer (`footer.jsx`), pelaaja-arvot (`table_ranks.jsx`), sekä reseptit (`recipes.jsx`).
+Jokainen komponentti toimii samalla tavalla. Muita komponentteja esimerkiksi ovat muutoslokin nappi (`changelog_button.js`), footer (`footer.js`), pelaaja-arvot (`table_ranks.js`), sekä reseptit (`recipes.js`).
 
 ### Ylläpitosivut
 
@@ -47,6 +46,20 @@ Ylläpitosivut ovat käytännössä vain rakenne. Ylläpitäjien lisääminen ta
             "uuid": "numeroita"
         }
     ],
+    "operaattorit": [
+        {
+            "nimi": "Jomeee",
+            "kuvaus": "Ylläpitäjä",
+            "uuid": "numeroita"
+        }
+    ],
+    "moderaattorit": [
+        {
+            "nimi": "Jomeee",
+            "kuvaus": "Ylläpitäjä",
+            "uuid": "numeroita"
+        }
+    ],
     "rakentajat": [
         {
             "nimi": "Jomeee",
@@ -60,7 +73,7 @@ UUID:tä käytetään lähinnä skinin hakemiseen, joka päivittyy automaattises
 
 ### #vainylläpitojutut
 
-"Vain ylläpitojutut" ovat koottu etusivulle JavaScriptin avulla. Kyseisiä juttuja voi lisätä sijainnissa `/modules/Jutut/` nimellä `jutut.js`. Skriptin sisällytys löytyy riviltä 134 tiedostosta `index.html`. Alla on vielä esimerkkimalli `jutut.js` sisällöstä.
+"Vain ylläpitojutut" ovat koottu etusivulle JavaScriptin avulla. Kyseisiä juttuja voi lisätä sijainnissa `/modules/Jutut/` nimellä `jutut.js`. Alla on vielä esimerkkimalli `jutut.js` sisällöstä.
 
 ```javascript
        {
@@ -78,6 +91,7 @@ UUID:tä käytetään lähinnä skinin hakemiseen, joka päivittyy automaattises
 * [Bootstrap](https://getbootstrap.com/) - Frontend Web-kehys (CSS)
 * [React](https://reactjs.org/) - Frontend Web-kehys (JavaScript)
 * [jQuery](https://jquery.com/) - JavaScript kirjasto
+* [Rakkaus](https://fi.wikipedia.org/wiki/Rakkaus) - Koska ilman verta, hikeä, kyyneleitä ja rakkautta ei tätäkään sivua olisi saatu aikaiseksi
 
 ## Hatunnosto
 
@@ -88,7 +102,7 @@ UUID:tä käytetään lähinnä skinin hakemiseen, joka päivittyy automaattises
 
 ## Lisenssi
 
-Voit katsoa lisenssin tiedostosta [LICENSE](https://gitlab.com/Ixynas/Karanteeni/raw/master/LICENSE). Tiedosto on myös pakattu mukaan.
+Voit katsoa lisenssin tiedostosta [LICENSE](https://raw.githubusercontent.com/Karanteeni/karanteeni.github.io/master/LICENSE.md). Tiedosto on myös pakattu mukaan.
 
 ## Kiitos
 
