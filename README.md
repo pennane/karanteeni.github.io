@@ -84,6 +84,7 @@ UUID:tä käytetään lähinnä skinin hakemiseen, joka päivittyy automaattises
 * [Crafatar](https://crafatar.com/) - Käytetty skinien kyselyyn
 * [Minecraft Server Status](https://mcsrvstat.us/) - Käytetty palvelimen statukseen
 * [Clipboard.js](https://clipboardjs.com/) - Käytetty elementtien kopioimiseen leikepöydälle
+* [March08 Animated Burgers](https://march08.github.io/animated-burgers/) - Käytetty mobiilinavigointipalkin ikonina 
 * [Toastr](https://toastrjs.com/) - Käytetty paahtoleipien paahtamiseen
 
 ## Lisenssi
