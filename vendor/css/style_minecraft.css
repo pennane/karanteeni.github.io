@@ -340,6 +340,58 @@ footer {
 
 /* Dropdown End */
 
+/* Pääsivun tapahtumat */
+
+.tapahtumat .card-title {
+    margin: 0;
+}
+
+.tapahtuma-tyyppi {
+    margin-bottom: 1.4em;
+}
+
+.tapahtuma {
+    padding: 1em 0;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+}
+
+.tapahtuma:last-child {
+    border-bottom: none;
+}
+
+.tapahtuma-head {
+    display: flex;
+    flex-wrap: wrap-reverse;
+    align-items: center;
+}
+
+.tapahtuma-time {
+    margin: 0.2rem;
+    display: inline-block;
+}
+
+.tapahtuma-title {
+    font-weight: 450;
+    display: inline-block;
+    margin: 0.2rem;
+}
+
+.tapahtuma-body {
+    background-color: rgba(255, 255, 255, 0.1);
+    color: white;
+    padding: 0.3em;
+    margin: 0;
+    margin-top: .1rem;
+    border-radius: 0.3em;
+}
+
+p.no-upcoming {
+    margin: 0;
+    margin-top: 1em;
+}
+
+/* Pääsivun tapahtumat End */
+
 /* Pääsivun jumbotron ja sen elementit */
 
 .custom-jumbo {
