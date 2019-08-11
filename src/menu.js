@@ -12,20 +12,48 @@ function Icon(props) {
     return React.createElement("i", { className: props.icon });
 }
 
-var NavLink = function (_React$Component) {
-    _inherits(NavLink, _React$Component);
+var Tooltip = function (_React$Component) {
+    _inherits(Tooltip, _React$Component);
+
+    function Tooltip(props) {
+        _classCallCheck(this, Tooltip);
+
+        var _this = _possibleConstructorReturn(this, (Tooltip.__proto__ || Object.getPrototypeOf(Tooltip)).call(this, props));
+
+        _this.state = {
+            text: _this.props.text
+        };
+        return _this;
+    }
+
+    _createClass(Tooltip, [{
+        key: "render",
+        value: function render() {
+            return React.createElement(
+                "span",
+                { "data-toggle": "tooltip", "data-placement": "top", title: this.props.text },
+                this.props.children
+            );
+        }
+    }]);
+
+    return Tooltip;
+}(React.Component);
+
+var NavLink = function (_React$Component2) {
+    _inherits(NavLink, _React$Component2);
 
     function NavLink(props) {
         _classCallCheck(this, NavLink);
 
-        var _this = _possibleConstructorReturn(this, (NavLink.__proto__ || Object.getPrototypeOf(NavLink)).call(this, props));
+        var _this2 = _possibleConstructorReturn(this, (NavLink.__proto__ || Object.getPrototypeOf(NavLink)).call(this, props));
 
-        _this.state = {
-            title: _this.props.title,
-            icon: _this.props.icon,
-            url: _this.props.url
+        _this2.state = {
+            title: _this2.props.title,
+            icon: _this2.props.icon,
+            url: _this2.props.url
         };
-        return _this;
+        return _this2;
     }
 
     _createClass(NavLink, [{
@@ -48,20 +76,20 @@ var NavLink = function (_React$Component) {
     return NavLink;
 }(React.Component);
 
-var DropDownCollapseMenu = function (_React$Component2) {
-    _inherits(DropDownCollapseMenu, _React$Component2);
+var DropDownCollapseMenu = function (_React$Component3) {
+    _inherits(DropDownCollapseMenu, _React$Component3);
 
     function DropDownCollapseMenu(props) {
         _classCallCheck(this, DropDownCollapseMenu);
 
-        var _this2 = _possibleConstructorReturn(this, (DropDownCollapseMenu.__proto__ || Object.getPrototypeOf(DropDownCollapseMenu)).call(this, props));
+        var _this3 = _possibleConstructorReturn(this, (DropDownCollapseMenu.__proto__ || Object.getPrototypeOf(DropDownCollapseMenu)).call(this, props));
 
-        _this2.state = {
-            title: _this2.props.title,
-            target: _this2.props.dataTarget,
-            labelClassName: _this2.props.labelClassName
+        _this3.state = {
+            title: _this3.props.title,
+            target: _this3.props.dataTarget,
+            labelClassName: _this3.props.labelClassName
         };
-        return _this2;
+        return _this3;
     }
 
     _createClass(DropDownCollapseMenu, [{
@@ -94,40 +122,51 @@ var DropDownCollapseMenu = function (_React$Component2) {
     return DropDownCollapseMenu;
 }(React.Component);
 
-var DropDownItem = function (_React$Component3) {
-    _inherits(DropDownItem, _React$Component3);
+var DropDownItem = function (_React$Component4) {
+    _inherits(DropDownItem, _React$Component4);
 
     function DropDownItem(props) {
         _classCallCheck(this, DropDownItem);
 
-        var _this3 = _possibleConstructorReturn(this, (DropDownItem.__proto__ || Object.getPrototypeOf(DropDownItem)).call(this, props));
+        var _this4 = _possibleConstructorReturn(this, (DropDownItem.__proto__ || Object.getPrototypeOf(DropDownItem)).call(this, props));
 
-        _this3.state = {
-            title: _this3.props.title,
-            icon: _this3.props.icon,
-            url: _this3.props.url
+        _this4.state = {
+            title: _this4.props.title,
+            icon: _this4.props.icon,
+            url: _this4.props.url
         };
-        return _this3;
+        return _this4;
     }
 
     _createClass(DropDownItem, [{
         key: "render",
         value: function render() {
-            return React.createElement(
-                "a",
-                { className: "dropdown-item", href: this.state.url },
-                React.createElement(Icon, { icon: this.state.icon }),
-                "\xA0\xA0",
-                this.state.title
-            );
+            var disabled = this.props.disabled;
+            if (disabled) {
+                return React.createElement(
+                    "a",
+                    { className: "dropdown-item disabled", href: this.state.url },
+                    React.createElement(Icon, { icon: this.state.icon }),
+                    "\xA0\xA0",
+                    this.state.title
+                );
+            } else {
+                return React.createElement(
+                    "a",
+                    { className: "dropdown-item", href: this.state.url },
+                    React.createElement(Icon, { icon: this.state.icon }),
+                    "\xA0\xA0",
+                    this.state.title
+                );
+            }
         }
     }]);
 
     return DropDownItem;
 }(React.Component);
 
-var Navbar = function (_React$Component4) {
-    _inherits(Navbar, _React$Component4);
+var Navbar = function (_React$Component5) {
+    _inherits(Navbar, _React$Component5);
 
     function Navbar() {
         _classCallCheck(this, Navbar);
@@ -161,7 +200,11 @@ var Navbar = function (_React$Component4) {
                                 { title: "Yleistietoa", dataTarget: "#rc", labelClassName: "fas fa-info" },
                                 React.createElement(DropDownItem, { icon: "fas fa-info", url: "yleistietoa", title: "Yleistietoa" }),
                                 React.createElement(DropDownItem, { icon: "fas fa-hammer", url: "recipes", title: "Custom recipet" }),
-                                React.createElement(DropDownItem, { icon: "fas fa-thumbs-up", url: "hoks", title: "Hyv\xE4 tiet\xE4\xE4!" }),
+                                React.createElement(
+                                    Tooltip,
+                                    { text: "T\xE4m\xE4 osio sis\xE4lt\xE4\xE4 vanhentunutta tietoa." },
+                                    React.createElement(DropDownItem, { icon: "fas fa-thumbs-up", disabled: true, url: "hoks", title: "Hyv\xE4 tiet\xE4\xE4!" })
+                                ),
                                 React.createElement(DropDownItem, { icon: "fas fa-question-circle", url: "ukk", title: "UKK" })
                             ),
                             React.createElement(

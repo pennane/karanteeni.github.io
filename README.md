@@ -2,7 +2,7 @@
 
 Peruspaske sivut (HTML, CSS, JS) :D
 
-Versio: 3.8.0
+Versio: 3.9.0
 
 ## "Hei pukki, mullois vaan yks toive... että maailmassa olisi rauha..."
 
@@ -10,7 +10,7 @@ ja sitten se, että kuka ikinä tätä lukeekaan ymmärtää nämä "ohjeet".
 
 ## Muokkaaminen
 
-**Yleistä:** JavaScript moduulit löytyy kansiosta `/modules`, taustakuvat (sekä yleensäkin muut kuvat) löytää kansiosta `/assets/images/` ja skinit löytää kansiosta `/assets/skins/`, joille toistaiseksi ei ole mitään käyttöä. Paketti myös sisältää pohjasivun, jolla voit luoda samantyylisen sivun helposti tarvittaessa, mutta ei sisällä JSX-komponentteja. Komponentit täytyy esikääntää selaimelle luettavaksi JavaScriptiksi.
+**Yleistä:** JavaScript moduulit löytyy kansiosta `/modules`, taustakuvat (sekä yleensäkin muut kuvat) löytää kansiosta `/assets/images/` ja skinit löytää kansiosta `/assets/skins/`, joille toistaiseksi ei ole mitään käyttöä. Paketti myös sisältää pohjasivun, jolla voit luoda samantyylisen sivun helposti tarvittaessa. Paketti sisältää myös JSX-komponentit helppoa muokkaamista varten, mutta komponentit täytyy esikääntää selaimelle luettavaksi JavaScriptiksi, jotka löytää `/src` kansiosta.
 
 ### React komponentit
 
