@@ -124,7 +124,7 @@ function createYpElement(operator, cssClass) {
   p.textContent = operator.kuvaus;
   span.textContent = cssClass;
 
-  img.src = 'https://crafatar.com/renders/body/' + operator.uuid;
+  img.src = 'https://visage.surgeplay.com/full/' + operator.uuid;
 
   cardHeader.appendChild(h3);
   cardImg.appendChild(img);
