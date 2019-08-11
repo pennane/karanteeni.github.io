@@ -66,13 +66,12 @@ var Structure = function (_React$Component2) {
                         React.createElement(
                             'h5',
                             { className: this.state.color + 'card-title' },
-                            '',
-                            '',
                             React.createElement(
                                 'span',
-                                { className: this.state.bgColor + 'rank-name-text'},
+                                { className: this.state.bgColor + 'rank-name-text' },
                                 this.props.name
                             ),
+                            ' ',
                             React.createElement(
                                 'span',
                                 { className: 'time' },
