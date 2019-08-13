@@ -69,8 +69,7 @@ footer {
     text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000
 }
 
-#changes .btn-link,
-.btn-link:hover {
+#changes .btn-link, .btn-link:hover {
     color: #ff0
 }
 
@@ -146,9 +145,11 @@ footer {
     text-shadow: 2px 2px #000
 }
 
-.nav-link:hover {
+.nav-item:hover, .nav-item.show {
     background-color: rgba(31, 31, 31, 0.56)
 }
+
+
 
 .nav-item {
     background-color: none
@@ -156,11 +157,147 @@ footer {
 
 .nav-link {
     padding: 15px 5px;
-    transition: .2s
+    transition: .2s;
+}
+
+.navlink > i {
+    text-align: center;
+    width: 1em;
 }
 
 .nav-item {
     text-align: left
+}
+
+
+
+
+.navbar-toggler-icon {
+    background: none !important
+}
+
+.navbar-toggler {
+    padding: 0.4rem;
+}
+
+@media (max-width: 992px) {
+
+    .nav-link {   
+        width: 200px;
+        display: inline-block;
+        text-align: left;
+        box-sizing: content-box;
+    }
+
+    .nav-item.show {
+        border-radius: 0 0 .5rem .5rem;
+    }
+
+    ul.nav {
+        padding-bottom: 0.5em;
+    }
+
+    .nav-link > i {
+        width: 1.2em;
+        text-align: center;
+    }
+
+    button.navbar-toggler {
+        margin-left: 0.3em;
+    }
+}
+
+
+.burger {
+    height: 3em;
+    width: 3em;
+    position: relative;
+    font-size: 12px;
+    cursor: pointer;
+    -webkit-transition: .2s all;
+    -o-transition: .2s all;
+    transition: .2s all;
+    -webkit-tap-highlight-color: transparent;
+    font-size: 0.5rem;
+}
+
+.burger .burger-lines:after {
+    left: 0;
+    top: -1em;
+}
+
+.burger .burger-lines:before {
+    top: 1em;
+}
+
+.burger:after {
+    content: '';
+    display: block;
+    position: absolute;
+    height: 150%;
+    width: 150%;
+    top: -25%;
+    left: -25%;
+}
+
+.burger .burger-lines {
+    top: 50%;
+    margin-top: -0.125em;
+}
+
+.burger .burger-lines, .burger .burger-lines:after, .burger .burger-lines:before {
+    pointer-events: none;
+    display: block;
+    content: '';
+    width: 100%;
+    border-radius: 0.25em;
+    background-color: white;
+    height: 0.25em;
+    position: absolute;
+    -webkit-transform: rotate(0);
+    -ms-transform: rotate(0);
+    transform: rotate(0);
+}
+
+.burger .burger-lines:after {
+    left: 0;
+    top: -1em;
+}
+
+.burger .burger-lines:before {
+    top: 1em;
+}
+
+.burger.burger-rotate .burger-lines, .burger.burger-rotate .burger-lines:after, .burger.burger-rotate .burger-lines:before {
+    -webkit-transition: all .2s;
+    -o-transition: all .2s;
+    transition: all .2s;
+}
+
+.navbar-toggler[aria-expanded="true"] >  .burger.burger-rotate {
+    -webkit-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    transform: rotate(180deg);
+}
+
+.navbar-toggler[aria-expanded="true"] > .burger.burger-rotate .burger-lines {
+    background-color: transparent;
+}
+
+.navbar-toggler[aria-expanded="true"] > .burger.burger-rotate .burger-lines:before, .navbar-toggler[aria-expanded="true"] > .burger.burger-rotate .burger-lines:after {
+    top: 0px;
+}
+
+.navbar-toggler[aria-expanded="true"] > .burger.burger-rotate .burger-lines:before {
+    -webkit-transform: rotate(135deg);
+    -ms-transform: rotate(135deg);
+    transform: rotate(135deg);
+}
+
+.navbar-toggler[aria-expanded="true"] > .burger.burger-rotate .burger-lines:after {
+    -webkit-transform: rotate(-135deg);
+    -ms-transform: rotate(-135deg);
+    transform: rotate(-135deg);
 }
 
 /* Navbar End */
@@ -173,7 +310,10 @@ footer {
 
 .dropdown-menu {
     background: linear-gradient(rgba(23, 23, 23, .8), rgba(23, 23, 23, .8)), url(/../assets/images/dirt.png);
-    background-size: 25px
+    background-size: 25px;
+    margin: 0;
+    border: none;
+    border-radius: 0 0 .25rem .25rem;
 }
 
 .dropdown-menu.collapsing {
@@ -199,6 +339,58 @@ footer {
 }
 
 /* Dropdown End */
+
+/* Pääsivun tapahtumat */
+
+.tapahtumat .card-title {
+    margin: 0;
+}
+
+.tapahtuma-tyyppi {
+    margin-bottom: 1.4em;
+}
+
+.tapahtuma {
+    padding: 1em 0;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+}
+
+.tapahtuma:last-child {
+    border-bottom: none;
+}
+
+.tapahtuma-head {
+    display: flex;
+    flex-wrap: wrap-reverse;
+    align-items: center;
+}
+
+.tapahtuma-time {
+    margin: 0.2rem;
+    display: inline-block;
+}
+
+.tapahtuma-title {
+    font-weight: 450;
+    display: inline-block;
+    margin: 0.2rem;
+}
+
+.tapahtuma-body {
+    background-color: rgba(255, 255, 255, 0.1);
+    color: white;
+    padding: 0.3em;
+    margin: 0;
+    margin-top: .1rem;
+    border-radius: 0.3em;
+}
+
+p.no-upcoming {
+    margin: 0;
+    margin-top: 1em;
+}
+
+/* Pääsivun tapahtumat End */
 
 /* Pääsivun jumbotron ja sen elementit */
 
@@ -423,7 +615,7 @@ footer {
 }
 
 .bg-transparent {
-    background: rgba(25, 27, 29, 0.84)!important;
+    background: rgba(25, 27, 29, 0.84) !important;
 }
 
 .rank {
@@ -433,7 +625,7 @@ footer {
 }
 
 .time {
-    color: #fff!important;
+    color: #fff !important;
     font-family: 'inter';
     font-size: 0.9em;
     margin-left: 0.3em;
@@ -447,8 +639,8 @@ footer {
     font-family: 'inter', sans-serif;
     font-weight: 500;
     -webkit-font-smoothing: antialiased;
-    -webkit-text-fill-color: transparent!important;
-    -webkit-background-clip: text!important;
+    -webkit-text-fill-color: transparent !important;
+    -webkit-background-clip: text !important;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -547,35 +739,35 @@ h1, h2, h3, h4, h5, h6 {
 
 
 .g-eloton {
-    background: -webkit-linear-gradient(0deg,hsl(0, 0%, 79%),hsl(0, 0%, 95%));
+    background: -webkit-linear-gradient(0deg, hsl(0, 0%, 79%), hsl(0, 0%, 95%));
 }
 
 .g-raihnas {
-    background: -webkit-linear-gradient(0deg,hsl(8, 100%, 62%),hsl(0, 100%, 61%));
+    background: -webkit-linear-gradient(0deg, hsl(8, 100%, 62%), hsl(0, 100%, 61%));
 }
 
 .g-sisukas {
-    background: -webkit-linear-gradient(0deg,hsl(115, 66%, 50%),hsl(115, 85%, 45%));
+    background: -webkit-linear-gradient(0deg, hsl(115, 66%, 50%), hsl(115, 85%, 45%));
 }
 
 .g-parantuva {
-    background: -webkit-linear-gradient(0deg,hsl(33, 95%, 54%),hsl(18, 100%, 72%));
+    background: -webkit-linear-gradient(0deg, hsl(33, 95%, 54%), hsl(18, 100%, 72%));
 }
 
 .g-immuuni {
-    background: -webkit-linear-gradient(0deg,hsl(202, 100%, 64%),hsl(211, 82%, 70%));
+    background: -webkit-linear-gradient(0deg, hsl(202, 100%, 64%), hsl(211, 82%, 70%));
 }
 
 .g-parantaja {
-    background: -webkit-linear-gradient(0deg,hsl(55, 91%, 49%),hsl(58, 100%, 66%));
+    background: -webkit-linear-gradient(0deg, hsl(55, 91%, 49%), hsl(58, 100%, 66%));
 }
 
 .g-nekromantikko {
-    background: -webkit-linear-gradient(0deg,hsl(252, 77%, 65%),rgb(156, 137, 239));
+    background: -webkit-linear-gradient(0deg, hsl(252, 77%, 65%), rgb(156, 137, 239));
 }
 
 .g-kuolematon {
-    background: -webkit-linear-gradient(0deg,hsl(291, 100%, 69%),hsl(300, 100%, 65%));
+    background: -webkit-linear-gradient(0deg, hsl(291, 100%, 69%), hsl(300, 100%, 65%));
 }
 
 .c-eloton {
@@ -686,6 +878,7 @@ h1, h2, h3, h4, h5, h6 {
     flex-wrap: wrap;
     justify-content: center;
 }
+
 .yp-card {
     width: 18rem;
     border-radius: 0.8rem;
@@ -703,8 +896,8 @@ h1, h2, h3, h4, h5, h6 {
     flex-direction: column;
 }
 
-.yp-card-body  {
-    flex-grow: 1 
+.yp-card-body {
+    flex-grow: 1
 }
 
 .yp-card-header {
@@ -717,7 +910,7 @@ h1, h2, h3, h4, h5, h6 {
 .yp-card-header>h3 {
     font-size: 1.5em;
     font-weight: 700;
-    color: #444444!important;
+    color: #444444 !important;
     padding-bottom: 0;
     margin: 0;
 }
@@ -764,7 +957,7 @@ h1, h2, h3, h4, h5, h6 {
     text-shadow: 0 0 2px #e6b800;
 }
 
-.yp > h3 {
+.yp>h3 {
     font-family: 'Minecraftia';
 }
 
