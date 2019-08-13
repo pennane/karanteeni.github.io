@@ -1,0 +1,11 @@
+[
+    {
+        "title": "Mapreset",
+        "description": "Serveri siirtyy 1.14.4",
+        "dates": {
+            "start-date": "11.8.2019" ,
+            "end-date": "18.8.2019"
+        },
+        "__comment": "End date:n voi jättää tyhjäksi, jolloin tapahtuma luokitellaan päivän pituiseksi. Descriptionin voi myös iloisesti jättää tyhjäksi."
+    }
+]   
