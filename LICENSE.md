@@ -19,3 +19,15 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
+
+Suomeksi:
+
+MIT-lisenssi
+
+Tekijänoikeudet (c) 2018-2019, Karanteeni / Ixynas
+
+Kaikille henkilöille, jotka saavat kopion ohjelmistosta ja siihen liittyvistä dokumenttitiedostoista (myöhemmin "Ohjelmisto"), myönnetään tällöin ilmainen lupa käyttää ohjelmistoa ilman rajoituksia, mukaan lukien rajattomat käyttöoikeudet kopiointiin, muokkaamiseen, yhdistämiseen, julkaisuun, levittämiseen, alilisensointiin ja / tai ohjelmiston kopioiden myymiseen ja antaa lupa henkilöille, joille ohjelmisto on toimitettu, kuitenkin seuraavin edellytyksin:
+
+Yllä oleva tekijänoikeusilmoitus, ja tämä lupailmoitus, on sisällytettävä kaikkiin ohjelmiston kopioihin tai sen merkittäviin osiin.
+
+Ohjelmisto toimitetaan "sellaisena kuin se on", ilman minkäänlaista ilmaistua tai epäsuoraa takuuta, mukaan lukien, mutta ei rajoittuen kaupallisuuteen, soveltuvuuteen tiettyyn tarkoitukseen tai loukkaamattomuuteen. Tekijät tai tekijänoikeuksien haltijat eivät missään tapauksessa ole vastuussa vaateista, vahingoista tai muusta velvollisuudesta, joka syntyy ohjelmistosta, kanteesta ulkopuolella, ohjelmiston käytöstä tai muista asioista yhteydessä ohjelmistoon.

@@ -2,7 +2,7 @@
 
 Peruspaske sivut (HTML, CSS, JS) :D
 
-Versio: 3.9.1
+Versio: 3.9.2
 
 ## "Hei pukki, mullois vaan yks toive... että maailmassa olisi rauha..."
 
@@ -95,7 +95,7 @@ UUID:tä käytetään lähinnä skinin hakemiseen, joka päivittyy automaattises
 
 ## Hatunnosto
 
-* [Crafatar](https://crafatar.com/) - Käytetty skinien kyselyyn
+* [Visage](https://visage.surgeplay.com/) - Käytetty skinien kyselyyn
 * [Minecraft Server Status](https://mcsrvstat.us/) - Käytetty palvelimen statukseen
 * [Clipboard.js](https://clipboardjs.com/) - Käytetty elementtien kopioimiseen leikepöydälle
 * [March08 Animated Burgers](https://march08.github.io/animated-burgers/) - Käytetty mobiilinavigointipalkin ikonina 
