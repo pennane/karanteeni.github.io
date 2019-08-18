@@ -7,7 +7,7 @@
         },
         {
             "nimi": "Nuubles",
-            "kuvaus": "Epäaktiivinen palvelimella. Säätää tulevaa päivitystä aina kun ei ole ignoraamassa.",
+            "kuvaus": "Pääosin epäaktiivinen palvelimella. Säätää uusia ominaisuuksia sitä mukaa kun aikaa löytyy.",
             "uuid": "d4ef4bc2db26462c9793389ba56d2818"
         }
     ],
@@ -24,7 +24,7 @@
         },
         {
             "nimi": "Naxray",
-            "kuvaus": "Pitää hajoavaa serveriä kasassa (ellei ole hermolomalla).",
+            "kuvaus": "Hmmmms.",
             "uuid": "05c0c0ead62240d4b8a20d4ec986c039"
         },
         {
@@ -34,19 +34,19 @@
         },
         {
             "nimi": "Ougii_Lewe",
-            "kuvaus": "Ei pelaa servulla, mutta rakentaa uutta spawnia.",
+            "kuvaus": "Ei pelaa servulla, mutta rakensi uuden spawnin",
             "uuid": "5cab2b2a16dc410491ff40fa6920d01d"
         }
     ],
     "operaattorit": [
         {
             "nimi": "Irontank_01",
-            "kuvaus": "Aktiivinen ylläpitäjä, ehkä hieman rasisti.",
+            "kuvaus": "Satunnaisesti aktiivinen ylläpitäjä.",
             "uuid": "5d56328849f44d1b97bb97c437a3f625"
         },
         {
             "nimi": "joppeownaaja",
-            "kuvaus": "Joku joppe, joka tuli servulle ylläpidon painostuksesta Jomea kohtaan. Onhan se kai ihan hyvä.",
+            "kuvaus": "Joku joppe, joka tuli servulle ylläpidon painostuksesta Jomea kohtaan. Tällä hetkellä hajoamassa metsään.",
             "uuid": "534a19d0566248f8aa9d06f6d1732e04"
         }
     ],
