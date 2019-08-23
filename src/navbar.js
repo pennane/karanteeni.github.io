@@ -186,7 +186,14 @@ var Navbar = function (_React$Component5) {
                     React.createElement(
                         "button",
                         { className: "navbar-toggler", type: "button", "data-toggle": "collapse", "data-target": "#navbarResponsive", "aria-controls": "navbarResponsive", "aria-expanded": "false", "aria-label": "Toggle navigation" },
-                        React.createElement("span", { className: "navbar-toggler-icon" })
+                        React.createElement(
+                            "div",
+                            { className: "navbar-toggler-icon burger burger-rotate" },
+                            React.createElement(
+                                "div",
+                                { className: "burger-lines" }
+                            )
+                            )
                     ),
                     React.createElement(
                         "div",
