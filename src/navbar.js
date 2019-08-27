@@ -8,9 +8,9 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
-function Icon(props) {
+var Icon = function Icon(props) {
     return React.createElement("i", { className: props.icon });
-}
+};
 
 var Tooltip = function (_React$Component) {
     _inherits(Tooltip, _React$Component);
@@ -186,7 +186,11 @@ var Navbar = function (_React$Component5) {
                     React.createElement(
                         "button",
                         { className: "navbar-toggler", type: "button", "data-toggle": "collapse", "data-target": "#navbarResponsive", "aria-controls": "navbarResponsive", "aria-expanded": "false", "aria-label": "Toggle navigation" },
-                        React.createElement("span", { className: "navbar-toggler-icon" })
+                        React.createElement(
+                            "div",
+                            { className: "navbar-toggler-icon burger burger-rotate" },
+                            React.createElement("div", { className: "burger-lines" })
+                        )
                     ),
                     React.createElement(
                         "div",
