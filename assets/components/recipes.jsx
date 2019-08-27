@@ -14,7 +14,7 @@ class RecipeList extends React.Component {
     }
 }
 
-function Recipes(props) {
+const Recipes = (props) => {
     return (
         <div className="col-lg-6 m-auto text-center">
             <Chainmail recipe={props.recipe} />
@@ -36,7 +36,7 @@ function Recipes(props) {
     )
 }
 
-function Chainmail(props) {
+const Chainmail = (props) => {
     return (
         <figure className="figure mb-5">
             <CmailImg img={props.img} />
@@ -45,13 +45,13 @@ function Chainmail(props) {
     )
 }
 
-function CmailImg(props) {
+const CmailImg = () => {
     return (
         <img src="assets/images/recipes/chainmail_armor.png" alt="" className="img-fluid recipe" />
     )
 }
 
-function CmailCap(props) {
+const CmailCap = () => {
     return (
         <figcaption className="figure-caption">
             Chainmail Armorit rakennetaan iron bareista samalla tavalla kuin normaalit armorit. Tarvittava raaka-aine on iron bar.
@@ -59,7 +59,7 @@ function CmailCap(props) {
     )
 }
 
-function Coral(props) {
+const Coral = (props) => {
     return (
         <figure className="figure mb-5">
             <CoralImg img={props.img} />
@@ -68,13 +68,13 @@ function Coral(props) {
     )
 }
 
-function CoralImg(props) {
+const CoralImg = () => {
     return (
         <img src="assets/images/recipes/fire_coral.png" alt="" className="img-fluid recipe" />
     )
 }
 
-function CoralCap(props) {
+const CoralCap = () => {
     return (
         <figcaption className="figure-caption">
             Coral faneja voi muuttaa Coraleiksi.
@@ -82,7 +82,7 @@ function CoralCap(props) {
     )
 }
 
-function Plank(props) {
+const Plank = (props) => {
     return (
         <figure className="figure mb-5">
             <PlankImg img={props.img} />
@@ -91,13 +91,13 @@ function Plank(props) {
     )
 }
 
-function PlankImg(props) {
+const PlankImg = () => {
     return (
         <img src="assets/images/recipes/plank.png" alt="" className="img-fluid recipe" />
     )
 }
 
-function PlankCap(props) {
+const PlankCap = () => {
     return (
         <figcaption className="figure-caption">
             Laittamalla kaksi slabia päällekkäin mistä tahansa puumateriaalista tekee siitä kokonaisen plankin.
@@ -105,7 +105,7 @@ function PlankCap(props) {
     )
 }
 
-function PHead(props) {
+const PHead = (props) => {
     return (
         <figure className="figure mb-5">
             <PHeadImg img={props.img} />
@@ -114,13 +114,13 @@ function PHead(props) {
     )
 }
 
-function PHeadImg(props) {
+const PHeadImg = () => {
     return (
         <img src="assets/images/recipes/player_head.png" alt="" className="img-fluid recipe" />
     )
 }
 
-function PHeadCap(props) {
+const PHeadCap = () => {
     return (
         <figcaption className="figure-caption">
             Voit tehdä pelaajan pään. :) Raaka-aineina Bone block, Emerald, Diamond, Golden Apple ja Rotten flesh.
@@ -128,7 +128,7 @@ function PHeadCap(props) {
     )
 }
 
-function ZHead(props) {
+const ZHead = (props) => {
     return (
         <figure className="figure mb-5">
             <ZHeadImg img={props.img} />
@@ -137,13 +137,13 @@ function ZHead(props) {
     )
 }
 
-function ZHeadImg(props) {
+const ZHeadImg = () => {
     return (
         <img src="assets/images/recipes/zombie_head.png" alt="" className="img-fluid recipe" />
     )
 }
 
-function ZHeadCap(props) {
+const ZHeadCap = () => {
     return (
         <figcaption className="figure-caption">
             Ja Zombien pään. Raaka-aineina Golden Apple, Bone block ja Rotten flesh. :o
@@ -151,7 +151,7 @@ function ZHeadCap(props) {
     )
 }
 
-function SkelHead(props) {
+const SkelHead = () => {
     return (
         <figure className="figure mb-5">
             <SkelHeadImg img={props.img} />
@@ -160,13 +160,13 @@ function SkelHead(props) {
     )
 }
 
-function SkelHeadImg(props) {
+const SkelHeadImg = () => {
     return (
         <img src="assets/images/recipes/skeleton_head.png" alt="" className="img-fluid recipe" />
     )
 }
 
-function SkelHeadCap(props) {
+const SkelHeadCap = () => {
     return (
         <figcaption className="figure-caption">
             Voit tehdä myös Skeletonin pään. Raaka-aineina Golden Apple, Bone ja Bone block.
@@ -174,7 +174,7 @@ function SkelHeadCap(props) {
     )
 }
 
-function SmeltGravel(props) {
+const SmeltGravel = (props) => {
     return (
         <figure className="figure mb-5">
             <SmeltGImg img={props.img} />
@@ -183,13 +183,13 @@ function SmeltGravel(props) {
     )
 }
 
-function SmeltGImg(props) {
+const SmeltGImg = () => {
     return (
         <img src="assets/images/recipes/smelt_gravel.png" alt="" className="img-fluid recipe" />
     )
 }
 
-function SmeltGCap(props) {
+const SmeltGCap = () => {
     return (
         <figcaption className="figure-caption">
             Voit sulattaa stonea graveliksi.
@@ -197,7 +197,7 @@ function SmeltGCap(props) {
     )
 }
 
-function SmeltSand(props) {
+const SmeltSand = (props) => {
     return (
         <figure className="figure mb-5">
             <SmeltSImg img={props.img} />
@@ -206,13 +206,13 @@ function SmeltSand(props) {
     )
 }
 
-function SmeltSImg(props) {
+const SmeltSImg = () => {
     return (
         <img src="assets/images/recipes/smelt_sand.png" alt="" className="img-fluid recipe" />
     )
 }
 
-function SmeltSCap(props) {
+const SmeltSCap = () => {
     return (
         <figcaption className="figure-caption">
             Ja gravelia hiekaksi, mahdollistaen lasin tekemisen stonesta. :)
@@ -220,7 +220,7 @@ function SmeltSCap(props) {
     )
 }
 
-function XpBot(props) {
+const XpBot = (props) => {
     return (
         <figure className="figure mb-5">
             <XpBotImg img={props.img} />
@@ -229,13 +229,13 @@ function XpBot(props) {
     )
 }
 
-function XpBotImg(props) {
+const XpBotImg = () => {
     return (
         <img src="assets/images/recipes/xp_bottle.png" alt="" className="img-fluid recipe" />
     )
 }
 
-function XpBotCap(props) {
+const XpBotCap = () => {
     return (
         <figcaption className="figure-caption">
             Enchanted Bottle on myös mahdollista koota. ;)
@@ -243,7 +243,7 @@ function XpBotCap(props) {
     )
 }
 
-function Dirt(props) {
+const Dirt = (props) => {
     return (
         <figure className="figure mb-5">
             <DirtImg img={props.img} />
@@ -252,13 +252,13 @@ function Dirt(props) {
     )
 }
 
-function DirtImg(props) {
+const DirtImg = () => {
     return (
         <img src="assets/images/recipes/dirt.png" alt="" className="img-fluid recipe" />
     )
 }
 
-function DirtCap(props) {
+const DirtCap = () => {
     return (
         <figcaption className="figure-caption">
             Meemi.

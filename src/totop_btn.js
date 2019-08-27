@@ -12,13 +12,13 @@ window.onscroll = function () {
     scrollFunction();
 };
 
-function scrollFunction() {
+var scrollFunction = function scrollFunction() {
     if (document.body.scrollTop > 150 || document.documentElement.scrollTop > 150) {
         document.getElementById("toTop").style.display = "block";
     } else {
         document.getElementById("toTop").style.display = "none";
     }
-}
+};
 
 var ScrollToTopButton = function (_React$Component) {
     _inherits(ScrollToTopButton, _React$Component);
