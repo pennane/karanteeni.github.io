@@ -172,7 +172,7 @@ var ZHeadCap = function ZHeadCap() {
     );
 };
 
-var SkelHead = function SkelHead() {
+var SkelHead = function SkelHead(props) {
     return React.createElement(
         "figure",
         { className: "figure mb-5" },
