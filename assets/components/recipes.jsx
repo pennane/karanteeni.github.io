@@ -151,7 +151,7 @@ const ZHeadCap = () => {
     )
 }
 
-const SkelHead = () => {
+const SkelHead = (props) => {
     return (
         <figure className="figure mb-5">
             <SkelHeadImg img={props.img} />
