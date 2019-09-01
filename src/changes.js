@@ -172,6 +172,40 @@ var ChangeLog = function (_React$Component5) {
                     React.createElement(
                         Changebody,
                         { month: 'elokuu2019', showing: true },
+                        React.createElement(ChangeDate, { date: '19.08.2019' }),
+                        React.createElement(
+                            'ul',
+                            null,
+                            React.createElement(Changelist, { change: 'Coreprotect osaa nyt tallentaa lent\xE4v\xE4t blockit' }),
+                            React.createElement(Changelist, { change: 'Tnt ja tnt_minecart ei en\xE4\xE4 lenn\xE4t\xE4 niin paljon blockei -> parempia raivaukseen' }),
+                            React.createElement(Changelist, { change: 'lis\xE4tty custom recipet servulle' })
+                        ),
+                        React.createElement(ChangeDate, { date: '17.08.2019' }),
+                        React.createElement(
+                            'ul',
+                            null,
+                            React.createElement(Changelist, { change: 'Paranneltu databasen k\xE4ytt\xF6\xF6: StatManager, Karanteenials, KaranteeniPerms, Chatar' }),
+                            React.createElement(Changelist, { change: 'Mahdollisesti v\xE4hennetty joinauksesta seuraavaa lagia: KaranteeniPerms, Karanteenials, KaranteeniCore, StatManager, Chatar (vaihdettu db sync -> async. jos ongelmia ilmenee niin ilmoittakaa)' }),
+                            React.createElement(Changelist, { change: 'Lis\xE4tty automaattinen restart (yp k\xE4ytt\xE4k\xE4\xE4 komentoa /restarter:restart)' }),
+                            React.createElement(Changelist, { change: 'Poistettu virheellisi\xE4 blockeja taikamatosta' }),
+                            React.createElement(Changelist, { change: 'L\xF6ydetty ISO bugi timereista joka johti siihen ett\xE4 kaikki timerit ajettiin joka tickill\xE4. Nyt fixattu, hyv\xE4ll\xE4 tuurilla isoja vaikutuksia tehokkuuteen' }),
+                            React.createElement(Changelist, { change: 'Operaattorista yl\xF6sp\xE4in oikat /player kill <nimi>' })
+                        ),
+                        React.createElement(ChangeDate, { date: '16.08.2019' }),
+                        React.createElement(
+                            'ul',
+                            null,
+                            React.createElement(Changelist, { change: '/rtp toimii, aiempaa nopeampi ja ei mene veden alle' })
+                        ),
+                        React.createElement(ChangeDate, { date: '13.08.2019' }),
+                        React.createElement(
+                            'ul',
+                            null,
+                            React.createElement(Changelist, { change: 'Fixattu "ep\xE4turvallinen sijainti" teleportatessa' }),
+                            React.createElement(Changelist, { change: 'Fixattu puuttunut \xE4\xE4ni kotiin teleportatessa' }),
+                            React.createElement(Changelist, { change: '/rtp tehostettu' }),
+                            React.createElement(Changelist, { change: 'Fixattu rtp veden alle vienti' })
+                        ),
                         React.createElement(ChangeDate, { date: '11.08.2019' }),
                         React.createElement(
                             'ul',
