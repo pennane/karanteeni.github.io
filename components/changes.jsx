@@ -95,6 +95,32 @@ class ChangeLog extends React.Component {
             <div className='accordion text-left'>
                 <Month month='elokuu2019' btntext='Elokuu 2019'>
                     <Changebody month='elokuu2019' showing>
+                        <ChangeDate date='19.08.2019'/>
+                        <ul>
+                            <Changelist change='Coreprotect osaa nyt tallentaa lentävät blockit'/>
+                            <Changelist change='Tnt ja tnt_minecart ei enää lennätä niin paljon blockei -> parempia raivaukseen'/>
+                            <Changelist change='lisätty custom recipet servulle'/>
+                        </ul>
+                        <ChangeDate date='17.08.2019'/>
+                        <ul>
+                            <Changelist change='Paranneltu databasen käyttöö: StatManager, Karanteenials, KaranteeniPerms, Chatar'/>
+                            <Changelist change='Mahdollisesti vähennetty joinauksesta seuraavaa lagia: KaranteeniPerms, Karanteenials, KaranteeniCore, StatManager, Chatar (vaihdettu db sync -> async. jos ongelmia ilmenee niin ilmoittakaa)'/>
+                            <Changelist change='Lisätty automaattinen restart (yp käyttäkää komentoa /restarter:restart)'/>
+                            <Changelist change='Poistettu virheellisiä blockeja taikamatosta'/>
+                            <Changelist change='Löydetty ISO bugi timereista joka johti siihen että kaikki timerit ajettiin joka tickillä. Nyt fixattu, hyvällä tuurilla isoja vaikutuksia tehokkuuteen'/>
+                            <Changelist change='Operaattorista ylöspäin oikat /player kill <nimi>'/>
+                        </ul>
+                        <ChangeDate date='16.08.2019'/>
+                        <ul>
+                            <Changelist change='/rtp toimii, aiempaa nopeampi ja ei mene veden alle'/>
+                        </ul>
+                        <ChangeDate date='13.08.2019'/>
+                        <ul>
+                            <Changelist change='Fixattu "epäturvallinen sijainti" teleportatessa'/>
+                            <Changelist change='Fixattu puuttunut ääni kotiin teleportatessa'/>
+                            <Changelist change='/rtp tehostettu'/>
+                            <Changelist change='Fixattu rtp veden alle vienti'/>
+                        </ul>
                         <ChangeDate date='11.08.2019'/>
                         <ul>
                             <Changelist change='Uusi versio ja uudet kujeet. 1.14 on saapunut.'/>

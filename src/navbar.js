@@ -189,11 +189,8 @@ var Navbar = function (_React$Component5) {
                         React.createElement(
                             "div",
                             { className: "navbar-toggler-icon burger burger-rotate" },
-                            React.createElement(
-                                "div",
-                                { className: "burger-lines" }
-                            )
-                            )
+                            React.createElement("div", { className: "burger-lines" })
+                        )
                     ),
                     React.createElement(
                         "div",

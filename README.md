@@ -2,7 +2,7 @@
 
 Peruspaske sivut (HTML, CSS, JS) :D
 
-Versio: 3.10.2
+Versio: 3.10.3
 
 ## "Hei pukki, mullois vaan yks toive... että maailmassa olisi rauha..."
 
