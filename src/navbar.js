@@ -165,6 +165,20 @@ var DropDownItem = function (_React$Component4) {
     return DropDownItem;
 }(React.Component);
 
+var Nav = function Nav(props) {
+    if (window.location.href.indexOf("index") > -1) {
+        return React.createElement(
+            "nav",
+            { className: "navbar navbar-expand-lg navbar-dark karanav" },
+            props.children
+        );
+    }return React.createElement(
+        "nav",
+        { className: "navbar navbar-expand-lg navbar-dark karanav fixed-top" },
+        props.children
+    );
+};
+
 var Navbar = function (_React$Component5) {
     _inherits(Navbar, _React$Component5);
 
@@ -178,8 +192,8 @@ var Navbar = function (_React$Component5) {
         key: "render",
         value: function render() {
             return React.createElement(
-                "nav",
-                { className: "navbar navbar-expand-lg navbar-dark karanav fixed-top" },
+                Nav,
+                null,
                 React.createElement(
                     "div",
                     { className: "container" },

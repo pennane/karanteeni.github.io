@@ -34,7 +34,7 @@ function parseDate(str) {
 }
 
 function readableTimeValues(date) {
-  console.log(date.getFullYear());
+/*   console.log(date.getFullYear()); */
   return {
     year: date.getFullYear(),
     month: date.getMonth() + 1,

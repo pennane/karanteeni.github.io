@@ -2,7 +2,7 @@
 
 Peruspaske sivut (HTML, CSS, JS) :D
 
-Versio: 3.10.3
+Versio: 3.11.0
 
 ## "Hei pukki, mullois vaan yks toive... että maailmassa olisi rauha..."
 
@@ -91,7 +91,7 @@ Reactin JSX-komponentit täytyy kääntää selaimelle luettavaksi JavaScriptiks
 
 Tämä asentaa Babel compilerin omaan repositorioosi. Kun olet valmis, avaa terminaali/komentokehote/PowerShell repositiorioosi, suorita seuraava komento:
 
-`npx babel --watch ./assets/components --out-dir ./src --presets react-app/prod`
+`npx babel --watch ./components --out-dir ./src --presets react-app/prod`
 
 Tämän jälkeen voit muokata rauhassa JSX-tiedostoja, Babel hoitaa kääntämisen JavaScriptiksi, eikä sinun tarvitse koskea niihin :).
 
