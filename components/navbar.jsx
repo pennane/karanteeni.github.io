@@ -95,10 +95,24 @@ class DropDownItem extends React.Component {
     }
 }
 
+const Nav = (props) => {
+    if (window.location.href.indexOf("index") > -1) {
+        return(
+            <nav className="navbar navbar-expand-lg navbar-dark karanav">
+                {props.children}
+            </nav>
+        )
+    } return(
+        <nav className="navbar navbar-expand-lg navbar-dark karanav fixed-top">
+            {props.children}
+        </nav>
+    )
+}
+
 class Navbar extends React.Component {
     render() {
         return (
-            <nav className="navbar navbar-expand-lg navbar-dark karanav fixed-top">
+            <Nav>
                 <div className="container">
                     <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
                         <div className="navbar-toggler-icon burger burger-rotate">
@@ -134,7 +148,7 @@ class Navbar extends React.Component {
                         </ul>
                     </div>
                 </div>
-            </nav>
+            </Nav>
         )
     }
 }
