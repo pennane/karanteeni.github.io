@@ -96,14 +96,8 @@ class DropDownItem extends React.Component {
 }
 
 const Nav = (props) => {
-    if (window.location.href.indexOf("index") > -1) {
-        return(
-            <nav className="navbar navbar-expand-lg navbar-dark karanav">
-                {props.children}
-            </nav>
-        )
-    } return(
-        <nav className="navbar navbar-expand-lg navbar-dark karanav fixed-top">
+    return (
+        <nav className="navbar navbar-expand-lg navbar-dark karanav">
             {props.children}
         </nav>
     )
