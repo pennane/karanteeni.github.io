@@ -166,15 +166,9 @@ var DropDownItem = function (_React$Component4) {
 }(React.Component);
 
 var Nav = function Nav(props) {
-    if (window.location.href.indexOf("index") > -1) {
-        return React.createElement(
-            "nav",
-            { className: "navbar navbar-expand-lg navbar-dark karanav" },
-            props.children
-        );
-    }return React.createElement(
+    return React.createElement(
         "nav",
-        { className: "navbar navbar-expand-lg navbar-dark karanav fixed-top" },
+        { className: "navbar navbar-expand-lg navbar-dark karanav" },
         props.children
     );
 };
