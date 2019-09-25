@@ -93,8 +93,26 @@ class ChangeLog extends React.Component {
     render() {
         return (
             <div className='accordion text-left'>
+                <Month month='syyskuu2019' btntext='Syyskuu 2019'>
+                    <Changebody month='syyskuu2019' showing>
+                        <ChangeDate date='25.09.2019'/>
+                        <ul>
+                            <Changelist change='Tpa:n /back fixattu oikeiden pelaajien sijaintiin'/>
+                            <Changelist change='mobGriefing asetettu takaisin päälle'/>
+                        </ul>
+                        <ChangeDate date='24.09.2019'/>
+                        <ul>
+                            <Changelist change='Tp:n ja /spawn komennon /back tallentaa nyt sijainnin'/>
+                        </ul>
+                        <ChangeDate date='21.09.2019'/>
+                        <ul>
+                            <Changelist change='/kms ja /kys lisätty'/>
+                            <Changelist change='Spawnerit putoaa taas Silk Touch -enchantilla'/>
+                        </ul>
+                    </Changebody>
+                </Month>
                 <Month month='elokuu2019' btntext='Elokuu 2019'>
-                    <Changebody month='elokuu2019' showing>
+                    <Changebody month='elokuu2019' showing={false}>
                         <ChangeDate date='19.08.2019'/>
                         <ul>
                             <Changelist change='Coreprotect osaa nyt tallentaa lentävät blockit'/>
