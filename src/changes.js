@@ -168,10 +168,38 @@ var ChangeLog = function (_React$Component5) {
                 { className: 'accordion text-left' },
                 React.createElement(
                     Month,
+                    { month: 'syyskuu2019', btntext: 'Syyskuu 2019' },
+                    React.createElement(
+                        Changebody,
+                        { month: 'syyskuu2019', showing: true },
+                        React.createElement(ChangeDate, { date: '25.09.2019' }),
+                        React.createElement(
+                            'ul',
+                            null,
+                            React.createElement(Changelist, { change: 'Tpa:n /back fixattu oikeiden pelaajien sijaintiin' }),
+                            React.createElement(Changelist, { change: 'mobGriefing asetettu takaisin p\xE4\xE4lle' })
+                        ),
+                        React.createElement(ChangeDate, { date: '24.09.2019' }),
+                        React.createElement(
+                            'ul',
+                            null,
+                            React.createElement(Changelist, { change: 'Tp:n ja /spawn komennon /back tallentaa nyt sijainnin' })
+                        ),
+                        React.createElement(ChangeDate, { date: '21.09.2019' }),
+                        React.createElement(
+                            'ul',
+                            null,
+                            React.createElement(Changelist, { change: '/kms ja /kys lis\xE4tty' }),
+                            React.createElement(Changelist, { change: 'Spawnerit putoaa taas Silk Touch -enchantilla' })
+                        )
+                    )
+                ),
+                React.createElement(
+                    Month,
                     { month: 'elokuu2019', btntext: 'Elokuu 2019' },
                     React.createElement(
                         Changebody,
-                        { month: 'elokuu2019', showing: true },
+                        { month: 'elokuu2019', showing: false },
                         React.createElement(ChangeDate, { date: '19.08.2019' }),
                         React.createElement(
                             'ul',
