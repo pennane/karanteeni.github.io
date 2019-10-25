@@ -93,8 +93,19 @@ class ChangeLog extends React.Component {
     render() {
         return (
             <div className='accordion text-left'>
+                <Month month='lokakuu2019' btntext='Lokakuu 2019'>
+                    <Changebody month='lokakuu2019' showing>
+                        <ChangeDate date='25.10.2019'/>
+                        <ul>
+                            <Changelist change='/nimeä komento lisätty palvelimelle'/>
+                            <Changelist change='Lisätty ylläpidolle /setsign'/>
+                            <Changelist change='Korjattu viestibugi /nick player nick -komennossa (koskien ylläpitoa)'/>
+                            <Changelist change='/baltop korjattu'/>
+                        </ul>
+                    </Changebody>
+                </Month>
                 <Month month='syyskuu2019' btntext='Syyskuu 2019'>
-                    <Changebody month='syyskuu2019' showing>
+                    <Changebody month='syyskuu2019' showing={false}>
                         <ChangeDate date='25.09.2019'/>
                         <ul>
                             <Changelist change='Tpa:n /back fixattu oikeiden pelaajien sijaintiin'/>

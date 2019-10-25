@@ -168,10 +168,27 @@ var ChangeLog = function (_React$Component5) {
                 { className: 'accordion text-left' },
                 React.createElement(
                     Month,
+                    { month: 'lokakuu2019', btntext: 'Lokakuu 2019' },
+                    React.createElement(
+                        Changebody,
+                        { month: 'lokakuu2019', showing: true },
+                        React.createElement(ChangeDate, { date: '25.10.2019' }),
+                        React.createElement(
+                            'ul',
+                            null,
+                            React.createElement(Changelist, { change: '/nime\xE4 komento lis\xE4tty palvelimelle' }),
+                            React.createElement(Changelist, { change: 'Lis\xE4tty yll\xE4pidolle /setsign' }),
+                            React.createElement(Changelist, { change: 'Korjattu viestibugi /nick player nick -komennossa (koskien yll\xE4pitoa)' }),
+                            React.createElement(Changelist, { change: '/baltop korjattu' })
+                        )
+                    )
+                ),
+                React.createElement(
+                    Month,
                     { month: 'syyskuu2019', btntext: 'Syyskuu 2019' },
                     React.createElement(
                         Changebody,
-                        { month: 'syyskuu2019', showing: true },
+                        { month: 'syyskuu2019', showing: false },
                         React.createElement(ChangeDate, { date: '25.09.2019' }),
                         React.createElement(
                             'ul',
