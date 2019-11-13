@@ -43,11 +43,6 @@
             "nimi": "Irontank_01",
             "kuvaus": "Satunnaisesti aktiivinen ylläpitäjä.",
             "uuid": "5d56328849f44d1b97bb97c437a3f625"
-        },
-        {
-            "nimi": "joppeownaaja",
-            "kuvaus": "Joku joppe, joka tuli servulle ylläpidon painostuksesta Jomea kohtaan. Tällä hetkellä hajoamassa metsään.",
-            "uuid": "534a19d0566248f8aa9d06f6d1732e04"
         }
     ],
     "moderaattorit": [
