@@ -34,7 +34,6 @@ function parseDate(str) {
 }
 
 function readableTimeValues(date) {
-/*   console.log(date.getFullYear()); */
   return {
     year: date.getFullYear(),
     month: date.getMonth() + 1,
@@ -58,7 +57,11 @@ function createEventElement(event) {
   time.className = "tapahtuma-time";
   title.className = "tapahtuma-title";
   desc.className = "tapahtuma-desc";
-  time.textContent = event.readableStartDate;
+  if (event.options.forceEndDate) {
+    time.textContent = event.readableStartDate + " - " + event.readableEndDate;
+  } else {
+    time.textContent = event.readableStartDate;
+  }
   title.textContent = event.title;
 
   head.appendChild(time);
@@ -118,7 +121,6 @@ function parseServerEvent(event) {
   var startDate = parseDate(event.dates["start-date"]);
   var endDate = parseDate(event.dates["end-date"]);
   var specifiedEndDate = true;
-  console.log(startDate, endDate);
 
   if (!startDate) {
     throw new Error("Server event had no valid start date");
@@ -141,12 +143,12 @@ function parseServerEvent(event) {
   var parsedEvent = {
     startDate: startDate,
     endDate: endDate,
-    readableStartDate:
-      startData.day + "." + startData.month + "." + startData.year,
+    readableStartDate: startData.day + "." + startData.month + "." + startData.year,
     readableEndDate: endData.day + "." + endData.month + "." + endData.year,
     specifiedEndDate: specifiedEndDate,
     title: event.title,
-    description: event.description
+    description: event.description,
+    options: event.options || {}
   };
 
   if (startDate > now) {
