@@ -1,6 +1,6 @@
 'use strict';
 
-function Icon(props) {
+const Icon = (props) => {
     return (
         <i className={props.icon}></i>
     )
@@ -95,13 +95,23 @@ class DropDownItem extends React.Component {
     }
 }
 
+const Nav = (props) => {
+    return (
+        <nav className="navbar navbar-expand-lg navbar-dark karanav">
+            {props.children}
+        </nav>
+    )
+}
+
 class Navbar extends React.Component {
     render() {
         return (
-            <nav className="navbar navbar-expand-lg navbar-dark karanav">
+            <Nav>
                 <div className="container">
                     <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-                        <span className="navbar-toggler-icon"></span>
+                        <div className="navbar-toggler-icon burger burger-rotate">
+                            <div className="burger-lines"></div>
+                        </div>
                     </button>
                     <div className="collapse navbar-collapse" id="navbarResponsive">
                         <ul className="nav navbar-nav nav-fill" style={{flexGrow: 1, textAlign: 'center'}}>
@@ -132,7 +142,7 @@ class Navbar extends React.Component {
                         </ul>
                     </div>
                 </div>
-            </nav>
+            </Nav>
         )
     }
 }

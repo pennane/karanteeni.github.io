@@ -45,7 +45,7 @@ var RecipeList = function (_React$Component) {
     return RecipeList;
 }(React.Component);
 
-function Recipes(props) {
+var Recipes = function Recipes(props) {
     return React.createElement(
         "div",
         { className: "col-lg-6 m-auto text-center" },
@@ -65,216 +65,216 @@ function Recipes(props) {
         React.createElement("br", null),
         React.createElement(Dirt, { recipe: props.recipe })
     );
-}
+};
 
-function Chainmail(props) {
+var Chainmail = function Chainmail(props) {
     return React.createElement(
         "figure",
         { className: "figure mb-5" },
         React.createElement(CmailImg, { img: props.img }),
         React.createElement(CmailCap, { cap: props.img })
     );
-}
+};
 
-function CmailImg(props) {
+var CmailImg = function CmailImg() {
     return React.createElement("img", { src: "assets/images/recipes/chainmail_armor.png", alt: "", className: "img-fluid recipe" });
-}
+};
 
-function CmailCap(props) {
+var CmailCap = function CmailCap() {
     return React.createElement(
         "figcaption",
         { className: "figure-caption" },
         "Chainmail Armorit rakennetaan iron bareista samalla tavalla kuin normaalit armorit. Tarvittava raaka-aine on iron bar."
     );
-}
+};
 
-function Coral(props) {
+var Coral = function Coral(props) {
     return React.createElement(
         "figure",
         { className: "figure mb-5" },
         React.createElement(CoralImg, { img: props.img }),
         React.createElement(CoralCap, { cap: props.cap })
     );
-}
+};
 
-function CoralImg(props) {
+var CoralImg = function CoralImg() {
     return React.createElement("img", { src: "assets/images/recipes/fire_coral.png", alt: "", className: "img-fluid recipe" });
-}
+};
 
-function CoralCap(props) {
+var CoralCap = function CoralCap() {
     return React.createElement(
         "figcaption",
         { className: "figure-caption" },
         "Coral faneja voi muuttaa Coraleiksi."
     );
-}
+};
 
-function Plank(props) {
+var Plank = function Plank(props) {
     return React.createElement(
         "figure",
         { className: "figure mb-5" },
         React.createElement(PlankImg, { img: props.img }),
         React.createElement(PlankCap, { cap: props.cap })
     );
-}
+};
 
-function PlankImg(props) {
+var PlankImg = function PlankImg() {
     return React.createElement("img", { src: "assets/images/recipes/plank.png", alt: "", className: "img-fluid recipe" });
-}
+};
 
-function PlankCap(props) {
+var PlankCap = function PlankCap() {
     return React.createElement(
         "figcaption",
         { className: "figure-caption" },
         "Laittamalla kaksi slabia p\xE4\xE4llekk\xE4in mist\xE4 tahansa puumateriaalista tekee siit\xE4 kokonaisen plankin."
     );
-}
+};
 
-function PHead(props) {
+var PHead = function PHead(props) {
     return React.createElement(
         "figure",
         { className: "figure mb-5" },
         React.createElement(PHeadImg, { img: props.img }),
         React.createElement(PHeadCap, { cap: props.cap })
     );
-}
+};
 
-function PHeadImg(props) {
+var PHeadImg = function PHeadImg() {
     return React.createElement("img", { src: "assets/images/recipes/player_head.png", alt: "", className: "img-fluid recipe" });
-}
+};
 
-function PHeadCap(props) {
+var PHeadCap = function PHeadCap() {
     return React.createElement(
         "figcaption",
         { className: "figure-caption" },
         "Voit tehd\xE4 pelaajan p\xE4\xE4n. :) Raaka-aineina Bone block, Emerald, Diamond, Golden Apple ja Rotten flesh."
     );
-}
+};
 
-function ZHead(props) {
+var ZHead = function ZHead(props) {
     return React.createElement(
         "figure",
         { className: "figure mb-5" },
         React.createElement(ZHeadImg, { img: props.img }),
         React.createElement(ZHeadCap, { cap: props.cap })
     );
-}
+};
 
-function ZHeadImg(props) {
+var ZHeadImg = function ZHeadImg() {
     return React.createElement("img", { src: "assets/images/recipes/zombie_head.png", alt: "", className: "img-fluid recipe" });
-}
+};
 
-function ZHeadCap(props) {
+var ZHeadCap = function ZHeadCap() {
     return React.createElement(
         "figcaption",
         { className: "figure-caption" },
         "Ja Zombien p\xE4\xE4n. Raaka-aineina Golden Apple, Bone block ja Rotten flesh. :o"
     );
-}
+};
 
-function SkelHead(props) {
+var SkelHead = function SkelHead(props) {
     return React.createElement(
         "figure",
         { className: "figure mb-5" },
         React.createElement(SkelHeadImg, { img: props.img }),
         React.createElement(SkelHeadCap, { cap: props.cap })
     );
-}
+};
 
-function SkelHeadImg(props) {
+var SkelHeadImg = function SkelHeadImg() {
     return React.createElement("img", { src: "assets/images/recipes/skeleton_head.png", alt: "", className: "img-fluid recipe" });
-}
+};
 
-function SkelHeadCap(props) {
+var SkelHeadCap = function SkelHeadCap() {
     return React.createElement(
         "figcaption",
         { className: "figure-caption" },
         "Voit tehd\xE4 my\xF6s Skeletonin p\xE4\xE4n. Raaka-aineina Golden Apple, Bone ja Bone block."
     );
-}
+};
 
-function SmeltGravel(props) {
+var SmeltGravel = function SmeltGravel(props) {
     return React.createElement(
         "figure",
         { className: "figure mb-5" },
         React.createElement(SmeltGImg, { img: props.img }),
         React.createElement(SmeltGCap, { cap: props.cap })
     );
-}
+};
 
-function SmeltGImg(props) {
+var SmeltGImg = function SmeltGImg() {
     return React.createElement("img", { src: "assets/images/recipes/smelt_gravel.png", alt: "", className: "img-fluid recipe" });
-}
+};
 
-function SmeltGCap(props) {
+var SmeltGCap = function SmeltGCap() {
     return React.createElement(
         "figcaption",
         { className: "figure-caption" },
         "Voit sulattaa stonea graveliksi."
     );
-}
+};
 
-function SmeltSand(props) {
+var SmeltSand = function SmeltSand(props) {
     return React.createElement(
         "figure",
         { className: "figure mb-5" },
         React.createElement(SmeltSImg, { img: props.img }),
         React.createElement(SmeltSCap, { cap: props.cap })
     );
-}
+};
 
-function SmeltSImg(props) {
+var SmeltSImg = function SmeltSImg() {
     return React.createElement("img", { src: "assets/images/recipes/smelt_sand.png", alt: "", className: "img-fluid recipe" });
-}
+};
 
-function SmeltSCap(props) {
+var SmeltSCap = function SmeltSCap() {
     return React.createElement(
         "figcaption",
         { className: "figure-caption" },
         "Ja gravelia hiekaksi, mahdollistaen lasin tekemisen stonesta. :)"
     );
-}
+};
 
-function XpBot(props) {
+var XpBot = function XpBot(props) {
     return React.createElement(
         "figure",
         { className: "figure mb-5" },
         React.createElement(XpBotImg, { img: props.img }),
         React.createElement(XpBotCap, { cap: props.cap })
     );
-}
+};
 
-function XpBotImg(props) {
+var XpBotImg = function XpBotImg() {
     return React.createElement("img", { src: "assets/images/recipes/xp_bottle.png", alt: "", className: "img-fluid recipe" });
-}
+};
 
-function XpBotCap(props) {
+var XpBotCap = function XpBotCap() {
     return React.createElement(
         "figcaption",
         { className: "figure-caption" },
         "Enchanted Bottle on my\xF6s mahdollista koota. ;)"
     );
-}
+};
 
-function Dirt(props) {
+var Dirt = function Dirt(props) {
     return React.createElement(
         "figure",
         { className: "figure mb-5" },
         React.createElement(DirtImg, { img: props.img }),
         React.createElement(DirtCap, { cap: props.cap })
     );
-}
+};
 
-function DirtImg(props) {
+var DirtImg = function DirtImg() {
     return React.createElement("img", { src: "assets/images/recipes/dirt.png", alt: "", className: "img-fluid recipe" });
-}
+};
 
-function DirtCap(props) {
+var DirtCap = function DirtCap() {
     return React.createElement(
         "figcaption",
         { className: "figure-caption" },
         "Meemi."
     );
-}
+};
 
 ReactDOM.render(React.createElement(RecipeList, null), document.getElementById('recipes'));

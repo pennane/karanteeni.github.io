@@ -23,11 +23,6 @@
             "uuid": "d347193d8b794a389158074681bc32f8"
         },
         {
-            "nimi": "Naxray",
-            "kuvaus": "Hmmmms.",
-            "uuid": "05c0c0ead62240d4b8a20d4ec986c039"
-        },
-        {
             "nimi": "lakanakana",
             "kuvaus": "Nuublesin tyttis - hoitaa jopa hommansa kunhan jaksaa pelata.",
             "uuid": "78cf984cf45241b9bdd600cc4677c7d9"
@@ -43,11 +38,6 @@
             "nimi": "Irontank_01",
             "kuvaus": "Satunnaisesti aktiivinen ylläpitäjä.",
             "uuid": "5d56328849f44d1b97bb97c437a3f625"
-        },
-        {
-            "nimi": "joppeownaaja",
-            "kuvaus": "Joku joppe, joka tuli servulle ylläpidon painostuksesta Jomea kohtaan. Tällä hetkellä hajoamassa metsään.",
-            "uuid": "534a19d0566248f8aa9d06f6d1732e04"
         }
     ],
     "moderaattorit": [
@@ -55,6 +45,11 @@
             "nimi": "Susse",
             "kuvaus": "Sitkeä ja sisukas, joka pääsi vasta toisella yrittämällä moderaattoriksi.",
             "uuid": "144b79b3-71c0-4e7e-b466-f94d36d0caed"
+        },
+        {
+            "nimi": "Wiikin",
+            "kuvaus": "\"Hey, guess who's back?\"",
+            "uuid": "9b218de84001430d88f9821a71e62ad4"
         }
     ],
     "rakentajat": [

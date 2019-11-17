@@ -8,9 +8,9 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
-function Icon(props) {
+var Icon = function Icon(props) {
     return React.createElement("i", { className: props.icon });
-}
+};
 
 var Tooltip = function (_React$Component) {
     _inherits(Tooltip, _React$Component);
@@ -165,6 +165,14 @@ var DropDownItem = function (_React$Component4) {
     return DropDownItem;
 }(React.Component);
 
+var Nav = function Nav(props) {
+    return React.createElement(
+        "nav",
+        { className: "navbar navbar-expand-lg navbar-dark karanav" },
+        props.children
+    );
+};
+
 var Navbar = function (_React$Component5) {
     _inherits(Navbar, _React$Component5);
 
@@ -178,8 +186,8 @@ var Navbar = function (_React$Component5) {
         key: "render",
         value: function render() {
             return React.createElement(
-                "nav",
-                { className: "navbar navbar-expand-lg navbar-dark karanav fixed-top" },
+                Nav,
+                null,
                 React.createElement(
                     "div",
                     { className: "container" },
@@ -189,11 +197,8 @@ var Navbar = function (_React$Component5) {
                         React.createElement(
                             "div",
                             { className: "navbar-toggler-icon burger burger-rotate" },
-                            React.createElement(
-                                "div",
-                                { className: "burger-lines" }
-                            )
-                            )
+                            React.createElement("div", { className: "burger-lines" })
+                        )
                     ),
                     React.createElement(
                         "div",

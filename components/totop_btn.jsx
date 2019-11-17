@@ -2,7 +2,7 @@
 
 window.onscroll = function() {scrollFunction()};
 
-function scrollFunction() {
+const scrollFunction = () => {
   if (document.body.scrollTop > 150 || document.documentElement.scrollTop > 150) {
     document.getElementById("toTop").style.display = "block";
   } else {

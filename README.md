@@ -2,7 +2,7 @@
 
 Peruspaske sivut (HTML, CSS, JS) :D
 
-Versio: 3.9.2
+Versio: 3.11.5
 
 ## "Hei pukki, mullois vaan yks toive... että maailmassa olisi rauha..."
 
@@ -10,7 +10,7 @@ ja sitten se, että kuka ikinä tätä lukeekaan ymmärtää nämä "ohjeet".
 
 ## Muokkaaminen
 
-**Yleistä:** JavaScript moduulit löytyy kansiosta `/modules`, taustakuvat (sekä yleensäkin muut kuvat) löytää kansiosta `/assets/images/` ja skinit löytää kansiosta `/assets/skins/`, joille toistaiseksi ei ole mitään käyttöä. Paketti myös sisältää pohjasivun, jolla voit luoda samantyylisen sivun helposti tarvittaessa. Paketti sisältää myös JSX-komponentit helppoa muokkaamista varten, mutta komponentit täytyy esikääntää selaimelle luettavaksi JavaScriptiksi, jotka löytää `/src` kansiosta.
+**Yleistä:** JavaScript moduulit löytyy kansiosta `/modules`, taustakuvat (sekä yleensäkin muut kuvat) löytää kansiosta `/assets/images/` ja skinit löytää kansiosta `/assets/skins/`, joille toistaiseksi ei ole mitään käyttöä. Paketti myös sisältää pohjasivun, jolla voit luoda samantyylisen sivun helposti tarvittaessa. Paketti sisältää myös JSX-komponentit helppoa muokkaamista varten, mutta komponentit täytyy esikääntää selaimelle luettavaksi JavaScriptiksi, jotka löytää `/src` kansiosta. Lisää tästä löydät [React-komponenttien kääntämisestä](#React-komponenttien-kääntäminen)
 
 ### React komponentit
 
@@ -81,6 +81,19 @@ UUID:tä käytetään lähinnä skinin hakemiseen, joka päivittyy automaattises
           kuuluisuus: "LouNii"
        }
 ```
+
+## React-komponenttien kääntäminen
+
+Reactin JSX-komponentit täytyy kääntää selaimelle luettavaksi JavaScriptiksi. Tämä onnistuu helposti, mikäli omistat Node Package Managerin (npm), mikä tulee autom. Node.js mukana. Avaa terminaali, komentokehote tai PowerShell, sekä suorita nämä komennot:
+
+1. `npm init -y` (Jos ei toimi -> [Fix](https://gist.github.com/gaearon/246f6380610e262f8a648e3e51cad40d))
+2. `npm install babel-cli@6 babel-preset-react-app@3`
+
+Tämä asentaa Babel compilerin omaan repositorioosi. Kun olet valmis, avaa terminaali/komentokehote/PowerShell repositiorioosi, suorita seuraava komento:
+
+`npx babel --watch ./components --out-dir ./src --presets react-app/prod`
+
+Tämän jälkeen voit muokata rauhassa JSX-tiedostoja, Babel hoitaa kääntämisen JavaScriptiksi, eikä sinun tarvitse koskea niihin :).
 
 ## Tiedettyjä "ongelmia"
 

@@ -1,6 +1,12 @@
 {
     "lahjoittajat": [
         {
+            "pvm": "11.09.19",
+            "nimi": "jafarin",
+            "amount": "20€",
+            "heart": "♥"
+        },
+        {
             "pvm": "17.08.19",
             "nimi": "Nizi",
             "amount": "30€",
@@ -111,6 +117,12 @@
         {
             "pvm": "13.04.18",
             "nimi": "Jokni",
+            "amount": "10€",
+            "heart": "♥"
+        },
+        {
+            "pvm": "06.03.18",
+            "nimi": "AinoMM",
             "amount": "10€",
             "heart": "♥"
         },
