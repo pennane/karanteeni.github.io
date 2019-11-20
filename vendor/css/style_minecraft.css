@@ -26,7 +26,8 @@ body {
     background-size: cover;
     background-attachment: fixed;
     display: flex !important;
-    flex-direction: column !important
+    flex-direction: column !important;
+    line-height: 1.6;
 }
 
 a {
@@ -91,9 +92,11 @@ footer {
     padding-top: 1em
 }
 
-.hr {
-    border-color: #fff
+.hr,
+hr {
+    border-color: rgba(255, 255, 255, 0.1);
 }
+
 
 .alert-link:hover {
     text-decoration: underline !important
@@ -113,6 +116,30 @@ footer {
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed
+}
+
+.deprecated-content {
+    color: #fac178;
+    font-size: 1.7em;
+    font-weight: 500;
+    font-family: 'Inter', sans-serif;
+    /* background-color: yellow; */
+    text-shadow: -2px 1px black;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 700;
+    background-color: #ba3838;
+    border-radius: 10px;
+    width: auto;
+    /* display: block; */
+    margin: 1em 2em;
+    padding: 0.4em 0.5em;
+    box-shadow: 0 0 0 1px hsla(0, 0%, 100%, .1), 0 2px 4px 0 rgba(14, 30, 37, .12);
+}
+
+span.deprecated-content::before,
+span.deprecated-content::before {
+    content: "!";
 }
 
 /* Taustat End */
@@ -654,6 +681,11 @@ p.no-upcoming {
     -webkit-background-clip: text !important;
 }
 
+#rankit span.disabled {
+    opacity: 0.35;
+    cursor: default;
+}
+
 h1,
 h2,
 h3,
@@ -978,6 +1010,38 @@ h6 {
 }
 
 /* Yp End */
+
+/* Lahjoitus sivu */
+.lahjoitusdokumentti {
+    border: 20px ridge hsla(47, 46%, 43%, 1);
+    background-color: #edeae3;
+    border-radius: 0 !important;
+    max-width: 1300px;
+    margin: auto;
+    margin-bottom: 3em;
+}
+
+.lahjoitusdokumentti>h1 {
+    font-weight: 600;
+    color: #502F1E !important;
+    margin: 0.2em 0;
+}
+
+.lahjoitusdokumentti>p.lead {
+    color: #502F1E;
+    margin-bottom: 1.3em;
+    text-align: center;
+}
+
+.lahjoitusdokumentti>.lahjoitustablewrapper {
+    overflow-x: auto;
+}
+
+.lahjoitustablewrapper>table {
+    display: table !important;
+}
+
+/* Lahjoitus sivu End */
 
 /* Reseptien kuvat*/
 

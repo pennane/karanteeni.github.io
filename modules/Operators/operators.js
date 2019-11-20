@@ -3,14 +3,11 @@ var request = new XMLHttpRequest();
 request.open('GET', requestURL);
 request.responseType = 'json';
 request.send();
-console.log("yeet")
 request.onload = function () {
   var data = request.response;
   if (typeof data === "string") {
     data = JSON.parse(data)
   }
-  console.log(data)
-  console.log(typeof data)
   Object.keys(data).forEach(function (type) {
     var list = data[type];
     createOperatorsDiv(list, type);
