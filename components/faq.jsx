@@ -30,7 +30,7 @@ class FrequentlyAskedQuestions extends React.Component {
                     nykäistä jo paikalla olevaa ylläpitäjää hihasta. Joka tapauksessa saat grieffatun talosi kuntoon, sekä tavarat takaisin. Grieffaaja sitä vastoin saa porttikiellon
                     palvelimelle.'/>
                     <Accordion id='prot3' question='Kuinka annan kaverilleni oikeudet alueeseen?' target='protcol3' answer={['Oikeudet alueeseen voit antaa komennolla ',
-                    <code>/trust suojauksen_nimi pelaajan_nimi</code>, ' seisten suojauksen sisällä. Suojauksen nimen saat selville komennolla /rg i, kun seisot sen päällä.']}/>
+                    <code>/trust suojauksen_nimi pelaajan_nimi</code>, ' seisten suojauksen sisällä. Suojauksen nimen saat selville komennolla ', <code>/rg i</code>, ' kun seisot sen päällä.']}/>
                     <Accordion id='prot4' question='Kuinka annan kaverilleni oikeudet chesteihin ja uuneihin?' target='protcol4' answer={['Voit antaa oikeudet kyseisiin blockeihin ',
                     'katsomalla blockia ja kirjoittamalla komennon ', <code>/+oikeudet pelaajan_nimi</code>, '. Tämän jälkeen kaverillasi on oikeudet avata kyseinen arkku.',
                     ' Komento toimii myös muihin container blockeihin.']}/>
@@ -40,10 +40,15 @@ class FrequentlyAskedQuestions extends React.Component {
                 <Divider id='ekonomia' name='Ekonomia'/>
                     <Accordion id='eco1' question='Kuinka voin luoda arkkukaupan?' target='ecol1' answer='Voit luoda arkkukaupan lyömällä arkkua tavara kädessä ja Shift
                     painettuna pohjaan. Tämän jälkeen chat kysyy sinulta hinnan tavaralle. Kirjoita hinta ja näin arkkukauppasi on valmis.'/>
+                    
+                    <Accordion id='eco2' question='Mitä valuuttaa palvelin käyttää ja kuinka saan sitä?' target='ecol2' answer={['Palvelimella on rahavaluuttana pennit.',
+                    ' Pennejä saat hankkimalla uutta peliaikaa, sekä palvelinta äänestämällä ', <code>/vote</code>, '. Jokainen äänestykerta on 100 pennin arvoinen.',<br></br>,'Voit myös myydä sekä ostaa tavaraa käyttämällä arkkukauppoja.']}/>
+                    {/*
                     <Accordion id='eco2' question='Mitä valuuttaa palvelin käyttää ja kuinka saan sitä?' target='ecol2' answer={['Palvelimella on rahavaluuttana pennit.',
                     ' Pennejä saat kaivamalla raaka-aineita maan syvyyksistä ja muuttamalla ne blockeiksi. Voit myydä blockit sen jälkeen spawnin kaupassa (/warp kauppa).',
                     ' Myytäviksi blockeiksi kelpaavat vain Coal, Quartz, Iron, Gold, Redstone, Lapis Lazuli, Emerald ja Diamond blockit.',<br/>, <br/>,
                     'Voit myös luoda arkkukaupan tai äänestää. Jokaisesta äänestyksestä saat 100 penniä, mutta varmista, että olet Survival maassa.']}/>
+                    */}
 
                 <Divider id='kodit' name='Kodit'/>
                     <Accordion id='home1' question='Hukkasin kotini. Kuinka saan sen takaisin?' target='homecol1' answer='Nykäise ylläpitäjää hihasta ja kerro hänelle mitä teit

@@ -69,8 +69,8 @@
               <h1 class="mt-5">Rankit</h1>
               <p class="lead">Tiedot Karanteenin rankeista.</p>
               <p class="mb-0 text-left text-lg-justify">Karanteenissa on kahdeksan peliaikaan perustuvaa tasoa / rankkia, joista seitsemän tuo <b>lisäominaisuuksia</b> ajan kuluessa. Tasosi nousee automaattisesti kun vaadittu peliaika on saavutettu. Mikäli olet AFK, peliaikaa ei tällöin kerry. Peliajan näkee komennolla <code>/peliaika</code> ja muiden <code>/peliaika pelaajan_nimi</code></p><br>
-              <p class="mb-0 text-left text-lg-justify">Serverillä on tavallisten rankkien lisäksi Lojaali. Lojaalit pelaajat olivat edellisellä serverillämme vippejä, joten heidän aikoinaan ostamat ominaisuudet siirtyivät tänne rankille Lojaali. Nyt, kun vippien (joihin sisältyy fly, tai muita vastaavia etuja) myyminen on kiellettyä Minecraftin eulassa, olemme siirtyneet serveriin, missä hyvät ominaisuudet tulevat peliajan mukaan.</p><br>
-              <p class="mb-0 text-left text-lg-justify">Tässä on taulukko (väri on samanlainen palvelimella etuliitteessä), josta näet kunkin rankin oikeudet. Jokaisen tason mukana tulee myös uusi kit eli tavarapakki, jonka saat komennolla /kit (tason nimi). Jos et tiedä mitä joku komento tekee, kysy rohkeasti ylläpidolta!</p><br>             
+              <!--<p class="mb-0 text-left text-lg-justify">Serverillä on tavallisten rankkien lisäksi Lojaali. Lojaalit pelaajat olivat edellisellä serverillämme vippejä, joten heidän aikoinaan ostamat ominaisuudet siirtyivät tänne rankille Lojaali. Nyt, kun vippien (joihin sisältyy fly, tai muita vastaavia etuja) myyminen on kiellettyä Minecraftin eulassa, olemme siirtyneet serveriin, missä hyvät ominaisuudet tulevat peliajan mukaan.</p><br>-->
+              <p class="mb-0 text-left text-lg-justify">Tässä on taulukko (väri on samanlainen palvelimella etuliitteessä), josta näet kunkin rankin oikeudet. <!--Jokaisen tason mukana tulee myös uusi kit eli tavarapakki, jonka saat komennolla /kit (tason nimi).--> Jos et tiedä mitä joku komento tekee, niin kysy rohkeasti ylläpidolta!</p><br>             
               <div class="container" id="rankit"></div>
                <br>
                <br>
@@ -81,32 +81,35 @@
                <div class="collapse text-left mbot" id="reloton">
                 <div id="commands" class="card-body">
                   <ul>
+                    
+                    <li>/kieli fi-Fi (vaihtaa palvelimen chatin ja komennot suomeksi)</li>
+                    <li>/kieli en-US (vaihtaa palvelimen chatin ja komennot englanniksi)</li>
                     <li>/avaa</li>
                     <li>/avaakaikille</li>
                     <li>/back</li>
-                    <li>/checkban</li>
-                    <li>/crea</li>
+                   <!--<li>/checkban</li>-->
+                    <!--<li>/crea</li>-->  
                     <li>/home</li>
-                    <li>/lay</li>
-                    <li>/list</li>
-                    <li>/lunastavote</li>
-                    <li>/msg</li>
+                    <!--<li>/lay</li>-->
+                    <!--<li>/list</li>-->
+                    <!--<li>/lunastavote</li>-->
+                    <li>/msg (/m, /message)</li>
                     <li>/+oikeudet nimi (lisää oikeudet pelaajalle palikkaan, /-oikeudet taasen poistaa oikeudet)</li>
-                    <li>/peliaika (/pa, /ar)</li>
-                    <li>/pennipeli (myös /lotto)</li>
-                    <li>/realname</li>
-                    <li>/recipe</li>
-                    <li>/reply</li>
-                    <li>/report</li>
+                    <li>/peliaika (/pa, /playtime)</li>
+                    <!--<li>/pennipeli (myös /lotto)</li>-->
+                    <!--<li>/realname</li>-->
+                    <!--<li>/recipe</li>-->
+                    <li>/reply (/r)</li>
+                    <!--<li>/report</li>-->
                     <li>/rtp</li>
-                    <li>/seen</li>
+                    <!--<li>/seen</li>-->
                     <li>/sit</li>
                     <li>/spawn</li>
                     <li>/tpa</li>
                     <li>/tpahere</li>
-                    <li>/tpignore</li>
+                    <!--<li>/tpignore</li>-->
                     <li>/trust</li>
-                    <li>/valikko</li>
+                    <!--<li>/valikko</li>-->
                     <li>/vote</li>
                     <li>/warp(s)</li>
                   </ul>
@@ -118,9 +121,9 @@
     <footer id="footer" class="footer mt-auto"></footer>
 
     <!-- React Components -->
-    <script src="./src/navbar.js"></script>
-    <script src="./src/table_ranks.js"></script>
-    <script src="./src/footer.js"></script>
+    <script src="./dist/navbar.js"></script>
+    <script src="./dist/table_ranks.js"></script>
+    <script src="./dist/footer.js"></script>
 
     <!-- Susse kävi täällä ;) -->
 

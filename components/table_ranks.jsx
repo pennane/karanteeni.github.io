@@ -1,13 +1,29 @@
 'use-strict';
 
+class Tooltip extends React.Component {
+    constructor(props) {
+        super(props);
+
+        this.state = {
+            text: this.props.text
+        };
+    }
+
+    render() {
+        return (
+            <span data-toggle="tooltip" data-placement="top" title={this.props.text}>{this.props.children}</span>
+        )
+    }
+}
+
 class RankTables extends React.Component {
     render() {
         return (
             <div>
-                <ElotonRaihnas/>
-                <SisukasParantuva/>
-                <ImmuuniParantaja/>
-                <NekroKuolematon/>
+                <ElotonRaihnas />
+                <SisukasParantuva />
+                <ImmuuniParantaja />
+                <NekroKuolematon />
             </div>
         )
     }
@@ -30,7 +46,7 @@ class Structure extends React.Component {
             <div className='col-sm mb-4'>
                 <div className="rank card">
                     <div className='card-body'>
-                        <h5 className={this.state.color + 'card-title'}><span className={this.state.bgColor  + 'rank-name-text'}>{this.props.name}</span> <span className='time'>({this.props.time})</span></h5>
+                        <h5 className={this.state.color + 'card-title'}><span className={this.state.bgColor + 'rank-name-text'}>{this.props.name}</span> <span className='time'>({this.props.time})</span></h5>
                         {this.props.children}
                     </div>
                 </div>
@@ -61,18 +77,56 @@ class CommandRow extends React.Component {
     }
 }
 
+class DisabledCommand extends React.Component {
+    constructor(props) {
+        super(props);
+
+        this.state = {
+            title: this.props.title,
+            command: this.props.command,
+            disabled: this.props.disabled
+        }
+    }
+
+    render() {
+        console.log(this.props)
+        const sorry = "Anteeksi, tämä komento ei toistaiseksi ole käytössä"
+        const info = this.props.info
+
+        if (info) {
+            return (
+                <td>
+                    <span data-toggle='tooltip' data-placement='top' title={sorry} className="disabled">{this.props.command} <i className="fas fa-info-circle"></i></span>
+                </td>
+            )
+        }
+        return (
+            <td >
+                <span data-toggle='tooltip' data-placement='top' title={sorry} className="disabled">{this.props.command}</span>
+            </td>
+        )
+    }
+}
+
 class Command extends React.Component {
     constructor(props) {
         super(props);
 
         this.state = {
             title: this.props.title,
-            command: this.props.command
+            command: this.props.command,
+            disabled: this.props.disabled
         }
     }
-
+    
     render() {
+        
+        if (this.props.disabled) {
+            return <DisabledCommand {...this.props}/>
+        }
+
         const info = this.props.info
+
         if (info) {
             return (
                 <td>
@@ -97,8 +151,8 @@ class SetHome extends React.Component {
         }
     }
     render() {
-        return(
-            <Command info title={this.props.count + ' kpl'} command='/sethome'/>
+        return (
+            <Command info title={this.props.count + ' kpl'} command='/sethome' />
         )
     }
 }
@@ -129,20 +183,20 @@ class ElotonRaihnas extends React.Component {
                 <Structure name='Eloton' time='0h' color='c-eloton ' bgColor='g-eloton '>
                     <Body>
                         <CommandRow>
-                            <SetHome count='1'/>
-                            <Command info={false} command='/kit aloitus'/>
+                            <SetHome count='1' />
+                            <Command info={false} command='/kit aloitus' disabled />
                         </CommandRow>
                     </Body>
                 </Structure>
                 <Structure name='Raihnas' time='5h' color='c-raihnas ' bgColor='g-raihnas '>
                     <Body>
                         <CommandRow>
-                            <SetHome count='2'/>
-                            <Command info={false} command='/kit raihnas'/>
+                            <SetHome count='2' />
+                            <Command info={false} command='/kit raihnas' disabled />
                         </CommandRow>
                         <CommandRow>
-                            <Command info={false} command='/hat'/>
-                            <Command info={false} command='/workbench'/>
+                            <Command info={false} command='/hat' />
+                            <Command info={false} command='/workbench' />
                         </CommandRow>
                     </Body>
                 </Structure>
@@ -158,46 +212,46 @@ class SisukasParantuva extends React.Component {
                 <Structure name='Sisukas' time='1d' color='c-sisukas ' bgColor='g-sisukas '>
                     <Body>
                         <CommandRow>
-                            <SetHome count='6'/>
-                            <Command info={false} command='/kit sisukas'/>
+                            <SetHome count='6' />
+                            <Command info={false} command='/kit sisukas' disabled />
                         </CommandRow>
                         <CommandRow>
-                            <Command info title='Taikamatto, 5x5 kokoinen lasimatto allasi, jolla voit leijua ilmassa, sekä lentää.' command='/mc'/>
-                            <Command info={false} command='/mc light'/>
+                            <Command info title='Taikamatto, 5x5 kokoinen lasimatto allasi, jolla voit leijua ilmassa, sekä lentää.' command='/mc' />
+                            <Command info={false} command='/mc light' disabled />
                         </CommandRow>
                         <CommandRow>
-                            <Command info={false} command='/enderchest'/>
-                            <Command info={false} command='/near'/>
+                            <Command info={false} command='/enderchest' />
+                            <Command info={false} command='/near' />
                         </CommandRow>
                         <CommandRow>
-                            <Command info title='Äänestys + / - rankaisuista' command='/+ & /-'/>
-                            <Command info={false}/>
+                            <Command info title='Äänestys + / - rankaisuista' command='/+ &amp; /-' disabled />
+                            <Command info={false} />
                         </CommandRow>
                     </Body>
                     <h4>Muuta:</h4>
-                    <Others text='Kaksi uutta väriä taikamattoon (mc)' tip='Vaalean harmaa (oletus) ja läpinäkyvä'/>
+                    <Others text='Kaksi uutta väriä taikamattoon (mc)' tip='Vaalean harmaa (oletus) ja läpinäkyvä' />
                 </Structure>
                 <Structure name='Parantuva' time='5d' color='c-parantuva ' bgColor='g-parantuva '>
                     <Body>
                         <CommandRow>
-                            <SetHome count='8'/>
-                            <Command info={false} command='/kit parantuva'/>
+                            <SetHome count='8' />
+                            <Command info={false} command='/kit parantuva' disabled />
                         </CommandRow>
                         <CommandRow>
-                            <Command info={false} command='/jump'/>
-                            <Command info={false} command='/mc tools'/>
+                            <Command info={false} command='/jump' disabled />
+                            <Command info={false} command='/mc tools' disabled />
                         </CommandRow>
                         <CommandRow>
-                            <Command info title='Nimen täytyy olla samankaltainen Minecraft nimesi kanssa tunnistautumisen vuoksi.' command='/nick'/>
-                            <Command info title='Voit aloittaa äänestyksen pelaajan hiljentämistä (20min) tai pelaajan potkimista varten.' command='/rankaise votemute & votekick'/>
+                            <Command info title='Nimen täytyy olla samankaltainen Minecraft nimesi kanssa tunnistautumisen vuoksi.' command='/nick' />
+                            <Command info title='Voit aloittaa äänestyksen pelaajan hiljentämistä (20min) tai pelaajan potkimista varten.' command='/rankaise votemute & votekick' disabled />
                         </CommandRow>
                         <CommandRow>
-                            <Command info title='Tarvitset pelaajan pään, jonka voit mm. craftata (kts. Custom Reseptit). Voit muuttaa pään kenen tahansa pääksi.' command='/skull'/>
+                            <Command info title='Tarvitset pelaajan pään, jonka voit mm. craftata (kts. Custom Reseptit). Voit muuttaa pään kenen tahansa pääksi.' command='/skull' disabled />
                         </CommandRow>
                     </Body>
                     <h4>Muuta:</h4>
-                    <Others text='Kolme uutta väriä taikamattoon (mc)' tip='Valkoinen, harmaa ja sininen'/>
-                    <Others text='Kyky hakata spawnereita ilman Silk Touchia' tip='Tarvitset silti hakun kerätäksesi sen!'/>
+                    <Others text='Kolme uutta väriä taikamattoon (mc)' tip='Valkoinen, harmaa ja sininen' />
+                    <Others text='Kyky hakata spawnereita ilman Silk Touchia' tip='Tarvitset silti hakun kerätäksesi sen!' />
                 </Structure>
             </div>
         )
@@ -211,43 +265,43 @@ class ImmuuniParantaja extends React.Component {
                 <Structure name='Immuuni' time='10d' color='c-immuuni ' bgColor='g-immuuni '>
                     <Body>
                         <CommandRow>
-                            <SetHome count='12'/>
-                            <Command info={false} command='/kit immuuni'/>
+                            <SetHome count='12' />
+                            <Command info={false} command='/kit immuuni' disabled />
                         </CommandRow>
                         <CommandRow>
-                            <Command info={false} command='/fly'/>
-                            <Command info title='Nimeää kädessäsi olevan esineen!' command='/nimeä'/>
+                            <Command info={false} command='/fly' />
+                            <Command info title='Nimeää kädessäsi olevan esineen!' command='/nimeä' />
                         </CommandRow>
                         <CommandRow>
-                            <Command info title='Aseta spawner maahan kun suoritat komentoa.' command='/spawner'/>
-                            <Command info={false} command='/tp'/>
+                            <Command info title='Aseta spawner maahan kun suoritat komentoa.' command='/spawner' />
+                            <Command info={false} command='/tp' />
                         </CommandRow>
                         <CommandRow>
-                            <Command info={false} command='/tptoggle'/>
-                            <Command info={false}/>
+                            <Command info={false} command='/tptoggle' />
+                            <Command info={false} />
                         </CommandRow>
                     </Body>
                     <h4>Muuta:</h4>
-                    <Others text='Kaksi uutta väriä taikamattoon (mc)' tip='Keltainen ja ruskea'/>
+                    <Others text='Kaksi uutta väriä taikamattoon (mc)' tip='Keltainen ja ruskea' />
                 </Structure>
                 <Structure name='Parantaja' time='30d' color='c-parantaja ' bgColor='g-parantaja '>
                     <Body>
                         <CommandRow>
-                            <SetHome count='16'/>
-                            <Command info={false} command='/kit parantaja'/>
+                            <SetHome count='16' />
+                            <Command info={false} command='/kit parantaja' disabled />
                         </CommandRow>
                         <CommandRow>
-                            <Command info={false} command='/jail'/>
-                            <Command info={false} command='/kick'/>
+                            <Command info={false} command='/jail' disabled />
+                            <Command info={false} command='/kick' disabled />
                         </CommandRow>
                         <CommandRow>
-                            <Command info={false} command='/mute'/>
-                            <Command info={false}/>
+                            <Command info={false} command='/mute' disabled />
+                            <Command info={false} />
                         </CommandRow>
                     </Body>
                     <h4>Muuta:</h4>
-                    <Others text='Kaksi uutta väriä taikamattoon (mc)' tip='Lime ja musta'/>
-                    <Others text='Pääsy salaiseen arkistoon' tip='*SALAISTA TIETOA*'/>
+                    <Others text='Kaksi uutta väriä taikamattoon (mc)' tip='Lime ja musta' />
+                    {/* <Others text='Pääsy salaiseen arkistoon' tip='*SALAISTA TIETOA*'/> */}
                 </Structure>
             </div>
         )
@@ -261,30 +315,30 @@ class NekroKuolematon extends React.Component {
                 <Structure name='Nekromantikko' time='60d' color='c-nekromantikko ' bgColor='g-nekromantikko '>
                     <Body>
                         <CommandRow>
-                            <SetHome count='18'/>
-                            <Command info={false} command='/kit nekromantikko'/>
+                            <SetHome count='18' />
+                            <Command info={false} command='/kit nekromantikko' disabled />
                         </CommandRow>
                         <CommandRow>
-                            <Command info title='Kyky tarkastella blockeja' command='/co i'/>
-                            <Command info={false}/>
+                            <Command info title='Kyky tarkastella blockeja' command='/co i' />
+                            <Command info={false} />
                         </CommandRow>
                     </Body>
                     <h4>Muuta:</h4>
-                    <Others text='Kaksi uutta väriä taikamattoon (mc)' tip='Magenta ja punainen'/>
+                    <Others text='Kaksi uutta väriä taikamattoon (mc)' tip='Magenta ja punainen' />
                 </Structure>
                 <Structure name='Kuolematon' time='100d' color='c-kuolematon ' bgColor='g-kuolematon '>
                     <Body>
                         <CommandRow>
-                            <SetHome count='18'/>
-                            <Command info={false} command='/kit kuolematon'/>
+                            <SetHome count='18' />
+                            <Command info={false} command='/kit kuolematon' disabled />
                         </CommandRow>
                     </Body>
                     <h4>Muuta:</h4>
-                    <Others text='Kuusi uutta väriä taikamattoon (mc)' tip='Pinkki, syaani, purppura, oranssi, vihreä ja vaalean sininen'/>
+                    <Others text='Kuusi uutta väriä taikamattoon (mc)' tip='Pinkki, syaani, purppura, oranssi, vihreä ja vaalean sininen' />
                 </Structure>
             </div>
         )
     }
 }
 
-ReactDOM.render(<RankTables/>, document.getElementById('rankit'))
+ReactDOM.render(<RankTables />, document.getElementById('rankit'))
