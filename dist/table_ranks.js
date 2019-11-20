@@ -187,7 +187,6 @@ var DisabledCommand = function (_React$Component6) {
     _createClass(DisabledCommand, [{
         key: "render",
         value: function render() {
-            console.log(this.props);
             var sorry = "Anteeksi, tämä komento ei toistaiseksi ole käytössä";
             var info = this.props.info;
 

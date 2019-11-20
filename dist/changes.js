@@ -168,10 +168,39 @@ var ChangeLog = function (_React$Component5) {
                 { className: 'accordion text-left' },
                 React.createElement(
                     Month,
+                    { month: 'marraskuu2019', btntext: 'Marraskuu 2019' },
+                    React.createElement(
+                        Changebody,
+                        { month: 'marraskuu2019', showing: true },
+                        React.createElement(ChangeDate, { date: '16.11.2019' }),
+                        React.createElement(
+                            'ul',
+                            null,
+                            React.createElement(Changelist, { change: 'Tuomas veturi p\xE4ivitetty' }),
+                            React.createElement(Changelist, { change: 'Looppaus + random toimii nyt' }),
+                            React.createElement(Changelist, { change: 'Voikukat korjattu' })
+                        )
+                    )
+                ),
+                React.createElement(
+                    Month,
                     { month: 'lokakuu2019', btntext: 'Lokakuu 2019' },
                     React.createElement(
                         Changebody,
                         { month: 'lokakuu2019', showing: true },
+                        React.createElement(ChangeDate, { date: '31.10.2019' }),
+                        React.createElement(
+                            'ul',
+                            null,
+                            React.createElement(Changelist, { change: '/sit tuotu takaisin' })
+                        ),
+                        React.createElement(ChangeDate, { date: '26.10.2019' }),
+                        React.createElement(
+                            'ul',
+                            null,
+                            React.createElement(Changelist, { change: '/vote toimii taas' }),
+                            React.createElement(Changelist, { change: '(Realistinen) el\xE4intenkanto takaisin servulla' })
+                        ),
                         React.createElement(ChangeDate, { date: '25.10.2019' }),
                         React.createElement(
                             'ul',

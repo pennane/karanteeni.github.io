@@ -137,7 +137,7 @@ class Navbar extends React.Component {
                                 <DropDownItem icon="fas fa-file-alt" url="yphaku" title="Hae ylläpitoon!" />
                             </DropDownCollapseMenu>
 
-                            {/*<NavLink icon="fas fa-globe-africa" url="maailmat" title="Maailmat" />*/}
+                            <NavLink icon="fas fa-globe-africa" url="maailmat" title="Maailmat" />
                             <NavLink icon="fas fa-gift" url="lahjoitus" title="Lahjoitukset" />
                         </ul>
                     </div>

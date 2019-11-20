@@ -89,7 +89,6 @@ class DisabledCommand extends React.Component {
     }
 
     render() {
-        console.log(this.props)
         const sorry = "Anteeksi, tämä komento ei toistaiseksi ole käytössä"
         const info = this.props.info
 
