@@ -94,11 +94,11 @@ Ensin pidä huolta, että tarvittavat paketit ovat asennettu terminaalin komenno
 
 ### Vaihtoehto 1 - Tiedostojen automaattinen kääntäminen
 
-Mikäli haluat Babelin kääntävän JSX-tiedostot automaattisesti, suorita komento:
+Mikäli haluat Babelin kääntävän JSX-tiedostot automaattisesti kehityksen yhteydessä, suorita komento:
 
 `npm run watch-jsx`
 
-Tämän jälkeen voit muokata rauhassa JSX-tiedostoja, Babel hoitaa kääntämisen JavaScriptiksi, eikä sinun tarvitse koskea niihin :).
+Tämän jälkeen voit muokata rauhassa JSX-tiedostoja. Babel hoitaa kääntämisen JavaScriptiksi, eikä sinun tarvitse koskea niihin :).
 
 ### Vaihtoehto 2 - Tiedostojen kääntäminen scriptillä tarvittaessa
 

@@ -414,7 +414,7 @@ var SisukasParantuva = function (_React$Component11) {
                             CommandRow,
                             null,
                             React.createElement(Command, { info: true, title: "Taikamatto, 5x5 kokoinen lasimatto allasi, jolla voit leijua ilmassa, sek\xE4 lent\xE4\xE4.", command: "/mc" }),
-                            React.createElement(Command, { info: false, command: "/mc light", disabled: true })
+                            React.createElement(Command, { info: false, command: "/mc design" })
                         ),
                         React.createElement(
                             CommandRow,
@@ -426,7 +426,7 @@ var SisukasParantuva = function (_React$Component11) {
                             CommandRow,
                             null,
                             React.createElement(Command, { info: true, title: "\xC4\xE4nestys + / - rankaisuista", command: "/+ & /-", disabled: true }),
-                            React.createElement(Command, { info: false })
+                            React.createElement(Command, { info: false, command: "/mc light", disabled: true })
                         )
                     ),
                     React.createElement(

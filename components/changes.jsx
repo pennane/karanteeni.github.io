@@ -36,18 +36,8 @@ class Changebody extends React.Component {
     }
 
     render() {
-        const showing = this.props.showing
-        if (showing) {
-            return (
-                <div id={this.props.month} className='collapse show' aria-labelledby={this.props.month + '_1'} data-parent='#muutokset'>
-                    <div className='card-body'>
-                        {this.props.children}
-                    </div>
-                </div>
-            )
-        }
         return (
-            <div id={this.props.month} className='collapse' aria-labelledby={this.props.month + '_1'} data-parent='#muutokset'>
+            <div id={this.props.month} className={'collapse ' + (this.props.showing ? 'show' : null)} aria-labelledby={this.props.month + '_1'} data-parent='#muutokset'>
                 <div className='card-body'>
                     {this.props.children}
                 </div>
@@ -104,7 +94,7 @@ class ChangeLog extends React.Component {
                     </Changebody>
                 </Month>
                 <Month month='lokakuu2019' btntext='Lokakuu 2019'>
-                    <Changebody month='lokakuu2019' showing>
+                    <Changebody month='lokakuu2019'>
                         <ChangeDate date='31.10.2019' />
                         <ul>
                             <Changelist change='/sit tuotu takaisin' />

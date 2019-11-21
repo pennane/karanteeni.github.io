@@ -117,11 +117,11 @@ class Command extends React.Component {
             disabled: this.props.disabled
         }
     }
-    
+
     render() {
-        
+
         if (this.props.disabled) {
-            return <DisabledCommand {...this.props}/>
+            return <DisabledCommand {...this.props} />
         }
 
         const info = this.props.info
@@ -216,7 +216,7 @@ class SisukasParantuva extends React.Component {
                         </CommandRow>
                         <CommandRow>
                             <Command info title='Taikamatto, 5x5 kokoinen lasimatto allasi, jolla voit leijua ilmassa, sekä lentää.' command='/mc' />
-                            <Command info={false} command='/mc light' disabled />
+                            <Command info={false} command='/mc design' />
                         </CommandRow>
                         <CommandRow>
                             <Command info={false} command='/enderchest' />
@@ -224,7 +224,7 @@ class SisukasParantuva extends React.Component {
                         </CommandRow>
                         <CommandRow>
                             <Command info title='Äänestys + / - rankaisuista' command='/+ &amp; /-' disabled />
-                            <Command info={false} />
+                            <Command info={false} command='/mc light' disabled />
                         </CommandRow>
                     </Body>
                     <h4>Muuta:</h4>
