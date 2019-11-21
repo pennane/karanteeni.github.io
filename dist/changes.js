@@ -68,21 +68,9 @@ var Changebody = function (_React$Component2) {
     _createClass(Changebody, [{
         key: 'render',
         value: function render() {
-            var showing = this.props.showing;
-            if (showing) {
-                return React.createElement(
-                    'div',
-                    { id: this.props.month, className: 'collapse show', 'aria-labelledby': this.props.month + '_1', 'data-parent': '#muutokset' },
-                    React.createElement(
-                        'div',
-                        { className: 'card-body' },
-                        this.props.children
-                    )
-                );
-            }
             return React.createElement(
                 'div',
-                { id: this.props.month, className: 'collapse', 'aria-labelledby': this.props.month + '_1', 'data-parent': '#muutokset' },
+                { id: this.props.month, className: 'collapse ' + (this.props.showing ? 'show' : null), 'aria-labelledby': this.props.month + '_1', 'data-parent': '#muutokset' },
                 React.createElement(
                     'div',
                     { className: 'card-body' },
@@ -187,7 +175,7 @@ var ChangeLog = function (_React$Component5) {
                     { month: 'lokakuu2019', btntext: 'Lokakuu 2019' },
                     React.createElement(
                         Changebody,
-                        { month: 'lokakuu2019', showing: true },
+                        { month: 'lokakuu2019' },
                         React.createElement(ChangeDate, { date: '31.10.2019' }),
                         React.createElement(
                             'ul',

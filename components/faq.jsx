@@ -42,7 +42,7 @@ class FrequentlyAskedQuestions extends React.Component {
                     painettuna pohjaan. Tämän jälkeen chat kysyy sinulta hinnan tavaralle. Kirjoita hinta ja näin arkkukauppasi on valmis.'/>
                     
                     <Accordion id='eco2' question='Mitä valuuttaa palvelin käyttää ja kuinka saan sitä?' target='ecol2' answer={['Palvelimella on rahavaluuttana pennit.',
-                    ' Pennejä saat hankkimalla uutta peliaikaa, sekä palvelinta äänestämällä ', <code>/vote</code>, '. Jokainen äänestykerta on 100 pennin arvoinen.',<br></br>,'Voit myös myydä sekä ostaa tavaraa käyttämällä arkkukauppoja.']}/>
+                    ' Pennejä saat hankkimalla uutta peliaikaa, sekä palvelinta äänestämällä ', <code>/vote</code>, '. Jokainen äänestykerta on 50 pennin arvoinen.',<br></br>,'Voit myös myydä sekä ostaa tavaraa käyttämällä arkkukauppoja.']}/>
                     {/*
                     <Accordion id='eco2' question='Mitä valuuttaa palvelin käyttää ja kuinka saan sitä?' target='ecol2' answer={['Palvelimella on rahavaluuttana pennit.',
                     ' Pennejä saat kaivamalla raaka-aineita maan syvyyksistä ja muuttamalla ne blockeiksi. Voit myydä blockit sen jälkeen spawnin kaupassa (/warp kauppa).',
@@ -55,7 +55,7 @@ class FrequentlyAskedQuestions extends React.Component {
                     viimeksi kotisi lähettyviltä ja miltä se näytti. Näin saamme palautettua sinut oikeaan paikkaan'/>
                     <Accordion id='home2' question='En pysty teleporttaamaan, poistamaan tai asettamaan koteja. Internal error, wat do?' target='homecol2' answer='Sano lähimmälle
                     ylläpitäjälle asiasta. Todennäköisesti joku tai jotkin kodeistasi ovat korruptoituneet ja joudumme poistamaan ne manuaalisesti. Mikäli ylläpitoa ei ole paikalla,
-                    liity Karanteenin Discord palvelimelle ja kerro ongelmastasi Naxray:lle, Jomelle tai Nuublesille.'/>
+                    liity Karanteenin Discord palvelimelle ja kerro siellä ongelmastasi ylläpidolle.'/>
                     <Accordion id='home3' question='Saanko asettaa kodin Netheriin tai Endiin?' target='homecol3' answer='Saat, mutta emme suosittele. Nether ja End resetoidaan
                     kuukauden välein, mikä voi aiheuttaa kodin korruptoitumista ja sinun kuoleman. Tämä tarkoittaa siis sitä, että saatat kuolla jos käytät kotia resetoinnin jälkeen.
                     Ylläpito ei ole velvollinen palauttamaan tavaroitasi.'/>
