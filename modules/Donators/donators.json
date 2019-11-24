@@ -2,6 +2,12 @@
     "lahjoittajat": [
         {
             "pvm": "17.11.19",
+            "nimi": "Jokni",
+            "amount": "3€",
+            "heart": "♥" 
+        },
+        {
+            "pvm": "17.11.19",
             "nimi": "terrypojka",
             "amount": "20€",
             "heart": "♥"
