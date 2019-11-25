@@ -93,7 +93,7 @@ h5 {
 .karanav {
     background-image: url(/../assets/images/snowblocklong.png);
     background-repeat: repeat-x;
-    background-size: contain;
+    background-size: auto;
 }
 
 .nav-item {
