@@ -2,7 +2,7 @@ var requestURL = "/modules/ServerEvents/serverevents.json";
 var request = new XMLHttpRequest();
 var now = new Date();
 var eventDomDestination = document.getElementById("tapahtumat");
-var events = {
+var serverEvents = {
   ongoing: [],
   upcoming: []
 };
@@ -21,11 +21,11 @@ request.onload = function () {
     return parseServerEvent(event);
   });
 
-  if (events.ongoing.length !== 0) {
-    initOngoing(events.ongoing.sort(function (a, b) { return a.startDate.getTime() - b.startDate.getTime() }));
+  if (serverEvents.ongoing.length !== 0) {
+    initOngoing(serverEvents.ongoing.sort(function (a, b) { return a.startDate.getTime() - b.startDate.getTime() }));
   }
 
-  initUpcoming(events.upcoming.sort(function (a, b) { return a.startDate.getTime() - b.startDate.getTime() }));
+  initUpcoming(serverEvents.upcoming.sort(function (a, b) { return a.startDate.getTime() - b.startDate.getTime() }));
 };
 
 function parseDate(str) {
@@ -78,7 +78,7 @@ function createEventElement(event) {
   return main;
 }
 
-function initUpcoming(events) {
+function initUpcoming(serverEvents) {
   var dest = document.createElement("div");
   dest.className = "tapahtuma-tyyppi";
   var title = document.createElement("h5");
@@ -87,13 +87,13 @@ function initUpcoming(events) {
     '<i class="fas fa-calendar-alt card-title-icon"></i>Tulevat tapahtumat';
   dest.appendChild(title);
 
-  if (events.length === 0) {
+  if (serverEvents.length === 0) {
     var p = document.createElement("p");
     p.textContent = "Ei tulevia tapahtumia.";
     p.className = "no-upcoming";
     dest.appendChild(p);
   } else {
-    events.forEach(function (event) {
+    serverEvents.forEach(function (event) {
       var elem = createEventElement(event);
       elem ? dest.appendChild(elem) : null;
     });
@@ -102,7 +102,7 @@ function initUpcoming(events) {
   eventDomDestination.appendChild(dest);
 }
 
-function initOngoing(events) {
+function initOngoing(serverEvents) {
   var dest = document.createElement("div");
   dest.className = "tapahtuma-tyyppi";
   var title = document.createElement("h5");
@@ -110,7 +110,7 @@ function initOngoing(events) {
   title.innerHTML =
     '<i class="fas fa-exclamation card-title-icon"></i>Meneillään olevat tapahtumat';
   dest.appendChild(title);
-  events.forEach(function (event) {
+  serverEvents.forEach(function (event) {
     var elem = createEventElement(event);
     elem ? dest.appendChild(elem) : null;
   });
@@ -153,10 +153,10 @@ function parseServerEvent(event) {
 
   if (startDate > now) {
     parsedEvent.state = "upcoming";
-    events.upcoming.push(parsedEvent);
+    serverEvents.upcoming.push(parsedEvent);
   } else if (startDate < now && endDate > now) {
     parsedEvent.state = "ongoing";
-    events.ongoing.push(parsedEvent);
+    serverEvents.ongoing.push(parsedEvent);
   }
 
 }
