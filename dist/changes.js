@@ -160,6 +160,12 @@ var ChangeLog = function (_React$Component5) {
                     React.createElement(
                         Changebody,
                         { month: 'marraskuu2019', showing: true },
+                        React.createElement(ChangeDate, { date: '22.11.2019' }),
+                        React.createElement(
+                            'ul',
+                            null,
+                            React.createElement(Changelist, { change: 'Discord chatin v\xE4rit korjattu' })
+                        ),
                         React.createElement(ChangeDate, { date: '16.11.2019' }),
                         React.createElement(
                             'ul',
