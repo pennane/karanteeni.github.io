@@ -687,6 +687,10 @@ p.no-upcoming {
     cursor: default;
 }
 
+.karaupdate:first-of-type {
+    margin-top: 0 !important;
+}
+
 h1,
 h2,
 h3,

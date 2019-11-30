@@ -160,6 +160,13 @@ var ChangeLog = function (_React$Component5) {
                     React.createElement(
                         Changebody,
                         { month: 'marraskuu2019', showing: true },
+                        React.createElement(ChangeDate, { date: '30.11.2019' }),
+                        React.createElement(
+                            'ul',
+                            null,
+                            React.createElement(Changelist, { change: 'Korjattu prismarine slabien muunaminen t\xE4ys blockeiksi' }),
+                            React.createElement(Changelist, { change: 'Lis\xE4tty mahdollisuus muuntaa Blast Furnacella hiilipalikoista mustaa v\xE4riainetta' })
+                        ),
                         React.createElement(ChangeDate, { date: '22.11.2019' }),
                         React.createElement(
                             'ul',
