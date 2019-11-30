@@ -85,7 +85,12 @@ class ChangeLog extends React.Component {
             <div className='accordion text-left'>
                 <Month month='marraskuu2019' btntext='Marraskuu 2019'>
                     <Changebody month='marraskuu2019' showing>
-                    <ChangeDate date='22.11.2019' />
+                        <ChangeDate date='30.11.2019' />
+                        <ul>
+                            <Changelist change='Korjattu prismarine slabien muunaminen täys blockeiksi' />
+                            <Changelist change='Lisätty mahdollisuus muuntaa Blast Furnacella hiilipalikoista mustaa väriainetta' />
+                        </ul>
+                        <ChangeDate date='22.11.2019' />
                         <ul>
                             <Changelist change='Discord chatin värit korjattu' />
                         </ul>
