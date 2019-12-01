@@ -2,7 +2,7 @@
     "omistajat": [
         {
             "nimi": "Jomeee",
-            "kuvaus": "Tällä hetkellä työtön. Yrittää toimia yhteisön hyväksi enemmän. Opettelee piakkoin Javaa ja alkaa ohjelmoimaan plugineita (aamen).",
+            "kuvaus": "Toimii yhteisön hyväksi kaikin tavoin. Opettelee piakkoin Javaa ja alkaa ohjelmoimaan plugineita (aamen).",
             "uuid": "5b9a03483c15472b8bd8987134cf9f1d"
         },
         {
@@ -38,14 +38,14 @@
             "nimi": "Irontank_01",
             "kuvaus": "Satunnaisesti aktiivinen ylläpitäjä.",
             "uuid": "5d56328849f44d1b97bb97c437a3f625"
+        },
+        {
+            "nimi": "Susse",
+            "kuvaus": "Hoitelee nettijuttuja, ja kuka ties mitä.",
+            "uuid": "144b79b3-71c0-4e7e-b466-f94d36d0caed"
         }
     ],
     "moderaattorit": [
-        {
-            "nimi": "Susse",
-            "kuvaus": "Sitkeä ja sisukas, joka pääsi vasta toisella yrittämällä moderaattoriksi.",
-            "uuid": "144b79b3-71c0-4e7e-b466-f94d36d0caed"
-        },
         {
             "nimi": "Wiikin",
             "kuvaus": "\"Hey, guess who's back?\"",
@@ -60,7 +60,7 @@
         },
         {
             "nimi": "Asheline",
-            "kuvaus": "Osaa rakentaa ja hoitaa siinä sivussa muita yp:n hommia.",
+            "kuvaus": "Rakentaa näyttävästi, ja hoitaa siinä sivussa muita yp:n hommia .",
             "uuid": "ca5f9868d9bc4a02b63d5fa2e48a8326"
         }
     ]
