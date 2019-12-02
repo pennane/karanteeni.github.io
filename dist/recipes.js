@@ -49,6 +49,8 @@ var Recipes = function Recipes(props) {
     return React.createElement(
         "div",
         { className: "col-lg-6 m-auto text-center" },
+        React.createElement(BlackDye, { recipe: props.recipe }),
+        React.createElement(Prismarine, { recipe: props.recipe }),
         React.createElement(Chainmail, { recipe: props.recipe }),
         React.createElement(Coral, { recipe: props.recipe }),
         React.createElement(Plank, { recipe: props.recipe }),
@@ -64,6 +66,48 @@ var Recipes = function Recipes(props) {
         React.createElement(XpBot, { recipe: props.recipe }),
         React.createElement("br", null),
         React.createElement(Dirt, { recipe: props.recipe })
+    );
+};
+
+var BlackDye = function BlackDye(props) {
+    return React.createElement(
+        "figure",
+        { className: "figure mb-5" },
+        React.createElement(BlackDyeImg, { img: props.img }),
+        React.createElement(BlackDyeCap, { cap: props.img })
+    );
+};
+
+var BlackDyeImg = function BlackDyeImg() {
+    return React.createElement("img", { src: "assets/images/recipes/black_dye.png", alt: "", className: "img-fluid recipe" });
+};
+
+var BlackDyeCap = function BlackDyeCap() {
+    return React.createElement(
+        "figcaption",
+        { className: "figure-caption" },
+        "Blast furnacella hiiliblockista voi sulattaa mustan v\xE4riaineen"
+    );
+};
+
+var Prismarine = function Prismarine(props) {
+    return React.createElement(
+        "figure",
+        { className: "figure mb-5" },
+        React.createElement(PrismarineImg, { img: props.img }),
+        React.createElement(PrismarineCap, { cap: props.img })
+    );
+};
+
+var PrismarineImg = function PrismarineImg() {
+    return React.createElement("img", { src: "assets/images/recipes/prismarine_block.png", alt: "", className: "img-fluid recipe" });
+};
+
+var PrismarineCap = function PrismarineCap() {
+    return React.createElement(
+        "figcaption",
+        { className: "figure-caption" },
+        "Nyt my\xF6s eri prismarine tyyppej\xE4 voi muuntaa t\xE4ys blockeiksi."
     );
 };
 

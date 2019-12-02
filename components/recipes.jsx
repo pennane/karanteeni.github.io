@@ -17,6 +17,8 @@ class RecipeList extends React.Component {
 const Recipes = (props) => {
     return (
         <div className="col-lg-6 m-auto text-center">
+            <BlackDye recipe={props.recipe} />
+            <Prismarine recipe={props.recipe} />
             <Chainmail recipe={props.recipe} />
             <Coral recipe={props.recipe} />
             <Plank recipe={props.recipe} />
@@ -33,6 +35,52 @@ const Recipes = (props) => {
             <br/>
             <Dirt recipe={props.recipe}/>
         </div>
+    )
+}
+
+const BlackDye = (props) => {
+    return (
+        <figure className="figure mb-5">
+            <BlackDyeImg img={props.img} />
+            <BlackDyeCap cap={props.img} />
+        </figure>
+    )
+}
+
+const BlackDyeImg = () => {
+    return (
+        <img src="assets/images/recipes/black_dye.png" alt="" className="img-fluid recipe" />
+    )
+}
+
+const BlackDyeCap = () => {
+    return (
+        <figcaption className="figure-caption">
+            Blast furnacella hiiliblockista voi sulattaa mustan väriaineen.
+        </figcaption>
+    )
+}
+
+const Prismarine = (props) => {
+    return (
+        <figure className="figure mb-5">
+            <PrismarineImg img={props.img} />
+            <PrismarineCap cap={props.img} />
+        </figure>
+    )
+}
+
+const PrismarineImg = () => {
+    return (
+        <img src="assets/images/recipes/prismarine_block.png" alt="" className="img-fluid recipe" />
+    )
+}
+
+const PrismarineCap = () => {
+    return (
+        <figcaption className="figure-caption">
+           Nyt myös eri prismarine tyyppejä voi muuntaa täys blockeiksi.
+        </figcaption>
     )
 }
 
