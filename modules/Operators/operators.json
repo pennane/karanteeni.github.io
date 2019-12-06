@@ -9,6 +9,11 @@
             "nimi": "Nuubles",
             "kuvaus": "Pääosin epäaktiivinen palvelimella. Säätää uusia ominaisuuksia sitä mukaa kun aikaa löytyy.",
             "uuid": "d4ef4bc2db26462c9793389ba56d2818"
+        },
+        {
+            "nimi": "lakanakana",
+            "kuvaus": "Nuublesin tyttis - Karanteenin uusin kaikkivaltias",
+            "uuid": "78cf984cf45241b9bdd600cc4677c7d9"
         }
     ],
     "adminit": [
@@ -19,17 +24,12 @@
         },
         {
             "nimi": "LouNii",
-            "kuvaus": "Adminina taitava, nykyään ei jaksa vaan pelata.",
+            "kuvaus": "Adminina taitava, nykyään ei vain jaksa pelata.",
             "uuid": "d347193d8b794a389158074681bc32f8"
         },
         {
-            "nimi": "lakanakana",
-            "kuvaus": "Nuublesin tyttis - hoitaa jopa hommansa kunhan jaksaa pelata.",
-            "uuid": "78cf984cf45241b9bdd600cc4677c7d9"
-        },
-        {
             "nimi": "Ougii_Lewe",
-            "kuvaus": "Ei pelaa servulla, mutta rakensi uuden spawnin",
+            "kuvaus": "Ei pahemmin pyöri servulla, mutta rakensi uutta spawnia.",
             "uuid": "5cab2b2a16dc410491ff40fa6920d01d"
         }
     ],
