@@ -83,8 +83,26 @@ class ChangeLog extends React.Component {
     render() {
         return (
             <div className='accordion text-left'>
+                <Month month='joulukuu2019' btntext='Joulukuu 2019' >
+                    <Changebody month='joulukuu2019' showing>
+
+                        <ChangeDate date='10.12.2019' />
+                        <ul>
+                            <Changelist change='Rankkikohtaiset kotien määrät korjattu' />
+                            <Changelist change='Spawnerien otto silktouchilla ja ilman silktouchia korjattu' />
+                        </ul>
+                        <ChangeDate date='7.12.2019' />
+                        <ul>
+                            <Changelist change='Tabin servervärejä paranneltu' />
+                            <Changelist change='Taikamaton kanssa ei enää ota fall damagea' />
+                            <Changelist change='Entiteetit eivät ota damagea taikamaton sivuista' />
+                            <Changelist change='Permiplugin osaa käsitellä offline pelaajia, ja pystyy asettamaan oikeuksia ilman relogia' />
+                            <Changelist change='Korjattu coreplugarin komennonsuorittajasta komponenttibugi' />
+                        </ul>
+                    </Changebody>
+                </Month>
                 <Month month='marraskuu2019' btntext='Marraskuu 2019'>
-                    <Changebody month='marraskuu2019' showing>
+                    <Changebody month='marraskuu2019'>
                         <ChangeDate date='30.11.2019' />
                         <ul>
                             <Changelist change='Korjattu prismarine slabien muunaminen täys blockeiksi' />

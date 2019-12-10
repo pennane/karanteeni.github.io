@@ -156,10 +156,35 @@ var ChangeLog = function (_React$Component5) {
                 { className: 'accordion text-left' },
                 React.createElement(
                     Month,
+                    { month: 'joulukuu2019', btntext: 'Joulukuu 2019' },
+                    React.createElement(
+                        Changebody,
+                        { month: 'joulukuu2019', showing: true },
+                        React.createElement(ChangeDate, { date: '10.12.2019' }),
+                        React.createElement(
+                            'ul',
+                            null,
+                            React.createElement(Changelist, { change: 'Rankkikohtaiset kotien m\xE4\xE4r\xE4t korjattu' }),
+                            React.createElement(Changelist, { change: 'Spawnerien otto silktouchilla ja ilman silktouchia korjattu' })
+                        ),
+                        React.createElement(ChangeDate, { date: '7.12.2019' }),
+                        React.createElement(
+                            'ul',
+                            null,
+                            React.createElement(Changelist, { change: 'Tabin serverv\xE4rej\xE4 paranneltu' }),
+                            React.createElement(Changelist, { change: 'Taikamaton kanssa ei en\xE4\xE4 ota fall damagea' }),
+                            React.createElement(Changelist, { change: 'Entiteetit eiv\xE4t ota damagea taikamaton sivuista' }),
+                            React.createElement(Changelist, { change: 'Permiplugin osaa k\xE4sitell\xE4 offline pelaajia, ja pystyy asettamaan oikeuksia ilman relogia' }),
+                            React.createElement(Changelist, { change: 'Korjattu coreplugarin komennonsuorittajasta komponenttibugi' })
+                        )
+                    )
+                ),
+                React.createElement(
+                    Month,
                     { month: 'marraskuu2019', btntext: 'Marraskuu 2019' },
                     React.createElement(
                         Changebody,
-                        { month: 'marraskuu2019', showing: true },
+                        { month: 'marraskuu2019' },
                         React.createElement(ChangeDate, { date: '30.11.2019' }),
                         React.createElement(
                             'ul',
