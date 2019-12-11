@@ -160,6 +160,13 @@ var ChangeLog = function (_React$Component5) {
                     React.createElement(
                         Changebody,
                         { month: 'joulukuu2019', showing: true },
+                        React.createElement(ChangeDate, { date: '11.12.2019' }),
+                        React.createElement(
+                            'ul',
+                            null,
+                            React.createElement(Changelist, { change: 'Lis\xE4tty uusi resepti: 6 lasipaneelia -> glass block ' }),
+                            React.createElement(Changelist, { change: 'Lis\xE4tty uusi resepti uuniin: stainded glass -> glass block' })
+                        ),
                         React.createElement(ChangeDate, { date: '10.12.2019' }),
                         React.createElement(
                             'ul',
