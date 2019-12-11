@@ -56,6 +56,14 @@ const Recipes = (props) => {
     return (
         <div className="col-lg-6 m-auto text-center">
             <Recipe
+                caption="Kaikki lasipaneelityypit voi muuttaa takaisin palikoiksi."
+                image="assets/images/recipes/glasspane.png"
+            />
+            <Recipe
+                caption="Värjättyä lasia voi sulattaa takaisin värjäämättömäksi."
+                image="assets/images/recipes/smelt_tempered_glass.png"
+            />
+            <Recipe
                 caption="Blast furnacella hiiliblockista voi sulattaa mustan väriaineen."
                 image="assets/images/recipes/black_dye.png"
             />

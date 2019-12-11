@@ -116,6 +116,14 @@ var Recipes = function Recipes(props) {
         "div",
         { className: "col-lg-6 m-auto text-center" },
         React.createElement(Recipe, {
+            caption: "Kaikki lasipaneelityypit voi muuttaa takaisin palikoiksi.",
+            image: "assets/images/recipes/glasspane.png"
+        }),
+        React.createElement(Recipe, {
+            caption: "V\xE4rj\xE4tty\xE4 lasia voi sulattaa takaisin v\xE4rj\xE4\xE4m\xE4tt\xF6m\xE4ksi.",
+            image: "assets/images/recipes/smelt_tempered_glass.png"
+        }),
+        React.createElement(Recipe, {
             caption: "Blast furnacella hiiliblockista voi sulattaa mustan v\xE4riaineen.",
             image: "assets/images/recipes/black_dye.png"
         }),
