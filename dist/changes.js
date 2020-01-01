@@ -160,10 +160,23 @@ var ChangeLog = function (_React$Component5) {
                     React.createElement(
                         Changebody,
                         { month: 'joulukuu2019', showing: true },
+                        React.createElement(ChangeDate, { date: '21.12.2019' }),
+                        React.createElement(
+                            'ul',
+                            null,
+                            React.createElement(Changelist, { change: 'Lis\xE4tty 1.15.1 tuki' })
+                        ),
+                        React.createElement(ChangeDate, { date: '13.12.2019' }),
+                        React.createElement(
+                            'ul',
+                            null,
+                            React.createElement(Changelist, { change: 'Lis\xE4tty /ignore (/ignore add <nimi> /ignore list /ignore remove <nimi>)' })
+                        ),
                         React.createElement(ChangeDate, { date: '11.12.2019' }),
                         React.createElement(
                             'ul',
                             null,
+                            React.createElement(Changelist, { change: 'Lis\xE4tty Bedrock versiosta tuttu sillanrakennusominaisuus' }),
                             React.createElement(Changelist, { change: 'Lis\xE4tty uusi resepti: 6 lasipaneelia -> glass block ' }),
                             React.createElement(Changelist, { change: 'Lis\xE4tty uusi resepti uuniin: stainded glass -> glass block' })
                         ),

@@ -85,8 +85,17 @@ class ChangeLog extends React.Component {
             <div className='accordion text-left'>
                 <Month month='joulukuu2019' btntext='Joulukuu 2019' >
                     <Changebody month='joulukuu2019' showing>
+                        <ChangeDate date='21.12.2019' />
+                        <ul>
+                            <Changelist change='Lisätty 1.15.1 tuki' />
+                        </ul>
+                        <ChangeDate date='13.12.2019' />
+                        <ul>
+                            <Changelist change='Lisätty /ignore (/ignore add <nimi> /ignore list /ignore remove <nimi>)' />
+                        </ul>
                         <ChangeDate date='11.12.2019' />
                         <ul>
+                            <Changelist change='Lisätty Bedrock versiosta tuttu sillanrakennusominaisuus' />
                             <Changelist change='Lisätty uusi resepti: 6 lasipaneelia -> glass block ' />
                             <Changelist change='Lisätty uusi resepti uuniin: stainded glass -> glass block' />
                         </ul>
