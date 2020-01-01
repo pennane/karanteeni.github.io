@@ -1,43 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
 
-  <head>
+<head>
 
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="Karanteenin pelaaja-arvot.">
-    <meta name="author" content="">
-    <link rel="shortcut icon" type="image/png" href="favicon.ico"/>
-    <meta property="og:image" content="https://dev.karanteeni.xyz/assets/images/server-icon.png" />
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="Karanteenin pelaaja-arvot.">
+  <meta name="author" content="">
+  <link rel="shortcut icon" type="image/png" href="favicon.ico" />
+  <meta property="og:image" content="https://dev.karanteeni.xyz/assets/images/server-icon.png" />
 
-    <title>Karanteeni</title>
+  <title>Karanteeni</title>
 
-    <!-- Bootstrap Js -->
-    <script src="vendor/jquery/jquery.min.js"></script>
-    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-    <script src="modules/Tooltip/tooltip.js"></script>
+  <!-- Bootstrap Js -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="modules/Tooltip/tooltip.js"></script>
 
-    <!-- Custom Js / APIs -->
-    <script src="modules/Include/include.js"></script>
+  <!-- Custom Js / APIs -->
+  <script src="modules/Include/include.js"></script>
 
-    <!-- React -->
-    <script src="modules/React/react.production.min.js"></script>
-    <script src="modules/React/react-dom.production.min.js"></script>
+  <!-- React -->
+  <script src="modules/React/react.production.min.js"></script>
+  <script src="modules/React/react-dom.production.min.js"></script>
 
-    <!-- Bootstrap CSS -->
-    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="vendor/css/style_minecraft.min.css">
-    <link rel="stylesheet" href="vendor/css/style_winter.css">
+  <!-- Bootstrap CSS -->
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="vendor/css/style_minecraft.min.css">
+  <link rel="stylesheet" href="vendor/css/style_winter.css">
 
-    <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Fira+Sans&display=swap" rel="stylesheet">
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Fira+Sans&display=swap" rel="stylesheet">
 
-    <!-- FontAwesome Icons -->
-    <link rel="stylesheet" href="vendor/FontAwesome/all.min.css">
-    
-    <!-- Custom -->
-<!--     <style>
+  <!-- FontAwesome Icons -->
+  <link rel="stylesheet" href="vendor/FontAwesome/all.min.css">
+
+  <!-- Custom -->
+  <!--     <style>
       body {
         padding-top: 54px;
       }
@@ -51,83 +51,94 @@
   <script async src="https://www.googletagmanager.com/gtag/js?id=UA-146640999-1"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
+    function gtag() { dataLayer.push(arguments); }
     gtag('js', new Date());
 
     gtag('config', 'UA-146640999-1');
   </script>
-  </head>
+</head>
 
-  <body>
+<body>
 
-    <!-- Navbar -->
-    <div class="sticky-top" id="nav"></div> <br><br>
+  <!-- Navbar -->
+  <div class="sticky-top" id="nav"></div> <br><br>
 
-    <!-- Sisältö -->
-    <div class="container text-white">
-        <div class="col-lg-12 text-center">
-          <div class="card card-body bg-transparent" style="margin-bottom: 1.2em; font-family: 'Open Sans', sans-serif !important; border-radius: 0rem !important;">
-              <h1 class="mt-5">Rankit</h1>
-              <p class="lead">Tiedot Karanteenin rankeista.</p>
-              <p class="mb-0 text-left text-lg-justify">Karanteenissa on kahdeksan peliaikaan perustuvaa tasoa / rankkia, joista seitsemän tuo <b>lisäominaisuuksia</b> ajan kuluessa. Tasosi nousee automaattisesti kun vaadittu peliaika on saavutettu. Mikäli olet AFK, peliaikaa ei tällöin kerry. Peliajan näkee komennolla <code>/peliaika</code> ja muiden <code>/peliaika pelaajan_nimi</code></p><br>
-              <!--<p class="mb-0 text-left text-lg-justify">Serverillä on tavallisten rankkien lisäksi Lojaali. Lojaalit pelaajat olivat edellisellä serverillämme vippejä, joten heidän aikoinaan ostamat ominaisuudet siirtyivät tänne rankille Lojaali. Nyt, kun vippien (joihin sisältyy fly, tai muita vastaavia etuja) myyminen on kiellettyä Minecraftin eulassa, olemme siirtyneet serveriin, missä hyvät ominaisuudet tulevat peliajan mukaan.</p><br>-->
-              <p class="mb-0 text-left text-lg-justify">Tässä on taulukko (väri on samanlainen palvelimella etuliitteessä), josta näet kunkin rankin oikeudet. <!--Jokaisen tason mukana tulee myös uusi kit eli tavarapakki, jonka saat komennolla /kit (tason nimi).--> Jos et tiedä mitä joku komento tekee, niin kysy rohkeasti ylläpidolta!</p><br>             
-              <div class="container" id="rankit"></div>
-               <br>
-               <br>
-               <p class="mb-5 text-center text-lg-justify">
-                  Tässä on vielä lista komennoista, jotka ovat avoinna kaikille. <br><br>
-                  <button class="btn btn-eloton-outline kara-btn" type="button" data-toggle="collapse" data-target="#reloton" aria-expanded="false" aria-controls="reloton">Komennot</button>
-               </p>
-               <div class="collapse text-left mbot" id="reloton">
-                <div id="commands" class="card-body">
-                  <ul>
-                    
-                    <li>/kieli fi-Fi (vaihtaa palvelimen chatin ja komennot suomeksi)</li>
-                    <li>/kieli en-US (vaihtaa palvelimen chatin ja komennot englanniksi)</li>
-                    <li>/avaa</li>
-                    <li>/avaakaikille</li>
-                    <li>/back</li>
-                   <!--<li>/checkban</li>-->
-                    <!--<li>/crea</li>-->  
-                    <li>/home</li>
-                    <!--<li>/lay</li>-->
-                    <!--<li>/list</li>-->
-                    <!--<li>/lunastavote</li>-->
-                    <li>/msg (/m, /message)</li>
-                    <li>/+oikeudet nimi (lisää oikeudet pelaajalle palikkaan, /-oikeudet taasen poistaa oikeudet)</li>
-                    <li>/peliaika (/pa, /playtime)</li>
-                    <!--<li>/pennipeli (myös /lotto)</li>-->
-                    <!--<li>/realname</li>-->
-                    <!--<li>/recipe</li>-->
-                    <li>/reply (/r)</li>
-                    <!--<li>/report</li>-->
-                    <li>/rtp</li>
-                    <!--<li>/seen</li>-->
-                    <li>/sit</li>
-                    <li>/spawn</li>
-                    <li>/tpa</li>
-                    <li>/tpahere</li>
-                    <!--<li>/tpignore</li>-->
-                    <li>/trust</li>
-                    <!--<li>/valikko</li>-->
-                    <li>/vote</li>
-                    <li>/warp(s)</li>
-                  </ul>
-                </div>
+  <!-- Sisältö -->
+  <div class="container text-white">
+    <div class="col-lg-12 text-center">
+      <div class="card card-body bg-transparent"
+        style="margin-bottom: 1.2em; font-family: 'Open Sans', sans-serif !important; border-radius: 0rem !important;">
+        <h1 class="mt-5">Rankit</h1>
+        <p class="lead">Tiedot Karanteenin rankeista.</p>
+        <p class="mb-0 text-left text-lg-justify">Karanteenissa on kahdeksan peliaikaan perustuvaa tasoa / rankkia,
+          joista seitsemän tuo <b>lisäominaisuuksia</b> ajan kuluessa. Tasosi nousee automaattisesti kun vaadittu
+          peliaika on saavutettu. Mikäli olet AFK, peliaikaa ei tällöin kerry. Peliajan näkee komennolla
+          <code>/peliaika</code> ja muiden <code>/peliaika pelaajan_nimi</code></p><br>
+        <!--<p class="mb-0 text-left text-lg-justify">Serverillä on tavallisten rankkien lisäksi Lojaali. Lojaalit pelaajat olivat edellisellä serverillämme vippejä, joten heidän aikoinaan ostamat ominaisuudet siirtyivät tänne rankille Lojaali. Nyt, kun vippien (joihin sisältyy fly, tai muita vastaavia etuja) myyminen on kiellettyä Minecraftin eulassa, olemme siirtyneet serveriin, missä hyvät ominaisuudet tulevat peliajan mukaan.</p><br>-->
+        <p class="mb-0 text-left text-lg-justify">Tässä on taulukko (väri on samanlainen palvelimella etuliitteessä),
+          josta näet kunkin rankin oikeudet.
+          <!--Jokaisen tason mukana tulee myös uusi kit eli tavarapakki, jonka saat komennolla /kit (tason nimi).--> Jos
+          et tiedä mitä joku komento tekee, niin kysy rohkeasti ylläpidolta!</p><br>
+        <div class="container" id="rankit"></div>
+        <br>
+        <br>
+        <p class="mb-5 text-center text-lg-justify">
+          Tässä on vielä lista komennoista, jotka ovat avoinna kaikille. <br><br>
+          <button class="btn btn-eloton-outline kara-btn" type="button" data-toggle="collapse" data-target="#reloton"
+            aria-expanded="false" aria-controls="reloton">Komennot</button>
+        </p>
+        <div class="collapse text-left mbot" id="reloton">
+          <div id="commands" class="card-body">
+            <ul>
+
+              <li>/kieli fi-Fi (vaihtaa palvelimen chatin ja komennot suomeksi)</li>
+              <li>/kieli en-US (vaihtaa palvelimen chatin ja komennot englanniksi)</li>
+              <li>/+oikeudet nimi (lisää oikeudet pelaajalle palikkaan, /-oikeudet taasen poistaa oikeudet)</li>
+              <li>/avaa</li>
+              <li>/avaakaikille</li>
+              <li>/back</li>
+              <!--<li>/checkban</li>-->
+              <!--<li>/crea</li>-->
+              <li>/sethome</li>
+              <li>/home</li>
+              <!--<li>/lay</li>-->
+              <!--<li>/list</li>-->
+              <!--<li>/lunastavote</li>-->
+              <li>/msg (/m, /message)</li>
+              <li>/ignore (/ignore add nimi, /ignore list, /ignore remove nimi)</li>
+
+              <li>/peliaika (/pa, /playtime)</li>
+              <!--<li>/pennipeli (myös /lotto)</li>-->
+              <!--<li>/realname</li>-->
+              <!--<li>/recipe</li>-->
+              <li>/reply (/r)</li>
+              <!--<li>/report</li>-->
+              <li>/rtp</li>
+              <!--<li>/seen</li>-->
+              <li>/sit</li>
+              <li>/spawn</li>
+              <li>/tpa</li>
+              <li>/tpahere</li>
+              <!--<li>/tpignore</li>-->
+              <li>/trust</li>
+              <!--<li>/valikko</li>-->
+              <li>/vote</li>
+              <li>/warp(s)</li>
+            </ul>
           </div>
         </div>
       </div>
     </div>
-    <footer id="footer" class="footer mt-auto"></footer>
+  </div>
+  <footer id="footer" class="footer mt-auto"></footer>
 
-    <!-- React Components -->
-    <script src="./dist/navbar.js"></script>
-    <script src="./dist/table_ranks.js"></script>
-    <script src="./dist/footer.js"></script>
+  <!-- React Components -->
+  <script src="./dist/navbar.js"></script>
+  <script src="./dist/table_ranks.js"></script>
+  <script src="./dist/footer.js"></script>
 
-    <!-- Susse kävi täällä ;) -->
+  <!-- Susse kävi täällä ;) -->
 
-  </body>
+</body>
 
 </html>
