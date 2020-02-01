@@ -119,14 +119,17 @@ function initOngoing(serverEvents) {
 
 function parseServerEvent(event) {
   var startDate = parseDate(event.dates["start-date"]);
-  var endDate = parseDate(event.dates["end-date"]);
+  var endDate;
+  if (event.dates["end-date"]) {
+    endDate = parseDate(event.dates["end-date"]);
+  }
   var specifiedEndDate = true;
 
   if (!startDate) {
     throw new Error("Server event had no valid start date");
   }
 
-  if (isNaN(endDate.getTime())) {
+  if (!endDate || isNaN(endDate.getTime())) {
     specifiedEndDate = false;
     endDate = new Date(startDate);
     endDate.setDate(endDate.getDate() + 1);
