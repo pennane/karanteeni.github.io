@@ -4,7 +4,6 @@ xmlhttp.onreadystatechange = function () {
     if (this.readyState == 4 && this.status == 200) {
         var stabox = this.responseText;
         var kara = JSON.parse(stabox);
-        console.log(kara)
         if (kara["debug"].ping === true) {
             document.getElementById("status").style.color = "lime";
             document.getElementById("status").innerHTML = "Päällä"
