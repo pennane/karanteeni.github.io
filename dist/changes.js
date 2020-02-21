@@ -156,16 +156,44 @@ var ChangeLog = function (_React$Component5) {
                 { className: 'accordion text-left' },
                 React.createElement(
                     Month,
-                    { month: 'joulukuu2019', btntext: 'Joulukuu 2019' },
+                    { month: 'helmikuu2020', btntext: 'Helmikuu 2020' },
                     React.createElement(
                         Changebody,
-                        { month: 'joulukuu2019', showing: true },
-                        React.createElement(ChangeDate, { date: '21.12.2019' }),
+                        { month: 'helmikuu2020', showing: true },
+                        React.createElement(ChangeDate, { date: '16.2.2020' }),
                         React.createElement(
                             'ul',
                             null,
-                            React.createElement(Changelist, { change: 'Lis\xE4tty 1.15.1 tuki' })
+                            React.createElement(Changelist, { change: 'Map reset' })
+                        )
+                    )
+                ),
+                React.createElement(
+                    Month,
+                    { month: 'tammikuu2020', btntext: 'Tammikuu 2020' },
+                    React.createElement(
+                        Changebody,
+                        { month: 'tammikuu2020' },
+                        React.createElement(ChangeDate, { date: '16.1.2020' }),
+                        React.createElement(
+                            'ul',
+                            null,
+                            React.createElement(Changelist, { change: '/tk tuotu takaisin' })
                         ),
+                        React.createElement(ChangeDate, { date: '13.1.2020' }),
+                        React.createElement(
+                            'ul',
+                            null,
+                            React.createElement(Changelist, { change: 'Vote korjattu' })
+                        )
+                    )
+                ),
+                React.createElement(
+                    Month,
+                    { month: 'joulukuu2019', btntext: 'Joulukuu 2019' },
+                    React.createElement(
+                        Changebody,
+                        { month: 'joulukuu2019' },
                         React.createElement(ChangeDate, { date: '13.12.2019' }),
                         React.createElement(
                             'ul',
