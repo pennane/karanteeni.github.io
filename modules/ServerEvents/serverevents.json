@@ -18,16 +18,5 @@
     "options": {
       "forceEndDate": true
     }
-  },
-  {
-    "title": "Maprseset",
-    "description": "Mapreset helmikuun lopulla. Tämän voi huoletta laittaa tänne, koska kukaan ei kumminkaan koskaan lue nettisivuja :3",
-    "dates": {
-      "start-date": "29.2.2020",
-      "end-date": ""
-    },
-    "options": {
-      "forceEndDate": false
-    }
   }
 ]
