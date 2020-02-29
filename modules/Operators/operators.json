@@ -18,19 +18,14 @@
     ],
     "adminit": [
         {
-            "nimi": "viuwi",
-            "kuvaus": "Ylläpitäjä, joka käy paikalla hyvällä tuurilla kerran kuukaudessa.",
-            "uuid": "72c7765aec184ee4a7aefc07ebf6a824"
-        },
-        {
             "nimi": "LouNii",
             "kuvaus": "Adminina taitava, nykyään ei vain jaksa pelata.",
             "uuid": "d347193d8b794a389158074681bc32f8"
         },
         {
-            "nimi": "Ougii_Lewe",
-            "kuvaus": "Ei pahemmin pyöri servulla, mutta rakensi uutta spawnia.",
-            "uuid": "5cab2b2a16dc410491ff40fa6920d01d"
+            "nimi": "Susse",
+            "kuvaus": "Hoitelee nettijuttuja, ja kuka ties mitä.",
+            "uuid": "144b79b3-71c0-4e7e-b466-f94d36d0caed"
         }
     ],
     "operaattorit": [
@@ -38,11 +33,6 @@
             "nimi": "Irontank_01",
             "kuvaus": "Satunnaisesti aktiivinen ylläpitäjä.",
             "uuid": "5d56328849f44d1b97bb97c437a3f625"
-        },
-        {
-            "nimi": "Susse",
-            "kuvaus": "Hoitelee nettijuttuja, ja kuka ties mitä.",
-            "uuid": "144b79b3-71c0-4e7e-b466-f94d36d0caed"
         }
     ],
     "moderaattorit": [
