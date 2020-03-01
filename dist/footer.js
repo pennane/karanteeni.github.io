@@ -23,7 +23,7 @@ var Footer = function (_React$Component) {
             return React.createElement(
                 'div',
                 { className: 'container' },
-                '\xA9 Karanteeni 2019'
+                '\xA9 Karanteeni 2020'
             );
         }
     }]);
