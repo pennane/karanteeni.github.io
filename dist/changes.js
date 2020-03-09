@@ -156,10 +156,32 @@ var ChangeLog = function (_React$Component5) {
                 { className: 'accordion text-left' },
                 React.createElement(
                     Month,
+                    { month: 'maaliskuu2020', btntext: 'Maaliskuu 2020' },
+                    React.createElement(
+                        Changebody,
+                        { month: 'maaliskuu2020', showing: true },
+                        React.createElement(ChangeDate, { date: '9.3.2020' }),
+                        React.createElement(
+                            'ul',
+                            null,
+                            React.createElement(Changelist, { change: 'Uusi komento /alue. N\xE4ytt\xE4\xE4 alueen nimen.' })
+                        )
+                    )
+                ),
+                React.createElement(
+                    Month,
                     { month: 'helmikuu2020', btntext: 'Helmikuu 2020' },
                     React.createElement(
                         Changebody,
-                        { month: 'helmikuu2020', showing: true },
+                        { month: 'helmikuu2020' },
+                        React.createElement(ChangeDate, { date: '24.2.2020' }),
+                        React.createElement(
+                            'ul',
+                            null,
+                            React.createElement(Changelist, { change: '/radio toimii taas' }),
+                            React.createElement(Changelist, { change: 'Uusi komento /music' }),
+                            React.createElement(Changelist, { change: 'Laitettu sillanrakennus pois p\xE4\xE4lt\xE4 monistusglitchin takia' })
+                        ),
                         React.createElement(ChangeDate, { date: '16.2.2020' }),
                         React.createElement(
                             'ul',
