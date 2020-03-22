@@ -160,6 +160,24 @@ var ChangeLog = function (_React$Component5) {
                     React.createElement(
                         Changebody,
                         { month: 'maaliskuu2020', showing: true },
+                        React.createElement(ChangeDate, { date: '22.3.2020' }),
+                        React.createElement(
+                            'ul',
+                            null,
+                            React.createElement(Changelist, { change: 'Spawnereita voi taas muuttaa creeper- ja squid-spawnereiksi' })
+                        ),
+                        React.createElement(ChangeDate, { date: '18.3.2020' }),
+                        React.createElement(
+                            'ul',
+                            null,
+                            React.createElement(Changelist, { change: 'lis\xE4tty uusia shortcutkomentoja /nax, /nubbe, /skidaddleskidoodle [/nou, /reverse, /unoreverse]' })
+                        ),
+                        React.createElement(ChangeDate, { date: '12.3.2020' }),
+                        React.createElement(
+                            'ul',
+                            null,
+                            React.createElement(Changelist, { change: 'Granite, diorite, andesite, cobble, stone voi nyt sulattaa blast furnacessa graveliksi' })
+                        ),
                         React.createElement(ChangeDate, { date: '9.3.2020' }),
                         React.createElement(
                             'ul',
