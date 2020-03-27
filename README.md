@@ -21,7 +21,7 @@ Navigaatiopalkki (samoin kuin moni muu komponentti) on toteutettu Reactilla. Jok
 <div id="nav"></div>
 
 <!-- Sivun alalaidassa erikseen script tagi, joka kutsuu kyseisen JSX komponentin. -->
-<script src="./src/navbar.js"></script>
+<script src="./dist/navbar.js"></script>
 ```
 
 Jokainen komponentti toimii samalla tavalla. Muita komponentteja esimerkiksi ovat muutoslokin nappi (`changelog_button.js`), footer (`footer.js`), pelaaja-arvot (`table_ranks.js`), sekä reseptit (`recipes.js`).
@@ -84,16 +84,28 @@ UUID:tä käytetään lähinnä skinin hakemiseen, joka päivittyy automaattises
 
 ## React-komponenttien kääntäminen
 
-Reactin JSX-komponentit täytyy kääntää selaimelle luettavaksi JavaScriptiksi. Tämä onnistuu helposti, mikäli omistat Node Package Managerin (npm), mikä tulee autom. Node.js mukana. Avaa terminaali, komentokehote tai PowerShell, sekä suorita nämä komennot:
 
-1. `npm init -y` (Jos ei toimi -> [Fix](https://gist.github.com/gaearon/246f6380610e262f8a648e3e51cad40d))
-2. `npm install babel-cli@6 babel-preset-react-app@3`
 
-Tämä asentaa Babel compilerin omaan repositorioosi. Kun olet valmis, avaa terminaali/komentokehote/PowerShell repositiorioosi, suorita seuraava komento:
+Reactin JSX-komponentit täytyy kääntää selaimelle luettavaksi JavaScriptiksi. Tämä onnistuu helposti, mikäli omistat Node Package Managerin (npm), mikä tulee autom. Node.js mukana. 
 
-`npx babel --watch ./components --out-dir ./src --presets react-app/prod`
+Ensin pidä huolta, että tarvittavat paketit ovat asennettu terminaalin komennolla:
 
-Tämän jälkeen voit muokata rauhassa JSX-tiedostoja, Babel hoitaa kääntämisen JavaScriptiksi, eikä sinun tarvitse koskea niihin :).
+`npm install`
+
+### Vaihtoehto 1 - Tiedostojen automaattinen kääntäminen
+
+Mikäli haluat Babelin kääntävän JSX-tiedostot automaattisesti kehityksen yhteydessä, suorita komento:
+
+`npm run watch-jsx`
+
+Tämän jälkeen voit muokata rauhassa JSX-tiedostoja. Babel hoitaa kääntämisen JavaScriptiksi, eikä sinun tarvitse koskea niihin :).
+
+### Vaihtoehto 2 - Tiedostojen kääntäminen scriptillä tarvittaessa
+
+Mikäli haluat kääntää JSX-tiedostot manuaalisesti, suorita aina käännön yhteydessä komento:
+
+`npm run build-jsx`
+
 
 ## Tiedettyjä "ongelmia"
 

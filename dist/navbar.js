@@ -206,24 +206,19 @@ var Navbar = function (_React$Component5) {
                         React.createElement(
                             "ul",
                             { className: "nav navbar-nav nav-fill", style: { flexGrow: 1, textAlign: 'center' } },
-                            React.createElement(NavLink, { icon: "fas fa-home", url: "index", title: "Etusivu" }),
+                            React.createElement(NavLink, { icon: "fas fa-home", url: "/", title: "Etusivu" }),
                             React.createElement(
                                 DropDownCollapseMenu,
                                 { title: "Yleistietoa", dataTarget: "#rc", labelClassName: "fas fa-info" },
                                 React.createElement(DropDownItem, { icon: "fas fa-info", url: "yleistietoa", title: "Yleistietoa" }),
                                 React.createElement(DropDownItem, { icon: "fas fa-hammer", url: "recipes", title: "Custom recipet" }),
-                                React.createElement(
-                                    Tooltip,
-                                    { text: "T\xE4m\xE4 osio sis\xE4lt\xE4\xE4 vanhentunutta tietoa." },
-                                    React.createElement(DropDownItem, { icon: "fas fa-thumbs-up", disabled: true, url: "hoks", title: "Hyv\xE4 tiet\xE4\xE4!" })
-                                ),
+                                React.createElement(DropDownItem, { icon: "fas fa-thumbs-up", url: "hoks", title: "Hyv\xE4 tiet\xE4\xE4!" }),
                                 React.createElement(DropDownItem, { icon: "fas fa-question-circle", url: "ukk", title: "UKK" })
                             ),
                             React.createElement(
                                 DropDownCollapseMenu,
                                 { title: "S\xE4\xE4nn\xF6t", dataTarget: "#dd", labelClassName: "fas fa-exclamation" },
                                 React.createElement(DropDownItem, { icon: "fas fa-book-open", url: "saannot", title: "Survivalin s\xE4\xE4nn\xF6t" }),
-                                React.createElement(DropDownItem, { icon: "fas fa-tools", url: "creasaannot", title: "Creativen s\xE4\xE4nn\xF6t" }),
                                 React.createElement(DropDownItem, { icon: "fas fa-comments", url: "chat-saannot", title: "Chat-s\xE4\xE4nn\xF6t" })
                             ),
                             React.createElement(NavLink, { icon: "fas fa-medal", url: "rankit", title: "Rankit" }),

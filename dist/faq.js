@@ -50,7 +50,11 @@ var FrequentlyAskedQuestions = function (_React$Component) {
                         "code",
                         null,
                         "/trust suojauksen_nimi pelaajan_nimi"
-                    ), ' seisten suojauksen sisällä. Suojauksen nimen saat selville komennolla /rg i, kun seisot sen päällä.'] }),
+                    ), ' seisten suojauksen sisällä. Suojauksen nimen saat selville komennolla ', React.createElement(
+                        "code",
+                        null,
+                        "/rg i"
+                    ), ' kun seisot sen päällä.'] }),
                 React.createElement(Accordion, { id: "prot4", question: "Kuinka annan kaverilleni oikeudet chesteihin ja uuneihin?", target: "protcol4", answer: ['Voit antaa oikeudet kyseisiin blockeihin ', 'katsomalla blockia ja kirjoittamalla komennon ', React.createElement(
                         "code",
                         null,
@@ -59,10 +63,14 @@ var FrequentlyAskedQuestions = function (_React$Component) {
                 React.createElement(Accordion, { id: "prot5", question: "L\xF6ysin suojaamattoman arkun. Voinko ottaa sielt\xE4 tavaraa?", target: "protcol5", answer: "Et. Vaikka l\xF6yt\xE4isit arkun tai kokonaan suojaamattoman arkun, et saa ottaa sielt\xE4 tavaroita tai rikkoa paikkaa. Grieffaaminen johtaa usein porttikieltoon." }),
                 React.createElement(Divider, { id: "ekonomia", name: "Ekonomia" }),
                 React.createElement(Accordion, { id: "eco1", question: "Kuinka voin luoda arkkukaupan?", target: "ecol1", answer: "Voit luoda arkkukaupan ly\xF6m\xE4ll\xE4 arkkua tavara k\xE4dess\xE4 ja Shift painettuna pohjaan. T\xE4m\xE4n j\xE4lkeen chat kysyy sinulta hinnan tavaralle. Kirjoita hinta ja n\xE4in arkkukauppasi on valmis." }),
-                React.createElement(Accordion, { id: "eco2", question: "Mit\xE4 valuuttaa palvelin k\xE4ytt\xE4\xE4 ja kuinka saan sit\xE4?", target: "ecol2", answer: ['Palvelimella on rahavaluuttana pennit.', ' Pennejä saat kaivamalla raaka-aineita maan syvyyksistä ja muuttamalla ne blockeiksi. Voit myydä blockit sen jälkeen spawnin kaupassa (/warp kauppa).', ' Myytäviksi blockeiksi kelpaavat vain Coal, Quartz, Iron, Gold, Redstone, Lapis Lazuli, Emerald ja Diamond blockit.', React.createElement("br", null), React.createElement("br", null), 'Voit myös luoda arkkukaupan tai äänestää. Jokaisesta äänestyksestä saat 100 penniä, mutta varmista, että olet Survival maassa.'] }),
+                React.createElement(Accordion, { id: "eco2", question: "Mit\xE4 valuuttaa palvelin k\xE4ytt\xE4\xE4 ja kuinka saan sit\xE4?", target: "ecol2", answer: ['Palvelimella on rahavaluuttana pennit.', ' Pennejä saat hankkimalla uutta peliaikaa, sekä palvelinta äänestämällä ', React.createElement(
+                        "code",
+                        null,
+                        "/vote"
+                    ), '. Jokainen äänestykerta on 50 pennin arvoinen.', React.createElement("br", null), 'Voit myös myydä sekä ostaa tavaraa käyttämällä arkkukauppoja.'] }),
                 React.createElement(Divider, { id: "kodit", name: "Kodit" }),
                 React.createElement(Accordion, { id: "home1", question: "Hukkasin kotini. Kuinka saan sen takaisin?", target: "homecol1", answer: "Nyk\xE4ise yll\xE4pit\xE4j\xE4\xE4 hihasta ja kerro h\xE4nelle mit\xE4 teit viimeksi kotisi l\xE4hettyvilt\xE4 ja milt\xE4 se n\xE4ytti. N\xE4in saamme palautettua sinut oikeaan paikkaan" }),
-                React.createElement(Accordion, { id: "home2", question: "En pysty teleporttaamaan, poistamaan tai asettamaan koteja. Internal error, wat do?", target: "homecol2", answer: "Sano l\xE4himm\xE4lle yll\xE4pit\xE4j\xE4lle asiasta. Todenn\xE4k\xF6isesti joku tai jotkin kodeistasi ovat korruptoituneet ja joudumme poistamaan ne manuaalisesti. Mik\xE4li yll\xE4pitoa ei ole paikalla, liity Karanteenin Discord palvelimelle ja kerro ongelmastasi Naxray:lle, Jomelle tai Nuublesille." }),
+                React.createElement(Accordion, { id: "home2", question: "En pysty teleporttaamaan, poistamaan tai asettamaan koteja. Internal error, wat do?", target: "homecol2", answer: "Sano l\xE4himm\xE4lle yll\xE4pit\xE4j\xE4lle asiasta. Todenn\xE4k\xF6isesti joku tai jotkin kodeistasi ovat korruptoituneet ja joudumme poistamaan ne manuaalisesti. Mik\xE4li yll\xE4pitoa ei ole paikalla, liity Karanteenin Discord palvelimelle ja kerro siell\xE4 ongelmastasi yll\xE4pidolle." }),
                 React.createElement(Accordion, { id: "home3", question: "Saanko asettaa kodin Netheriin tai Endiin?", target: "homecol3", answer: "Saat, mutta emme suosittele. Nether ja End resetoidaan kuukauden v\xE4lein, mik\xE4 voi aiheuttaa kodin korruptoitumista ja sinun kuoleman. T\xE4m\xE4 tarkoittaa siis sit\xE4, ett\xE4 saatat kuolla jos k\xE4yt\xE4t kotia resetoinnin j\xE4lkeen. Yll\xE4pito ei ole velvollinen palauttamaan tavaroitasi." }),
                 React.createElement(Divider, { id: "rangaistukset", name: "Rangaistukset" }),
                 React.createElement(Accordion, { id: "pun1", question: "Montako rangaistusta voin saada?", target: "puncol1", answer: "Riippuu k\xE4ytt\xE4ytymisest\xE4si servulla. Toistaiseksi annamme korkeintaan kaksi porttikieltoa, joista j\xE4lkimm\xE4inen on aina ikuinen, jos ensimm\xE4inen on ollut yli viiden (5) p\xE4iv\xE4n mittainen." }),

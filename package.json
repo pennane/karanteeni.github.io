@@ -1,10 +1,12 @@
 {
   "name": "karanteeni.github.io",
   "version": "1.0.0",
-  "description": "Peruspaske sivut (HTML, CSS, JS) :D",
+  "description": "Karanteenin peruspaske sivut (HTML, CSS, JS) :D",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build-jsx": "npx babel ./components --out-dir ./dist --presets react-app/prod",
+    "watch-jsx": "npx babel --watch ./components --out-dir ./dist --presets react-app/prod"
   },
   "repository": {
     "type": "git",

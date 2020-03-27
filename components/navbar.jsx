@@ -115,18 +115,18 @@ class Navbar extends React.Component {
                     </button>
                     <div className="collapse navbar-collapse" id="navbarResponsive">
                         <ul className="nav navbar-nav nav-fill" style={{flexGrow: 1, textAlign: 'center'}}>
-                            <NavLink icon="fas fa-home" url="index" title="Etusivu" />
+                            <NavLink icon="fas fa-home" url="/" title="Etusivu" />
                             
                             <DropDownCollapseMenu title="Yleistietoa" dataTarget="#rc" labelClassName="fas fa-info">
                                 <DropDownItem icon="fas fa-info" url="yleistietoa" title="Yleistietoa" />
                                 <DropDownItem icon="fas fa-hammer" url="recipes" title="Custom recipet" />
-                                <Tooltip text="Tämä osio sisältää vanhentunutta tietoa."><DropDownItem icon="fas fa-thumbs-up" disabled url="hoks" title="Hyvä tietää!" /></Tooltip>
+                                <DropDownItem icon="fas fa-thumbs-up" url="hoks" title="Hyvä tietää!" />
                                 <DropDownItem icon="fas fa-question-circle" url="ukk" title="UKK" />
                             </DropDownCollapseMenu>
 
                             <DropDownCollapseMenu title="Säännöt" dataTarget="#dd" labelClassName="fas fa-exclamation">
                                 <DropDownItem icon="fas fa-book-open" url="saannot" title="Survivalin säännöt" />
-                                <DropDownItem icon="fas fa-tools" url="creasaannot" title="Creativen säännöt" />
+                                {/*<DropDownItem icon="fas fa-tools" url="creasaannot" title="Creativen säännöt" />*/}
                                 <DropDownItem icon="fas fa-comments" url="chat-saannot" title="Chat-säännöt" />
                             </DropDownCollapseMenu>
 

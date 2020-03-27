@@ -1,128 +1,123 @@
 <!DOCTYPE html>
 <html lang="en">
 
-  <head>
+<head>
 
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="Karanteenin lahjoitukset.">
-    <meta name="author" content="">
-    <link rel="shortcut icon" type="image/png" href="favicon.ico"/>
-    <meta property="og:image" content="https://dev.karanteeni.xyz/assets/images/server-icon.png" />
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="Karanteenin lahjoitukset.">
+  <meta name="author" content="">
+  <link rel="shortcut icon" type="image/png" href="favicon.ico" />
+  <meta property="og:image" content="https://dev.karanteeni.xyz/assets/images/server-icon.png" />
 
-    <title>Karanteeni</title>
+  <title>Karanteeni</title>
 
-    <!-- Bootstrap Js -->
-    <script src="vendor/jquery/jquery.min.js"></script>
-    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-    <script src="modules/Tooltip/tooltip.js"></script>
+  <!-- Bootstrap Js -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="modules/Tooltip/tooltip.js"></script>
 
-    <!-- Custom Js / APIs -->
-    <script src="modules/Include/include.js"></script>
+  <!-- Custom Js / APIs -->
+  <script src="modules/Include/include.js"></script>
 
-    <!-- React -->
-    <script src="modules/React/react.production.min.js"></script>
-    <script src="modules/React/react-dom.production.min.js"></script>
+  <!-- React -->
+  <script src="modules/React/react.production.min.js"></script>
+  <script src="modules/React/react-dom.production.min.js"></script>
 
-    <!-- Bootstrap CSS -->
-    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="vendor/css/style_minecraft.min.css">
+  <!-- Bootstrap CSS -->
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="vendor/css/style_minecraft.min.css">
+  <link rel="stylesheet" href="vendor/css/style_spring.css">
 
-    <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=M+PLUS+1p" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=M+PLUS+1p" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
 
-    <!-- FontAwesome Icons -->
-    <link rel="stylesheet" href="vendor/FontAwesome/all.min.css">
-    
-    <!-- Custom -->
-<!--     <style>
-      body {
-        padding-top: 54px;
-      }
-      @media (min-width: 992px) {
-        body {
-          padding-top: 56px;
-        }
-      }
-
-    </style> -->
+  <!-- FontAwesome Icons -->
+  <link rel="stylesheet" href="vendor/FontAwesome/all.min.css">
 
   <script async src="https://www.googletagmanager.com/gtag/js?id=UA-146640999-1"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
+    function gtag() { dataLayer.push(arguments); }
     gtag('js', new Date());
 
     gtag('config', 'UA-146640999-1');
   </script>
-  </head>
+</head>
 
-  <body onload="$('#donMod').modal('show')">
+<body onload="$('#donMod').modal('show')">
 
-    <!-- Navbar -->
-    <div class="sticky-top" id="nav"></div> <br><br>
+  <!-- Navbar -->
+  <div class="sticky-top" id="nav"></div> <br><br>
 
-    <!-- Modal -->
-    <div class="modal fade" id="donMod" tabindex="-1" role="dialog" aria-labelledby="ModalLabel" aria-hidden="true">
-      <div class="modal-dialog modal-lg" role="document">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title" id="ModalLabel">Lahjoitukset</h5>
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-              <span aria-hidden="true">&times;</span>
-            </button>
-          </div>
-          <div class="modal-body">
-            <p>Koska serveri maksetaan täysin omilla rahoilla, pienetkin lahjoitukset ovat erittäin tervetulleita. Jos haluaisit lahjoittaa,
-            lähetä meille sähköpostia osoitteeseen <b><a href="mailto:mckaranteeni@gmail.com" style="color: black;">mckaranteeni@gmail.com</a></b> tai ota yhteyttä Discordissa Jome#3607, niin katsotaan kuinka voit sen tehdä. Parhaat tavat ovat Paysafecard ja PayPal.<br><hr>
+  <!-- Modal -->
+  <div class="modal fade" id="donMod" tabindex="-1" role="dialog" aria-labelledby="ModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="ModalLabel">Lahjoitukset</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <p>Koska serveri maksetaan täysin omilla rahoilla, pienetkin lahjoitukset ovat erittäin tervetulleita. Jos
+            haluaisit lahjoittaa,
+            lähetä meille sähköpostia osoitteeseen <b><a href="mailto:mckaranteeni@gmail.com"
+                style="color: black;">mckaranteeni@gmail.com</a></b> tai ota yhteyttä Discordissa Jome#3607, niin
+            katsotaan kuinka voit sen tehdä. Parhaat tavat ovat Paysafecard ja PayPal.<br>
+            <hr>
             <h5>Mitä saan lahjoituksesta?</h5><br>
-            Minecraftin EULA ei kiellä visuaalisten erikoisuuksien antamista pelaajille vastineeksi rahasta, joten vähintään 10 euron lahjoituksen tekevät saavat seuraavat ominaisuudet: <br><br>
+            Minecraftin EULA ei kiellä visuaalisten erikoisuuksien antamista pelaajille vastineeksi rahasta, joten
+            vähintään 10 euron lahjoituksen tekevät saavat seuraavat ominaisuudet: <br><br>
             <ul>
               <li>käyttää serverin chatissa lempinimeä (/nick)</li>
               <li>käyttöönsä /trails komennon, jolla saa erilaisia partikkeleja ympärilleen</li>
               <li>oikeuden kirjoittaa kyltteihin väreillä</li>
               <li>Lentomattoihin pohjiksi punaiset sekä ruskeat sieniblokit, bedrock ja timanttiblokit</li>
             </ul>
-            </p>
-          </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-secondary" data-dismiss="modal">Sulje</button>
-          </div>
+          </p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Sulje</button>
         </div>
       </div>
     </div>
+  </div>
 
-    <!-- Sisältö -->
-    <div class="container-fluid text-white">
-        <div class="col-sm text-center">
-          <div class="card card-body" style="border: 20px ridge rgb(212,175,55); background-color: rgb(192,192,192); color: black; border-radius: 0rem !important; margin-bottom: 1.2em;">
-              <h1 class="mt-5">Lahjoittajat</h1>
-              <p class="lead">Tälle sivulle on kerätty lahjoittajat. Kiitos tuesta ja uskollisuudestanne! ♥</p>
-                <table class="table table-borderless table-responsive-lg" style="font-size: 16px; font-family: 'Courier New', Courier, monospace;">
-                  <thead>
-                    <tr>
-                      <th scope="col">Pvm</th>
-                      <th scope="col">Nimi</th>
-                      <th scope="col">Summa</th>
-                      <th scope="col">♥</th>
-                    </tr>
-                  </thead>
-                  <tbody id="lahjoittajat">
-
-                  </tbody>
-                </table>
-          </div>
+  <!-- Sisältö -->
+  <div class="container-fluid text-white">
+    <div class="col-sm text-center">
+      <div class="card card-body lahjoitusdokumentti">
+        <h1 class="mt-5">Lahjoittajat</h1>
+        <p class="lead">Tälle sivulle on kerätty lahjoittajat. Kiitos tuesta ja uskollisuudestanne! ♥</p>
+        <div class="lahjoitustablewrapper">
+          <table class="table table-borderless"
+            style="font-size: 16px; font-family: 'Courier New', Courier, monospace;">
+            <thead>
+              <tr>
+                <th scope="col">Pvm</th>
+                <th scope="col">Nimi</th>
+                <th scope="col">Summa</th>
+                <th scope="col">♥</th>
+              </tr>
+            </thead>
+            <tbody id="lahjoittajat"></tbody>
+          </table>
         </div>
-    </div>
-    <script src="modules/Donators/donators.js"></script>
-    <footer id="footer" class="footer mt-auto"></footer>
 
-    <!-- Components -->
-    <script src="./src/navbar.js"></script>
-    <script src="./src/footer.js"></script>
-    
-  </body>
+      </div>
+    </div>
+  </div>
+  <script src="modules/Donators/donators.js"></script>
+  <footer id="footer" class="footer mt-auto"></footer>
+
+  <!-- Components -->
+  <script src="./dist/navbar.js"></script>
+  <script src="./dist/footer.js"></script>
+
+</body>
 
 </html>

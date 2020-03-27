@@ -68,21 +68,9 @@ var Changebody = function (_React$Component2) {
     _createClass(Changebody, [{
         key: 'render',
         value: function render() {
-            var showing = this.props.showing;
-            if (showing) {
-                return React.createElement(
-                    'div',
-                    { id: this.props.month, className: 'collapse show', 'aria-labelledby': this.props.month + '_1', 'data-parent': '#muutokset' },
-                    React.createElement(
-                        'div',
-                        { className: 'card-body' },
-                        this.props.children
-                    )
-                );
-            }
             return React.createElement(
                 'div',
-                { id: this.props.month, className: 'collapse', 'aria-labelledby': this.props.month + '_1', 'data-parent': '#muutokset' },
+                { id: this.props.month, className: 'collapse ' + (this.props.showing ? 'show' : null), 'aria-labelledby': this.props.month + '_1', 'data-parent': '#muutokset' },
                 React.createElement(
                     'div',
                     { className: 'card-body' },
@@ -168,10 +156,165 @@ var ChangeLog = function (_React$Component5) {
                 { className: 'accordion text-left' },
                 React.createElement(
                     Month,
+                    { month: 'maaliskuu2020', btntext: 'Maaliskuu 2020' },
+                    React.createElement(
+                        Changebody,
+                        { month: 'maaliskuu2020', showing: true },
+                        React.createElement(ChangeDate, { date: '22.3.2020' }),
+                        React.createElement(
+                            'ul',
+                            null,
+                            React.createElement(Changelist, { change: 'Spawnereita voi taas muuttaa creeper- ja squid-spawnereiksi' })
+                        ),
+                        React.createElement(ChangeDate, { date: '18.3.2020' }),
+                        React.createElement(
+                            'ul',
+                            null,
+                            React.createElement(Changelist, { change: 'lis\xE4tty uusia shortcutkomentoja /nax, /nubbe, /skidaddleskidoodle [/nou, /reverse, /unoreverse]' })
+                        ),
+                        React.createElement(ChangeDate, { date: '12.3.2020' }),
+                        React.createElement(
+                            'ul',
+                            null,
+                            React.createElement(Changelist, { change: 'Granite, diorite, andesite, cobble, stone voi nyt sulattaa blast furnacessa graveliksi' })
+                        ),
+                        React.createElement(ChangeDate, { date: '9.3.2020' }),
+                        React.createElement(
+                            'ul',
+                            null,
+                            React.createElement(Changelist, { change: 'Uusi komento /alue. N\xE4ytt\xE4\xE4 alueen nimen.' })
+                        )
+                    )
+                ),
+                React.createElement(
+                    Month,
+                    { month: 'helmikuu2020', btntext: 'Helmikuu 2020' },
+                    React.createElement(
+                        Changebody,
+                        { month: 'helmikuu2020' },
+                        React.createElement(ChangeDate, { date: '24.2.2020' }),
+                        React.createElement(
+                            'ul',
+                            null,
+                            React.createElement(Changelist, { change: '/radio toimii taas' }),
+                            React.createElement(Changelist, { change: 'Uusi komento /music' }),
+                            React.createElement(Changelist, { change: 'Laitettu sillanrakennus pois p\xE4\xE4lt\xE4 monistusglitchin takia' })
+                        ),
+                        React.createElement(ChangeDate, { date: '16.2.2020' }),
+                        React.createElement(
+                            'ul',
+                            null,
+                            React.createElement(Changelist, { change: 'Map reset' })
+                        )
+                    )
+                ),
+                React.createElement(
+                    Month,
+                    { month: 'tammikuu2020', btntext: 'Tammikuu 2020' },
+                    React.createElement(
+                        Changebody,
+                        { month: 'tammikuu2020' },
+                        React.createElement(ChangeDate, { date: '16.1.2020' }),
+                        React.createElement(
+                            'ul',
+                            null,
+                            React.createElement(Changelist, { change: '/tk tuotu takaisin' })
+                        ),
+                        React.createElement(ChangeDate, { date: '13.1.2020' }),
+                        React.createElement(
+                            'ul',
+                            null,
+                            React.createElement(Changelist, { change: 'Vote korjattu' })
+                        )
+                    )
+                ),
+                React.createElement(
+                    Month,
+                    { month: 'joulukuu2019', btntext: 'Joulukuu 2019' },
+                    React.createElement(
+                        Changebody,
+                        { month: 'joulukuu2019' },
+                        React.createElement(ChangeDate, { date: '13.12.2019' }),
+                        React.createElement(
+                            'ul',
+                            null,
+                            React.createElement(Changelist, { change: 'Lis\xE4tty /ignore (/ignore add <nimi> /ignore list /ignore remove <nimi>)' })
+                        ),
+                        React.createElement(ChangeDate, { date: '11.12.2019' }),
+                        React.createElement(
+                            'ul',
+                            null,
+                            React.createElement(Changelist, { change: 'Lis\xE4tty Bedrock versiosta tuttu sillanrakennusominaisuus' }),
+                            React.createElement(Changelist, { change: 'Lis\xE4tty uusi resepti: 6 lasipaneelia -> glass block ' }),
+                            React.createElement(Changelist, { change: 'Lis\xE4tty uusi resepti uuniin: stainded glass -> glass block' })
+                        ),
+                        React.createElement(ChangeDate, { date: '10.12.2019' }),
+                        React.createElement(
+                            'ul',
+                            null,
+                            React.createElement(Changelist, { change: 'Rankkikohtaiset kotien m\xE4\xE4r\xE4t korjattu' }),
+                            React.createElement(Changelist, { change: 'Spawnerien otto silktouchilla ja ilman silktouchia korjattu' })
+                        ),
+                        React.createElement(ChangeDate, { date: '7.12.2019' }),
+                        React.createElement(
+                            'ul',
+                            null,
+                            React.createElement(Changelist, { change: 'Tabin serverv\xE4rej\xE4 paranneltu' }),
+                            React.createElement(Changelist, { change: 'Taikamaton kanssa ei en\xE4\xE4 ota fall damagea' }),
+                            React.createElement(Changelist, { change: 'Entiteetit eiv\xE4t ota damagea taikamaton sivuista' }),
+                            React.createElement(Changelist, { change: 'Permiplugin osaa k\xE4sitell\xE4 offline pelaajia, ja pystyy asettamaan oikeuksia ilman relogia' }),
+                            React.createElement(Changelist, { change: 'Korjattu coreplugarin komennonsuorittajasta komponenttibugi' })
+                        )
+                    )
+                ),
+                React.createElement(
+                    Month,
+                    { month: 'marraskuu2019', btntext: 'Marraskuu 2019' },
+                    React.createElement(
+                        Changebody,
+                        { month: 'marraskuu2019' },
+                        React.createElement(ChangeDate, { date: '30.11.2019' }),
+                        React.createElement(
+                            'ul',
+                            null,
+                            React.createElement(Changelist, { change: 'Korjattu prismarine slabien muunaminen t\xE4ys blockeiksi' }),
+                            React.createElement(Changelist, { change: 'Lis\xE4tty mahdollisuus muuntaa Blast Furnacella hiilipalikoista mustaa v\xE4riainetta' })
+                        ),
+                        React.createElement(ChangeDate, { date: '22.11.2019' }),
+                        React.createElement(
+                            'ul',
+                            null,
+                            React.createElement(Changelist, { change: 'Discord chatin v\xE4rit korjattu' })
+                        ),
+                        React.createElement(ChangeDate, { date: '16.11.2019' }),
+                        React.createElement(
+                            'ul',
+                            null,
+                            React.createElement(Changelist, { change: 'Tuomas veturi p\xE4ivitetty' }),
+                            React.createElement(Changelist, { change: 'Looppaus + random toimii nyt' }),
+                            React.createElement(Changelist, { change: 'Voikukat korjattu' })
+                        )
+                    )
+                ),
+                React.createElement(
+                    Month,
                     { month: 'lokakuu2019', btntext: 'Lokakuu 2019' },
                     React.createElement(
                         Changebody,
-                        { month: 'lokakuu2019', showing: true },
+                        { month: 'lokakuu2019' },
+                        React.createElement(ChangeDate, { date: '31.10.2019' }),
+                        React.createElement(
+                            'ul',
+                            null,
+                            React.createElement(Changelist, { change: '/sit tuotu takaisin' })
+                        ),
+                        React.createElement(ChangeDate, { date: '26.10.2019' }),
+                        React.createElement(
+                            'ul',
+                            null,
+                            React.createElement(Changelist, { change: '/vote toimii taas' }),
+                            React.createElement(Changelist, { change: '(Realistinen) el\xE4intenkanto takaisin servulla' })
+                        ),
                         React.createElement(ChangeDate, { date: '25.10.2019' }),
                         React.createElement(
                             'ul',

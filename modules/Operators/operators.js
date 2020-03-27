@@ -3,14 +3,11 @@ var request = new XMLHttpRequest();
 request.open('GET', requestURL);
 request.responseType = 'json';
 request.send();
-console.log("yeet")
 request.onload = function () {
   var data = request.response;
   if (typeof data === "string") {
     data = JSON.parse(data)
   }
-  console.log(data)
-  console.log(typeof data)
   Object.keys(data).forEach(function (type) {
     var list = data[type];
     createOperatorsDiv(list, type);
@@ -48,27 +45,27 @@ function getDestination(type) {
       break;
 
     default:
-      throw new Error("Could not resolve destination element");
+      throw new Error("Could not resolve a destination element");
   }
 
   return destination;
 }
 
-function createEmptyListText(type, destination) {
+function createEmptyListText(type) {
   var h4 = document.createElement('h4');
-  var destination;
+  var destination = getDestination(type)
 
   switch (type) {
     case "omistajat":
-      h4.textContent = '#Sellout';
+      h4.innerHTML = '#Sellout';
       break;
 
     case "adminit":
-      h4.textContent = 'Ketään ei ole katsomassa Operaattoreiden perään. :(';
+      h4.innerHTML = 'Ketään ei ole katsomassa Operaattoreiden perään. :(';
       break;
 
     case "operaattorit":
-      h4.textContent = 'Operaattorit ovat karanneet jonnekin! Ehkä moderaattoreista voi joskus löytyä kelvollinen...';
+      h4.innerHTML = 'Operaattorit ovat karanneet jonnekin! Ehkä moderaattoreista voi joskus löytyä kelvollinen...';
       break;
 
     case "moderaattorit":
@@ -83,8 +80,8 @@ function createEmptyListText(type, destination) {
       break;
   }
 
-  if (!h4.textContent || !destination) {
-    throw new Error("Missing destination or have a faulty h4 element");
+  if (!h4.innerHTML || !destination) {
+    throw new Error("Missing a destination or the h4 element is faulty");
   }
 
   destination.parentNode.insertBefore(h4, destination.nextSibling);
@@ -146,7 +143,7 @@ function createYpElement(operator, cssClass) {
 }
 
 function createOperatorsDiv(operators, opType) {
-  if (operators.length === 0) {
+  if (operators.length === 0 || !operators) {
     createEmptyListText(opType);
     return null;
   }

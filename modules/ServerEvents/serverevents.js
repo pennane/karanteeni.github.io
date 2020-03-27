@@ -2,7 +2,7 @@ var requestURL = "/modules/ServerEvents/serverevents.json";
 var request = new XMLHttpRequest();
 var now = new Date();
 var eventDomDestination = document.getElementById("tapahtumat");
-var events = {
+var serverEvents = {
   ongoing: [],
   upcoming: []
 };
@@ -21,11 +21,11 @@ request.onload = function () {
     return parseServerEvent(event);
   });
 
-  if (events.ongoing.length !== 0) {
-    initOngoing(events.ongoing.sort(function (a, b) { return a.startDate.getTime() - b.startDate.getTime() }));
+  if (serverEvents.ongoing.length !== 0) {
+    initOngoing(serverEvents.ongoing.sort(function (a, b) { return a.startDate.getTime() - b.startDate.getTime() }));
   }
 
-  initUpcoming(events.upcoming.sort(function (a, b) { return a.startDate.getTime() - b.startDate.getTime() }));
+  initUpcoming(serverEvents.upcoming.sort(function (a, b) { return a.startDate.getTime() - b.startDate.getTime() }));
 };
 
 function parseDate(str) {
@@ -34,7 +34,6 @@ function parseDate(str) {
 }
 
 function readableTimeValues(date) {
-/*   console.log(date.getFullYear()); */
   return {
     year: date.getFullYear(),
     month: date.getMonth() + 1,
@@ -58,7 +57,11 @@ function createEventElement(event) {
   time.className = "tapahtuma-time";
   title.className = "tapahtuma-title";
   desc.className = "tapahtuma-desc";
-  time.textContent = event.readableStartDate;
+  if (event.options.forceEndDate) {
+    time.textContent = event.readableStartDate + " - " + event.readableEndDate;
+  } else {
+    time.textContent = event.readableStartDate;
+  }
   title.textContent = event.title;
 
   head.appendChild(time);
@@ -75,7 +78,7 @@ function createEventElement(event) {
   return main;
 }
 
-function initUpcoming(events) {
+function initUpcoming(serverEvents) {
   var dest = document.createElement("div");
   dest.className = "tapahtuma-tyyppi";
   var title = document.createElement("h5");
@@ -84,13 +87,13 @@ function initUpcoming(events) {
     '<i class="fas fa-calendar-alt card-title-icon"></i>Tulevat tapahtumat';
   dest.appendChild(title);
 
-  if (events.length === 0) {
+  if (serverEvents.length === 0) {
     var p = document.createElement("p");
     p.textContent = "Ei tulevia tapahtumia.";
     p.className = "no-upcoming";
     dest.appendChild(p);
   } else {
-    events.forEach(function (event) {
+    serverEvents.forEach(function (event) {
       var elem = createEventElement(event);
       elem ? dest.appendChild(elem) : null;
     });
@@ -99,7 +102,7 @@ function initUpcoming(events) {
   eventDomDestination.appendChild(dest);
 }
 
-function initOngoing(events) {
+function initOngoing(serverEvents) {
   var dest = document.createElement("div");
   dest.className = "tapahtuma-tyyppi";
   var title = document.createElement("h5");
@@ -107,7 +110,7 @@ function initOngoing(events) {
   title.innerHTML =
     '<i class="fas fa-exclamation card-title-icon"></i>Meneillään olevat tapahtumat';
   dest.appendChild(title);
-  events.forEach(function (event) {
+  serverEvents.forEach(function (event) {
     var elem = createEventElement(event);
     elem ? dest.appendChild(elem) : null;
   });
@@ -116,15 +119,17 @@ function initOngoing(events) {
 
 function parseServerEvent(event) {
   var startDate = parseDate(event.dates["start-date"]);
-  var endDate = parseDate(event.dates["end-date"]);
+  var endDate;
+  if (event.dates["end-date"]) {
+    endDate = parseDate(event.dates["end-date"]);
+  }
   var specifiedEndDate = true;
-  console.log(startDate, endDate);
 
   if (!startDate) {
     throw new Error("Server event had no valid start date");
   }
 
-  if (isNaN(endDate.getTime())) {
+  if (!endDate || isNaN(endDate.getTime())) {
     specifiedEndDate = false;
     endDate = new Date(startDate);
     endDate.setDate(endDate.getDate() + 1);
@@ -141,20 +146,20 @@ function parseServerEvent(event) {
   var parsedEvent = {
     startDate: startDate,
     endDate: endDate,
-    readableStartDate:
-      startData.day + "." + startData.month + "." + startData.year,
+    readableStartDate: startData.day + "." + startData.month + "." + startData.year,
     readableEndDate: endData.day + "." + endData.month + "." + endData.year,
     specifiedEndDate: specifiedEndDate,
     title: event.title,
-    description: event.description
+    description: event.description,
+    options: event.options || {}
   };
 
   if (startDate > now) {
     parsedEvent.state = "upcoming";
-    events.upcoming.push(parsedEvent);
+    serverEvents.upcoming.push(parsedEvent);
   } else if (startDate < now && endDate > now) {
     parsedEvent.state = "ongoing";
-    events.ongoing.push(parsedEvent);
+    serverEvents.ongoing.push(parsedEvent);
   }
 
 }
