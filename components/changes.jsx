@@ -88,6 +88,7 @@ class ChangeLog extends React.Component {
                         <ChangeDate date='22.3.2020' />
                         <ul>
                             <Changelist change='Spawnereita voi taas muuttaa creeper- ja squid-spawnereiksi' />
+                            <Changelist change='/vote ei avaa enää valikkoa. Chattiin tulee molemmat linkit.' />
                         </ul>
                         <ChangeDate date='18.3.2020' />
                         <ul>
