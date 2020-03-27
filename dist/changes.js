@@ -164,7 +164,8 @@ var ChangeLog = function (_React$Component5) {
                         React.createElement(
                             'ul',
                             null,
-                            React.createElement(Changelist, { change: 'Spawnereita voi taas muuttaa creeper- ja squid-spawnereiksi' })
+                            React.createElement(Changelist, { change: 'Spawnereita voi taas muuttaa creeper- ja squid-spawnereiksi' }),
+                            React.createElement(Changelist, { change: '/vote ei avaa en\xE4\xE4 valikkoa. Chattiin tulee molemmat linkit.' })
                         ),
                         React.createElement(ChangeDate, { date: '18.3.2020' }),
                         React.createElement(

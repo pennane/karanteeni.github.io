@@ -46,6 +46,12 @@
       "kuvaus": "Eläkkeeltä maailmankirjoihin palannut ylläpitäjä.",
       "uuid": "05c0c0ead62240d4b8a20d4ec986c039"
     }
+    ,
+    {
+      "nimi": "RetuPoika",
+      "kuvaus": "\"Oispa kahvia.\"",
+      "uuid": "02518a1790f740e8940251d8ae348991"
+    }
   ],
   "rakentajat": [
     {
