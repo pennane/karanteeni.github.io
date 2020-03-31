@@ -1,9 +1,9 @@
 body, .bg-image      {
-    background-image: url(/../assets/images/springblur.jpg);
+    background-image: url(/../assets/images/aprilli/taustablur.jpg);
 }
 
 .jumbo-bg {
-    background-image: url(/../assets/images/spring.jpg);
+    background-image: url(/../assets/images/aprilli/tausta.jpg);
     background-position: center 15%;
 }
 
@@ -12,12 +12,10 @@ h2,
 h3,
 h4,
 h5 {
-    color: #ffc108 !important;
+    color: #ff9bf6 !important;
 }
 
 
 .karanav {
-    background-image: url(/../assets/images/grassblocklong.png);
-    background-repeat: repeat-x;
-    background-size: auto;
+    background: #027eff;
 }

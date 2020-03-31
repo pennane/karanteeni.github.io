@@ -179,7 +179,7 @@ class ElotonRaihnas extends React.Component {
     render() {
         return (
             <div className='row'>
-                <Structure name='Eloton' time='0h' color='c-eloton ' bgColor='g-eloton '>
+                <Structure name='Kova leipä' time='0h' color='c-eloton ' bgColor='g-eloton '>
                     <Body>
                         <CommandRow>
                             <SetHome count='1' />
@@ -187,11 +187,11 @@ class ElotonRaihnas extends React.Component {
                         </CommandRow>
                     </Body>
                 </Structure>
-                <Structure name='Raihnas' time='5h' color='c-raihnas ' bgColor='g-raihnas '>
+                <Structure name='Näkkileipä' time='5h' color='c-raihnas ' bgColor='g-raihnas '>
                     <Body>
                         <CommandRow>
                             <SetHome count='2' />
-                            <Command info={false} command='/kit raihnas' disabled />
+                            <Command info={false} command='/kit eloton' disabled />
                         </CommandRow>
                         <CommandRow>
                             <Command info={false} command='/hat' />
@@ -208,11 +208,11 @@ class SisukasParantuva extends React.Component {
     render() {
         return (
             <div className='row'>
-                <Structure name='Sisukas' time='1d' color='c-sisukas ' bgColor='g-sisukas '>
+                <Structure name='Paahtoleipä' time='1d' color='c-sisukas ' bgColor='g-sisukas '>
                     <Body>
                         <CommandRow>
                             <SetHome count='6' />
-                            <Command info={false} command='/kit sisukas' disabled />
+                            <Command info={false} command='/kit paahtoleipä' disabled />
                         </CommandRow>
                         <CommandRow>
                             <Command info title='Taikamatto, 5x5 kokoinen lasimatto allasi, jolla voit leijua ilmassa, sekä lentää.' command='/mc' />
@@ -230,11 +230,11 @@ class SisukasParantuva extends React.Component {
                     <h4>Muuta:</h4>
                     <Others text='Kaksi uutta väriä taikamattoon (mc)' tip='Vaalean harmaa (oletus) ja läpinäkyvä' />
                 </Structure>
-                <Structure name='Parantuva' time='5d' color='c-parantuva ' bgColor='g-parantuva '>
+                <Structure name='Sämpylä' time='5d' color='c-parantuva ' bgColor='g-parantuva '>
                     <Body>
                         <CommandRow>
                             <SetHome count='8' />
-                            <Command info={false} command='/kit parantuva' disabled />
+                            <Command info={false} command='/kit sämpylä' disabled />
                         </CommandRow>
                         <CommandRow>
                             <Command info={false} command='/jump' disabled />
@@ -261,11 +261,11 @@ class ImmuuniParantaja extends React.Component {
     render() {
         return (
             <div class='row'>
-                <Structure name='Immuuni' time='10d' color='c-immuuni ' bgColor='g-immuuni '>
+                <Structure name='Ruisleipä' time='10d' color='c-immuuni ' bgColor='g-immuuni '>
                     <Body>
                         <CommandRow>
                             <SetHome count='12' />
-                            <Command info={false} command='/kit immuuni' disabled />
+                            <Command info={false} command='/kit ruisleipä' disabled />
                         </CommandRow>
                         <CommandRow>
                             <Command info={false} command='/fly' />
@@ -283,11 +283,11 @@ class ImmuuniParantaja extends React.Component {
                     <h4>Muuta:</h4>
                     <Others text='Kaksi uutta väriä taikamattoon (mc)' tip='Keltainen ja ruskea' />
                 </Structure>
-                <Structure name='Parantaja' time='30d' color='c-parantaja ' bgColor='g-parantaja '>
+                <Structure name='Öylätti' time='30d' color='c-parantaja ' bgColor='g-parantaja '>
                     <Body>
                         <CommandRow>
                             <SetHome count='16' />
-                            <Command info={false} command='/kit parantaja' disabled />
+                            <Command info={false} command='/kit öylätti' disabled />
                         </CommandRow>
                         <CommandRow>
                             <Command info={false} command='/jail' disabled />
@@ -311,11 +311,11 @@ class NekroKuolematon extends React.Component {
     render() {
         return (
             <div class='row'>
-                <Structure name='Nekromantikko' time='60d' color='c-nekromantikko ' bgColor='g-nekromantikko '>
+                <Structure name='Kroisantti' time='60d' color='c-nekromantikko ' bgColor='g-nekromantikko '>
                     <Body>
                         <CommandRow>
                             <SetHome count='18' />
-                            <Command info={false} command='/kit nekromantikko' disabled />
+                            <Command info={false} command='/kit kroisantti' disabled />
                         </CommandRow>
                         <CommandRow>
                             <Command info title='Kyky tarkastella blockeja' command='/co i' />
@@ -325,11 +325,11 @@ class NekroKuolematon extends React.Component {
                     <h4>Muuta:</h4>
                     <Others text='Kaksi uutta väriä taikamattoon (mc)' tip='Magenta ja punainen' />
                 </Structure>
-                <Structure name='Kuolematon' time='100d' color='c-kuolematon ' bgColor='g-kuolematon '>
+                <Structure name='Mehukatti' time='100d' color='c-kuolematon ' bgColor='g-kuolematon '>
                     <Body>
                         <CommandRow>
                             <SetHome count='18' />
-                            <Command info={false} command='/kit kuolematon' disabled />
+                            <Command info={false} command='/kit mehukatti' disabled />
                         </CommandRow>
                     </Body>
                     <h4>Muuta:</h4>
