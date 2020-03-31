@@ -1,9 +1,9 @@
 body, .bg-image      {
-    background-image: url(/../assets/images/aprilli/taustablur.jpg);
+    background-image: url(/../assets/images/aprilli/alt_taustablur.jpg);
 }
 
 .jumbo-bg {
-    background-image: url(/../assets/images/aprilli/tausta.jpg);
+    background-image: url(/../assets/images/aprilli/alt_tausta.jpg);
     background-position: center 15%;
 }
 
@@ -11,11 +11,13 @@ h1,
 h2,
 h3,
 h4,
-h5 {
+h5,
+h6 {
     color: #ff9bf6 !important;
 }
 
-
 .karanav {
-    background: #027eff;
+    background-image: url(/../assets/images/aprilli/alt_dirt.png);
+    background-size: 64px;
+    image-rendering: pixelated;
 }
