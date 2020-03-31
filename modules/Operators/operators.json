@@ -12,7 +12,7 @@
     },
     {
       "nimi": "lakanakana",
-      "kuvaus": "Nuublesin tyttis - Karanteenin uusin kaikkivaltias",
+      "kuvaus": "Karanteenin uusin kaikkivaltias",
       "uuid": "78cf984cf45241b9bdd600cc4677c7d9"
     }
   ],
@@ -45,6 +45,12 @@
       "nimi": "Naxray",
       "kuvaus": "Eläkkeeltä maailmankirjoihin palannut ylläpitäjä.",
       "uuid": "05c0c0ead62240d4b8a20d4ec986c039"
+    }
+    ,
+    {
+      "nimi": "RetuPoika",
+      "kuvaus": "\"Oispa kahvia.\"",
+      "uuid": "02518a1790f740e8940251d8ae348991"
     }
   ],
   "rakentajat": [
