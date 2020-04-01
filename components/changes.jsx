@@ -226,8 +226,8 @@ class ChangeLog extends React.Component {
                         </ul>
                         <ChangeDate date='17.08.2019' />
                         <ul>
-                            <Changelist change='Paranneltu databasen käyttöö: StatManager, Vaniljajäätelöals, VaniljajäätelöPerms, Chatar' />
-                            <Changelist change='Mahdollisesti vähennetty joinauksesta seuraavaa lagia: VaniljajäätelöPerms, Vaniljajäätelöals, VaniljajäätelöCore, StatManager, Chatar (vaihdettu db sync -> async. jos ongelmia ilmenee niin ilmoittakaa)' />
+                            <Changelist change='Paranneltu databasen käyttöö: StatManager, Karanteenials, KaranteeniPerms, Chatar' />
+                            <Changelist change='Mahdollisesti vähennetty joinauksesta seuraavaa lagia: KaranteeniPerms, Karanteenials, KaranteeniCore, StatManager, Chatar (vaihdettu db sync -> async. jos ongelmia ilmenee niin ilmoittakaa)' />
                             <Changelist change='Lisätty automaattinen restart (yp käyttäkää komentoa /restarter:restart)' />
                             <Changelist change='Poistettu virheellisiä blockeja taikamatosta' />
                             <Changelist change='Löydetty ISO bugi timereista joka johti siihen että kaikki timerit ajettiin joka tickillä. Nyt fixattu, hyvällä tuurilla isoja vaikutuksia tehokkuuteen' />

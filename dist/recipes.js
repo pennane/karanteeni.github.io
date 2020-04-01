@@ -34,7 +34,7 @@ var RecipeList = function (_React$Component) {
                     React.createElement(
                         "p",
                         { className: "lead" },
-                        "Vaniljaj\xE4\xE4tel\xF6ll\xE4 on omia reseptej\xE4, wohoo."
+                        "Karanteenilla on omia reseptej\xE4, wohoo."
                     ),
                     React.createElement(Recipes, { recipe: this.props.recipe })
                 )

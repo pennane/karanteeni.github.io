@@ -6,7 +6,7 @@ class RecipeList extends React.Component {
             <div className="col-lg-12 text-center">
                 <div className="card card-body bg-transparent" style={{ marginBottom: 1.2 + 'em', fontFamily: + 'Source Sans Pro' + '!important' }}>
                     <h1 className="mt-5">Custom Reseptit</h1>
-                    <p className="lead">Vaniljajäätelöllä on omia reseptejä, wohoo.</p>
+                    <p className="lead">Karanteenilla on omia reseptejä, wohoo.</p>
                     <Recipes recipe={this.props.recipe} />
                 </div>
             </div>

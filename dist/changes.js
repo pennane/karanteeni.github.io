@@ -373,8 +373,8 @@ var ChangeLog = function (_React$Component5) {
                         React.createElement(
                             'ul',
                             null,
-                            React.createElement(Changelist, { change: 'Paranneltu databasen k\xE4ytt\xF6\xF6: StatManager, Vaniljaj\xE4\xE4tel\xF6als, Vaniljaj\xE4\xE4tel\xF6Perms, Chatar' }),
-                            React.createElement(Changelist, { change: 'Mahdollisesti v\xE4hennetty joinauksesta seuraavaa lagia: Vaniljaj\xE4\xE4tel\xF6Perms, Vaniljaj\xE4\xE4tel\xF6als, Vaniljaj\xE4\xE4tel\xF6Core, StatManager, Chatar (vaihdettu db sync -> async. jos ongelmia ilmenee niin ilmoittakaa)' }),
+                            React.createElement(Changelist, { change: 'Paranneltu databasen k\xE4ytt\xF6\xF6: StatManager, Karanteenials, KaranteeniPerms, Chatar' }),
+                            React.createElement(Changelist, { change: 'Mahdollisesti v\xE4hennetty joinauksesta seuraavaa lagia: KaranteeniPerms, Karanteenials, KaranteeniCore, StatManager, Chatar (vaihdettu db sync -> async. jos ongelmia ilmenee niin ilmoittakaa)' }),
                             React.createElement(Changelist, { change: 'Lis\xE4tty automaattinen restart (yp k\xE4ytt\xE4k\xE4\xE4 komentoa /restarter:restart)' }),
                             React.createElement(Changelist, { change: 'Poistettu virheellisi\xE4 blockeja taikamatosta' }),
                             React.createElement(Changelist, { change: 'L\xF6ydetty ISO bugi timereista joka johti siihen ett\xE4 kaikki timerit ajettiin joka tickill\xE4. Nyt fixattu, hyv\xE4ll\xE4 tuurilla isoja vaikutuksia tehokkuuteen' }),

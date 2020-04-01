@@ -145,7 +145,7 @@
   height: 100%;
   display: flex;
   flex-wrap: wrap;
-  overflow: auto; 
+  overflow: auto;
   position: absolute;
   z-index: 3;
   width: 100%;
