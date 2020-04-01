@@ -1,9 +1,9 @@
 body, .bg-image      {
-    background-image: url(/../assets/images/springblur.jpg);
+    background-image: url(/../assets/images/aprilli/alt_taustablur.jpg);
 }
 
 .jumbo-bg {
-    background-image: url(/../assets/images/spring.jpg);
+    background-image: url(/../assets/images/aprilli/alt_tausta.jpg);
     background-position: center 15%;
 }
 
@@ -11,13 +11,13 @@ h1,
 h2,
 h3,
 h4,
-h5 {
-    color: #ffc108 !important;
+h5,
+h6 {
+    color: #ff9bf6 !important;
 }
 
-
 .karanav {
-    background-image: url(/../assets/images/grassblocklong.png);
-    background-repeat: repeat-x;
-    background-size: auto;
+    background-image: url(/../assets/images/aprilli/alt_dirt.png);
+    background-size: 64px;
+    image-rendering: pixelated;
 }
