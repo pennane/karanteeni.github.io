@@ -84,13 +84,13 @@ var Structure = function (_React$Component3) {
         value: function render() {
             return React.createElement(
                 "div",
-                { className: "col-sm mb-4" },
+                { className: "col-sm" },
                 React.createElement(
                     "div",
                     { className: "rank card" },
                     React.createElement(
                         "div",
-                        { className: "card-body" },
+                        { className: "rank-card-body" },
                         React.createElement(
                             "h5",
                             { className: this.state.color + 'card-title' },
@@ -430,11 +430,15 @@ var SisukasParantuva = function (_React$Component11) {
                         )
                     ),
                     React.createElement(
-                        "h4",
-                        null,
-                        "Muuta:"
-                    ),
-                    React.createElement(Others, { text: "Kaksi uutta v\xE4ri\xE4 taikamattoon (mc)", tip: "Vaalean harmaa (oletus) ja l\xE4pin\xE4kyv\xE4" })
+                        "div",
+                        { "class": "rank-others" },
+                        React.createElement(
+                            "h5",
+                            null,
+                            "Muuta:"
+                        ),
+                        React.createElement(Others, { text: "Kaksi uutta v\xE4ri\xE4 taikamattoon (mc)", tip: "Vaalean harmaa (oletus) ja l\xE4pin\xE4kyv\xE4" })
+                    )
                 ),
                 React.createElement(
                     Structure,
@@ -467,12 +471,16 @@ var SisukasParantuva = function (_React$Component11) {
                         )
                     ),
                     React.createElement(
-                        "h4",
-                        null,
-                        "Muuta:"
-                    ),
-                    React.createElement(Others, { text: "Kolme uutta v\xE4ri\xE4 taikamattoon (mc)", tip: "Valkoinen, harmaa ja sininen" }),
-                    React.createElement(Others, { text: "Kyky hakata spawnereita ilman Silk Touchia", tip: "Tarvitset silti hakun ker\xE4t\xE4ksesi sen!" })
+                        "div",
+                        { "class": "rank-others" },
+                        React.createElement(
+                            "h5",
+                            null,
+                            "Muuta:"
+                        ),
+                        React.createElement(Others, { text: "Kolme uutta v\xE4ri\xE4 taikamattoon (mc)", tip: "Valkoinen, harmaa ja sininen" }),
+                        React.createElement(Others, { text: "Kyky hakata spawnereita ilman Silk Touchia", tip: "Tarvitset silti hakun ker\xE4t\xE4ksesi sen!" })
+                    )
                 )
             );
         }
@@ -528,11 +536,15 @@ var ImmuuniParantaja = function (_React$Component12) {
                         )
                     ),
                     React.createElement(
-                        "h4",
-                        null,
-                        "Muuta:"
-                    ),
-                    React.createElement(Others, { text: "Kaksi uutta v\xE4ri\xE4 taikamattoon (mc)", tip: "Keltainen ja ruskea" })
+                        "div",
+                        { "class": "rank-others" },
+                        React.createElement(
+                            "h5",
+                            null,
+                            "Muuta:"
+                        ),
+                        React.createElement(Others, { text: "Kaksi uutta v\xE4ri\xE4 taikamattoon (mc)", tip: "Keltainen ja ruskea" })
+                    )
                 ),
                 React.createElement(
                     Structure,
@@ -560,11 +572,15 @@ var ImmuuniParantaja = function (_React$Component12) {
                         )
                     ),
                     React.createElement(
-                        "h4",
-                        null,
-                        "Muuta:"
-                    ),
-                    React.createElement(Others, { text: "Kaksi uutta v\xE4ri\xE4 taikamattoon (mc)", tip: "Lime ja musta" })
+                        "div",
+                        { "class": "rank-others" },
+                        React.createElement(
+                            "h5",
+                            null,
+                            "Muuta:"
+                        ),
+                        React.createElement(Others, { text: "Kaksi uutta v\xE4ri\xE4 taikamattoon (mc)", tip: "Lime ja musta" })
+                    )
                 )
             );
         }
@@ -608,11 +624,15 @@ var NekroKuolematon = function (_React$Component13) {
                         )
                     ),
                     React.createElement(
-                        "h4",
-                        null,
-                        "Muuta:"
-                    ),
-                    React.createElement(Others, { text: "Kaksi uutta v\xE4ri\xE4 taikamattoon (mc)", tip: "Magenta ja punainen" })
+                        "div",
+                        { "class": "rank-others" },
+                        React.createElement(
+                            "h5",
+                            null,
+                            "Muuta:"
+                        ),
+                        React.createElement(Others, { text: "Kaksi uutta v\xE4ri\xE4 taikamattoon (mc)", tip: "Magenta ja punainen" })
+                    )
                 ),
                 React.createElement(
                     Structure,
@@ -628,11 +648,15 @@ var NekroKuolematon = function (_React$Component13) {
                         )
                     ),
                     React.createElement(
-                        "h4",
-                        null,
-                        "Muuta:"
-                    ),
-                    React.createElement(Others, { text: "Kuusi uutta v\xE4ri\xE4 taikamattoon (mc)", tip: "Pinkki, syaani, purppura, oranssi, vihre\xE4 ja vaalean sininen" })
+                        "div",
+                        { "class": "rank-others" },
+                        React.createElement(
+                            "h5",
+                            null,
+                            "Muuta:"
+                        ),
+                        React.createElement(Others, { text: "Kuusi uutta v\xE4ri\xE4 taikamattoon (mc)", tip: "Pinkki, syaani, purppura, oranssi, vihre\xE4 ja vaalean sininen" })
+                    )
                 )
             );
         }

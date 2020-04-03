@@ -211,16 +211,11 @@ var Navbar = function (_React$Component5) {
                                 DropDownCollapseMenu,
                                 { title: "Yleistietoa", dataTarget: "#rc", labelClassName: "fas fa-info" },
                                 React.createElement(DropDownItem, { icon: "fas fa-info", url: "yleistietoa", title: "Yleistietoa" }),
-                                React.createElement(DropDownItem, { icon: "fas fa-hammer", url: "recipes", title: "Custom recipet" }),
+                                React.createElement(DropDownItem, { icon: "fas fa-hammer", url: "recipes", title: "Custom reseptit" }),
                                 React.createElement(DropDownItem, { icon: "fas fa-thumbs-up", url: "hoks", title: "Hyv\xE4 tiet\xE4\xE4!" }),
                                 React.createElement(DropDownItem, { icon: "fas fa-question-circle", url: "ukk", title: "UKK" })
                             ),
-                            React.createElement(
-                                DropDownCollapseMenu,
-                                { title: "S\xE4\xE4nn\xF6t", dataTarget: "#dd", labelClassName: "fas fa-exclamation" },
-                                React.createElement(DropDownItem, { icon: "fas fa-book-open", url: "saannot", title: "Survivalin s\xE4\xE4nn\xF6t" }),
-                                React.createElement(DropDownItem, { icon: "fas fa-comments", url: "chat-saannot", title: "Chat-s\xE4\xE4nn\xF6t" })
-                            ),
+                            React.createElement(NavLink, { icon: "fas fa-exclamation", url: "saannot", title: "S\xE4\xE4nn\xF6t" }),
                             React.createElement(NavLink, { icon: "fas fa-medal", url: "rankit", title: "Rankit" }),
                             React.createElement(
                                 DropDownCollapseMenu,

@@ -119,16 +119,13 @@ class Navbar extends React.Component {
                             
                             <DropDownCollapseMenu title="Yleistietoa" dataTarget="#rc" labelClassName="fas fa-info">
                                 <DropDownItem icon="fas fa-info" url="yleistietoa" title="Yleistietoa" />
-                                <DropDownItem icon="fas fa-hammer" url="recipes" title="Custom recipet" />
+                                <DropDownItem icon="fas fa-hammer" url="recipes" title="Custom reseptit" />
                                 <DropDownItem icon="fas fa-thumbs-up" url="hoks" title="Hyvä tietää!" />
                                 <DropDownItem icon="fas fa-question-circle" url="ukk" title="UKK" />
                             </DropDownCollapseMenu>
 
-                            <DropDownCollapseMenu title="Säännöt" dataTarget="#dd" labelClassName="fas fa-exclamation">
-                                <DropDownItem icon="fas fa-book-open" url="saannot" title="Survivalin säännöt" />
-                                {/*<DropDownItem icon="fas fa-tools" url="creasaannot" title="Creativen säännöt" />*/}
-                                <DropDownItem icon="fas fa-comments" url="chat-saannot" title="Chat-säännöt" />
-                            </DropDownCollapseMenu>
+                    
+                            <NavLink icon="fas fa-exclamation" url="saannot" title="Säännöt" />
 
                             <NavLink icon="fas fa-medal" url="rankit" title="Rankit" />
                             
