@@ -651,7 +651,7 @@ p.no-upcoming {
 .heading-description {}
 
 .main-content {
-    padding: 3em 5em;
+    padding: 3em 3em;
     margin-bottom: 5em;
 }
 
@@ -1273,6 +1273,14 @@ h6 {
     .rule-content {
         margin-right: 0.5em;
         text-align: center;
+    }
+
+    .main-content {
+        padding: 3em 1em;
+    }
+
+    #rankit .row>div:nth-of-type(odd) {
+        margin-left: 0.5em;
     }
 }
 
