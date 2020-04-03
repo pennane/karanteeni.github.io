@@ -687,6 +687,10 @@ p.no-upcoming {
     background: rgba(25, 27, 29, 0.84) !important;
 }
 
+.bg-darker-transparent {
+    background: rgba(26, 27, 28, 0.94) !important;
+}
+
 .rank {
     background: #2c3035 !important;
     box-shadow: 0 1px 3px rgba(0, 0, 0, .2);
@@ -1160,29 +1164,37 @@ h6 {
 
 .rules-common-p {
     font-size: 1.1em;
-    font-weight: 500;
+    font-weight: 300;
+    margin: 0;
+    margin-bottom: 0.7em;
+    font-family: 'Inter';
     max-width: 800px;
-    margin: 0 0 0.7em 0;
-    line-height: 1.6;
 }
 
 .rules-container {
     display: flex;
     flex-wrap: wrap;
-    background-color: white;
+    background-color: #1f1f1f;
     margin-bottom: 2.5em;
+    border-radius: 10px;
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
 }
 
 .rule-container {
     flex-basis: 100%;
     display: flex;
-    border-bottom: 1px solid #efefef;
+    border-bottom: 1px solid #2b2b2b;
+}
+
+.rule-container:last-of-type {
+    border-bottom: none;
 }
 
 .rules-introduction {
     margin-bottom: 2em;
     margin-top: 1em;
 }
+
 
 .rules-epilogue {
     margin-bottom: 5em;
@@ -1191,11 +1203,9 @@ h6 {
 
 .rule {
     display: flex;
-
     padding: 0.7em 0.5em;
     font-family: 'Inter';
-    color: black;
-    border-radius: 10px;
+    color: #e7e7e7;
     margin: 2px;
     align-items: center;
     flex: 1;
@@ -1249,7 +1259,7 @@ h6 {
 
 .rule-heading {
     font-size: 1.2em;
-    color: black !important;
+    color: #fefefe !important;
     font-weight: 500;
     margin: 0;
 }
@@ -1266,6 +1276,7 @@ h6 {
         flex-direction: column;
         padding-top: 0.3em;
     }
+
     .rule-icon-parent {
         margin-bottom: 0.3em;
     }
