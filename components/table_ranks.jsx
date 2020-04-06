@@ -245,10 +245,11 @@ class SisukasParantuva extends React.Component {
                         </CommandRow>
                         <CommandRow>
                             <Command info title='Nimen täytyy olla samankaltainen Minecraft nimesi kanssa tunnistautumisen vuoksi.' command='/nick' />
-                            <Command info title='Voit aloittaa äänestyksen pelaajan hiljentämistä (20min) tai pelaajan potkimista varten.' command='/rankaise votemute & votekick' disabled />
+                            <Command info title='Voit aloittaa äänestyksen pelaajan hiljentämistä (20min) (/rankaise votemute) tai pelaajan potkimista varten (/rankaise kick).' command='/rankaise' disabled />
                         </CommandRow>
                         <CommandRow>
                             <Command info title='Tarvitset pelaajan pään, jonka voit mm. craftata (kts. Custom Reseptit). Voit muuttaa pään kenen tahansa pääksi.' command='/skull' disabled />
+                            <Command info={false} />
                         </CommandRow>
                     </Body>
                     <div class="rank-others">

@@ -93,6 +93,7 @@ h1 {
 
 /* Elementticlassit */
 
+
 .main-heading {
     font-weight: 500;
     font-size: 3em;
@@ -713,15 +714,19 @@ p.no-upcoming {
 .rank-card-body {
     -ms-flex: 1 1 auto;
     flex: 1 1 auto;
-    padding: 1em;
+    padding: 1.2em;
     display: flex;
     flex-direction: column;
+}
+
+.rank-card-body td {
+    width: 50%;
+    font-family: 'Inter', sans-serif;
 }
 
 #rankit p.card-text {
     margin-bottom: 0.3em;
 }
-
 
 .time {
     color: #fff !important;
@@ -747,8 +752,10 @@ p.no-upcoming {
     cursor: default;
 }
 
-.karaupdate:first-of-type {
-    margin-top: 0 !important;
+.karaupdate {
+    padding: 1.1em 1.6em;
+    margin-bottom: 2em;
+    padding-bottom: 2em;
 }
 
 h1,
@@ -1050,6 +1057,7 @@ h6 {
 
 .yp-card-text {
     margin: 0.4em;
+    text-align: center;
 }
 
 .yp-card-text>p {
