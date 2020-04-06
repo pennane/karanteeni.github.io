@@ -462,12 +462,13 @@ var SisukasParantuva = function (_React$Component11) {
                             CommandRow,
                             null,
                             React.createElement(Command, { info: true, title: "Nimen t\xE4ytyy olla samankaltainen Minecraft nimesi kanssa tunnistautumisen vuoksi.", command: "/nick" }),
-                            React.createElement(Command, { info: true, title: "Voit aloittaa \xE4\xE4nestyksen pelaajan hiljent\xE4mist\xE4 (20min) tai pelaajan potkimista varten.", command: "/rankaise votemute & votekick", disabled: true })
+                            React.createElement(Command, { info: true, title: "Voit aloittaa \xE4\xE4nestyksen pelaajan hiljent\xE4mist\xE4 (20min) (/rankaise votemute) tai pelaajan potkimista varten (/rankaise kick).", command: "/rankaise", disabled: true })
                         ),
                         React.createElement(
                             CommandRow,
                             null,
-                            React.createElement(Command, { info: true, title: "Tarvitset pelaajan p\xE4\xE4n, jonka voit mm. craftata (kts. Custom Reseptit). Voit muuttaa p\xE4\xE4n kenen tahansa p\xE4\xE4ksi.", command: "/skull", disabled: true })
+                            React.createElement(Command, { info: true, title: "Tarvitset pelaajan p\xE4\xE4n, jonka voit mm. craftata (kts. Custom Reseptit). Voit muuttaa p\xE4\xE4n kenen tahansa p\xE4\xE4ksi.", command: "/skull", disabled: true }),
+                            React.createElement(Command, { info: false })
                         )
                     ),
                     React.createElement(
