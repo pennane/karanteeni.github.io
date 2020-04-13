@@ -1,6 +1,11 @@
 {
   "lahjoittajat": [
     {
+      "pvm": "12.04.20",
+      "nimi": "Keijjjo",
+      "heart": "♥"
+    },
+    {
       "pvm": "20.03.20",
       "nimi": "Nizi",
       "amount": "50€",
