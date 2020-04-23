@@ -33,14 +33,14 @@
       "nimi": "Irontank_01",
       "kuvaus": "Satunnaisesti aktiivinen ylläpitäjä.",
       "uuid": "5d56328849f44d1b97bb97c437a3f625"
+    },
+    {
+      "nimi": "Wiikin",
+      "kuvaus": "\"Mul ei oo mielikuvitust keksii mitää hauskaa :D\"",
+      "uuid": "9b218de84001430d88f9821a71e62ad4"
     }
   ],
   "moderaattorit": [
-    {
-      "nimi": "Wiikin",
-      "kuvaus": "\"Hey, guess who's back?\"",
-      "uuid": "9b218de84001430d88f9821a71e62ad4"
-    },
     {
       "nimi": "Naxray",
       "kuvaus": "Eläkkeeltä maailmankirjoihin palannut ylläpitäjä.",

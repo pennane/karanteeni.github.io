@@ -1,6 +1,12 @@
 {
   "lahjoittajat": [
     {
+      "pvm": "23.04.20",
+      "nimi": "Cynodinium",
+      "amount": "10€",
+      "heart": "♥"
+    },
+    {
       "pvm": "12.04.20",
       "nimi": "Keijjjo",
       "amount": "10€",
