@@ -43,9 +43,9 @@ class Structure extends React.Component {
 
     render() {
         return (
-            <div className='col-sm mb-4'>
+            <div className='col-sm'>
                 <div className="rank card">
-                    <div className='card-body'>
+                    <div className='rank-card-body'>
                         <h5 className={this.state.color + 'card-title'}><span className={this.state.bgColor + 'rank-name-text'}>{this.props.name}</span> <span className='time'>({this.props.time})</span></h5>
                         {this.props.children}
                     </div>
@@ -227,8 +227,11 @@ class SisukasParantuva extends React.Component {
                             <Command info={false} command='/mc light' disabled />
                         </CommandRow>
                     </Body>
-                    <h4>Muuta:</h4>
-                    <Others text='Kaksi uutta väriä taikamattoon (mc)' tip='Vaalean harmaa (oletus) ja läpinäkyvä' />
+                    <div class="rank-others">
+                        <h5>Muuta:</h5>
+                        <Others text='Kaksi uutta väriä taikamattoon (mc)' tip='Vaalean harmaa (oletus) ja läpinäkyvä' />
+                    </div>
+
                 </Structure>
                 <Structure name='Parantuva' time='5d' color='c-parantuva ' bgColor='g-parantuva '>
                     <Body>
@@ -242,15 +245,19 @@ class SisukasParantuva extends React.Component {
                         </CommandRow>
                         <CommandRow>
                             <Command info title='Nimen täytyy olla samankaltainen Minecraft nimesi kanssa tunnistautumisen vuoksi.' command='/nick' />
-                            <Command info title='Voit aloittaa äänestyksen pelaajan hiljentämistä (20min) tai pelaajan potkimista varten.' command='/rankaise votemute & votekick' disabled />
+                            <Command info title='Voit aloittaa äänestyksen pelaajan hiljentämistä (20min) (/rankaise votemute) tai pelaajan potkimista varten (/rankaise kick).' command='/rankaise' disabled />
                         </CommandRow>
                         <CommandRow>
                             <Command info title='Tarvitset pelaajan pään, jonka voit mm. craftata (kts. Custom Reseptit). Voit muuttaa pään kenen tahansa pääksi.' command='/skull' disabled />
+                            <Command info={false} />
                         </CommandRow>
                     </Body>
-                    <h4>Muuta:</h4>
-                    <Others text='Kolme uutta väriä taikamattoon (mc)' tip='Valkoinen, harmaa ja sininen' />
-                    <Others text='Kyky hakata spawnereita ilman Silk Touchia' tip='Tarvitset silti hakun kerätäksesi sen!' />
+                    <div class="rank-others">
+                        <h5>Muuta:</h5>
+                        <Others text='Kolme uutta väriä taikamattoon (mc)' tip='Valkoinen, harmaa ja sininen' />
+                        <Others text='Kyky hakata spawnereita ilman Silk Touchia' tip='Tarvitset silti hakun kerätäksesi sen!' />
+                    </div>
+
                 </Structure>
             </div>
         )
@@ -280,8 +287,11 @@ class ImmuuniParantaja extends React.Component {
                             <Command info={false} />
                         </CommandRow>
                     </Body>
-                    <h4>Muuta:</h4>
-                    <Others text='Kaksi uutta väriä taikamattoon (mc)' tip='Keltainen ja ruskea' />
+                    <div class="rank-others">
+                        <h5>Muuta:</h5>
+                        <Others text='Kaksi uutta väriä taikamattoon (mc)' tip='Keltainen ja ruskea' />
+                    </div>
+
                 </Structure>
                 <Structure name='Parantaja' time='30d' color='c-parantaja ' bgColor='g-parantaja '>
                     <Body>
@@ -298,9 +308,12 @@ class ImmuuniParantaja extends React.Component {
                             <Command info={false} />
                         </CommandRow>
                     </Body>
-                    <h4>Muuta:</h4>
-                    <Others text='Kaksi uutta väriä taikamattoon (mc)' tip='Lime ja musta' />
-                    {/* <Others text='Pääsy salaiseen arkistoon' tip='*SALAISTA TIETOA*'/> */}
+                    <div class="rank-others">
+                        <h5>Muuta:</h5>
+                        <Others text='Kaksi uutta väriä taikamattoon (mc)' tip='Lime ja musta' />
+                        {/* <Others text='Pääsy salaiseen arkistoon' tip='*SALAISTA TIETOA*'/> */}
+                    </div>
+
                 </Structure>
             </div>
         )
@@ -322,8 +335,11 @@ class NekroKuolematon extends React.Component {
                             <Command info={false} />
                         </CommandRow>
                     </Body>
-                    <h4>Muuta:</h4>
-                    <Others text='Kaksi uutta väriä taikamattoon (mc)' tip='Magenta ja punainen' />
+                    <div class="rank-others">
+                        <h5>Muuta:</h5>
+                        <Others text='Kaksi uutta väriä taikamattoon (mc)' tip='Magenta ja punainen' />
+                    </div>
+
                 </Structure>
                 <Structure name='Kuolematon' time='100d' color='c-kuolematon ' bgColor='g-kuolematon '>
                     <Body>
@@ -332,8 +348,11 @@ class NekroKuolematon extends React.Component {
                             <Command info={false} command='/kit kuolematon' disabled />
                         </CommandRow>
                     </Body>
-                    <h4>Muuta:</h4>
-                    <Others text='Kuusi uutta väriä taikamattoon (mc)' tip='Pinkki, syaani, purppura, oranssi, vihreä ja vaalean sininen' />
+                    <div class="rank-others">
+                        <h5>Muuta:</h5>
+                        <Others text='Kuusi uutta väriä taikamattoon (mc)' tip='Pinkki, syaani, purppura, oranssi, vihreä ja vaalean sininen' />
+                    </div>
+
                 </Structure>
             </div>
         )

@@ -1,100 +1,520 @@
 <!DOCTYPE html>
 <html lang="en">
 
-  <head>
+<head>
 
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="Palvelimen säännöt.">
-    <meta name="author" content="">
-    <link rel="shortcut icon" type="image/png" href="favicon.ico"/>
-    <meta property="og:image" content="https://dev.karanteeni.xyz/assets/images/server-icon.png" />
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="Palvelimen säännöt.">
+  <meta name="author" content="">
+  <link rel="shortcut icon" type="image/png" href="favicon.ico" />
+  <meta property="og:image" content="https://dev.karanteeni.xyz/assets/images/server-icon.png" />
 
-    <title>Karanteeni</title>
+  <title>Karanteeni</title>
 
-    <!-- Bootstrap Js -->
-    <script src="vendor/jquery/jquery.min.js"></script>
-    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-    <script src="modules/Tooltip/tooltip.js"></script>
+  <!-- Bootstrap Js -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="modules/Tooltip/tooltip.js"></script>
 
-    <!-- Custom Js / APIs -->
-    <script src="modules/Include/include.js"></script>
+  <!-- Custom Js / APIs -->
+  <script src="modules/Include/include.js"></script>
 
-    <!-- React -->
-    <script src="modules/React/react.production.min.js"></script>
-    <script src="modules/React/react-dom.production.min.js"></script>
+  <!-- React -->
+  <script src="modules/React/react.production.min.js"></script>
+  <script src="modules/React/react-dom.production.min.js"></script>
 
-    <!-- Bootstrap CSS -->
-    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="vendor/css/style_minecraft.min.css">
-    <link rel="stylesheet" href="vendor/css/style_spring.css">
+  <!-- Bootstrap CSS -->
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="vendor/css/style_minecraft.min.css">
+  <link rel="stylesheet" href="vendor/css/style_spring.css">
 
-    <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Fira+Sans&display=swap" rel="stylesheet">
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Fira+Sans&display=swap" rel="stylesheet">
 
-    <!-- FontAwesome Icons -->
-    <link rel="stylesheet" href="vendor/FontAwesome/all.min.css">
-    
-    <!-- Custom -->
-<!--     <style>
-      body {
-        padding-top: 54px;
-      }
-      @media (min-width: 992px) {
-        body {
-          padding-top: 56px;
-        }
-      }
+  <!-- FontAwesome Icons -->
+  <link rel="stylesheet" href="vendor/FontAwesome/all.min.css">
 
-    </style> -->
+
+  </style>
   <script async src="https://www.googletagmanager.com/gtag/js?id=UA-146640999-1"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
+    function gtag() { dataLayer.push(arguments); }
     gtag('js', new Date());
 
     gtag('config', 'UA-146640999-1');
   </script>
-  </head>
+</head>
 
-  <body>
+<body>
 
-    <!-- Navbar -->
-    <div class="sticky-top" id="nav"></div> <br><br>
+  <!-- Navbar -->
+  <div class="sticky-top" id="nav"></div> <br><br>
 
-    <!-- Sisältö -->
-    <div class="container text-white">
-        <div class="col-lg-12 text-center">
-          <div class="card card-body bg-transparent" style="margin-bottom: 1.2em; font-family: 'Open Sans', sans-serif !important; border-radius: 0rem !important;">
-              <h1 class="mt-5">Säännöt</h1>
-              <p class="lead">Lue huolella, pääset jyvälle palvelimen toimintatavoista. Palvelimelta löytyy loput säännöistä, eivätkä ne ole tärkeysjärjestyksessä.</p>
-              <p class="mb-0 text-left text-lg-justify">Tässä tulevat yleisesti ottaen Survival -pelimuodon säännöt. Hieman alempaa löydät ohjeet erilaisiin komentoihin ja serverin käytäntöihin.</p>
-              <ul class="text-left" style="margin-top: 1.2em;">
-                  <li>Huijausohjelmien (X-ray jne.) käyttö kielletty</li>
-                  <li>Ei toisten talojen sabotointia eikä varastamista. Ei, vaikka aluetta ei oltaisi suojattu/arkkuja lukittu</li>
-                  <li>Toiset pelaajat, jotka ovat alempana omaa tasoasi eivät saa hyötyä sinun tasostasi. Eli jos saat oman tasosi pakista vaikkapa timanttia, et saa antaa sitä alemmalla tasolla olevalle kaverillesi</li>
-                  <li>Älä rakenna pelaaja-ansoja, suuria/korkeita hökötyksiä jotka eivät sovi maisemaan tai afk koneita</li>
-                  <li>Kaikenlaiset automaattiset, serveriä lagittavat ja ikuisuuksiin käyvät Redstone-kellot ja -koneet ovat kiellettyjä (myös ja varsinkin 0-tick versiot). Lisää vipu!</li>
-                  <li>NPC-kylät ovat rauhoitettuja, niistä saat ainoastaan ottaa kamat arkuista ja pelloilta viljelmiä <b>JOS istutat takaisin.</b> Kylän saa ottaa kodikseen, silloin NPC-kyläsääntöjä saa rikkoa.</li>
-                  <li>Ethän afkaa mobfarmilla (aiheuttaa valtavaa lagia)</li>
-                  <li>Rakenna talosi kauas spawnista (Vinkki: <code>/rtp</code>)</li>
-                  <li><b><span data-toggle="tooltip" data-placement="top" title="Vaihtoehtoisten tilien">Alt-accounttien*</span></b> käyttäminen omaksi edukseen on kiellettyä.</li>
-                  <li>Olet velvoitettu kertomaan sääntöjen rikkojista jos havaitset sellaisia. Jos voit, ota todisteeksi screenshot (F2) ja välitä se ylläpidolle</li>
-              </ul><br>
-              <p class="mb-0 text-left text-lg-justify">
-                Viimeisimpänä, muttei vähäisimpänä, <b>käytä maalaisjärkeä!</b> Vaikka säännöissä ei lue "älä tee {x}" tai säännöissä ei (suoraan tai epäsuoraan) kielletä,
-                <b>se voi silti olla <span class="text-danger">rangaistavaa!</b></span> Huomioi myös, että ylläpito voi tarpeen tullen muuttaa näitä sääntöjä koska tahansa.
-              </p>
+  <!-- Sisältö -->
+  <div class="container text-white">
+    <div class="col-lg-12 text-left">
+      <div class="card card-body main-content bg-darker-transparent">
+        <h1 class="main-heading">Karanteenin Säännöt</h1>
+        <p class="lead">Lue nämä huolella. Tietämättömyys ei ole syy hölmöilyyn!</p>
+        <div class="rules-introduction">
+          <p class="rules-common-p">Karanteenissa pääsee pitkälle jo pelkällä maalaisjärjellä, mutta palvelimelle on
+            kuitenkin asetettu säännöt, joiden puitteissa toimitaan.</p>
+          <p class="rules-common-p">Huomioi, että vaikka säännöissä ei välttämättä suoraan kiellettäisi jotain
+            skenaariota, voi se silti olla rangaistavaa. </p>
+          <p class="rules-common-p">Jos olet epävarma jostakin, pyydä ylläpitoa selventämään.</p>
+
+        </div>
+        <h2 class="rules-h2">Palvelimen laajuiset säännöt</h2>
+        <div class="rules-container">
+          <div class="rule-container">
+            <div class="rule">
+              <div class="rule-icon-parent">
+                <div class="rule-icon denied">
+                  <i class="fas fa-times"></i>
+                </div>
+              </div>
+              <div class="rule-content">
+                <div class="rule-head">
+                  <h3 class="rule-heading">
+                    Hack clientit ovat kiellettyjä
+                  </h3>
+                </div>
+                <div class="rule-specify">
+                  <span class="rule-spefier">
+                    Huijausohjelmien käyttäminen (esim. xray) on ankarasti kiellettyä.
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="rule-container">
+            <div class="rule">
+              <div class="rule-icon-parent">
+                <div class="rule-icon denied">
+                  <i class="fas fa-times"></i>
+                </div>
+
+              </div>
+              <div class="rule-content">
+                <div class="rule-head">
+                  <h3 class="rule-heading">
+                    Modit ovat kiellettyjä
+                  </h3>
+                </div>
+                <div class="rule-specify">
+                  <span class="rule-spefier">
+                    Pelin etenemistä edistävien modien käyttäminen (esim. schematica) on kiellettyä.
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="rule-container">
+            <div class="rule">
+              <div class="rule-icon-parent">
+                <div class="rule-icon accepted">
+                  <i class="fas fa-check"></i>
+                </div>
+
+              </div>
+              <div class="rule-content">
+                <div class="rule-head">
+                  <h3 class="rule-heading">
+                    Optifine
+                  </h3>
+                </div>
+                <div class="rule-specify">
+                  <span class="rule-spefier">
+                    Optifine, ja Optifinen kaltaiset suoritustehoa parantavat modit ovat sallittuja.
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="rule-container">
+            <div class="rule">
+              <div class="rule-icon-parent">
+                <div class="rule-icon denied">
+                  <i class="fas fa-times"></i>
+                </div>
+
+              </div>
+              <div class="rule-content">
+                <div class="rule-head">
+                  <h3 class="rule-heading">
+                    Asiattoman skinin tai käyttäjänimen käyttäminen on kiellettyä
+                  </h3>
+                </div>
+                <div class="rule-specify">
+                  <span class="rule-spefier">
+                    Jos nimesi tai skinisi on rasistinen, alatyylinen, loukkaava, tai muuten asiaton, sinua pyydetään vaihtamaan se. Muuten käyttäjäsi bannitaan skinin tai nimen vaihdon ajaksi.
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="rule-container">
+            <div class="rule">
+              <div class="rule-icon-parent">
+                <div class="rule-icon denied">
+                  <i class="fas fa-times"></i>
+                </div>
+
+              </div>
+              <div class="rule-content">
+                <div class="rule-head">
+                  <h3 class="rule-heading">
+                    Alt-accounttien hyväksikäyttäminen kielletty
+                  </h3>
+                </div>
+                <div class="rule-specify">
+                  <span class="rule-spefier">
+                    Et saa käyttää alt-accountteja pääkäyttäjän edun hyväksi. Esimerkiksi rahan siirtämistä, tai
+                    rankkien ominaisuuksien jakamista.
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="rule-container">
+            <div class="rule">
+              <div class="rule-icon-parent">
+                <div class="rule-icon denied">
+                  <i class="fas fa-times"></i>
+                </div>
+              </div>
+              <div class="rule-content">
+                <div class="rule-head">
+                  <h3 class="rule-heading">
+                    Afkaaminen kielletty
+                  </h3>
+                </div>
+                <div class="rule-specify">
+                  <span class="rule-spefier">
+                    Palvelimella afkaaminen on kielletty. Afkikoneiden rakentaminen tästä syystä myös ankarasti
+                    kielletty.
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="rule-container">
+            <div class="rule">
+              <div class="rule-icon-parent">
+                <div class="rule-icon denied">
+                  <i class="fas fa-times"></i>
+                </div>
+              </div>
+              <div class="rule-content">
+                <div class="rule-head">
+                  <h3 class="rule-heading">
+                    Palvelimen lagittaminen kielletty
+                  </h3>
+                </div>
+                <div class="rule-specify">
+                  <span class="rule-spefier">
+                    Palvelinta rasittavien ja lagittavien redstonerakennelmien teko on kielletty (esim. loputtomiin
+                    käyvät kellot, 0-tick farmit). Lisää rakennelmaan sulkemisvipu ja pidä laite suljettuna, jos se ei
+                    ole käytössä.
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="rule-container">
+            <div class="rule">
+              <div class="rule-icon-parent">
+                <div class="rule-icon denied">
+                  <i class="fas fa-times"></i>
+                </div>
+              </div>
+              <div class="rule-content">
+                <div class="rule-head">
+                  <h3 class="rule-heading">
+                    Ansaitun rankin hyväksikäyttäminen kielletty
+                  </h3>
+                </div>
+                <div class="rule-specify">
+                  <span class="rule-spefier">
+                    Sinua alempirankkiset pelaajat eivät saa hyötyä rankkisi ominaisuuksista. Et saa esimerkiksi muuntaa
+                    spawnerin tyyppiä toisten puolesta, tai myydä spawnereita, joihin pelaajalla ei ole vielä oikeutta.
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="rule-container">
+            <div class="rule">
+              <div class="rule-icon-parent">
+                <div class="rule-icon notice">
+                  <i class="fas fa-exclamation"></i>
+                </div>
+              </div>
+              <div class="rule-content">
+                <div class="rule-head">
+                  <h3 class="rule-heading">
+                    Olet velvoitettu ilmoittamaan rikkeestä
+                  </h3>
+                </div>
+                <div class="rule-specify">
+                  <span class="rule-spefier">
+                    Jos havaitset sääntöjen rikkomista, välitä tieto välittömästi ylläpidolle. Pyri hankkimaan
+                    todisteita, kuten
+                    screenshotteja tai videoita.
+                  </span>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
-      </div>
-      <footer id="footer" class="footer mt-auto"></footer>
+        <h2 class="rules-h2">Yleiset käytössäännöt</h2>
+        <div class="rules-container">
+          <div class="rule-container">
+            <div class="rule">
+              <div class="rule-icon-parent">
+                <div class="rule-icon keep-in-mind">
+                  <i class="fas fa-exclamation"></i>
+                </div>
+              </div>
+              <div class="rule-content">
+                <div class="rule-head">
+                  <h3 class="rule-heading">
+                    Pidetään keskustelut asiallisena
+                  </h3>
+                </div>
+                <div class="rule-specify">
+                  <span class="rule-spefier">
+                    Muista, että keskustelet oikeiden ihmisten kanssa. Pyritään olemaan mahdollisimman ystävällisiä
+                    toisillemme.
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="rule-container">
+            <div class="rule">
+              <div class="rule-icon-parent">
+                <div class="rule-icon keep-in-mind">
+                  <i class="fas fa-exclamation"></i>
+                </div>
+              </div>
+              <div class="rule-content">
+                <div class="rule-head">
+                  <h3 class="rule-heading">
+                    Pidetään kieli kurissa
+                  </h3>
+                </div>
+                <div class="rule-specify">
+                  <span class="rule-spefier">
+                    Turha kiroilu ja toisten pelaajien härnäminen tai kiusaaminen ei ole asianmukaista. Ollaanhan
+                    ihmisiksi.
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="rule-container">
+            <div class="rule">
+              <div class="rule-icon-parent">
+                <div class="rule-icon keep-in-mind">
+                  <i class="fas fa-exclamation"></i>
+                </div>
+              </div>
+              <div class="rule-content">
+                <div class="rule-head">
+                  <h3 class="rule-heading">
+                    Pidetään chatti siistinä
+                  </h3>
+                </div>
+                <div class="rule-specify">
+                  <span class="rule-spefier">
+                    Turha spammaaminen, floodaaminen, ja CAPSILLA KIRJOITTAMINEN on kiellettyä.
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="rule-container">
+            <div class="rule">
+              <div class="rule-icon-parent">
+                <div class="rule-icon denied">
+                  <i class="fas fa-times"></i>
+                </div>
+              </div>
+              <div class="rule-content">
+                <div class="rule-head">
+                  <h3 class="rule-heading">
+                    Mainostaminen on kiellettyä
+                  </h3>
+                </div>
+                <div class="rule-specify">
+                  <span class="rule-spefier">
+                    Älä mainosta (varsinkaan toisia palvelimia). Tämä ei kuitenkaan tarkoita sitä ettetkö saisi kertoa
+                    minkä merkkinen hiiri tai auto sinulla on, mutta siinä se raja sitten kulkeekin.
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <h2 class="rules-h2">Survivalin lisäsäännöt</h2>
+        <div class="rules-container">
+          <div class="rule-container">
+            <div class="rule">
+              <div class="rule-icon-parent">
+                <div class="rule-icon denied">
+                  <i class="fas fa-times"></i>
+                </div>
+              </div>
+              <div class="rule-content">
+                <div class="rule-head">
+                  <h3 class="rule-heading">
+                    Grieffaaminen on kielletty
+                  </h3>
+                </div>
+                <div class="rule-specify">
+                  <span class="rule-spefier">
+                    Toisten pelaajien rakennelmien tuhoaminen ja omaisuuden varastaminen on kielletty.
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="rule-container">
+            <div class="rule">
+              <div class="rule-icon-parent">
+                <div class="rule-icon denied">
+                  <i class="fas fa-times"></i>
+                </div>
+              </div>
+              <div class="rule-content">
+                <div class="rule-head">
+                  <h3 class="rule-heading">
+                    Pelaajien vedättäminen, skämmääminen on kiellettyä
+                  </h3>
+                </div>
+                <div class="rule-specify">
+                  <span class="rule-spefier">
+                    Et saa esimerkiksi huijata toiselta tavaraa.
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="rule-container">
+            <div class="rule">
+              <div class="rule-icon-parent">
+                <div class="rule-icon denied">
+                  <i class="fas fa-times"></i>
+                </div>
 
-    <!-- Components -->
-    <script src="./dist/navbar.js"></script>
-    <script src="./dist/footer.js"></script>
-    
-  </body>
+              </div>
+              <div class="rule-content">
+                <div class="rule-head">
+                  <h3 class="rule-heading">
+                    Maisemagrieffaaminen kielletty
+                  </h3>
+                </div>
+                <div class="rule-specify">
+                  <span class="rule-spefier">
+                    Maaston ja maiseman turmeleminen on kiellettyä. Puut on kasvastettava takaisin, hiekan hakkuu ei saa
+                    jättää rumia jälkiä ympäristöön, turhien epäesteettisten rakennelmien rakentaminen on kielletty
+                    (esim.
+                    1x1 dirt tornit).
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="rule-container">
+            <div class="rule">
+              <div class="rule-icon-parent">
+                <div class="rule-icon notice">
+                  <i class="fas fa-exclamation"></i>
+                </div>
+              </div>
+              <div class="rule-content">
+                <div class="rule-head">
+                  <h3 class="rule-heading">
+                    Villager kylät ovat rauhoitettuja
+                  </h3>
+                </div>
+                <div class="rule-specify">
+                  <span class="rule-spefier">
+                    Villager kyliä ei saa grieffata. Kylistä ei saa viedä sänkyjä tai workstationeja. Kylien peltoja saa
+                    käyttää, kunhan ne muistaa täyttää takaisin. Kylien heinäpaalut, sekä kellot saa ottaa itselleen.
+                    Kylän voi ottaa kodikseen, jolloin kyliä koskevat säännöt eivät enää päde.
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="rule-container">
+            <div class="rule">
+              <div class="rule-icon-parent">
+                <div class="rule-icon denied">
+                  <i class="fas fa-times"></i>
+                </div>
+
+              </div>
+              <div class="rule-content">
+                <div class="rule-head">
+                  <h3 class="rule-heading">
+                    Pelaajien tappaminen ja pelaaja-ansojen rakentaminen kielletty
+                  </h3>
+                </div>
+                <div class="rule-specify">
+                  <span class="rule-spefier">
+                    Et saa aiheuttaa vahinkoa toisiin pelaajiin. Rakennelmat, jotka voivat tappaa pelaajan, ovat
+                    ankarasti kiellettyjä.
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="rule-container">
+            <div class="rule">
+              <div class="rule-icon-parent">
+                <div class="rule-icon denied">
+                  <i class="fas fa-times"></i>
+                </div>
+
+              </div>
+              <div class="rule-content">
+                <div class="rule-head">
+                  <h3 class="rule-heading">
+                    Pelaajakylien mainostaminen on kielletty
+                  </h3>
+                </div>
+                <div class="rule-specify">
+                  <span class="rule-spefier">
+                    Kylän tyrkyttäminen toisille pelaajille on kielletty. <b>Tarkennus tulossa</b>.
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="rules-epilogue">
+          <p class="rules-common-p">Sääntöjen rikkomisesta tulee aina seuraamuksia. Rikkeen vakavuuden mukaan voidaan
+            pelaajalle antaa varoituksia, väliaikaiset bannit tai ikuiset bannit.</p>
+          <p class="rules-common-p">Kolmesta varoituksesta pelaaja saa automaattiset kahden viikon bannit.</p>
+          <p class="rules-common-p">Varoitus säilyy pelaajalla 180 päivää, jonka jälkeen se vanhenee.</p>
+          <p class="rules-common-p">Huomioi, että vaikka säännöissä ei välttämättä suoraan kiellettäisi jotain
+            skenaariota, voi se silti olla rangaistavaa. </p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <footer id="footer" class="footer mt-auto"></footer>
+
+  <!-- Components -->
+  <script src="./dist/navbar.js"></script>
+  <script src="./dist/footer.js"></script>
+
+</body>
 
 </html>

@@ -28,7 +28,7 @@ var RecipeList = function (_React$Component) {
                     { className: "card card-body bg-transparent", style: { marginBottom: 1.2 + 'em', fontFamily: +'Source Sans Pro' + '!important' } },
                     React.createElement(
                         "h1",
-                        { className: "mt-5" },
+                        { className: "main-heading mt-5" },
                         "Custom Reseptit"
                     ),
                     React.createElement(

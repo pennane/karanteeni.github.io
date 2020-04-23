@@ -40,6 +40,12 @@ footer {
     width: 100%
 }
 
+h1 {
+    font-weight: 500;
+    font-size: 3em;
+    margin-bottom: 0;
+}
+
 /* Elementit End */
 
 /* Identifierit */
@@ -86,6 +92,14 @@ footer {
 /* Identifierit End */
 
 /* Elementticlassit */
+
+
+.main-heading {
+    font-weight: 500;
+    font-size: 3em;
+    margin-bottom: .25rem;
+    text-align: center;
+}
 
 .container-fluid {
     padding-bottom: 1em;
@@ -152,10 +166,10 @@ span.deprecated-content::before {
 }
 
 .karanav {
-    font-family: Minecraftia!important;
+    font-family: Minecraftia !important;
     background-color: #20232a;
     font-size: 16px;
-    box-shadow: 0px 0px 13px 2px rgba(0,0,0,.6), 0 2px 4px -1px rgba(0,0,0,.09);
+    box-shadow: 0px 0px 13px 2px rgba(0, 0, 0, .6), 0 2px 4px -1px rgba(0, 0, 0, .09);
     background-image: url(/../assets/images/dirt.png);
     background-size: 48px;
     image-rendering: pixelated;
@@ -236,6 +250,8 @@ span.deprecated-content::before {
         margin-left: 0.3em;
     }
 }
+
+
 
 
 .burger {
@@ -633,6 +649,21 @@ p.no-upcoming {
 
 /* Finetuning */
 
+.heading-description {}
+
+.main-content {
+    padding: 3em 3em;
+    margin-bottom: 5em;
+}
+
+.lead {
+    font-size: 1.4em;
+    font-family: 'Inter', sans-serif;
+    font-weight: 300;
+    line-height: 1.2;
+    margin-bottom: 1.7em;
+    text-align: center;
+}
 
 .toast-success {
     background-color: rgba(9, 9, 9, .7) !important;
@@ -657,10 +688,44 @@ p.no-upcoming {
     background: rgba(25, 27, 29, 0.84) !important;
 }
 
+.bg-darker-transparent {
+    background: rgba(26, 27, 28, 0.94) !important;
+}
+
 .rank {
-    background: #2e2e2e !important;
+    background: #2c3035 !important;
     box-shadow: 0 1px 3px rgba(0, 0, 0, .2);
-    height: 100%
+    height: 100%;
+}
+
+#rankit .row>div {
+    margin: 0.5em;
+    padding: 0;
+}
+
+#rankit .row>div:nth-of-type(odd) {
+    margin-left: 0;
+}
+
+#rankit .row>div:nth-of-type(even) {
+    margin-right: 0;
+}
+
+.rank-card-body {
+    -ms-flex: 1 1 auto;
+    flex: 1 1 auto;
+    padding: 1.2em;
+    display: flex;
+    flex-direction: column;
+}
+
+.rank-card-body td {
+    width: 50%;
+    font-family: 'Inter', sans-serif;
+}
+
+#rankit p.card-text {
+    margin-bottom: 0.3em;
 }
 
 .time {
@@ -687,8 +752,10 @@ p.no-upcoming {
     cursor: default;
 }
 
-.karaupdate:first-of-type {
-    margin-top: 0 !important;
+.karaupdate {
+    padding: 1.1em 1.6em;
+    margin-bottom: 2em;
+    padding-bottom: 2em;
 }
 
 h1,
@@ -926,6 +993,10 @@ h6 {
     color: #e0e0e0;
 }
 
+.yp {
+    padding: 3em 3em;
+}
+
 .yp-wrapper {
     display: flex;
     flex-wrap: wrap;
@@ -966,6 +1037,7 @@ h6 {
     color: #444444 !important;
     padding-bottom: 0;
     margin: 0;
+    text-align: center;
 }
 
 .yp-card-img {
@@ -985,6 +1057,7 @@ h6 {
 
 .yp-card-text {
     margin: 0.4em;
+    text-align: center;
 }
 
 .yp-card-text>p {
@@ -1012,6 +1085,7 @@ h6 {
 
 .yp>h3 {
     font-family: 'Minecraftia';
+    text-align: center;
 }
 
 /* Yp End */
@@ -1033,9 +1107,11 @@ h6 {
 }
 
 .lahjoitusdokumentti>p.lead {
-    color: #502F1E;
-    margin-bottom: 1.3em;
+    color: #502f1e;
+    margin-bottom: 1.5em;
     text-align: center;
+    font-weight: 400;
+    margin-top: 0.2em;
 }
 
 .lahjoitusdokumentti>.lahjoitustablewrapper {
@@ -1079,4 +1155,152 @@ h6 {
     padding: 1.5em 0;
     font-size: 0.96em;
 }
+
 /* Sisältö End */
+
+
+/* Säännöt */
+
+.rules-h2 {
+    text-align: left;
+    font-weight: 500;
+    margin: 0;
+    margin-bottom: 0.2em;
+    color: #f5f5f5 !important;
+    font-size: 2.1em;
+}
+
+.rules-common-p {
+    font-size: 1.1em;
+    font-weight: 300;
+    margin: 0;
+    margin-bottom: 0.7em;
+    font-family: 'Inter';
+    max-width: 800px;
+}
+
+.rules-container {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #1f1f1f;
+    margin-bottom: 2.5em;
+    border-radius: 10px;
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+}
+
+.rule-container {
+    flex-basis: 100%;
+    display: flex;
+    border-bottom: 1px solid #2b2b2b;
+}
+
+.rule-container:last-of-type {
+    border-bottom: none;
+}
+
+.rules-introduction {
+    margin-bottom: 2em;
+    margin-top: 1em;
+}
+
+
+.rules-epilogue {
+    margin-bottom: 5em;
+    margin-top: 1em;
+}
+
+.rule {
+    display: flex;
+    padding: 0.7em 0.5em;
+    font-family: 'Inter';
+    color: #e7e7e7;
+    margin: 2px;
+    align-items: center;
+    flex: 1;
+}
+
+.rule-icon-parent {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.rule-icon {
+    display: inline-flex;
+    color: white;
+    border-radius: 50%;
+    background-color: black;
+    font-size: 1.2em;
+    margin: 3px;
+    width: 34px;
+    height: 34px;
+    justify-content: center;
+    align-items: center;
+}
+
+.denied {
+    background-color: #df3421;
+}
+
+.accepted {
+    background-color: #53a61c
+}
+
+.notice {
+    background-color: #ff9705;
+}
+
+.keep-in-mind {
+    background-color: #128df3;
+}
+
+.rule-content {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    margin-left: 0.5em;
+    margin-right: 1em;
+    max-width: 600px;
+}
+
+.rule-head {}
+
+.rule-heading {
+    font-size: 1.2em;
+    color: #fefefe !important;
+    font-weight: 500;
+    margin: 0;
+}
+
+.rule-specify {}
+
+.rule-specifier {
+    font-size: 1.1em;
+    font-weight: 300;
+}
+
+@media (max-width: 800px) {
+    .rule {
+        flex-direction: column;
+        padding-top: 0.3em;
+    }
+
+    .rule-icon-parent {
+        margin-bottom: 0.3em;
+    }
+
+    .rule-content {
+        margin-right: 0.5em;
+        text-align: center;
+    }
+
+    .main-content {
+        padding: 3em 1em;
+    }
+
+    #rankit .row>div:nth-of-type(odd) {
+        margin-left: 0.5em;
+    }
+}
+
+/* */
