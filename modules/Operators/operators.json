@@ -38,15 +38,19 @@
       "nimi": "Wiikin",
       "kuvaus": "\"Mul ei oo mielikuvitust keksii mitää hauskaa :D\"",
       "uuid": "9b218de84001430d88f9821a71e62ad4"
-    }
-  ],
-  "moderaattorit": [
+    },
     {
       "nimi": "Naxray",
       "kuvaus": "Eläkkeeltä maailmankirjoihin palannut ylläpitäjä.",
       "uuid": "05c0c0ead62240d4b8a20d4ec986c039"
     }
-    ,
+  ],
+  "moderaattorit": [
+    {
+      "nimi": "Viherkukka",
+      "kuvaus": "\"Täh?\"",
+      "uuid": "5db3cb0e4ae847dc91594cc10079190d"
+    },
     {
       "nimi": "RetuPoika",
       "kuvaus": "\"Oispa kahvia.\"",
