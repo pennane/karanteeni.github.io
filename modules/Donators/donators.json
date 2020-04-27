@@ -1,6 +1,12 @@
 {
   "lahjoittajat": [
     {
+      "pvm": "26.04.20",
+      "nimi": "Susse",
+      "amount": "100€",
+      "heart": "♥"
+    },
+    {
       "pvm": "25.04.20",
       "nimi": "IronTank_",
       "amount": "20,01€",
