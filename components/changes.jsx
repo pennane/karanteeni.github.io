@@ -85,6 +85,10 @@ class ChangeLog extends React.Component {
             <div className='accordion text-left'>
                 <Month month='maaliskuu2020' btntext='Maaliskuu 2020' >
                     <Changebody month='maaliskuu2020' showing>
+                        <ChangeDate date='27.3.2020'/>
+                        <ul>
+                            <Changelist change='Lisätty seuraavat komennot: /jöms /retu /tank /ash' />
+                        </ul>
                         <ChangeDate date='22.3.2020' />
                         <ul>
                             <Changelist change='Spawnereita voi taas muuttaa creeper- ja squid-spawnereiksi' />

@@ -33,12 +33,10 @@
       "nimi": "Irontank_01",
       "kuvaus": "Satunnaisesti aktiivinen ylläpitäjä.",
       "uuid": "5d56328849f44d1b97bb97c437a3f625"
-    }
-  ],
-  "moderaattorit": [
+    },
     {
       "nimi": "Wiikin",
-      "kuvaus": "\"Hey, guess who's back?\"",
+      "kuvaus": "\"Mul ei oo mielikuvitust keksii mitää hauskaa :D\"",
       "uuid": "9b218de84001430d88f9821a71e62ad4"
     },
     {
@@ -46,7 +44,13 @@
       "kuvaus": "Eläkkeeltä maailmankirjoihin palannut ylläpitäjä.",
       "uuid": "05c0c0ead62240d4b8a20d4ec986c039"
     }
-    ,
+  ],
+  "moderaattorit": [
+    {
+      "nimi": "Viherkukka",
+      "kuvaus": "\"Täh?\"",
+      "uuid": "5db3cb0e4ae847dc91594cc10079190d"
+    },
     {
       "nimi": "RetuPoika",
       "kuvaus": "\"Oispa kahvia.\"",
