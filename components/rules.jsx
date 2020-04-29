@@ -74,7 +74,10 @@ class CommonRules extends React.Component {
                     <Content>
                         <Heading>Afkaaminen kielletty</Heading>
                         <Description>
-                            Palvelimella afkaaminen on kielletty. Afkikoneiden rakentaminen tästä syystä myös ankarasti kielletty.
+                            Palvelimella afkaaminen on kielletty. Afkikoneiden rakentaminen tästä syystä myös ankarasti kielletty. <br/>
+                            
+                            Mobifarmeilla afkaaminen keräten mobeja on myös kiellettyä. Kuitenkin automaattiset mobifarmit on sallittuja,
+                            kunhan entiteettejä ei keräänny liikaa aiheuttaakseen lagia.
                         </Description>
                     </Content>
                     </Rule>

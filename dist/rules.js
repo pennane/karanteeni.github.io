@@ -154,7 +154,9 @@ var CommonRules = function (_React$Component) {
                             React.createElement(
                                 Description,
                                 null,
-                                "Palvelimella afkaaminen on kielletty. Afkikoneiden rakentaminen t\xE4st\xE4 syyst\xE4 my\xF6s ankarasti kielletty."
+                                "Palvelimella afkaaminen on kielletty. Afkikoneiden rakentaminen t\xE4st\xE4 syyst\xE4 my\xF6s ankarasti kielletty. ",
+                                React.createElement("br", null),
+                                "Mobifarmeilla afkaaminen ker\xE4ten mobeja on my\xF6s kielletty\xE4. Kuitenkin automaattiset mobifarmit on sallittuja, kunhan entiteettej\xE4 ei ker\xE4\xE4nny liikaa aiheuttaakseen lagia."
                             )
                         )
                     )

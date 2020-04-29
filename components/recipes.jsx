@@ -52,7 +52,7 @@ class Recipe extends React.Component {
     }
 }
 
-const Recipes = (props) => {
+const Recipes = () => {
     return (
         <div className="col-lg-6 m-auto text-center">
             <Recipe
