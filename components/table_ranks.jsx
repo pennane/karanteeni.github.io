@@ -1,5 +1,7 @@
 'use-strict';
 
+{/* Joo tuota... Note to self: Komennot pois propeista ja parannetaa koodin luettavuutta. */}
+
 class Tooltip extends React.Component {
     constructor(props) {
         super(props);

@@ -111,7 +111,7 @@ var Recipe = function (_React$Component4) {
     return Recipe;
 }(React.Component);
 
-var Recipes = function Recipes(props) {
+var Recipes = function Recipes() {
     return React.createElement(
         "div",
         { className: "col-lg-6 m-auto text-center" },
