@@ -1,5 +1,5 @@
 var xmlhttp = new XMLHttpRequest();
-var url = "https://api.mcsrvstat.us/2/88.214.58.33";
+var url = "https://api.mcsrvstat.us/2/95.217.120.173";
 xmlhttp.onreadystatechange = function () {
     if (this.readyState == 4 && this.status == 200) {
         var stabox = this.responseText;
