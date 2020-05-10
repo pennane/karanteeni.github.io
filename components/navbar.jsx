@@ -1,5 +1,7 @@
 'use strict';
 
+{/* Let's see if this can be fixable somehow */}
+
 const Icon = (props) => {
     return (
         <i className={props.icon}></i>
@@ -22,6 +24,7 @@ class Tooltip extends React.Component {
     }
 }
 
+
 class NavLink extends React.Component {
     constructor(props) {
         super(props);
@@ -43,6 +46,7 @@ class NavLink extends React.Component {
         )
     }
 }
+
 
 class DropDownCollapseMenu extends React.Component {
     constructor(props) {
@@ -70,6 +74,7 @@ class DropDownCollapseMenu extends React.Component {
     }
 }
 
+
 class DropDownItem extends React.Component {
     constructor(props) {
         super(props);
@@ -95,50 +100,53 @@ class DropDownItem extends React.Component {
     }
 }
 
+
 const Nav = (props) => {
     return (
         <nav className="navbar navbar-expand-lg navbar-dark karanav">
-            {props.children}
+            <div className="container">
+                <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"
+                aria-expanded="false" aria-label="Toggle navigation">
+                    <div className="navbar-toggler-icon burger burger-rotate">
+                        <div className="burger-lines"></div>
+                    </div>
+                </button>
+                <div className="collapse navbar-collapse" id="navbarResponsive">
+                    <ul className="nav navbar-nav nav-fill" style={{flexGrow: 1, textAlign: 'center'}}>
+                        {props.children}
+                    </ul>
+                </div>
+            </div>
         </nav>
     )
 }
+
 
 class Navbar extends React.Component {
     render() {
         return (
             <Nav>
-                <div className="container">
-                    <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-                        <div className="navbar-toggler-icon burger burger-rotate">
-                            <div className="burger-lines"></div>
-                        </div>
-                    </button>
-                    <div className="collapse navbar-collapse" id="navbarResponsive">
-                        <ul className="nav navbar-nav nav-fill" style={{flexGrow: 1, textAlign: 'center'}}>
-                            <NavLink icon="fas fa-home" url="/" title="Etusivu" />
-                            
-                            <DropDownCollapseMenu title="Yleistietoa" dataTarget="#rc" labelClassName="fas fa-info">
-                                <DropDownItem icon="fas fa-info" url="yleistietoa" title="Yleistietoa" />
-                                <DropDownItem icon="fas fa-hammer" url="recipes" title="Custom reseptit" />
-                                <DropDownItem icon="fas fa-thumbs-up" url="hoks" title="Hyvä tietää!" />
-                                <DropDownItem icon="fas fa-question-circle" url="ukk" title="UKK" />
-                            </DropDownCollapseMenu>
+                <NavLink icon="fas fa-home" url="/" title="Etusivu" />
+                
+                <DropDownCollapseMenu title="Yleistietoa" dataTarget="#rc" labelClassName="fas fa-info">
+                    <DropDownItem icon="fas fa-info" url="yleistietoa" title="Yleistietoa" />
+                    <DropDownItem icon="fas fa-hammer" url="recipes" title="Custom reseptit" />
+                    <DropDownItem icon="fas fa-thumbs-up" url="hoks" title="Hyvä tietää!" />
+                    <DropDownItem icon="fas fa-question-circle" url="ukk" title="UKK" />
+                </DropDownCollapseMenu>
 
-                    
-                            <NavLink icon="fas fa-exclamation" url="saannot" title="Säännöt" />
+        
+                <NavLink icon="fas fa-exclamation" url="saannot" title="Säännöt" />
 
-                            <NavLink icon="fas fa-medal" url="rankit" title="Rankit" />
-                            
-                            <DropDownCollapseMenu title="Ylläpito" labelClassName="fas fa-users">
-                                <DropDownItem icon="fas fa-users" url="yllapito" title="Ylläpito" />
-                                <DropDownItem icon="fas fa-file-alt" url="yphaku" title="Hae ylläpitoon!" />
-                            </DropDownCollapseMenu>
+                <NavLink icon="fas fa-medal" url="rankit" title="Rankit" />
+                
+                <DropDownCollapseMenu title="Ylläpito" labelClassName="fas fa-users">
+                    <DropDownItem icon="fas fa-users" url="yllapito" title="Ylläpito" />
+                    <DropDownItem icon="fas fa-file-alt" url="yphaku" title="Hae ylläpitoon!" />
+                </DropDownCollapseMenu>
 
-                            <NavLink icon="fas fa-globe-africa" url="maailmat" title="Maailmat" />
-                            <NavLink icon="fas fa-gift" url="lahjoitus" title="Lahjoitukset" />
-                        </ul>
-                    </div>
-                </div>
+                <NavLink icon="fas fa-globe-africa" url="maailmat" title="Maailmat" />
+                <NavLink icon="fas fa-gift" url="lahjoitus" title="Lahjoitukset" />
             </Nav>
         )
     }

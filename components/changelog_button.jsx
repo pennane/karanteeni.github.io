@@ -1,5 +1,6 @@
 'use strict';
 
+
 class ChangeLogButton extends React.Component {
     render() {
         return (
@@ -9,6 +10,7 @@ class ChangeLogButton extends React.Component {
         )
     }
 }
+
 
 const div = document.querySelector('#changelog_button');
 ReactDOM.render(<ChangeLogButton />, div);

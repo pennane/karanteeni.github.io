@@ -8,6 +8,8 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
+{/* Let's see if this can be fixable somehow */}
+
 var Icon = function Icon(props) {
     return React.createElement("i", { className: props.icon });
 };
@@ -169,7 +171,29 @@ var Nav = function Nav(props) {
     return React.createElement(
         "nav",
         { className: "navbar navbar-expand-lg navbar-dark karanav" },
-        props.children
+        React.createElement(
+            "div",
+            { className: "container" },
+            React.createElement(
+                "button",
+                { className: "navbar-toggler", type: "button", "data-toggle": "collapse", "data-target": "#navbarResponsive",
+                    "aria-expanded": "false", "aria-label": "Toggle navigation" },
+                React.createElement(
+                    "div",
+                    { className: "navbar-toggler-icon burger burger-rotate" },
+                    React.createElement("div", { className: "burger-lines" })
+                )
+            ),
+            React.createElement(
+                "div",
+                { className: "collapse navbar-collapse", id: "navbarResponsive" },
+                React.createElement(
+                    "ul",
+                    { className: "nav navbar-nav nav-fill", style: { flexGrow: 1, textAlign: 'center' } },
+                    props.children
+                )
+            )
+        )
     );
 };
 
@@ -188,46 +212,25 @@ var Navbar = function (_React$Component5) {
             return React.createElement(
                 Nav,
                 null,
+                React.createElement(NavLink, { icon: "fas fa-home", url: "/", title: "Etusivu" }),
                 React.createElement(
-                    "div",
-                    { className: "container" },
-                    React.createElement(
-                        "button",
-                        { className: "navbar-toggler", type: "button", "data-toggle": "collapse", "data-target": "#navbarResponsive", "aria-controls": "navbarResponsive", "aria-expanded": "false", "aria-label": "Toggle navigation" },
-                        React.createElement(
-                            "div",
-                            { className: "navbar-toggler-icon burger burger-rotate" },
-                            React.createElement("div", { className: "burger-lines" })
-                        )
-                    ),
-                    React.createElement(
-                        "div",
-                        { className: "collapse navbar-collapse", id: "navbarResponsive" },
-                        React.createElement(
-                            "ul",
-                            { className: "nav navbar-nav nav-fill", style: { flexGrow: 1, textAlign: 'center' } },
-                            React.createElement(NavLink, { icon: "fas fa-home", url: "/", title: "Etusivu" }),
-                            React.createElement(
-                                DropDownCollapseMenu,
-                                { title: "Yleistietoa", dataTarget: "#rc", labelClassName: "fas fa-info" },
-                                React.createElement(DropDownItem, { icon: "fas fa-info", url: "yleistietoa", title: "Yleistietoa" }),
-                                React.createElement(DropDownItem, { icon: "fas fa-hammer", url: "recipes", title: "Custom reseptit" }),
-                                React.createElement(DropDownItem, { icon: "fas fa-thumbs-up", url: "hoks", title: "Hyv\xE4 tiet\xE4\xE4!" }),
-                                React.createElement(DropDownItem, { icon: "fas fa-question-circle", url: "ukk", title: "UKK" })
-                            ),
-                            React.createElement(NavLink, { icon: "fas fa-exclamation", url: "saannot", title: "S\xE4\xE4nn\xF6t" }),
-                            React.createElement(NavLink, { icon: "fas fa-medal", url: "rankit", title: "Rankit" }),
-                            React.createElement(
-                                DropDownCollapseMenu,
-                                { title: "Yll\xE4pito", labelClassName: "fas fa-users" },
-                                React.createElement(DropDownItem, { icon: "fas fa-users", url: "yllapito", title: "Yll\xE4pito" }),
-                                React.createElement(DropDownItem, { icon: "fas fa-file-alt", url: "yphaku", title: "Hae yll\xE4pitoon!" })
-                            ),
-                            React.createElement(NavLink, { icon: "fas fa-globe-africa", url: "maailmat", title: "Maailmat" }),
-                            React.createElement(NavLink, { icon: "fas fa-gift", url: "lahjoitus", title: "Lahjoitukset" })
-                        )
-                    )
-                )
+                    DropDownCollapseMenu,
+                    { title: "Yleistietoa", dataTarget: "#rc", labelClassName: "fas fa-info" },
+                    React.createElement(DropDownItem, { icon: "fas fa-info", url: "yleistietoa", title: "Yleistietoa" }),
+                    React.createElement(DropDownItem, { icon: "fas fa-hammer", url: "recipes", title: "Custom reseptit" }),
+                    React.createElement(DropDownItem, { icon: "fas fa-thumbs-up", url: "hoks", title: "Hyv\xE4 tiet\xE4\xE4!" }),
+                    React.createElement(DropDownItem, { icon: "fas fa-question-circle", url: "ukk", title: "UKK" })
+                ),
+                React.createElement(NavLink, { icon: "fas fa-exclamation", url: "saannot", title: "S\xE4\xE4nn\xF6t" }),
+                React.createElement(NavLink, { icon: "fas fa-medal", url: "rankit", title: "Rankit" }),
+                React.createElement(
+                    DropDownCollapseMenu,
+                    { title: "Yll\xE4pito", labelClassName: "fas fa-users" },
+                    React.createElement(DropDownItem, { icon: "fas fa-users", url: "yllapito", title: "Yll\xE4pito" }),
+                    React.createElement(DropDownItem, { icon: "fas fa-file-alt", url: "yphaku", title: "Hae yll\xE4pitoon!" })
+                ),
+                React.createElement(NavLink, { icon: "fas fa-globe-africa", url: "maailmat", title: "Maailmat" }),
+                React.createElement(NavLink, { icon: "fas fa-gift", url: "lahjoitus", title: "Lahjoitukset" })
             );
         }
     }]);

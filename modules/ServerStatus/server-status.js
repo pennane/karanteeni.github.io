@@ -1,5 +1,5 @@
 var xmlhttp = new XMLHttpRequest();
-var url = "https://api.mcsrvstat.us/2/88.214.58.33";
+var url = "https://api.mcsrvstat.us/2/95.217.120.173";
 xmlhttp.onreadystatechange = function () {
     if (this.readyState == 4 && this.status == 200) {
         var stabox = this.responseText;
@@ -7,7 +7,7 @@ xmlhttp.onreadystatechange = function () {
         if (kara["debug"].ping === true) {
             document.getElementById("status").style.color = "lime";
             document.getElementById("status").innerHTML = "Päällä"
-            document.getElementById("version").innerHTML = "<span class='bolder'>Versio:</span> " + kara["software"] + " " + kara["version"];
+            document.getElementById("version").innerHTML = "<span class='bolder'>Versio:</span> " + kara["version"];
             document.getElementById("online").innerHTML = 'Pelaajia paikalla: ' + kara.players["online"];
             if (kara.players["online"] == "0") {
                 document.getElementById("online").innerHTML = "Pelaajia ei ole paikalla.";
