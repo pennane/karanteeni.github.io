@@ -180,6 +180,20 @@ var CommonQuestions = function (_React$Component2) {
                         React.createElement('br', null),
                         'Nether ja End sit\xE4 vastoin nollataan kerran kuukaudessa, yleens\xE4 joka kuukauden alussa.'
                     )
+                ),
+                React.createElement(
+                    Card,
+                    null,
+                    React.createElement(
+                        Question,
+                        { id: 'yle8', target: 'ylecol8' },
+                        'Mik\xE4 s\xE4ilyy maailman nollauksen yhteydess\xE4?'
+                    ),
+                    React.createElement(
+                        Answer,
+                        { id: 'yle8', target: 'ylecol8' },
+                        'Maailman nollauksessa eli "mapresetissa" kaikki aloittavat samalta viivalta. T\xE4m\xE4 tarkoittaa sit\xE4, ett\xE4 pelaajien rahat, inventory ja koko kartta nollataan maisemanvaihdon vuoksi, jolloin kaikki joutuvat aloittamaan alusta. Peliaika on ainut asia, joka s\xE4ilyy.'
+                    )
                 )
             );
         }
