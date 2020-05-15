@@ -103,6 +103,17 @@ class CommonQuestions extends React.Component {
                 </Card>
 
 
+                <Card>
+                    <Question id='yle8' target='ylecol8'>
+                        Mikä säilyy maailman nollauksen yhteydessä?
+                    </Question>
+                    <Answer id='yle8' target='ylecol8'>
+                        Maailman nollauksessa eli "mapresetissa" kaikki aloittavat samalta viivalta. Tämä tarkoittaa sitä, että pelaajien rahat, inventory
+                        ja koko kartta nollataan maisemanvaihdon vuoksi, jolloin kaikki joutuvat aloittamaan alusta. Peliaika on ainut asia, joka säilyy.
+                    </Answer>
+                </Card>
+
+
             </React.Fragment>
         )
     }

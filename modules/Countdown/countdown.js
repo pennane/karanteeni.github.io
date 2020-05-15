@@ -1,5 +1,5 @@
 // Set the date we're counting down to
-var countDownDate = new Date("Dec 24, 2018 00:00:00").getTime();
+var countDownDate = new Date("May 29, 2020 00:00:00").getTime();
 
 // Update the count down every 1 second
 var x = setInterval(function() {
@@ -17,12 +17,12 @@ var x = setInterval(function() {
   var seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
   // Display the result in the element with id="demo"
-  document.getElementById("jouluaatto").innerHTML = days + " päivää " + hours + " tuntia "
+  document.getElementById("mapreset").innerHTML = days + " päivää " + hours + " tuntia "
   + minutes + " minuuttia " + " ja " + seconds + " sekuntia ";
 
   // If the count down is finished, write some text 
   if (distance < 0) {
     clearInterval(x);
-    document.getElementById("jouluaatto").innerHTML = "Hyvää joulua kaikille!";
+    document.getElementById("mapreset").innerHTML = "Kaboom!";
   }
 }, 1000);
