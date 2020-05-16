@@ -114,6 +114,27 @@ class CommonQuestions extends React.Component {
                 </Card>
 
 
+                <Card>
+                    <Question id='yle9' target='ylecol9'>
+                        Kuinka voin lahjoittaa palvelimelle?
+                    </Question>
+                    <Answer id='yle9' target='ylecol9'>
+                        Koska Karanteenissa ei ole käytössä vippejä, vaan kaikki perustuu peliaikaan, voit tehdä vapaamuotoisen lahjoituksen mm. PayPalilla. Tarkemmat
+                        ohjeet löydät <a id="link" href="/lahjoitus" target="blank">täältä</a>.
+                    </Answer>
+                </Card>
+
+
+                <Card>
+                    <Question id='yle10' target='ylecol10'>
+                        Mitä teen jos tarvitsen ylläpidon apua mutta he eivät ole juuri nyt paikalla?
+                    </Question>
+                    <Answer id='yle10' target='ylecol10'>
+                        Voit liittyä Karanteenin <a id="link" href="https://discord.gg/dxCtuY7">Discord</a> -palvelimelle ja pyytää apua luomalla tiketin #apua kanavalta.
+                    </Answer>
+                </Card>
+
+
             </React.Fragment>
         )
     }

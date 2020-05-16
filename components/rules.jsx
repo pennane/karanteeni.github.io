@@ -263,9 +263,24 @@ class AdditionalRules extends React.Component {
                     <Content>
                         <Heading>Pelaajakylien mainostaminen on kielletty</Heading>
                         <Description>
-                            Kylän tyrkyttäminen toisille pelaajille on kielletty. Tarkennus tulossa.
+                            Kylän tyrkyttäminen toisille pelaajille on kielletty. Pelaajan täytyy osoittaa selvää kiinnostusta chatissa esimerkiksi kysymällä
+                            kylien olemassaolosta tai voiko tiettyyn kylään muuttaa ennen kuin kylää voi mainostaa pelaajalle.
                         </Description>
                     </Content>
+                    </Rule>
+                </RuleContainer>
+
+
+                <RuleContainer>
+                    <Rule>
+                        <Icon icon="notice"/>
+                        <Content>
+                            <Heading>Karanteeni on poliittisesti neutraali palvelin</Heading>
+                            <Description>
+                                Tämä tarkoittaa sitä, että chatissa ja palvelimella pyritään välttämään poliittisia aatteita, symboleita tai ideologioita. Myös
+                                yleistä keskustelua politiikasta pyritään välttämään, koska se yleensä aiheuttaa väittelyitä ja eripuraa.
+                            </Description>
+                        </Content>
                     </Rule>
                 </RuleContainer>
             </React.Fragment>

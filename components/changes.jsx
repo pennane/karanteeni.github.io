@@ -71,9 +71,36 @@ class Changelog extends React.Component {
         return (
             <div className='accordion text-left'>
 
+                <Month month='toukokuu2020' btntext='Toukokuu 2020' >
+                    <Body month='toukokuu2020' showing>
+                        <Dated date='15.5.2020' />
+                        <ul>
+                            <Change>Yö kelautuu nopeammin. Mitä useampi nukkuu, sitä nopeampi yö.</Change>
+                        </ul>
+                        <Dated date='14.5.2020' />
+                        <ul>
+                            <Change>Lisätty komento /votestreak (nimi). Ilman nimeä näkee oman voteputken.</Change>
+                        </ul>
+                        <Dated date='11.5.2020' />
+                        <ul>
+                            <Change>/discord komento korjattu</Change>
+                            <Change>Voten määrä pienennetty 75 -> 50 ja lisäksi tehty voteputket</Change>
+                        </ul>
+
+                    </Body>
+                </Month>
+
+
+
+                <Month month='huhtikuu2020' btntext='Huhtikuu 2020' >
+                    <Body month='huhtikuu2020'>
+                        <p>Mitään ei tapahtunut.</p>
+                    </Body>
+                </Month>
+
 
                 <Month month='maaliskuu2020' btntext='Maaliskuu 2020' >
-                    <Body month='maaliskuu2020' showing>
+                    <Body month='maaliskuu2020'>
                         <Dated date='27.3.2020'/>
                         <ul>
                             <Change>Lisätty seuraavat komennot: /jöms /retu /tank /ash</Change>

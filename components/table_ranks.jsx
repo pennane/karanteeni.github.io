@@ -281,11 +281,11 @@ class ImmuuniParantaja extends React.Component {
                             <Command info title='Nimeää kädessäsi olevan esineen!' command='/nimeä' />
                         </CommandRow>
                         <CommandRow>
-                            <Command info title='Aseta spawner maahan kun suoritat komentoa.' command='/spawner' />
+                            <Command info title='Ota spawner käteen kun suoritat komentoa.' command='/spawner' />
                             <Command info={false} command='/tp' />
                         </CommandRow>
                         <CommandRow>
-                            <Command info={false} command='/tptoggle' />
+                            <Command info title='Estää pelaajien teleporttipyynnöt samantasoisilta ja alemmilta.' command='/tptoggle' />
                             <Command info={false} />
                         </CommandRow>
                     </Body>

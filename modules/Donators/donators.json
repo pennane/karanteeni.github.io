@@ -1,6 +1,12 @@
 {
   "lahjoittajat": [
     {
+      "pvm": "01.05.20",
+      "nimi": "dotsaredots",
+      "amount": "8€",
+      "heart": "♥"
+    },
+    {
       "pvm": "26.04.20",
       "nimi": "Susse",
       "amount": "100€",
