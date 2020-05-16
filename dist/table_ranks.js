@@ -528,13 +528,13 @@ var ImmuuniParantaja = function (_React$Component12) {
                         React.createElement(
                             CommandRow,
                             null,
-                            React.createElement(Command, { info: true, title: "Aseta spawner maahan kun suoritat komentoa.", command: "/spawner" }),
+                            React.createElement(Command, { info: true, title: "Ota spawner k\xE4teen kun suoritat komentoa.", command: "/spawner" }),
                             React.createElement(Command, { info: false, command: "/tp" })
                         ),
                         React.createElement(
                             CommandRow,
                             null,
-                            React.createElement(Command, { info: false, command: "/tptoggle" }),
+                            React.createElement(Command, { info: true, title: "Est\xE4\xE4 pelaajien teleporttipyynn\xF6t samantasoisilta ja alemmilta.", command: "/tptoggle" }),
                             React.createElement(Command, { info: false })
                         )
                     ),

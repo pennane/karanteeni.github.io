@@ -499,7 +499,30 @@ var AdditionalRules = function (_React$Component3) {
                             React.createElement(
                                 Description,
                                 null,
-                                "Kyl\xE4n tyrkytt\xE4minen toisille pelaajille on kielletty. Tarkennus tulossa."
+                                "Kyl\xE4n tyrkytt\xE4minen toisille pelaajille on kielletty. Pelaajan t\xE4ytyy osoittaa selv\xE4\xE4 kiinnostusta chatissa esimerkiksi kysym\xE4ll\xE4 kylien olemassaolosta tai voiko tiettyyn kyl\xE4\xE4n muuttaa ennen kuin kyl\xE4\xE4 voi mainostaa pelaajalle."
+                            )
+                        )
+                    )
+                ),
+                React.createElement(
+                    RuleContainer,
+                    null,
+                    React.createElement(
+                        Rule,
+                        null,
+                        React.createElement(Icon, { icon: "notice" }),
+                        React.createElement(
+                            Content,
+                            null,
+                            React.createElement(
+                                Heading,
+                                null,
+                                "Karanteeni on poliittisesti neutraali palvelin"
+                            ),
+                            React.createElement(
+                                Description,
+                                null,
+                                "T\xE4m\xE4 tarkoittaa sit\xE4, ett\xE4 chatissa ja palvelimella pyrit\xE4\xE4n v\xE4ltt\xE4m\xE4\xE4n poliittisia aatteita, symboleita tai ideologioita. My\xF6s yleist\xE4 keskustelua politiikasta pyrit\xE4\xE4n v\xE4ltt\xE4m\xE4\xE4n, koska se yleens\xE4 aiheuttaa v\xE4ittelyit\xE4 ja eripuraa."
                             )
                         )
                     )

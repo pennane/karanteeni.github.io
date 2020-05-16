@@ -118,10 +118,66 @@ var Changelog = function (_React$Component3) {
                 { className: 'accordion text-left' },
                 React.createElement(
                     Month,
+                    { month: 'toukokuu2020', btntext: 'Toukokuu 2020' },
+                    React.createElement(
+                        Body,
+                        { month: 'toukokuu2020', showing: true },
+                        React.createElement(Dated, { date: '15.5.2020' }),
+                        React.createElement(
+                            'ul',
+                            null,
+                            React.createElement(
+                                Change,
+                                null,
+                                'Y\xF6 kelautuu nopeammin. Mit\xE4 useampi nukkuu, sit\xE4 nopeampi y\xF6.'
+                            )
+                        ),
+                        React.createElement(Dated, { date: '14.5.2020' }),
+                        React.createElement(
+                            'ul',
+                            null,
+                            React.createElement(
+                                Change,
+                                null,
+                                'Lis\xE4tty komento /votestreak (nimi). Ilman nime\xE4 n\xE4kee oman voteputken.'
+                            )
+                        ),
+                        React.createElement(Dated, { date: '11.5.2020' }),
+                        React.createElement(
+                            'ul',
+                            null,
+                            React.createElement(
+                                Change,
+                                null,
+                                '/discord komento korjattu'
+                            ),
+                            React.createElement(
+                                Change,
+                                null,
+                                'Voten m\xE4\xE4r\xE4 pienennetty 75 -> 50 ja lis\xE4ksi tehty voteputket'
+                            )
+                        )
+                    )
+                ),
+                React.createElement(
+                    Month,
+                    { month: 'huhtikuu2020', btntext: 'Huhtikuu 2020' },
+                    React.createElement(
+                        Body,
+                        { month: 'huhtikuu2020' },
+                        React.createElement(
+                            'p',
+                            null,
+                            'Mit\xE4\xE4n ei tapahtunut.'
+                        )
+                    )
+                ),
+                React.createElement(
+                    Month,
                     { month: 'maaliskuu2020', btntext: 'Maaliskuu 2020' },
                     React.createElement(
                         Body,
-                        { month: 'maaliskuu2020', showing: true },
+                        { month: 'maaliskuu2020' },
                         React.createElement(Dated, { date: '27.3.2020' }),
                         React.createElement(
                             'ul',

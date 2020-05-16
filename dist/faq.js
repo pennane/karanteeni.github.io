@@ -194,6 +194,46 @@ var CommonQuestions = function (_React$Component2) {
                         { id: 'yle8', target: 'ylecol8' },
                         'Maailman nollauksessa eli "mapresetissa" kaikki aloittavat samalta viivalta. T\xE4m\xE4 tarkoittaa sit\xE4, ett\xE4 pelaajien rahat, inventory ja koko kartta nollataan maisemanvaihdon vuoksi, jolloin kaikki joutuvat aloittamaan alusta. Peliaika on ainut asia, joka s\xE4ilyy.'
                     )
+                ),
+                React.createElement(
+                    Card,
+                    null,
+                    React.createElement(
+                        Question,
+                        { id: 'yle9', target: 'ylecol9' },
+                        'Kuinka voin lahjoittaa palvelimelle?'
+                    ),
+                    React.createElement(
+                        Answer,
+                        { id: 'yle9', target: 'ylecol9' },
+                        'Koska Karanteenissa ei ole k\xE4yt\xF6ss\xE4 vippej\xE4, vaan kaikki perustuu peliaikaan, voit tehd\xE4 vapaamuotoisen lahjoituksen mm. PayPalilla. Tarkemmat ohjeet l\xF6yd\xE4t ',
+                        React.createElement(
+                            'a',
+                            { id: 'link', href: '/lahjoitus', target: 'blank' },
+                            't\xE4\xE4lt\xE4'
+                        ),
+                        '.'
+                    )
+                ),
+                React.createElement(
+                    Card,
+                    null,
+                    React.createElement(
+                        Question,
+                        { id: 'yle10', target: 'ylecol10' },
+                        'Mit\xE4 teen jos tarvitsen yll\xE4pidon apua mutta he eiv\xE4t ole juuri nyt paikalla?'
+                    ),
+                    React.createElement(
+                        Answer,
+                        { id: 'yle10', target: 'ylecol10' },
+                        'Voit liitty\xE4 Karanteenin ',
+                        React.createElement(
+                            'a',
+                            { id: 'link', href: 'https://discord.gg/dxCtuY7' },
+                            'Discord'
+                        ),
+                        ' -palvelimelle ja pyyt\xE4\xE4 apua luomalla tiketin #apua kanavalta.'
+                    )
                 )
             );
         }
