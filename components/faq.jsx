@@ -127,7 +127,7 @@ class CommonQuestions extends React.Component {
 
                 <Card>
                     <Question id='yle10' target='ylecol10'>
-                        Mitä teen jos tarvitsen ylläpidon apua mutta he eivät ole juuri nyt paikalla?
+                        Mitä teen jos tarvitsen ylläpidon apua, mutta he eivät ole juuri nyt paikalla?
                     </Question>
                     <Answer id='yle10' target='ylecol10'>
                         Voit liittyä Karanteenin <a id="link" href="https://discord.gg/dxCtuY7">Discord</a> -palvelimelle ja pyytää apua luomalla tiketin #apua kanavalta.
@@ -176,7 +176,7 @@ class ProtectionQuestions extends React.Component {
                         Kuinka annan kaverilleni oikeudet alueeseen?
                     </Question>
                     <Answer id='prot3' target='protcol3'>
-                        Oikeudet alueeseen voit antaa komennolla <code>/trust suojauksen_nimi pelaajan_nimi</code> seisten suojauksen sisällä.
+                        Oikeudet alueeseen voit antaa komennolla <code>/trust &lt;suojauksen_nimi&gt; &lt;pelaajan_nimi&gt;</code> seisten suojauksen sisällä.
                         Suojauksen nimen saat selville komennolla <code>/alue</code> kun seisot sen päällä.
                     </Answer>
                 </Card>
@@ -187,7 +187,7 @@ class ProtectionQuestions extends React.Component {
                         Kuinka annan kaverilleni oikeudet chesteihin ja uuneihin?
                     </Question>
                     <Answer id='prot4' target='protcol4'>
-                        Voit antaa oikeudet kyseisiin blockeihin katsomalla blockia ja kirjoittamalla komennon <code>/+oikeudet pelaajan_nimi</code>.
+                        Voit antaa oikeudet kyseisiin blockeihin katsomalla blockia ja kirjoittamalla komennon <code>/+oikeudet &lt;pelaajan_nimi&gt;</code>.
                         Tämän jälkeen kaverillasi on oikeudet avata kyseinen arkku. Komento toimii myös muihin container blockeihin.
                     </Answer>
                 </Card>
@@ -224,13 +224,25 @@ class EconomyQuestions extends React.Component {
                         näin arkkukauppasi on valmis.
                     </Answer>
                 </Card>
-                
+
 
                 <Card>
                     <Question id='eco2' target='ecocol2'>
-                        Mitä valuuttaa palvelin käyttää ja kuinka saan sitä?
+                        Kuinka voin poistaa arkkukaupan?
                     </Question>
                     <Answer id='eco2' target='ecocol2'>
+                        Voit poistaa arkkukaupan hajottamalla kyseisen arkun tai katsomalla arkkukauppaa kohti ja suorittamalla <code>/qs remove</code>.
+                        <br/><br/>
+                        Muita arkkukaupan komentoja ovat mm. <code>/qs price &lt;hinta&gt;</code>
+                    </Answer>
+                </Card>
+                
+
+                <Card>
+                    <Question id='eco3' target='ecocol3'>
+                        Mitä valuuttaa palvelin käyttää ja kuinka saan sitä?
+                    </Question>
+                    <Answer id='eco3' target='ecocol3'>
                         Palvelimella on rahavaluuttana pennit. Pennejä saat hankkimalla uutta peliaikaa, sekä palvelinta äänestämällä <code>/vote.</code>
                         Jokainen äänestykerta on 50 pennin arvoinen. <br/>
                         Voit myös myydä sekä ostaa tavaraa käyttämällä arkkukauppoja. Spawnilla on kauppa (<code>/warp kauppa</code>), jonne voit myydä oreista tehtyjä
@@ -279,6 +291,17 @@ class HomeQuestions extends React.Component {
                     <Answer id='home3' target='homecol3'>
                         Saat, mutta emme suosittele. Nether ja End resetoidaan kuukauden välein, mikä voi aiheuttaa kodin korruptoitumista ja sinun kuoleman.
                         Tämä tarkoittaa siis sitä, että saatat kuolla jos käytät kotia resetoinnin jälkeen. Ylläpito ei ole velvollinen palauttamaan tavaroitasi.
+                    </Answer>
+                </Card>
+
+
+                <Card>
+                    <Question id='home4' target='homecol4'>
+                        Saanko asettaa kodin toisen pelaajan taloon?
+                    </Question>
+                    <Answer id='home4' target='homecol4'>
+                        Mikäli toiselta pelaajalta on lupa asettaa taloon koti, on tämä sallittua. Kodin asettaminen muussa tapauksessa luetaan häirinnäksi ja
+                        on varoituksen arvoinen. Toistuvissa tapauksissa rangaistuksia tiukennetaan.
                     </Answer>
                 </Card>
 
