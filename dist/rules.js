@@ -487,29 +487,6 @@ var AdditionalRules = function (_React$Component3) {
                     React.createElement(
                         Rule,
                         null,
-                        React.createElement(Icon, { icon: "denied" }),
-                        React.createElement(
-                            Content,
-                            null,
-                            React.createElement(
-                                Heading,
-                                null,
-                                "Pelaajakylien mainostaminen on kielletty"
-                            ),
-                            React.createElement(
-                                Description,
-                                null,
-                                "Kyl\xE4n tyrkytt\xE4minen toisille pelaajille on kielletty. Pelaajan t\xE4ytyy osoittaa selv\xE4\xE4 kiinnostusta chatissa esimerkiksi kysym\xE4ll\xE4 kylien olemassaolosta tai voiko tiettyyn kyl\xE4\xE4n muuttaa ennen kuin kyl\xE4\xE4 voi mainostaa pelaajalle."
-                            )
-                        )
-                    )
-                ),
-                React.createElement(
-                    RuleContainer,
-                    null,
-                    React.createElement(
-                        Rule,
-                        null,
                         React.createElement(Icon, { icon: "notice" }),
                         React.createElement(
                             Content,
@@ -532,6 +509,126 @@ var AdditionalRules = function (_React$Component3) {
     }]);
 
     return AdditionalRules;
+}(React.Component);
+
+var PlayerTownRules = function (_React$Component4) {
+    _inherits(PlayerTownRules, _React$Component4);
+
+    function PlayerTownRules() {
+        _classCallCheck(this, PlayerTownRules);
+
+        return _possibleConstructorReturn(this, (PlayerTownRules.__proto__ || Object.getPrototypeOf(PlayerTownRules)).apply(this, arguments));
+    }
+
+    _createClass(PlayerTownRules, [{
+        key: "render",
+        value: function render() {
+            return React.createElement(
+                React.Fragment,
+                null,
+                React.createElement(
+                    RuleContainer,
+                    null,
+                    React.createElement(
+                        Rule,
+                        null,
+                        React.createElement(Icon, { icon: "notice" }),
+                        React.createElement(
+                            Content,
+                            null,
+                            React.createElement(
+                                Heading,
+                                null,
+                                "Kyl\xE4n mainostaminen julkisesti"
+                            ),
+                            React.createElement(
+                                Description,
+                                null,
+                                "Kylien mainostus on sallittua, mutta jos pelaajat antavat siit\xE4 palautetta, t\xE4ytyy siin\xE4 hommassa rauhoittua. Pyynn\xF6n ohittamisesta seuraa varoitus. Pyynt\xF6\xE4 ei kuitenkaan saa tehd\xE4 syytt\xE4, kaikilla on oltava mahdollisuus saada pelaajia kyl\xE4\xE4ns\xE4."
+                            )
+                        )
+                    )
+                ),
+                React.createElement(
+                    RuleContainer,
+                    null,
+                    React.createElement(
+                        Rule,
+                        null,
+                        React.createElement(Icon, { icon: "denied" }),
+                        React.createElement(
+                            Content,
+                            null,
+                            React.createElement(
+                                Heading,
+                                null,
+                                "Kyl\xE4n mainostaminen yksityisesti"
+                            ),
+                            React.createElement(
+                                Description,
+                                null,
+                                "Kylien mainostus yksityisviestill\xE4 on kielletty\xE4. T\xE4ll\xE4 v\xE4lt\xE4mme sen, ett\xE4 joku kokee mainostuksen hy\xF6kk\xE4\xE4v\xE4n\xE4. Kyli\xE4 saa mainostaa julkisesti pit\xE4en sen rajoissa. (Kts. yll\xE4)"
+                            )
+                        )
+                    )
+                ),
+                React.createElement(
+                    RuleContainer,
+                    null,
+                    React.createElement(
+                        Rule,
+                        null,
+                        React.createElement(Icon, { icon: "denied" }),
+                        React.createElement(
+                            Content,
+                            null,
+                            React.createElement(
+                                Heading,
+                                null,
+                                "Copy & Paste viestit ovat kiellettyj\xE4"
+                            ),
+                            React.createElement(
+                                Description,
+                                null,
+                                "Copy Paste eli niin sanottu massapostaus on kielletty\xE4. Kukaan ei jaksa n\xE4hd\xE4 joka viides minuutti t\xE4ysin samaa viesti\xE4 kyl\xE4st\xE4si ja siit\xE4 mit\xE4 palveluita siell\xE4 on. Kokeile sen sijaan mainostaa kyl\xE4\xE4si yst\xE4v\xE4llisesti ja henkil\xF6kohtaisesti. Jos joku tarvitsee xp-farmia ja kyl\xE4ss\xE4si on sellainen, mainitse se ihmeess\xE4."
+                            )
+                        )
+                    )
+                ),
+                React.createElement(
+                    RuleContainer,
+                    null,
+                    React.createElement(
+                        Rule,
+                        null,
+                        React.createElement(Icon, { icon: "important" }),
+                        React.createElement(
+                            Content,
+                            null,
+                            React.createElement(
+                                Heading,
+                                null,
+                                "Mainosta kyl\xE4\xE4si spawnilla!"
+                            ),
+                            React.createElement(
+                                Description,
+                                null,
+                                "Jomelle voi yksityisviestill\xE4 laittaa 256x128 resoluutioisen kuvan, jossa mainostat omaa kyl\xE4\xE4si. Se laitetaan spawnille. Kyl\xE4ll\xE4 ",
+                                React.createElement(
+                                    "u",
+                                    null,
+                                    "on oltava warp"
+                                ),
+                                ", jotta mainoksesi laitetaan n\xE4kyviin!"
+                            )
+                        )
+                    )
+                )
+            );
+        }
+    }]);
+
+    return PlayerTownRules;
 }(React.Component);
 
 var RuleContainer = function RuleContainer(props) {
@@ -635,3 +732,4 @@ var Icon = function Icon(props) {
 ReactDOM.render(React.createElement(CommonRules, null), document.getElementById('common'));
 ReactDOM.render(React.createElement(ChatRules, null), document.getElementById('behavior'));
 ReactDOM.render(React.createElement(AdditionalRules, null), document.getElementById('addon'));
+ReactDOM.render(React.createElement(PlayerTownRules, null), document.getElementById('playertown'));

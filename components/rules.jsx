@@ -259,20 +259,6 @@ class AdditionalRules extends React.Component {
 
                 <RuleContainer>
                     <Rule>
-                    <Icon icon="denied"/>
-                    <Content>
-                        <Heading>Pelaajakylien mainostaminen on kielletty</Heading>
-                        <Description>
-                            Kylän tyrkyttäminen toisille pelaajille on kielletty. Pelaajan täytyy osoittaa selvää kiinnostusta chatissa esimerkiksi kysymällä
-                            kylien olemassaolosta tai voiko tiettyyn kylään muuttaa ennen kuin kylää voi mainostaa pelaajalle.
-                        </Description>
-                    </Content>
-                    </Rule>
-                </RuleContainer>
-
-
-                <RuleContainer>
-                    <Rule>
                         <Icon icon="notice"/>
                         <Content>
                             <Heading>Karanteeni on poliittisesti neutraali palvelin</Heading>
@@ -283,6 +269,73 @@ class AdditionalRules extends React.Component {
                         </Content>
                     </Rule>
                 </RuleContainer>
+            </React.Fragment>
+        )
+    }
+}
+
+
+class PlayerTownRules extends React.Component {
+    render() {
+        return (
+            <React.Fragment>
+
+                <RuleContainer>
+                    <Rule>
+                        <Icon icon="notice"/>
+                        <Content>
+                            <Heading>Kylän mainostaminen julkisesti</Heading>
+                            <Description>
+                                Kylien mainostus on sallittua, mutta jos pelaajat antavat siitä palautetta, täytyy siinä hommassa rauhoittua. Pyynnön ohittamisesta
+                                seuraa varoitus. Pyyntöä ei kuitenkaan saa tehdä syyttä, kaikilla on oltava mahdollisuus saada pelaajia kyläänsä.
+                            </Description>
+                        </Content>
+                    </Rule>
+                </RuleContainer>
+
+
+                <RuleContainer>
+                    <Rule>
+                        <Icon icon="denied"/>
+                        <Content>
+                            <Heading>Kylän mainostaminen yksityisesti</Heading>
+                            <Description>
+                                Kylien mainostus yksityisviestillä on kiellettyä. Tällä vältämme sen, että joku kokee mainostuksen hyökkäävänä. Kyliä saa mainostaa
+                                julkisesti pitäen sen rajoissa. (Kts. yllä)
+                            </Description>
+                        </Content>
+                    </Rule>
+                </RuleContainer>
+
+
+                <RuleContainer>
+                    <Rule>
+                        <Icon icon="denied"/>
+                        <Content>
+                            <Heading>Copy &amp; Paste viestit ovat kiellettyjä</Heading>
+                            <Description>
+                                Copy Paste eli niin sanottu massapostaus on kiellettyä. Kukaan ei jaksa nähdä joka viides minuutti täysin samaa viestiä kylästäsi
+                                ja siitä mitä palveluita siellä on. Kokeile sen sijaan mainostaa kylääsi ystävällisesti ja henkilökohtaisesti. Jos joku tarvitsee
+                                xp-farmia ja kylässäsi on sellainen, mainitse se ihmeessä.
+                            </Description>
+                        </Content>
+                    </Rule>
+                </RuleContainer>
+
+
+                <RuleContainer>
+                    <Rule>
+                        <Icon icon="important"/>
+                        <Content>
+                            <Heading>Mainosta kylääsi spawnilla!</Heading>
+                            <Description>
+                                Jomelle voi yksityisviestillä laittaa 256x128 resoluutioisen kuvan, jossa mainostat omaa kylääsi. Se laitetaan
+                                spawnille. Kylällä <u>on oltava warp</u>, jotta mainoksesi laitetaan näkyviin!
+                            </Description>
+                        </Content>
+                    </Rule>
+                </RuleContainer>
+
             </React.Fragment>
         )
     }
@@ -375,3 +428,4 @@ const Icon = (props) => {
 ReactDOM.render(<CommonRules/>, document.getElementById('common'));
 ReactDOM.render(<ChatRules/>, document.getElementById('behavior'));
 ReactDOM.render(<AdditionalRules/>, document.getElementById('addon'));
+ReactDOM.render(<PlayerTownRules/>, document.getElementById('playertown'));

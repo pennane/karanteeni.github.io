@@ -35,8 +35,8 @@
   ],
   "operaattorit": [
     {
-      "nimi": "Irontank_01",
-      "kuvaus": "Satunnaisesti aktiivinen ylläpitäjä.",
+      "nimi": "IronTank_",
+      "kuvaus": "\"Meen tekee sinkkiä.\"",
       "uuid": "5d56328849f44d1b97bb97c437a3f625"
     },
     {
