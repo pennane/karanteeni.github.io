@@ -218,7 +218,7 @@ class SisukasParantuva extends React.Component {
                         </CommandRow>
                         <CommandRow>
                             <Command info title='Taikamatto, 5x5 kokoinen lasimatto allasi, jolla voit leijua ilmassa, sekä lentää.' command='/mc' />
-                            <Command info={false} command='/mc design' />
+                            <Command info title='Suunnittele oma taikamattosi!' command='/mc design' />
                         </CommandRow>
                         <CommandRow>
                             <Command info={false} command='/enderchest' />
@@ -251,7 +251,7 @@ class SisukasParantuva extends React.Component {
                         </CommandRow>
                         <CommandRow>
                             <Command info title='Tarvitset pelaajan pään, jonka voit mm. craftata (kts. Custom Reseptit). Voit muuttaa pään kenen tahansa pääksi.' command='/skull' disabled />
-                            <Command info={false} />
+                            <Command info={false} command='/feed' />
                         </CommandRow>
                     </Body>
                     <div class="rank-others">

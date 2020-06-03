@@ -6,9 +6,9 @@
       "uuid": "5b9a03483c15472b8bd8987134cf9f1d"
     },
     {
-      "nimi": "Nuubles",
-      "kuvaus": "Pääosin epäaktiivinen palvelimella. Säätää uusia ominaisuuksia sitä mukaa kun aikaa löytyy.",
-      "uuid": "d4ef4bc2db26462c9793389ba56d2818"
+      "nimi": "Naxray",
+      "kuvaus": "\"Ois kiva tietää jos havaitsette puuta.\"",
+      "uuid": "05c0c0ead62240d4b8a20d4ec986c039"
     },
     {
       "nimi": "lakanakana",
@@ -26,11 +26,6 @@
       "nimi": "Susse",
       "kuvaus": "Hoitelee nettijuttuja, ja kuka ties mitä.",
       "uuid": "144b79b3-71c0-4e7e-b466-f94d36d0caed"
-    },
-    {
-      "nimi": "Naxray",
-      "kuvaus": "Eläkkeeltä maailmankirjoihin palannut ylläpitäjä.",
-      "uuid": "05c0c0ead62240d4b8a20d4ec986c039"
     }
   ],
   "operaattorit": [

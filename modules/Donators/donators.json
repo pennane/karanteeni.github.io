@@ -1,6 +1,18 @@
 {
   "lahjoittajat": [
     {
+      "pvm": "01.06.20",
+      "nimi": "IronTank_",
+      "amount": "3€",
+      "heart": "♥"
+    },
+    {
+      "pvm": "01.06.20",
+      "nimi": "Goldaron",
+      "amount": "50€",
+      "heart": "♥"
+    },
+    {
       "pvm": "17.05.20",
       "nimi": "dotsaredots",
       "amount": "2€",

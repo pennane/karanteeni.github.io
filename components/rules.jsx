@@ -336,6 +336,65 @@ class PlayerTownRules extends React.Component {
                     </Rule>
                 </RuleContainer>
 
+
+                <RuleContainer>
+                    <Rule>
+                        <Icon icon="allowed"/>
+                        <Content>
+                            <Heading>Xp-farmit ja /spawner</Heading>
+                            <Description>
+                                Kyliin on mahdollista muuttaa spesifi spawner, mutta spawner täytyy palauttaa tai myydä alkuperäisessä mobissa takaisin.
+                            </Description>
+                        </Content>
+                    </Rule>
+                </RuleContainer>
+
+
+                <RuleContainer>
+                    <Rule>
+                        <Icon icon="notice"/>
+                        <Content>
+                            <Heading>Kylästä häätäminen</Heading>
+                            <Description>
+                                Kylän omistaja(t) voi(vat) häätää pelaajan sääntörikkomuksen seurauksena. Mikäli kylästä häädetään henkilö, tulee hänen tavaransa
+                                palauttaa. Mikäli henkilö poistetaan kylästä ilman, että tavaroita palautetaan asianmukaisessa ajassa, on häätäjä rikkonut serverin
+                                sääntöjä (varastaminen).
+                            </Description>
+                        </Content>
+                    </Rule>
+                </RuleContainer>
+
+
+                <RuleContainer>
+                    <Rule>
+                        <Icon icon="important"/>
+                        <Content>
+                            <Heading>Rakennusten purkaminen</Heading>
+                            <Description>
+                                Kylän omistajilla on oikeus purkaa rakennuksia kylänsä alueelta, antaen asukkaille asianmukaisessa ajassa ennen sitä ilmoituksen
+                                rakennusten purkamisesta (n. viikko). Mikäli puretaan serverillä pelaamisen lopettaneen pelaajan talo, tulee hänen
+                                tavaransa siirtää talteen nimettyihin arkkuihin, jotta ne voidaan palauttaa hänelle hänen palatessa servulle. Mikäli talo on
+                                pelaajan rakentama, tulee myös taloon käytetyt materiaalit palauttaa.
+                            </Description>
+                        </Content>
+                    </Rule>
+                </RuleContainer>
+
+
+                <RuleContainer>
+                    <Rule>
+                        <Icon icon="important"/>
+                        <Content>
+                            <Heading>Maksut / verotus</Heading>
+                            <Description>
+                                Kylät voivat vaatia maksua pelaajilta, uhkauksena kylästä häätö. Pelaajilla ei ole kuitenkaan pakotetta maksaa maksuja, eikä heiltä
+                                oleteta sitä. Mikäli maksun saanut henkilö ei ole kylän asukas saadessaan maksun, ei hänellä ole velvoitetta maksaa sitä. Kuitenkin
+                                kylän omistaja(t) voi(vat) evätä häneltä kylään pääsyn jatkossa.
+                            </Description>
+                        </Content>
+                    </Rule>
+                </RuleContainer>
+
             </React.Fragment>
         )
     }

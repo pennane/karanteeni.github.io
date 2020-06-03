@@ -1303,4 +1303,21 @@ h6 {
     }
 }
 
+
+/* Misc */
+
+.modal-content {
+    background-color:rgba(25,27,29,.84)!important;
+    color: white;
+}
+
+.close {
+    color: #fff;
+    text-shadow: 0 1px 0 #000;
+}
+
+.close:hover {
+    color: #5c5c5c;
+}
+
 /* */
