@@ -623,6 +623,98 @@ var PlayerTownRules = function (_React$Component4) {
                             )
                         )
                     )
+                ),
+                React.createElement(
+                    RuleContainer,
+                    null,
+                    React.createElement(
+                        Rule,
+                        null,
+                        React.createElement(Icon, { icon: "allowed" }),
+                        React.createElement(
+                            Content,
+                            null,
+                            React.createElement(
+                                Heading,
+                                null,
+                                "Xp-farmit ja /spawner"
+                            ),
+                            React.createElement(
+                                Description,
+                                null,
+                                "Kyliin on mahdollista muuttaa spesifi spawner, mutta spawner t\xE4ytyy palauttaa tai myyd\xE4 alkuper\xE4isess\xE4 mobissa takaisin."
+                            )
+                        )
+                    )
+                ),
+                React.createElement(
+                    RuleContainer,
+                    null,
+                    React.createElement(
+                        Rule,
+                        null,
+                        React.createElement(Icon, { icon: "notice" }),
+                        React.createElement(
+                            Content,
+                            null,
+                            React.createElement(
+                                Heading,
+                                null,
+                                "Kyl\xE4st\xE4 h\xE4\xE4t\xE4minen"
+                            ),
+                            React.createElement(
+                                Description,
+                                null,
+                                "Kyl\xE4n omistaja(t) voi(vat) h\xE4\xE4t\xE4\xE4 pelaajan s\xE4\xE4nt\xF6rikkomuksen seurauksena. Mik\xE4li kyl\xE4st\xE4 h\xE4\xE4det\xE4\xE4n henkil\xF6, tulee h\xE4nen tavaransa palauttaa. Mik\xE4li henkil\xF6 poistetaan kyl\xE4st\xE4 ilman, ett\xE4 tavaroita palautetaan asianmukaisessa ajassa, on h\xE4\xE4t\xE4j\xE4 rikkonut serverin s\xE4\xE4nt\xF6j\xE4 (varastaminen)."
+                            )
+                        )
+                    )
+                ),
+                React.createElement(
+                    RuleContainer,
+                    null,
+                    React.createElement(
+                        Rule,
+                        null,
+                        React.createElement(Icon, { icon: "important" }),
+                        React.createElement(
+                            Content,
+                            null,
+                            React.createElement(
+                                Heading,
+                                null,
+                                "Rakennusten purkaminen"
+                            ),
+                            React.createElement(
+                                Description,
+                                null,
+                                "Kyl\xE4n omistajilla on oikeus purkaa rakennuksia kyl\xE4ns\xE4 alueelta, antaen asukkaille asianmukaisessa ajassa ennen sit\xE4 ilmoituksen rakennusten purkamisesta (n. viikko). Mik\xE4li puretaan serverill\xE4 pelaamisen lopettaneen pelaajan talo, tulee h\xE4nen tavaransa siirt\xE4\xE4 talteen nimettyihin arkkuihin, jotta ne voidaan palauttaa h\xE4nelle h\xE4nen palatessa servulle. Mik\xE4li talo on pelaajan rakentama, tulee my\xF6s taloon k\xE4ytetyt materiaalit palauttaa."
+                            )
+                        )
+                    )
+                ),
+                React.createElement(
+                    RuleContainer,
+                    null,
+                    React.createElement(
+                        Rule,
+                        null,
+                        React.createElement(Icon, { icon: "important" }),
+                        React.createElement(
+                            Content,
+                            null,
+                            React.createElement(
+                                Heading,
+                                null,
+                                "Maksut / verotus"
+                            ),
+                            React.createElement(
+                                Description,
+                                null,
+                                "Kyl\xE4t voivat vaatia maksua pelaajilta, uhkauksena kyl\xE4st\xE4 h\xE4\xE4t\xF6. Pelaajilla ei ole kuitenkaan pakotetta maksaa maksuja, eik\xE4 heilt\xE4 oleteta sit\xE4. Mik\xE4li maksun saanut henkil\xF6 ei ole kyl\xE4n asukas saadessaan maksun, ei h\xE4nell\xE4 ole velvoitetta maksaa sit\xE4. Kuitenkin kyl\xE4n omistaja(t) voi(vat) ev\xE4t\xE4 h\xE4nelt\xE4 kyl\xE4\xE4n p\xE4\xE4syn jatkossa."
+                            )
+                        )
+                    )
                 )
             );
         }

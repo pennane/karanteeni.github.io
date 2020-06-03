@@ -71,8 +71,27 @@ class Changelog extends React.Component {
         return (
             <div className='accordion text-left'>
 
+
+                <Month month='kesäkuu2020' btntext='Kesäkuu 2020'>
+                    <Body month='kesäkuu2020' showing>
+                        <Dated date='1.6.2020' />
+                        <ul>
+                            <Change>Mobien tracking range on default.</Change>
+                            <Change>Nether-portaalista voi nyt kuljettaa mobeja.</Change>
+                            <Change>Lumouspöytä ehdottaa nyt oikeat lumoukset.</Change>
+                            <Change>Spam fishing problem solved.</Change>
+                            <Change>Villagereiden töiden resettaus fixed.</Change>
+                            <Change>Netherin katolle on taas mahdollista päästä.</Change>
+                        </ul>
+                    </Body>
+                </Month>
+
                 <Month month='toukokuu2020' btntext='Toukokuu 2020' >
-                    <Body month='toukokuu2020' showing>
+                    <Body month='toukokuu2020'>
+                        <Dated date='31.5.2020' />
+                        <ul>
+                            <Change>Lisätty info voteen, että siitä saa rahaa.</Change>
+                        </ul>
                         <Dated date='15.5.2020' />
                         <ul>
                             <Change>Yö kelautuu nopeammin. Mitä useampi nukkuu, sitä nopeampi yö.</Change>

@@ -416,7 +416,7 @@ var SisukasParantuva = function (_React$Component11) {
                             CommandRow,
                             null,
                             React.createElement(Command, { info: true, title: "Taikamatto, 5x5 kokoinen lasimatto allasi, jolla voit leijua ilmassa, sek\xE4 lent\xE4\xE4.", command: "/mc" }),
-                            React.createElement(Command, { info: false, command: "/mc design" })
+                            React.createElement(Command, { info: true, title: "Suunnittele oma taikamattosi!", command: "/mc design" })
                         ),
                         React.createElement(
                             CommandRow,
@@ -470,7 +470,7 @@ var SisukasParantuva = function (_React$Component11) {
                             CommandRow,
                             null,
                             React.createElement(Command, { info: true, title: "Tarvitset pelaajan p\xE4\xE4n, jonka voit mm. craftata (kts. Custom Reseptit). Voit muuttaa p\xE4\xE4n kenen tahansa p\xE4\xE4ksi.", command: "/skull", disabled: true }),
-                            React.createElement(Command, { info: false })
+                            React.createElement(Command, { info: false, command: "/feed" })
                         )
                     ),
                     React.createElement(

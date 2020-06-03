@@ -118,10 +118,63 @@ var Changelog = function (_React$Component3) {
                 { className: 'accordion text-left' },
                 React.createElement(
                     Month,
+                    { month: 'kes\xE4kuu2020', btntext: 'Kes\xE4kuu 2020' },
+                    React.createElement(
+                        Body,
+                        { month: 'kes\xE4kuu2020', showing: true },
+                        React.createElement(Dated, { date: '1.6.2020' }),
+                        React.createElement(
+                            'ul',
+                            null,
+                            React.createElement(
+                                Change,
+                                null,
+                                'Mobien tracking range on default.'
+                            ),
+                            React.createElement(
+                                Change,
+                                null,
+                                'Nether-portaalista voi nyt kuljettaa mobeja.'
+                            ),
+                            React.createElement(
+                                Change,
+                                null,
+                                'Lumousp\xF6yt\xE4 ehdottaa nyt oikeat lumoukset.'
+                            ),
+                            React.createElement(
+                                Change,
+                                null,
+                                'Spam fishing problem solved.'
+                            ),
+                            React.createElement(
+                                Change,
+                                null,
+                                'Villagereiden t\xF6iden resettaus fixed.'
+                            ),
+                            React.createElement(
+                                Change,
+                                null,
+                                'Netherin katolle on taas mahdollista p\xE4\xE4st\xE4.'
+                            )
+                        )
+                    )
+                ),
+                React.createElement(
+                    Month,
                     { month: 'toukokuu2020', btntext: 'Toukokuu 2020' },
                     React.createElement(
                         Body,
-                        { month: 'toukokuu2020', showing: true },
+                        { month: 'toukokuu2020' },
+                        React.createElement(Dated, { date: '31.5.2020' }),
+                        React.createElement(
+                            'ul',
+                            null,
+                            React.createElement(
+                                Change,
+                                null,
+                                'Lis\xE4tty info voteen, ett\xE4 siit\xE4 saa rahaa.'
+                            )
+                        ),
                         React.createElement(Dated, { date: '15.5.2020' }),
                         React.createElement(
                             'ul',
