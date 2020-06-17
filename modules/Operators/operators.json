@@ -36,11 +36,16 @@
     },
     {
       "nimi": "Wiikin",
-      "kuvaus": "\"Mul ei oo mielikuvitust keksii mitää hauskaa :D\"",
+      "kuvaus": "Tunnetaan myös nimellä varislokki.",
       "uuid": "9b218de84001430d88f9821a71e62ad4"
     }
   ],
   "moderaattorit": [
+    {
+      "nimi": "Manuzki",
+      "kuvaus": "\"Autan jos osaan, olen ymmärtäväinen, mutta en keksi mitään, vaan ajattelen.\"",
+      "uuid": "a802f54ebfa148e3a7754d18d38a48be"
+    },
     {
       "nimi": "Viherkukka",
       "kuvaus": "\"Täh?\"",
