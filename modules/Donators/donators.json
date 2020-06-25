@@ -2,6 +2,12 @@
   "lahjoittajat": [
     {
       "pvm": "10.06.20",
+      "nimi": "GaMeRsOrSa",
+      "amount": "2,40€",
+      "heart": "♥"
+    },
+    {
+      "pvm": "10.06.20",
       "nimi": "IronTank_",
       "amount": "40€",
       "heart": "♥"
