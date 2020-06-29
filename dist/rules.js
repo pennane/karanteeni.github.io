@@ -179,7 +179,18 @@ var CommonRules = function (_React$Component) {
                             React.createElement(
                                 Description,
                                 null,
-                                "Palvelinta rasittavien ja lagittavien redstonerakennelmien teko on kielletty (esim. loputtomiin k\xE4yv\xE4t kellot, 0-tick farmit). Lis\xE4\xE4 rakennelmaan sulkemisvipu ja pid\xE4 laite suljettuna, jos se ei ole k\xE4yt\xF6ss\xE4."
+                                "Palvelinta rasittavien ja lagittavien redstonerakennelmien teko on kielletty (esim. loputtomiin k\xE4yv\xE4t kellot, 0-tick farmit). Lis\xE4\xE4 rakennelmaan sulkemisvipu ja pid\xE4 laite suljettuna, jos se ei ole k\xE4yt\xF6ss\xE4. ",
+                                React.createElement("br", null),
+                                React.createElement("br", null),
+                                "Palvelimen lagittamiseen kuuluu my\xF6s entiteetit (hostile mobit, lemmikit, kyl\xE4l\xE4iset).",
+                                React.createElement(
+                                    "strong",
+                                    null,
+                                    "\xA0Yll\xE4pidolla on oikeus tappaa suojauksestasi el\xE4imi\xE4, mik\xE4li ne kuormittavat palvelinta."
+                                ),
+                                " ",
+                                React.createElement("br", null),
+                                "T\xE4m\xE4n lis\xE4ksi teleporttailu matrixin ulkopuolelle (esimerkiksi koordinaatit yli Endin ja Netherin generointirajan, sek\xE4 mapin ulkopuolelle jonka rajat ovat +-10k) on kielletty\xE4. Palvelimen tahallisesta lagittamisesta seuraa aina ikuinen porttikielto."
                             )
                         )
                     )
@@ -453,7 +464,17 @@ var AdditionalRules = function (_React$Component3) {
                             React.createElement(
                                 Description,
                                 null,
-                                "Villager kyli\xE4 ei saa grieffata. Kylist\xE4 ei saa vied\xE4 s\xE4nkyj\xE4 tai workstationeja. Kylien peltoja saa k\xE4ytt\xE4\xE4, kunhan ne muistaa t\xE4ytt\xE4\xE4 takaisin. Kylien hein\xE4paalut, sek\xE4 kellot saa ottaa itselleen. Kyl\xE4n voi ottaa kodikseen, jolloin kyli\xE4 koskevat s\xE4\xE4nn\xF6t eiv\xE4t en\xE4\xE4 p\xE4de."
+                                "Villager kyli\xE4 ei saa grieffata. Kylist\xE4 ei saa vied\xE4 s\xE4nkyj\xE4 tai ",
+                                React.createElement(
+                                    Tooltip,
+                                    { work: true },
+                                    React.createElement(
+                                        "strong",
+                                        null,
+                                        "workstationeja."
+                                    )
+                                ),
+                                " Kylien peltoja saa k\xE4ytt\xE4\xE4, kunhan ne muistaa t\xE4ytt\xE4\xE4 takaisin. Kylien hein\xE4paalut, sek\xE4 kellot saa ottaa itselleen. Kyl\xE4n voi ottaa kodikseen, jolloin kyli\xE4 koskevat s\xE4\xE4nn\xF6t eiv\xE4t en\xE4\xE4 p\xE4de."
                             )
                         )
                     )
@@ -721,6 +742,36 @@ var PlayerTownRules = function (_React$Component4) {
     }]);
 
     return PlayerTownRules;
+}(React.Component);
+
+var Tooltip = function (_React$Component5) {
+    _inherits(Tooltip, _React$Component5);
+
+    function Tooltip() {
+        _classCallCheck(this, Tooltip);
+
+        return _possibleConstructorReturn(this, (Tooltip.__proto__ || Object.getPrototypeOf(Tooltip)).apply(this, arguments));
+    }
+
+    _createClass(Tooltip, [{
+        key: "render",
+        value: function render() {
+
+            var workstations = "Bed, Lectern, Composter, Grindstone, Blast Furnace, Smoker, Fletching Table, Cartography Table, Brewing Stand, Smithing Table, " + "Barrel, Loom, Stonecutter";
+
+            var work = this.props.work;
+
+            if (work) {
+                return React.createElement(
+                    "span",
+                    { "data-toggle": "tooltip", "data-placement": "top", title: workstations },
+                    this.props.children
+                );
+            }
+        }
+    }]);
+
+    return Tooltip;
 }(React.Component);
 
 var RuleContainer = function RuleContainer(props) {

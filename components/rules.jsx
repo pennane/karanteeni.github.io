@@ -91,7 +91,13 @@ class CommonRules extends React.Component {
                         <Heading>Palvelimen lagittaminen kielletty</Heading>
                         <Description>
                             Palvelinta rasittavien ja lagittavien redstonerakennelmien teko on kielletty (esim. loputtomiin käyvät kellot, 0-tick farmit).
-                            Lisää rakennelmaan sulkemisvipu ja pidä laite suljettuna, jos se ei ole käytössä.
+                            Lisää rakennelmaan sulkemisvipu ja pidä laite suljettuna, jos se ei ole käytössä. <br/><br/>
+                            Palvelimen lagittamiseen kuuluu myös entiteetit (hostile mobit, lemmikit, kyläläiset).
+                            <strong>
+                            &nbsp;Ylläpidolla on oikeus tappaa suojauksestasi eläimiä, mikäli ne kuormittavat palvelinta.
+                            </strong> <br/>
+                            Tämän lisäksi teleporttailu matrixin ulkopuolelle (esimerkiksi koordinaatit yli Endin ja Netherin generointirajan, sekä mapin ulkopuolelle
+                            jonka rajat ovat +-10k) on kiellettyä. Palvelimen tahallisesta lagittamisesta seuraa aina ikuinen porttikielto.
                         </Description>
                     </Content>
                     </Rule>
@@ -236,8 +242,9 @@ class AdditionalRules extends React.Component {
                     <Content>
                         <Heading>Villager kylät ovat rauhoitettuja</Heading>
                         <Description>
-                            Villager kyliä ei saa grieffata. Kylistä ei saa viedä sänkyjä tai workstationeja. Kylien peltoja saa käyttää, kunhan ne muistaa täyttää
-                            takaisin. Kylien heinäpaalut, sekä kellot saa ottaa itselleen. Kylän voi ottaa kodikseen, jolloin kyliä koskevat säännöt eivät enää päde.
+                            Villager kyliä ei saa grieffata. Kylistä ei saa viedä sänkyjä tai <Tooltip work><strong>workstationeja.</strong></Tooltip> Kylien peltoja
+                            saa käyttää, kunhan ne muistaa täyttää takaisin. Kylien heinäpaalut, sekä kellot saa ottaa itselleen. Kylän voi ottaa kodikseen, jolloin
+                            kyliä koskevat säännöt eivät enää päde.
                         </Description>
                     </Content>
                     </Rule>
@@ -397,6 +404,23 @@ class PlayerTownRules extends React.Component {
 
             </React.Fragment>
         )
+    }
+}
+
+
+class Tooltip extends React.Component {
+    render() {
+
+        const workstations = "Bed, Lectern, Composter, Grindstone, Blast Furnace, Smoker, Fletching Table, Cartography Table, Brewing Stand, Smithing Table, " + 
+        "Barrel, Loom, Stonecutter"
+
+        const work = this.props.work;
+
+        if (work) {
+            return (
+                <span data-toggle='tooltip' data-placement='top' title={workstations}>{this.props.children}</span>
+            )
+        }
     }
 }
 
