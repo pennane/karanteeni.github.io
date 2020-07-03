@@ -202,7 +202,8 @@ class AdditionalRules extends React.Component {
                     <Content>
                         <Heading>Grieffaaminen on kielletty</Heading>
                         <Description>
-                            Toisten pelaajien rakennelmien tuhoaminen ja omaisuuden varastaminen on kielletty.
+                            Toisten pelaajien rakennelmien tuhoaminen ja omaisuuden varastaminen on kielletty. Mikäli tielläsi on rakennus, pyydä ylläpitoa rikkomaan
+                            tai siirtämään sitä.
                         </Description>
                     </Content>
                     </Rule>
@@ -228,7 +229,7 @@ class AdditionalRules extends React.Component {
                     <Content>
                         <Heading>Maisemagrieffaaminen kielletty</Heading>
                         <Description>
-                            Maaston ja maiseman turmeleminen on kiellettyä. Puut on kasvastettava takaisin, hiekan hakkuu ei saa jättää rumia jälkiä ympäristöön,
+                            Maaston ja maiseman turmeleminen on kiellettyä. Puut on kasvatettava takaisin, hiekan hakkuu ei saa jättää rumia jälkiä ympäristöön,
                             turhien epäesteettisten rakennelmien rakentaminen on kielletty (esim. 1x1 dirt tornit).
                         </Description>
                     </Content>
@@ -378,9 +379,9 @@ class PlayerTownRules extends React.Component {
                         <Content>
                             <Heading>Rakennusten purkaminen</Heading>
                             <Description>
-                                Kylän omistajilla on oikeus purkaa rakennuksia kylänsä alueelta, antaen asukkaille asianmukaisessa ajassa ennen sitä ilmoituksen
-                                rakennusten purkamisesta (n. viikko). Mikäli puretaan serverillä pelaamisen lopettaneen pelaajan talo, tulee hänen
-                                tavaransa siirtää talteen nimettyihin arkkuihin, jotta ne voidaan palauttaa hänelle hänen palatessa servulle. Mikäli talo on
+                                Kylän omistajilla on oikeus purkaa rakennuksia <u><strong>kylänsä alueelta</strong></u>, antaen asukkaille asianmukaisessa ajassa
+                                ennen sitä ilmoituksen rakennusten purkamisesta (n. viikko). Mikäli puretaan serverillä pelaamisen lopettaneen pelaajan talo, tulee
+                                hänen tavaransa siirtää talteen nimettyihin arkkuihin, jotta ne voidaan palauttaa hänelle hänen palatessa servulle. Mikäli talo on
                                 pelaajan rakentama, tulee myös taloon käytetyt materiaalit palauttaa.
                             </Description>
                         </Content>

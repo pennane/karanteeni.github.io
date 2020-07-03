@@ -1,6 +1,12 @@
 {
   "lahjoittajat": [
     {
+      "pvm": "02.07.20",
+      "nimi": "jafarin",
+      "amount": "50€",
+      "heart": "♥"
+    },
+    {
       "pvm": "10.06.20",
       "nimi": "GaMeRsOrSa",
       "amount": "2,40€",

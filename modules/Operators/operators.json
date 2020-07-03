@@ -30,11 +30,6 @@
   ],
   "operaattorit": [
     {
-      "nimi": "IronTank_",
-      "kuvaus": "\"Meen tekee sinkkiä.\"",
-      "uuid": "5d56328849f44d1b97bb97c437a3f625"
-    },
-    {
       "nimi": "Wiikin",
       "kuvaus": "Tunnetaan myös nimellä varislokki.",
       "uuid": "9b218de84001430d88f9821a71e62ad4"
