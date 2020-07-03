@@ -273,7 +273,7 @@ var ProtectionQuestions = function (_React$Component3) {
                     React.createElement(
                         Answer,
                         { id: 'prot1', target: 'protcol1' },
-                        'Yll\xE4pito suojaa alueen ja suojaukseen vaaditaan talon alku. Mik\xE4li aiot luoda kyl\xE4n, voit p\xE4\xE4tt\xE4\xE4 alueelle nimen. Warpin kyl\xE4lle saa vasta, kun kyl\xE4ll\xE4 on 15 asukasta. ',
+                        'Yll\xE4pito suojaa alueen ja suojaukseen vaaditaan talon alku. Huomaathan, ett\xE4 talosi t\xE4ytyy olla v\xE4hint\xE4\xE4n sadan (100) blockin p\xE4\xE4ss\xE4 l\xE4himm\xE4st\xE4 talosta. Mik\xE4li aiot luoda kyl\xE4n, voit p\xE4\xE4tt\xE4\xE4 alueelle nimen. Warpin kyl\xE4lle saa vasta, kun kyl\xE4ll\xE4 on 15 asukasta. ',
                         React.createElement('br', null),
                         React.createElement('br', null),
                         'Netheriin ja Endiin ei p\xE4\xE4s\xE4\xE4nt\xF6isesti suojata alueita.'

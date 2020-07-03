@@ -152,8 +152,8 @@ class ProtectionQuestions extends React.Component {
                         Miten voin suojata alueeni?
                     </Question>
                     <Answer id='prot1' target='protcol1'>
-                        Ylläpito suojaa alueen ja suojaukseen vaaditaan talon alku. Mikäli aiot luoda kylän, voit päättää alueelle nimen. Warpin kylälle
-                        saa vasta, kun kylällä on 15 asukasta. <br/><br/>
+                        Ylläpito suojaa alueen ja suojaukseen vaaditaan talon alku. Huomaathan, että talosi täytyy olla vähintään sadan (100) blockin päässä
+                        lähimmästä talosta. Mikäli aiot luoda kylän, voit päättää alueelle nimen. Warpin kylälle saa vasta, kun kylällä on 15 asukasta. <br/><br/>
 
                         Netheriin ja Endiin ei pääsääntöisesti suojata alueita.
                     </Answer>

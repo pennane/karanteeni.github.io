@@ -395,7 +395,7 @@ var AdditionalRules = function (_React$Component3) {
                             React.createElement(
                                 Description,
                                 null,
-                                "Toisten pelaajien rakennelmien tuhoaminen ja omaisuuden varastaminen on kielletty."
+                                "Toisten pelaajien rakennelmien tuhoaminen ja omaisuuden varastaminen on kielletty. Mik\xE4li tiell\xE4si on rakennus, pyyd\xE4 yll\xE4pitoa rikkomaan tai siirt\xE4m\xE4\xE4n sit\xE4."
                             )
                         )
                     )
@@ -441,7 +441,7 @@ var AdditionalRules = function (_React$Component3) {
                             React.createElement(
                                 Description,
                                 null,
-                                "Maaston ja maiseman turmeleminen on kielletty\xE4. Puut on kasvastettava takaisin, hiekan hakkuu ei saa j\xE4tt\xE4\xE4 rumia j\xE4lki\xE4 ymp\xE4rist\xF6\xF6n, turhien ep\xE4esteettisten rakennelmien rakentaminen on kielletty (esim. 1x1 dirt tornit)."
+                                "Maaston ja maiseman turmeleminen on kielletty\xE4. Puut on kasvatettava takaisin, hiekan hakkuu ei saa j\xE4tt\xE4\xE4 rumia j\xE4lki\xE4 ymp\xE4rist\xF6\xF6n, turhien ep\xE4esteettisten rakennelmien rakentaminen on kielletty (esim. 1x1 dirt tornit)."
                             )
                         )
                     )
@@ -709,7 +709,17 @@ var PlayerTownRules = function (_React$Component4) {
                             React.createElement(
                                 Description,
                                 null,
-                                "Kyl\xE4n omistajilla on oikeus purkaa rakennuksia kyl\xE4ns\xE4 alueelta, antaen asukkaille asianmukaisessa ajassa ennen sit\xE4 ilmoituksen rakennusten purkamisesta (n. viikko). Mik\xE4li puretaan serverill\xE4 pelaamisen lopettaneen pelaajan talo, tulee h\xE4nen tavaransa siirt\xE4\xE4 talteen nimettyihin arkkuihin, jotta ne voidaan palauttaa h\xE4nelle h\xE4nen palatessa servulle. Mik\xE4li talo on pelaajan rakentama, tulee my\xF6s taloon k\xE4ytetyt materiaalit palauttaa."
+                                "Kyl\xE4n omistajilla on oikeus purkaa rakennuksia ",
+                                React.createElement(
+                                    "u",
+                                    null,
+                                    React.createElement(
+                                        "strong",
+                                        null,
+                                        "kyl\xE4ns\xE4 alueelta"
+                                    )
+                                ),
+                                ", antaen asukkaille asianmukaisessa ajassa ennen sit\xE4 ilmoituksen rakennusten purkamisesta (n. viikko). Mik\xE4li puretaan serverill\xE4 pelaamisen lopettaneen pelaajan talo, tulee h\xE4nen tavaransa siirt\xE4\xE4 talteen nimettyihin arkkuihin, jotta ne voidaan palauttaa h\xE4nelle h\xE4nen palatessa servulle. Mik\xE4li talo on pelaajan rakentama, tulee my\xF6s taloon k\xE4ytetyt materiaalit palauttaa."
                             )
                         )
                     )
