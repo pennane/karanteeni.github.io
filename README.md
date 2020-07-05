@@ -2,11 +2,12 @@
 
 Peruspaske sivut (HTML, CSS, JS) :D
 
-Versio: 3.16.10
+Versio: 3.16.12
 
 ## "Hei pukki, mullois vaan yks toive... että maailmassa olisi rauha..."
 
-ja sitten se, että kuka ikinä tätä lukeekaan ymmärtää nämä "ohjeet".
+ja sitten se, että kuka ikinä tätä lukeekaan ymmärtää nämä "ohjeet". Tämän repositorion muokkaamiseen tarvitaan JavaScript osaamista (mieluiten Reactilla), Node.js
+ja npm niiden viimeisimmässä versiossaan.
 
 ## Muokkaaminen
 

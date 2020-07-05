@@ -23,6 +23,11 @@
       "uuid": "144b79b3-71c0-4e7e-b466-f94d36d0caed"
     },
     {
+      "nimi": "Wiikin",
+      "kuvaus": "Tunnetaan myös nimellä varislokki.",
+      "uuid": "9b218de84001430d88f9821a71e62ad4"
+    },
+    {
       "nimi": "lakanakana",
       "kuvaus": "Karanteenin entinen kaikkivaltias",
       "uuid": "78cf984cf45241b9bdd600cc4677c7d9"
@@ -30,9 +35,9 @@
   ],
   "operaattorit": [
     {
-      "nimi": "Wiikin",
-      "kuvaus": "Tunnetaan myös nimellä varislokki.",
-      "uuid": "9b218de84001430d88f9821a71e62ad4"
+      "nimi": "RetuPoika",
+      "kuvaus": "\"Oispa kahvia.\"",
+      "uuid": "02518a1790f740e8940251d8ae348991"
     }
   ],
   "moderaattorit": [
@@ -45,11 +50,6 @@
       "nimi": "Viherkukka",
       "kuvaus": "\"Täh?\"",
       "uuid": "5db3cb0e4ae847dc91594cc10079190d"
-    },
-    {
-      "nimi": "RetuPoika",
-      "kuvaus": "\"Oispa kahvia.\"",
-      "uuid": "02518a1790f740e8940251d8ae348991"
     }
   ],
   "rakentajat": [
