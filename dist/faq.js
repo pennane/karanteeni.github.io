@@ -178,7 +178,7 @@ var CommonQuestions = function (_React$Component2) {
                         'Maailma nollataan yleens\xE4 noin puolen vuoden v\xE4lein, mutta ei tapahdu automaationa. Yleens\xE4 maailman nollaus my\xF6s t\xE4hd\xE4t\xE4\xE4n seuraavan Minecraftin suuren versiop\xE4ivityksen kohdille.',
                         React.createElement('br', null),
                         React.createElement('br', null),
-                        'Nether ja End sit\xE4 vastoin nollataan kerran kuukaudessa, yleens\xE4 joka kuukauden alussa.'
+                        'Nether tulevaisuudessa ei tule nollautumaan 1.16 p\xE4ivityksen my\xF6t\xE4. End nollataan kerran kolmessa kuukaudessa.'
                     )
                 ),
                 React.createElement(
@@ -290,7 +290,13 @@ var ProtectionQuestions = function (_React$Component3) {
                     React.createElement(
                         Answer,
                         { id: 'prot2', target: 'protcol2' },
-                        'Ei h\xE4t\xE4\xE4. P\xE4\xE4set Karanteenin Discordiin /discord komennolla, tai voit nyk\xE4ist\xE4 jo paikalla olevaa yll\xE4pit\xE4j\xE4\xE4 hihasta. Joka tapauksessa saat grieffatun talosi kuntoon, sek\xE4 tavarat takaisin. Grieffaaja sit\xE4 vastoin saa porttikiellon palvelimelle.'
+                        'Ei h\xE4t\xE4\xE4. P\xE4\xE4set Karanteenin Discordiin ',
+                        React.createElement(
+                            'code',
+                            null,
+                            '/discord'
+                        ),
+                        ' komennolla, tai voit nyk\xE4ist\xE4 jo paikalla olevaa yll\xE4pit\xE4j\xE4\xE4 hihasta. Joka tapauksessa saat grieffatun talosi kuntoon, sek\xE4 tavarat takaisin. Grieffaaja sit\xE4 vastoin saa porttikiellon palvelimelle.'
                     )
                 ),
                 React.createElement(
