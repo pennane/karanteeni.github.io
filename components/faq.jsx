@@ -98,7 +98,7 @@ class CommonQuestions extends React.Component {
                         Maailma nollataan yleensä noin puolen vuoden välein, mutta ei tapahdu automaationa. Yleensä maailman nollaus myös tähdätään seuraavan
                         Minecraftin suuren versiopäivityksen kohdille.<br/><br/>
                         
-                        Nether ja End sitä vastoin nollataan kerran kuukaudessa, yleensä joka kuukauden alussa.
+                        Nether tulevaisuudessa ei tule nollautumaan 1.16 päivityksen myötä. End nollataan kerran kolmessa kuukaudessa.
                     </Answer>
                 </Card>
 
@@ -165,7 +165,7 @@ class ProtectionQuestions extends React.Component {
                         Apua! Taloani on grieffattu!
                     </Question>
                     <Answer id='prot2' target='protcol2'>
-                        Ei hätää. Pääset Karanteenin Discordiin /discord komennolla, tai voit nykäistä jo paikalla olevaa ylläpitäjää hihasta.
+                        Ei hätää. Pääset Karanteenin Discordiin <code>/discord</code> komennolla, tai voit nykäistä jo paikalla olevaa ylläpitäjää hihasta.
                         Joka tapauksessa saat grieffatun talosi kuntoon, sekä tavarat takaisin. Grieffaaja sitä vastoin saa porttikiellon palvelimelle.
                     </Answer>
                 </Card>
