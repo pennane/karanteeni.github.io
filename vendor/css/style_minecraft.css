@@ -46,6 +46,13 @@ h1 {
     margin-bottom: 0;
 }
 
+code {
+    font-size: 87.5%;
+    color: #e6ac00;
+    word-break: break-word;
+    background-color: #262626
+}
+
 /* Elementit End */
 
 /* Identifierit */

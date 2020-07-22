@@ -122,6 +122,21 @@ var Changelog = function (_React$Component3) {
                     React.createElement(
                         Body,
                         { month: 'hein\xE4kuu2020', showing: true },
+                        React.createElement(Dated, { date: '22.7.2020' }),
+                        React.createElement(
+                            'ul',
+                            null,
+                            React.createElement(
+                                Change,
+                                null,
+                                'Spawnille avattu parkour! ',
+                                React.createElement(
+                                    'code',
+                                    null,
+                                    '/warp parkour'
+                                )
+                            )
+                        ),
                         React.createElement(Dated, { date: '5.7.2020' }),
                         React.createElement(
                             'ul',
