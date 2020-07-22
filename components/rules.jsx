@@ -32,9 +32,9 @@ class CommonRules extends React.Component {
                     <Rule>
                     <Icon icon="allowed"/>
                     <Content>
-                        <Heading>Optifine</Heading>
+                        <Heading>Optifine & Sodium</Heading>
                         <Description>
-                            Optifine, ja Optifinen kaltaiset suoritustehoa parantavat modit ovat sallittuja.
+                            Optifine, ja Sodiumin kaltaiset suoritustehoa parantavat modit ovat sallittuja.
                         </Description>
                     </Content>
                     </Rule>

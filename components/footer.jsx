@@ -2,9 +2,10 @@
 
 class Footer extends React.Component {
     render() {
+        let year = new Date().getFullYear();
         return (
             <div className="container">
-                &copy; Karanteeni 2020
+                &copy; Karanteeni {year}
             </div>
         )
     }

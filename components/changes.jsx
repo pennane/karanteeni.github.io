@@ -74,6 +74,10 @@ class Changelog extends React.Component {
 
                 <Month month='heinäkuu2020' btntext='Heinäkuu 2020'>
                     <Body month='heinäkuu2020' showing>
+                        <Dated date='22.7.2020'/>
+                        <ul>
+                            <Change>Spawnille avattu parkour! <code>/warp parkour</code></Change>
+                        </ul>
                         <Dated date='5.7.2020'/>
                         <ul>
                             <Change><code>/alue</code> näyttää nyt jäsenten ja omistajien määrän suojauksessa.</Change>

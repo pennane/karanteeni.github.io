@@ -20,10 +20,12 @@ var Footer = function (_React$Component) {
     _createClass(Footer, [{
         key: 'render',
         value: function render() {
+            var year = new Date().getFullYear();
             return React.createElement(
                 'div',
                 { className: 'container' },
-                '\xA9 Karanteeni 2020'
+                '\xA9 Karanteeni ',
+                year
             );
         }
     }]);

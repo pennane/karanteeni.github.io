@@ -80,12 +80,12 @@ var CommonRules = function (_React$Component) {
                             React.createElement(
                                 Heading,
                                 null,
-                                "Optifine"
+                                "Optifine & Sodium"
                             ),
                             React.createElement(
                                 Description,
                                 null,
-                                "Optifine, ja Optifinen kaltaiset suoritustehoa parantavat modit ovat sallittuja."
+                                "Optifine, ja Sodiumin kaltaiset suoritustehoa parantavat modit ovat sallittuja."
                             )
                         )
                     )
