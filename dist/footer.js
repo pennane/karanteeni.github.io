@@ -18,14 +18,100 @@ var Footer = function (_React$Component) {
     }
 
     _createClass(Footer, [{
-        key: 'render',
+        key: "render",
         value: function render() {
             var year = new Date().getFullYear();
             return React.createElement(
-                'div',
-                { className: 'container' },
-                '\xA9 Karanteeni ',
-                year
+                "div",
+                { className: "container" },
+                React.createElement(
+                    "div",
+                    { className: "row" },
+                    React.createElement(
+                        "div",
+                        { className: "col-lg-3 col-xs-12" },
+                        React.createElement(
+                            "a",
+                            { className: "footer-link", href: "https://karanteeni.net", target: "_blank", rel: "noopener noreferrer" },
+                            React.createElement("img", { src: "./assets/images/footerlogo.png", alt: "Footerlogo", width: "255", height: "68" })
+                        )
+                    ),
+                    React.createElement(
+                        "div",
+                        { className: "col-lg-5 col-xs-12" },
+                        React.createElement(
+                            "h4",
+                            { className: "mt-lg-0 mt-sm-3" },
+                            "Yhteis\xF6"
+                        ),
+                        React.createElement(
+                            "ul",
+                            { className: "m-0 p-0 links" },
+                            React.createElement(
+                                "li",
+                                null,
+                                "- ",
+                                React.createElement(
+                                    "a",
+                                    { href: "https://discord.gg/fZqqysM" },
+                                    "Discord"
+                                )
+                            ),
+                            React.createElement(
+                                "li",
+                                null,
+                                "- ",
+                                React.createElement(
+                                    "a",
+                                    { href: "https://twitter.com/Karanteeni" },
+                                    "Twitter"
+                                )
+                            ),
+                            React.createElement(
+                                "li",
+                                null,
+                                "- ",
+                                React.createElement(
+                                    "a",
+                                    { href: "https://www.youtube.com/c/Karanteeni" },
+                                    "YouTube"
+                                )
+                            )
+                        )
+                    ),
+                    React.createElement(
+                        "div",
+                        { className: "col-lg-4 col-xs-12" },
+                        React.createElement(
+                            "h4",
+                            { className: "mt-lg-0 mt-sm-3" },
+                            "Muuta"
+                        ),
+                        React.createElement(
+                            "p",
+                            null,
+                            "Jotain roskaa"
+                        )
+                    )
+                ),
+                React.createElement(
+                    "div",
+                    { className: "row mt-5" },
+                    React.createElement(
+                        "div",
+                        { className: "col copyright" },
+                        React.createElement(
+                            "p",
+                            { className: "" },
+                            React.createElement(
+                                "small",
+                                { className: "text-white-50" },
+                                "\xA9 Karanteeni ",
+                                year
+                            )
+                        )
+                    )
+                )
             );
         }
     }]);
