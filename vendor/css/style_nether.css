@@ -8,6 +8,11 @@
 
 @import url(https://rsms.me/inter/inter.css);
 
+@font-face {
+    font-family: 'Roadtest';
+    src: url('/../assets/fonts/RoadTest.otf');
+}
+
 html {
     height: 100%;
     margin: 0;
@@ -509,11 +514,11 @@ p.no-upcoming {
 }
 
 .main-header h1 {
-    font-family: 'Inter', sans-serif;
-    color: #ff9f59;
+    font-family: 'Roadtest';
+    color: #8308e4 !important;
     font-weight: 700;
     font-style: italic;
-    text-shadow: 1px 2px #000
+    text-shadow: 1px 2px #7cf2f5;
 }
 
 .main-header p {
@@ -532,7 +537,7 @@ p.no-upcoming {
 }
 
 .jumbo-bg {
-    background: url(/../assets/images/yeet.png) center;
+    background: url(/../assets/images/1.png) center !important;
     background-size: cover
 }
 
@@ -832,6 +837,10 @@ h6 {
 
 .text-float-right {
     float: right
+}
+
+.nether {
+    /* font-family: 'Universal Ignorance' !important; */
 }
 
 
