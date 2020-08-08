@@ -35,6 +35,11 @@
   ],
   "operaattorit": [
     {
+      "nimi": "Manuzki",
+      "kuvaus": "\"Autan jos osaan, olen ymmärtäväinen, mutta en keksi mitään, vaan ajattelen.\"",
+      "uuid": "a802f54ebfa148e3a7754d18d38a48be"
+    },
+    {
       "nimi": "RetuPoika",
       "kuvaus": "\"Oispa kahvia.\"",
       "uuid": "02518a1790f740e8940251d8ae348991"
@@ -42,9 +47,9 @@
   ],
   "moderaattorit": [
     {
-      "nimi": "Manuzki",
-      "kuvaus": "\"Autan jos osaan, olen ymmärtäväinen, mutta en keksi mitään, vaan ajattelen.\"",
-      "uuid": "a802f54ebfa148e3a7754d18d38a48be"
+      "nimi": "Iita",
+      "kuvaus": "\"Ahdistaa.\"",
+      "uuid": "d0cd2962ea3944c48b486c6376e57ca3"
     },
     {
       "nimi": "Viherkukka",
