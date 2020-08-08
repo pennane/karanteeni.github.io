@@ -72,8 +72,22 @@ class Changelog extends React.Component {
             <div className='accordion text-left'>
 
 
+                <Month month='elokuu2020' btntext='Elokuu 2020'>
+                    <Body month='elokuu2020' showing>
+                        <Dated date='7.8.2020'/>
+                        <ul>
+                            <Change>Fixattu bugi yp-chatissa.</Change>
+                            <Change>Lisätty ilmoitus muistuttamaan pelaajia liittymisen yhteydessä <code>/warns</code> -komennosta.</Change>
+                        </ul>
+                        <Dated date='5.8.2020'/>
+                        <ul>
+                            <Change>Palvelimen render distance nostettu 10 chunkkiin (+2 chunkkia edellisestä).</Change>
+                        </ul>
+                    </Body>
+                </Month>
+
                 <Month month='heinäkuu2020' btntext='Heinäkuu 2020'>
-                    <Body month='heinäkuu2020' showing>
+                    <Body month='heinäkuu2020'>
                         <Dated date='22.7.2020'/>
                         <ul>
                             <Change>Spawnille avattu parkour! <code>/warp parkour</code></Change>

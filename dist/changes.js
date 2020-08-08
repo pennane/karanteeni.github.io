@@ -118,10 +118,49 @@ var Changelog = function (_React$Component3) {
                 { className: 'accordion text-left' },
                 React.createElement(
                     Month,
+                    { month: 'elokuu2020', btntext: 'Elokuu 2020' },
+                    React.createElement(
+                        Body,
+                        { month: 'elokuu2020', showing: true },
+                        React.createElement(Dated, { date: '7.8.2020' }),
+                        React.createElement(
+                            'ul',
+                            null,
+                            React.createElement(
+                                Change,
+                                null,
+                                'Fixattu bugi yp-chatissa.'
+                            ),
+                            React.createElement(
+                                Change,
+                                null,
+                                'Lis\xE4tty ilmoitus muistuttamaan pelaajia liittymisen yhteydess\xE4 ',
+                                React.createElement(
+                                    'code',
+                                    null,
+                                    '/warns'
+                                ),
+                                ' -komennosta.'
+                            )
+                        ),
+                        React.createElement(Dated, { date: '5.8.2020' }),
+                        React.createElement(
+                            'ul',
+                            null,
+                            React.createElement(
+                                Change,
+                                null,
+                                'Palvelimen render distance nostettu 10 chunkkiin (+2 chunkkia edellisest\xE4).'
+                            )
+                        )
+                    )
+                ),
+                React.createElement(
+                    Month,
                     { month: 'hein\xE4kuu2020', btntext: 'Hein\xE4kuu 2020' },
                     React.createElement(
                         Body,
-                        { month: 'hein\xE4kuu2020', showing: true },
+                        { month: 'hein\xE4kuu2020' },
                         React.createElement(Dated, { date: '22.7.2020' }),
                         React.createElement(
                             'ul',
