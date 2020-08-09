@@ -403,6 +403,20 @@ class PlayerTownRules extends React.Component {
                     </Rule>
                 </RuleContainer>
 
+
+                <RuleContainer>
+                    <Rule>
+                        <Icon icon="denied"/>
+                        <Content>
+                            <Heading>Asumattomien asukkaiden lisääminen on kiellettyä</Heading>
+                            <Description>
+                                Asukkaiden lisääminen, jotka eivät tule asumaan kylässä on ankarasti kiellettyä. Tätä perustellaan sillä, että kylät eivät näytä
+                                isommilta, eivätkä pienet kylät saa warppia huijaamalla.
+                            </Description>
+                        </Content>
+                    </Rule>
+                </RuleContainer>
+
             </React.Fragment>
         )
     }

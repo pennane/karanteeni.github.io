@@ -746,6 +746,29 @@ var PlayerTownRules = function (_React$Component4) {
                             )
                         )
                     )
+                ),
+                React.createElement(
+                    RuleContainer,
+                    null,
+                    React.createElement(
+                        Rule,
+                        null,
+                        React.createElement(Icon, { icon: "denied" }),
+                        React.createElement(
+                            Content,
+                            null,
+                            React.createElement(
+                                Heading,
+                                null,
+                                "Asumattomien asukkaiden lis\xE4\xE4minen on kielletty\xE4"
+                            ),
+                            React.createElement(
+                                Description,
+                                null,
+                                "Asukkaiden lis\xE4\xE4minen, jotka eiv\xE4t tule asumaan kyl\xE4ss\xE4 on ankarasti kielletty\xE4. T\xE4t\xE4 perustellaan sill\xE4, ett\xE4 kyl\xE4t eiv\xE4t n\xE4yt\xE4 isommilta, eiv\xE4tk\xE4 pienet kyl\xE4t saa warppia huijaamalla."
+                            )
+                        )
+                    )
                 )
             );
         }
