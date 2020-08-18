@@ -30,7 +30,6 @@
   <!-- Bootstrap CSS -->
   <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" href="vendor/css/style_minecraft.min.css">
-  <link rel="stylesheet" href="vendor/css/style_spring.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/2.1.4/toastr.min.css">
 
   <!-- Google Fonts -->
@@ -64,6 +63,7 @@
   <!-- Navbar -->
   <!-- <div id="top"></div> -->
   <!-- Sisältö -->
+  <div id="particles-js"></div>
   <div class="custom-jumbo jumbo-bg">
     <div class="custom-jumbo-half custom-jumbo-header">
       <div class="main-header">
@@ -103,6 +103,50 @@
       </div>
       <div class="px-1 col-xl-8 col-lg-6">
         <div class="px-1 container pt-3 pb-3">
+          <div class="karaupdate card bg-transparent card-body text-white content ">
+            <h2 id="title" class="title">Welcome to the Nether!</h2>
+            <div class="mt-3" id="content">
+              <p>
+                <a id="link" href="https://www.minecraft.net/fi-fi/article/nether-update-java" target="_blank" rel="noopener noreferrer">The Nether Update</a> on
+                saapunut myös Karanteeniin! TL;DR löytynee postauksen lopusta.
+              </p>
+              <p>
+                Nether Update on Karanteenin suurin pelikokemusta muuttava päivitys. 1.16.2 version pyöriessä palvelimella, mietimme samalla palvelintamme.
+                Kysyimme teiltä 3. kesäkuuta 2020, millä tavoin voimme parantaa teidän pelikokemustanne ja olemme jo saaneet suunnitelmaa tähän. Nether Update teki
+                joitain asioita helpoksi meidän kantiltamme. Löimme lukkoon 29. kesäkuuta, että nollaamme Netherin tästedes viimeisen kerran hetkeen. Samalla End
+                nollautuu vain kerran kartan aikana, suunnilleen puolessa välissä puolen vuoden aikataulua.
+              </p>
+              <br>
+              <p>
+                Tosin, ei siinä vielä kaikki. Meillä on pienimuotoinen roadmap esiteltävänä pelaajille. Nether Updaten jälkeen suunta on kohti parempaa
+                pelikokemusta. Alhaalla näette kuvan meidän roadmapistamme, jonka aikataulu toivottavasti pitää.
+              </p><br>
+              <p>
+                Kuten varmasti huomaatte, nettisivuja on mukautettu <strong>huomattavasti</strong>. Nettisivujen tiettyjä elementtejä on "modernisoitu" ja tehty
+                selkeämmäksi. Samalla nettisivut saivat hornan tulisen ulkoasun juhlistaaksemme Nether Updatea. Ylläpitokortit saivat uuden ulkoasun, jossa nyt
+                lyhyesti selitetty myös ylläpitäjien vahvuudet. Navigaatiopalkki sai itselleen napit ja alasvetovalikkoihin animaatiot. Footeria laajennettiin ja
+                sisältää varmasti kauan kaivatut sosiaalisen median linkit. Sen lisäksi sieltä pääsee helposti navigoimaan seuraavaan paikkaan, mikäli kokee
+                tarpeelliseksi. Työtä nettisivujen kanssa on kuitenkin vielä paljon, sillä selkeä ulkoasu ja käyttökokemus ovat hyviä ominaisuuksia.
+              </p><br>
+              <p>
+                <strong>Miksi tässä päivityksessä kesti näin kauan?</strong> Ajan puute, 1.16.2 version odottaminen, plugineiden päivittäminen, odottamattomat
+                ongelmat... Man, life is unpredictable at times.
+              </p>
+              <p>
+                <strong>TL;DR:</strong><br>
+                <ul>
+                  <li>Palvelimella pyörii Tuinity 1.16.2</li>
+                  <li>End ja Nether nollattu, End nollataan jatkossa vain kerran per kartta</li>
+                  <li>Nettisivua "modernisoitu", mutta sitä jatketaan + Nether teema</li>
+                  <li>Roadmapissa kaikki tarvittava tieto tulevaisuudesta pähkinänkuoressa</li>
+                </ul>
+              </p>
+              <p>
+                Terveisiä Crimson Forestista, Netheristä. <br>
+                Karanteenin ylläpito
+              </p>
+            </div>
+          </div>
           <div class="karaupdate card bg-transparent card-body text-white content ">
             <h2 id="title" class="title">Kesän mapreset</h2>
             <div class="mt-3" id="content">
@@ -334,6 +378,8 @@
   <script src="./dist/navbar.js"></script>
   <script src="./dist/footer.js"></script>
   <script src="./modules/ServerEvents/serverevents.js"></script>
+  <script src="./modules/Particles/particles.js-2.0.0/particles.min.js"></script>
+  <script src="./modules/Particles/particles.js-2.0.0/app.js"></script>
   <!-- <script src="./dist/totop_btn.js"></script> -->
 </body>
 

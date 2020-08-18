@@ -53,7 +53,7 @@ var Footer = function (_React$Component) {
                                 "- ",
                                 React.createElement(
                                     "a",
-                                    { href: "https://discord.gg/fZqqysM" },
+                                    { href: "https://discord.gg/fZqqysM", target: "_blank" },
                                     "Discord"
                                 )
                             ),
@@ -63,7 +63,7 @@ var Footer = function (_React$Component) {
                                 "- ",
                                 React.createElement(
                                     "a",
-                                    { href: "https://twitter.com/Karanteeni" },
+                                    { href: "https://twitter.com/Karanteeni", target: "_blank" },
                                     "Twitter"
                                 )
                             ),
@@ -73,7 +73,7 @@ var Footer = function (_React$Component) {
                                 "- ",
                                 React.createElement(
                                     "a",
-                                    { href: "https://www.youtube.com/c/Karanteeni" },
+                                    { href: "https://www.youtube.com/c/Karanteeni", target: "_blank" },
                                     "YouTube"
                                 )
                             )
@@ -85,12 +85,41 @@ var Footer = function (_React$Component) {
                         React.createElement(
                             "h4",
                             { className: "mt-lg-0 mt-sm-3" },
-                            "Muuta"
+                            "Pikalinkit"
                         ),
                         React.createElement(
-                            "p",
-                            null,
-                            "Jotain roskaa"
+                            "ul",
+                            { className: "m-0 p-0 links" },
+                            React.createElement(
+                                "li",
+                                null,
+                                "- ",
+                                React.createElement(
+                                    "a",
+                                    { href: "/ukk", rel: "noopener noreferrer" },
+                                    "Usein kysytyt kysymykset"
+                                )
+                            ),
+                            React.createElement(
+                                "li",
+                                null,
+                                "- ",
+                                React.createElement(
+                                    "a",
+                                    { href: "/hoks", rel: "noopener noreferrer" },
+                                    "Hyv\xE4 tiet\xE4\xE4"
+                                )
+                            ),
+                            React.createElement(
+                                "li",
+                                null,
+                                "- ",
+                                React.createElement(
+                                    "a",
+                                    { href: "/yllapito", rel: "noopener noreferrer" },
+                                    "Yll\xE4pito"
+                                )
+                            )
                         )
                     )
                 ),
@@ -108,6 +137,19 @@ var Footer = function (_React$Component) {
                                 { className: "text-white-50" },
                                 "\xA9 Karanteeni ",
                                 year
+                            )
+                        )
+                    ),
+                    React.createElement(
+                        "div",
+                        { className: "col copyright" },
+                        React.createElement(
+                            "p",
+                            { className: "" },
+                            React.createElement(
+                                "small",
+                                { className: "text-white-50" },
+                                "Taustakuvista kiitos juhkulariteetti:lle! \u2665"
                             )
                         )
                     )
