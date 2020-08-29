@@ -3,7 +3,8 @@
 *  Copyright 2019
 */
 
-/* Elementit */
+/* Elementit Start */
+
 
 @import url(https://rsms.me/inter/inter.css);
 
@@ -35,11 +36,6 @@ a {
     text-decoration: none !important
 }
 
-footer {
-    bottom: 0;
-    width: 100%
-}
-
 h1 {
     font-weight: 500;
     font-size: 3em;
@@ -53,9 +49,12 @@ code {
     background-color: #262626
 }
 
+
 /* Elementit End */
 
-/* Identifierit */
+
+/* Identifierit Start */
+
 
 #toTop {
     display: none;
@@ -96,9 +95,11 @@ code {
     font-weight: 500
 }
 
+
 /* Identifierit End */
 
-/* Elementticlassit */
+
+/* Elementticlassit Start */
 
 
 .main-heading {
@@ -163,9 +164,12 @@ span.deprecated-content::before {
     content: "!";
 }
 
-/* Taustat End */
 
-/* Navbar */
+/* Elementticlassit End */
+
+
+/* Navbar Start */
+
 
 @font-face {
     font-family: Minecraftia;
@@ -177,7 +181,7 @@ span.deprecated-content::before {
     background-color: #20232a;
     font-size: 16px;
     box-shadow: 0px 0px 13px 2px rgba(0, 0, 0, .6), 0 2px 4px -1px rgba(0, 0, 0, .09);
-    background-image: url(/../assets/images/dirt.png);
+    background-image: url('/../assets/images/blackstone_purple.png') !important;
     background-size: 48px;
     image-rendering: pixelated;
 }
@@ -197,7 +201,7 @@ span.deprecated-content::before {
 
 .nav-item:hover,
 .nav-item.show {
-    background-color: rgba(31, 31, 31, 0.56)
+    /* background-color: rgba(31, 31, 31, 0.56) */
 }
 
 
@@ -207,8 +211,21 @@ span.deprecated-content::before {
 }
 
 .nav-link {
-    padding: 15px 5px;
+    /*padding: 15px 5px; */
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-top: 10px;
+    margin-bottom: 10px;
     transition: .2s;
+    border-radius: 40px;
+    background: url('/../assets/images/crying_obsidian.png');
+    background-repeat: repeat-x;
+    background-size: auto;
+    box-shadow: 0 4px 4px 0 rgba(124, 242, 245, 1), 0 6px 10px 0 rgba(131, 8, 228, 1);
+}
+
+.nav-link:hover {
+    opacity: .9;
 }
 
 .navlink>i {
@@ -219,9 +236,6 @@ span.deprecated-content::before {
 .nav-item {
     text-align: left
 }
-
-
-
 
 .navbar-toggler-icon {
     background: none !important
@@ -358,9 +372,12 @@ span.deprecated-content::before {
     transform: rotate(-135deg);
 }
 
+
 /* Navbar End */
 
-/* Dropdown */
+
+/* Dropdown Start */
+
 
 .dropdown-header {
     text-shadow: 3px 2px 0 rgba(0, 0, 0, .3) !important
@@ -396,9 +413,12 @@ span.deprecated-content::before {
     align-items: center
 }
 
+
 /* Dropdown End */
 
-/* Pääsivun tapahtumat */
+
+/* Pääsivun tapahtumat Start */
+
 
 .tapahtumat .card-title {
     margin: 0;
@@ -452,9 +472,12 @@ p.no-upcoming {
     margin-top: 1em;
 }
 
+
 /* Pääsivun tapahtumat End */
 
-/* Pääsivun jumbotron ja sen elementit */
+
+/* Pääsivun jumbotron ja sen elementit Start */
+
 
 .custom-jumbo {
     margin-bottom: 0;
@@ -513,9 +536,12 @@ p.no-upcoming {
     background-size: cover
 }
 
+
 /*  Pääsivun jumbotron end */
 
-/* Someikonit */
+
+/* Someikonit Start */
+
 
 .someicon {
     transition: transform .2s
@@ -527,9 +553,12 @@ p.no-upcoming {
     transform: scale(1.2)
 }
 
+
 /* Someikonit End */
 
+
 /* Napit */
+
 
 .btn-eloton {
     color: #fff;
@@ -652,9 +681,12 @@ p.no-upcoming {
     text-shadow: 2px 2px 5px rgba(255, 215, 0, 1)
 }
 
+
 /* Napit End */
 
-/* Finetuning */
+
+/* Finetuning Start */
+
 
 .heading-description {}
 
@@ -802,9 +834,11 @@ h6 {
     float: right
 }
 
+
 /* Finetuning End */
 
-/* Accordion */
+
+/* Accordion Start */
 
 .accordion>.card .card-header {
     padding: 0 0 0 .75rem !important;
@@ -836,9 +870,11 @@ h6 {
     background: rgba(255, 255, 255, 1) !important
 }
 
+
 /* Accordion End */
 
-/* Card */
+
+/* Figure Start */
 
 
 .figure {
@@ -858,7 +894,9 @@ h6 {
 
 /* Figure End */
 
-/* Colors */
+
+/* Colors Start */
+
 
 .server-ip {
     color: #ff7885;
@@ -951,9 +989,12 @@ h6 {
     color: #fa0 !important
 }
 
+
 /* Colors End */
 
-/* Yp */
+
+/* Yp Start */
+
 
 .yp-jutut {
     font-size: 1rem !important;
@@ -1095,9 +1136,13 @@ h6 {
     text-align: center;
 }
 
+
 /* Yp End */
 
+
 /* Lahjoitus sivu */
+
+
 .lahjoitusdokumentti {
     border: 20px ridge hsla(47, 46%, 43%, 1);
     background-color: #edeae3;
@@ -1129,9 +1174,12 @@ h6 {
     display: table !important;
 }
 
+
 /* Lahjoitus sivu End */
 
-/* Reseptien kuvat*/
+
+/* Reseptien kuvat */
+
 
 .img-fluid.recipe {
     max-width: 100%;
@@ -1143,9 +1191,12 @@ h6 {
     image-rendering: pixelated;
 }
 
+
 /* Reseptien kuvat End */
 
+
 /* Sisältö */
+
 
 .content {
     font-family: 'Inter', sans-serif;
@@ -1153,20 +1204,11 @@ h6 {
 }
 
 
-
-.footer {
-    background-color: #282c34;
-    color: #fff;
-    padding: .5em 0;
-    letter-spacing: .01em;
-    padding: 1.5em 0;
-    font-size: 0.96em;
-}
-
 /* Sisältö End */
 
 
-/* Säännöt */
+/* Säännöt Start */
+
 
 .rules-h2 {
     text-align: left;
@@ -1311,7 +1353,11 @@ h6 {
 }
 
 
-/* Misc */
+/* Säännöt End */
+
+
+/* Misc Start */
+
 
 .modal-content {
     background-color:rgba(25,27,29,.84)!important;
@@ -1327,4 +1373,54 @@ h6 {
     color: #5c5c5c;
 }
 
-/* */
+
+/* Misc End */
+
+
+/* Footer Start */
+
+
+footer {
+    bottom: 0;
+    width: 100%
+}
+
+.footer {
+    background-color: #282c34;
+    color: #fff;
+    padding: .5em 0;
+    letter-spacing: .01em;
+    padding: 1.5em 0;
+    font-size: 0.96em;
+}
+
+.footer-link {
+    opacity: .4;
+    transition: opacity .15s ease-in-out;
+    width: 225px;
+}
+
+.footer .copyright p {
+    border-top: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+.footer-link:hover {
+    opacity: 1;
+}
+
+.links, ul {
+    list-style-type: none;
+}
+
+.links, li a {
+    color: white;
+    transition: color .2s;
+}
+
+.links, li a:hover {
+    text-decoration: none;
+    color: #cc0;
+}
+
+
+/* Footer End */

@@ -427,7 +427,6 @@ var SisukasParantuva = function (_React$Component11) {
                         React.createElement(
                             CommandRow,
                             null,
-                            React.createElement(Command, { info: true, title: "\xC4\xE4nestys + / - rankaisuista", command: "/+ & /-", disabled: true }),
                             React.createElement(Command, { info: false, command: "/mc light", disabled: true })
                         )
                     ),
@@ -457,14 +456,8 @@ var SisukasParantuva = function (_React$Component11) {
                         React.createElement(
                             CommandRow,
                             null,
-                            React.createElement(Command, { info: false, command: "/jump", disabled: true }),
-                            React.createElement(Command, { info: false, command: "/mc tools", disabled: true })
-                        ),
-                        React.createElement(
-                            CommandRow,
-                            null,
                             React.createElement(Command, { info: true, title: "Nimen t\xE4ytyy olla samankaltainen Minecraft nimesi kanssa tunnistautumisen vuoksi.", command: "/nick" }),
-                            React.createElement(Command, { info: true, title: "Voit aloittaa \xE4\xE4nestyksen pelaajan hiljent\xE4mist\xE4 (20min) (/rankaise votemute) tai pelaajan potkimista varten (/rankaise kick).", command: "/rankaise", disabled: true })
+                            React.createElement(Command, { info: true, title: "Voit teleporttaa koordinaatteihin.", command: "/tp <x> <y> <z>" })
                         ),
                         React.createElement(
                             CommandRow,
@@ -529,7 +522,7 @@ var ImmuuniParantaja = function (_React$Component12) {
                             CommandRow,
                             null,
                             React.createElement(Command, { info: true, title: "Ota spawner k\xE4teen kun suoritat komentoa.", command: "/spawner" }),
-                            React.createElement(Command, { info: false, command: "/tp" })
+                            React.createElement(Command, { info: false, command: "/tp <pelaaja>" })
                         ),
                         React.createElement(
                             CommandRow,
@@ -564,14 +557,8 @@ var ImmuuniParantaja = function (_React$Component12) {
                         React.createElement(
                             CommandRow,
                             null,
-                            React.createElement(Command, { info: false, command: "/jail", disabled: true }),
-                            React.createElement(Command, { info: false, command: "/kick", disabled: true })
-                        ),
-                        React.createElement(
-                            CommandRow,
-                            null,
-                            React.createElement(Command, { info: false, command: "/mute", disabled: true }),
-                            React.createElement(Command, { info: false })
+                            React.createElement(Command, { info: false, command: "/kick", disabled: true }),
+                            React.createElement(Command, { info: false, command: "/mute", disabled: true })
                         )
                     ),
                     React.createElement(
