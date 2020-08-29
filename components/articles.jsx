@@ -45,7 +45,7 @@ class Articles extends React.Component {
                         <p>
                             <strong>TL;DR:</strong><br/>
                             <ul>
-                            <li>Palvelimella pyörii Tuinity 1.16.2</li>
+                            <li>Palvelimella pyörii Paper 1.16.2</li>
                             <li>End ja Nether nollattu, End nollataan jatkossa vain kerran per kartta</li>
                             <li>Nettisivua "modernisoitu", mutta sitä jatketaan + Nether teema</li>
                             <li>Roadmapissa kaikki tarvittava tieto tulevaisuudesta pähkinänkuoressa</li>

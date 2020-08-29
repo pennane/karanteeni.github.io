@@ -101,7 +101,7 @@ var Articles = function (_React$Component) {
                                 React.createElement(
                                     'li',
                                     null,
-                                    'Palvelimella py\xF6rii Tuinity 1.16.2'
+                                    'Palvelimella py\xF6rii Paper 1.16.2'
                                 ),
                                 React.createElement(
                                     'li',
