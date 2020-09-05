@@ -72,20 +72,116 @@ class Changelog extends React.Component {
             <div className='accordion text-left'>
 
 
+                <Month month='elokuu2020' btntext='Elokuu 2020'>
+                    <Body month='elokuu2020' showing>
+                        <Dated date='7.8.2020'/>
+                        <ul>
+                            <Change>Fixattu bugi yp-chatissa.</Change>
+                            <Change>Lisätty ilmoitus muistuttamaan pelaajia liittymisen yhteydessä <code>/warns</code> -komennosta.</Change>
+                        </ul>
+                        <Dated date='5.8.2020'/>
+                        <ul>
+                            <Change>Palvelimen render distance nostettu 10 chunkkiin (+2 chunkkia edellisestä).</Change>
+                        </ul>
+                    </Body>
+                </Month>
+
+                <Month month='heinäkuu2020' btntext='Heinäkuu 2020'>
+                    <Body month='heinäkuu2020'>
+                        <Dated date='22.7.2020'/>
+                        <ul>
+                            <Change>Spawnille avattu parkour! <code>/warp parkour</code></Change>
+                        </ul>
+                        <Dated date='5.7.2020'/>
+                        <ul>
+                            <Change><code>/alue</code> näyttää nyt jäsenten ja omistajien määrän suojauksessa.</Change>
+                            <Change><code>/alue</code> näyttää molemmat XY pisteet suojauksen koosta.</Change>
+                            <Change>Lisätty <code>/manu</code></Change>
+                            <Change>Poistettu <code>/tank</code></Change>
+                        </ul>
+                    </Body>
+                </Month>
+
+
+                <Month month='kesäkuu2020' btntext='Kesäkuu 2020'>
+                    <Body month='kesäkuu2020'>
+                        <Dated date='25.6.2020'/>
+                        <ul>
+                            <Change>Lisätty 1.16.1 tuki servulle!</Change>
+                            <Change>Toisen pelaajan pelaaja-arvon klikkaaminen chatissa näyttää nyt kyseisen pelaajan peliajan oman sijaan.</Change>
+                        </ul>
+                        <Dated date='18.6.2020'/>
+                        <ul>
+                            <Change>Karanteenissa toimii VR</Change>
+                            <Change>Palvelimella voi nyt antaa lemmikkejä ja vapauttaa niitä komennoilla <code>/lemmikki anna &lt;pelaaja&gt;</code> ja
+                            <code>/lemmikki vapauta</code>.</Change>
+                            <Change>Palvelimella voi nyt tägätä ihmisiä chatissa käyttäen <code>@pelaajanimi</code>.</Change>
+                            <Change>Lisätty <code>/säännöt</code> komento.</Change>
+                        </ul>
+                        <Dated date='3.6.2020'/>
+                        <ul>
+                            <Change>Entity Activation Range nostettu.</Change>
+                            <Change>Villagerin tradet pitäisi nyt restockaa nopeammin.</Change>
+                            <Change>Fixattu ongelma, jossa pelaajat satunnaisesti jäivät jumiin chunkille.</Change>
+                        </ul>
+                        <Dated date='1.6.2020' />
+                        <ul>
+                            <Change>Mobien tracking range on default.</Change>
+                            <Change>Nether-portaalista voi nyt kuljettaa mobeja.</Change>
+                            <Change>Lumouspöytä ehdottaa nyt oikeat lumoukset.</Change>
+                            <Change>Spam fishing problem solved.</Change>
+                            <Change>Villagereiden töiden resettaus fixed.</Change>
+                            <Change>Netherin katolle on taas mahdollista päästä.</Change>
+                        </ul>
+                    </Body>
+                </Month>
+
+                <Month month='toukokuu2020' btntext='Toukokuu 2020' >
+                    <Body month='toukokuu2020'>
+                        <Dated date='31.5.2020' />
+                        <ul>
+                            <Change>Lisätty info voteen, että siitä saa rahaa.</Change>
+                        </ul>
+                        <Dated date='15.5.2020' />
+                        <ul>
+                            <Change>Yö kelautuu nopeammin. Mitä useampi nukkuu, sitä nopeampi yö.</Change>
+                        </ul>
+                        <Dated date='14.5.2020' />
+                        <ul>
+                            <Change>Lisätty komento <code>/votestreak [nimi]</code>. Ilman nimeä näkee oman voteputken.</Change>
+                        </ul>
+                        <Dated date='11.5.2020' />
+                        <ul>
+                            <Change><code>/discord</code> komento korjattu</Change>
+                            <Change>Voten määrä pienennetty 75 -&gt; 50 ja lisäksi tehty voteputket</Change>
+                        </ul>
+
+                    </Body>
+                </Month>
+
+
+
+                <Month month='huhtikuu2020' btntext='Huhtikuu 2020' >
+                    <Body month='huhtikuu2020'>
+                        <p>Mitään ei tapahtunut.</p>
+                    </Body>
+                </Month>
+
+
                 <Month month='maaliskuu2020' btntext='Maaliskuu 2020' >
-                    <Body month='maaliskuu2020' showing>
+                    <Body month='maaliskuu2020'>
                         <Dated date='27.3.2020'/>
                         <ul>
-                            <Change>Lisätty seuraavat komennot: /jöms /retu /tank /ash</Change>
+                            <Change>Lisätty seuraavat komennot: <code>/jöms /retu /tank /ash</code></Change>
                         </ul>
                         <Dated date='22.3.2020' />
                         <ul>
                             <Change>Spawnereita voi taas muuttaa creeper- ja squid-spawnereiksi</Change>
-                            <Change>/vote ei avaa enää valikkoa. Chattiin tulee molemmat linkit.</Change>
+                            <Change><code>/vote</code> ei avaa enää valikkoa. Chattiin tulee molemmat linkit.</Change>
                         </ul>
                         <Dated date='18.3.2020' />
                         <ul>
-                            <Change>lisätty uusia shortcutkomentoja /nax, /nubbe, /skidaddleskidoodle [/nou, /reverse, /unoreverse]</Change>
+                            <Change>lisätty uusia shortcutkomentoja <code>/nax /nubbe /skidaddleskidoodle [/nou /reverse /unoreverse]</code></Change>
                         </ul>
                         <Dated date='12.3.2020' />
                         <ul>
@@ -93,7 +189,7 @@ class Changelog extends React.Component {
                         </ul>
                         <Dated date='9.3.2020' />
                         <ul>
-                            <Change>Uusi komento /alue. Näyttää alueen nimen.</Change>
+                            <Change>Uusi komento <code>/alue</code>. Näyttää alueen nimen.</Change>
                         </ul>
 
                     </Body>
@@ -104,8 +200,8 @@ class Changelog extends React.Component {
                     <Body month='helmikuu2020'>
                         <Dated date='24.2.2020' />
                         <ul>
-                            <Change>/radio toimii taas</Change>
-                            <Change>Uusi komento /music</Change>
+                            <Change><code>/radio</code> toimii taas</Change>
+                            <Change>Uusi komento <code>/music</code></Change>
                             <Change>Sillanrakennus poistettu käytöstä monistusglitchin takia</Change>
                         </ul>
                         <Dated date='16.2.2020' />
@@ -121,7 +217,7 @@ class Changelog extends React.Component {
                     <Body month='tammikuu2020'>
                         <Dated date='16.1.2020' />
                         <ul>
-                            <Change>/tk tuotu takaisin</Change>
+                            <Change><code>/tk</code> tuotu takaisin</Change>
                         </ul>
                         <Dated date='13.1.2020' />
                         <ul>
@@ -135,13 +231,13 @@ class Changelog extends React.Component {
                     <Body month='joulukuu2019'>
                         <Dated date='13.12.2019' />
                         <ul>
-                            <Change>Lisätty /ignore (/ignore add nimi, /ignore list, /ignore remove nimi)</Change>
+                            <Change>Lisätty <code>/ignore</code> (<code>/ignore add &lt;nimi&gt;</code>, <code>/ignore list</code>, <code>/ignore remove &lt;nimi&gt;</code>)</Change>
                         </ul>
                         <Dated date='11.12.2019' />
                         <ul>
                             <Change>Lisätty Bedrock versiosta tuttu sillanrakennusominaisuus</Change>
-                            <Change>Lisätty uusi resepti: 6 lasipaneelia -> glass block </Change>
-                            <Change>Lisätty uusi resepti uuniin: stainded glass -> glass block</Change>
+                            <Change>Lisätty uusi resepti: 6 lasipaneelia -&gt; glass block </Change>
+                            <Change>Lisätty uusi resepti uuniin: stainded glass -&gt; glass block</Change>
                         </ul>
                         <Dated date='10.12.2019' />
                         <ul>
@@ -185,19 +281,19 @@ class Changelog extends React.Component {
                     <Body month='lokakuu2019'>
                         <Dated date='31.10.2019' />
                         <ul>
-                            <Change>/sit tuotu takaisin</Change>
+                            <Change><code>/sit</code> tuotu takaisin</Change>
                         </ul>
                         <Dated date='26.10.2019' />
                         <ul>
-                            <Change>/vote toimii taas</Change>
+                            <Change><code>/vote</code> toimii taas</Change>
                             <Change>(Realistinen) eläintenkanto takaisin servulla</Change>
                         </ul>
                         <Dated date='25.10.2019' />
                         <ul>
-                            <Change>/nimeä komento lisätty palvelimelle</Change>
-                            <Change>Lisätty ylläpidolle /setsign</Change>
-                            <Change>Korjattu viestibugi /nick player nick -komennossa (koskien ylläpitoa)</Change>
-                            <Change>/baltop korjattu</Change>
+                            <Change><code>/nimeä</code> komento lisätty palvelimelle</Change>
+                            <Change>Lisätty ylläpidolle <code>/setsign</code></Change>
+                            <Change>Korjattu viestibugi <code>/nick player nick</code> -komennossa (koskien ylläpitoa)</Change>
+                            <Change><code>/baltop</code> korjattu</Change>
                         </ul>
                     </Body>
                 </Month>
@@ -207,16 +303,16 @@ class Changelog extends React.Component {
                     <Body month='syyskuu2019' showing={false}>
                         <Dated date='25.09.2019' />
                         <ul>
-                            <Change>Tpa:n /back fixattu oikeiden pelaajien sijaintiin</Change>
+                            <Change>Tpa:n <code>/back</code> fixattu oikeiden pelaajien sijaintiin</Change>
                             <Change>mobGriefing asetettu takaisin päälle</Change>
                         </ul>
                         <Dated date='24.09.2019' />
                         <ul>
-                            <Change>Tp:n ja /spawn komennon /back tallentaa nyt sijainnin</Change>
+                            <Change>Tp:n ja <code>/spawn</code> komennon <code>/back</code> tallentaa nyt sijainnin</Change>
                         </ul>
                         <Dated date='21.09.2019' />
                         <ul>
-                            <Change>/kms ja /kys lisätty</Change>
+                            <Change><code>/kms</code> ja <code>/kys</code> lisätty</Change>
                             <Change>Spawnerit putoaa taas Silk Touch -enchantilla</Change>
                         </ul>
                     </Body>
@@ -228,7 +324,7 @@ class Changelog extends React.Component {
                         <Dated date='19.08.2019' />
                         <ul>
                             <Change>Coreprotect osaa nyt tallentaa lentävät blockit</Change>
-                            <Change>Tnt ja tnt_minecart ei enää lennätä niin paljon blockei -> parempia raivaukseen</Change>
+                            <Change>Tnt ja tnt_minecart ei enää lennätä niin paljon blockei -&gt; parempia raivaukseen</Change>
                             <Change>Lisätty custom recipet servulle</Change>
                         </ul>
                         <Dated date='17.08.2019' />
@@ -236,25 +332,25 @@ class Changelog extends React.Component {
                             <Change>Paranneltu databasen käyttöö: StatManager, Karanteenials, KaranteeniPerms, Chatar</Change>
                             <Change>
                                 Mahdollisesti vähennetty joinauksesta seuraavaa lagia: KaranteeniPerms, Karanteenials, KaranteeniCore, StatManager,
-                                Chatar (vaihdettu db sync -> async. jos ongelmia ilmenee niin ilmoittakaa)
+                                Chatar (vaihdettu db sync -&gt; async. jos ongelmia ilmenee niin ilmoittakaa)
                             </Change>
-                            <Change>Lisätty automaattinen restart (yp käyttäkää komentoa /restarter:restart)</Change>
+                            <Change>Lisätty automaattinen restart (yp käyttäkää komentoa <code>/restarter:restart</code>)</Change>
                             <Change>Poistettu virheellisiä blockeja taikamatosta</Change>
                             <Change>
                                 Löydetty ISO bugi timereista joka johti siihen että kaikki timerit ajettiin joka tickillä. Nyt fixattu, hyvällä tuurilla isoja vaikutuksia
                                 tehokkuuteen
                             </Change>
-                            <Change>Operaattorista ylöspäin oikat /player kill nimi</Change>
+                            <Change>Operaattorista ylöspäin oikat <code>/player kill &lt;nimi&gt;</code></Change>
                         </ul>
                         <Dated date='16.08.2019' />
                         <ul>
-                            <Change>/rtp toimii, aiempaa nopeampi ja ei mene veden alle</Change>
+                            <Change><code>/rtp</code> toimii, aiempaa nopeampi ja ei mene veden alle</Change>
                         </ul>
                         <Dated date='13.08.2019' />
                         <ul>
                             <Change>Fixattu "epäturvallinen sijainti" teleportatessa</Change>
                             <Change>Fixattu puuttunut ääni kotiin teleportatessa</Change>
-                            <Change>/rtp tehostettu</Change>
+                            <Change><code>/rtp</code> tehostettu</Change>
                             <Change>Fixattu rtp veden alle vienti</Change>
                         </ul>
                         <Dated date='11.08.2019' />

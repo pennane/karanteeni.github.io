@@ -178,7 +178,61 @@ var CommonQuestions = function (_React$Component2) {
                         'Maailma nollataan yleens\xE4 noin puolen vuoden v\xE4lein, mutta ei tapahdu automaationa. Yleens\xE4 maailman nollaus my\xF6s t\xE4hd\xE4t\xE4\xE4n seuraavan Minecraftin suuren versiop\xE4ivityksen kohdille.',
                         React.createElement('br', null),
                         React.createElement('br', null),
-                        'Nether ja End sit\xE4 vastoin nollataan kerran kuukaudessa, yleens\xE4 joka kuukauden alussa.'
+                        'Nether tulevaisuudessa ei tule nollautumaan 1.16 p\xE4ivityksen my\xF6t\xE4. End nollataan kerran kolmessa kuukaudessa.'
+                    )
+                ),
+                React.createElement(
+                    Card,
+                    null,
+                    React.createElement(
+                        Question,
+                        { id: 'yle8', target: 'ylecol8' },
+                        'Mik\xE4 s\xE4ilyy maailman nollauksen yhteydess\xE4?'
+                    ),
+                    React.createElement(
+                        Answer,
+                        { id: 'yle8', target: 'ylecol8' },
+                        'Maailman nollauksessa eli "mapresetissa" kaikki aloittavat samalta viivalta. T\xE4m\xE4 tarkoittaa sit\xE4, ett\xE4 pelaajien rahat, inventory ja koko kartta nollataan maisemanvaihdon vuoksi, jolloin kaikki joutuvat aloittamaan alusta. Peliaika on ainut asia, joka s\xE4ilyy.'
+                    )
+                ),
+                React.createElement(
+                    Card,
+                    null,
+                    React.createElement(
+                        Question,
+                        { id: 'yle9', target: 'ylecol9' },
+                        'Kuinka voin lahjoittaa palvelimelle?'
+                    ),
+                    React.createElement(
+                        Answer,
+                        { id: 'yle9', target: 'ylecol9' },
+                        'Koska Karanteenissa ei ole k\xE4yt\xF6ss\xE4 vippej\xE4, vaan kaikki perustuu peliaikaan, voit tehd\xE4 vapaamuotoisen lahjoituksen mm. PayPalilla. Tarkemmat ohjeet l\xF6yd\xE4t ',
+                        React.createElement(
+                            'a',
+                            { id: 'link', href: '/lahjoitus', target: 'blank' },
+                            't\xE4\xE4lt\xE4'
+                        ),
+                        '.'
+                    )
+                ),
+                React.createElement(
+                    Card,
+                    null,
+                    React.createElement(
+                        Question,
+                        { id: 'yle10', target: 'ylecol10' },
+                        'Mit\xE4 teen jos tarvitsen yll\xE4pidon apua, mutta he eiv\xE4t ole juuri nyt paikalla?'
+                    ),
+                    React.createElement(
+                        Answer,
+                        { id: 'yle10', target: 'ylecol10' },
+                        'Voit liitty\xE4 Karanteenin ',
+                        React.createElement(
+                            'a',
+                            { id: 'link', href: 'https://discord.gg/dxCtuY7' },
+                            'Discord'
+                        ),
+                        ' -palvelimelle ja pyyt\xE4\xE4 apua luomalla tiketin #apua kanavalta.'
                     )
                 )
             );
@@ -219,7 +273,7 @@ var ProtectionQuestions = function (_React$Component3) {
                     React.createElement(
                         Answer,
                         { id: 'prot1', target: 'protcol1' },
-                        'Yll\xE4pito suojaa alueen ja suojaukseen vaaditaan talon alku. Mik\xE4li aiot luoda kyl\xE4n, voit p\xE4\xE4tt\xE4\xE4 alueelle nimen. Warpin kyl\xE4lle saa vasta, kun kyl\xE4ll\xE4 on 15 asukasta. ',
+                        'Yll\xE4pito suojaa alueen ja suojaukseen vaaditaan talon alku. Huomaathan, ett\xE4 talosi t\xE4ytyy olla v\xE4hint\xE4\xE4n sadan (100) blockin p\xE4\xE4ss\xE4 l\xE4himm\xE4st\xE4 talosta. Mik\xE4li aiot luoda kyl\xE4n, voit p\xE4\xE4tt\xE4\xE4 alueelle nimen. Warpin kyl\xE4lle saa vasta, kun kyl\xE4ll\xE4 on 15 asukasta. ',
                         React.createElement('br', null),
                         React.createElement('br', null),
                         'Netheriin ja Endiin ei p\xE4\xE4s\xE4\xE4nt\xF6isesti suojata alueita.'
@@ -236,7 +290,13 @@ var ProtectionQuestions = function (_React$Component3) {
                     React.createElement(
                         Answer,
                         { id: 'prot2', target: 'protcol2' },
-                        'Ei h\xE4t\xE4\xE4. P\xE4\xE4set Karanteenin Discordiin /discord komennolla, tai voit nyk\xE4ist\xE4 jo paikalla olevaa yll\xE4pit\xE4j\xE4\xE4 hihasta. Joka tapauksessa saat grieffatun talosi kuntoon, sek\xE4 tavarat takaisin. Grieffaaja sit\xE4 vastoin saa porttikiellon palvelimelle.'
+                        'Ei h\xE4t\xE4\xE4. P\xE4\xE4set Karanteenin Discordiin ',
+                        React.createElement(
+                            'code',
+                            null,
+                            '/discord'
+                        ),
+                        ' komennolla, tai voit nyk\xE4ist\xE4 jo paikalla olevaa yll\xE4pit\xE4j\xE4\xE4 hihasta. Joka tapauksessa saat grieffatun talosi kuntoon, sek\xE4 tavarat takaisin. Grieffaaja sit\xE4 vastoin saa porttikiellon palvelimelle.'
                     )
                 ),
                 React.createElement(
@@ -254,7 +314,7 @@ var ProtectionQuestions = function (_React$Component3) {
                         React.createElement(
                             'code',
                             null,
-                            '/trust suojauksen_nimi pelaajan_nimi'
+                            '/trust <suojauksen_nimi> <pelaajan_nimi>'
                         ),
                         ' seisten suojauksen sis\xE4ll\xE4. Suojauksen nimen saat selville komennolla ',
                         React.createElement(
@@ -280,7 +340,7 @@ var ProtectionQuestions = function (_React$Component3) {
                         React.createElement(
                             'code',
                             null,
-                            '/+oikeudet pelaajan_nimi'
+                            '/+oikeudet <pelaajan_nimi>'
                         ),
                         '. T\xE4m\xE4n j\xE4lkeen kaverillasi on oikeudet avata kyseinen arkku. Komento toimii my\xF6s muihin container blockeihin.'
                     )
@@ -346,11 +406,39 @@ var EconomyQuestions = function (_React$Component4) {
                     React.createElement(
                         Question,
                         { id: 'eco2', target: 'ecocol2' },
-                        'Mit\xE4 valuuttaa palvelin k\xE4ytt\xE4\xE4 ja kuinka saan sit\xE4?'
+                        'Kuinka voin poistaa arkkukaupan?'
                     ),
                     React.createElement(
                         Answer,
                         { id: 'eco2', target: 'ecocol2' },
+                        'Voit poistaa arkkukaupan hajottamalla kyseisen arkun tai katsomalla arkkukauppaa kohti ja suorittamalla ',
+                        React.createElement(
+                            'code',
+                            null,
+                            '/qs remove'
+                        ),
+                        '.',
+                        React.createElement('br', null),
+                        React.createElement('br', null),
+                        'Muita arkkukaupan komentoja ovat mm. ',
+                        React.createElement(
+                            'code',
+                            null,
+                            '/qs price <hinta>'
+                        )
+                    )
+                ),
+                React.createElement(
+                    Card,
+                    null,
+                    React.createElement(
+                        Question,
+                        { id: 'eco3', target: 'ecocol3' },
+                        'Mit\xE4 valuuttaa palvelin k\xE4ytt\xE4\xE4 ja kuinka saan sit\xE4?'
+                    ),
+                    React.createElement(
+                        Answer,
+                        { id: 'eco3', target: 'ecocol3' },
                         'Palvelimella on rahavaluuttana pennit. Pennej\xE4 saat hankkimalla uutta peliaikaa, sek\xE4 palvelinta \xE4\xE4nest\xE4m\xE4ll\xE4 ',
                         React.createElement(
                             'code',
@@ -435,6 +523,20 @@ var HomeQuestions = function (_React$Component5) {
                         Answer,
                         { id: 'home3', target: 'homecol3' },
                         'Saat, mutta emme suosittele. Nether ja End resetoidaan kuukauden v\xE4lein, mik\xE4 voi aiheuttaa kodin korruptoitumista ja sinun kuoleman. T\xE4m\xE4 tarkoittaa siis sit\xE4, ett\xE4 saatat kuolla jos k\xE4yt\xE4t kotia resetoinnin j\xE4lkeen. Yll\xE4pito ei ole velvollinen palauttamaan tavaroitasi.'
+                    )
+                ),
+                React.createElement(
+                    Card,
+                    null,
+                    React.createElement(
+                        Question,
+                        { id: 'home4', target: 'homecol4' },
+                        'Saanko asettaa kodin toisen pelaajan taloon?'
+                    ),
+                    React.createElement(
+                        Answer,
+                        { id: 'home4', target: 'homecol4' },
+                        'Mik\xE4li toiselta pelaajalta on lupa asettaa taloon koti, on t\xE4m\xE4 sallittua. Kodin asettaminen muussa tapauksessa luetaan h\xE4irinn\xE4ksi ja on varoituksen arvoinen. Toistuvissa tapauksissa rangaistuksia tiukennetaan.'
                     )
                 )
             );

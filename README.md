@@ -2,11 +2,12 @@
 
 Peruspaske sivut (HTML, CSS, JS) :D
 
-Versio: 3.16.1
+Versio: 4.0.0
 
 ## "Hei pukki, mullois vaan yks toive... että maailmassa olisi rauha..."
 
-ja sitten se, että kuka ikinä tätä lukeekaan ymmärtää nämä "ohjeet".
+ja sitten se, että kuka ikinä tätä lukeekaan ymmärtää nämä "ohjeet". Tämän repositorion muokkaamiseen tarvitaan JavaScript osaamista (mieluiten Reactilla), Node.js
+ja npm niiden viimeisimmässä versiossaan.
 
 ## Muokkaaminen
 
@@ -36,6 +37,9 @@ Ylläpitosivut ovat käytännössä vain rakenne. Ylläpitäjien lisääminen ta
         {
             "nimi": "Jomeee",
             "kuvaus": "Ylläpitäjä",
+            "vahvuudet": [
+                "Vahvuus"
+            ],
             "uuid": "numeroita"
         }
     ],
@@ -43,6 +47,9 @@ Ylläpitosivut ovat käytännössä vain rakenne. Ylläpitäjien lisääminen ta
         {
             "nimi": "Jomeee",
             "kuvaus": "Ylläpitäjä",
+            "vahvuudet": [
+                "Vahvuus"
+            ],
             "uuid": "numeroita"
         }
     ],
@@ -50,6 +57,9 @@ Ylläpitosivut ovat käytännössä vain rakenne. Ylläpitäjien lisääminen ta
         {
             "nimi": "Jomeee",
             "kuvaus": "Ylläpitäjä",
+            "vahvuudet": [
+                "Vahvuus"
+            ],
             "uuid": "numeroita"
         }
     ],
@@ -57,6 +67,9 @@ Ylläpitosivut ovat käytännössä vain rakenne. Ylläpitäjien lisääminen ta
         {
             "nimi": "Jomeee",
             "kuvaus": "Ylläpitäjä",
+            "vahvuudet": [
+                "Vahvuus"
+            ],
             "uuid": "numeroita"
         }
     ],
@@ -64,6 +77,9 @@ Ylläpitosivut ovat käytännössä vain rakenne. Ylläpitäjien lisääminen ta
         {
             "nimi": "Jomeee",
             "kuvaus": "Ylläpitäjä",
+            "vahvuudet": [
+                "Vahvuus"
+            ]
             "uuid": "numeroita"
         }
     ]
@@ -125,6 +141,7 @@ Mikäli haluat kääntää JSX-tiedostot manuaalisesti, suorita aina käännön 
 * [Clipboard.js](https://clipboardjs.com/) - Käytetty elementtien kopioimiseen leikepöydälle
 * [March08 Animated Burgers](https://march08.github.io/animated-burgers/) - Käytetty mobiilinavigointipalkin ikonina 
 * [Toastr](https://toastrjs.com/) - Käytetty paahtoleipien paahtamiseen
+* [particles.js](https://vincentgarreau.com/particles.js/) - Käytetty partikkeleihin etusivulla
 
 ## Lisenssi
 

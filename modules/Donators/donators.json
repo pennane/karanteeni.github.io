@@ -1,6 +1,60 @@
 {
   "lahjoittajat": [
     {
+      "pvm": "15.07.20",
+      "nimi": "dotsaredots",
+      "amount": "20€",
+      "heart": "♥"
+    },
+    {
+      "pvm": "02.07.20",
+      "nimi": "jafarin",
+      "amount": "50€",
+      "heart": "♥"
+    },
+    {
+      "pvm": "10.06.20",
+      "nimi": "GaMeRsOrSa",
+      "amount": "2,40€",
+      "heart": "♥"
+    },
+    {
+      "pvm": "10.06.20",
+      "nimi": "IronTank_",
+      "amount": "40€",
+      "heart": "♥"
+    },
+    {
+      "pvm": "05.06.20",
+      "nimi": "MVPPlusPlus",
+      "amount": "11,11€",
+      "heart": "♥"
+    },
+    {
+      "pvm": "01.06.20",
+      "nimi": "IronTank_",
+      "amount": "3€",
+      "heart": "♥"
+    },
+    {
+      "pvm": "01.06.20",
+      "nimi": "Goldaron",
+      "amount": "50€",
+      "heart": "♥"
+    },
+    {
+      "pvm": "17.05.20",
+      "nimi": "dotsaredots",
+      "amount": "2€",
+      "heart": "♥"
+    },
+    {
+      "pvm": "01.05.20",
+      "nimi": "dotsaredots",
+      "amount": "8€",
+      "heart": "♥"
+    },
+    {
       "pvm": "26.04.20",
       "nimi": "Susse",
       "amount": "100€",

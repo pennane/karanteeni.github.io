@@ -118,10 +118,321 @@ var Changelog = function (_React$Component3) {
                 { className: 'accordion text-left' },
                 React.createElement(
                     Month,
+                    { month: 'elokuu2020', btntext: 'Elokuu 2020' },
+                    React.createElement(
+                        Body,
+                        { month: 'elokuu2020', showing: true },
+                        React.createElement(Dated, { date: '7.8.2020' }),
+                        React.createElement(
+                            'ul',
+                            null,
+                            React.createElement(
+                                Change,
+                                null,
+                                'Fixattu bugi yp-chatissa.'
+                            ),
+                            React.createElement(
+                                Change,
+                                null,
+                                'Lis\xE4tty ilmoitus muistuttamaan pelaajia liittymisen yhteydess\xE4 ',
+                                React.createElement(
+                                    'code',
+                                    null,
+                                    '/warns'
+                                ),
+                                ' -komennosta.'
+                            )
+                        ),
+                        React.createElement(Dated, { date: '5.8.2020' }),
+                        React.createElement(
+                            'ul',
+                            null,
+                            React.createElement(
+                                Change,
+                                null,
+                                'Palvelimen render distance nostettu 10 chunkkiin (+2 chunkkia edellisest\xE4).'
+                            )
+                        )
+                    )
+                ),
+                React.createElement(
+                    Month,
+                    { month: 'hein\xE4kuu2020', btntext: 'Hein\xE4kuu 2020' },
+                    React.createElement(
+                        Body,
+                        { month: 'hein\xE4kuu2020' },
+                        React.createElement(Dated, { date: '22.7.2020' }),
+                        React.createElement(
+                            'ul',
+                            null,
+                            React.createElement(
+                                Change,
+                                null,
+                                'Spawnille avattu parkour! ',
+                                React.createElement(
+                                    'code',
+                                    null,
+                                    '/warp parkour'
+                                )
+                            )
+                        ),
+                        React.createElement(Dated, { date: '5.7.2020' }),
+                        React.createElement(
+                            'ul',
+                            null,
+                            React.createElement(
+                                Change,
+                                null,
+                                React.createElement(
+                                    'code',
+                                    null,
+                                    '/alue'
+                                ),
+                                ' n\xE4ytt\xE4\xE4 nyt j\xE4senten ja omistajien m\xE4\xE4r\xE4n suojauksessa.'
+                            ),
+                            React.createElement(
+                                Change,
+                                null,
+                                React.createElement(
+                                    'code',
+                                    null,
+                                    '/alue'
+                                ),
+                                ' n\xE4ytt\xE4\xE4 molemmat XY pisteet suojauksen koosta.'
+                            ),
+                            React.createElement(
+                                Change,
+                                null,
+                                'Lis\xE4tty ',
+                                React.createElement(
+                                    'code',
+                                    null,
+                                    '/manu'
+                                )
+                            ),
+                            React.createElement(
+                                Change,
+                                null,
+                                'Poistettu ',
+                                React.createElement(
+                                    'code',
+                                    null,
+                                    '/tank'
+                                )
+                            )
+                        )
+                    )
+                ),
+                React.createElement(
+                    Month,
+                    { month: 'kes\xE4kuu2020', btntext: 'Kes\xE4kuu 2020' },
+                    React.createElement(
+                        Body,
+                        { month: 'kes\xE4kuu2020' },
+                        React.createElement(Dated, { date: '25.6.2020' }),
+                        React.createElement(
+                            'ul',
+                            null,
+                            React.createElement(
+                                Change,
+                                null,
+                                'Lis\xE4tty 1.16.1 tuki servulle!'
+                            ),
+                            React.createElement(
+                                Change,
+                                null,
+                                'Toisen pelaajan pelaaja-arvon klikkaaminen chatissa n\xE4ytt\xE4\xE4 nyt kyseisen pelaajan peliajan oman sijaan.'
+                            )
+                        ),
+                        React.createElement(Dated, { date: '18.6.2020' }),
+                        React.createElement(
+                            'ul',
+                            null,
+                            React.createElement(
+                                Change,
+                                null,
+                                'Karanteenissa toimii VR'
+                            ),
+                            React.createElement(
+                                Change,
+                                null,
+                                'Palvelimella voi nyt antaa lemmikkej\xE4 ja vapauttaa niit\xE4 komennoilla ',
+                                React.createElement(
+                                    'code',
+                                    null,
+                                    '/lemmikki anna <pelaaja>'
+                                ),
+                                ' ja',
+                                React.createElement(
+                                    'code',
+                                    null,
+                                    '/lemmikki vapauta'
+                                ),
+                                '.'
+                            ),
+                            React.createElement(
+                                Change,
+                                null,
+                                'Palvelimella voi nyt t\xE4g\xE4t\xE4 ihmisi\xE4 chatissa k\xE4ytt\xE4en ',
+                                React.createElement(
+                                    'code',
+                                    null,
+                                    '@pelaajanimi'
+                                ),
+                                '.'
+                            ),
+                            React.createElement(
+                                Change,
+                                null,
+                                'Lis\xE4tty ',
+                                React.createElement(
+                                    'code',
+                                    null,
+                                    '/s\xE4\xE4nn\xF6t'
+                                ),
+                                ' komento.'
+                            )
+                        ),
+                        React.createElement(Dated, { date: '3.6.2020' }),
+                        React.createElement(
+                            'ul',
+                            null,
+                            React.createElement(
+                                Change,
+                                null,
+                                'Entity Activation Range nostettu.'
+                            ),
+                            React.createElement(
+                                Change,
+                                null,
+                                'Villagerin tradet pit\xE4isi nyt restockaa nopeammin.'
+                            ),
+                            React.createElement(
+                                Change,
+                                null,
+                                'Fixattu ongelma, jossa pelaajat satunnaisesti j\xE4iv\xE4t jumiin chunkille.'
+                            )
+                        ),
+                        React.createElement(Dated, { date: '1.6.2020' }),
+                        React.createElement(
+                            'ul',
+                            null,
+                            React.createElement(
+                                Change,
+                                null,
+                                'Mobien tracking range on default.'
+                            ),
+                            React.createElement(
+                                Change,
+                                null,
+                                'Nether-portaalista voi nyt kuljettaa mobeja.'
+                            ),
+                            React.createElement(
+                                Change,
+                                null,
+                                'Lumousp\xF6yt\xE4 ehdottaa nyt oikeat lumoukset.'
+                            ),
+                            React.createElement(
+                                Change,
+                                null,
+                                'Spam fishing problem solved.'
+                            ),
+                            React.createElement(
+                                Change,
+                                null,
+                                'Villagereiden t\xF6iden resettaus fixed.'
+                            ),
+                            React.createElement(
+                                Change,
+                                null,
+                                'Netherin katolle on taas mahdollista p\xE4\xE4st\xE4.'
+                            )
+                        )
+                    )
+                ),
+                React.createElement(
+                    Month,
+                    { month: 'toukokuu2020', btntext: 'Toukokuu 2020' },
+                    React.createElement(
+                        Body,
+                        { month: 'toukokuu2020' },
+                        React.createElement(Dated, { date: '31.5.2020' }),
+                        React.createElement(
+                            'ul',
+                            null,
+                            React.createElement(
+                                Change,
+                                null,
+                                'Lis\xE4tty info voteen, ett\xE4 siit\xE4 saa rahaa.'
+                            )
+                        ),
+                        React.createElement(Dated, { date: '15.5.2020' }),
+                        React.createElement(
+                            'ul',
+                            null,
+                            React.createElement(
+                                Change,
+                                null,
+                                'Y\xF6 kelautuu nopeammin. Mit\xE4 useampi nukkuu, sit\xE4 nopeampi y\xF6.'
+                            )
+                        ),
+                        React.createElement(Dated, { date: '14.5.2020' }),
+                        React.createElement(
+                            'ul',
+                            null,
+                            React.createElement(
+                                Change,
+                                null,
+                                'Lis\xE4tty komento ',
+                                React.createElement(
+                                    'code',
+                                    null,
+                                    '/votestreak [nimi]'
+                                ),
+                                '. Ilman nime\xE4 n\xE4kee oman voteputken.'
+                            )
+                        ),
+                        React.createElement(Dated, { date: '11.5.2020' }),
+                        React.createElement(
+                            'ul',
+                            null,
+                            React.createElement(
+                                Change,
+                                null,
+                                React.createElement(
+                                    'code',
+                                    null,
+                                    '/discord'
+                                ),
+                                ' komento korjattu'
+                            ),
+                            React.createElement(
+                                Change,
+                                null,
+                                'Voten m\xE4\xE4r\xE4 pienennetty 75 -> 50 ja lis\xE4ksi tehty voteputket'
+                            )
+                        )
+                    )
+                ),
+                React.createElement(
+                    Month,
+                    { month: 'huhtikuu2020', btntext: 'Huhtikuu 2020' },
+                    React.createElement(
+                        Body,
+                        { month: 'huhtikuu2020' },
+                        React.createElement(
+                            'p',
+                            null,
+                            'Mit\xE4\xE4n ei tapahtunut.'
+                        )
+                    )
+                ),
+                React.createElement(
+                    Month,
                     { month: 'maaliskuu2020', btntext: 'Maaliskuu 2020' },
                     React.createElement(
                         Body,
-                        { month: 'maaliskuu2020', showing: true },
+                        { month: 'maaliskuu2020' },
                         React.createElement(Dated, { date: '27.3.2020' }),
                         React.createElement(
                             'ul',
@@ -129,7 +440,12 @@ var Changelog = function (_React$Component3) {
                             React.createElement(
                                 Change,
                                 null,
-                                'Lis\xE4tty seuraavat komennot: /j\xF6ms /retu /tank /ash'
+                                'Lis\xE4tty seuraavat komennot: ',
+                                React.createElement(
+                                    'code',
+                                    null,
+                                    '/j\xF6ms /retu /tank /ash'
+                                )
                             )
                         ),
                         React.createElement(Dated, { date: '22.3.2020' }),
@@ -144,7 +460,12 @@ var Changelog = function (_React$Component3) {
                             React.createElement(
                                 Change,
                                 null,
-                                '/vote ei avaa en\xE4\xE4 valikkoa. Chattiin tulee molemmat linkit.'
+                                React.createElement(
+                                    'code',
+                                    null,
+                                    '/vote'
+                                ),
+                                ' ei avaa en\xE4\xE4 valikkoa. Chattiin tulee molemmat linkit.'
                             )
                         ),
                         React.createElement(Dated, { date: '18.3.2020' }),
@@ -154,7 +475,12 @@ var Changelog = function (_React$Component3) {
                             React.createElement(
                                 Change,
                                 null,
-                                'lis\xE4tty uusia shortcutkomentoja /nax, /nubbe, /skidaddleskidoodle [/nou, /reverse, /unoreverse]'
+                                'lis\xE4tty uusia shortcutkomentoja ',
+                                React.createElement(
+                                    'code',
+                                    null,
+                                    '/nax /nubbe /skidaddleskidoodle [/nou /reverse /unoreverse]'
+                                )
                             )
                         ),
                         React.createElement(Dated, { date: '12.3.2020' }),
@@ -174,7 +500,13 @@ var Changelog = function (_React$Component3) {
                             React.createElement(
                                 Change,
                                 null,
-                                'Uusi komento /alue. N\xE4ytt\xE4\xE4 alueen nimen.'
+                                'Uusi komento ',
+                                React.createElement(
+                                    'code',
+                                    null,
+                                    '/alue'
+                                ),
+                                '. N\xE4ytt\xE4\xE4 alueen nimen.'
                             )
                         )
                     )
@@ -192,12 +524,22 @@ var Changelog = function (_React$Component3) {
                             React.createElement(
                                 Change,
                                 null,
-                                '/radio toimii taas'
+                                React.createElement(
+                                    'code',
+                                    null,
+                                    '/radio'
+                                ),
+                                ' toimii taas'
                             ),
                             React.createElement(
                                 Change,
                                 null,
-                                'Uusi komento /music'
+                                'Uusi komento ',
+                                React.createElement(
+                                    'code',
+                                    null,
+                                    '/music'
+                                )
                             ),
                             React.createElement(
                                 Change,
@@ -230,7 +572,12 @@ var Changelog = function (_React$Component3) {
                             React.createElement(
                                 Change,
                                 null,
-                                '/tk tuotu takaisin'
+                                React.createElement(
+                                    'code',
+                                    null,
+                                    '/tk'
+                                ),
+                                ' tuotu takaisin'
                             )
                         ),
                         React.createElement(Dated, { date: '13.1.2020' }),
@@ -258,7 +605,31 @@ var Changelog = function (_React$Component3) {
                             React.createElement(
                                 Change,
                                 null,
-                                'Lis\xE4tty /ignore (/ignore add nimi, /ignore list, /ignore remove nimi)'
+                                'Lis\xE4tty ',
+                                React.createElement(
+                                    'code',
+                                    null,
+                                    '/ignore'
+                                ),
+                                ' (',
+                                React.createElement(
+                                    'code',
+                                    null,
+                                    '/ignore add <nimi>'
+                                ),
+                                ', ',
+                                React.createElement(
+                                    'code',
+                                    null,
+                                    '/ignore list'
+                                ),
+                                ', ',
+                                React.createElement(
+                                    'code',
+                                    null,
+                                    '/ignore remove <nimi>'
+                                ),
+                                ')'
                             )
                         ),
                         React.createElement(Dated, { date: '11.12.2019' }),
@@ -394,7 +765,12 @@ var Changelog = function (_React$Component3) {
                             React.createElement(
                                 Change,
                                 null,
-                                '/sit tuotu takaisin'
+                                React.createElement(
+                                    'code',
+                                    null,
+                                    '/sit'
+                                ),
+                                ' tuotu takaisin'
                             )
                         ),
                         React.createElement(Dated, { date: '26.10.2019' }),
@@ -404,7 +780,12 @@ var Changelog = function (_React$Component3) {
                             React.createElement(
                                 Change,
                                 null,
-                                '/vote toimii taas'
+                                React.createElement(
+                                    'code',
+                                    null,
+                                    '/vote'
+                                ),
+                                ' toimii taas'
                             ),
                             React.createElement(
                                 Change,
@@ -419,22 +800,43 @@ var Changelog = function (_React$Component3) {
                             React.createElement(
                                 Change,
                                 null,
-                                '/nime\xE4 komento lis\xE4tty palvelimelle'
+                                React.createElement(
+                                    'code',
+                                    null,
+                                    '/nime\xE4'
+                                ),
+                                ' komento lis\xE4tty palvelimelle'
                             ),
                             React.createElement(
                                 Change,
                                 null,
-                                'Lis\xE4tty yll\xE4pidolle /setsign'
+                                'Lis\xE4tty yll\xE4pidolle ',
+                                React.createElement(
+                                    'code',
+                                    null,
+                                    '/setsign'
+                                )
                             ),
                             React.createElement(
                                 Change,
                                 null,
-                                'Korjattu viestibugi /nick player nick -komennossa (koskien yll\xE4pitoa)'
+                                'Korjattu viestibugi ',
+                                React.createElement(
+                                    'code',
+                                    null,
+                                    '/nick player nick'
+                                ),
+                                ' -komennossa (koskien yll\xE4pitoa)'
                             ),
                             React.createElement(
                                 Change,
                                 null,
-                                '/baltop korjattu'
+                                React.createElement(
+                                    'code',
+                                    null,
+                                    '/baltop'
+                                ),
+                                ' korjattu'
                             )
                         )
                     )
@@ -452,7 +854,13 @@ var Changelog = function (_React$Component3) {
                             React.createElement(
                                 Change,
                                 null,
-                                'Tpa:n /back fixattu oikeiden pelaajien sijaintiin'
+                                'Tpa:n ',
+                                React.createElement(
+                                    'code',
+                                    null,
+                                    '/back'
+                                ),
+                                ' fixattu oikeiden pelaajien sijaintiin'
                             ),
                             React.createElement(
                                 Change,
@@ -467,7 +875,19 @@ var Changelog = function (_React$Component3) {
                             React.createElement(
                                 Change,
                                 null,
-                                'Tp:n ja /spawn komennon /back tallentaa nyt sijainnin'
+                                'Tp:n ja ',
+                                React.createElement(
+                                    'code',
+                                    null,
+                                    '/spawn'
+                                ),
+                                ' komennon ',
+                                React.createElement(
+                                    'code',
+                                    null,
+                                    '/back'
+                                ),
+                                ' tallentaa nyt sijainnin'
                             )
                         ),
                         React.createElement(Dated, { date: '21.09.2019' }),
@@ -477,7 +897,18 @@ var Changelog = function (_React$Component3) {
                             React.createElement(
                                 Change,
                                 null,
-                                '/kms ja /kys lis\xE4tty'
+                                React.createElement(
+                                    'code',
+                                    null,
+                                    '/kms'
+                                ),
+                                ' ja ',
+                                React.createElement(
+                                    'code',
+                                    null,
+                                    '/kys'
+                                ),
+                                ' lis\xE4tty'
                             ),
                             React.createElement(
                                 Change,
@@ -530,7 +961,13 @@ var Changelog = function (_React$Component3) {
                             React.createElement(
                                 Change,
                                 null,
-                                'Lis\xE4tty automaattinen restart (yp k\xE4ytt\xE4k\xE4\xE4 komentoa /restarter:restart)'
+                                'Lis\xE4tty automaattinen restart (yp k\xE4ytt\xE4k\xE4\xE4 komentoa ',
+                                React.createElement(
+                                    'code',
+                                    null,
+                                    '/restarter:restart'
+                                ),
+                                ')'
                             ),
                             React.createElement(
                                 Change,
@@ -545,7 +982,12 @@ var Changelog = function (_React$Component3) {
                             React.createElement(
                                 Change,
                                 null,
-                                'Operaattorista yl\xF6sp\xE4in oikat /player kill nimi'
+                                'Operaattorista yl\xF6sp\xE4in oikat ',
+                                React.createElement(
+                                    'code',
+                                    null,
+                                    '/player kill <nimi>'
+                                )
                             )
                         ),
                         React.createElement(Dated, { date: '16.08.2019' }),
@@ -555,7 +997,12 @@ var Changelog = function (_React$Component3) {
                             React.createElement(
                                 Change,
                                 null,
-                                '/rtp toimii, aiempaa nopeampi ja ei mene veden alle'
+                                React.createElement(
+                                    'code',
+                                    null,
+                                    '/rtp'
+                                ),
+                                ' toimii, aiempaa nopeampi ja ei mene veden alle'
                             )
                         ),
                         React.createElement(Dated, { date: '13.08.2019' }),
@@ -575,7 +1022,12 @@ var Changelog = function (_React$Component3) {
                             React.createElement(
                                 Change,
                                 null,
-                                '/rtp tehostettu'
+                                React.createElement(
+                                    'code',
+                                    null,
+                                    '/rtp'
+                                ),
+                                ' tehostettu'
                             ),
                             React.createElement(
                                 Change,

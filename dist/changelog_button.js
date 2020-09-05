@@ -32,5 +32,38 @@ var ChangeLogButton = function (_React$Component) {
     return ChangeLogButton;
 }(React.Component);
 
+var VoteLinks = function VoteLinks() {
+    return React.createElement(
+        React.Fragment,
+        null,
+        React.createElement(
+            "h5",
+            { "class": "card-title" },
+            React.createElement("i", { "class": "fas fa-poll-h card-title-icon" }),
+            "\xC4\xE4nest\xE4minen"
+        ),
+        React.createElement(
+            "p",
+            null,
+            React.createElement(
+                "a",
+                { href: "https://minecraft-mp.com/server/194896/vote/", target: "_blank", className: "btn btn-outline-light kara-btn", role: "button" },
+                "\xC4\xE4nestyslinkki 1"
+            )
+        ),
+        React.createElement(
+            "p",
+            null,
+            React.createElement(
+                "a",
+                { href: "https://topg.org/Minecraft/in-515100", target: "_blank", className: "btn btn-outline-light kara-btn", role: "button" },
+                "\xC4\xE4nestyslinkki 2"
+            )
+        )
+    );
+};
+
 var div = document.querySelector('#changelog_button');
+var vote = document.querySelector('#votecontainer');
 ReactDOM.render(React.createElement(ChangeLogButton, null), div);
+ReactDOM.render(React.createElement(VoteLinks, null), vote);

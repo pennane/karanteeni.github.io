@@ -416,7 +416,7 @@ var SisukasParantuva = function (_React$Component11) {
                             CommandRow,
                             null,
                             React.createElement(Command, { info: true, title: "Taikamatto, 5x5 kokoinen lasimatto allasi, jolla voit leijua ilmassa, sek\xE4 lent\xE4\xE4.", command: "/mc" }),
-                            React.createElement(Command, { info: false, command: "/mc design" })
+                            React.createElement(Command, { info: true, title: "Suunnittele oma taikamattosi!", command: "/mc design" })
                         ),
                         React.createElement(
                             CommandRow,
@@ -427,7 +427,6 @@ var SisukasParantuva = function (_React$Component11) {
                         React.createElement(
                             CommandRow,
                             null,
-                            React.createElement(Command, { info: true, title: "\xC4\xE4nestys + / - rankaisuista", command: "/+ & /-", disabled: true }),
                             React.createElement(Command, { info: false, command: "/mc light", disabled: true })
                         )
                     ),
@@ -457,20 +456,14 @@ var SisukasParantuva = function (_React$Component11) {
                         React.createElement(
                             CommandRow,
                             null,
-                            React.createElement(Command, { info: false, command: "/jump", disabled: true }),
-                            React.createElement(Command, { info: false, command: "/mc tools", disabled: true })
-                        ),
-                        React.createElement(
-                            CommandRow,
-                            null,
                             React.createElement(Command, { info: true, title: "Nimen t\xE4ytyy olla samankaltainen Minecraft nimesi kanssa tunnistautumisen vuoksi.", command: "/nick" }),
-                            React.createElement(Command, { info: true, title: "Voit aloittaa \xE4\xE4nestyksen pelaajan hiljent\xE4mist\xE4 (20min) (/rankaise votemute) tai pelaajan potkimista varten (/rankaise kick).", command: "/rankaise", disabled: true })
+                            React.createElement(Command, { info: true, title: "Voit teleporttaa koordinaatteihin.", command: "/tp <x> <y> <z>" })
                         ),
                         React.createElement(
                             CommandRow,
                             null,
                             React.createElement(Command, { info: true, title: "Tarvitset pelaajan p\xE4\xE4n, jonka voit mm. craftata (kts. Custom Reseptit). Voit muuttaa p\xE4\xE4n kenen tahansa p\xE4\xE4ksi.", command: "/skull", disabled: true }),
-                            React.createElement(Command, { info: false })
+                            React.createElement(Command, { info: false, command: "/feed" })
                         )
                     ),
                     React.createElement(
@@ -528,13 +521,13 @@ var ImmuuniParantaja = function (_React$Component12) {
                         React.createElement(
                             CommandRow,
                             null,
-                            React.createElement(Command, { info: true, title: "Aseta spawner maahan kun suoritat komentoa.", command: "/spawner" }),
-                            React.createElement(Command, { info: false, command: "/tp" })
+                            React.createElement(Command, { info: true, title: "Ota spawner k\xE4teen kun suoritat komentoa.", command: "/spawner" }),
+                            React.createElement(Command, { info: false, command: "/tp <pelaaja>" })
                         ),
                         React.createElement(
                             CommandRow,
                             null,
-                            React.createElement(Command, { info: false, command: "/tptoggle" }),
+                            React.createElement(Command, { info: true, title: "Est\xE4\xE4 pelaajien teleporttipyynn\xF6t samantasoisilta ja alemmilta.", command: "/tptoggle" }),
                             React.createElement(Command, { info: false })
                         )
                     ),
@@ -564,14 +557,8 @@ var ImmuuniParantaja = function (_React$Component12) {
                         React.createElement(
                             CommandRow,
                             null,
-                            React.createElement(Command, { info: false, command: "/jail", disabled: true }),
-                            React.createElement(Command, { info: false, command: "/kick", disabled: true })
-                        ),
-                        React.createElement(
-                            CommandRow,
-                            null,
-                            React.createElement(Command, { info: false, command: "/mute", disabled: true }),
-                            React.createElement(Command, { info: false })
+                            React.createElement(Command, { info: false, command: "/kick", disabled: true }),
+                            React.createElement(Command, { info: false, command: "/mute", disabled: true })
                         )
                     ),
                     React.createElement(

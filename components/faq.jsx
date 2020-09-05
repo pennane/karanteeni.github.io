@@ -98,7 +98,39 @@ class CommonQuestions extends React.Component {
                         Maailma nollataan yleensä noin puolen vuoden välein, mutta ei tapahdu automaationa. Yleensä maailman nollaus myös tähdätään seuraavan
                         Minecraftin suuren versiopäivityksen kohdille.<br/><br/>
                         
-                        Nether ja End sitä vastoin nollataan kerran kuukaudessa, yleensä joka kuukauden alussa.
+                        Nether tulevaisuudessa ei tule nollautumaan 1.16 päivityksen myötä. End nollataan kerran kolmessa kuukaudessa.
+                    </Answer>
+                </Card>
+
+
+                <Card>
+                    <Question id='yle8' target='ylecol8'>
+                        Mikä säilyy maailman nollauksen yhteydessä?
+                    </Question>
+                    <Answer id='yle8' target='ylecol8'>
+                        Maailman nollauksessa eli "mapresetissa" kaikki aloittavat samalta viivalta. Tämä tarkoittaa sitä, että pelaajien rahat, inventory
+                        ja koko kartta nollataan maisemanvaihdon vuoksi, jolloin kaikki joutuvat aloittamaan alusta. Peliaika on ainut asia, joka säilyy.
+                    </Answer>
+                </Card>
+
+
+                <Card>
+                    <Question id='yle9' target='ylecol9'>
+                        Kuinka voin lahjoittaa palvelimelle?
+                    </Question>
+                    <Answer id='yle9' target='ylecol9'>
+                        Koska Karanteenissa ei ole käytössä vippejä, vaan kaikki perustuu peliaikaan, voit tehdä vapaamuotoisen lahjoituksen mm. PayPalilla. Tarkemmat
+                        ohjeet löydät <a id="link" href="/lahjoitus" target="blank">täältä</a>.
+                    </Answer>
+                </Card>
+
+
+                <Card>
+                    <Question id='yle10' target='ylecol10'>
+                        Mitä teen jos tarvitsen ylläpidon apua, mutta he eivät ole juuri nyt paikalla?
+                    </Question>
+                    <Answer id='yle10' target='ylecol10'>
+                        Voit liittyä Karanteenin <a id="link" href="https://discord.gg/dxCtuY7">Discord</a> -palvelimelle ja pyytää apua luomalla tiketin #apua kanavalta.
                     </Answer>
                 </Card>
 
@@ -120,8 +152,8 @@ class ProtectionQuestions extends React.Component {
                         Miten voin suojata alueeni?
                     </Question>
                     <Answer id='prot1' target='protcol1'>
-                        Ylläpito suojaa alueen ja suojaukseen vaaditaan talon alku. Mikäli aiot luoda kylän, voit päättää alueelle nimen. Warpin kylälle
-                        saa vasta, kun kylällä on 15 asukasta. <br/><br/>
+                        Ylläpito suojaa alueen ja suojaukseen vaaditaan talon alku. Huomaathan, että talosi täytyy olla vähintään sadan (100) blockin päässä
+                        lähimmästä talosta. Mikäli aiot luoda kylän, voit päättää alueelle nimen. Warpin kylälle saa vasta, kun kylällä on 15 asukasta. <br/><br/>
 
                         Netheriin ja Endiin ei pääsääntöisesti suojata alueita.
                     </Answer>
@@ -133,7 +165,7 @@ class ProtectionQuestions extends React.Component {
                         Apua! Taloani on grieffattu!
                     </Question>
                     <Answer id='prot2' target='protcol2'>
-                        Ei hätää. Pääset Karanteenin Discordiin /discord komennolla, tai voit nykäistä jo paikalla olevaa ylläpitäjää hihasta.
+                        Ei hätää. Pääset Karanteenin Discordiin <code>/discord</code> komennolla, tai voit nykäistä jo paikalla olevaa ylläpitäjää hihasta.
                         Joka tapauksessa saat grieffatun talosi kuntoon, sekä tavarat takaisin. Grieffaaja sitä vastoin saa porttikiellon palvelimelle.
                     </Answer>
                 </Card>
@@ -144,7 +176,7 @@ class ProtectionQuestions extends React.Component {
                         Kuinka annan kaverilleni oikeudet alueeseen?
                     </Question>
                     <Answer id='prot3' target='protcol3'>
-                        Oikeudet alueeseen voit antaa komennolla <code>/trust suojauksen_nimi pelaajan_nimi</code> seisten suojauksen sisällä.
+                        Oikeudet alueeseen voit antaa komennolla <code>/trust &lt;suojauksen_nimi&gt; &lt;pelaajan_nimi&gt;</code> seisten suojauksen sisällä.
                         Suojauksen nimen saat selville komennolla <code>/alue</code> kun seisot sen päällä.
                     </Answer>
                 </Card>
@@ -155,7 +187,7 @@ class ProtectionQuestions extends React.Component {
                         Kuinka annan kaverilleni oikeudet chesteihin ja uuneihin?
                     </Question>
                     <Answer id='prot4' target='protcol4'>
-                        Voit antaa oikeudet kyseisiin blockeihin katsomalla blockia ja kirjoittamalla komennon <code>/+oikeudet pelaajan_nimi</code>.
+                        Voit antaa oikeudet kyseisiin blockeihin katsomalla blockia ja kirjoittamalla komennon <code>/+oikeudet &lt;pelaajan_nimi&gt;</code>.
                         Tämän jälkeen kaverillasi on oikeudet avata kyseinen arkku. Komento toimii myös muihin container blockeihin.
                     </Answer>
                 </Card>
@@ -192,13 +224,25 @@ class EconomyQuestions extends React.Component {
                         näin arkkukauppasi on valmis.
                     </Answer>
                 </Card>
-                
+
 
                 <Card>
                     <Question id='eco2' target='ecocol2'>
-                        Mitä valuuttaa palvelin käyttää ja kuinka saan sitä?
+                        Kuinka voin poistaa arkkukaupan?
                     </Question>
                     <Answer id='eco2' target='ecocol2'>
+                        Voit poistaa arkkukaupan hajottamalla kyseisen arkun tai katsomalla arkkukauppaa kohti ja suorittamalla <code>/qs remove</code>.
+                        <br/><br/>
+                        Muita arkkukaupan komentoja ovat mm. <code>/qs price &lt;hinta&gt;</code>
+                    </Answer>
+                </Card>
+                
+
+                <Card>
+                    <Question id='eco3' target='ecocol3'>
+                        Mitä valuuttaa palvelin käyttää ja kuinka saan sitä?
+                    </Question>
+                    <Answer id='eco3' target='ecocol3'>
                         Palvelimella on rahavaluuttana pennit. Pennejä saat hankkimalla uutta peliaikaa, sekä palvelinta äänestämällä <code>/vote.</code>
                         Jokainen äänestykerta on 50 pennin arvoinen. <br/>
                         Voit myös myydä sekä ostaa tavaraa käyttämällä arkkukauppoja. Spawnilla on kauppa (<code>/warp kauppa</code>), jonne voit myydä oreista tehtyjä
@@ -247,6 +291,17 @@ class HomeQuestions extends React.Component {
                     <Answer id='home3' target='homecol3'>
                         Saat, mutta emme suosittele. Nether ja End resetoidaan kuukauden välein, mikä voi aiheuttaa kodin korruptoitumista ja sinun kuoleman.
                         Tämä tarkoittaa siis sitä, että saatat kuolla jos käytät kotia resetoinnin jälkeen. Ylläpito ei ole velvollinen palauttamaan tavaroitasi.
+                    </Answer>
+                </Card>
+
+
+                <Card>
+                    <Question id='home4' target='homecol4'>
+                        Saanko asettaa kodin toisen pelaajan taloon?
+                    </Question>
+                    <Answer id='home4' target='homecol4'>
+                        Mikäli toiselta pelaajalta on lupa asettaa taloon koti, on tämä sallittua. Kodin asettaminen muussa tapauksessa luetaan häirinnäksi ja
+                        on varoituksen arvoinen. Toistuvissa tapauksissa rangaistuksia tiukennetaan.
                     </Answer>
                 </Card>
 

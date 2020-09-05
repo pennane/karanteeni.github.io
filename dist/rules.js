@@ -80,12 +80,12 @@ var CommonRules = function (_React$Component) {
                             React.createElement(
                                 Heading,
                                 null,
-                                "Optifine"
+                                "Optifine & Sodium"
                             ),
                             React.createElement(
                                 Description,
                                 null,
-                                "Optifine, ja Optifinen kaltaiset suoritustehoa parantavat modit ovat sallittuja."
+                                "Optifine, ja Sodiumin kaltaiset suoritustehoa parantavat modit ovat sallittuja."
                             )
                         )
                     )
@@ -179,7 +179,18 @@ var CommonRules = function (_React$Component) {
                             React.createElement(
                                 Description,
                                 null,
-                                "Palvelinta rasittavien ja lagittavien redstonerakennelmien teko on kielletty (esim. loputtomiin k\xE4yv\xE4t kellot, 0-tick farmit). Lis\xE4\xE4 rakennelmaan sulkemisvipu ja pid\xE4 laite suljettuna, jos se ei ole k\xE4yt\xF6ss\xE4."
+                                "Palvelinta rasittavien ja lagittavien redstonerakennelmien teko on kielletty (esim. loputtomiin k\xE4yv\xE4t kellot, 0-tick farmit). Lis\xE4\xE4 rakennelmaan sulkemisvipu ja pid\xE4 laite suljettuna, jos se ei ole k\xE4yt\xF6ss\xE4. ",
+                                React.createElement("br", null),
+                                React.createElement("br", null),
+                                "Palvelimen lagittamiseen kuuluu my\xF6s entiteetit (hostile mobit, lemmikit, kyl\xE4l\xE4iset).",
+                                React.createElement(
+                                    "strong",
+                                    null,
+                                    "\xA0Yll\xE4pidolla on oikeus tappaa suojauksestasi el\xE4imi\xE4, mik\xE4li ne kuormittavat palvelinta."
+                                ),
+                                " ",
+                                React.createElement("br", null),
+                                "T\xE4m\xE4n lis\xE4ksi teleporttailu matrixin ulkopuolelle (esimerkiksi koordinaatit yli Endin ja Netherin generointirajan, sek\xE4 mapin ulkopuolelle jonka rajat ovat +-10k) on kielletty\xE4. Palvelimen tahallisesta lagittamisesta seuraa aina ikuinen porttikielto."
                             )
                         )
                     )
@@ -384,7 +395,7 @@ var AdditionalRules = function (_React$Component3) {
                             React.createElement(
                                 Description,
                                 null,
-                                "Toisten pelaajien rakennelmien tuhoaminen ja omaisuuden varastaminen on kielletty."
+                                "Toisten pelaajien rakennelmien tuhoaminen ja omaisuuden varastaminen on kielletty. Mik\xE4li tiell\xE4si on rakennus, pyyd\xE4 yll\xE4pitoa rikkomaan tai siirt\xE4m\xE4\xE4n sit\xE4."
                             )
                         )
                     )
@@ -430,7 +441,7 @@ var AdditionalRules = function (_React$Component3) {
                             React.createElement(
                                 Description,
                                 null,
-                                "Maaston ja maiseman turmeleminen on kielletty\xE4. Puut on kasvastettava takaisin, hiekan hakkuu ei saa j\xE4tt\xE4\xE4 rumia j\xE4lki\xE4 ymp\xE4rist\xF6\xF6n, turhien ep\xE4esteettisten rakennelmien rakentaminen on kielletty (esim. 1x1 dirt tornit)."
+                                "Maaston ja maiseman turmeleminen on kielletty\xE4. Puut on kasvatettava takaisin, hiekan hakkuu ei saa j\xE4tt\xE4\xE4 rumia j\xE4lki\xE4 ymp\xE4rist\xF6\xF6n, turhien ep\xE4esteettisten rakennelmien rakentaminen on kielletty (esim. 1x1 dirt tornit)."
                             )
                         )
                     )
@@ -453,7 +464,17 @@ var AdditionalRules = function (_React$Component3) {
                             React.createElement(
                                 Description,
                                 null,
-                                "Villager kyli\xE4 ei saa grieffata. Kylist\xE4 ei saa vied\xE4 s\xE4nkyj\xE4 tai workstationeja. Kylien peltoja saa k\xE4ytt\xE4\xE4, kunhan ne muistaa t\xE4ytt\xE4\xE4 takaisin. Kylien hein\xE4paalut, sek\xE4 kellot saa ottaa itselleen. Kyl\xE4n voi ottaa kodikseen, jolloin kyli\xE4 koskevat s\xE4\xE4nn\xF6t eiv\xE4t en\xE4\xE4 p\xE4de."
+                                "Villager kyli\xE4 ei saa grieffata. Kylist\xE4 ei saa vied\xE4 s\xE4nkyj\xE4 tai ",
+                                React.createElement(
+                                    Tooltip,
+                                    { work: true },
+                                    React.createElement(
+                                        "strong",
+                                        null,
+                                        "workstationeja."
+                                    )
+                                ),
+                                " Kylien peltoja saa k\xE4ytt\xE4\xE4, kunhan ne muistaa t\xE4ytt\xE4\xE4 takaisin. Kylien hein\xE4paalut, sek\xE4 kellot saa ottaa itselleen. Kyl\xE4n voi ottaa kodikseen, jolloin kyli\xE4 koskevat s\xE4\xE4nn\xF6t eiv\xE4t en\xE4\xE4 p\xE4de."
                             )
                         )
                     )
@@ -487,19 +508,19 @@ var AdditionalRules = function (_React$Component3) {
                     React.createElement(
                         Rule,
                         null,
-                        React.createElement(Icon, { icon: "denied" }),
+                        React.createElement(Icon, { icon: "notice" }),
                         React.createElement(
                             Content,
                             null,
                             React.createElement(
                                 Heading,
                                 null,
-                                "Pelaajakylien mainostaminen on kielletty"
+                                "Karanteeni on poliittisesti neutraali palvelin"
                             ),
                             React.createElement(
                                 Description,
                                 null,
-                                "Kyl\xE4n tyrkytt\xE4minen toisille pelaajille on kielletty. Tarkennus tulossa."
+                                "T\xE4m\xE4 tarkoittaa sit\xE4, ett\xE4 chatissa ja palvelimella pyrit\xE4\xE4n v\xE4ltt\xE4m\xE4\xE4n poliittisia aatteita, symboleita tai ideologioita. My\xF6s yleist\xE4 keskustelua politiikasta pyrit\xE4\xE4n v\xE4ltt\xE4m\xE4\xE4n, koska se yleens\xE4 aiheuttaa v\xE4ittelyit\xE4 ja eripuraa."
                             )
                         )
                     )
@@ -509,6 +530,281 @@ var AdditionalRules = function (_React$Component3) {
     }]);
 
     return AdditionalRules;
+}(React.Component);
+
+var PlayerTownRules = function (_React$Component4) {
+    _inherits(PlayerTownRules, _React$Component4);
+
+    function PlayerTownRules() {
+        _classCallCheck(this, PlayerTownRules);
+
+        return _possibleConstructorReturn(this, (PlayerTownRules.__proto__ || Object.getPrototypeOf(PlayerTownRules)).apply(this, arguments));
+    }
+
+    _createClass(PlayerTownRules, [{
+        key: "render",
+        value: function render() {
+            return React.createElement(
+                React.Fragment,
+                null,
+                React.createElement(
+                    RuleContainer,
+                    null,
+                    React.createElement(
+                        Rule,
+                        null,
+                        React.createElement(Icon, { icon: "notice" }),
+                        React.createElement(
+                            Content,
+                            null,
+                            React.createElement(
+                                Heading,
+                                null,
+                                "Kyl\xE4n mainostaminen julkisesti"
+                            ),
+                            React.createElement(
+                                Description,
+                                null,
+                                "Kylien mainostus on sallittua, mutta jos pelaajat antavat siit\xE4 palautetta, t\xE4ytyy siin\xE4 hommassa rauhoittua. Pyynn\xF6n ohittamisesta seuraa varoitus. Pyynt\xF6\xE4 ei kuitenkaan saa tehd\xE4 syytt\xE4, kaikilla on oltava mahdollisuus saada pelaajia kyl\xE4\xE4ns\xE4."
+                            )
+                        )
+                    )
+                ),
+                React.createElement(
+                    RuleContainer,
+                    null,
+                    React.createElement(
+                        Rule,
+                        null,
+                        React.createElement(Icon, { icon: "denied" }),
+                        React.createElement(
+                            Content,
+                            null,
+                            React.createElement(
+                                Heading,
+                                null,
+                                "Kyl\xE4n mainostaminen yksityisesti"
+                            ),
+                            React.createElement(
+                                Description,
+                                null,
+                                "Kylien mainostus yksityisviestill\xE4 on kielletty\xE4. T\xE4ll\xE4 v\xE4lt\xE4mme sen, ett\xE4 joku kokee mainostuksen hy\xF6kk\xE4\xE4v\xE4n\xE4. Kyli\xE4 saa mainostaa julkisesti pit\xE4en sen rajoissa. (Kts. yll\xE4)"
+                            )
+                        )
+                    )
+                ),
+                React.createElement(
+                    RuleContainer,
+                    null,
+                    React.createElement(
+                        Rule,
+                        null,
+                        React.createElement(Icon, { icon: "denied" }),
+                        React.createElement(
+                            Content,
+                            null,
+                            React.createElement(
+                                Heading,
+                                null,
+                                "Copy & Paste viestit ovat kiellettyj\xE4"
+                            ),
+                            React.createElement(
+                                Description,
+                                null,
+                                "Copy Paste eli niin sanottu massapostaus on kielletty\xE4. Kukaan ei jaksa n\xE4hd\xE4 joka viides minuutti t\xE4ysin samaa viesti\xE4 kyl\xE4st\xE4si ja siit\xE4 mit\xE4 palveluita siell\xE4 on. Kokeile sen sijaan mainostaa kyl\xE4\xE4si yst\xE4v\xE4llisesti ja henkil\xF6kohtaisesti. Jos joku tarvitsee xp-farmia ja kyl\xE4ss\xE4si on sellainen, mainitse se ihmeess\xE4."
+                            )
+                        )
+                    )
+                ),
+                React.createElement(
+                    RuleContainer,
+                    null,
+                    React.createElement(
+                        Rule,
+                        null,
+                        React.createElement(Icon, { icon: "important" }),
+                        React.createElement(
+                            Content,
+                            null,
+                            React.createElement(
+                                Heading,
+                                null,
+                                "Mainosta kyl\xE4\xE4si spawnilla!"
+                            ),
+                            React.createElement(
+                                Description,
+                                null,
+                                "Jomelle voi yksityisviestill\xE4 laittaa 256x128 resoluutioisen kuvan, jossa mainostat omaa kyl\xE4\xE4si. Se laitetaan spawnille. Kyl\xE4ll\xE4 ",
+                                React.createElement(
+                                    "u",
+                                    null,
+                                    "on oltava warp"
+                                ),
+                                ", jotta mainoksesi laitetaan n\xE4kyviin!"
+                            )
+                        )
+                    )
+                ),
+                React.createElement(
+                    RuleContainer,
+                    null,
+                    React.createElement(
+                        Rule,
+                        null,
+                        React.createElement(Icon, { icon: "allowed" }),
+                        React.createElement(
+                            Content,
+                            null,
+                            React.createElement(
+                                Heading,
+                                null,
+                                "Xp-farmit ja /spawner"
+                            ),
+                            React.createElement(
+                                Description,
+                                null,
+                                "Kyliin on mahdollista muuttaa spesifi spawner, mutta spawner t\xE4ytyy palauttaa tai myyd\xE4 alkuper\xE4isess\xE4 mobissa takaisin."
+                            )
+                        )
+                    )
+                ),
+                React.createElement(
+                    RuleContainer,
+                    null,
+                    React.createElement(
+                        Rule,
+                        null,
+                        React.createElement(Icon, { icon: "notice" }),
+                        React.createElement(
+                            Content,
+                            null,
+                            React.createElement(
+                                Heading,
+                                null,
+                                "Kyl\xE4st\xE4 h\xE4\xE4t\xE4minen"
+                            ),
+                            React.createElement(
+                                Description,
+                                null,
+                                "Kyl\xE4n omistaja(t) voi(vat) h\xE4\xE4t\xE4\xE4 pelaajan s\xE4\xE4nt\xF6rikkomuksen seurauksena. Mik\xE4li kyl\xE4st\xE4 h\xE4\xE4det\xE4\xE4n henkil\xF6, tulee h\xE4nen tavaransa palauttaa. Mik\xE4li henkil\xF6 poistetaan kyl\xE4st\xE4 ilman, ett\xE4 tavaroita palautetaan asianmukaisessa ajassa, on h\xE4\xE4t\xE4j\xE4 rikkonut serverin s\xE4\xE4nt\xF6j\xE4 (varastaminen)."
+                            )
+                        )
+                    )
+                ),
+                React.createElement(
+                    RuleContainer,
+                    null,
+                    React.createElement(
+                        Rule,
+                        null,
+                        React.createElement(Icon, { icon: "important" }),
+                        React.createElement(
+                            Content,
+                            null,
+                            React.createElement(
+                                Heading,
+                                null,
+                                "Rakennusten purkaminen"
+                            ),
+                            React.createElement(
+                                Description,
+                                null,
+                                "Kyl\xE4n omistajilla on oikeus purkaa rakennuksia ",
+                                React.createElement(
+                                    "u",
+                                    null,
+                                    React.createElement(
+                                        "strong",
+                                        null,
+                                        "kyl\xE4ns\xE4 alueelta"
+                                    )
+                                ),
+                                ", antaen asukkaille asianmukaisessa ajassa ennen sit\xE4 ilmoituksen rakennusten purkamisesta (n. viikko). Mik\xE4li puretaan serverill\xE4 pelaamisen lopettaneen pelaajan talo, tulee h\xE4nen tavaransa siirt\xE4\xE4 talteen nimettyihin arkkuihin, jotta ne voidaan palauttaa h\xE4nelle h\xE4nen palatessa servulle. Mik\xE4li talo on pelaajan rakentama, tulee my\xF6s taloon k\xE4ytetyt materiaalit palauttaa."
+                            )
+                        )
+                    )
+                ),
+                React.createElement(
+                    RuleContainer,
+                    null,
+                    React.createElement(
+                        Rule,
+                        null,
+                        React.createElement(Icon, { icon: "important" }),
+                        React.createElement(
+                            Content,
+                            null,
+                            React.createElement(
+                                Heading,
+                                null,
+                                "Maksut / verotus"
+                            ),
+                            React.createElement(
+                                Description,
+                                null,
+                                "Kyl\xE4t voivat vaatia maksua pelaajilta, uhkauksena kyl\xE4st\xE4 h\xE4\xE4t\xF6. Pelaajilla ei ole kuitenkaan pakotetta maksaa maksuja, eik\xE4 heilt\xE4 oleteta sit\xE4. Mik\xE4li maksun saanut henkil\xF6 ei ole kyl\xE4n asukas saadessaan maksun, ei h\xE4nell\xE4 ole velvoitetta maksaa sit\xE4. Kuitenkin kyl\xE4n omistaja(t) voi(vat) ev\xE4t\xE4 h\xE4nelt\xE4 kyl\xE4\xE4n p\xE4\xE4syn jatkossa."
+                            )
+                        )
+                    )
+                ),
+                React.createElement(
+                    RuleContainer,
+                    null,
+                    React.createElement(
+                        Rule,
+                        null,
+                        React.createElement(Icon, { icon: "denied" }),
+                        React.createElement(
+                            Content,
+                            null,
+                            React.createElement(
+                                Heading,
+                                null,
+                                "Asumattomien asukkaiden lis\xE4\xE4minen on kielletty\xE4"
+                            ),
+                            React.createElement(
+                                Description,
+                                null,
+                                "Asukkaiden lis\xE4\xE4minen, jotka eiv\xE4t tule asumaan kyl\xE4ss\xE4 on ankarasti kielletty\xE4. T\xE4t\xE4 perustellaan sill\xE4, ett\xE4 kyl\xE4t eiv\xE4t n\xE4yt\xE4 isommilta, eiv\xE4tk\xE4 pienet kyl\xE4t saa warppia huijaamalla."
+                            )
+                        )
+                    )
+                )
+            );
+        }
+    }]);
+
+    return PlayerTownRules;
+}(React.Component);
+
+var Tooltip = function (_React$Component5) {
+    _inherits(Tooltip, _React$Component5);
+
+    function Tooltip() {
+        _classCallCheck(this, Tooltip);
+
+        return _possibleConstructorReturn(this, (Tooltip.__proto__ || Object.getPrototypeOf(Tooltip)).apply(this, arguments));
+    }
+
+    _createClass(Tooltip, [{
+        key: "render",
+        value: function render() {
+
+            var workstations = "Bed, Lectern, Composter, Grindstone, Blast Furnace, Smoker, Fletching Table, Cartography Table, Brewing Stand, Smithing Table, " + "Barrel, Loom, Stonecutter";
+
+            var work = this.props.work;
+
+            if (work) {
+                return React.createElement(
+                    "span",
+                    { "data-toggle": "tooltip", "data-placement": "top", title: workstations },
+                    this.props.children
+                );
+            }
+        }
+    }]);
+
+    return Tooltip;
 }(React.Component);
 
 var RuleContainer = function RuleContainer(props) {
@@ -612,3 +908,4 @@ var Icon = function Icon(props) {
 ReactDOM.render(React.createElement(CommonRules, null), document.getElementById('common'));
 ReactDOM.render(React.createElement(ChatRules, null), document.getElementById('behavior'));
 ReactDOM.render(React.createElement(AdditionalRules, null), document.getElementById('addon'));
+ReactDOM.render(React.createElement(PlayerTownRules, null), document.getElementById('playertown'));
