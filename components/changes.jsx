@@ -72,8 +72,57 @@ class Changelog extends React.Component {
             <div className='accordion text-left'>
 
 
+                <Month month='syyskuu2020' btntext='Syyskuu 2020'>
+                    <Body month='syyskuu2020' showing>
+                        <Dated date='3.9.2020'/>
+                        <ul>
+                            <Change>Päivitetty Jesari</Change>
+                        </ul>
+                        <Dated date='1.9.2020'/>
+                        <ul>
+                            <Change>Korjattu kääntäjässä bugi, joka rikkoi kääntäjän pelaajalla ollessa ei-tuettu kieli tietokannassa.</Change>
+                            <Change>Lisätty tapa tehdä lätäköitä.</Change>
+                        </ul>
+                    </Body>
+                </Month>
+
+
                 <Month month='elokuu2020' btntext='Elokuu 2020'>
-                    <Body month='elokuu2020' showing>
+                    <Body month='elokuu2020'>
+                        <Dated date='31.8.2020'/>
+                        <ul>
+                            <Change>Chat-värit on tullut takaisin rgb tuella.</Change>
+                            <Change>Parempi käyttäjien maininta chatissa.</Change>
+                            <Change>Fixattu bugi, jossa pelaajalla oli ei-tuettu kieli ja hajotti kääntäjän.</Change>
+                        </ul>
+                        <Dated date='30.8.2020'/>
+                        <ul>
+                            <Change>Builders wand on nyt palvelimella</Change>
+                        </ul>
+                        <Dated date='29.8.2020'/>
+                        <ul>
+                            <Change>Lisätty ylösalaisin oleva kieli.</Change>
+                            <Change>Päivitetty palvelin versioon 1.16.2!</Change>
+                            <Change>Nether ja End resetattu.</Change>
+                            <Change>Fixattu bugi, jossa kodin koordinaatti on negatiivinen ja jaollinen 16 =&gt; nakkaa virheen.</Change>
+                            <Change>Rankkien välimuisti päivittyy -&gt; jos rankup ja relog, niin rankki pysyy samana.</Change>
+                            <Change>Nettisivut päivitetty.</Change>
+                            <Change>Uusi tabin gradient.</Change>
+                            <Change><code>/music</code> on lisätty uudet Netherin musiikit.</Change>
+                            <Change><code>/music</code> kuuluvuutta on parannettu.</Change>
+                            <Change>Lisätty vanhat "koodit" takaisin palvelimelle.</Change>
+                            <Change>Lisätty ääniviestejä palvelimelle.</Change>
+                            <Change>Iron Golem pakottaa sinut pudottamaan housusi, kun lyö sinua.</Change>
+                            <Change>Kuolinviestit jakautuu nyt maailmojen välillä.</Change>
+                        </ul>
+                        <Dated date='15.8.2020'/>
+                        <ul>
+                            <Change>Lisätty 1.16.2 tuki</Change>
+                        </ul>
+                        <Dated date='13.8.2020'/>
+                        <ul>
+                            <Change>Korjattu vinkki Netherin ja Endin resettaamisesta</Change>
+                        </ul>
                         <Dated date='7.8.2020'/>
                         <ul>
                             <Change>Fixattu bugi yp-chatissa.</Change>

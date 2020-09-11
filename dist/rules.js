@@ -57,6 +57,29 @@ var CommonRules = function (_React$Component) {
                             React.createElement(
                                 Heading,
                                 null,
+                                "Bugien hyv\xE4ksik\xE4ytt\xF6 on kielletty\xE4"
+                            ),
+                            React.createElement(
+                                Description,
+                                null,
+                                "Bugien tai palvelinvirheiden hyv\xE4ksik\xE4ytt\xF6 on ankarasti kielletty\xE4. Mik\xE4li l\xF6yd\xE4t peli\xE4 rikkovan bugin tai virheen, voidaan sinua palkita peliajalla."
+                            )
+                        )
+                    )
+                ),
+                React.createElement(
+                    RuleContainer,
+                    null,
+                    React.createElement(
+                        Rule,
+                        null,
+                        React.createElement(Icon, { icon: "denied" }),
+                        React.createElement(
+                            Content,
+                            null,
+                            React.createElement(
+                                Heading,
+                                null,
                                 "Modit ovat kiellettyj\xE4"
                             ),
                             React.createElement(
@@ -80,12 +103,12 @@ var CommonRules = function (_React$Component) {
                             React.createElement(
                                 Heading,
                                 null,
-                                "Optifine & Sodium"
+                                "OptiFine & Sodium"
                             ),
                             React.createElement(
                                 Description,
                                 null,
-                                "Optifine, ja Sodiumin kaltaiset suoritustehoa parantavat modit ovat sallittuja."
+                                "OptiFinen ja Sodiumin kaltaiset suoritustehoa parantavat modit ovat sallittuja."
                             )
                         )
                     )
