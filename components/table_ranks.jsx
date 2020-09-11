@@ -1,6 +1,6 @@
 'use-strict';
 
-{/* Joo tuota... Note to self: Komennot pois propeista ja parannetaa koodin luettavuutta. */}
+{/* Joo tuota... Note to self: Komennot pois propeista ja parannetaa koodin luettavuutta. */ }
 
 class Tooltip extends React.Component {
     constructor(props) {
@@ -39,7 +39,7 @@ class Structure extends React.Component {
             name: this.props.name,
             time: this.props.time,
             color: this.props.color, /* c-rankinnimi */
-            bgColor: this.props.bgColor
+            bgColor: this.props.bgColor || ''
         }
     }
 
@@ -48,7 +48,7 @@ class Structure extends React.Component {
             <div className='col-sm'>
                 <div className="rank card">
                     <div className='rank-card-body'>
-                        <h5 className={this.state.color + 'card-title'}><span className={this.state.bgColor + 'rank-name-text'}>{this.props.name}</span> <span className='time'>({this.props.time})</span></h5>
+                        <h5 className={this.state.color + 'card-title'}><span className={this.state.bgColor + ' rank-name-text'}>{this.props.name}</span> <span className='time'>({this.props.time})</span></h5>
                         {this.props.children}
                     </div>
                 </div>
@@ -181,7 +181,7 @@ class ElotonRaihnas extends React.Component {
     render() {
         return (
             <div className='row'>
-                <Structure name='Eloton' time='0h' color='c-eloton ' bgColor='g-eloton '>
+                <Structure name='Eloton' time='0h' color='c-eloton '>
                     <Body>
                         <CommandRow>
                             <SetHome count='1' />
@@ -189,7 +189,7 @@ class ElotonRaihnas extends React.Component {
                         </CommandRow>
                     </Body>
                 </Structure>
-                <Structure name='Raihnas' time='5h' color='c-raihnas ' bgColor='g-raihnas '>
+                <Structure name='Raihnas' time='5h' color='c-raihnas '>
                     <Body>
                         <CommandRow>
                             <SetHome count='2' />
@@ -210,7 +210,7 @@ class SisukasParantuva extends React.Component {
     render() {
         return (
             <div className='row'>
-                <Structure name='Sisukas' time='1d' color='c-sisukas ' bgColor='g-sisukas '>
+                <Structure name='Sisukas' time='1d' color='c-sisukas '>
                     <Body>
                         <CommandRow>
                             <SetHome count='6' />
@@ -224,9 +224,6 @@ class SisukasParantuva extends React.Component {
                             <Command info={false} command='/enderchest' />
                             <Command info={false} command='/near' />
                         </CommandRow>
-                        <CommandRow>
-                            <Command info={false} command='/mc light' disabled />
-                        </CommandRow>
                     </Body>
                     <div class="rank-others">
                         <h5>Muuta:</h5>
@@ -234,7 +231,7 @@ class SisukasParantuva extends React.Component {
                     </div>
 
                 </Structure>
-                <Structure name='Parantuva' time='5d' color='c-parantuva ' bgColor='g-parantuva '>
+                <Structure name='Parantuva' time='5d' color='c-parantuva ' >
                     <Body>
                         <CommandRow>
                             <SetHome count='8' />
@@ -245,8 +242,8 @@ class SisukasParantuva extends React.Component {
                             <Command info title='Voit teleporttaa koordinaatteihin.' command='/tp <x> <y> <z>' />
                         </CommandRow>
                         <CommandRow>
-                            <Command info title='Tarvitset pelaajan pään, jonka voit mm. craftata (kts. Custom Reseptit). Voit muuttaa pään kenen tahansa pääksi.' command='/skull' disabled />
                             <Command info={false} command='/feed' />
+                            <Command info={false} />
                         </CommandRow>
                     </Body>
                     <div class="rank-others">
@@ -265,7 +262,7 @@ class ImmuuniParantaja extends React.Component {
     render() {
         return (
             <div class='row'>
-                <Structure name='Immuuni' time='10d' color='c-immuuni ' bgColor='g-immuuni '>
+                <Structure name='Immuuni' time='10d' color='c-immuuni ' >
                     <Body>
                         <CommandRow>
                             <SetHome count='12' />
@@ -290,15 +287,11 @@ class ImmuuniParantaja extends React.Component {
                     </div>
 
                 </Structure>
-                <Structure name='Parantaja' time='30d' color='c-parantaja ' bgColor='g-parantaja '>
+                <Structure name='Parantaja' time='30d' color='c-parantaja ' >
                     <Body>
                         <CommandRow>
                             <SetHome count='16' />
                             <Command info={false} command='/kit parantaja' disabled />
-                        </CommandRow>
-                        <CommandRow>
-                            <Command info={false} command='/kick' disabled />
-                            <Command info={false} command='/mute' disabled />
                         </CommandRow>
                     </Body>
                     <div class="rank-others">
@@ -317,7 +310,7 @@ class NekroKuolematon extends React.Component {
     render() {
         return (
             <div class='row'>
-                <Structure name='Nekromantikko' time='60d' color='c-nekromantikko ' bgColor='g-nekromantikko '>
+                <Structure name='Nekromantikko' time='60d' color='c-nekromantikko '>
                     <Body>
                         <CommandRow>
                             <SetHome count='18' />
@@ -334,7 +327,7 @@ class NekroKuolematon extends React.Component {
                     </div>
 
                 </Structure>
-                <Structure name='Kuolematon' time='100d' color='c-kuolematon ' bgColor='g-kuolematon '>
+                <Structure name='Kuolematon' time='100d' color='c-kuolematon ' >
                     <Body>
                         <CommandRow>
                             <SetHome count='18' />

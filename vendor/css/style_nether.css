@@ -125,6 +125,9 @@ code {
     font-weight: 500
 }
 
+.minecraftia {
+    font-family: 'Minecraftia' !important;
+}
 
 /* Identifierit End */
 
@@ -240,7 +243,7 @@ span.deprecated-content::before {
     transition: .2s;
     border-radius: .2rem;
     /*background: url('/../assets/images/crying_obsidian.png'); */
-    background-color: rgba(28,28,28,1);
+    background-color: rgba(28, 28, 28, 1);
     background-repeat: repeat-x;
     background-size: auto;
     transition: .2s ease-out;
@@ -425,9 +428,11 @@ span.deprecated-content::before {
     0% {
         transform: scaleY(0)
     }
+
     80% {
         transform: scaleY(1.1)
     }
+
     100% {
         transform: scaleY(1)
     }
@@ -706,7 +711,7 @@ p.no-upcoming {
     background-color: rgba(0, 0, 0, 1);
     font-weight: 600;
     letter-spacing: .03em;
-    box-shadow: 0px 3px 1px -2px rgba(0,0,0,0.2), 0px 2px 2px 0px rgba(0,0,0,0.14), 0px 1px 5px 0px rgba(0,0,0,0.12);
+    box-shadow: 0px 3px 1px -2px rgba(0, 0, 0, 0.2), 0px 2px 2px 0px rgba(0, 0, 0, 0.14), 0px 1px 5px 0px rgba(0, 0, 0, 0.12);
     border-radius: 4px;
 }
 
@@ -824,10 +829,8 @@ p.no-upcoming {
     margin: 0;
     padding: 0;
     font-family: 'inter', sans-serif;
-    font-weight: 500;
+    font-weight: 400;
     -webkit-font-smoothing: antialiased;
-    -webkit-text-fill-color: transparent !important;
-    -webkit-background-clip: text !important;
 }
 
 #rankit span.disabled {
@@ -984,47 +987,51 @@ h6 {
 }
 
 .c-eloton {
-    color: #fff !important
+    color: #9ba0ab !important
 }
 
 .c-raihnas {
-    color: #f55 !important
+    color: #e8543a !important
 }
 
 .c-sisukas {
-    color: #5f5 !important
+    color: #41cb34 !important
 }
 
 .c-parantuva {
-    color: #fa0 !important
+    color: #FF9F38 !important
 }
 
 .c-immuuni {
-    color: #5ff !important
+    color: #5794ff !important
 }
 
 .c-parantaja {
-    color: #ff5 !important
+    color: #faf200 !important
 }
 
 .c-nekromantikko {
-    color: #a0a !important
+    color: #ba8fff !important
 }
 
 .c-kuolematon {
-    color: #f5f !important
+    color: #ff61a8 !important
 }
 
 .omistaja {
-    color: #55f !important
+    color: #335FFF !important
 }
 
-.admop {
-    color: #f5f !important
+.admin {
+    color: #FF476C !important
+}
+
+.operator {
+    color: #DC3588 !important
 }
 
 .buildmod {
-    color: #a0a !important
+    color: #B922A3 !important
 }
 
 .tag::before {
@@ -1049,97 +1056,98 @@ h6 {
  *
 */
 
+.admin-card-heading {
+    font-weight: 600;
+}
+
 .admin-card-container {
     width: 21.875rem;
     margin: 5%;
     padding: 0.625rem;
     border-radius: 0.625rem;
     box-shadow: 0 0 10px #000;
-    background: linear-gradient(to right, gold, orange);
+    background: linear-gradient(to right, #e1830c, #FF9800);
 }
 
 .admin-card-container.omistajat {
-    background: linear-gradient(to right, #5555FF, #15153F);
+    background: linear-gradient(to right, #2D54E0, #142c85);
 }
 
 .admin-card-container.adminit {
-    background: linear-gradient(to right, #FF55FF, #3F153F);
+    background: linear-gradient(to right, #E03F5F, #88162d);
 }
 
 .admin-card-container.operaattorit {
-    background: linear-gradient(to right, #FF55FF, #3F153F);
+    background: linear-gradient(to right, #E0368B, #80144a);
 }
 
 .admin-card-container.moderaattorit {
-    background: linear-gradient(to right, #AA00AA, #2A002A);
+    background: linear-gradient(to right, #C724AE, #8e1a7d);
 }
 
 .admin-card-container.rakentajat {
-    background: linear-gradient(to right, #AA00AA, #2A002A);
+    background: linear-gradient(to right, #C724AE, #8e1a7d);
 }
 
-.admin-card {
-
-}
+.admin-card {}
 
 .background {
     text-align: center;
-    background: linear-gradient(to right, blue, aqua);
+    background: linear-gradient(to right, black, rgb(36, 36, 36));
     border-top-left-radius: 0.625rem;
     border-top-right-radius: 0.625rem;
 }
 
 .background.omistajat {
-    background: linear-gradient(to right, #15153F, #0d0d26);
+    background: linear-gradient(to right,#2445bd,#2242b8);
 }
 
 .background.adminit {
-    background: linear-gradient(to right, #3F153F, #260d26);
+    background: linear-gradient(to right, #611B29, #501622);
 }
 
 .background.operaattorit {
-    background: linear-gradient(to right, #3F153F, #260d26);
+    background: linear-gradient(to right, #61173C, #531333);
 }
 
 .background.moderaattorit {
-    background: linear-gradient(to right, #2A002A, #1a001a);
+    background: linear-gradient(to right, #711463, #570f4c);
 }
 
 .background.rakentajat {
-    background: linear-gradient(to right, #2A002A, #1a001a);
+    background: linear-gradient(to right, #711463, #570f4c);
 }
 
 .admin-content {
-    background-color: blue;
     padding: 0.625rem;
     border-bottom-left-radius: 0.625rem;
     border-bottom-right-radius: 0.625rem;
+    min-height: 190px;
 }
 
 .admin-content.omistajat {
-    background: linear-gradient(to bottom, #000066, #00002A);
+    background: linear-gradient(to right,#2547c2,#1c379f);
 }
 
 .admin-content.adminit {
-    background: linear-gradient(to bottom, #660066	, #4d004d);
+    background: linear-gradient(to bottom,#9c2039 ,#a92641);
 }
 
 .admin-content.operaattorit {
-    background: linear-gradient(to bottom, #660066, #4d004d);
+    background: linear-gradient(to bottom,#981d5a,#ab2367);
 }
 
 .admin-content.moderaattorit {
-    background: linear-gradient(to bottom, #4d004d, #2A002A);
+    background: linear-gradient(to bottom,#941b82,#771669);
 }
 
 .admin-content.rakentajat {
-    background: linear-gradient(to bottom, #4d004d, #2A002A);
+    background: linear-gradient(to bottom,#941b82,#771669);
 }
 
 .admin-name {
     text-align: center;
     font-size: 1.1875rem;
-    font-weight: lighter;
     padding: 0.625rem;
 }
 
@@ -1160,28 +1168,50 @@ h6 {
 }
 
 .admin-type.omistajat {
-    background-color: #5555FF;
+    background-color: #335fff;
 }
 
 .admin-type.adminit {
-    background-color: #FF55FF;
+    background-color: #FF476C;
 }
 
 .admin-type.operaattorit {
-    background-color: #FF55FF;
+    background-color: #DC3588;
 }
 
 .admin-type.moderaattorit {
-    background-color: #AA00AA;
+    background-color: #B922A3
 }
 
 .admin-type.rakentajat {
-    background-color: #AA00AA;
+    background-color: #B922A3
 }
 
-.admin-strength > p {
-    font-family: 'Inter', sans-serif;
+/*
+.admin-card-heading {
+    color: white !important;
     font-weight: 700;
+    text-align: left;
+}
+*/
+
+.admin-strength {
+    margin-left: .4em;
+}
+
+.admin-strength>p {
+    font-family: 'Inter', sans-serif;
+    font-weight: 300;
+   display: flex;
+    align-items: center;
+}
+
+.admin-strength-bullet {
+    font-size: 0.7em;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 0.6em;
 }
 
 .avatar>img {
@@ -1193,6 +1223,7 @@ h6 {
     text-align: center;
     font-size: 0.875rem;
     padding: 1.25rem;
+    min-height: 100px;
 }
 
 /* Admin End */
@@ -1326,7 +1357,7 @@ h6 {
 
 .content {
     font-family: 'Heebo', sans-serif;
-    box-shadow: 0 2px 2px 0 rgba(0,0,0,.14), 0 3px 1px -2px rgba(0,0,0,.2), 0 1px 5px 0 rgba(0,0,0,.12);
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, .14), 0 3px 1px -2px rgba(0, 0, 0, .2), 0 1px 5px 0 rgba(0, 0, 0, .12);
 }
 
 /* Sisältö End */
@@ -1485,7 +1516,7 @@ h6 {
 
 
 .modal-content {
-    background-color:rgba(25,27,29,.84)!important;
+    background-color: rgba(25, 27, 29, .84) !important;
     color: white;
 }
 
@@ -1537,12 +1568,14 @@ ul.links {
     list-style-type: none;
 }
 
-.links, li a {
+.links,
+li a {
     color: white;
     transition: color .2s;
 }
 
-.links, li a:hover {
+.links,
+li a:hover {
     text-decoration: none;
     color: #cc0;
 }
