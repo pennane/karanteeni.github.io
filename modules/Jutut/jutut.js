@@ -105,7 +105,7 @@ var lainaukset = [
   },
   {
     teksti: "Tykkään veden hengittämisestä.",
-    kuuluisuus: "Jome"
+    kuuluisuus: "Jomeee"
   },
   {
     teksti: "Oon syöny kaks pitsaa ja yhen suklaalevyn... mulla on hirvee ähky... mä haluun päärynää.",
@@ -169,7 +169,7 @@ var lainaukset = [
   },
   {
     teksti: "NUUF NUUF NUUF",
-    kuuluisuus: "Jome"
+    kuuluisuus: "Jomeee"
   },
   {
     teksti: "Senkin vauhtiraitarallimehu!",
@@ -225,11 +225,11 @@ var lainaukset = [
   },
   {
     teksti: "Meil on pikivalkoinen kissa.",
-    kuuluisuus: "Jome"
+    kuuluisuus: "Jomeee"
   },
   {
     teksti: "OleN väSYnyrt",
-    kuuluisuus: "Jome"
+    kuuluisuus: "Jomeee"
   },
   {
     teksti: "Musta tulee käytetty latvialainen.",
@@ -240,7 +240,7 @@ var lainaukset = [
     kuuluisuus: "Naxray"
   },
   {
-    teksti: "Mikä on lintuaura.",
+    teksti: "Mikä on lintuaura?",
     kuuluisuus: "Nuubles, joka on asunut korvessa elämänsä"
   },
   {
@@ -250,7 +250,11 @@ var lainaukset = [
   {
     teksti: "Makaroni maistuu ihan spagetilta.",
     kuuluisuus: "Nuubles"
-  }
+  },
+  {
+    teksti: "Mä en supportaa kuolemantuomioo, mutta oon valmis tekemää kompromissin sen kaverin kaa, joka keksi piimän.",
+    kuuluisuus: "Ougii_Lewe"
+  },
 ];
 
 var currentQuote = randomFromArray(lainaukset);

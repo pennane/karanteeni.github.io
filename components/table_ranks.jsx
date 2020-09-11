@@ -225,7 +225,6 @@ class SisukasParantuva extends React.Component {
                             <Command info={false} command='/near' />
                         </CommandRow>
                         <CommandRow>
-                            <Command info title='Äänestys + / - rankaisuista' command='/+ &amp; /-' disabled />
                             <Command info={false} command='/mc light' disabled />
                         </CommandRow>
                     </Body>
@@ -242,12 +241,8 @@ class SisukasParantuva extends React.Component {
                             <Command info={false} command='/kit parantuva' disabled />
                         </CommandRow>
                         <CommandRow>
-                            <Command info={false} command='/jump' disabled />
-                            <Command info={false} command='/mc tools' disabled />
-                        </CommandRow>
-                        <CommandRow>
                             <Command info title='Nimen täytyy olla samankaltainen Minecraft nimesi kanssa tunnistautumisen vuoksi.' command='/nick' />
-                            <Command info title='Voit aloittaa äänestyksen pelaajan hiljentämistä (20min) (/rankaise votemute) tai pelaajan potkimista varten (/rankaise kick).' command='/rankaise' disabled />
+                            <Command info title='Voit teleporttaa koordinaatteihin.' command='/tp <x> <y> <z>' />
                         </CommandRow>
                         <CommandRow>
                             <Command info title='Tarvitset pelaajan pään, jonka voit mm. craftata (kts. Custom Reseptit). Voit muuttaa pään kenen tahansa pääksi.' command='/skull' disabled />
@@ -282,7 +277,7 @@ class ImmuuniParantaja extends React.Component {
                         </CommandRow>
                         <CommandRow>
                             <Command info title='Ota spawner käteen kun suoritat komentoa.' command='/spawner' />
-                            <Command info={false} command='/tp' />
+                            <Command info={false} command='/tp <pelaaja>' />
                         </CommandRow>
                         <CommandRow>
                             <Command info title='Estää pelaajien teleporttipyynnöt samantasoisilta ja alemmilta.' command='/tptoggle' />
@@ -302,12 +297,8 @@ class ImmuuniParantaja extends React.Component {
                             <Command info={false} command='/kit parantaja' disabled />
                         </CommandRow>
                         <CommandRow>
-                            <Command info={false} command='/jail' disabled />
                             <Command info={false} command='/kick' disabled />
-                        </CommandRow>
-                        <CommandRow>
                             <Command info={false} command='/mute' disabled />
-                            <Command info={false} />
                         </CommandRow>
                     </Body>
                     <div class="rank-others">

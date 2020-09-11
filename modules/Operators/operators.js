@@ -89,33 +89,43 @@ function createEmptyListText(type) {
 
 function createYpElement(operator, cssClass) {
   var card = document.createElement('div');
-  card.className = 'yp-card b-card-light ' + cssClass;
+  card.className = 'admin-card-container ' + cssClass;
 
   var cardInner = document.createElement('div');
-  cardInner.className = 'yp-card-inner b-card-dark ' + cssClass;
+  cardInner.className = 'admin-card ' + cssClass;
 
   var cardBody = document.createElement('div');
-  cardBody.className = 'yp-card-body ' + cssClass;
+  cardBody.className = 'admin-content ' + cssClass;
+
+  var cardBackground = document.createElement('div');
+  cardBackground.className = 'background ' + cssClass;
 
   var cardFooter = document.createElement('div');
-  cardFooter.className = 'yp-card-footer ' + cssClass;
+  cardFooter.className = 'admin-footer ' + cssClass;
 
   var cardHeader = document.createElement('div');
-  cardHeader.className = 'yp-card-header ' + cssClass;
+  cardHeader.className = 'admin-name ' + cssClass;
 
   var cardImg = document.createElement('div');
-  cardImg.className = 'yp-card-img ' + cssClass;
+  cardImg.className = 'avatar ' + cssClass;
 
   var cardText = document.createElement('div');
-  cardText.className = 'yp-card-text ' + cssClass;
+  cardText.className = 'admin-strength ' + cssClass;
 
   var cardRank = document.createElement('div');
-  cardRank.className = 'yp-card-rank c-card-ligher ' + cssClass;
+  cardRank.className = 'admin-type ' + cssClass;
 
   var h3 = document.createElement('h3');
   var img = document.createElement('img');
   var p = document.createElement('p');
   var span = document.createElement('span');
+
+for (let j = 0; j < operator.vahvuudet.length; j++) {
+  const li = document.createElement('p');
+  var textNode = document.createTextNode(operator.vahvuudet[j]);
+  li.appendChild(textNode);
+  cardText.appendChild(li);
+}
 
   h3.textContent = operator.nimi;
   p.textContent = operator.kuvaus;
@@ -125,15 +135,15 @@ function createYpElement(operator, cssClass) {
 
   cardHeader.appendChild(h3);
   cardImg.appendChild(img);
-  cardText.appendChild(p);
   cardRank.appendChild(span);
+  cardFooter.appendChild(p);
 
+  cardBackground.appendChild(cardImg);
+  cardBody.appendChild(cardRank);
   cardBody.appendChild(cardHeader);
-  cardBody.appendChild(cardImg);
   cardBody.appendChild(cardText);
 
-  cardFooter.appendChild(cardRank);
-
+  cardInner.appendChild(cardBackground);
   cardInner.appendChild(cardBody);
   cardInner.appendChild(cardFooter);
 
