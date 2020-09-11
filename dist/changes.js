@@ -118,10 +118,173 @@ var Changelog = function (_React$Component3) {
                 { className: 'accordion text-left' },
                 React.createElement(
                     Month,
+                    { month: 'syyskuu2020', btntext: 'Syyskuu 2020' },
+                    React.createElement(
+                        Body,
+                        { month: 'syyskuu2020', showing: true },
+                        React.createElement(Dated, { date: '3.9.2020' }),
+                        React.createElement(
+                            'ul',
+                            null,
+                            React.createElement(
+                                Change,
+                                null,
+                                'P\xE4ivitetty Jesari'
+                            )
+                        ),
+                        React.createElement(Dated, { date: '1.9.2020' }),
+                        React.createElement(
+                            'ul',
+                            null,
+                            React.createElement(
+                                Change,
+                                null,
+                                'Korjattu k\xE4\xE4nt\xE4j\xE4ss\xE4 bugi, joka rikkoi k\xE4\xE4nt\xE4j\xE4n pelaajalla ollessa ei-tuettu kieli tietokannassa.'
+                            ),
+                            React.createElement(
+                                Change,
+                                null,
+                                'Lis\xE4tty tapa tehd\xE4 l\xE4t\xE4k\xF6it\xE4.'
+                            )
+                        )
+                    )
+                ),
+                React.createElement(
+                    Month,
                     { month: 'elokuu2020', btntext: 'Elokuu 2020' },
                     React.createElement(
                         Body,
-                        { month: 'elokuu2020', showing: true },
+                        { month: 'elokuu2020' },
+                        React.createElement(Dated, { date: '31.8.2020' }),
+                        React.createElement(
+                            'ul',
+                            null,
+                            React.createElement(
+                                Change,
+                                null,
+                                'Chat-v\xE4rit on tullut takaisin rgb tuella.'
+                            ),
+                            React.createElement(
+                                Change,
+                                null,
+                                'Parempi k\xE4ytt\xE4jien maininta chatissa.'
+                            ),
+                            React.createElement(
+                                Change,
+                                null,
+                                'Fixattu bugi, jossa pelaajalla oli ei-tuettu kieli ja hajotti k\xE4\xE4nt\xE4j\xE4n.'
+                            )
+                        ),
+                        React.createElement(Dated, { date: '30.8.2020' }),
+                        React.createElement(
+                            'ul',
+                            null,
+                            React.createElement(
+                                Change,
+                                null,
+                                'Builders wand on nyt palvelimella'
+                            )
+                        ),
+                        React.createElement(Dated, { date: '29.8.2020' }),
+                        React.createElement(
+                            'ul',
+                            null,
+                            React.createElement(
+                                Change,
+                                null,
+                                'Lis\xE4tty yl\xF6salaisin oleva kieli.'
+                            ),
+                            React.createElement(
+                                Change,
+                                null,
+                                'P\xE4ivitetty palvelin versioon 1.16.2!'
+                            ),
+                            React.createElement(
+                                Change,
+                                null,
+                                'Nether ja End resetattu.'
+                            ),
+                            React.createElement(
+                                Change,
+                                null,
+                                'Fixattu bugi, jossa kodin koordinaatti on negatiivinen ja jaollinen 16 => nakkaa virheen.'
+                            ),
+                            React.createElement(
+                                Change,
+                                null,
+                                'Rankkien v\xE4limuisti p\xE4ivittyy -> jos rankup ja relog, niin rankki pysyy samana.'
+                            ),
+                            React.createElement(
+                                Change,
+                                null,
+                                'Nettisivut p\xE4ivitetty.'
+                            ),
+                            React.createElement(
+                                Change,
+                                null,
+                                'Uusi tabin gradient.'
+                            ),
+                            React.createElement(
+                                Change,
+                                null,
+                                React.createElement(
+                                    'code',
+                                    null,
+                                    '/music'
+                                ),
+                                ' on lis\xE4tty uudet Netherin musiikit.'
+                            ),
+                            React.createElement(
+                                Change,
+                                null,
+                                React.createElement(
+                                    'code',
+                                    null,
+                                    '/music'
+                                ),
+                                ' kuuluvuutta on parannettu.'
+                            ),
+                            React.createElement(
+                                Change,
+                                null,
+                                'Lis\xE4tty vanhat "koodit" takaisin palvelimelle.'
+                            ),
+                            React.createElement(
+                                Change,
+                                null,
+                                'Lis\xE4tty \xE4\xE4niviestej\xE4 palvelimelle.'
+                            ),
+                            React.createElement(
+                                Change,
+                                null,
+                                'Iron Golem pakottaa sinut pudottamaan housusi, kun ly\xF6 sinua.'
+                            ),
+                            React.createElement(
+                                Change,
+                                null,
+                                'Kuolinviestit jakautuu nyt maailmojen v\xE4lill\xE4.'
+                            )
+                        ),
+                        React.createElement(Dated, { date: '15.8.2020' }),
+                        React.createElement(
+                            'ul',
+                            null,
+                            React.createElement(
+                                Change,
+                                null,
+                                'Lis\xE4tty 1.16.2 tuki'
+                            )
+                        ),
+                        React.createElement(Dated, { date: '13.8.2020' }),
+                        React.createElement(
+                            'ul',
+                            null,
+                            React.createElement(
+                                Change,
+                                null,
+                                'Korjattu vinkki Netherin ja Endin resettaamisesta'
+                            )
+                        ),
                         React.createElement(Dated, { date: '7.8.2020' }),
                         React.createElement(
                             'ul',
