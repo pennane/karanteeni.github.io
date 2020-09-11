@@ -6,13 +6,39 @@ class Articles extends React.Component {
         return (
             <React.Fragment>
 
+                <ArticleBody>
+                    <Title label={true} type='announcement'>
+                        1.16.3
+                    </Title>
+                    <Time>
+                        11.09.2020
+                    </Time>
+                    <Content>
+                        <p>
+                            Palvelin on päivitetty nyt 1.16.3 versioon. Tämän lisäksi nykyinen roadmappimme ei pidä paikkaansa ja se täytynee päivittää uudelleen jossain kohti.
+                            Toistaiseksi halloween-tapahtuma on siis peruttu ajanpuutteen vuoksi ja keskitymme täysillä joulujuhlaan. Päivitetyn roadmapin saanette myöhemmin.
+                        </p>
+                        <p>
+                            Ilmoittanemme myös, että Eye of Enderit toistaiseksi johdattavat täysin satunnaisiin paikkoihin, eli ovat rikki. Todennäköinen syy tälle on 1.15 kartta,
+                            sillä emme generoineet uutta karttaa tässä päivityksessä.
+                        </p>
+                        <p>
+                            Mukavaa syksyn odotusta.
+                        </p>
+                        <p>
+                            Ystävällisin terveisin,<br/>
+                            Karanteenin ylläpito
+                        </p>
+                    </Content>
+                </ArticleBody>
+
 
                 <ArticleBody>
                     <Title label={true} type='update'>
                         Welcome to the Nether!
                     </Title>
                     <Time>
-                        20.08.2020
+                        20.08.2020, muokattu 11.09.2020
                     </Time>
                     <Content>
                         <p>
@@ -26,11 +52,6 @@ class Articles extends React.Component {
                             nollautuu vain kerran kartan aikana, suunnilleen puolessa välissä puolen vuoden aikataulua.
                         </p>
                         <br/>
-                        <p>
-                            Tosin, ei siinä vielä kaikki. Meillä on pienimuotoinen roadmap esiteltävänä pelaajille. Nether Updaten jälkeen suunta on kohti parempaa
-                            pelikokemusta. Alhaalla näette kuvan meidän roadmapistamme, jonka aikataulu toivottavasti pitää.
-                        </p><br/>
-                            <Image link="assets/images/roadmap.png" source="/assets/images/roadmap.png"/><br/><br/>
                         <p>
                             Kuten varmasti huomaatte, nettisivuja on mukautettu <strong>huomattavasti</strong>. Nettisivujen tiettyjä elementtejä on "modernisoitu" ja tehty
                             selkeämmäksi. Samalla nettisivut saivat hornan tulisen ulkoasun juhlistaaksemme Nether Updatea. Ylläpitokortit saivat uuden ulkoasun, jossa nyt
@@ -48,7 +69,6 @@ class Articles extends React.Component {
                             <li>Palvelimella pyörii Paper 1.16.2</li>
                             <li>End ja Nether nollattu, End nollataan jatkossa vain kerran per kartta</li>
                             <li>Nettisivua "modernisoitu", mutta sitä jatketaan + Nether teema</li>
-                            <li>Roadmapissa kaikki tarvittava tieto tulevaisuudesta pähkinänkuoressa</li>
                             </ul>
                         </p>
                         <p>

@@ -28,13 +28,53 @@ var Articles = function (_React$Component) {
                     null,
                     React.createElement(
                         Title,
+                        { label: true, type: 'announcement' },
+                        '1.16.3'
+                    ),
+                    React.createElement(
+                        Time,
+                        null,
+                        '11.09.2020'
+                    ),
+                    React.createElement(
+                        Content,
+                        null,
+                        React.createElement(
+                            'p',
+                            null,
+                            'Palvelin on p\xE4ivitetty nyt 1.16.3 versioon. T\xE4m\xE4n lis\xE4ksi nykyinen roadmappimme ei pid\xE4 paikkaansa ja se t\xE4ytynee p\xE4ivitt\xE4\xE4 uudelleen jossain kohti. Toistaiseksi halloween-tapahtuma on siis peruttu ajanpuutteen vuoksi ja keskitymme t\xE4ysill\xE4 joulujuhlaan. P\xE4ivitetyn roadmapin saanette my\xF6hemmin.'
+                        ),
+                        React.createElement(
+                            'p',
+                            null,
+                            'Ilmoittanemme my\xF6s, ett\xE4 Eye of Enderit toistaiseksi johdattavat t\xE4ysin satunnaisiin paikkoihin, eli ovat rikki. Todenn\xE4k\xF6inen syy t\xE4lle on 1.15 kartta, sill\xE4 emme generoineet uutta karttaa t\xE4ss\xE4 p\xE4ivityksess\xE4.'
+                        ),
+                        React.createElement(
+                            'p',
+                            null,
+                            'Mukavaa syksyn odotusta.'
+                        ),
+                        React.createElement(
+                            'p',
+                            null,
+                            'Yst\xE4v\xE4llisin terveisin,',
+                            React.createElement('br', null),
+                            'Karanteenin yll\xE4pito'
+                        )
+                    )
+                ),
+                React.createElement(
+                    ArticleBody,
+                    null,
+                    React.createElement(
+                        Title,
                         { label: true, type: 'update' },
                         'Welcome to the Nether!'
                     ),
                     React.createElement(
                         Time,
                         null,
-                        '20.08.2020'
+                        '20.08.2020, muokattu 11.09.2020'
                     ),
                     React.createElement(
                         Content,
@@ -54,15 +94,6 @@ var Articles = function (_React$Component) {
                             null,
                             'Nether Update on Karanteenin suurin pelikokemusta muuttava p\xE4ivitys. 1.16.2 version py\xF6riess\xE4 palvelimella, mietimme samalla palvelintamme. Kysyimme teilt\xE4 3. kes\xE4kuuta 2020, mill\xE4 tavoin voimme parantaa teid\xE4n pelikokemustanne ja olemme jo saaneet suunnitelmaa t\xE4h\xE4n. Nether Update teki joitain asioita helpoksi meid\xE4n kantiltamme. L\xF6imme lukkoon 29. kes\xE4kuuta, ett\xE4 nollaamme Netherin t\xE4stedes viimeisen kerran hetkeen. Samalla End nollautuu vain kerran kartan aikana, suunnilleen puolessa v\xE4liss\xE4 puolen vuoden aikataulua.'
                         ),
-                        React.createElement('br', null),
-                        React.createElement(
-                            'p',
-                            null,
-                            'Tosin, ei siin\xE4 viel\xE4 kaikki. Meill\xE4 on pienimuotoinen roadmap esitelt\xE4v\xE4n\xE4 pelaajille. Nether Updaten j\xE4lkeen suunta on kohti parempaa pelikokemusta. Alhaalla n\xE4ette kuvan meid\xE4n roadmapistamme, jonka aikataulu toivottavasti pit\xE4\xE4.'
-                        ),
-                        React.createElement('br', null),
-                        React.createElement(Image, { link: 'assets/images/roadmap.png', source: '/assets/images/roadmap.png' }),
-                        React.createElement('br', null),
                         React.createElement('br', null),
                         React.createElement(
                             'p',
@@ -112,11 +143,6 @@ var Articles = function (_React$Component) {
                                     'li',
                                     null,
                                     'Nettisivua "modernisoitu", mutta sit\xE4 jatketaan + Nether teema'
-                                ),
-                                React.createElement(
-                                    'li',
-                                    null,
-                                    'Roadmapissa kaikki tarvittava tieto tulevaisuudesta p\xE4hkin\xE4nkuoressa'
                                 )
                             )
                         ),

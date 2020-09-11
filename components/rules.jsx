@@ -19,6 +19,21 @@ class CommonRules extends React.Component {
                     <Rule>
                     <Icon icon="denied"/>
                     <Content>
+                        <Heading>Bugien hyväksikäyttö on kiellettyä</Heading>
+                        <Description>
+                            Bugien tai palvelinvirheiden hyväksikäyttö on ankarasti kiellettyä.
+                            Mikäli löydät peliä rikkovan bugin tai virheen, voidaan sinua palkita
+                            peliajalla.
+                        </Description>
+                    </Content>
+                    </Rule>
+                </RuleContainer>
+
+
+                <RuleContainer>
+                    <Rule>
+                    <Icon icon="denied"/>
+                    <Content>
                         <Heading>Modit ovat kiellettyjä</Heading>
                         <Description>
                             Pelin etenemistä edistävien modien käyttäminen (esim. schematica) on kiellettyä.
@@ -32,9 +47,9 @@ class CommonRules extends React.Component {
                     <Rule>
                     <Icon icon="allowed"/>
                     <Content>
-                        <Heading>Optifine & Sodium</Heading>
+                        <Heading>OptiFine & Sodium</Heading>
                         <Description>
-                            Optifine, ja Sodiumin kaltaiset suoritustehoa parantavat modit ovat sallittuja.
+                            OptiFinen ja Sodiumin kaltaiset suoritustehoa parantavat modit ovat sallittuja.
                         </Description>
                     </Content>
                     </Rule>
