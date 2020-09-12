@@ -120,16 +120,22 @@ function createYpElement(operator, cssClass) {
   var p = document.createElement('p');
   var span = document.createElement('span');
 
-for (let j = 0; j < operator.vahvuudet.length; j++) {
-  const li = document.createElement('p');
-  var textNode = document.createTextNode(operator.vahvuudet[j]);
-  li.appendChild(textNode);
-  cardText.appendChild(li);
-}
+  h3.className = 'admin-card-heading'
+
+  for (let j = 0; j < operator.vahvuudet.length; j++) {
+    const li = document.createElement('p');
+    const bullet = document.createElement('i');
+    bullet.className = "far fa-arrow-alt-circle-right admin-strength-bullet";
+    var textNode = document.createTextNode(operator.vahvuudet[j]);
+    li.appendChild(bullet)
+    li.appendChild(textNode);
+    cardText.appendChild(li);
+  }
 
   h3.textContent = operator.nimi;
   p.textContent = operator.kuvaus;
   span.textContent = cssClass;
+
 
   img.src = 'https://visage.surgeplay.com/full/' + operator.uuid;
 
