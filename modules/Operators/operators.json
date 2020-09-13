@@ -44,22 +44,9 @@
         "Maaston muokkaus"
       ],
       "uuid": "9b218de84001430d88f9821a71e62ad4"
-    },
-    {
-      "nimi": "lakanakana",
-      "kuvaus": "Karanteenin entinen kaikkivaltias.",
-      "vahvuudet": [
-        "Rakentaminen"
-      ],
-      "uuid": "78cf984cf45241b9bdd600cc4677c7d9"
     }
   ],
   "operaattorit": [
-    {
-      "nimi": "Manuzki",
-      "kuvaus": "\"Autan jos osaan, olen ymmärtäväinen, mutta en keksi mitään, vaan ajattelen.\"",
-      "uuid": "a802f54ebfa148e3a7754d18d38a48be"
-    },
     {
       "nimi": "RetuPoika",
       "kuvaus": "\"Oispa kahvia.\"",
@@ -84,8 +71,6 @@
       "vahvuudet": [
         "Suojaaminen"
       ],
-      "nimi": "Iita",
-      "kuvaus": "\"Ahdistaa.\"",
       "uuid": "d0cd2962ea3944c48b486c6376e57ca3"
     },
     {
