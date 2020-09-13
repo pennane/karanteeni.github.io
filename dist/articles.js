@@ -303,7 +303,7 @@ var Articles = function (_React$Component) {
                                 null,
                                 'P.S '
                             ),
-                            'Yll\xE4pitohaku py\xF6rii edelleen. Innokkaita ja haun vaatimuksia t\xE4ytt\xE4vi\xE4 halukkaita kaivataan yll\xE4pitojoukkoon. Lis\xE4tietoa yll\xE4pitoon hakemisesta l\xF6ytyy',
+                            'Yll\xE4pitohaku py\xF6rii edelleen. Innokkaita ja haun vaatimuksia t\xE4ytt\xE4vi\xE4 halukkaita kaivataan yll\xE4pitojoukkoon. Lis\xE4tietoa yll\xE4pitoon hakemisesta l\xF6ytyy\xA0',
                             React.createElement(
                                 'a',
                                 { href: 'yphaku', id: 'link' },

@@ -443,9 +443,9 @@ var EconomyQuestions = function (_React$Component4) {
                         React.createElement(
                             'code',
                             null,
-                            '/vote.'
+                            '/vote'
                         ),
-                        'Jokainen \xE4\xE4nestykerta on 50 pennin arvoinen. ',
+                        '. Jokainen \xE4\xE4nestykerta on 50 pennin arvoinen. ',
                         React.createElement('br', null),
                         'Voit my\xF6s myyd\xE4 sek\xE4 ostaa tavaraa k\xE4ytt\xE4m\xE4ll\xE4 arkkukauppoja. Spawnilla on kauppa (',
                         React.createElement(
@@ -522,7 +522,7 @@ var HomeQuestions = function (_React$Component5) {
                     React.createElement(
                         Answer,
                         { id: 'home3', target: 'homecol3' },
-                        'Saat, mutta Endiin emme suosittele. End resetoidaan kuukauden v\xE4lein, mik\xE4 voi aiheuttaa kodin korruptoitumista ja sinun kuoleman. T\xE4m\xE4 tarkoittaa siis sit\xE4, ett\xE4 saatat kuolla jos k\xE4yt\xE4t kotia resetoinnin j\xE4lkeen. Yll\xE4pito ei ole velvollinen palauttamaan tavaroitasi.'
+                        'Saat, mutta Endiin emme suosittele. End resetoidaan n. puolessa v\xE4liss\xE4 karttaa, mik\xE4 voi aiheuttaa kodin korruptoitumista ja sinun kuoleman. T\xE4m\xE4 tarkoittaa siis sit\xE4, ett\xE4 saatat kuolla jos k\xE4yt\xE4t kotia resetoinnin j\xE4lkeen. Yll\xE4pito ei ole velvollinen palauttamaan tavaroitasi.'
                     )
                 ),
                 React.createElement(
