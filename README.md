@@ -2,7 +2,7 @@
 
 Peruspaske sivut (HTML, CSS, JS) :D
 
-Versio: 4.0.1
+Versio: 4.0.2
 
 ## "Hei pukki, mullois vaan yks toive... että maailmassa olisi rauha..."
 
@@ -79,7 +79,7 @@ Ylläpitosivut ovat käytännössä vain rakenne. Ylläpitäjien lisääminen ta
             "kuvaus": "Ylläpitäjä",
             "vahvuudet": [
                 "Vahvuus"
-            ]
+            ],
             "uuid": "numeroita"
         }
     ]

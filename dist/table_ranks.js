@@ -76,7 +76,7 @@ var Structure = function (_React$Component3) {
             name: _this3.props.name,
             time: _this3.props.time,
             color: _this3.props.color, /* c-rankinnimi */
-            bgColor: _this3.props.bgColor
+            bgColor: _this3.props.bgColor || ''
         };
         return _this3;
     }
@@ -98,7 +98,7 @@ var Structure = function (_React$Component3) {
                             { className: this.state.color + 'card-title' },
                             React.createElement(
                                 "span",
-                                { className: this.state.bgColor + 'rank-name-text' },
+                                { className: this.state.bgColor + ' rank-name-text' },
                                 this.props.name
                             ),
                             " ",
@@ -346,7 +346,7 @@ var ElotonRaihnas = function (_React$Component10) {
                 { className: "row" },
                 React.createElement(
                     Structure,
-                    { name: "Eloton", time: "0h", color: "c-eloton ", bgColor: "g-eloton " },
+                    { name: "Eloton", time: "0h", color: "c-eloton " },
                     React.createElement(
                         Body,
                         null,
@@ -360,7 +360,7 @@ var ElotonRaihnas = function (_React$Component10) {
                 ),
                 React.createElement(
                     Structure,
-                    { name: "Raihnas", time: "5h", color: "c-raihnas ", bgColor: "g-raihnas " },
+                    { name: "Raihnas", time: "5h", color: "c-raihnas " },
                     React.createElement(
                         Body,
                         null,
@@ -402,7 +402,7 @@ var SisukasParantuva = function (_React$Component11) {
                 { className: "row" },
                 React.createElement(
                     Structure,
-                    { name: "Sisukas", time: "1d", color: "c-sisukas ", bgColor: "g-sisukas " },
+                    { name: "Sisukas", time: "1d", color: "c-sisukas " },
                     React.createElement(
                         Body,
                         null,
@@ -423,11 +423,6 @@ var SisukasParantuva = function (_React$Component11) {
                             null,
                             React.createElement(Command, { info: false, command: "/enderchest" }),
                             React.createElement(Command, { info: false, command: "/near" })
-                        ),
-                        React.createElement(
-                            CommandRow,
-                            null,
-                            React.createElement(Command, { info: false, command: "/mc light", disabled: true })
                         )
                     ),
                     React.createElement(
@@ -443,7 +438,7 @@ var SisukasParantuva = function (_React$Component11) {
                 ),
                 React.createElement(
                     Structure,
-                    { name: "Parantuva", time: "5d", color: "c-parantuva ", bgColor: "g-parantuva " },
+                    { name: "Parantuva", time: "5d", color: "c-parantuva " },
                     React.createElement(
                         Body,
                         null,
@@ -462,8 +457,8 @@ var SisukasParantuva = function (_React$Component11) {
                         React.createElement(
                             CommandRow,
                             null,
-                            React.createElement(Command, { info: true, title: "Tarvitset pelaajan p\xE4\xE4n, jonka voit mm. craftata (kts. Custom Reseptit). Voit muuttaa p\xE4\xE4n kenen tahansa p\xE4\xE4ksi.", command: "/skull", disabled: true }),
-                            React.createElement(Command, { info: false, command: "/feed" })
+                            React.createElement(Command, { info: false, command: "/feed" }),
+                            React.createElement(Command, { info: false })
                         )
                     ),
                     React.createElement(
@@ -502,7 +497,7 @@ var ImmuuniParantaja = function (_React$Component12) {
                 { "class": "row" },
                 React.createElement(
                     Structure,
-                    { name: "Immuuni", time: "10d", color: "c-immuuni ", bgColor: "g-immuuni " },
+                    { name: "Immuuni", time: "10d", color: "c-immuuni " },
                     React.createElement(
                         Body,
                         null,
@@ -544,7 +539,7 @@ var ImmuuniParantaja = function (_React$Component12) {
                 ),
                 React.createElement(
                     Structure,
-                    { name: "Parantaja", time: "30d", color: "c-parantaja ", bgColor: "g-parantaja " },
+                    { name: "Parantaja", time: "30d", color: "c-parantaja " },
                     React.createElement(
                         Body,
                         null,
@@ -553,12 +548,6 @@ var ImmuuniParantaja = function (_React$Component12) {
                             null,
                             React.createElement(SetHome, { count: "16" }),
                             React.createElement(Command, { info: false, command: "/kit parantaja", disabled: true })
-                        ),
-                        React.createElement(
-                            CommandRow,
-                            null,
-                            React.createElement(Command, { info: false, command: "/kick", disabled: true }),
-                            React.createElement(Command, { info: false, command: "/mute", disabled: true })
                         )
                     ),
                     React.createElement(
@@ -596,7 +585,7 @@ var NekroKuolematon = function (_React$Component13) {
                 { "class": "row" },
                 React.createElement(
                     Structure,
-                    { name: "Nekromantikko", time: "60d", color: "c-nekromantikko ", bgColor: "g-nekromantikko " },
+                    { name: "Nekromantikko", time: "60d", color: "c-nekromantikko " },
                     React.createElement(
                         Body,
                         null,
@@ -626,7 +615,7 @@ var NekroKuolematon = function (_React$Component13) {
                 ),
                 React.createElement(
                     Structure,
-                    { name: "Kuolematon", time: "100d", color: "c-kuolematon ", bgColor: "g-kuolematon " },
+                    { name: "Kuolematon", time: "100d", color: "c-kuolematon " },
                     React.createElement(
                         Body,
                         null,
