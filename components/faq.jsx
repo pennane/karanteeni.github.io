@@ -243,7 +243,7 @@ class EconomyQuestions extends React.Component {
                         Mitä valuuttaa palvelin käyttää ja kuinka saan sitä?
                     </Question>
                     <Answer id='eco3' target='ecocol3'>
-                        Palvelimella on rahavaluuttana pennit. Pennejä saat hankkimalla uutta peliaikaa, sekä palvelinta äänestämällä <code>/vote.</code>
+                        Palvelimella on rahavaluuttana pennit. Pennejä saat hankkimalla uutta peliaikaa, sekä palvelinta äänestämällä <code>/vote</code>.
                         Jokainen äänestykerta on 50 pennin arvoinen. <br/>
                         Voit myös myydä sekä ostaa tavaraa käyttämällä arkkukauppoja. Spawnilla on kauppa (<code>/warp kauppa</code>), jonne voit myydä oreista tehtyjä
                         blockeja.
@@ -289,7 +289,7 @@ class HomeQuestions extends React.Component {
                         Saanko asettaa kodin Netheriin tai Endiin?
                     </Question>
                     <Answer id='home3' target='homecol3'>
-                        Saat, mutta Endiin emme suosittele. End resetoidaan kuukauden välein, mikä voi aiheuttaa kodin korruptoitumista ja sinun kuoleman.
+                        Saat, mutta Endiin emme suosittele. End resetoidaan n. puolessa välissä karttaa, mikä voi aiheuttaa kodin korruptoitumista ja sinun kuoleman.
                         Tämä tarkoittaa siis sitä, että saatat kuolla jos käytät kotia resetoinnin jälkeen. Ylläpito ei ole velvollinen palauttamaan tavaroitasi.
                     </Answer>
                 </Card>
