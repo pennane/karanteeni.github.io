@@ -178,7 +178,7 @@ var CommonQuestions = function (_React$Component2) {
                         'Maailma nollataan yleens\xE4 noin puolen vuoden v\xE4lein, mutta ei tapahdu automaationa. Yleens\xE4 maailman nollaus my\xF6s t\xE4hd\xE4t\xE4\xE4n seuraavan Minecraftin suuren versiop\xE4ivityksen kohdille.',
                         React.createElement('br', null),
                         React.createElement('br', null),
-                        'Nether tulevaisuudessa ei tule nollautumaan 1.16 p\xE4ivityksen my\xF6t\xE4. End nollataan kerran kolmessa kuukaudessa.'
+                        'Netheri\xE4 ei nollata ja End nollataan kerran kolmessa kuukaudessa.'
                     )
                 ),
                 React.createElement(
@@ -276,7 +276,7 @@ var ProtectionQuestions = function (_React$Component3) {
                         'Yll\xE4pito suojaa alueen ja suojaukseen vaaditaan talon alku. Huomaathan, ett\xE4 talosi t\xE4ytyy olla v\xE4hint\xE4\xE4n sadan (100) blockin p\xE4\xE4ss\xE4 l\xE4himm\xE4st\xE4 talosta. Mik\xE4li aiot luoda kyl\xE4n, voit p\xE4\xE4tt\xE4\xE4 alueelle nimen. Warpin kyl\xE4lle saa vasta, kun kyl\xE4ll\xE4 on 15 asukasta. ',
                         React.createElement('br', null),
                         React.createElement('br', null),
-                        'Netheriin ja Endiin ei p\xE4\xE4s\xE4\xE4nt\xF6isesti suojata alueita.'
+                        'Endiin ei p\xE4\xE4s\xE4\xE4nt\xF6isesti suojata alueita.'
                     )
                 ),
                 React.createElement(
@@ -522,7 +522,7 @@ var HomeQuestions = function (_React$Component5) {
                     React.createElement(
                         Answer,
                         { id: 'home3', target: 'homecol3' },
-                        'Saat, mutta emme suosittele. Nether ja End resetoidaan kuukauden v\xE4lein, mik\xE4 voi aiheuttaa kodin korruptoitumista ja sinun kuoleman. T\xE4m\xE4 tarkoittaa siis sit\xE4, ett\xE4 saatat kuolla jos k\xE4yt\xE4t kotia resetoinnin j\xE4lkeen. Yll\xE4pito ei ole velvollinen palauttamaan tavaroitasi.'
+                        'Saat, mutta Endiin emme suosittele. End resetoidaan kuukauden v\xE4lein, mik\xE4 voi aiheuttaa kodin korruptoitumista ja sinun kuoleman. T\xE4m\xE4 tarkoittaa siis sit\xE4, ett\xE4 saatat kuolla jos k\xE4yt\xE4t kotia resetoinnin j\xE4lkeen. Yll\xE4pito ei ole velvollinen palauttamaan tavaroitasi.'
                     )
                 ),
                 React.createElement(
