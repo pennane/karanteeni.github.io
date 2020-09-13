@@ -98,7 +98,7 @@ class CommonQuestions extends React.Component {
                         Maailma nollataan yleensä noin puolen vuoden välein, mutta ei tapahdu automaationa. Yleensä maailman nollaus myös tähdätään seuraavan
                         Minecraftin suuren versiopäivityksen kohdille.<br/><br/>
                         
-                        Nether tulevaisuudessa ei tule nollautumaan 1.16 päivityksen myötä. End nollataan kerran kolmessa kuukaudessa.
+                        Netheriä ei nollata ja End nollataan kerran kolmessa kuukaudessa.
                     </Answer>
                 </Card>
 
@@ -155,7 +155,7 @@ class ProtectionQuestions extends React.Component {
                         Ylläpito suojaa alueen ja suojaukseen vaaditaan talon alku. Huomaathan, että talosi täytyy olla vähintään sadan (100) blockin päässä
                         lähimmästä talosta. Mikäli aiot luoda kylän, voit päättää alueelle nimen. Warpin kylälle saa vasta, kun kylällä on 15 asukasta. <br/><br/>
 
-                        Netheriin ja Endiin ei pääsääntöisesti suojata alueita.
+                        Endiin ei pääsääntöisesti suojata alueita.
                     </Answer>
                 </Card>
                 
@@ -289,7 +289,7 @@ class HomeQuestions extends React.Component {
                         Saanko asettaa kodin Netheriin tai Endiin?
                     </Question>
                     <Answer id='home3' target='homecol3'>
-                        Saat, mutta emme suosittele. Nether ja End resetoidaan kuukauden välein, mikä voi aiheuttaa kodin korruptoitumista ja sinun kuoleman.
+                        Saat, mutta Endiin emme suosittele. End resetoidaan kuukauden välein, mikä voi aiheuttaa kodin korruptoitumista ja sinun kuoleman.
                         Tämä tarkoittaa siis sitä, että saatat kuolla jos käytät kotia resetoinnin jälkeen. Ylläpito ei ole velvollinen palauttamaan tavaroitasi.
                     </Answer>
                 </Card>
