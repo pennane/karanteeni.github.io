@@ -4,15 +4,21 @@
 
  /* Use-case: Karanteenin Atlassian JIRA bug-tracker */
 
- a.user-hover[rel="Naxray"] {
+ a.user-hover[rel="Naxray"], a.user-hover[rel="Jomeee"], a.user-hover[rel="Nuubles"] {
     padding-right: 6px;
     background: #335fff;
+    color: #fff !important;
+ }
+
+ a.user-hover[rel="Susse"] {
+    padding-right: 6px;
+    background: #ff476c;
+    color: #fff !important;
  }
 
  a.user-hover {
     border-radius: .3125rem;
     font-weight: 700;
-    color: #fff !important;
  }
 
  .aui-avatar {
