@@ -5,7 +5,7 @@
  /* Use-case: Karanteenin Atlassian JIRA bug-tracker */
 
  a.user-hover[rel="Naxray"] {
-    padding: 0.125rem;
+    padding-right: 6px;
     background: #335fff;
  }
 
@@ -13,4 +13,12 @@
     border-radius: .3125rem;
     font-weight: 700;
     color: #fff !important;
+ }
+
+ .aui-avatar {
+     margin-left: 5px;
+ }
+
+ .jira-user-name.jira-user-avatar-small {
+     padding-left: 35px;
  }
