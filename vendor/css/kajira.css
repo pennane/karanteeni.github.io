@@ -38,3 +38,7 @@
  td[data-cell-type="fullname"]>a.user-hover.user-avatar, span.user-hover.user-avatar {
     padding: 2px 0 2px 10px;
  }
+
+ #user_browser_table td[data-cell-type="fullname"] a.user-avatar .aui-avatar, #user_browser_table td[data-cell-type="fullname"] a.user-avatar .fn {
+     padding: 1px 5px;
+ }
