@@ -1,0 +1,16 @@
+/* Created by Naxray
+ * Copyright 2019
+ *\
+
+ /* Use-case: Karanteenin Atlassian JIRA bug-tracker */
+
+ a.user-hover[rel="Naxray"] {
+    padding: 0.125rem;
+    background: #335fff;
+ }
+
+ a.user-hover {
+    border-radius: .3125rem;
+    font-weight: 700;
+    color: #fff !important;
+ }

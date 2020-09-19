@@ -74,12 +74,27 @@ class Changelog extends React.Component {
 
                 <Month month='syyskuu2020' btntext='Syyskuu 2020'>
                     <Body month='syyskuu2020' showing>
+                        <Dated date='19.9.2020'/>
+                        <ul>
+                            <Change>Päivitetty tabista palvelimen alkukirjain isoksi.</Change>
+                        </ul>
+                        <Dated date='14.9.2020'/>
+                        <ul>
+                            <Change>Sisukas-rankkisten (ja alempien) virheellinen viesti-ilmoitus oikeuksista on nyt korjattu.</Change>
+                            <Change>Paranneltu turvallista teleporttia (onnistuu teleporttaamaan slabien päälle)</Change>
+                        </ul>
+                        <Dated date='12.9.2020'/>
+                        <ul>
+                            <Change>Added Russian language (thanks Inferdy &#x2764;).</Change>
+                            <Change>Muutettu arvojen värit tukemaan RGB.</Change>
+                        </ul>
                         <Dated date='3.9.2020'/>
                         <ul>
                             <Change>Päivitetty Jesari</Change>
                         </ul>
                         <Dated date='1.9.2020'/>
                         <ul>
+                            <Change>Lisätty oikeus Nekromantikosta ylöspäin + lahjoittajille käyttää RGB-värejä pelinimessä.</Change>
                             <Change>Korjattu kääntäjässä bugi, joka rikkoi kääntäjän pelaajalla ollessa ei-tuettu kieli tietokannassa.</Change>
                             <Change>Lisätty tapa tehdä lätäköitä.</Change>
                         </ul>

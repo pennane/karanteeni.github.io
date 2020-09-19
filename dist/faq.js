@@ -101,7 +101,13 @@ var CommonQuestions = function (_React$Component2) {
                     React.createElement(
                         Answer,
                         { id: 'yle3', target: 'ylecol3' },
-                        'Koita poistua palvelimelta ja liitty\xE4 uudelleen. Mik\xE4li ongelma ei korjaantunut, nyk\xE4ise yll\xE4pit\xE4j\xE4\xE4 hihasta.'
+                        'Koita poistua palvelimelta ja liitty\xE4 uudelleen. Mik\xE4li ongelma ei korjaantunut, nyk\xE4ise yll\xE4pit\xE4j\xE4\xE4 hihasta. Vaihtoehtoisesti mik\xE4li yll\xE4pit\xE4ji\xE4 ei ole palvelimella, tee tiketti Discordiin ja katsotaan kuinka asian voi hoitaa. Voit my\xF6s luoda uuden asian ',
+                        React.createElement(
+                            'a',
+                            { href: 'https://bugs.karanteeni.net', target: '_blank' },
+                            'Karanteenin ongelmanhallinnassa'
+                        ),
+                        '.'
                     )
                 ),
                 React.createElement(
@@ -135,7 +141,19 @@ var CommonQuestions = function (_React$Component2) {
                     React.createElement(
                         Answer,
                         { id: 'yle5', target: 'ylecol5' },
-                        'Ota yhteytt\xE4 yll\xE4pit\xE4j\xE4\xE4n joko palvelimella tai liity Karanteenin Discordiin ja valitse sielt\xE4 kanava "Bugit ja parannusehdotukset". Mik\xE4li bugia voi hyv\xE4ksik\xE4ytt\xE4\xE4, pid\xE4 se omana tietonasi, \xE4l\xE4k\xE4 kerro muille pelaajille.',
+                        'Ota yhteytt\xE4 yll\xE4pit\xE4j\xE4\xE4n joko palvelimella tai liity Karanteenin Discordiin ja valitse sielt\xE4 kanava "Bugit ja parannusehdotukset". Voit my\xF6s luoda uuden asian ',
+                        React.createElement(
+                            'a',
+                            { href: 'https://bugs.karanteeni.net', target: '_blank' },
+                            'Karanteenin ongelmanhallinnassa'
+                        ),
+                        React.createElement('br', null),
+                        React.createElement('br', null),
+                        React.createElement(
+                            'strong',
+                            null,
+                            'Mik\xE4li bugia voi hyv\xE4ksik\xE4ytt\xE4\xE4, pid\xE4 se omana tietonasi, \xE4l\xE4k\xE4 kerro muille pelaajille.'
+                        ),
                         React.createElement('br', null),
                         React.createElement('br', null),
                         'Bugin hyv\xE4ksik\xE4ytt\xF6 on ',
