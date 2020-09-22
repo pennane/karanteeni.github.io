@@ -42,3 +42,23 @@
  #user_browser_table td[data-cell-type="fullname"] a.user-avatar .aui-avatar, #user_browser_table td[data-cell-type="fullname"] a.user-avatar .fn {
      padding: 1px 5px;
  }
+
+ /* Projekti > käyttäjät ja roolit */
+ span#project-config-panel-roles-project-lead > a.user-hover {
+     padding: 0 10px;
+ }
+
+ span.roles-user-name-val > a.user-hover {
+     padding: 2px 5px;
+ }
+
+ span.roles-user-name-val > a.user-hover > span.aui-avatar {
+     vertical-align: none;
+ }
+
+
+ /* Asian muutoshistoria */
+ div.action-details > a.user-hover {
+     padding-left: 30px;
+     padding-right: 10px;
+ }
