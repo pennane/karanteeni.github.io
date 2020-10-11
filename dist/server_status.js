@@ -20,7 +20,8 @@ var ServerStatus = function (_React$Component) {
 
         _this.state = {
             isLoading: true,
-            data: []
+            data: [],
+            error: false
         };
         return _this;
     }
@@ -35,9 +36,7 @@ var ServerStatus = function (_React$Component) {
             }).then(function (result) {
                 _this2.setState({
                     data: _this2.state.data.concat(result),
-                    isLoading: false,
-                    error: false,
-                    offline: false
+                    isLoading: false
                 });
             }).catch(function (error) {
                 console.log(error);
@@ -109,9 +108,8 @@ var ServerStatus = function (_React$Component) {
                             ), React.createElement('br', null), React.createElement('br', null), React.createElement(
                                 'p',
                                 null,
-                                'Karanteenissa pelaa t\xE4ll\xE4 hetkell\xE4 ',
-                                index.players.online,
-                                ' pelaajaa.'
+                                'Pelaajia paikalla: ',
+                                index.players.online
                             )];
                         })
                     )
