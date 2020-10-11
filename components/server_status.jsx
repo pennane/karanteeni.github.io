@@ -8,7 +8,8 @@ class ServerStatus extends React.Component {
 
         this.state = {
             isLoading: true,
-            data: []
+            data: [],
+            error: false
         }
     }
 
@@ -19,9 +20,7 @@ class ServerStatus extends React.Component {
             (result => {
                 this.setState({
                     data: this.state.data.concat(result),
-                    isLoading: false,
-                    error: false,
-                    offline: false
+                    isLoading: false
                 })
             })
         )
@@ -54,7 +53,7 @@ class ServerStatus extends React.Component {
                                 <button className='copyPaste btn btn-outline-light btn-tooltip show' data-toggle='tooltip' data-placement='top' title='Paina tästä kopioidaksesi IP-osoite.' data-clipboard-target='#numip'><i class='fas fa-copy'></i></button>,
                                 <br/>,
                                 <br/>,
-                                <p>Karanteenissa pelaa tällä hetkellä {index.players.online} pelaajaa.</p>
+                                <p>Pelaajia paikalla: {index.players.online}</p>
                             ])
                         })}
                     </div>
