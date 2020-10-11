@@ -118,10 +118,48 @@ var Changelog = function (_React$Component3) {
                 { className: 'accordion text-left' },
                 React.createElement(
                     Month,
+                    { month: 'lokakuu2020', btntext: 'Lokakuu 2020' },
+                    React.createElement(
+                        Body,
+                        { month: 'lokakuu2020', showing: true },
+                        React.createElement(Dated, { date: '10.10.2020' }),
+                        React.createElement(
+                            'ul',
+                            null,
+                            React.createElement(
+                                Change,
+                                null,
+                                'Halloween teemainen tabi.'
+                            ),
+                            React.createElement(
+                                Change,
+                                null,
+                                'Spawn on nyt halloween teemainen.'
+                            ),
+                            React.createElement(
+                                Change,
+                                null,
+                                'Aikaisemmin hidastelleet votet pit\xE4isi nyt toimia.'
+                            )
+                        ),
+                        React.createElement(Dated, { date: '9.10.2020' }),
+                        React.createElement(
+                            'ul',
+                            null,
+                            React.createElement(
+                                Change,
+                                null,
+                                'Discord bot n\xE4ytt\xE4\xE4 nyt roolit Minecraftin chatissa.'
+                            )
+                        )
+                    )
+                ),
+                React.createElement(
+                    Month,
                     { month: 'syyskuu2020', btntext: 'Syyskuu 2020' },
                     React.createElement(
                         Body,
-                        { month: 'syyskuu2020', showing: true },
+                        { month: 'syyskuu2020' },
                         React.createElement(Dated, { date: '19.9.2020' }),
                         React.createElement(
                             'ul',

@@ -1327,4 +1327,13 @@ h6 {
     color: #5c5c5c;
 }
 
+.copyPaste {
+    margin: auto;
+    margin-top: 10px;
+}
+
+.online {
+    color: lime;
+}
+
 /* */

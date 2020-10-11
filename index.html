@@ -88,19 +88,18 @@
   <div class="container-fluid bg-image">
     <div class="row">
       <div class="px-1 col-xl-2 col-lg-3">
-        <div class="px-1 container pt-3 pb-3">
-          <div class="card card-body content bg-transparent text-white">
+        <div id="server" class="px-1 container pt-3 pb-3">
+          <!-- <div class="card card-body content bg-transparent text-white">
             <h5 class="card-title"><i class="fas fa-server card-title-icon"></i>Palvelin</h5>
             <div id="content">
               <p><span id="status"></span></p>
               <p> <span id="version"></span></p>
               <p id="ip"></p>
               <p id="online"></p>
-              <p id="server"></p>
             </div>
-          </div>
-          <div id="votecontainer" class="card card-body content bg-transparent text-white mt-5"></div>
+          </div> -->
         </div>
+        <div id="votecontainer" class="px-1 container pt-3 pb-3"></div>
       </div>
       <div id="articles" class="px-1 col-xl-8 col-lg-6"></div>
       <div id="tapahtumat-row" class="px-1 col-xl-2 col-lg-3">
@@ -114,7 +113,7 @@
   <footer id="footer" class="footer mt-auto"></footer>
   <div id="snowstorm"></div>
   <script src="modules/Jutut/jutut.js"></script>
-  <script src="modules/ServerStatus/server-status.js"></script>
+  <script src="dist/server_status.js"></script>
   <script>
     var clipboard = new ClipboardJS('.btn');
     clipboard.on('success', function (e) {

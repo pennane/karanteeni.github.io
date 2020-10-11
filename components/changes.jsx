@@ -71,9 +71,24 @@ class Changelog extends React.Component {
         return (
             <div className='accordion text-left'>
 
+                <Month month='lokakuu2020' btntext='Lokakuu 2020'>
+                    <Body month='lokakuu2020' showing>
+                        <Dated date='10.10.2020'/>
+                        <ul>
+                            <Change>Halloween teemainen tabi.</Change>
+                            <Change>Spawn on nyt halloween teemainen.</Change>
+                            <Change>Aikaisemmin hidastelleet votet pitäisi nyt toimia.</Change>
+                        </ul>
+                        <Dated date='9.10.2020'/>
+                        <ul>
+                            <Change>Discord bot näyttää nyt roolit Minecraftin chatissa.</Change>
+                        </ul>
+                    </Body>
+                </Month>
+            
 
                 <Month month='syyskuu2020' btntext='Syyskuu 2020'>
-                    <Body month='syyskuu2020' showing>
+                    <Body month='syyskuu2020'>
                         <Dated date='19.9.2020'/>
                         <ul>
                             <Change>Päivitetty tabista palvelimen alkukirjain isoksi.</Change>

@@ -1595,3 +1595,12 @@ li a:hover {
     z-index: 9;
     max-height: 376px !important
 }
+
+.copyPaste {
+    margin: auto;
+    margin-top: 10px;
+}
+
+.online {
+    color: lime;
+}
