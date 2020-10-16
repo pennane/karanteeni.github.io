@@ -37,7 +37,7 @@ class ServerStatus extends React.Component {
 
         if (isLoading == false) {
             return (
-                <div class="card card-body content bg-transparent text-white">
+                <div class="card card-body content bg-transparent">
                     <h5 class="card-title"><i class="fas fa-server card-title-icon"></i>Palvelin</h5>
                     <div id="content">
                         {debug.map((index, key) => {
@@ -49,7 +49,7 @@ class ServerStatus extends React.Component {
                             return ([
                                 <p><span key={key} className="online">Päällä</span></p>,
                                 <p><span key={key}>Versio: {index.version}</span></p>,
-                                <p className="server-ip"><span key={key}>mc.karanteeni.net <span id="numip">{index.ip}</span></span></p>,
+                                <p className="server-ip"><span key={key}>mc.karanteeni.net <br/><span id="numip">{index.ip}</span></span></p>,
                                 <button className='copyPaste btn btn-outline-light btn-tooltip show' data-toggle='tooltip' data-placement='top' title='Paina tästä kopioidaksesi IP-osoite.' data-clipboard-target='#numip'><i class='fas fa-copy'></i></button>,
                                 <br/>,
                                 <br/>,
@@ -60,7 +60,7 @@ class ServerStatus extends React.Component {
                 </div>
             )
         } else if (error == true) {
-            <div class="card card-body content bg-transparent text-white">
+            <div class="card card-body content bg-transparent">
                 <h5 class="card-title"><i class="fas fa-server card-title-icon"></i>Palvelin</h5>
                 <div id="content">
                     <p>Palvelimen kysely on rikki.</p>

@@ -53,7 +53,7 @@ var ServerStatus = function (_React$Component) {
             if (isLoading == false) {
                 return React.createElement(
                     'div',
-                    { 'class': 'card card-body content bg-transparent text-white' },
+                    { 'class': 'card card-body content bg-transparent' },
                     React.createElement(
                         'h5',
                         { 'class': 'card-title' },
@@ -95,6 +95,7 @@ var ServerStatus = function (_React$Component) {
                                     'span',
                                     { key: key },
                                     'mc.karanteeni.net ',
+                                    React.createElement('br', null),
                                     React.createElement(
                                         'span',
                                         { id: 'numip' },
@@ -117,7 +118,7 @@ var ServerStatus = function (_React$Component) {
             } else if (error == true) {
                 React.createElement(
                     'div',
-                    { 'class': 'card card-body content bg-transparent text-white' },
+                    { 'class': 'card card-body content bg-transparent' },
                     React.createElement(
                         'h5',
                         { 'class': 'card-title' },
