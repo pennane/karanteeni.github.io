@@ -3,8 +3,8 @@
     "title": "Maailmanloppu",
     "description": "Haha, TNT printer go brrr.",
     "dates": {
-      "start-date": "27.05.2020",
-      "end-date": "29.05.2020"
+      "start-date": "05.11.2020",
+      "end-date": "06.11.2020"
     },
     "__comment": "End date:n voi jättää tyhjäksi, jolloin tapahtuma luokitellaan päivän pituiseksi. Descriptionin voi myös iloisesti jättää tyhjäksi."
   },
@@ -12,7 +12,7 @@
     "title": "Mapreset",
     "description": "Palvelimen aukaisu.",
     "dates": {
-      "start-date": "01.06.2020",
+      "start-date": "07.11.2020",
       "end-date": ""
     },
     "__comment": "End date:n voi jättää tyhjäksi, jolloin tapahtuma luokitellaan päivän pituiseksi. Descriptionin voi myös iloisesti jättää tyhjäksi."
