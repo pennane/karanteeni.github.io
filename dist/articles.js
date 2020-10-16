@@ -563,7 +563,7 @@ var ArticleBody = function ArticleBody(props) {
         { className: 'px-1 container pt-3 pb-3' },
         React.createElement(
             'div',
-            { className: 'karaupdate card bg-transparent card-body text-white content' },
+            { className: 'karaupdate card bg-transparent card-body content' },
             props.children
         )
     );

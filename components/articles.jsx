@@ -319,7 +319,7 @@ class Articles extends React.Component {
 const ArticleBody = (props) => {
     return (
         <div className="px-1 container pt-3 pb-3">
-            <div className="karaupdate card bg-transparent card-body text-white content">
+            <div className="karaupdate card bg-transparent card-body content">
                 {props.children}
             </div>
         </div>
