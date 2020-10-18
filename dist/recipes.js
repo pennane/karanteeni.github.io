@@ -116,6 +116,10 @@ var Recipes = function Recipes() {
         "div",
         { className: "col-lg-6 m-auto text-center" },
         React.createElement(Recipe, {
+            caption: "Rakentajan essentiaalinen ty\xF6kalu.",
+            image: "assets/images/recipes/builders_wand.png"
+        }),
+        React.createElement(Recipe, {
             caption: "Kaikki lasipaneelityypit voi muuttaa takaisin palikoiksi.",
             image: "assets/images/recipes/glasspane.png"
         }),

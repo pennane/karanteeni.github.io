@@ -56,6 +56,10 @@ const Recipes = () => {
     return (
         <div className="col-lg-6 m-auto text-center">
             <Recipe
+                caption="Rakentajan essentiaalinen työkalu."
+                image="assets/images/recipes/builders_wand.png"
+            />
+            <Recipe
                 caption="Kaikki lasipaneelityypit voi muuttaa takaisin palikoiksi."
                 image="assets/images/recipes/glasspane.png"
             />

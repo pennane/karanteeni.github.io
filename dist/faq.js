@@ -101,7 +101,13 @@ var CommonQuestions = function (_React$Component2) {
                     React.createElement(
                         Answer,
                         { id: 'yle3', target: 'ylecol3' },
-                        'Koita poistua palvelimelta ja liitty\xE4 uudelleen. Mik\xE4li ongelma ei korjaantunut, nyk\xE4ise yll\xE4pit\xE4j\xE4\xE4 hihasta.'
+                        'Koita poistua palvelimelta ja liitty\xE4 uudelleen. Mik\xE4li ongelma ei korjaantunut, nyk\xE4ise yll\xE4pit\xE4j\xE4\xE4 hihasta. Vaihtoehtoisesti mik\xE4li yll\xE4pit\xE4ji\xE4 ei ole palvelimella, tee tiketti Discordiin ja katsotaan kuinka asian voi hoitaa. Voit my\xF6s luoda uuden asian ',
+                        React.createElement(
+                            'a',
+                            { href: 'https://bugs.karanteeni.net', target: '_blank' },
+                            'Karanteenin ongelmanhallinnassa'
+                        ),
+                        '.'
                     )
                 ),
                 React.createElement(
@@ -135,7 +141,19 @@ var CommonQuestions = function (_React$Component2) {
                     React.createElement(
                         Answer,
                         { id: 'yle5', target: 'ylecol5' },
-                        'Ota yhteytt\xE4 yll\xE4pit\xE4j\xE4\xE4n joko palvelimella tai liity Karanteenin Discordiin ja valitse sielt\xE4 kanava "Bugit ja parannusehdotukset". Mik\xE4li bugia voi hyv\xE4ksik\xE4ytt\xE4\xE4, pid\xE4 se omana tietonasi, \xE4l\xE4k\xE4 kerro muille pelaajille.',
+                        'Ota yhteytt\xE4 yll\xE4pit\xE4j\xE4\xE4n joko palvelimella tai liity Karanteenin Discordiin ja valitse sielt\xE4 kanava "Bugit ja parannusehdotukset". Voit my\xF6s luoda uuden asian ',
+                        React.createElement(
+                            'a',
+                            { href: 'https://bugs.karanteeni.net', target: '_blank' },
+                            'Karanteenin ongelmanhallinnassa'
+                        ),
+                        React.createElement('br', null),
+                        React.createElement('br', null),
+                        React.createElement(
+                            'strong',
+                            null,
+                            'Mik\xE4li bugia voi hyv\xE4ksik\xE4ytt\xE4\xE4, pid\xE4 se omana tietonasi, \xE4l\xE4k\xE4 kerro muille pelaajille.'
+                        ),
                         React.createElement('br', null),
                         React.createElement('br', null),
                         'Bugin hyv\xE4ksik\xE4ytt\xF6 on ',
@@ -178,7 +196,7 @@ var CommonQuestions = function (_React$Component2) {
                         'Maailma nollataan yleens\xE4 noin puolen vuoden v\xE4lein, mutta ei tapahdu automaationa. Yleens\xE4 maailman nollaus my\xF6s t\xE4hd\xE4t\xE4\xE4n seuraavan Minecraftin suuren versiop\xE4ivityksen kohdille.',
                         React.createElement('br', null),
                         React.createElement('br', null),
-                        'Nether tulevaisuudessa ei tule nollautumaan 1.16 p\xE4ivityksen my\xF6t\xE4. End nollataan kerran kolmessa kuukaudessa.'
+                        'Netheri\xE4 ei nollata ja End nollataan kerran kolmessa kuukaudessa.'
                     )
                 ),
                 React.createElement(
@@ -276,7 +294,7 @@ var ProtectionQuestions = function (_React$Component3) {
                         'Yll\xE4pito suojaa alueen ja suojaukseen vaaditaan talon alku. Huomaathan, ett\xE4 talosi t\xE4ytyy olla v\xE4hint\xE4\xE4n sadan (100) blockin p\xE4\xE4ss\xE4 l\xE4himm\xE4st\xE4 talosta. Mik\xE4li aiot luoda kyl\xE4n, voit p\xE4\xE4tt\xE4\xE4 alueelle nimen. Warpin kyl\xE4lle saa vasta, kun kyl\xE4ll\xE4 on 15 asukasta. ',
                         React.createElement('br', null),
                         React.createElement('br', null),
-                        'Netheriin ja Endiin ei p\xE4\xE4s\xE4\xE4nt\xF6isesti suojata alueita.'
+                        'Endiin ei p\xE4\xE4s\xE4\xE4nt\xF6isesti suojata alueita.'
                     )
                 ),
                 React.createElement(
@@ -443,9 +461,9 @@ var EconomyQuestions = function (_React$Component4) {
                         React.createElement(
                             'code',
                             null,
-                            '/vote.'
+                            '/vote'
                         ),
-                        'Jokainen \xE4\xE4nestykerta on 50 pennin arvoinen. ',
+                        '. Jokainen \xE4\xE4nestykerta on 50 pennin arvoinen. ',
                         React.createElement('br', null),
                         'Voit my\xF6s myyd\xE4 sek\xE4 ostaa tavaraa k\xE4ytt\xE4m\xE4ll\xE4 arkkukauppoja. Spawnilla on kauppa (',
                         React.createElement(
@@ -522,7 +540,7 @@ var HomeQuestions = function (_React$Component5) {
                     React.createElement(
                         Answer,
                         { id: 'home3', target: 'homecol3' },
-                        'Saat, mutta emme suosittele. Nether ja End resetoidaan kuukauden v\xE4lein, mik\xE4 voi aiheuttaa kodin korruptoitumista ja sinun kuoleman. T\xE4m\xE4 tarkoittaa siis sit\xE4, ett\xE4 saatat kuolla jos k\xE4yt\xE4t kotia resetoinnin j\xE4lkeen. Yll\xE4pito ei ole velvollinen palauttamaan tavaroitasi.'
+                        'Saat, mutta Endiin emme suosittele. End resetoidaan n. puolessa v\xE4liss\xE4 karttaa, mik\xE4 voi aiheuttaa kodin korruptoitumista ja sinun kuoleman. T\xE4m\xE4 tarkoittaa siis sit\xE4, ett\xE4 saatat kuolla jos k\xE4yt\xE4t kotia resetoinnin j\xE4lkeen. Yll\xE4pito ei ole velvollinen palauttamaan tavaroitasi.'
                     )
                 ),
                 React.createElement(

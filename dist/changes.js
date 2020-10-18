@@ -118,10 +118,88 @@ var Changelog = function (_React$Component3) {
                 { className: 'accordion text-left' },
                 React.createElement(
                     Month,
+                    { month: 'lokakuu2020', btntext: 'Lokakuu 2020' },
+                    React.createElement(
+                        Body,
+                        { month: 'lokakuu2020', showing: true },
+                        React.createElement(Dated, { date: '10.10.2020' }),
+                        React.createElement(
+                            'ul',
+                            null,
+                            React.createElement(
+                                Change,
+                                null,
+                                'Halloween teemainen tabi.'
+                            ),
+                            React.createElement(
+                                Change,
+                                null,
+                                'Spawn on nyt halloween teemainen.'
+                            ),
+                            React.createElement(
+                                Change,
+                                null,
+                                'Aikaisemmin hidastelleet votet pit\xE4isi nyt toimia.'
+                            )
+                        ),
+                        React.createElement(Dated, { date: '9.10.2020' }),
+                        React.createElement(
+                            'ul',
+                            null,
+                            React.createElement(
+                                Change,
+                                null,
+                                'Discord bot n\xE4ytt\xE4\xE4 nyt roolit Minecraftin chatissa.'
+                            )
+                        )
+                    )
+                ),
+                React.createElement(
+                    Month,
                     { month: 'syyskuu2020', btntext: 'Syyskuu 2020' },
                     React.createElement(
                         Body,
-                        { month: 'syyskuu2020', showing: true },
+                        { month: 'syyskuu2020' },
+                        React.createElement(Dated, { date: '19.9.2020' }),
+                        React.createElement(
+                            'ul',
+                            null,
+                            React.createElement(
+                                Change,
+                                null,
+                                'P\xE4ivitetty tabista palvelimen alkukirjain isoksi.'
+                            )
+                        ),
+                        React.createElement(Dated, { date: '14.9.2020' }),
+                        React.createElement(
+                            'ul',
+                            null,
+                            React.createElement(
+                                Change,
+                                null,
+                                'Sisukas-rankkisten (ja alempien) virheellinen viesti-ilmoitus oikeuksista on nyt korjattu.'
+                            ),
+                            React.createElement(
+                                Change,
+                                null,
+                                'Paranneltu turvallista teleporttia (onnistuu teleporttaamaan slabien p\xE4\xE4lle)'
+                            )
+                        ),
+                        React.createElement(Dated, { date: '12.9.2020' }),
+                        React.createElement(
+                            'ul',
+                            null,
+                            React.createElement(
+                                Change,
+                                null,
+                                'Added Russian language (thanks Inferdy \u2764).'
+                            ),
+                            React.createElement(
+                                Change,
+                                null,
+                                'Muutettu arvojen v\xE4rit tukemaan RGB.'
+                            )
+                        ),
                         React.createElement(Dated, { date: '3.9.2020' }),
                         React.createElement(
                             'ul',
@@ -136,6 +214,11 @@ var Changelog = function (_React$Component3) {
                         React.createElement(
                             'ul',
                             null,
+                            React.createElement(
+                                Change,
+                                null,
+                                'Lis\xE4tty oikeus Nekromantikosta yl\xF6sp\xE4in + lahjoittajille k\xE4ytt\xE4\xE4 RGB-v\xE4rej\xE4 pelinimess\xE4.'
+                            ),
                             React.createElement(
                                 Change,
                                 null,

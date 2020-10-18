@@ -119,6 +119,16 @@ var Footer = function (_React$Component) {
                                     { href: "/yllapito", rel: "noopener noreferrer" },
                                     "Yll\xE4pito"
                                 )
+                            ),
+                            React.createElement(
+                                "li",
+                                null,
+                                "- ",
+                                React.createElement(
+                                    "a",
+                                    { href: "https://bugs.karanteeni.net", target: "_blank", rel: "noopener noreferrer" },
+                                    "Ongelmanhallinta"
+                                )
                             )
                         )
                     )

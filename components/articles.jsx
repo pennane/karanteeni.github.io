@@ -155,7 +155,7 @@ class Articles extends React.Component {
                         </p>
                         <p>
                             <strong>P.S </strong>Ylläpitohaku pyörii edelleen. Innokkaita ja haun vaatimuksia täyttäviä halukkaita
-                            kaivataan ylläpitojoukkoon. Lisätietoa ylläpitoon hakemisesta löytyy
+                            kaivataan ylläpitojoukkoon. Lisätietoa ylläpitoon hakemisesta löytyy&nbsp;
                             <a href="yphaku" id="link">täältä</a>.
                         </p>
                         <br/>
@@ -319,7 +319,7 @@ class Articles extends React.Component {
 const ArticleBody = (props) => {
     return (
         <div className="px-1 container pt-3 pb-3">
-            <div className="karaupdate card bg-transparent card-body text-white content">
+            <div className="karaupdate card bg-transparent card-body content">
                 {props.children}
             </div>
         </div>

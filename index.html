@@ -88,24 +88,19 @@
   <div class="container-fluid bg-image">
     <div class="row">
       <div class="px-1 col-xl-2 col-lg-3">
-        <div class="px-1 container pt-3 pb-3">
-          <div class="card card-body content bg-transparent text-white">
-            <h5 class="card-title"><i class="fas fa-server card-title-icon"></i>Palvelin</h5>
-            <div id="content">
-              <p><span id="status"></span></p>
-              <p> <span id="version"></span></p>
-              <p id="ip"></p>
-              <p id="online"></p>
-              <p id="server"></p>
-            </div>
-          </div>
-          <div id="votecontainer" class="card card-body content bg-transparent text-white mt-5"></div>
-        </div>
+        <div id="server" class="px-1 container pt-3 pb-3"></div>
+        <div id="votecontainer" class="px-1 container pt-3 pb-3"></div>
       </div>
       <div id="articles" class="px-1 col-xl-8 col-lg-6"></div>
       <div id="tapahtumat-row" class="px-1 col-xl-2 col-lg-3">
         <div class="px-1 container pt-3 pb-3">
-          <div id="tapahtumat" class="tapahtumat card card-body bg-transparent text-white content"></div>
+          <div id="tapahtumat" class="tapahtumat card card-body bg-transparent text-light content"></div>
+        </div>
+        <div class="px-1 container pt-3 pb3">
+          <div class="card card-body bg-transparent content">
+            <h5 class="card-title"><i class="fas fa-clock"></i>&nbsp;Aikaa mapresettiin</h5>
+            <p id="mapreset"></p>
+          </div>
         </div>
       </div>
     </div>
@@ -114,7 +109,7 @@
   <footer id="footer" class="footer mt-auto"></footer>
   <div id="snowstorm"></div>
   <script src="modules/Jutut/jutut.js"></script>
-  <script src="modules/ServerStatus/server-status.js"></script>
+  <script src="dist/server_status.js"></script>
   <script>
     var clipboard = new ClipboardJS('.btn');
     clipboard.on('success', function (e) {
@@ -149,6 +144,7 @@
   <script src="./dist/footer.js"></script>
   <script src="./dist/articles.js"></script>
   <script src="./modules/ServerEvents/serverevents.js"></script>
+  <script src="./modules/Countdown/countdown.js"></script>
   <script src="./modules/Particles/particles.js-2.0.0/particles.min.js"></script>
   <script src="./modules/Particles/particles.js-2.0.0/app.js"></script>
   <!-- <script src="./dist/totop_btn.js"></script> -->

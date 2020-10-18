@@ -303,7 +303,7 @@ var Articles = function (_React$Component) {
                                 null,
                                 'P.S '
                             ),
-                            'Yll\xE4pitohaku py\xF6rii edelleen. Innokkaita ja haun vaatimuksia t\xE4ytt\xE4vi\xE4 halukkaita kaivataan yll\xE4pitojoukkoon. Lis\xE4tietoa yll\xE4pitoon hakemisesta l\xF6ytyy',
+                            'Yll\xE4pitohaku py\xF6rii edelleen. Innokkaita ja haun vaatimuksia t\xE4ytt\xE4vi\xE4 halukkaita kaivataan yll\xE4pitojoukkoon. Lis\xE4tietoa yll\xE4pitoon hakemisesta l\xF6ytyy\xA0',
                             React.createElement(
                                 'a',
                                 { href: 'yphaku', id: 'link' },
@@ -563,7 +563,7 @@ var ArticleBody = function ArticleBody(props) {
         { className: 'px-1 container pt-3 pb-3' },
         React.createElement(
             'div',
-            { className: 'karaupdate card bg-transparent card-body text-white content' },
+            { className: 'karaupdate card bg-transparent card-body content' },
             props.children
         )
     );

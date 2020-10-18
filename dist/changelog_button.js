@@ -34,8 +34,8 @@ var ChangeLogButton = function (_React$Component) {
 
 var VoteLinks = function VoteLinks() {
     return React.createElement(
-        React.Fragment,
-        null,
+        "div",
+        { className: "card card-body content bg-transparent text-white mt-5" },
         React.createElement(
             "h5",
             { "class": "card-title" },
@@ -64,6 +64,6 @@ var VoteLinks = function VoteLinks() {
 };
 
 var div = document.querySelector('#changelog_button');
-var vote = document.querySelector('#votecontainer');
+var vote = document.getElementById('votecontainer');
 ReactDOM.render(React.createElement(ChangeLogButton, null), div);
 ReactDOM.render(React.createElement(VoteLinks, null), vote);
