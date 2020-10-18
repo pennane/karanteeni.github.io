@@ -107,6 +107,14 @@
         "Rakentaminen"
       ],
       "uuid": "5cab2b2a16dc410491ff40fa6920d01d"
+    },
+    {
+      "nimi": "jafarin",
+      "kuvaus": "Aiemman sukupolven supersotilas.",
+      "vahvuudet": [
+        "Rakentaminen"
+      ],
+      "uuid": "0dc20ee9778746ceabecf208098484d7" 
     }
   ]
 }
