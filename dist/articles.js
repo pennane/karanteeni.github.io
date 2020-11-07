@@ -28,6 +28,41 @@ var Articles = function (_React$Component) {
                     null,
                     React.createElement(
                         Title,
+                        { label: true, type: 'update' },
+                        'Kirahvinp\xE4\xE4'
+                    ),
+                    React.createElement(
+                        Time,
+                        null,
+                        '07.11.2020'
+                    ),
+                    React.createElement(
+                        Content,
+                        null,
+                        React.createElement(
+                            'p',
+                            null,
+                            'Heipsan saa! Karanteeni on nyt p\xE4ivitetty 1.16.4 versioon. Karanteeni on kyennyt seuraamaan hyvin meid\xE4n roadmappia siit\xE4 l\xE4htien, kun Halloween juhlat j\xE4tettiin pos laskuista. Joulu kolkuttelee ovella ja siihen on panostettu. Olemme kyenneet etenem\xE4\xE4n aikataulussa, johon olemme tyytyv\xE4isi\xE4.'
+                        ),
+                        React.createElement(
+                            'p',
+                            null,
+                            'Tietenkin ihan kaikki ei ole mennyt nappiin t\xE4ll\xE4k\xE4\xE4n kertaa, emmek\xE4 koskaan varmaan saavuta t\xE4ydellisyyden huippua. Tietyt asiat on siirretty taas eteenp\xE4in ja roadmap muuttunee entisest\xE4\xE4n, kun asioiden priorisointia vaihdetaan. T\xE4m\xE4n kartan on tarkoitus s\xE4ily\xE4 1.17 versioon saakka, joka julkaistaan oletettavasti Q2 @ 2021.'
+                        ),
+                        React.createElement(
+                            'p',
+                            null,
+                            'Yst\xE4v\xE4llisin terveisin, ',
+                            React.createElement('br', null),
+                            'Karanteenin yll\xE4pito'
+                        )
+                    )
+                ),
+                React.createElement(
+                    ArticleBody,
+                    null,
+                    React.createElement(
+                        Title,
                         { label: true, type: 'announcement' },
                         '1.16.3'
                     ),
