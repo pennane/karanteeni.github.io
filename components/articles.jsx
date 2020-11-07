@@ -7,6 +7,30 @@ class Articles extends React.Component {
             <React.Fragment>
 
                 <ArticleBody>
+                    <Title label={true} type='update'>
+                        Kirahvinpää
+                    </Title>
+                    <Time>
+                        07.11.2020
+                    </Time>
+                    <Content>
+                        <p>
+                            Heipsan saa! Karanteeni on nyt päivitetty 1.16.4 versioon. Karanteeni on kyennyt seuraamaan hyvin meidän roadmappia siitä lähtien, kun Halloween juhlat
+                            jätettiin pos laskuista. Joulu kolkuttelee ovella ja siihen on panostettu. Olemme kyenneet etenemään aikataulussa, johon olemme tyytyväisiä.
+                        </p>
+                        <p>
+                            Tietenkin ihan kaikki ei ole mennyt nappiin tälläkään kertaa, emmekä koskaan varmaan saavuta täydellisyyden huippua. Tietyt asiat on siirretty taas eteenpäin
+                            ja roadmap muuttunee entisestään, kun asioiden priorisointia vaihdetaan. Tämän kartan on tarkoitus säilyä 1.17 versioon saakka, joka julkaistaan oletettavasti
+                            Q2 @ 2021.
+                        </p>
+                        <p>
+                            Ystävällisin terveisin, <br/>
+                            Karanteenin ylläpito
+                        </p>
+                    </Content>
+                </ArticleBody>
+
+                <ArticleBody>
                     <Title label={true} type='announcement'>
                         1.16.3
                     </Title>
