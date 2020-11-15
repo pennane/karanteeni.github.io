@@ -2,18 +2,49 @@
 
 Peruspaske sivut (HTML, CSS, JS) :D
 
-Versio: 4.2.2
+Versio: 4.2.3
 
-## "Hei pukki, mullois vaan yks toive... että maailmassa olisi rauha..."
+## Esivaatimukset
 
-ja sitten se, että kuka ikinä tätä lukeekaan ymmärtää nämä "ohjeet". Tämän repositorion muokkaamiseen tarvitaan JavaScript osaamista (mieluiten Reactilla), Node.js
-ja npm niiden viimeisimmässä versiossaan.
+- Node.js >= 12
+- Yleinen perusosaaminen JavaScriptista
+- Reactin perustuntemus
 
-## Muokkaaminen
+## Rakenne
 
-**Yleistä:** JavaScript moduulit löytyy kansiosta `/modules`, taustakuvat (sekä yleensäkin muut kuvat) löytää kansiosta `/assets/images/` ja skinit löytää kansiosta `/assets/skins/`, joille toistaiseksi ei ole mitään käyttöä. Paketti myös sisältää pohjasivun, jolla voit luoda samantyylisen sivun helposti tarvittaessa. Paketti sisältää myös JSX-komponentit helppoa muokkaamista varten, mutta komponentit täytyy esikääntää selaimelle luettavaksi JavaScriptiksi, jotka löytää `/src` kansiosta. Lisää tästä löydät [React-komponenttien kääntämisestä](#React-komponenttien-kääntäminen)
+```
+karanteeni.github.io/
+├── assets/
+│   ├── fonts/
+|   |   └── Sisältää fontit
+│   ├── images/
+|   |   └── Sisältää kuvat
+│   └── skins/
+|       └── Sisältää skinit (harvoin käytetään)
+├── components/
+│   └── Sisältää React-komponentit
+├── dist/
+|    └── Sisältää käännetyt React-komponentit
+├── modules/
+|   └── Sisältää JavaScript moduulit
+└── vendor/
+    ├── bootstrap/
+    |   └── Sisältää bootstrap css ja js
+    ├── css/
+    |   └── Sisältää Karanteenin css
+    ├── FontAwesome/
+    |   └── Sisältää FontAwesome -ikonipaketin css
+    ├── jquery/
+    |   └── Sisältää jQueryn js-tiedostot
+    ├── webfonts/
+    |   └── Sisältää FontAwesomen fontit
+    └── winterstrap/
+        └── Sisältää talven ajalta Karanteenin bootstrap css
+```
 
-### React komponentit
+Paketti sisältää myös pohjasivun, jolla voit luoda samantyylisen sivun helposti tarvittaessa. React-komponentit täytyy esikääntää selaimelle luettavaksi JavaScriptiksi, jotka löytää `/components` kansiosta. Lisää tästä löydät [React-komponenttien kääntämisestä](#React-komponenttien-kääntäminen)
+
+### React-komponentit
 
 Navigaatiopalkki (samoin kuin moni muu komponentti) on toteutettu Reactilla. Jokaisessa tiedostossa on erikseen script tagit kyseiseen komponenttiin.
 
@@ -29,7 +60,7 @@ Jokainen komponentti toimii samalla tavalla. Muita komponentteja esimerkiksi ova
 
 ### Ylläpitosivut
 
-Ylläpitosivut ovat käytännössä vain rakenne. Ylläpitäjien lisääminen tapahtuu käytännössä `/modules/Operators/operators.json` tiedoston kautta, jolloin `operators.js` luo elementit kyseisten ylläpitäjien ympärille. `/modules/Operators/operators.json` sisältää arrayn omistajille, admineille ja rakentajille, jolloin elementit tulevat varmasti oikean kategorian alapuolelle ylläpitosivussa. Alta löytyy esimerkki:
+Ylläpitosivut ovat käytännössä vain rakenne. Ylläpitäjien lisääminen tapahtuu käytännössä `/modules/Operators/operators.json` tiedoston kautta, jolloin `/dist/operators.js` luo elementit kyseisten ylläpitäjien ympärille. `/modules/Operators/operators.json` sisältää arrayn omistajille, admineille ja rakentajille, jolloin elementit tulevat varmasti oikean kategorian alapuolelle ylläpitosivussa. Alta löytyy esimerkki:
 
 ```json
 {
@@ -100,8 +131,6 @@ UUID:tä käytetään lähinnä skinin hakemiseen, joka päivittyy automaattises
 
 ## React-komponenttien kääntäminen
 
-
-
 Reactin JSX-komponentit täytyy kääntää selaimelle luettavaksi JavaScriptiksi. Tämä onnistuu helposti, mikäli omistat Node Package Managerin (npm), mikä tulee autom. Node.js mukana. 
 
 Ensin pidä huolta, että tarvittavat paketit ovat asennettu terminaalin komennolla:
@@ -134,14 +163,14 @@ Mikäli haluat kääntää JSX-tiedostot manuaalisesti, suorita aina käännön 
 * [jQuery](https://jquery.com/) - JavaScript kirjasto
 * [Rakkaus](https://fi.wikipedia.org/wiki/Rakkaus) - Koska ilman verta, hikeä, kyyneleitä ja rakkautta ei tätäkään sivua olisi saatu aikaiseksi
 
-## Hatunnosto
+## Big thank you
 
-* [Visage](https://visage.surgeplay.com/) - Käytetty skinien kyselyyn
-* [Minecraft Server Status](https://mcsrvstat.us/) - Käytetty palvelimen statukseen
-* [Clipboard.js](https://clipboardjs.com/) - Käytetty elementtien kopioimiseen leikepöydälle
-* [March08 Animated Burgers](https://march08.github.io/animated-burgers/) - Käytetty mobiilinavigointipalkin ikonina 
-* [Toastr](https://toastrjs.com/) - Käytetty paahtoleipien paahtamiseen
-* [particles.js](https://vincentgarreau.com/particles.js/) - Käytetty partikkeleihin etusivulla
+* [Visage](https://visage.surgeplay.com/) - Used for querying skins
+* [Minecraft Server Status](https://mcsrvstat.us/) - Used for querying server status
+* [Clipboard.js](https://clipboardjs.com/) - Used for copying elements into clipboard
+* [March08 Animated Burgers](https://march08.github.io/animated-burgers/) - Used as mobile navbar icons
+* [Toastr](https://toastrjs.com/) - Used for sending toasts
+* [particles.js](https://vincentgarreau.com/particles.js/) - Used for particles in the home page
 
 ## Lisenssi
 

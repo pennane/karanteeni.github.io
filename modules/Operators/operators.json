@@ -53,6 +53,14 @@
         "Grief-tapaukset"
       ],
       "uuid": "a802f54ebfa148e3a7754d18d38a48be"
+    },
+    {
+      "nimi": "LouNii",
+      "kuvaus": "Yes.",
+      "vahvuudet": [
+        "Hack-clientit"
+      ],
+      "uuid": "d347193d8b794a389158074681bc32f8"
     }
   ],
   "operaattorit": [

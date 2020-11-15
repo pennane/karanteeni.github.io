@@ -42,6 +42,18 @@ class CommonRules extends React.Component {
                     </Rule>
                 </RuleContainer>
 
+                <RuleContainer>
+                    <Rule>
+                    <Icon icon="notice"/>
+                    <Content>
+                        <Heading>TNT-monistajat ovat osittain sallittuja</Heading>
+                        <Description>
+                            TNT-duplikaattoreita voi käyttää hyödyksi farmaamisessa. Kuitenkin muu käyttö on yhä toistaiseksi kielletty.
+                        </Description>
+                    </Content>
+                    </Rule>
+                </RuleContainer>
+
 
                 <RuleContainer>
                     <Rule>
