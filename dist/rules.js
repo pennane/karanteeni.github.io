@@ -96,6 +96,29 @@ var CommonRules = function (_React$Component) {
                     React.createElement(
                         Rule,
                         null,
+                        React.createElement(Icon, { icon: "notice" }),
+                        React.createElement(
+                            Content,
+                            null,
+                            React.createElement(
+                                Heading,
+                                null,
+                                "TNT-monistajat ovat osittain sallittuja"
+                            ),
+                            React.createElement(
+                                Description,
+                                null,
+                                "TNT-duplikaattoreita voi k\xE4ytt\xE4\xE4 hy\xF6dyksi farmaamisessa. Kuitenkin muu k\xE4ytt\xF6 on yh\xE4 toistaiseksi kielletty."
+                            )
+                        )
+                    )
+                ),
+                React.createElement(
+                    RuleContainer,
+                    null,
+                    React.createElement(
+                        Rule,
+                        null,
                         React.createElement(Icon, { icon: "allowed" }),
                         React.createElement(
                             Content,
