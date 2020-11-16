@@ -211,6 +211,7 @@ span.deprecated-content::before {
 
 .karanav {
     font-family: 'Century Gothic', sans-serif !important;
+    letter-spacing: 1px;
     font-size: 16px;
     box-shadow: 0px 0px 13px 2px rgba(0, 0, 0, .6), 0 2px 4px -1px rgba(0, 0, 0, .09);
     background-image: url('/../assets/images/crimson_nylium.png') !important;
