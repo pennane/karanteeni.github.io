@@ -6,7 +6,7 @@ class Footer extends React.Component {
         return (
             <div className="container">
                 <div className="row">
-                    <div className="col-lg-3 col-xs-12">
+                    <div className="col-lg-3 col-xs-12 footerLogo">
                         <a className="footer-link"href="https://karanteeni.net" target="_blank" rel="noopener noreferrer">
                             <img src="./assets/images/footerlogo.png" alt="Footerlogo" width="255" height="68"/>
                         </a>
