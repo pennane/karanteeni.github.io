@@ -118,10 +118,78 @@ var Changelog = function (_React$Component3) {
                 { className: 'accordion text-left' },
                 React.createElement(
                     Month,
+                    { month: 'joulukuu2020', btntext: 'Joulukuu 2020' },
+                    React.createElement(
+                        Body,
+                        { month: 'joulukuu2020', showing: true },
+                        React.createElement(Dated, { date: '2.11.2020' }),
+                        React.createElement(
+                            'ul',
+                            null,
+                            React.createElement(
+                                Change,
+                                null,
+                                'Joulukalenteri avattu'
+                            )
+                        )
+                    )
+                ),
+                React.createElement(
+                    Month,
                     { month: 'marraskuu2020', btntext: 'Marraskuu 2020' },
                     React.createElement(
                         Body,
-                        { month: 'marraskuu2020', showing: true },
+                        { month: 'marraskuu2020' },
+                        React.createElement(Dated, { date: '29.11.2020' }),
+                        React.createElement(
+                            'ul',
+                            null,
+                            React.createElement(
+                                Change,
+                                null,
+                                'Tabi on muutettu jouluisaksi.'
+                            )
+                        ),
+                        React.createElement(Dated, { date: '27.11.2020' }),
+                        React.createElement(
+                            'ul',
+                            null,
+                            React.createElement(
+                                Change,
+                                null,
+                                'V\xE4hennetty mobien m\xE4\xE4r\xE4\xE4 per pelaaja 28 -> 24.'
+                            )
+                        ),
+                        React.createElement(Dated, { date: '25.11.2020' }),
+                        React.createElement(
+                            'ul',
+                            null,
+                            React.createElement(
+                                Change,
+                                null,
+                                'Lis\xE4tty respawniin tuki respawn anchoreille, ei joudu en\xE4\xE4 spawnille kun respawnaa.'
+                            )
+                        ),
+                        React.createElement(Dated, { date: '22.11.2020' }),
+                        React.createElement(
+                            'ul',
+                            null,
+                            React.createElement(
+                                Change,
+                                null,
+                                'Lis\xE4tty kaksi (2) automaattista uudelleenk\xE4ynnistyst\xE4.'
+                            )
+                        ),
+                        React.createElement(Dated, { date: '17.11.2020' }),
+                        React.createElement(
+                            'ul',
+                            null,
+                            React.createElement(
+                                Change,
+                                null,
+                                'Lis\xE4tty vinkkeihin lyhyt ohje mit\xE4 teh\xE4 jos joku h\xE4irik\xF6i tai yll\xE4pitolaine h\xE4irik\xF6i.'
+                            )
+                        ),
                         React.createElement(Dated, { date: '14.11.2020' }),
                         React.createElement(
                             'ul',
