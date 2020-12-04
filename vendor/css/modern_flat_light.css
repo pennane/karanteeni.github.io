@@ -172,7 +172,9 @@ span.deprecated-content::before {
     background-image: url(/../assets/images/crimson_nylium.png) !important;
     background-size: 48px;
     image-rendering: pixelated;
-    font-weight: 700
+    font-weight: 700;
+    display: flex;
+    flex: 1;
 }
 
 .navbar {
