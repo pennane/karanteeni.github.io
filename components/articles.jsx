@@ -7,6 +7,59 @@ class Articles extends React.Component {
             <React.Fragment>
 
                 <ArticleBody>
+                    <Title label={true} type='update'>
+                        Teemapäivä
+                    </Title>
+                    <Time>
+                        04.12.2020
+                    </Time>
+                    <Content>
+                        <p>
+                            Joulukuu on alkanut ja nettisivuille julkaistaan neljä uutta teemaa, sekä teemavalitsin!
+                            Teema valitsimessa on nyt yhteensä neljä teemaa, jotka ovat valittavissa:
+                        </p>
+                        <ul>
+                            <li>Nether</li>
+                            <li>Winter</li>
+                            <li>Flat Light</li>
+                            <li>Flat Dark</li>
+                        </ul>
+                        <p>
+                            Teema tallentuu tietokoneellesi evästeen muodossa. Mikäli löydät ongelmia, ota yhteyttä Discordissa Sapphire#5375
+                            tai lähetä ongelmaraportti ongelmanhallintaohjelmaan.
+                        </p>
+                        <p>
+                            Hyvää joulun odotusta! <br/>
+                            Karanteenin ylläpito
+                        </p>
+                    </Content>
+                </ArticleBody>
+
+                <ArticleBody>
+                    <Title label={true} type='update'>
+                        Kirahvinpää
+                    </Title>
+                    <Time>
+                        07.11.2020
+                    </Time>
+                    <Content>
+                        <p>
+                            Heipsan saa! Karanteeni on nyt päivitetty 1.16.4 versioon. Karanteeni on kyennyt seuraamaan hyvin meidän roadmappia siitä lähtien, kun Halloween juhlat
+                            jätettiin pos laskuista. Joulu kolkuttelee ovella ja siihen on panostettu. Olemme kyenneet etenemään aikataulussa, johon olemme tyytyväisiä.
+                        </p>
+                        <p>
+                            Tietenkin ihan kaikki ei ole mennyt nappiin tälläkään kertaa, emmekä koskaan varmaan saavuta täydellisyyden huippua. Tietyt asiat on siirretty taas eteenpäin
+                            ja roadmap muuttunee entisestään, kun asioiden priorisointia vaihdetaan. Tämän kartan on tarkoitus säilyä 1.17 versioon saakka, joka julkaistaan oletettavasti
+                            Q2 @ 2021.
+                        </p>
+                        <p>
+                            Ystävällisin terveisin, <br/>
+                            Karanteenin ylläpito
+                        </p>
+                    </Content>
+                </ArticleBody>
+
+                <ArticleBody>
                     <Title label={true} type='announcement'>
                         1.16.3
                     </Title>
@@ -64,13 +117,13 @@ class Articles extends React.Component {
                             ongelmat... Man, life is unpredictable at times.
                         </p>
                         <p>
-                            <strong>TL;DR:</strong><br/>
-                            <ul>
+                            <strong>TL;DR:</strong>
+                        </p>
+                        <ul>
                             <li>Palvelimella pyörii Paper 1.16.2</li>
                             <li>End ja Nether nollattu, End nollataan jatkossa vain kerran per kartta</li>
                             <li>Nettisivua "modernisoitu", mutta sitä jatketaan + Nether teema</li>
-                            </ul>
-                        </p>
+                        </ul>
                         <p>
                             Terveisiä Crimson Forestista, Netheristä. <br/>
                             Karanteenin ylläpito
@@ -97,14 +150,14 @@ class Articles extends React.Component {
                         </p>
                         <br/>
                         <p>
-                            <strong>Sääntömuutos in a nutshell:</strong><br/><br/>
-                            <ol>
+                            <strong>Sääntömuutos in a nutshell:</strong>
+                        </p>
+                        <ol>
                             <li>Kyliä saa mainostaa yleisesti chatissä.</li>
                             <li>MSG-mainostus on kiellettyä</li>
                             <li>Copy & Paste mainosviestit ovat kiellettyjä</li>
                             <li>Voit mainostaa kylääsi spawnilla</li>
-                            </ol>
-                        </p><br/>
+                        </ol>
                         <p>
                             Toivottavasti nautitte uudistuksista ja paransimme jälleen pelikokemusta. Olette yhteisönä meille tärkeä! Hyvää kesää kaikille! &#9829;
                         </p>
@@ -221,7 +274,7 @@ class Articles extends React.Component {
                             <strong>TLDR;</strong> vaihdoimme palveluntarjoajaa ja otimme käyttöön BungeeCordin (Spigot 1.14.4).
                             Palvelimella esiintyy bugeja, eikä kaikkia ominaisuuksia
                             ole vielä lisätty, mutta saapuvat ajan kanssa. <br/><br/>
-                            <strong><span class="text-danger">HUOM!</span></strong> Tiedämme, että serverillä on lagia (johtuen
+                            <strong><span className="text-danger">HUOM!</span></strong> Tiedämme, että serverillä on lagia (johtuen
                             1.14.4), sitä ei tarvitse kertoa. <br/><br/>
                             Päivitys tuo tullessaan BungeeCordin, uuden IP-osoitteen, uutta palvelinrautaa (jotta serveri pysyisi
                             pelaamiskelpoisena), uudet pluginit ja huomattavasti
@@ -267,16 +320,21 @@ class Articles extends React.Component {
                             Pääsimme kuitenkin hyvin lähelle värimaailmaa, jossa suurin osa sopii hyvin yhteen, eikä
                             näytä liian
                             tylsältä tai kankealta, vaikka geneeriseltä saattaa
-                            näyttääkin. <br/><br/>
+                            näyttääkin.
+                        </p>
+                        <p>
                             Mikä sitten muuttui?
-                            <ul>
-                                <li>Ylläpitojutut vaihtanut paikkaa, sekä niiden määrää lisätty</li>
-                                <li>Fonttikoko pienentynyt</li>
-                                <li>Minecraft -tyylinen fontti ja ulkoasu</li>
-                                <li>Vanha tuttu palvelimen statuskysely palautettu</li>
-                                <li>Lisätty UKK -osio</li>
-                                <li>Rankit saivat uuden ulkoasun (kiitos Susselle ideasta!)</li>
-                            </ul>
+                        </p>
+                        <ul>
+                            <li>Ylläpitojutut vaihtanut paikkaa, sekä niiden määrää lisätty</li>
+                            <li>Fonttikoko pienentynyt</li>
+                            <li>Minecraft -tyylinen fontti ja ulkoasu</li>
+                            <li>Vanha tuttu palvelimen statuskysely palautettu</li>
+                            <li>Lisätty UKK -osio</li>
+                            <li>Rankit saivat uuden ulkoasun (kiitos Susselle ideasta!)</li>
+                        </ul>
+                        <p>
+
                             Toivomme, että tämä miellyttää silmäänne hieman enemmän. :)
                         </p>
                     </Content>
@@ -294,7 +352,7 @@ class Articles extends React.Component {
                             Hei. <br/>
                             Karanteenin ylläpitoarvojärjestys on muuttunut, jonka seurauksena olemme avanneet
                             avoimet hakemukset
-                            kaikille. Karanteenissa on pitkän aikaa ollut tasan kaksi
+                            kaikille. Karanteenissa on pitkän aikaa ollut tasan kaksi&nbsp;
                             <span data-toggle="tooltip" data-placement="top"
                             title="Omistajaa ei lasketa, sillä sinne ei ole mahdollista päästä."><b>ylläpitoarvoa</b></span>,
                             Rakentaja ja Admin. Tähän on kuitenkin tehty muutoksia, joka mahdollistaa nyt avoimet
@@ -302,7 +360,7 @@ class Articles extends React.Component {
                             ylläpitoon. Uusia ylläpitoarvoja on kaksi,
                             kokonaismäärän ollessa neljä. <br/>Hakemuksien ollessa edelleen vapaamuotoisia, kriteerit
                             ovat kuitenkin
-                            muuttuneet. Lisätietoa löydät
+                            muuttuneet. Lisätietoa löydät&nbsp;
                             <a href="yphaku" id="link">täältä</a>. <br/><br/>
                             Toivomme, että ratkaisu olisi kaikille hyödyksi, etenkin yhteisölle itselleen. Onnea
                             jokaiselle, joka

@@ -53,11 +53,11 @@ var ServerStatus = function (_React$Component) {
             if (isLoading == false) {
                 return React.createElement(
                     'div',
-                    { 'class': 'card card-body content bg-transparent' },
+                    { className: 'card card-body content bg-transparent' },
                     React.createElement(
                         'h5',
-                        { 'class': 'card-title' },
-                        React.createElement('i', { 'class': 'fas fa-server card-title-icon' }),
+                        { className: 'card-title' },
+                        React.createElement('i', { className: 'fas fa-server card-title-icon' }),
                         'Palvelin'
                     ),
                     React.createElement(
@@ -104,8 +104,8 @@ var ServerStatus = function (_React$Component) {
                                 )
                             ), React.createElement(
                                 'button',
-                                { className: 'copyPaste btn btn-outline-light btn-tooltip show', 'data-toggle': 'tooltip', 'data-placement': 'top', title: 'Paina t\xE4st\xE4 kopioidaksesi IP-osoite.', 'data-clipboard-target': '#numip' },
-                                React.createElement('i', { 'class': 'fas fa-copy' })
+                                { className: 'copyPaste btn btn-outline-light kara-btn btn-tooltip show', 'data-toggle': 'tooltip', 'data-placement': 'top', title: 'Paina t\xE4st\xE4 kopioidaksesi IP-osoite.', 'data-clipboard-target': '#numip' },
+                                React.createElement('i', { className: 'fas fa-copy' })
                             ), React.createElement('br', null), React.createElement('br', null), React.createElement(
                                 'p',
                                 null,
@@ -118,11 +118,11 @@ var ServerStatus = function (_React$Component) {
             } else if (error == true) {
                 React.createElement(
                     'div',
-                    { 'class': 'card card-body content bg-transparent' },
+                    { className: 'card card-body content bg-transparent' },
                     React.createElement(
                         'h5',
-                        { 'class': 'card-title' },
-                        React.createElement('i', { 'class': 'fas fa-server card-title-icon' }),
+                        { className: 'card-title' },
+                        React.createElement('i', { className: 'fas fa-server card-title-icon' }),
                         'Palvelin'
                     ),
                     React.createElement(
@@ -138,11 +138,11 @@ var ServerStatus = function (_React$Component) {
             }
             return React.createElement(
                 'div',
-                { 'class': 'card card-body content bg-transparent text-white' },
+                { className: 'card card-body content bg-transparent text-white' },
                 React.createElement(
                     'h5',
-                    { 'class': 'card-title' },
-                    React.createElement('i', { 'class': 'fas fa-server card-title-icon' }),
+                    { className: 'card-title' },
+                    React.createElement('i', { className: 'fas fa-server card-title-icon' }),
                     'Palvelin'
                 ),
                 React.createElement(
@@ -150,10 +150,10 @@ var ServerStatus = function (_React$Component) {
                     { id: 'content' },
                     React.createElement(
                         'div',
-                        { 'class': 'spinner-border', role: 'status' },
+                        { className: 'spinner-border', role: 'status' },
                         React.createElement(
                             'span',
-                            { 'class': 'sr-only' },
+                            { className: 'sr-only' },
                             'Loading...'
                         )
                     )

@@ -71,8 +71,71 @@ class Changelog extends React.Component {
         return (
             <div className='accordion text-left'>
 
+                <Month month='joulukuu2020' btntext='Joulukuu 2020'>
+                    <Body month='joulukuu2020' showing>
+                        <Dated date='2.11.2020'/>
+                        <ul>
+                            <Change>Joulukalenteri avattu</Change>
+                        </ul>
+                    </Body>
+                </Month>
+
+                <Month month='marraskuu2020' btntext='Marraskuu 2020'>
+                    <Body month='marraskuu2020'>
+                        <Dated date='29.11.2020'/>
+                        <ul>
+                            <Change>Tabi on muutettu jouluisaksi.</Change>
+                        </ul>
+                        <Dated date='27.11.2020'/>
+                        <ul>
+                            <Change>Vähennetty mobien määrää per pelaaja 28 -&gt; 24.</Change>
+                        </ul>
+                        <Dated date='25.11.2020'/>
+                        <ul>
+                            <Change>Lisätty respawniin tuki respawn anchoreille, ei joudu enää spawnille kun respawnaa.</Change>
+                        </ul>
+                        <Dated date='22.11.2020'/>
+                        <ul>
+                            <Change>Lisätty kaksi (2) automaattista uudelleenkäynnistystä.</Change>
+                        </ul>
+                        <Dated date='17.11.2020'/>
+                        <ul>
+                            <Change>Lisätty vinkkeihin lyhyt ohje mitä tehä jos joku häiriköi tai ylläpitolaine häiriköi.</Change>
+                        </ul>
+                        <Dated date='14.11.2020'/>
+                        <ul>
+                            <Change>Poistettu <code>/lakanakana</code>.</Change>
+                            <Change>Lisätty <code>/iita</code>.</Change>
+                            <Change>
+                                <code>/tptoggle</code> toimii oletettavasti. Ylempirankkiset eivät
+                                enää yliaja, vaan heitä kohdellaan tasavertaisesti.
+                            </Change>
+                            <Change>Potentiaalinen palvelinvirhe korjattu.</Change>
+                        </ul>
+                        <Dated date='9.11.2020'/>
+                        <ul>
+                            <Change>Mobien spawnratea on pienennetty.</Change>
+                        </ul>
+                        <Dated date='7.11.2020'/>
+                        <ul>
+                            <Change>Armorstandin asentoja voi muuttaa oikeaklikkaamalla kyykyssä!</Change>
+                        </ul>
+                        <Dated date='4.11.2020'/>
+                        <ul>
+                            <Change>Palvelin päivitetty 1.16.4!</Change>
+                            <Change>Palvelimella voi nyt craftaa onnenkeksejä.</Change>
+                        </ul>
+                        <Dated date='1.11.2020'/>
+                        <ul>
+                            <Change>Tab on palautettu Halloween ulkoasusta.</Change>
+                            <Change>Lisätty etukäteen tilapäinen onnentoivotus uuteen mappiin.</Change>
+                            <Change>Aikaisemmin hidastelleet votet pitäisi nyt toimia.</Change>
+                        </ul>
+                    </Body>
+                </Month>
+
                 <Month month='lokakuu2020' btntext='Lokakuu 2020'>
-                    <Body month='lokakuu2020' showing>
+                    <Body month='lokakuu2020'>
                         <Dated date='10.10.2020'/>
                         <ul>
                             <Change>Halloween teemainen tabi.</Change>

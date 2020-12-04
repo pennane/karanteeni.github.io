@@ -118,10 +118,183 @@ var Changelog = function (_React$Component3) {
                 { className: 'accordion text-left' },
                 React.createElement(
                     Month,
+                    { month: 'joulukuu2020', btntext: 'Joulukuu 2020' },
+                    React.createElement(
+                        Body,
+                        { month: 'joulukuu2020', showing: true },
+                        React.createElement(Dated, { date: '2.11.2020' }),
+                        React.createElement(
+                            'ul',
+                            null,
+                            React.createElement(
+                                Change,
+                                null,
+                                'Joulukalenteri avattu'
+                            )
+                        )
+                    )
+                ),
+                React.createElement(
+                    Month,
+                    { month: 'marraskuu2020', btntext: 'Marraskuu 2020' },
+                    React.createElement(
+                        Body,
+                        { month: 'marraskuu2020' },
+                        React.createElement(Dated, { date: '29.11.2020' }),
+                        React.createElement(
+                            'ul',
+                            null,
+                            React.createElement(
+                                Change,
+                                null,
+                                'Tabi on muutettu jouluisaksi.'
+                            )
+                        ),
+                        React.createElement(Dated, { date: '27.11.2020' }),
+                        React.createElement(
+                            'ul',
+                            null,
+                            React.createElement(
+                                Change,
+                                null,
+                                'V\xE4hennetty mobien m\xE4\xE4r\xE4\xE4 per pelaaja 28 -> 24.'
+                            )
+                        ),
+                        React.createElement(Dated, { date: '25.11.2020' }),
+                        React.createElement(
+                            'ul',
+                            null,
+                            React.createElement(
+                                Change,
+                                null,
+                                'Lis\xE4tty respawniin tuki respawn anchoreille, ei joudu en\xE4\xE4 spawnille kun respawnaa.'
+                            )
+                        ),
+                        React.createElement(Dated, { date: '22.11.2020' }),
+                        React.createElement(
+                            'ul',
+                            null,
+                            React.createElement(
+                                Change,
+                                null,
+                                'Lis\xE4tty kaksi (2) automaattista uudelleenk\xE4ynnistyst\xE4.'
+                            )
+                        ),
+                        React.createElement(Dated, { date: '17.11.2020' }),
+                        React.createElement(
+                            'ul',
+                            null,
+                            React.createElement(
+                                Change,
+                                null,
+                                'Lis\xE4tty vinkkeihin lyhyt ohje mit\xE4 teh\xE4 jos joku h\xE4irik\xF6i tai yll\xE4pitolaine h\xE4irik\xF6i.'
+                            )
+                        ),
+                        React.createElement(Dated, { date: '14.11.2020' }),
+                        React.createElement(
+                            'ul',
+                            null,
+                            React.createElement(
+                                Change,
+                                null,
+                                'Poistettu ',
+                                React.createElement(
+                                    'code',
+                                    null,
+                                    '/lakanakana'
+                                ),
+                                '.'
+                            ),
+                            React.createElement(
+                                Change,
+                                null,
+                                'Lis\xE4tty ',
+                                React.createElement(
+                                    'code',
+                                    null,
+                                    '/iita'
+                                ),
+                                '.'
+                            ),
+                            React.createElement(
+                                Change,
+                                null,
+                                React.createElement(
+                                    'code',
+                                    null,
+                                    '/tptoggle'
+                                ),
+                                ' toimii oletettavasti. Ylempirankkiset eiv\xE4t en\xE4\xE4 yliaja, vaan heit\xE4 kohdellaan tasavertaisesti.'
+                            ),
+                            React.createElement(
+                                Change,
+                                null,
+                                'Potentiaalinen palvelinvirhe korjattu.'
+                            )
+                        ),
+                        React.createElement(Dated, { date: '9.11.2020' }),
+                        React.createElement(
+                            'ul',
+                            null,
+                            React.createElement(
+                                Change,
+                                null,
+                                'Mobien spawnratea on pienennetty.'
+                            )
+                        ),
+                        React.createElement(Dated, { date: '7.11.2020' }),
+                        React.createElement(
+                            'ul',
+                            null,
+                            React.createElement(
+                                Change,
+                                null,
+                                'Armorstandin asentoja voi muuttaa oikeaklikkaamalla kyykyss\xE4!'
+                            )
+                        ),
+                        React.createElement(Dated, { date: '4.11.2020' }),
+                        React.createElement(
+                            'ul',
+                            null,
+                            React.createElement(
+                                Change,
+                                null,
+                                'Palvelin p\xE4ivitetty 1.16.4!'
+                            ),
+                            React.createElement(
+                                Change,
+                                null,
+                                'Palvelimella voi nyt craftaa onnenkeksej\xE4.'
+                            )
+                        ),
+                        React.createElement(Dated, { date: '1.11.2020' }),
+                        React.createElement(
+                            'ul',
+                            null,
+                            React.createElement(
+                                Change,
+                                null,
+                                'Tab on palautettu Halloween ulkoasusta.'
+                            ),
+                            React.createElement(
+                                Change,
+                                null,
+                                'Lis\xE4tty etuk\xE4teen tilap\xE4inen onnentoivotus uuteen mappiin.'
+                            ),
+                            React.createElement(
+                                Change,
+                                null,
+                                'Aikaisemmin hidastelleet votet pit\xE4isi nyt toimia.'
+                            )
+                        )
+                    )
+                ),
+                React.createElement(
+                    Month,
                     { month: 'lokakuu2020', btntext: 'Lokakuu 2020' },
                     React.createElement(
                         Body,
-                        { month: 'lokakuu2020', showing: true },
+                        { month: 'lokakuu2020' },
                         React.createElement(Dated, { date: '10.10.2020' }),
                         React.createElement(
                             'ul',

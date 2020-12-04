@@ -14,7 +14,7 @@ class ChangeLogButton extends React.Component {
 const VoteLinks = () => {
     return (
         <div className="card card-body content bg-transparent text-white mt-5">
-            <h5 class="card-title"><i class="fas fa-poll-h card-title-icon"></i>Äänestäminen</h5>
+            <h5 className="card-title"><i className="fas fa-poll-h card-title-icon"></i>Äänestäminen</h5>
             <p>
                 <a href="https://minecraft-mp.com/server/194896/vote/" target="_blank" className="btn btn-outline-light kara-btn" role="button">Äänestyslinkki 1</a>
             </p>

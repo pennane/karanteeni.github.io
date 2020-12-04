@@ -130,7 +130,8 @@ var Footer = function (_React$Component) {
                                     "Ongelmanhallinta"
                                 )
                             )
-                        )
+                        ),
+                        React.createElement("div", { id: "switcher", className: "mt-2" })
                     )
                 ),
                 React.createElement(
