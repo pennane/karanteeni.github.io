@@ -38,8 +38,8 @@ var VoteLinks = function VoteLinks() {
         { className: "card card-body content bg-transparent text-white mt-5" },
         React.createElement(
             "h5",
-            { "class": "card-title" },
-            React.createElement("i", { "class": "fas fa-poll-h card-title-icon" }),
+            { className: "card-title" },
+            React.createElement("i", { className: "fas fa-poll-h card-title-icon" }),
             "\xC4\xE4nest\xE4minen"
         ),
         React.createElement(

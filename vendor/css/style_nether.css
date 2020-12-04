@@ -737,12 +737,34 @@ p.no-upcoming {
 
 /* Finetuning Start */
 
+.theme-list {
+    list-style-type: none;
+    display: inline-flex;
+    margin-left: -2.5rem;
+    padding-right: .75rem;
+}
+
+.theme-list > li:hover {
+    background-color: rgba(255,255,255,.25);
+}
+
+.theme-list-icon {
+    width: 64px;
+    height: 36px;
+    margin: 5px;
+}
+
+.theme-desc, .theme-desc:hover, .theme-desc #link:hover {
+    color: #fffae6 !important;
+    text-shadow: none !important;
+}
 
 .heading-description {}
 
 .main-content {
     padding: 3em 3em;
     margin-bottom: 5em;
+    color: #fff;
 }
 
 .lead {

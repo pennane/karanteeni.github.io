@@ -29,6 +29,65 @@ var Articles = function (_React$Component) {
                     React.createElement(
                         Title,
                         { label: true, type: 'update' },
+                        'Teemap\xE4iv\xE4'
+                    ),
+                    React.createElement(
+                        Time,
+                        null,
+                        '04.12.2020'
+                    ),
+                    React.createElement(
+                        Content,
+                        null,
+                        React.createElement(
+                            'p',
+                            null,
+                            'Joulukuu on alkanut ja nettisivuille julkaistaan nelj\xE4 uutta teemaa, sek\xE4 teemavalitsin! Teema valitsimessa on nyt yhteens\xE4 nelj\xE4 teemaa, jotka ovat valittavissa:'
+                        ),
+                        React.createElement(
+                            'ul',
+                            null,
+                            React.createElement(
+                                'li',
+                                null,
+                                'Nether'
+                            ),
+                            React.createElement(
+                                'li',
+                                null,
+                                'Winter'
+                            ),
+                            React.createElement(
+                                'li',
+                                null,
+                                'Flat Light'
+                            ),
+                            React.createElement(
+                                'li',
+                                null,
+                                'Flat Dark'
+                            )
+                        ),
+                        React.createElement(
+                            'p',
+                            null,
+                            'Teema tallentuu tietokoneellesi ev\xE4steen muodossa. Mik\xE4li l\xF6yd\xE4t ongelmia, ota yhteytt\xE4 Discordissa Sapphire#5375 tai l\xE4het\xE4 ongelmaraportti ongelmanhallintaohjelmaan.'
+                        ),
+                        React.createElement(
+                            'p',
+                            null,
+                            'Hyv\xE4\xE4 joulun odotusta! ',
+                            React.createElement('br', null),
+                            'Karanteenin yll\xE4pito'
+                        )
+                    )
+                ),
+                React.createElement(
+                    ArticleBody,
+                    null,
+                    React.createElement(
+                        Title,
+                        { label: true, type: 'update' },
                         'Kirahvinp\xE4\xE4'
                     ),
                     React.createElement(
@@ -159,26 +218,25 @@ var Articles = function (_React$Component) {
                                 'strong',
                                 null,
                                 'TL;DR:'
-                            ),
-                            React.createElement('br', null),
+                            )
+                        ),
+                        React.createElement(
+                            'ul',
+                            null,
                             React.createElement(
-                                'ul',
+                                'li',
                                 null,
-                                React.createElement(
-                                    'li',
-                                    null,
-                                    'Palvelimella py\xF6rii Paper 1.16.2'
-                                ),
-                                React.createElement(
-                                    'li',
-                                    null,
-                                    'End ja Nether nollattu, End nollataan jatkossa vain kerran per kartta'
-                                ),
-                                React.createElement(
-                                    'li',
-                                    null,
-                                    'Nettisivua "modernisoitu", mutta sit\xE4 jatketaan + Nether teema'
-                                )
+                                'Palvelimella py\xF6rii Paper 1.16.2'
+                            ),
+                            React.createElement(
+                                'li',
+                                null,
+                                'End ja Nether nollattu, End nollataan jatkossa vain kerran per kartta'
+                            ),
+                            React.createElement(
+                                'li',
+                                null,
+                                'Nettisivua "modernisoitu", mutta sit\xE4 jatketaan + Nether teema'
                             )
                         ),
                         React.createElement(
@@ -230,35 +288,32 @@ var Articles = function (_React$Component) {
                                 'strong',
                                 null,
                                 'S\xE4\xE4nt\xF6muutos in a nutshell:'
-                            ),
-                            React.createElement('br', null),
-                            React.createElement('br', null),
-                            React.createElement(
-                                'ol',
-                                null,
-                                React.createElement(
-                                    'li',
-                                    null,
-                                    'Kyli\xE4 saa mainostaa yleisesti chatiss\xE4.'
-                                ),
-                                React.createElement(
-                                    'li',
-                                    null,
-                                    'MSG-mainostus on kielletty\xE4'
-                                ),
-                                React.createElement(
-                                    'li',
-                                    null,
-                                    'Copy & Paste mainosviestit ovat kiellettyj\xE4'
-                                ),
-                                React.createElement(
-                                    'li',
-                                    null,
-                                    'Voit mainostaa kyl\xE4\xE4si spawnilla'
-                                )
                             )
                         ),
-                        React.createElement('br', null),
+                        React.createElement(
+                            'ol',
+                            null,
+                            React.createElement(
+                                'li',
+                                null,
+                                'Kyli\xE4 saa mainostaa yleisesti chatiss\xE4.'
+                            ),
+                            React.createElement(
+                                'li',
+                                null,
+                                'MSG-mainostus on kielletty\xE4'
+                            ),
+                            React.createElement(
+                                'li',
+                                null,
+                                'Copy & Paste mainosviestit ovat kiellettyj\xE4'
+                            ),
+                            React.createElement(
+                                'li',
+                                null,
+                                'Voit mainostaa kyl\xE4\xE4si spawnilla'
+                            )
+                        ),
                         React.createElement(
                             'p',
                             null,
@@ -445,7 +500,7 @@ var Articles = function (_React$Component) {
                                 null,
                                 React.createElement(
                                     'span',
-                                    { 'class': 'text-danger' },
+                                    { className: 'text-danger' },
                                     'HUOM!'
                                 )
                             ),
@@ -496,44 +551,50 @@ var Articles = function (_React$Component) {
                             null,
                             'Tervehdys. ',
                             React.createElement('br', null),
-                            'Olemme tapelleet syyskuusta l\xE4htien sivujen v\xE4rimaailman kanssa. Joidenkin mielest\xE4 joku oli liian kirkas, joku liian tumma, eik\xE4 koskaan sopivaa. Kun laitoimme tumman teeman suurimman osan toiveesta ettei silm\xE4t hajoa, tajusimme, ett\xE4 sivut n\xE4yttiv\xE4t itseasiassa tylsilt\xE4. P\xE4\xE4simme kuitenkin hyvin l\xE4helle v\xE4rimaailmaa, jossa suurin osa sopii hyvin yhteen, eik\xE4 n\xE4yt\xE4 liian tyls\xE4lt\xE4 tai kankealta, vaikka geneeriselt\xE4 saattaa n\xE4ytt\xE4\xE4kin. ',
-                            React.createElement('br', null),
-                            React.createElement('br', null),
-                            'Mik\xE4 sitten muuttui?',
+                            'Olemme tapelleet syyskuusta l\xE4htien sivujen v\xE4rimaailman kanssa. Joidenkin mielest\xE4 joku oli liian kirkas, joku liian tumma, eik\xE4 koskaan sopivaa. Kun laitoimme tumman teeman suurimman osan toiveesta ettei silm\xE4t hajoa, tajusimme, ett\xE4 sivut n\xE4yttiv\xE4t itseasiassa tylsilt\xE4. P\xE4\xE4simme kuitenkin hyvin l\xE4helle v\xE4rimaailmaa, jossa suurin osa sopii hyvin yhteen, eik\xE4 n\xE4yt\xE4 liian tyls\xE4lt\xE4 tai kankealta, vaikka geneeriselt\xE4 saattaa n\xE4ytt\xE4\xE4kin.'
+                        ),
+                        React.createElement(
+                            'p',
+                            null,
+                            'Mik\xE4 sitten muuttui?'
+                        ),
+                        React.createElement(
+                            'ul',
+                            null,
                             React.createElement(
-                                'ul',
+                                'li',
                                 null,
-                                React.createElement(
-                                    'li',
-                                    null,
-                                    'Yll\xE4pitojutut vaihtanut paikkaa, sek\xE4 niiden m\xE4\xE4r\xE4\xE4 lis\xE4tty'
-                                ),
-                                React.createElement(
-                                    'li',
-                                    null,
-                                    'Fonttikoko pienentynyt'
-                                ),
-                                React.createElement(
-                                    'li',
-                                    null,
-                                    'Minecraft -tyylinen fontti ja ulkoasu'
-                                ),
-                                React.createElement(
-                                    'li',
-                                    null,
-                                    'Vanha tuttu palvelimen statuskysely palautettu'
-                                ),
-                                React.createElement(
-                                    'li',
-                                    null,
-                                    'Lis\xE4tty UKK -osio'
-                                ),
-                                React.createElement(
-                                    'li',
-                                    null,
-                                    'Rankit saivat uuden ulkoasun (kiitos Susselle ideasta!)'
-                                )
+                                'Yll\xE4pitojutut vaihtanut paikkaa, sek\xE4 niiden m\xE4\xE4r\xE4\xE4 lis\xE4tty'
                             ),
+                            React.createElement(
+                                'li',
+                                null,
+                                'Fonttikoko pienentynyt'
+                            ),
+                            React.createElement(
+                                'li',
+                                null,
+                                'Minecraft -tyylinen fontti ja ulkoasu'
+                            ),
+                            React.createElement(
+                                'li',
+                                null,
+                                'Vanha tuttu palvelimen statuskysely palautettu'
+                            ),
+                            React.createElement(
+                                'li',
+                                null,
+                                'Lis\xE4tty UKK -osio'
+                            ),
+                            React.createElement(
+                                'li',
+                                null,
+                                'Rankit saivat uuden ulkoasun (kiitos Susselle ideasta!)'
+                            )
+                        ),
+                        React.createElement(
+                            'p',
+                            null,
                             'Toivomme, ett\xE4 t\xE4m\xE4 miellytt\xE4\xE4 silm\xE4\xE4nne hieman enemm\xE4n. :)'
                         )
                     )
@@ -559,7 +620,7 @@ var Articles = function (_React$Component) {
                             null,
                             'Hei. ',
                             React.createElement('br', null),
-                            'Karanteenin yll\xE4pitoarvoj\xE4rjestys on muuttunut, jonka seurauksena olemme avanneet avoimet hakemukset kaikille. Karanteenissa on pitk\xE4n aikaa ollut tasan kaksi',
+                            'Karanteenin yll\xE4pitoarvoj\xE4rjestys on muuttunut, jonka seurauksena olemme avanneet avoimet hakemukset kaikille. Karanteenissa on pitk\xE4n aikaa ollut tasan kaksi\xA0',
                             React.createElement(
                                 'span',
                                 { 'data-toggle': 'tooltip', 'data-placement': 'top',
@@ -572,7 +633,7 @@ var Articles = function (_React$Component) {
                             ),
                             ', Rakentaja ja Admin. T\xE4h\xE4n on kuitenkin tehty muutoksia, joka mahdollistaa nyt avoimet hakemukset yll\xE4pitoon. Uusia yll\xE4pitoarvoja on kaksi, kokonaism\xE4\xE4r\xE4n ollessa nelj\xE4. ',
                             React.createElement('br', null),
-                            'Hakemuksien ollessa edelleen vapaamuotoisia, kriteerit ovat kuitenkin muuttuneet. Lis\xE4tietoa l\xF6yd\xE4t',
+                            'Hakemuksien ollessa edelleen vapaamuotoisia, kriteerit ovat kuitenkin muuttuneet. Lis\xE4tietoa l\xF6yd\xE4t\xA0',
                             React.createElement(
                                 'a',
                                 { href: 'yphaku', id: 'link' },

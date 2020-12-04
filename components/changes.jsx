@@ -71,8 +71,37 @@ class Changelog extends React.Component {
         return (
             <div className='accordion text-left'>
 
+                <Month month='joulukuu2020' btntext='Joulukuu 2020'>
+                    <Body month='joulukuu2020' showing>
+                        <Dated date='2.11.2020'/>
+                        <ul>
+                            <Change>Joulukalenteri avattu</Change>
+                        </ul>
+                    </Body>
+                </Month>
+
                 <Month month='marraskuu2020' btntext='Marraskuu 2020'>
-                    <Body month='marraskuu2020' showing>
+                    <Body month='marraskuu2020'>
+                        <Dated date='29.11.2020'/>
+                        <ul>
+                            <Change>Tabi on muutettu jouluisaksi.</Change>
+                        </ul>
+                        <Dated date='27.11.2020'/>
+                        <ul>
+                            <Change>Vähennetty mobien määrää per pelaaja 28 -&gt; 24.</Change>
+                        </ul>
+                        <Dated date='25.11.2020'/>
+                        <ul>
+                            <Change>Lisätty respawniin tuki respawn anchoreille, ei joudu enää spawnille kun respawnaa.</Change>
+                        </ul>
+                        <Dated date='22.11.2020'/>
+                        <ul>
+                            <Change>Lisätty kaksi (2) automaattista uudelleenkäynnistystä.</Change>
+                        </ul>
+                        <Dated date='17.11.2020'/>
+                        <ul>
+                            <Change>Lisätty vinkkeihin lyhyt ohje mitä tehä jos joku häiriköi tai ylläpitolaine häiriköi.</Change>
+                        </ul>
                         <Dated date='14.11.2020'/>
                         <ul>
                             <Change>Poistettu <code>/lakanakana</code>.</Change>

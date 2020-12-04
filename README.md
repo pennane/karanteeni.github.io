@@ -2,7 +2,7 @@
 
 Peruspaske sivut (HTML, CSS, JS) :D
 
-Versio: 4.2.4
+Versio: 4.3.0
 
 ## Esivaatimukset
 

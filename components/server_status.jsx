@@ -37,8 +37,8 @@ class ServerStatus extends React.Component {
 
         if (isLoading == false) {
             return (
-                <div class="card card-body content bg-transparent">
-                    <h5 class="card-title"><i class="fas fa-server card-title-icon"></i>Palvelin</h5>
+                <div className="card card-body content bg-transparent">
+                    <h5 className="card-title"><i className="fas fa-server card-title-icon"></i>Palvelin</h5>
                     <div id="content">
                         {debug.map((index, key) => {
                             if (index.online == false) {
@@ -50,7 +50,7 @@ class ServerStatus extends React.Component {
                                 <p><span key={key} className="online">Päällä</span></p>,
                                 <p><span key={key}>Versio: {index.version}</span></p>,
                                 <p className="server-ip"><span key={key}>mc.karanteeni.net <br/><span id="numip">{index.ip}</span></span></p>,
-                                <button className='copyPaste btn btn-outline-light btn-tooltip show' data-toggle='tooltip' data-placement='top' title='Paina tästä kopioidaksesi IP-osoite.' data-clipboard-target='#numip'><i class='fas fa-copy'></i></button>,
+                                <button className='copyPaste btn btn-outline-light kara-btn btn-tooltip show' data-toggle='tooltip' data-placement='top' title='Paina tästä kopioidaksesi IP-osoite.' data-clipboard-target='#numip'><i className='fas fa-copy'></i></button>,
                                 <br/>,
                                 <br/>,
                                 <p>Pelaajia paikalla: {index.players.online}</p>
@@ -60,19 +60,19 @@ class ServerStatus extends React.Component {
                 </div>
             )
         } else if (error == true) {
-            <div class="card card-body content bg-transparent">
-                <h5 class="card-title"><i class="fas fa-server card-title-icon"></i>Palvelin</h5>
+            <div className="card card-body content bg-transparent">
+                <h5 className="card-title"><i className="fas fa-server card-title-icon"></i>Palvelin</h5>
                 <div id="content">
                     <p>Palvelimen kysely on rikki.</p>
                 </div>
             </div>
         }
         return (
-            <div class="card card-body content bg-transparent text-white">
-                <h5 class="card-title"><i class="fas fa-server card-title-icon"></i>Palvelin</h5>
+            <div className="card card-body content bg-transparent text-white">
+                <h5 className="card-title"><i className="fas fa-server card-title-icon"></i>Palvelin</h5>
                 <div id="content">
-                    <div class="spinner-border" role="status">
-                        <span class="sr-only">Loading...</span>
+                    <div className="spinner-border" role="status">
+                        <span className="sr-only">Loading...</span>
                     </div>
                 </div>
             </div>
