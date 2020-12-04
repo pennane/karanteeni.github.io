@@ -325,7 +325,8 @@ span.deprecated-content::before {
 .burger.burger-rotate .burger-lines:before {
     -webkit-transition: all .2s;
     -o-transition: all .2s;
-    transition: all .2s
+    transition: all .2s;
+    background-color: black;
 }
 
 .navbar-toggler[aria-expanded=true]>.burger.burger-rotate {
