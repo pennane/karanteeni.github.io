@@ -29,7 +29,7 @@ var Footer = function (_React$Component) {
                     { className: "row" },
                     React.createElement(
                         "div",
-                        { className: "col-lg-3 col-xs-12" },
+                        { className: "col-lg-3 col-xs-12 footerLogo" },
                         React.createElement(
                             "a",
                             { className: "footer-link", href: "https://karanteeni.net", target: "_blank", rel: "noopener noreferrer" },

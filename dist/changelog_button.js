@@ -43,21 +43,25 @@ var VoteLinks = function VoteLinks() {
             "\xC4\xE4nest\xE4minen"
         ),
         React.createElement(
-            "p",
-            null,
+            "div",
+            { className: "voteLinks" },
             React.createElement(
-                "a",
-                { href: "https://minecraft-mp.com/server/194896/vote/", target: "_blank", className: "btn btn-outline-light kara-btn", role: "button" },
-                "\xC4\xE4nestyslinkki 1"
-            )
-        ),
-        React.createElement(
-            "p",
-            null,
+                "p",
+                null,
+                React.createElement(
+                    "a",
+                    { href: "https://minecraft-mp.com/server/194896/vote/", target: "_blank", className: "btn btn-outline-light kara-btn", role: "button" },
+                    "\xC4\xE4nestyslinkki 1"
+                )
+            ),
             React.createElement(
-                "a",
-                { href: "https://topg.org/Minecraft/in-515100", target: "_blank", className: "btn btn-outline-light kara-btn", role: "button" },
-                "\xC4\xE4nestyslinkki 2"
+                "p",
+                null,
+                React.createElement(
+                    "a",
+                    { href: "https://topg.org/Minecraft/in-515100", target: "_blank", className: "btn btn-outline-light kara-btn", role: "button" },
+                    "\xC4\xE4nestyslinkki 2"
+                )
             )
         )
     );

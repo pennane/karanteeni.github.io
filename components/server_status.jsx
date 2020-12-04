@@ -50,7 +50,7 @@ class ServerStatus extends React.Component {
                                 <p><span key={key} className="online">Päällä</span></p>,
                                 <p><span key={key}>Versio: {index.version}</span></p>,
                                 <p className="server-ip"><span key={key}>mc.karanteeni.net <br/><span id="numip">{index.ip}</span></span></p>,
-                                <button className='copyPaste btn btn-outline-light kara-btn btn-tooltip show' data-toggle='tooltip' data-placement='top' title='Paina tästä kopioidaksesi IP-osoite.' data-clipboard-target='#numip'><i className='fas fa-copy'></i></button>,
+                                <div class="copyButtonParent"><button className='copyPaste btn btn-outline-light kara-btn btn-tooltip show' data-toggle='tooltip' data-placement='top' title='Paina tästä kopioidaksesi IP-osoite.' data-clipboard-target='#numip'><i className='fas fa-copy'></i></button></div>,
                                 <br/>,
                                 <br/>,
                                 <p>Pelaajia paikalla: {index.players.online}</p>
@@ -70,7 +70,7 @@ class ServerStatus extends React.Component {
         return (
             <div className="card card-body content bg-transparent text-white">
                 <h5 className="card-title"><i className="fas fa-server card-title-icon"></i>Palvelin</h5>
-                <div id="content">
+                <div id="content centerLoader">
                     <div className="spinner-border" role="status">
                         <span className="sr-only">Loading...</span>
                     </div>

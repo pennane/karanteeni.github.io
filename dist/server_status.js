@@ -103,9 +103,13 @@ var ServerStatus = function (_React$Component) {
                                     )
                                 )
                             ), React.createElement(
-                                'button',
-                                { className: 'copyPaste btn btn-outline-light kara-btn btn-tooltip show', 'data-toggle': 'tooltip', 'data-placement': 'top', title: 'Paina t\xE4st\xE4 kopioidaksesi IP-osoite.', 'data-clipboard-target': '#numip' },
-                                React.createElement('i', { className: 'fas fa-copy' })
+                                'div',
+                                { 'class': 'copyButtonParent' },
+                                React.createElement(
+                                    'button',
+                                    { className: 'copyPaste btn btn-outline-light kara-btn btn-tooltip show', 'data-toggle': 'tooltip', 'data-placement': 'top', title: 'Paina t\xE4st\xE4 kopioidaksesi IP-osoite.', 'data-clipboard-target': '#numip' },
+                                    React.createElement('i', { className: 'fas fa-copy' })
+                                )
                             ), React.createElement('br', null), React.createElement('br', null), React.createElement(
                                 'p',
                                 null,
@@ -147,7 +151,7 @@ var ServerStatus = function (_React$Component) {
                 ),
                 React.createElement(
                     'div',
-                    { id: 'content' },
+                    { id: 'content centerLoader' },
                     React.createElement(
                         'div',
                         { className: 'spinner-border', role: 'status' },
