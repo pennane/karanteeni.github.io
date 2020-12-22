@@ -17,15 +17,6 @@
         "Palvelimen ylläpito"
       ],
       "uuid": "d4ef4bc2db26462c9793389ba56d2818"
-    },
-    {
-      "nimi": "Naxray",
-      "kuvaus": "\"***** mulla ole aikaa tälläseen.\" - Nax herätessä 1.30 aamuyöstä palvelimelle.",
-      "vahvuudet": [
-        "Nettisivut",
-        "Pluginit"
-      ],
-      "uuid": "05c0c0ead62240d4b8a20d4ec986c039"
     }
   ],
   "adminit": [

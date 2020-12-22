@@ -1,6 +1,18 @@
 {
   "lahjoittajat": [
     {
+      "pvm": "21.12.20",
+      "nimi": "Jannetin",
+      "amount": "25€",
+      "heart": "♥"
+    },
+    {
+      "pvm": "08.12.20",
+      "nimi": "Jafarin",
+      "amount": "50€",
+      "heart": "♥"
+    },
+    {
       "pvm": "12.09.20",
       "nimi": "ViBatsu",
       "amount": "10€",
