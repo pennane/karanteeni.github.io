@@ -32,9 +32,7 @@ class Owners extends React.Component {
         const rank = []
 
         for (key of Object.keys(debug)) {
-            console.log(key)
             rank.push(key)
-            console.log(rank)
         }
         
         return (
@@ -230,9 +228,7 @@ class Builders extends React.Component {
         const rank = []
 
         for (key of Object.keys(debug)) {
-            console.log(key)
             rank.push(key)
-            console.log(rank)
         }
         
         return (

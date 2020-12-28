@@ -39,7 +39,7 @@ var ServerStatus = function (_React$Component) {
                     isLoading: false
                 });
             }).catch(function (error) {
-                console.log(error);
+                console.error(error);
                 _this2.setState({ error: true });
             });
         }

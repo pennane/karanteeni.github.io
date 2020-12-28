@@ -54,9 +54,7 @@ var Owners = function (_React$Component) {
                 for (var _iterator = Object.keys(debug)[Symbol.iterator](), _step; !(_iteratorNormalCompletion = (_step = _iterator.next()).done); _iteratorNormalCompletion = true) {
                     key = _step.value;
 
-                    console.log(key);
                     rank.push(key);
-                    console.log(rank);
                 }
             } catch (err) {
                 _didIteratorError = true;
@@ -399,10 +397,7 @@ var Builders = function (_React$Component5) {
             try {
                 for (var _iterator5 = Object.keys(debug)[Symbol.iterator](), _step5; !(_iteratorNormalCompletion5 = (_step5 = _iterator5.next()).done); _iteratorNormalCompletion5 = true) {
                     key = _step5.value;
-
-                    console.log(key);
                     rank.push(key);
-                    console.log(rank);
                 }
             } catch (err) {
                 _didIteratorError5 = true;
