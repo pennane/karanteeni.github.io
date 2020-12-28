@@ -94,7 +94,7 @@ function createCharacterMenu(characters) {
             destination.appendChild(parent);
         });
     } catch (err) {
-        console.log("ERROR" + err);
+        console.error("ERROR" + err);
     }
 }
 
@@ -263,7 +263,7 @@ fetch("https://karanteeni.net/modules/Operators/operators.json")
         createCharacterMenu(data);
     })
     .catch(err => {
-        console.log("Failed to retrieve gamecharacters. Only jomeee available");
+        console.error("Failed to retrieve gamecharacters. Only jomeee available");
         [...document.querySelectorAll('.open-character-menu')].forEach(el => {
             setElementVisibility(el, false)
         })
