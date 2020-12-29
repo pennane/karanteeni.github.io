@@ -1,6 +1,5 @@
 {
-  "omistajat": [
-    {
+  "omistajat": [{
       "nimi": "Jomeee",
       "kuvaus": "Toimii yhteisön hyväksi kaikin tavoin. Opettelee piakkoin Javaa ja alkaa ohjelmoimaan plugineita (aamen).",
       "vahvuudet": [
@@ -19,8 +18,7 @@
       "uuid": "d4ef4bc2db26462c9793389ba56d2818"
     }
   ],
-  "adminit": [
-    {
+  "adminit": [{
       "nimi": "Susse",
       "kuvaus": "Hoitelee nettijuttuja, ja kuka ties mitä.",
       "vahvuudet": [
@@ -54,25 +52,24 @@
       "uuid": "d347193d8b794a389158074681bc32f8"
     }
   ],
-  "operaattorit": [
-    {
-      "nimi": "RetuPoika",
-      "kuvaus": "\"Oispa kahvia.\"",
-      "vahvuudet": [
-        "Hack-clientit"
-      ],
-      "uuid": "02518a1790f740e8940251d8ae348991"
-    }
-  ],
+  "operaattorit": [{
+    "nimi": "RetuPoika",
+    "kuvaus": "\"Oispa kahvia.\"",
+    "vahvuudet": [
+      "Hack-clientit"
+    ],
+    "uuid": "02518a1790f740e8940251d8ae348991"
+  }, 
+  {
+    "nimi": "Iita",
+    "kuvaus": "\"Ahdistaa.\"",
+    "vahvuudet": [
+      "Suojaaminen"
+    ],
+    "uuid": "d0cd2962ea3944c48b486c6376e57ca3"
+  }],
   "moderaattorit": [
-    {
-      "nimi": "Iita",
-      "kuvaus": "\"Ahdistaa.\"",
-      "vahvuudet": [
-        "Suojaaminen"
-      ],
-      "uuid": "d0cd2962ea3944c48b486c6376e57ca3"
-    },
+
     {
       "nimi": "Viherkukka",
       "kuvaus": "\"Täh?\"",
@@ -82,8 +79,7 @@
       "uuid": "5db3cb0e4ae847dc91594cc10079190d"
     }
   ],
-  "rakentajat": [
-    {
+  "rakentajat": [{
       "nimi": "PreGauris",
       "kuvaus": "\"Kuvaus? No jos sitten kun en tee lohisalaattia.\"",
       "vahvuudet": [
@@ -113,7 +109,7 @@
       "vahvuudet": [
         "Rakentaminen"
       ],
-      "uuid": "0dc20ee9778746ceabecf208098484d7" 
+      "uuid": "0dc20ee9778746ceabecf208098484d7"
     },
     {
       "nimi": "Oonakuni",
@@ -121,7 +117,7 @@
       "vahvuudet": [
         "Rakentaminen"
       ],
-      "uuid": "fcc6a1f38457404daed5206e467ec3ff" 
+      "uuid": "fcc6a1f38457404daed5206e467ec3ff"
     }
   ]
 }
