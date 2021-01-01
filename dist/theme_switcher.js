@@ -43,7 +43,7 @@ var ThemeSwitcher = function ThemeSwitcher() {
             id: 'modern-flat-light',
             name: 'Susse Flat',
             href: 'vendor/css/modern_flat_light.css',
-            image: './assets/images/sussetheme.png',
+            image: './assets/images/sussetheme.jpg',
             desc: 'Sussen visio maailmasta'
         }
     };
