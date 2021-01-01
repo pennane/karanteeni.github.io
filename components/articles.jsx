@@ -11,22 +11,22 @@ class Articles extends React.Component {
                         Teemapäivä
                     </Title>
                     <Time>
-                        04.12.2020
+                        04.12.2020, muokattu 1.1.2021
                     </Time>
                     <Content>
                         <p>
-                            Joulukuu on alkanut ja nettisivuille julkaistaan neljä uutta teemaa, sekä teemavalitsin!
-                            Teema valitsimessa on nyt yhteensä neljä teemaa, jotka ovat valittavissa:
+                            Joulukuu on alkanut ja nettisivuille julkaistaan neljä uutta teemaa, sekä niitä kannatteleva teemavalitsin!
+                            Teemavalitsimella pääset valitsemaan seuraavat teemat:
                         </p>
                         <ul>
                             <li>Nether</li>
                             <li>Winter</li>
                             <li>Flat Light</li>
                             <li>Flat Dark</li>
+                            <li>Susse Flat</li>
                         </ul>
                         <p>
-                            Teema tallentuu tietokoneellesi evästeen muodossa. Mikäli löydät ongelmia, ota yhteyttä Discordissa Sapphire#5375
-                            tai lähetä ongelmaraportti ongelmanhallintaohjelmaan.
+                            Teemavalitsimen löytää sivun alalaidasta.
                         </p>
                         <p>
                             Hyvää joulun odotusta! <br/>

@@ -34,7 +34,7 @@ var Articles = function (_React$Component) {
                     React.createElement(
                         Time,
                         null,
-                        '04.12.2020'
+                        '04.12.2020, muokattu 1.1.2021'
                     ),
                     React.createElement(
                         Content,
@@ -42,7 +42,7 @@ var Articles = function (_React$Component) {
                         React.createElement(
                             'p',
                             null,
-                            'Joulukuu on alkanut ja nettisivuille julkaistaan nelj\xE4 uutta teemaa, sek\xE4 teemavalitsin! Teema valitsimessa on nyt yhteens\xE4 nelj\xE4 teemaa, jotka ovat valittavissa:'
+                            'Joulukuu on alkanut ja nettisivuille julkaistaan nelj\xE4 uutta teemaa, sek\xE4 niit\xE4 kannatteleva teemavalitsin! Teemavalitsimella p\xE4\xE4set valitsemaan seuraavat teemat:'
                         ),
                         React.createElement(
                             'ul',
@@ -66,12 +66,17 @@ var Articles = function (_React$Component) {
                                 'li',
                                 null,
                                 'Flat Dark'
+                            ),
+                            React.createElement(
+                                'li',
+                                null,
+                                'Susse Flat'
                             )
                         ),
                         React.createElement(
                             'p',
                             null,
-                            'Teema tallentuu tietokoneellesi ev\xE4steen muodossa. Mik\xE4li l\xF6yd\xE4t ongelmia, ota yhteytt\xE4 Discordissa Sapphire#5375 tai l\xE4het\xE4 ongelmaraportti ongelmanhallintaohjelmaan.'
+                            'Teemavalitsimen l\xF6yt\xE4\xE4 sivun alalaidasta.'
                         ),
                         React.createElement(
                             'p',

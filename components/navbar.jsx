@@ -1,6 +1,6 @@
 'use strict';
 
-{/* Let's see if this can be fixable somehow */}
+{/* Let's see if this can be fixable somehow */ }
 
 const Icon = (props) => {
     return (
@@ -60,15 +60,15 @@ class DropDownCollapseMenu extends React.Component {
     }
 
     render() {
-        return(
+        return (
             <li className="nav-item dropdown">
                 <a className="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-target={this.state.dataTarget} data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                <i className={this.state.labelClassName}></i>&nbsp;&nbsp;{this.state.title}
+                    <i className={this.state.labelClassName}></i>&nbsp;&nbsp;{this.state.title}
                 </a>
-                    <div className="dropdown-menu collapse" aria-labelledby="navbarDropdown">
-                        <h6 className="dropdown-header">{this.state.title}</h6>
-                        {this.props.children}
-                    </div>
+                <div className="dropdown-menu collapse" aria-labelledby="navbarDropdown">
+                    <h6 className="dropdown-header">{this.state.title}</h6>
+                    {this.props.children}
+                </div>
             </li>
         );
     }
@@ -106,13 +106,13 @@ const Nav = (props) => {
         <nav className="navbar navbar-expand-lg navbar-dark karanav">
             <div className="container">
                 <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"
-                aria-expanded="false" aria-label="Toggle navigation">
+                    aria-expanded="false" aria-label="Toggle navigation">
                     <div className="navbar-toggler-icon burger burger-rotate">
                         <div className="burger-lines"></div>
                     </div>
                 </button>
                 <div className="collapse navbar-collapse" id="navbarResponsive">
-                    <ul className="nav navbar-nav nav-fill" style={{flexGrow: 1, textAlign: 'center'}}>
+                    <ul className="nav navbar-nav nav-fill" style={{ flexGrow: 1, textAlign: 'center' }}>
                         {props.children}
                     </ul>
                 </div>
@@ -127,7 +127,7 @@ class Navbar extends React.Component {
         return (
             <Nav>
                 <NavLink icon="fas fa-home" url="/" title="Etusivu" />
-                
+
                 <DropDownCollapseMenu title="Yleistietoa" dataTarget="#rc" labelClassName="fas fa-info">
                     <DropDownItem icon="fas fa-info" url="yleistietoa" title="Yleistietoa" />
                     <DropDownItem icon="fas fa-hammer" url="recipes" title="Custom reseptit" />
@@ -135,18 +135,23 @@ class Navbar extends React.Component {
                     <DropDownItem icon="fas fa-question-circle" url="ukk" title="UKK" />
                 </DropDownCollapseMenu>
 
-        
+
                 <NavLink icon="fas fa-exclamation" url="saannot" title="Säännöt" />
 
                 <NavLink icon="fas fa-medal" url="rankit" title="Rankit" />
-                
+
                 <DropDownCollapseMenu title="Ylläpito" labelClassName="fas fa-users">
                     <DropDownItem icon="fas fa-users" url="yllapito" title="Ylläpito" />
                     <DropDownItem icon="fas fa-file-alt" url="yphaku" title="Hae ylläpitoon!" />
                 </DropDownCollapseMenu>
 
-                <NavLink icon="fas fa-globe-africa" url="maailmat" title="Maailmat" />
+            {/* <NavLink icon="fas fa-globe-africa" url="maailmat" title="Maailmat" /> tälle ei oo mitää käyttöä*/}   
                 <NavLink icon="fas fa-gift" url="lahjoitus" title="Lahjoitukset" />
+
+                <DropDownCollapseMenu title="Hakemukset" labelClassName="fas fa-scroll">
+                    <DropDownItem icon="fas fa-file-alt" url="yphaku" title="Hae ylläpitoon!" />
+                    <DropDownItem icon="fas fa-file-alt" url="unban" title="Unban-hakemus" />
+                </DropDownCollapseMenu>
             </Nav>
         )
     }

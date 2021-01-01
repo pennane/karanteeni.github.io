@@ -73,19 +73,24 @@ class Changelog extends React.Component {
 
                 <Month month='joulukuu2020' btntext='Joulukuu 2020'>
                     <Body month='joulukuu2020' showing>
-                        <Dated date='2.11.2020'/>
+                        <Dated date='31.12.2020'/>
                         <ul>
-                            <Change>Joulukalenteri avattu</Change>
+                            <Change>Lisätty hidden groupit. Mahdollistavat lisärankit muuttamatta pelaajan päärankkia.</Change>
+                            <Change>Lisätty lahjoittajille tabiin oranssit [] merkit.</Change>
+                        </ul>
+                        <Dated date='27.12.2020'/>
+                        <ul>
+                            <Change>Palvelin osaa tulkita kirjoitetut komennot, jotka on alkavat / sijasta 7 merkillä.</Change>
+                        </ul>
+                        <Dated date='19.12.2020'/>
+                        <ul>
+                            <Change>Lisätty resepti nametagille</Change>
                         </ul>
                     </Body>
                 </Month>
 
                 <Month month='marraskuu2020' btntext='Marraskuu 2020'>
                     <Body month='marraskuu2020'>
-                        <Dated date='29.11.2020'/>
-                        <ul>
-                            <Change>Tabi on muutettu jouluisaksi.</Change>
-                        </ul>
                         <Dated date='27.11.2020'/>
                         <ul>
                             <Change>Vähennetty mobien määrää per pelaaja 28 -&gt; 24.</Change>
@@ -100,7 +105,7 @@ class Changelog extends React.Component {
                         </ul>
                         <Dated date='17.11.2020'/>
                         <ul>
-                            <Change>Lisätty vinkkeihin lyhyt ohje mitä tehä jos joku häiriköi tai ylläpitolaine häiriköi.</Change>
+                            <Change>Lisätty vinkkeihin lyhyt ohje mitä tehdä, jos joku häiriköi</Change>
                         </ul>
                         <Dated date='14.11.2020'/>
                         <ul>
@@ -115,6 +120,10 @@ class Changelog extends React.Component {
                         <Dated date='9.11.2020'/>
                         <ul>
                             <Change>Mobien spawnratea on pienennetty.</Change>
+                        </ul>
+                        <Dated date='8.11.2020'/>
+                        <ul>
+                            <Change>Palautettu discordin minecraft-chattiin <code>/list</code></Change>
                         </ul>
                         <Dated date='7.11.2020'/>
                         <ul>

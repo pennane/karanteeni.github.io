@@ -26,6 +26,7 @@ class Footer extends React.Component {
                             <li>- <a href="/hoks" rel="noopener noreferrer">Hyvä tietää</a></li>
                             <li>- <a href="/yllapito" rel="noopener noreferrer">Ylläpito</a></li>
                             <li>- <a href="https://bugs.karanteeni.net" target="_blank" rel="noopener noreferrer">Ongelmanhallinta</a></li>
+                            <li>- <a href="/unban" target="_blank" rel="noopener noreferrer">Unban-hakemus</a></li>
                         </ul>
                         <div id="switcher" className="mt-2"></div>
                     </div>

@@ -122,14 +122,39 @@ var Changelog = function (_React$Component3) {
                     React.createElement(
                         Body,
                         { month: 'joulukuu2020', showing: true },
-                        React.createElement(Dated, { date: '2.11.2020' }),
+                        React.createElement(Dated, { date: '31.12.2020' }),
                         React.createElement(
                             'ul',
                             null,
                             React.createElement(
                                 Change,
                                 null,
-                                'Joulukalenteri avattu'
+                                'Lis\xE4tty hidden groupit. Mahdollistavat lis\xE4rankit muuttamatta pelaajan p\xE4\xE4rankkia.'
+                            ),
+                            React.createElement(
+                                Change,
+                                null,
+                                'Lis\xE4tty lahjoittajille tabiin oranssit [] merkit.'
+                            )
+                        ),
+                        React.createElement(Dated, { date: '27.12.2020' }),
+                        React.createElement(
+                            'ul',
+                            null,
+                            React.createElement(
+                                Change,
+                                null,
+                                'Palvelin osaa tulkita kirjoitetut komennot, jotka on alkavat / sijasta 7 merkill\xE4.'
+                            )
+                        ),
+                        React.createElement(Dated, { date: '19.12.2020' }),
+                        React.createElement(
+                            'ul',
+                            null,
+                            React.createElement(
+                                Change,
+                                null,
+                                'Lis\xE4tty resepti nametagille'
                             )
                         )
                     )
@@ -140,16 +165,6 @@ var Changelog = function (_React$Component3) {
                     React.createElement(
                         Body,
                         { month: 'marraskuu2020' },
-                        React.createElement(Dated, { date: '29.11.2020' }),
-                        React.createElement(
-                            'ul',
-                            null,
-                            React.createElement(
-                                Change,
-                                null,
-                                'Tabi on muutettu jouluisaksi.'
-                            )
-                        ),
                         React.createElement(Dated, { date: '27.11.2020' }),
                         React.createElement(
                             'ul',
@@ -187,7 +202,7 @@ var Changelog = function (_React$Component3) {
                             React.createElement(
                                 Change,
                                 null,
-                                'Lis\xE4tty vinkkeihin lyhyt ohje mit\xE4 teh\xE4 jos joku h\xE4irik\xF6i tai yll\xE4pitolaine h\xE4irik\xF6i.'
+                                'Lis\xE4tty vinkkeihin lyhyt ohje mit\xE4 tehd\xE4, jos joku h\xE4irik\xF6i'
                             )
                         ),
                         React.createElement(Dated, { date: '14.11.2020' }),
@@ -240,6 +255,21 @@ var Changelog = function (_React$Component3) {
                                 Change,
                                 null,
                                 'Mobien spawnratea on pienennetty.'
+                            )
+                        ),
+                        React.createElement(Dated, { date: '8.11.2020' }),
+                        React.createElement(
+                            'ul',
+                            null,
+                            React.createElement(
+                                Change,
+                                null,
+                                'Palautettu discordin minecraft-chattiin ',
+                                React.createElement(
+                                    'code',
+                                    null,
+                                    '/list'
+                                )
                             )
                         ),
                         React.createElement(Dated, { date: '7.11.2020' }),
