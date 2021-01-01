@@ -55,6 +55,14 @@ class Recipe extends React.Component {
 const Recipes = () => {
     return (
         <div className="col-lg-6 m-auto text-center">
+             <Recipe
+                caption="Onnenkeksi"
+                image="assets/images/recipes/fortunecookie.png"
+            />
+             <Recipe
+                caption="Nametag"
+                image="assets/images/recipes/nametag.png"
+            />
             <Recipe
                 caption="Rakentajan essentiaalinen työkalu."
                 image="assets/images/recipes/builders_wand.png"

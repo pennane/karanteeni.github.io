@@ -47,18 +47,18 @@ var lainaukset = [
     teksti: "Käy eka vessassa, mee sitten pöntölle.",
     kuuluisuus: "Nuubles"
   },
-  {
+  /*{
     teksti: "mirrsststsddstsrs",
     kuuluisuus: "Kana kirjoittamassa"
-  },
+  }, */
   {
     teksti: "Millaista ois 100% vesihedelmämehu?",
     kuuluisuus: "Nuubles"
   },
-  {
+  /*{
     teksti: "Rupeen aina auringos olles haisemaa paahtoleivält.",
     kuuluisuus: "Kana"
-  },
+  },*/
   {
     teksti: "Mut jome neljän päivän päästä kanalle meen.",
     kuuluisuus: "Runollinen Nuubles"
@@ -66,11 +66,11 @@ var lainaukset = [
   {
     teksti: "Mun isän talossa on kaks kerrosta päällekkäin, toinen on toisen päällä mut toinen ei.",
     kuuluisuus: "Nuubles"
-  },
+  },/*
   {
     teksti: "Nax, 19 / 2 = 8.",
     kuuluisuus: "lakanakana"
-  },
+  },*/
   {
     teksti: "ftyctycycytcy<wbr />tcycxytctyrcy<wbr />uvcytfcucu",
     kuuluisuus: "Nuubles"
@@ -147,10 +147,10 @@ var lainaukset = [
     teksti: "Mut siis mikä tuuri et löydän 170€ ku oon kaapissa!!!",
     kuuluisuus: "Nuubles"
   },
-  {
+  /*{
     teksti: "*Erittäin ylpeä äänensävy* eli 4/3 on isompi ku 1/3!",
     kuuluisuus: "lakanakana"
-  },
+  },*/
   {
     teksti: "Jos sulkee oven nii ei tuu pimeetä :3",
     kuuluisuus: "Nuubles"
@@ -159,10 +159,10 @@ var lainaukset = [
     teksti: "Sulle sopii ne hiukset mitä oot käyttäny :33333",
     kuuluisuus: "Nuubles"
   },
-  {
+  /*{
     teksti: "*Sana on bändi* MUUSIKKO YKSIÖSSÄ!!!",
     kuuluisuus: "lakanakana"
-  },
+  },*/
   {
     teksti: "Ohjeet luetaan lukemalla ohjeiden sanat.",
     kuuluisuus: "Nuubles"
@@ -235,10 +235,10 @@ var lainaukset = [
     teksti: "Musta tulee käytetty latvialainen.",
     kuuluisuus: "Nuubles"
   },
-  {
+  /*{ Kyl se taas tulee takas
     teksti: "Koira olet mahtava ihminen.",
     kuuluisuus: "Naxray"
-  },
+  }, */
   {
     teksti: "Mikä on lintuaura?",
     kuuluisuus: "Nuubles, joka on asunut korvessa elämänsä"
@@ -255,6 +255,78 @@ var lainaukset = [
     teksti: "Mä en supportaa kuolemantuomioo, mutta oon valmis tekemää kompromissin sen kaverin kaa, joka keksi piimän.",
     kuuluisuus: "Ougii_Lewe"
   },
+  {
+    teksti: "Penskana tuli syötyy liikaa sisäelimiä.",
+    kuuluisuus: "jafarin"
+  },
+  {
+    teksti: "sää kuulostat niin wholesomelta ku sä nakkaat ihmisiä laavaan",
+    kuuluisuus: "nöbbe pre:lle 2020"
+  },
+  {
+    teksti: "dementia.pog",
+    kuuluisuus: "Nuubles"
+  },
+  {
+    teksti: "Minionit on pieniä, pyöreitä ja valkosia vähänniinku simpsonit",
+    kuuluisuus: "Nuubles"
+  },
+  {
+    teksti: "Perunalaatikko on niinku laatikkoa joka on perunaa",
+    kuuluisuus: "Nuubles"
+  },
+  {
+    teksti: "onks ctrl + v kopy vasi paste",
+    kuuluisuus: "Viherkukka"
+  },
+  {
+    teksti: "Karanteeni on perseestä",
+    kuuluisuus: "Iita"
+  },
+  {
+    teksti: "Perunalaatikko on niinku laatikkoa joka on perunaa",
+    kuuluisuus: "Nuubles"
+  },
+  {
+    teksti: "Tiesittekö et suomi on litteä",
+    kuuluisuus: "Manuzki"
+  },
+  {
+    teksti: "kuka käyttää sänkyy ku se nukkuu",
+    kuuluisuus: "Asheline"
+  },
+  {
+    teksti: "lintujen kananmunat",
+    kuuluisuus: "Asheline"
+  },
+  {
+    teksti: "Gave 1000000 [Jesuses] to Jomeee",
+    kuuluisuus: ""
+  },
+  {
+    teksti: "Fire is lit",
+    kuuluisuus: "Susse"
+  },
+  {
+    teksti: "illeagal jalksjdf type much",
+    kuuluisuus: "Susse"
+  },
+  {
+    teksti: "niin niin. meitä on täällä niinkin monta kuin 0 + minä",
+    kuuluisuus: "Susse poistui palvelimelta"
+  },
+  {
+    teksti: "lyijytäytekynät ei lyhene...",
+    kuuluisuus: "filosofimasa"
+  },
+  {
+    teksti: "100k tnt kaatu aika varmana",
+    kuuluisuus: "jome"
+  },
+  {
+    teksti: "kuka on masa?",
+    kuuluisuus: "jome"
+  }
 ];
 
 var currentQuote = randomFromArray(lainaukset);

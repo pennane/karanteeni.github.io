@@ -129,6 +129,16 @@ var Footer = function (_React$Component) {
                                     { href: "https://bugs.karanteeni.net", target: "_blank", rel: "noopener noreferrer" },
                                     "Ongelmanhallinta"
                                 )
+                            ),
+                            React.createElement(
+                                "li",
+                                null,
+                                "- ",
+                                React.createElement(
+                                    "a",
+                                    { href: "/unban", target: "_blank", rel: "noopener noreferrer" },
+                                    "Unban-hakemus"
+                                )
                             )
                         ),
                         React.createElement("div", { id: "switcher", className: "mt-2" })

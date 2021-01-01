@@ -229,8 +229,13 @@ var Navbar = function (_React$Component5) {
                     React.createElement(DropDownItem, { icon: "fas fa-users", url: "yllapito", title: "Yll\xE4pito" }),
                     React.createElement(DropDownItem, { icon: "fas fa-file-alt", url: "yphaku", title: "Hae yll\xE4pitoon!" })
                 ),
-                React.createElement(NavLink, { icon: "fas fa-globe-africa", url: "maailmat", title: "Maailmat" }),
-                React.createElement(NavLink, { icon: "fas fa-gift", url: "lahjoitus", title: "Lahjoitukset" })
+                React.createElement(NavLink, { icon: "fas fa-gift", url: "lahjoitus", title: "Lahjoitukset" }),
+                React.createElement(
+                    DropDownCollapseMenu,
+                    { title: "Hakemukset", labelClassName: "fas fa-scroll" },
+                    React.createElement(DropDownItem, { icon: "fas fa-file-alt", url: "yphaku", title: "Hae yll\xE4pitoon!" }),
+                    React.createElement(DropDownItem, { icon: "fas fa-file-alt", url: "unban", title: "Unban-hakemus" })
+                )
             );
         }
     }]);

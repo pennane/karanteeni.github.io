@@ -116,6 +116,14 @@ var Recipes = function Recipes() {
         "div",
         { className: "col-lg-6 m-auto text-center" },
         React.createElement(Recipe, {
+            caption: "Onnenkeksi",
+            image: "assets/images/recipes/fortunecookie.png"
+        }),
+        React.createElement(Recipe, {
+            caption: "Nametag",
+            image: "assets/images/recipes/nametag.png"
+        }),
+        React.createElement(Recipe, {
             caption: "Rakentajan essentiaalinen ty\xF6kalu.",
             image: "assets/images/recipes/builders_wand.png"
         }),
