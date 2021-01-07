@@ -99,9 +99,11 @@ var Recipe = function (_React$Component4) {
     _createClass(Recipe, [{
         key: "render",
         value: function render() {
+            var id = this.props.tag || 'customrecipe';
+
             return React.createElement(
                 "figure",
-                { className: "figure mb-5" },
+                { id: id, className: "figure mb-5" },
                 React.createElement(RecipeImg, { image: this.props.image }),
                 React.createElement(RecipeCap, { caption: this.props.caption })
             );
@@ -117,15 +119,18 @@ var Recipes = function Recipes() {
         { className: "col-lg-6 m-auto text-center" },
         React.createElement(Recipe, {
             caption: "Onnenkeksi",
-            image: "assets/images/recipes/fortunecookie.png"
+            image: "assets/images/recipes/fortunecookie.png",
+            tag: "fortunecookie"
         }),
         React.createElement(Recipe, {
             caption: "Nametag",
-            image: "assets/images/recipes/nametag.png"
+            image: "assets/images/recipes/nametag.png",
+            tag: "nametag"
         }),
         React.createElement(Recipe, {
-            caption: "Rakentajan essentiaalinen ty\xF6kalu.",
-            image: "assets/images/recipes/builders_wand.png"
+            caption: "Rakentajan essentiaalinen ty\xF6kalu. K\xE4yt\xF6ss\xE4 sisukkaasta yl\xF6sp\xE4in.",
+            image: "assets/images/recipes/builders_wand.png",
+            tag: "builderswand"
         }),
         React.createElement(Recipe, {
             caption: "Kaikki lasipaneelityypit voi muuttaa takaisin palikoiksi.",

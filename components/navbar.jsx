@@ -129,12 +129,11 @@ class Navbar extends React.Component {
                 <NavLink icon="fas fa-home" url="/" title="Etusivu" />
 
                 <DropDownCollapseMenu title="Yleistietoa" dataTarget="#rc" labelClassName="fas fa-info">
-                    <DropDownItem icon="fas fa-info" url="yleistietoa" title="Yleistietoa" />
-                    <DropDownItem icon="fas fa-hammer" url="recipes" title="Custom reseptit" />
                     <DropDownItem icon="fas fa-thumbs-up" url="hoks" title="Hyvä tietää!" />
+                    <DropDownItem icon="fas fa-puzzle-piece" url="ominaisuudet" title="Ominaisuudet" />
+                    <DropDownItem icon="fas fa-hammer" url="recipes" title="Custom reseptit" />
                     <DropDownItem icon="fas fa-question-circle" url="ukk" title="UKK" />
                 </DropDownCollapseMenu>
-
 
                 <NavLink icon="fas fa-exclamation" url="saannot" title="Säännöt" />
 
@@ -145,7 +144,6 @@ class Navbar extends React.Component {
                     <DropDownItem icon="fas fa-file-alt" url="yphaku" title="Hae ylläpitoon!" />
                 </DropDownCollapseMenu>
 
-            {/* <NavLink icon="fas fa-globe-africa" url="maailmat" title="Maailmat" /> tälle ei oo mitää käyttöä*/}   
                 <NavLink icon="fas fa-gift" url="lahjoitus" title="Lahjoitukset" />
 
                 <DropDownCollapseMenu title="Hakemukset" labelClassName="fas fa-scroll">

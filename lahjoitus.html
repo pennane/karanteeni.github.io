@@ -45,58 +45,53 @@
   </script>
   <style>
     .rgb {
-  animation: color-change 20s infinite;
-  animation-fill-mode: both;
-  text-shadow: 0px 0px 8px rgba(255,255,255, .20);
-}
+      animation: color-change 20s infinite;
+      animation-fill-mode: both;
+      text-shadow: 0px 0px 8px rgba(255, 255, 255, .20);
+      font-weight: 600;
+    }
 
-.offset1 {
-  animation-delay: 0ms;
-}
+    .offset1 {
+      animation-delay: 0ms;
+    }
 
-.offset2 {
-  animation-delay: -5000ms;
-}
+    .offset2 {
+      animation-delay: -5000ms;
+    }
 
-.offset3 {
-  animation-delay: -10000ms;
-}
+    .offset3 {
+      animation-delay: -10000ms;
+    }
 
-@keyframes color-change {
-  0% {
-    color: blue;
-  }
-  10% {
-    color: #8e44ad;
-  }
-  20% {
-    color: #1abc9c;
-  }
-  30% {
-    color: #d35400;
-  }
-  40% {
-    color: blue;
-  }
-  50% {
-    color: #34495e;
-  }
-  60% {
-    color: blue;
-  }
-  70% {
-    color: #2980b9;
-  }
-  80% {
-    color: #f1c40f;
-  }
-  90% {
-    color: #2980b9;
-  }
-  100% {
-    color: pink;
-  }
-}
+    @keyframes color-change {
+      0% {
+        color: #8e44ad;
+      }
+
+      20% {
+        color: #1abc9c;
+      }
+
+      30% {
+        color: #d35400;
+      }
+
+      70% {
+        color: #2980b9;
+      }
+
+      80% {
+        color: #f1c40f;
+      }
+
+      90% {
+        color: #2980b9;
+      }
+
+      100% {
+        color: pink;
+      }
+    }
   </style>
 </head>
 
@@ -116,13 +111,16 @@
           </button>
         </div>
         <div class="modal-body">
-          <p>Koska serveri maksetaan täysin omilla rahoilla, pienetkin lahjoitukset ovat erittäin tervetulleita. 
-            Lahjoittajat saavat Discordiin lahjoittaja roolin, sekä palvelimelle kyvyn asettaa nimeen <span class="rgb"><span class="offset1">r</span><span class="offset2">g</span><span class="offset3">b</span></span> värejä.
-            Jos haluaisit lahjoittaa,
+          <p>Koska serveri maksetaan täysin omilla rahoilla, pienetkin lahjoitukset ovat erittäin tervetulleita.</p>
+          <p>Jos haluaisit lahjoittaa,
             voit lahjoittaa sen suoraan <b><a id="link" href="https://www.paypal.me/karanteeni"
                 style="color: black;">Karanteenin PayPaliin</a></b> tai ota yhteyttä Discordissa Jome#7320, niin
-            katsotaan kuinka voit lahjoituksen tehdä. Parhaat tavat ovat Paysafecard ja PayPal.<br>
-          </p>
+            katsotaan kuinka voit lahjoituksen tehdä. Parhaat tavat ovat Paysafecard ja PayPal.</p>
+          <p>Lahjoittajat saavat Discordiin lahjoittaja roolin, sekä palvelimelle kyvyn asettaa nimeen 
+            <span class="rgb">
+              <span class="offset1">R</span><span class="offset2">G</span><span class="offset3">B</span>
+            </span> värejä, kyltteihin värejä värikoodeilla, sekä tabiin näkyvyyttä (värikkäät
+            hakasulkeet).</p>
         </div>
         <div class="modal-footer">
           <button type="button" class="btn btn-outline-light kara-btn" data-dismiss="modal">Sulje</button>

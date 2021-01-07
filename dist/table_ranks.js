@@ -304,7 +304,7 @@ var Others = function (_React$Component9) {
 
         _this9.state = {
             text: _this9.props.text,
-            tip: _this9.props.mcolors
+            tip: _this9.props.tip
         };
         return _this9;
     }
@@ -316,8 +316,8 @@ var Others = function (_React$Component9) {
                 "p",
                 { className: "card-text" },
                 this.props.text,
-                " ",
-                React.createElement(
+                " \xA0",
+                this.props.tip && React.createElement(
                     "span",
                     { "data-toggle": "tooltip", "data-placement": "right", title: this.props.tip },
                     React.createElement("i", { className: "fas fa-info-circle" })
@@ -354,8 +354,18 @@ var ElotonRaihnas = function (_React$Component10) {
                             CommandRow,
                             null,
                             React.createElement(SetHome, { count: "1" }),
-                            React.createElement(Command, { info: false, command: "/kit aloitus", disabled: true })
+                            React.createElement(Command, { info: false })
                         )
+                    ),
+                    React.createElement(
+                        "div",
+                        { "class": "rank-others" },
+                        React.createElement(
+                            "h5",
+                            null,
+                            "Muuta:"
+                        ),
+                        React.createElement(Others, { text: "Kaikilla pelaajilla olevat komennot l\xF6ytyv\xE4t sivun alta!" })
                     )
                 ),
                 React.createElement(
@@ -368,13 +378,13 @@ var ElotonRaihnas = function (_React$Component10) {
                             CommandRow,
                             null,
                             React.createElement(SetHome, { count: "2" }),
-                            React.createElement(Command, { info: false, command: "/kit raihnas", disabled: true })
+                            React.createElement(Command, { info: false, command: "/workbench" })
                         ),
                         React.createElement(
                             CommandRow,
                             null,
                             React.createElement(Command, { info: false, command: "/hat" }),
-                            React.createElement(Command, { info: false, command: "/workbench" })
+                            React.createElement(Command, { info: false, command: "/calculate" })
                         )
                     )
                 )
@@ -410,7 +420,7 @@ var SisukasParantuva = function (_React$Component11) {
                             CommandRow,
                             null,
                             React.createElement(SetHome, { count: "6" }),
-                            React.createElement(Command, { info: false, command: "/kit sisukas", disabled: true })
+                            React.createElement(Command, { info: false, command: "/near" })
                         ),
                         React.createElement(
                             CommandRow,
@@ -422,7 +432,7 @@ var SisukasParantuva = function (_React$Component11) {
                             CommandRow,
                             null,
                             React.createElement(Command, { info: false, command: "/enderchest" }),
-                            React.createElement(Command, { info: false, command: "/near" })
+                            React.createElement(Command, { info: false })
                         )
                     ),
                     React.createElement(
@@ -432,6 +442,17 @@ var SisukasParantuva = function (_React$Component11) {
                             "h5",
                             null,
                             "Muuta:"
+                        ),
+                        React.createElement(
+                            "p",
+                            { "class": "card-text" },
+                            "Kyky k\xE4ytt\xE4\xE4 ja craftata ",
+                            React.createElement(
+                                "a",
+                                { href: "/recipes#builderswand" },
+                                "Builders Wand"
+                            ),
+                            "."
                         ),
                         React.createElement(Others, { text: "Kaksi uutta v\xE4ri\xE4 taikamattoon (mc)", tip: "Vaalean harmaa (oletus) ja l\xE4pin\xE4kyv\xE4" })
                     )
@@ -446,19 +467,13 @@ var SisukasParantuva = function (_React$Component11) {
                             CommandRow,
                             null,
                             React.createElement(SetHome, { count: "8" }),
-                            React.createElement(Command, { info: false, command: "/kit parantuva", disabled: true })
+                            React.createElement(Command, { info: false, command: "/feed" })
                         ),
                         React.createElement(
                             CommandRow,
                             null,
                             React.createElement(Command, { info: true, title: "Nimen t\xE4ytyy olla samankaltainen Minecraft nimesi kanssa tunnistautumisen vuoksi.", command: "/nick" }),
-                            React.createElement(Command, { info: true, title: "Voit teleporttaa koordinaatteihin.", command: "/tp <x> <y> <z>" })
-                        ),
-                        React.createElement(
-                            CommandRow,
-                            null,
-                            React.createElement(Command, { info: false, command: "/feed" }),
-                            React.createElement(Command, { info: false })
+                            React.createElement(Command, { info: true, title: "Voit teleportata koordinaatteihin.", command: "/tp <x> <y> <z>" })
                         )
                     ),
                     React.createElement(
@@ -469,7 +484,7 @@ var SisukasParantuva = function (_React$Component11) {
                             null,
                             "Muuta:"
                         ),
-                        React.createElement(Others, { text: "Kolme uutta v\xE4ri\xE4 taikamattoon (mc)", tip: "Valkoinen, harmaa ja sininen" }),
+                        React.createElement(Others, { text: "Nelj\xE4 uutta v\xE4ri\xE4 taikamattoon (mc)", tip: "Valkoinen, harmaa, vaalean harmaa ja sininen" }),
                         React.createElement(Others, { text: "Kyky hakata spawnereita ilman Silk Touchia", tip: "Tarvitset silti hakun ker\xE4t\xE4ksesi sen!" })
                     )
                 )
@@ -505,7 +520,7 @@ var ImmuuniParantaja = function (_React$Component12) {
                             CommandRow,
                             null,
                             React.createElement(SetHome, { count: "12" }),
-                            React.createElement(Command, { info: false, command: "/kit immuuni", disabled: true })
+                            React.createElement(Command, { info: true, title: "Est\xE4\xE4 pelaajien teleporttipyynn\xF6t ja teleporttaukset", command: "/tptoggle" })
                         ),
                         React.createElement(
                             CommandRow,
@@ -516,14 +531,8 @@ var ImmuuniParantaja = function (_React$Component12) {
                         React.createElement(
                             CommandRow,
                             null,
-                            React.createElement(Command, { info: true, title: "Ota spawner k\xE4teen kun suoritat komentoa.", command: "/spawner" }),
+                            React.createElement(Command, { info: true, title: "Vaihtaa spawnerin tyyppi\xE4. Ota spawner k\xE4teen kun suoritat komentoa.", command: "/spawner" }),
                             React.createElement(Command, { info: false, command: "/tp <pelaaja>" })
-                        ),
-                        React.createElement(
-                            CommandRow,
-                            null,
-                            React.createElement(Command, { info: true, title: "Est\xE4\xE4 pelaajien teleporttipyynn\xF6t samantasoisilta ja alemmilta.", command: "/tptoggle" }),
-                            React.createElement(Command, { info: false })
                         )
                     ),
                     React.createElement(
@@ -547,7 +556,7 @@ var ImmuuniParantaja = function (_React$Component12) {
                             CommandRow,
                             null,
                             React.createElement(SetHome, { count: "16" }),
-                            React.createElement(Command, { info: false, command: "/kit parantaja", disabled: true })
+                            React.createElement(Command, { info: false })
                         )
                     ),
                     React.createElement(
@@ -558,6 +567,7 @@ var ImmuuniParantaja = function (_React$Component12) {
                             null,
                             "Muuta:"
                         ),
+                        React.createElement(Others, { text: "Uusia tapoja nimet\xE4 tavaroita /nime\xE4 komennolla", tip: "Lihavointi, kursivointi, randomisointi ja alleviivaus" }),
                         React.createElement(Others, { text: "Kaksi uutta v\xE4ri\xE4 taikamattoon (mc)", tip: "Lime ja musta" })
                     )
                 )
@@ -593,13 +603,7 @@ var NekroKuolematon = function (_React$Component13) {
                             CommandRow,
                             null,
                             React.createElement(SetHome, { count: "18" }),
-                            React.createElement(Command, { info: false, command: "/kit nekromantikko", disabled: true })
-                        ),
-                        React.createElement(
-                            CommandRow,
-                            null,
-                            React.createElement(Command, { info: true, title: "Kyky tarkastella blockeja", command: "/co i" }),
-                            React.createElement(Command, { info: false })
+                            React.createElement(Command, { info: true, title: "Kyky tarkastella blockeja", command: "/co i" })
                         )
                     ),
                     React.createElement(
@@ -610,7 +614,10 @@ var NekroKuolematon = function (_React$Component13) {
                             null,
                             "Muuta:"
                         ),
-                        React.createElement(Others, { text: "Kaksi uutta v\xE4ri\xE4 taikamattoon (mc)", tip: "Magenta ja punainen" })
+                        React.createElement(Others, { text: "Kyky asettaa t\xE4ys RGB v\xE4rillinen nick.", tip: "Syntaksilla &#rrggbb" }),
+                        React.createElement(Others, { text: "Nekromatikkoja ei voi hiljent\xE4\xE4 /ignore komennolla." }),
+                        React.createElement(Others, { text: "Kaksi uutta v\xE4ri\xE4 taikamattoon (mc)", tip: "Magenta ja punainen" }),
+                        React.createElement(Others, { text: "Lis\xE4palikoita taikamattoon (mc)", tip: "Magenta lasi, punainen lasi, ja j\xE4\xE4" })
                     )
                 ),
                 React.createElement(
@@ -623,7 +630,7 @@ var NekroKuolematon = function (_React$Component13) {
                             CommandRow,
                             null,
                             React.createElement(SetHome, { count: "18" }),
-                            React.createElement(Command, { info: false, command: "/kit kuolematon", disabled: true })
+                            React.createElement(Command, { info: false })
                         )
                     ),
                     React.createElement(
@@ -634,7 +641,8 @@ var NekroKuolematon = function (_React$Component13) {
                             null,
                             "Muuta:"
                         ),
-                        React.createElement(Others, { text: "Kuusi uutta v\xE4ri\xE4 taikamattoon (mc)", tip: "Pinkki, syaani, purppura, oranssi, vihre\xE4 ja vaalean sininen" })
+                        React.createElement(Others, { text: "Kuusi uutta v\xE4ri\xE4 taikamattoon (mc)", tip: "Pinkki, syaani, purppura, oranssi, vihre\xE4 ja vaalean sininen" }),
+                        React.createElement(Others, { text: "Lis\xE4palikka taikamattoon", tip: "Barrier block" })
                     )
                 )
             );

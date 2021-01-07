@@ -43,8 +43,10 @@ class Recipe extends React.Component {
         super(props);
     }
     render() {
+        let id = this.props.tag || 'customrecipe'
+
         return (
-            <figure className="figure mb-5">
+            <figure id={id} className="figure mb-5">
                 <RecipeImg image={this.props.image} />
                 <RecipeCap caption={this.props.caption} />
             </figure>
@@ -58,14 +60,17 @@ const Recipes = () => {
              <Recipe
                 caption="Onnenkeksi"
                 image="assets/images/recipes/fortunecookie.png"
+                tag="fortunecookie"
             />
              <Recipe
                 caption="Nametag"
                 image="assets/images/recipes/nametag.png"
+                tag="nametag"
             />
             <Recipe
-                caption="Rakentajan essentiaalinen työkalu."
+                caption="Rakentajan essentiaalinen työkalu. Käytössä sisukkaasta ylöspäin."
                 image="assets/images/recipes/builders_wand.png"
+                tag="builderswand"
             />
             <Recipe
                 caption="Kaikki lasipaneelityypit voi muuttaa takaisin palikoiksi."
