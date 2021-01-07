@@ -164,14 +164,19 @@ class Others extends React.Component {
 
         this.state = {
             text: this.props.text,
-            tip: this.props.mcolors
+            tip: this.props.tip
         }
     }
 
     render() {
         return (
             <p className="card-text">
-                {this.props.text} <span data-toggle='tooltip' data-placement='right' title={this.props.tip}><i className="fas fa-info-circle"></i></span>
+                {this.props.text } &nbsp;
+                {this.props.tip &&
+                    <span data-toggle='tooltip' data-placement='right' title={this.props.tip}>
+                        <i className="fas fa-info-circle"></i>
+                    </span>
+                }
             </p>
         )
     }
@@ -185,19 +190,23 @@ class ElotonRaihnas extends React.Component {
                     <Body>
                         <CommandRow>
                             <SetHome count='1' />
-                            <Command info={false} command='/kit aloitus' disabled />
+                            <Command info={false} />
                         </CommandRow>
                     </Body>
+                    <div class="rank-others">
+                        <h5>Muuta:</h5>
+                        <Others text='Kaikilla pelaajilla olevat komennot löytyvät sivun alta!'/>
+                    </div>
                 </Structure>
                 <Structure name='Raihnas' time='5h' color='c-raihnas '>
                     <Body>
                         <CommandRow>
                             <SetHome count='2' />
-                            <Command info={false} command='/kit raihnas' disabled />
+                            <Command info={false} command='/workbench' />
                         </CommandRow>
                         <CommandRow>
                             <Command info={false} command='/hat' />
-                            <Command info={false} command='/workbench' />
+                            <Command info={false} command='/calculate' />
                         </CommandRow>
                     </Body>
                 </Structure>
@@ -214,7 +223,7 @@ class SisukasParantuva extends React.Component {
                     <Body>
                         <CommandRow>
                             <SetHome count='6' />
-                            <Command info={false} command='/kit sisukas' disabled />
+                            <Command info={false} command='/near' />
                         </CommandRow>
                         <CommandRow>
                             <Command info title='Taikamatto, 5x5 kokoinen lasimatto allasi, jolla voit leijua ilmassa, sekä lentää.' command='/mc' />
@@ -222,11 +231,12 @@ class SisukasParantuva extends React.Component {
                         </CommandRow>
                         <CommandRow>
                             <Command info={false} command='/enderchest' />
-                            <Command info={false} command='/near' />
+                            <Command info={false} />
                         </CommandRow>
                     </Body>
                     <div class="rank-others">
                         <h5>Muuta:</h5>
+                        <p class="card-text">Kyky käyttää ja craftata <a href="/recipes#builderswand">Builders Wand</a>.</p>
                         <Others text='Kaksi uutta väriä taikamattoon (mc)' tip='Vaalean harmaa (oletus) ja läpinäkyvä' />
                     </div>
 
@@ -235,20 +245,17 @@ class SisukasParantuva extends React.Component {
                     <Body>
                         <CommandRow>
                             <SetHome count='8' />
-                            <Command info={false} command='/kit parantuva' disabled />
+                            <Command info={false} command='/feed' />
+
                         </CommandRow>
                         <CommandRow>
                             <Command info title='Nimen täytyy olla samankaltainen Minecraft nimesi kanssa tunnistautumisen vuoksi.' command='/nick' />
-                            <Command info title='Voit teleporttaa koordinaatteihin.' command='/tp <x> <y> <z>' />
-                        </CommandRow>
-                        <CommandRow>
-                            <Command info={false} command='/feed' />
-                            <Command info={false} />
+                            <Command info title='Voit teleportata koordinaatteihin.' command='/tp <x> <y> <z>' />
                         </CommandRow>
                     </Body>
                     <div class="rank-others">
                         <h5>Muuta:</h5>
-                        <Others text='Kolme uutta väriä taikamattoon (mc)' tip='Valkoinen, harmaa ja sininen' />
+                        <Others text='Neljä uutta väriä taikamattoon (mc)' tip='Valkoinen, harmaa, vaalean harmaa ja sininen' />
                         <Others text='Kyky hakata spawnereita ilman Silk Touchia' tip='Tarvitset silti hakun kerätäksesi sen!' />
                     </div>
 
@@ -266,19 +273,15 @@ class ImmuuniParantaja extends React.Component {
                     <Body>
                         <CommandRow>
                             <SetHome count='12' />
-                            <Command info={false} command='/kit immuuni' disabled />
+                            <Command info title='Estää pelaajien teleporttipyynnöt ja teleporttaukset' command='/tptoggle' />
                         </CommandRow>
                         <CommandRow>
                             <Command info={false} command='/fly' />
                             <Command info title='Nimeää kädessäsi olevan esineen!' command='/nimeä' />
                         </CommandRow>
                         <CommandRow>
-                            <Command info title='Ota spawner käteen kun suoritat komentoa.' command='/spawner' />
+                            <Command info title='Vaihtaa spawnerin tyyppiä. Ota spawner käteen kun suoritat komentoa.' command='/spawner' />
                             <Command info={false} command='/tp <pelaaja>' />
-                        </CommandRow>
-                        <CommandRow>
-                            <Command info title='Estää pelaajien teleporttipyynnöt samantasoisilta ja alemmilta.' command='/tptoggle' />
-                            <Command info={false} />
                         </CommandRow>
                     </Body>
                     <div class="rank-others">
@@ -291,13 +294,13 @@ class ImmuuniParantaja extends React.Component {
                     <Body>
                         <CommandRow>
                             <SetHome count='16' />
-                            <Command info={false} command='/kit parantaja' disabled />
+                            <Command info={false} />
                         </CommandRow>
                     </Body>
                     <div class="rank-others">
                         <h5>Muuta:</h5>
+                        <Others text='Uusia tapoja nimetä tavaroita /nimeä komennolla' tip="Lihavointi, kursivointi, randomisointi ja alleviivaus" />
                         <Others text='Kaksi uutta väriä taikamattoon (mc)' tip='Lime ja musta' />
-                        {/* <Others text='Pääsy salaiseen arkistoon' tip='*SALAISTA TIETOA*'/> */}
                     </div>
 
                 </Structure>
@@ -314,16 +317,15 @@ class NekroKuolematon extends React.Component {
                     <Body>
                         <CommandRow>
                             <SetHome count='18' />
-                            <Command info={false} command='/kit nekromantikko' disabled />
-                        </CommandRow>
-                        <CommandRow>
                             <Command info title='Kyky tarkastella blockeja' command='/co i' />
-                            <Command info={false} />
                         </CommandRow>
                     </Body>
                     <div class="rank-others">
                         <h5>Muuta:</h5>
+                        <Others text='Kyky asettaa täys RGB värillinen nick.' tip='Syntaksilla &amp;#rrggbb' />
+                        <Others text='Nekromatikkoja ei voi hiljentää /ignore komennolla.' />
                         <Others text='Kaksi uutta väriä taikamattoon (mc)' tip='Magenta ja punainen' />
+                        <Others text='Lisäpalikoita taikamattoon (mc)' tip='jääblock' />
                     </div>
 
                 </Structure>
@@ -331,12 +333,13 @@ class NekroKuolematon extends React.Component {
                     <Body>
                         <CommandRow>
                             <SetHome count='18' />
-                            <Command info={false} command='/kit kuolematon' disabled />
+                            <Command info={false} />
                         </CommandRow>
                     </Body>
                     <div class="rank-others">
                         <h5>Muuta:</h5>
                         <Others text='Kuusi uutta väriä taikamattoon (mc)' tip='Pinkki, syaani, purppura, oranssi, vihreä ja vaalean sininen' />
+                        <Others text='Lisäpalikka taikamattoon' tip='Barrier block' />
                     </div>
 
                 </Structure>

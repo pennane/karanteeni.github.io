@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="fi">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="Palvelimen erityisominaisuudet">
+  <meta name="author" content="">
+  <link rel="shortcut icon" type="image/png" href="favicon.ico" />
+  <meta property="og:image" content="https://dev.karanteeni.xyz/assets/images/server-icon.png" />
+
+  <title>Karanteeni</title>
+
+  <!-- Bootstrap Js -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="modules/Tooltip/tooltip.js"></script>
+
+  <!-- Custom Js / APIs -->
+
+  <!-- React -->
+  <script src="modules/React/react.production.min.js"></script>
+  <script src="modules/React/react-dom.production.min.js"></script>
+
+  <!-- Bootstrap CSS -->
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link id="theme" rel="stylesheet" href="vendor/css/style_minecraft.min.css">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Fira+Sans&display=swap" rel="stylesheet">
+
+  <!-- FontAwesome Icons -->
+  <link rel="stylesheet" href="vendor/FontAwesome/all.min.css">
+
+
+  </style>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-146640999-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'UA-146640999-1');
+  </script>
+
+  <style>
+    .feature {
+      margin-bottom: 2em;
+    }
+
+    .video {
+      display: flex;
+      box-shadow: 0 1px 2px 0 rgba(0, 0, 0, .05);
+      margin-top: 2.5em;
+      object-fit: contain;
+      justify-content: flex-start;
+      overflow: hidden;
+      background-color: var(--bg-2);
+      flex-direction: column;
+      background-color: rgb(34 29 29 / 0.8);
+      align-items: center;
+    }
+
+    video {
+      max-height: 400px;
+      max-width: 500px;
+    }
+
+    ul {
+      list-style: none;
+      padding: 0;
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- Navbar -->
+  <div class="sticky-top" id="nav"></div> <br><br>
+
+  <!-- Sisältö -->
+  <div class="container text-white">
+    <div class="col-lg-12 text-left">
+      <div class="card card-body main-content bg-darker-transparent">
+        <h1 class="main-heading">Karanteenin Ominaisuudet</h1>
+        <p class="lead">Lue nämä huolella. Avaat itsellesi mielenkiintoisia pelimahdollisuuksia!</p>
+        <div>
+          <p>Karanteenissa on jonkin verran lisäominaisuuksia. Tälle sivulle on listattu niistä
+            suuri osa.</p>
+        </div>
+        <h2>Survivalin lisäominaisuudet</h2>
+
+        <div class="feature">
+          <h5>Emeraldhissi</h5>
+          <div class="video">
+            <video autoplay="autoplay" loop="loop" muted="muted" playsinline="">
+              <source src="/assets/feature/emeraldvator.mp4" type="video/mp4">
+            </video>
+
+          </div>
+          <p>Voit rakentaa toimivan hissin emerald palikoilla, kunhan ne muistaa kytkeä päälle redstonevirralla. </p>
+
+        </div>
+        <div class="feature">
+          <h5>Taikamatto</h5>
+          <div class="video">
+            <video autoplay="autoplay" loop="loop" muted="muted" playsinline="">
+              <source src="/assets/feature/magiccarpet.mp4" type="video/mp4">
+            </video>
+
+          </div>
+          <p>Sisukas rankista ylöspäin pelaavat voivat aktivoida taikamaton, jolla pystyy lentämään kuin Aladdin
+            konsanaan!
+          </p>
+          <p>Matto aktivoituu komennolla <code>/mc</code> ja sen ulkonäköä voi muunnella komennolla
+            <code>/mc design</code></p>
+
+        </div>
+        <div class="feature">
+          <h5>Puun kaataminen</h5>
+          <div class="video">
+            <video autoplay="autoplay" loop="loop" muted="muted" playsinline="">
+              <source src="/assets/feature/woodchop.mp4" type="video/mp4">
+            </video>
+
+          </div>
+          <p>Puu kaatuu alhaalta ylös kokonaan, kunhan sen hakkaa kirveellä!</p>
+        </div>
+        <div class="feature">
+          <h5>Rakentajan taikasauva</h5>
+          <p>Sisukkas rankista ylöspäin pelaajat voivat craftata <a href="/recipes#builderswand">Builders Wand</a>in.
+            Tämä työkalu edesauttaa suurien rakennusten rakennuksessa!</p>
+          <p>Tähän lisätään demovideo sauvan käytöstä tulevaisuudessa</p>
+        </div>
+        <div class="feature">
+          <h5>Arkkukaupat</h5>
+          <div class="video">
+            <video autoplay="autoplay" loop="loop" muted="muted" playsinline="">
+              <source src="/assets/feature/chestshop.mp4" type="video/mp4">
+            </video>
+
+          </div>
+          <p>Pelaajien väliseen kauppaan työkaluna on arkkukaupat! Lyö arkkua tavaralla, jota haluat myydä, kirjoita
+            chattiin tavaran hinta, ja kauppa on valmis!</p>
+        </div>
+        <div class="feature">
+          <h5>Spawnerien kerääminen</h5>
+          <p>Karanteenissa pystyy hakkaamaan mobspawnerit itselleen, kunhan käyttää hakkua jossa on Silk Touch
+            (silkkinen kosketus) enchantti.</p>
+          <p>Parantuva rankista ylöspäin pelkkä hakku riittää!</p>
+        </div>
+
+        <div class="feature">
+          <h5>Alueen suojaaminen</h5>
+          <p>Ylläpito suojaa alueesi pyydettäessä. Kun alue on suojattu, alueen tiedot voi tarkastaa <code>/alue</code>
+            -komennolla.
+          </p>
+          <p>Voit lisätä alueeseesi jäseniä komennolla <code>/trust {alueen_nimi} {pelaajan_nimi}</code> ja poistaa
+            jäseniä <code>/untrust {alueen_nimi} {pelaajan_nimi}</code></p>
+          <p>Jos kylässäsi on vähintään 15 asukasta, voit pyytää sille warppia <code>/warps</code> listaan.</p>
+        </div>
+
+        <div class="text-left" id="komennot">
+          <div>
+            <h4>Yleiset komennot</h4>
+            <ul>
+              <li><code>/discord</code></li>
+              <li><code>/kieli fi-Fi</code> (vaihtaa palvelimen kielen suomeksi)</li>
+              <li><code>/kieli en-US </code>(vaihtaa palvelimen kielen englanniksi)</li>
+              <li><code>/+oikeudet {pelaajan_nimi} </code>(lisää pelaajalle oikeudet palikkaan)</li>
+              <li><code>/-oikeudet {pelaajan_nimi}</code>(poistaa pelaajan oikeudet palikasta)</li>
+              <li><code>/avaa</code>(avaa palikan kaikille)</li>
+              <li><code>/back</code></li>
+              <li><code>/baltop</code></li>
+              <li><code>/pay {pelaaja} {määrä}</code></li>
+              <li><code>/kms</code></li>
+              <li><code>/sethome {kodin_nimi}</code></li>
+              <li><code>/home</code></li>
+              <li><code>/msg (/m, /message)</code></li>
+              <li><code>/reply (/r)</code></li>
+              <li><code>/ignore</code> (/ignore add nimi, /ignore list, /ignore remove nimi)</li>
+              <li><code>/peliaika</code>(/pa, /playtime)</li>
+              <li><code>/rtp</code></li>
+              <li><code>/sit</code></li>
+              <li><code>/spawn</code></li>
+              <li><code>/säännöt</code></li>
+              <li><code>/tk</code></li>
+              <li><code>/tpa</code></li>
+              <li><code>/tpahere</code></li>
+              <li><code>/truest</code></li>
+              <li><code>/vote</code></li>
+              <li><code>/warps</code></li>
+              <li><code>/music</code></li>
+              <li><code>/radio</code></li>
+              <li><code>/warp</code></li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+  <footer id="footer" class="footer mt-auto"></footer>
+
+  <!-- Components -->
+  <script src="./dist/navbar.js"></script>
+  <script src="./dist/footer.js"></script>
+  <script src="./dist/theme_switcher.js"></script>
+
+</body>
+
+</html>

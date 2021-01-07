@@ -1,91 +1,130 @@
 <!DOCTYPE html>
 <html lang="fi">
 
-  <head>
+<head>
 
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="Hyvä tietää!">
-    <meta name="author" content="">
-    <link rel="shortcut icon" type="image/png" href="favicon.ico"/>
-    <meta property="og:image" content="https://dev.karanteeni.xyz/assets/images/server-icon.png" />
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="Hyvä tietää!">
+  <meta name="author" content="">
+  <link rel="shortcut icon" type="image/png" href="favicon.ico" />
+  <meta property="og:image" content="https://dev.karanteeni.xyz/assets/images/server-icon.png" />
 
-    <title>Karanteeni</title>
+  <title>Karanteeni</title>
 
-    <!-- Bootstrap Js -->
-    <script src="vendor/jquery/jquery.min.js"></script>
-    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-    <script src="modules/Tooltip/tooltip.js"></script>
+  <!-- Bootstrap Js -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="modules/Tooltip/tooltip.js"></script>
 
-    <!-- Custom Js / APIs -->
+  <!-- Custom Js / APIs -->
 
-    <!-- React -->
-    <script src="modules/React/react.production.min.js"></script>
-    <script src="modules/React/react-dom.production.min.js"></script>
+  <!-- React -->
+  <script src="modules/React/react.production.min.js"></script>
+  <script src="modules/React/react-dom.production.min.js"></script>
 
-    <!-- Bootstrap CSS -->
-    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-    <link id="theme" rel="stylesheet" href="vendor/css/style_minecraft.min.css">
+  <!-- Bootstrap CSS -->
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link id="theme" rel="stylesheet" href="vendor/css/style_minecraft.min.css">
 
-    <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Fira+Sans&display=swap" rel="stylesheet">
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Fira+Sans&display=swap" rel="stylesheet">
 
-    <!-- FontAwesome Icons -->
-    <link rel="stylesheet" href="vendor/FontAwesome/all.min.css">
+  <!-- FontAwesome Icons -->
+  <link rel="stylesheet" href="vendor/FontAwesome/all.min.css">
 
-  </head>
+</head>
 
-  <body>
+<body>
 
-    <!-- Navbar -->
-    <div class="sticky-top" id="nav"></div> <br><br>
+  <!-- Navbar -->
+  <div class="sticky-top" id="nav"></div> <br><br>
 
-    <!-- Sisältö -->
-    <div class="container">
-        <div class="col-lg-12 text-left">
-          <div class="card card-body main-content bg-transparent border-aqua" style="margin-bottom: 1.2em; font-family: 'Open Sans', sans-serif !important;">
-            <h1 class="main-heading" style="margin-bottom:1.2em;">Hyvä tietää!</h3><hr>
-            <ul class="text-left">
-                
-               <!-- <li>Serverillämme voit tällä hetkellä pelata Survivalia, Creativea ja PvP.</li>-->
-                <li>Serverillämme voit tällä hetkellä pelata vain Survivalia, mutta Creative on palaamassa ajan myötä.</li>
-                <li>Serverimme rahavaluuttana toimii pennit (❂). Voit ansaita valuuttaa kasvattamalla peliaikaa, tai äänestämällä <code>/vote</code>.</li>
-                <li>Arkut ovat automaattisesti lukossa, kun laitat ne paikoilleen. Jos haluat, että kaikki voivat avata sen, katso arkkua ja suorita komento /avaa</li>
-                <li>Ovia ei tarvitse erikseen lukita mikäli alueesi on suojattu, mutta esimerkiksi kylässä asuessasi ovien lukituksesta voi olla hyötyä.</li>
-                <li>Voit pyytää talollesi/alueellesi suojausta ylläpidolta. Kun alue on suojattu, kukaan muu ei pysty rikkomaan mitään tai tulemaan ovista sisälle. Jos asut samalla alueella jonkun toisen kanssa, muistathan mainita suojausta pyytäessäsi sen, niin kaverisi saa suojaukseen oikeudet.</li>
-                <li>Voit istua kirjoittamalla chattiin <code>/sit</code> <!--ja maata kirjoittamalla chattiin <code>/lay</code>--> (löytyy myös Rankkisivun loppupäästä).</li>
-            </ul><br>
-            <p>
-              Palvelimellamme on käytössä myös tiettyjä koodeja, jotka voi muuntaa emojeiksi.
-            </p>
-            <ul>
-              <li><code>*penni</code> => ❂</li>
-              <li><code>&lt;3</code> => laittaa sydämen</li>
-              <li><code>*biovaara</code> => ☣ </li>
-              <li><code>*karanteeni</code> => ☣</li>
-              <li><code>*check</code> => ✔ </li>
-              <li><code>*shrug</code> => ¯\_(ツ)_/¯</li>
-              <li><code>*magic*</code> => *magic* (värjättynä)</li>
-              <li><code>owo</code> => OωO</li>
-              <li><code>*miekka / *sword</code> => 🗡</li>
-              <li><code>*jousipyssy / *bowi</code> => 🏹</li>
-              <li><code>*kirves / *axe</code> => 🪓</li>
-              <li><code>*atrain / *trident</code> => 🔱</li>
-              <li><code>*onki</code> => 🎣</li>
-              <li><code>*pottu / *potion / *taikajuoma</code> => 🧪</li>
-              <li><code>*kilpi / *shield</code> => 🛡</li>
-            </ul>
-          </div>
-        </div>
+  <!-- Sisältö -->
+  <div class="container">
+    <div class="col-lg-12 text-left">
+      <div class="card card-body main-content bg-transparent border-aqua"
+        style="margin-bottom: 1.2em; font-family: 'Open Sans', sans-serif !important;">
+        <h1 class="main-heading">Hyvä tietää!</h3>
+          <hr>
+          <h5>Pieni palvelintiivistelmä</h5>
+          <p class="text-left">Karanteeni on vuodesta 2016 asti toiminut Minecraft-palvelin,
+            jonka on perustanut Emmazki, Jomeee ja Nuubles. Palvelimella pyörii keskimäärin 15-20 pelaajaa joka
+            päivä. Tällä hetkellä palvelimella pyörii vain Survival maailma, mutta Creative on palaamassa ajan mittaan.
+          </p>
+          <p class="text-left">
+            Palvelimen toimintaidea on se, että mitä pidempään pelaat serverillä, sitä parempia ominaisuuksia saat
+            käyttöösi. Peliajalla kerättävistä ominaisuuksista voi lukea lisää <a id="link" href="/rankit">täällä</a>.
+          </p>
+          <p class="text-left">
+            Palvelin on täysin omakustanteinen. Halutessasi voit kuitenkin
+            tukea toimintaa lahjoittamalla. Lahjoittajat kuitenkin saavat itselleen pieniä kivoja ominaisuuksia.
+            Lahjoittamisesta voi lukea lisää <a id="link" href="/lahjoitus">täällä</a>.
+          </p>
+
+          <h5>Pointteja joilla parantaa pelikokemusta!</h5>
+          <ul class="text-left">
+            <li>Karanteenissa voit tällä hetkellä pelata Survivalia, Creative on palaamassa ajan myötä.</li>
+            <li>Rahavaluuttana toimii pennit (❂). Voit ansaita rahaa käymällä kauppaa toisten pelaajien kanssa,
+              tai äänestämällä Karanteenia <code>/vote</code>.</li>
+            <li>
+              Laittaessasi arkun maahan menee se automaattisesti lukkoon.
+              <ul>
+                <li>Halutessasi poistaa arkun lukituksen, katso sitä ja tee komento <code>/avaa</code>.</li>
+                <li>Halutessasi antaa arkkuun jollekkin oikeudet, katso arkkua ja tee komento
+                  <code>/+oikeudet &lt;pelaajan_nimi&gt;</code></li>
+                <li>Halutessasi poistaa arkusta jonkin oikeudet, katso arkkua ja tee komento
+                  <code>/-oikeudet &lt;pelaajan_nimi&gt;</code></li>
+              </ul>
+            </li>
+            <li>
+              Karanteenissa ylläpito suojaa alueesi. Pyydä suojausta niin asia hoidetaan
+              <ul>
+                <li>
+                  Kun alue on suojattu, alueen nimen saa komennolla <code>/alue</code>
+                </li>
+                <li>
+                  Voit lisätä pelaajia alueesi suojaukseen komennolla
+                  <code>/trust &lt;alueen_nimi&gt; &lt;pelaajan_nimi&gt;</code>
+                </li>
+                <li>
+                  Voit poistaa pelaajia alueesi suojauksesta komennolla
+                  <code>/untrust &lt;alueen_nimi&gt; &lt;pelaajan_nimi&gt;</code>
+                </li>
+              </ul>
+            </li>
+          </ul><br>
+          <p>
+            Karanteenissa on käytössä tiettyjä chatkoodeja, jotka chattiin kirjoittaessa muuttuvat automaattisesti emojeiksi.
+          </p>
+          <ul>
+            <li><code>*penni</code> => ❂</li>
+            <li><code>&lt;3</code> => ♥</li>
+            <li><code>*biovaara</code> => ☣ </li>
+            <li><code>*karanteeni</code> => ☣</li>
+            <li><code>*check</code> => ✔ </li>
+            <li><code>*shrug</code> => ¯\_(ツ)_/¯</li>
+            <li><code>*magic*</code> => *magic* (värjättynä)</li>
+            <li><code>owo</code> => OωO</li>
+            <li><code>*miekka / *sword</code> => 🗡</li>
+            <li><code>*jousipyssy / *bowi</code> => 🏹</li>
+            <li><code>*kirves / *axe</code> => 🪓</li>
+            <li><code>*atrain / *trident</code> => 🔱</li>
+            <li><code>*onki</code> => 🎣</li>
+            <li><code>*pottu / *potion / *taikajuoma</code> => 🧪</li>
+            <li><code>*kilpi / *shield</code> => 🛡</li>
+          </ul>
+      </div>
     </div>
-    <footer id="footer" class="footer mt-auto"></footer>
-    
-    <!-- Components -->
-    <script src="./dist/navbar.js"></script>
-    <script src="./dist/footer.js"></script>
-    <script src="./dist/theme_switcher.js"></script>
+  </div>
+  <footer id="footer" class="footer mt-auto"></footer>
 
-  </body>
+  <!-- Components -->
+  <script src="./dist/navbar.js"></script>
+  <script src="./dist/footer.js"></script>
+  <script src="./dist/theme_switcher.js"></script>
+
+</body>
 
 </html>
