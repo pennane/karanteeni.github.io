@@ -48,12 +48,14 @@
   <style>
     .feature {
       margin-bottom: 2em;
+      padding: 1em;
     }
 
     .video {
       display: flex;
       box-shadow: 0 1px 2px 0 rgba(0, 0, 0, .05);
-      margin-top: 2.5em;
+      margin-top: .5em;
+      margin-bottom: 1em;
       object-fit: contain;
       justify-content: flex-start;
       overflow: hidden;
@@ -68,9 +70,42 @@
       max-width: 500px;
     }
 
-    ul {
+    .wrappedlist {
       list-style: none;
       padding: 0;
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      height: 700px;
+      padding: .3em;
+      padding-left: 1em;
+      padding-top: 1em;
+      padding-bottom: 2em;
+      border-radius: .3em;
+      height: 850px;
+    }
+
+    .wrappedlist li {
+      background-color: rgba(0, 0, 0, 0.04);
+      margin-bottom: 1px;
+      margin-right: 0.8em;
+      height: 29px;
+      padding-left: .1em;
+      overflow: hidden;
+      flex: 0 1 auto;
+    }
+    
+
+    .wrappedlist code {
+      background-color: transparent;
+    }
+
+
+    @media screen and (max-width: 1000px) {
+      .wrappedlist {
+        flex-wrap: nowrap;
+        height: unset;
+      }
     }
   </style>
 </head>
@@ -86,13 +121,12 @@
       <div class="card card-body main-content bg-darker-transparent">
         <h1 class="main-heading">Karanteenin Ominaisuudet</h1>
         <p class="lead">Lue nämä huolella. Avaat itsellesi mielenkiintoisia pelimahdollisuuksia!</p>
-        <div>
-          <p>Karanteenissa on jonkin verran lisäominaisuuksia. Tälle sivulle on listattu niistä
-            suuri osa.</p>
-        </div>
-        <h2>Survivalin lisäominaisuudet</h2>
 
-        <div class="feature">
+        <h2>Survivalin lisäominaisuudet</h2>
+        <p>Suuri osa erityisistä toiminnoista, komennoista ja muista jutuista, jotka toimivat Karanteenin survivalissa
+        </p>
+
+        <div class="feature card mt-3">
           <h5>Emeraldhissi</h5>
           <div class="video">
             <video autoplay="autoplay" loop="loop" muted="muted" playsinline="">
@@ -103,7 +137,7 @@
           <p>Voit rakentaa toimivan hissin emerald palikoilla, kunhan ne muistaa kytkeä päälle redstonevirralla. </p>
 
         </div>
-        <div class="feature">
+        <div class="feature card">
           <h5>Taikamatto</h5>
           <div class="video">
             <video autoplay="autoplay" loop="loop" muted="muted" playsinline="">
@@ -118,7 +152,7 @@
             <code>/mc design</code></p>
 
         </div>
-        <div class="feature">
+        <div class="feature card">
           <h5>Puun kaataminen</h5>
           <div class="video">
             <video autoplay="autoplay" loop="loop" muted="muted" playsinline="">
@@ -128,13 +162,55 @@
           </div>
           <p>Puu kaatuu alhaalta ylös kokonaan, kunhan sen hakkaa kirveellä!</p>
         </div>
-        <div class="feature">
+        <div class="feature card">
           <h5>Rakentajan taikasauva</h5>
-          <p>Sisukkas rankista ylöspäin pelaajat voivat craftata <a href="/recipes#builderswand">Builders Wand</a>in.
+          <div class="video">
+            <video autoplay="autoplay" loop="loop" muted="muted" playsinline="">
+              <source src="/assets/feature/builderswand.mp4" type="video/mp4">
+            </video>
+          </div>
+          <p>Sisukkas rankista ylöspäin pelaajat voivat craftata <a href="/recipes#builderswand">Builders Wandin</a>.
             Tämä työkalu edesauttaa suurien rakennusten rakennuksessa!</p>
-          <p>Tähän lisätään demovideo sauvan käytöstä tulevaisuudessa</p>
+          <p>Taikasauva toimii kun laitat sen pelaajan vasempaan käteen, ja rakennuspalikat oikeaan.</p>
+          <p>Taikasauvassa on neljä eri rakentamismuotoa. Muotojen välillä voi vaihdella lyömällä kyykyssä ilmaa
+            taikasauvan ollessa vasemmassa kädessä.</p>
+          <p>Rakentamismuodot ovat:</p>
+          <ul>
+            <li>
+              Wand of extend
+              <ul>
+                <li>
+                  Jatkaa valmista muotoa taso kerrallaan
+                </li>
+              </ul>
+            </li>
+            <li>
+              Wand of levitation
+              <ul>
+                <li>
+                  Mahdollistaa palikoiden asettamisen ilmaan
+                </li>
+              </ul>
+            </li>
+            <li>
+              Wand of tower
+              <ul>
+                <li>
+                  Rakentaa 1x1 torneja
+                </li>
+              </ul>
+            </li>
+            <li>
+              Wand of nothingness
+              <ul>
+                <li>
+                  Rakentaa normaalisti. Toisin sanoen tämä muoto poistaa taikasauvan käytöstä.
+                </li>
+              </ul>
+            </li>
+          </ul>
         </div>
-        <div class="feature">
+        <div class="feature card">
           <h5>Arkkukaupat</h5>
           <div class="video">
             <video autoplay="autoplay" loop="loop" muted="muted" playsinline="">
@@ -145,16 +221,17 @@
           <p>Pelaajien väliseen kauppaan työkaluna on arkkukaupat! Lyö arkkua tavaralla, jota haluat myydä, kirjoita
             chattiin tavaran hinta, ja kauppa on valmis!</p>
         </div>
-        <div class="feature">
+        <div class="feature card">
           <h5>Spawnerien kerääminen</h5>
           <p>Karanteenissa pystyy hakkaamaan mobspawnerit itselleen, kunhan käyttää hakkua jossa on Silk Touch
             (silkkinen kosketus) enchantti.</p>
           <p>Parantuva rankista ylöspäin pelkkä hakku riittää!</p>
         </div>
 
-        <div class="feature">
+        <div class="feature card">
           <h5>Alueen suojaaminen</h5>
-          <p>Ylläpito suojaa alueesi pyydettäessä. Kun alue on suojattu, alueen tiedot voi tarkastaa <code>/alue</code>
+          <p>Ylläpito suojaa alueesi pyydettäessä. Kun alue on suojattu, alueen tiedot voi tarkastaa
+            <code>/alue</code>
             -komennolla.
           </p>
           <p>Voit lisätä alueeseesi jäseniä komennolla <code>/trust {alueen_nimi} {pelaajan_nimi}</code> ja poistaa
@@ -162,43 +239,87 @@
           <p>Jos kylässäsi on vähintään 15 asukasta, voit pyytää sille warppia <code>/warps</code> listaan.</p>
         </div>
 
-        <div class="text-left" id="komennot">
-          <div>
-            <h4>Yleiset komennot</h4>
-            <ul>
-              <li><code>/discord</code></li>
-              <li><code>/kieli fi-Fi</code> (vaihtaa palvelimen kielen suomeksi)</li>
-              <li><code>/kieli en-US </code>(vaihtaa palvelimen kielen englanniksi)</li>
-              <li><code>/+oikeudet {pelaajan_nimi} </code>(lisää pelaajalle oikeudet palikkaan)</li>
-              <li><code>/-oikeudet {pelaajan_nimi}</code>(poistaa pelaajan oikeudet palikasta)</li>
-              <li><code>/avaa</code>(avaa palikan kaikille)</li>
-              <li><code>/back</code></li>
-              <li><code>/baltop</code></li>
-              <li><code>/pay {pelaaja} {määrä}</code></li>
-              <li><code>/kms</code></li>
-              <li><code>/sethome {kodin_nimi}</code></li>
-              <li><code>/home</code></li>
-              <li><code>/msg (/m, /message)</code></li>
-              <li><code>/reply (/r)</code></li>
-              <li><code>/ignore</code> (/ignore add nimi, /ignore list, /ignore remove nimi)</li>
-              <li><code>/peliaika</code>(/pa, /playtime)</li>
-              <li><code>/rtp</code></li>
-              <li><code>/sit</code></li>
-              <li><code>/spawn</code></li>
-              <li><code>/säännöt</code></li>
-              <li><code>/tk</code></li>
-              <li><code>/tpa</code></li>
-              <li><code>/tpahere</code></li>
-              <li><code>/truest</code></li>
-              <li><code>/vote</code></li>
-              <li><code>/warps</code></li>
-              <li><code>/music</code></li>
-              <li><code>/radio</code></li>
-              <li><code>/warp</code></li>
-            </ul>
-          </div>
-        </div>
+        <div class="text-left mt-6 feature card" id="komennot">
 
+          <h3>Yleiset komennot</h3>
+          <p class="mb-0">Survivalissa toimii isoläjä komentoja jotka ovat pelaajilla auki Eloton rankista asti!</p>
+          <ul class="wrappedlist">
+            <li><code>/discord</code></li>
+            <li><code>/säännöt</code></li>
+            <li><code>/vote</code></li>
+
+            <li><code>/kieli fi-Fi</code></li>
+            <li><code>/kieli en-US </code></li>
+
+            <li><code>/spawn</code></li>
+            <li><code>/warp(s)</code></li>
+            <li><code>/tpa</code></li>
+            <li><code>/tpahere</code></li>
+            <li><code>/tpyes</code></li>
+            <li><code>/tpno</code></li>
+            <li><code>/rtp</code></li>
+
+            <li><code>/sethome {kodin_nimi}</code></li>
+            <li><code>/home {kodin_nimi}</code></li>
+            <li><code>/back</code></li>
+
+            <li><code>/msg (/m, /message)</code></li>
+            <li><code>/reply (/r)</code></li>
+            <li><code>/ignore</code></li>
+
+            <li><code>/baltop</code></li>
+            <li><code>/pay {pelaaja} {määrä}</code></li>
+            <li><code>/peliaika (/pa, /playtime)</code></li>
+
+            <li><code>/trust {alueen_nimi} {pelaajan_nimi}</code></li>
+            <li><code>/+oikeudet {pelaajan_nimi} </code></li>
+            <li><code>/-oikeudet {pelaajan_nimi}</code></li>
+            <li><code>/avaa</code></li>
+            
+          
+            <li><code>/kms</code></li>
+            <li><code>/sit</code></li>
+
+            <li><code>/music</code></li>
+            <li><code>/radio</code></li>
+            
+            <li><code>/tk</code></li>
+            <li><code>/unoreverse</code></li>
+            <li><code>/skiaddleskidoodle</code></li>
+            <li><code>/nubbe</code></li>
+            <li><code>/iita</code></li>
+            <li><code>/jöms</code></li>
+            <li><code>/ash</code></li>
+            <li><code>/retu</code></li>
+            <li><code>/manu</code></li>
+            <li><code>/viher</code></li>
+            <li><code>/susse</code></li>
+          </ul>
+        </div>
+        <div class="feature card">
+          <h3>Chatkoodit</h3>
+          <p>
+            Karanteenissa on käytössä tiettyjä chatkoodeja, jotka chattiin kirjoittaessa muuttuvat automaattisesti
+            emojeiksi.
+          </p>
+          <ul>
+            <li><code>*penni</code> => ❂</li>
+            <li><code>&lt;3</code> => ♥</li>
+            <li><code>*biovaara</code> => ☣ </li>
+            <li><code>*karanteeni</code> => ☣</li>
+            <li><code>*check</code> => ✔ </li>
+            <li><code>*shrug</code> => ¯\_(ツ)_/¯</li>
+            <li><code>*magic*</code> => *magic* (värjättynä)</li>
+            <li><code>owo</code> => OωO</li>
+            <li><code>*miekka / *sword</code> => 🗡</li>
+            <li><code>*jousipyssy / *bowi</code> => 🏹</li>
+            <li><code>*kirves / *axe</code> => 🪓</li>
+            <li><code>*atrain / *trident</code> => 🔱</li>
+            <li><code>*onki</code> => 🎣</li>
+            <li><code>*pottu / *potion / *taikajuoma</code> => 🧪</li>
+            <li><code>*kilpi / *shield</code> => 🛡</li>
+          </ul>
+        </div>
       </div>
     </div>
   </div>
