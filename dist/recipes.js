@@ -118,6 +118,11 @@ var Recipes = function Recipes() {
         "div",
         { className: "col-lg-6 m-auto text-center" },
         React.createElement(Recipe, {
+            caption: "End Crystal. Karanteenissa Ender dragon pudottaa joka spawnaus kerran j\xE4lkeen lohik\xE4\xE4rmeen munan. Siksi end crystalleille on asetettu uusi vaikeampi resepti.",
+            image: "assets/images/recipes/endcrystal.png",
+            tag: "endcrystal"
+        }),
+        React.createElement(Recipe, {
             caption: "Onnenkeksi",
             image: "assets/images/recipes/fortunecookie.png",
             tag: "fortunecookie"
