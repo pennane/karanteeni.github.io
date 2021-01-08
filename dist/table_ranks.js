@@ -617,7 +617,7 @@ var NekroKuolematon = function (_React$Component13) {
                         React.createElement(Others, { text: "Kyky asettaa t\xE4ys RGB v\xE4rillinen nick.", tip: "Syntaksilla &#rrggbb" }),
                         React.createElement(Others, { text: "Nekromatikkoja ei voi hiljent\xE4\xE4 /ignore komennolla." }),
                         React.createElement(Others, { text: "Kaksi uutta v\xE4ri\xE4 taikamattoon (mc)", tip: "Magenta ja punainen" }),
-                        React.createElement(Others, { text: "Lis\xE4palikoita taikamattoon (mc)", tip: "Magenta lasi, punainen lasi, ja j\xE4\xE4" })
+                        React.createElement(Others, { text: "Lis\xE4palikoita taikamattoon (mc)", tip: "j\xE4\xE4block" })
                     )
                 ),
                 React.createElement(

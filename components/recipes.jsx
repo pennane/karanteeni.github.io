@@ -57,6 +57,11 @@ class Recipe extends React.Component {
 const Recipes = () => {
     return (
         <div className="col-lg-6 m-auto text-center">
+            <Recipe
+                caption="End Crystal. Karanteenissa Ender dragon pudottaa joka spawnaus kerran jälkeen lohikäärmeen munan. Siksi end crystalleille on asetettu uusi vaikeampi resepti."
+                image="assets/images/recipes/endcrystal.png"
+                tag="endcrystal"
+            />
              <Recipe
                 caption="Onnenkeksi"
                 image="assets/images/recipes/fortunecookie.png"
