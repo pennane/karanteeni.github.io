@@ -793,10 +793,14 @@ h6 {
 }
 
 .card {
-    background: #20232a;
+    background: #fafafa;
     border-radius: .375rem;
     height: 100%;
     font-family: Arial, Helvetica, sans-serif
+}
+
+.feature .video {
+    background-color: #fff;
 }
 
 .card-title {
