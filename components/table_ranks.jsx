@@ -195,7 +195,7 @@ class ElotonRaihnas extends React.Component {
                     </Body>
                     <div class="rank-others">
                         <h5>Muuta:</h5>
-                        <Others text='Kaikilla pelaajilla olevat komennot löytyvät sivun alta!'/>
+                        <p >Kaikilla pelaajilla olevat komennot ja toiminnot löytyvät <a id="link" href="ominaisuudet">ominaisuudet</a> sivulta.</p>  
                     </div>
                 </Structure>
                 <Structure name='Raihnas' time='5h' color='c-raihnas '>
