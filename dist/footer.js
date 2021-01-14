@@ -126,7 +126,7 @@ var Footer = function (_React$Component) {
                                 "- ",
                                 React.createElement(
                                     "a",
-                                    { href: "http://map.karanteeni.net/", target: "_blank", rel: "noopener noreferrer" },
+                                    { href: "dynmap", target: "_blank", rel: "noopener noreferrer" },
                                     "Dynmap"
                                 )
                             ),
