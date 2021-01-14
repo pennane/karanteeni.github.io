@@ -365,7 +365,17 @@ var ElotonRaihnas = function (_React$Component10) {
                             null,
                             "Muuta:"
                         ),
-                        React.createElement(Others, { text: "Kaikilla pelaajilla olevat komennot l\xF6ytyv\xE4t sivun alta!" })
+                        React.createElement(
+                            "p",
+                            null,
+                            "Kaikilla pelaajilla olevat komennot ja toiminnot l\xF6ytyv\xE4t ",
+                            React.createElement(
+                                "a",
+                                { id: "link", href: "ominaisuudet" },
+                                "ominaisuudet"
+                            ),
+                            " sivulta."
+                        )
                     )
                 ),
                 React.createElement(
