@@ -1,6 +1,6 @@
 'use strict';
 
-{/* Tullaan uusimaan ja automatisoimaan joku päivä. Sori täst. */}
+{/* Tullaan uusimaan ja automatisoimaan joku päivä. Sori täst. */ }
 
 
 class Month extends React.Component {
@@ -70,19 +70,39 @@ class Changelog extends React.Component {
     render() {
         return (
             <div className='accordion text-left'>
+                <Month month='tammikuu2021' btntext='Tammikuu 2021'>
+                    <Body month='tammikuu2021' showing>
+                        <Dated date='21.1.2021' />
+                        <ul>
+                            <Change>Lisätty mail komennot </Change>
+                        </ul>
+                        <Dated date='13.1.2021' />
+                        <ul>
+                            <Change>Lisätty  <a href="http://map.karanteeni.net" target="_blank">dynmap</a> </Change>
+                        </ul>
+                        <Dated date='8.1.2021' />
+                        <ul>
+                            <Change>Uusi <a href="/ominaisuudet">ominaisuudet</a> sivu</Change>
+                        </ul>
+                        <Dated date='1.1.2021' />
+                        <ul>
+                            <Change>Unbanneja voi nyt hakea nettisivuilta! https://karanteeni.net/unban</Change>
+                        </ul>
+                    </Body>
+                </Month>
 
                 <Month month='joulukuu2020' btntext='Joulukuu 2020'>
-                    <Body month='joulukuu2020' showing>
-                        <Dated date='31.12.2020'/>
+                    <Body month='joulukuu2020'>
+                        <Dated date='31.12.2020' />
                         <ul>
                             <Change>Lisätty hidden groupit. Mahdollistavat lisärankit muuttamatta pelaajan päärankkia.</Change>
                             <Change>Lisätty lahjoittajille tabiin oranssit [] merkit.</Change>
                         </ul>
-                        <Dated date='27.12.2020'/>
+                        <Dated date='27.12.2020' />
                         <ul>
                             <Change>Palvelin osaa tulkita kirjoitetut komennot, jotka on alkavat / sijasta 7 merkillä.</Change>
                         </ul>
-                        <Dated date='19.12.2020'/>
+                        <Dated date='19.12.2020' />
                         <ul>
                             <Change>Lisätty resepti nametagille</Change>
                         </ul>
@@ -91,23 +111,23 @@ class Changelog extends React.Component {
 
                 <Month month='marraskuu2020' btntext='Marraskuu 2020'>
                     <Body month='marraskuu2020'>
-                        <Dated date='27.11.2020'/>
+                        <Dated date='27.11.2020' />
                         <ul>
                             <Change>Vähennetty mobien määrää per pelaaja 28 -&gt; 24.</Change>
                         </ul>
-                        <Dated date='25.11.2020'/>
+                        <Dated date='25.11.2020' />
                         <ul>
                             <Change>Lisätty respawniin tuki respawn anchoreille, ei joudu enää spawnille kun respawnaa.</Change>
                         </ul>
-                        <Dated date='22.11.2020'/>
+                        <Dated date='22.11.2020' />
                         <ul>
                             <Change>Lisätty kaksi (2) automaattista uudelleenkäynnistystä.</Change>
                         </ul>
-                        <Dated date='17.11.2020'/>
+                        <Dated date='17.11.2020' />
                         <ul>
                             <Change>Lisätty vinkkeihin lyhyt ohje mitä tehdä, jos joku häiriköi</Change>
                         </ul>
-                        <Dated date='14.11.2020'/>
+                        <Dated date='14.11.2020' />
                         <ul>
                             <Change>Poistettu <code>/lakanakana</code>.</Change>
                             <Change>Lisätty <code>/iita</code>.</Change>
@@ -117,24 +137,24 @@ class Changelog extends React.Component {
                             </Change>
                             <Change>Potentiaalinen palvelinvirhe korjattu.</Change>
                         </ul>
-                        <Dated date='9.11.2020'/>
+                        <Dated date='9.11.2020' />
                         <ul>
                             <Change>Mobien spawnratea on pienennetty.</Change>
                         </ul>
-                        <Dated date='8.11.2020'/>
+                        <Dated date='8.11.2020' />
                         <ul>
                             <Change>Palautettu discordin minecraft-chattiin <code>/list</code></Change>
                         </ul>
-                        <Dated date='7.11.2020'/>
+                        <Dated date='7.11.2020' />
                         <ul>
                             <Change>Armorstandin asentoja voi muuttaa oikeaklikkaamalla kyykyssä!</Change>
                         </ul>
-                        <Dated date='4.11.2020'/>
+                        <Dated date='4.11.2020' />
                         <ul>
                             <Change>Palvelin päivitetty 1.16.4!</Change>
                             <Change>Palvelimella voi nyt craftaa onnenkeksejä.</Change>
                         </ul>
-                        <Dated date='1.11.2020'/>
+                        <Dated date='1.11.2020' />
                         <ul>
                             <Change>Tab on palautettu Halloween ulkoasusta.</Change>
                             <Change>Lisätty etukäteen tilapäinen onnentoivotus uuteen mappiin.</Change>
@@ -145,41 +165,41 @@ class Changelog extends React.Component {
 
                 <Month month='lokakuu2020' btntext='Lokakuu 2020'>
                     <Body month='lokakuu2020'>
-                        <Dated date='10.10.2020'/>
+                        <Dated date='10.10.2020' />
                         <ul>
                             <Change>Halloween teemainen tabi.</Change>
                             <Change>Spawn on nyt halloween teemainen.</Change>
                             <Change>Aikaisemmin hidastelleet votet pitäisi nyt toimia.</Change>
                         </ul>
-                        <Dated date='9.10.2020'/>
+                        <Dated date='9.10.2020' />
                         <ul>
                             <Change>Discord bot näyttää nyt roolit Minecraftin chatissa.</Change>
                         </ul>
                     </Body>
                 </Month>
-            
+
 
                 <Month month='syyskuu2020' btntext='Syyskuu 2020'>
                     <Body month='syyskuu2020'>
-                        <Dated date='19.9.2020'/>
+                        <Dated date='19.9.2020' />
                         <ul>
                             <Change>Päivitetty tabista palvelimen alkukirjain isoksi.</Change>
                         </ul>
-                        <Dated date='14.9.2020'/>
+                        <Dated date='14.9.2020' />
                         <ul>
                             <Change>Sisukas-rankkisten (ja alempien) virheellinen viesti-ilmoitus oikeuksista on nyt korjattu.</Change>
                             <Change>Paranneltu turvallista teleporttia (onnistuu teleporttaamaan slabien päälle)</Change>
                         </ul>
-                        <Dated date='12.9.2020'/>
+                        <Dated date='12.9.2020' />
                         <ul>
                             <Change>Added Russian language (thanks Inferdy &#x2764;).</Change>
                             <Change>Muutettu arvojen värit tukemaan RGB.</Change>
                         </ul>
-                        <Dated date='3.9.2020'/>
+                        <Dated date='3.9.2020' />
                         <ul>
                             <Change>Päivitetty Jesari</Change>
                         </ul>
-                        <Dated date='1.9.2020'/>
+                        <Dated date='1.9.2020' />
                         <ul>
                             <Change>Lisätty oikeus Nekromantikosta ylöspäin + lahjoittajille käyttää RGB-värejä pelinimessä.</Change>
                             <Change>Korjattu kääntäjässä bugi, joka rikkoi kääntäjän pelaajalla ollessa ei-tuettu kieli tietokannassa.</Change>
@@ -191,17 +211,17 @@ class Changelog extends React.Component {
 
                 <Month month='elokuu2020' btntext='Elokuu 2020'>
                     <Body month='elokuu2020'>
-                        <Dated date='31.8.2020'/>
+                        <Dated date='31.8.2020' />
                         <ul>
                             <Change>Chat-värit on tullut takaisin rgb tuella.</Change>
                             <Change>Parempi käyttäjien maininta chatissa.</Change>
                             <Change>Fixattu bugi, jossa pelaajalla oli ei-tuettu kieli ja hajotti kääntäjän.</Change>
                         </ul>
-                        <Dated date='30.8.2020'/>
+                        <Dated date='30.8.2020' />
                         <ul>
                             <Change>Builders wand on nyt palvelimella</Change>
                         </ul>
-                        <Dated date='29.8.2020'/>
+                        <Dated date='29.8.2020' />
                         <ul>
                             <Change>Lisätty ylösalaisin oleva kieli.</Change>
                             <Change>Päivitetty palvelin versioon 1.16.2!</Change>
@@ -217,20 +237,20 @@ class Changelog extends React.Component {
                             <Change>Iron Golem pakottaa sinut pudottamaan housusi, kun lyö sinua.</Change>
                             <Change>Kuolinviestit jakautuu nyt maailmojen välillä.</Change>
                         </ul>
-                        <Dated date='15.8.2020'/>
+                        <Dated date='15.8.2020' />
                         <ul>
                             <Change>Lisätty 1.16.2 tuki</Change>
                         </ul>
-                        <Dated date='13.8.2020'/>
+                        <Dated date='13.8.2020' />
                         <ul>
                             <Change>Korjattu vinkki Netherin ja Endin resettaamisesta</Change>
                         </ul>
-                        <Dated date='7.8.2020'/>
+                        <Dated date='7.8.2020' />
                         <ul>
                             <Change>Fixattu bugi yp-chatissa.</Change>
                             <Change>Lisätty ilmoitus muistuttamaan pelaajia liittymisen yhteydessä <code>/warns</code> -komennosta.</Change>
                         </ul>
-                        <Dated date='5.8.2020'/>
+                        <Dated date='5.8.2020' />
                         <ul>
                             <Change>Palvelimen render distance nostettu 10 chunkkiin (+2 chunkkia edellisestä).</Change>
                         </ul>
@@ -239,11 +259,11 @@ class Changelog extends React.Component {
 
                 <Month month='heinäkuu2020' btntext='Heinäkuu 2020'>
                     <Body month='heinäkuu2020'>
-                        <Dated date='22.7.2020'/>
+                        <Dated date='22.7.2020' />
                         <ul>
                             <Change>Spawnille avattu parkour! <code>/warp parkour</code></Change>
                         </ul>
-                        <Dated date='5.7.2020'/>
+                        <Dated date='5.7.2020' />
                         <ul>
                             <Change><code>/alue</code> näyttää nyt jäsenten ja omistajien määrän suojauksessa.</Change>
                             <Change><code>/alue</code> näyttää molemmat XY pisteet suojauksen koosta.</Change>
@@ -256,12 +276,12 @@ class Changelog extends React.Component {
 
                 <Month month='kesäkuu2020' btntext='Kesäkuu 2020'>
                     <Body month='kesäkuu2020'>
-                        <Dated date='25.6.2020'/>
+                        <Dated date='25.6.2020' />
                         <ul>
                             <Change>Lisätty 1.16.1 tuki servulle!</Change>
                             <Change>Toisen pelaajan pelaaja-arvon klikkaaminen chatissa näyttää nyt kyseisen pelaajan peliajan oman sijaan.</Change>
                         </ul>
-                        <Dated date='18.6.2020'/>
+                        <Dated date='18.6.2020' />
                         <ul>
                             <Change>Karanteenissa toimii VR</Change>
                             <Change>Palvelimella voi nyt antaa lemmikkejä ja vapauttaa niitä komennoilla <code>/lemmikki anna &lt;pelaaja&gt;</code> ja
@@ -269,7 +289,7 @@ class Changelog extends React.Component {
                             <Change>Palvelimella voi nyt tägätä ihmisiä chatissa käyttäen <code>@pelaajanimi</code>.</Change>
                             <Change>Lisätty <code>/säännöt</code> komento.</Change>
                         </ul>
-                        <Dated date='3.6.2020'/>
+                        <Dated date='3.6.2020' />
                         <ul>
                             <Change>Entity Activation Range nostettu.</Change>
                             <Change>Villagerin tradet pitäisi nyt restockaa nopeammin.</Change>
@@ -321,7 +341,7 @@ class Changelog extends React.Component {
 
                 <Month month='maaliskuu2020' btntext='Maaliskuu 2020' >
                     <Body month='maaliskuu2020'>
-                        <Dated date='27.3.2020'/>
+                        <Dated date='27.3.2020' />
                         <ul>
                             <Change>Lisätty seuraavat komennot: <code>/jöms /retu /tank /ash</code></Change>
                         </ul>

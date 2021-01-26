@@ -6,9 +6,9 @@ Versio: 4.3.0
 
 ## Esivaatimukset
 
-- Node.js >= 12
-- Yleinen perusosaaminen JavaScriptista
-- Reactin perustuntemus
+-   Node.js >= 12
+-   Yleinen perusosaaminen JavaScriptista
+-   Reactin perustuntemus
 
 ## Rakenne
 
@@ -36,10 +36,8 @@ karanteeni.github.io/
     |   └── Sisältää FontAwesome -ikonipaketin css
     ├── jquery/
     |   └── Sisältää jQueryn js-tiedostot
-    ├── webfonts/
-    |   └── Sisältää FontAwesomen fontit
-    └── winterstrap/
-        └── Sisältää talven ajalta Karanteenin bootstrap css
+    └── webfonts/
+        └── Sisältää FontAwesomen fontit
 ```
 
 Paketti sisältää myös pohjasivun, jolla voit luoda samantyylisen sivun helposti tarvittaessa. React-komponentit täytyy esikääntää selaimelle luettavaksi JavaScriptiksi, jotka löytää `/components` kansiosta. Lisää tästä löydät [React-komponenttien kääntämisestä](#React-komponenttien-kääntäminen)
@@ -68,9 +66,7 @@ Ylläpitosivut ovat käytännössä vain rakenne. Ylläpitäjien lisääminen ta
         {
             "nimi": "Jomeee",
             "kuvaus": "Ylläpitäjä",
-            "vahvuudet": [
-                "Vahvuus"
-            ],
+            "vahvuudet": ["Vahvuus"],
             "uuid": "numeroita"
         }
     ],
@@ -78,9 +74,7 @@ Ylläpitosivut ovat käytännössä vain rakenne. Ylläpitäjien lisääminen ta
         {
             "nimi": "Jomeee",
             "kuvaus": "Ylläpitäjä",
-            "vahvuudet": [
-                "Vahvuus"
-            ],
+            "vahvuudet": ["Vahvuus"],
             "uuid": "numeroita"
         }
     ],
@@ -88,9 +82,7 @@ Ylläpitosivut ovat käytännössä vain rakenne. Ylläpitäjien lisääminen ta
         {
             "nimi": "Jomeee",
             "kuvaus": "Ylläpitäjä",
-            "vahvuudet": [
-                "Vahvuus"
-            ],
+            "vahvuudet": ["Vahvuus"],
             "uuid": "numeroita"
         }
     ],
@@ -98,9 +90,7 @@ Ylläpitosivut ovat käytännössä vain rakenne. Ylläpitäjien lisääminen ta
         {
             "nimi": "Jomeee",
             "kuvaus": "Ylläpitäjä",
-            "vahvuudet": [
-                "Vahvuus"
-            ],
+            "vahvuudet": ["Vahvuus"],
             "uuid": "numeroita"
         }
     ],
@@ -108,14 +98,13 @@ Ylläpitosivut ovat käytännössä vain rakenne. Ylläpitäjien lisääminen ta
         {
             "nimi": "Jomeee",
             "kuvaus": "Ylläpitäjä",
-            "vahvuudet": [
-                "Vahvuus"
-            ],
+            "vahvuudet": ["Vahvuus"],
             "uuid": "numeroita"
         }
     ]
 }
 ```
+
 UUID:tä käytetään lähinnä skinin hakemiseen, joka päivittyy automaattisesti tietyn ajan kuluessa. Kuvaus ja nimi luonnollisesti tuvat näkyviin elementteinä oikeisiin paikkoihin.
 
 ### #vainylläpitojutut
@@ -131,7 +120,7 @@ UUID:tä käytetään lähinnä skinin hakemiseen, joka päivittyy automaattises
 
 ## React-komponenttien kääntäminen
 
-Reactin JSX-komponentit täytyy kääntää selaimelle luettavaksi JavaScriptiksi. Tämä onnistuu helposti, mikäli omistat Node Package Managerin (npm), mikä tulee autom. Node.js mukana. 
+Reactin JSX-komponentit täytyy kääntää selaimelle luettavaksi JavaScriptiksi. Tämä onnistuu helposti, mikäli omistat Node Package Managerin (npm), mikä tulee autom. Node.js mukana.
 
 Ensin pidä huolta, että tarvittavat paketit ovat asennettu terminaalin komennolla:
 
@@ -151,26 +140,25 @@ Mikäli haluat kääntää JSX-tiedostot manuaalisesti, suorita aina käännön 
 
 `npm run build-jsx`
 
-
 ## Tiedettyjä "ongelmia"
 
-* Kaikki kunnossa toistaiseksi.
+-   Kaikki kunnossa toistaiseksi.
 
 ## Kasattu
 
-* [Bootstrap](https://getbootstrap.com/) - Frontend Web-kehys (CSS)
-* [React](https://reactjs.org/) - Frontend Web-kehys (JavaScript)
-* [jQuery](https://jquery.com/) - JavaScript kirjasto
-* [Rakkaus](https://fi.wikipedia.org/wiki/Rakkaus) - Koska ilman verta, hikeä, kyyneleitä ja rakkautta ei tätäkään sivua olisi saatu aikaiseksi
+-   [Bootstrap](https://getbootstrap.com/) - Frontend Web-kehys (CSS)
+-   [React](https://reactjs.org/) - Frontend Web-kehys (JavaScript)
+-   [jQuery](https://jquery.com/) - JavaScript kirjasto
+-   [Rakkaus](https://fi.wikipedia.org/wiki/Rakkaus) - Koska ilman verta, hikeä, kyyneleitä ja rakkautta ei tätäkään sivua olisi saatu aikaiseksi
 
 ## Big thank you
 
-* [Visage](https://visage.surgeplay.com/) - Used for querying skins
-* [Minecraft Server Status](https://mcsrvstat.us/) - Used for querying server status
-* [Clipboard.js](https://clipboardjs.com/) - Used for copying elements into clipboard
-* [March08 Animated Burgers](https://march08.github.io/animated-burgers/) - Used as mobile navbar icons
-* [Toastr](https://toastrjs.com/) - Used for sending toasts
-* [particles.js](https://vincentgarreau.com/particles.js/) - Used for particles in the home page
+-   [Visage](https://visage.surgeplay.com/) - Used for querying skins
+-   [Minecraft Server Status](https://mcsrvstat.us/) - Used for querying server status
+-   [Clipboard.js](https://clipboardjs.com/) - Used for copying elements into clipboard
+-   [March08 Animated Burgers](https://march08.github.io/animated-burgers/) - Used as mobile navbar icons
+-   [Toastr](https://toastrjs.com/) - Used for sending toasts
+-   [particles.js](https://vincentgarreau.com/particles.js/) - Used for particles in the home page
 
 ## Lisenssi
 

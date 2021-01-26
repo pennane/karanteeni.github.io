@@ -1,4 +1,5 @@
-body, .bg-image      {
+body,
+.bg-image {
     background-image: url(/../assets/images/springblur.jpg);
 }
 
@@ -15,9 +16,24 @@ h5 {
     color: #ffc108 !important;
 }
 
-
 .karanav {
     background-image: url(/../assets/images/grassblocklong.png);
     background-repeat: repeat-x;
     background-size: auto;
+}
+
+.denied {
+    background-color: #df3421;
+}
+
+.accepted {
+    background-color: #53a61c;
+}
+
+.notice {
+    background-color: #ff9705;
+}
+
+.keep-in-mind {
+    background-color: #128df3;
 }
