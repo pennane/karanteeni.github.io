@@ -7,8 +7,8 @@ class Footer extends React.Component {
             <div className="container">
                 <div className="row">
                     <div className="col-lg-3 col-xs-12 footerLogo">
-                        <a className="footer-link"href="https://karanteeni.net" target="_blank" rel="noopener noreferrer">
-                            <img src="./assets/images/footerlogo.png" alt="Footerlogo" width="255" height="68"/>
+                        <a className="footer-link" href="https://karanteeni.net" target="_blank" rel="noopener noreferrer">
+                            <img src="./assets/images/footerlogo.png" alt="Footerlogo" width="255" height="68" />
                         </a>
                     </div>
                     <div className="col-lg-5 col-xs-12">
@@ -25,7 +25,7 @@ class Footer extends React.Component {
                             <li>- <a href="/ukk" rel="noopener noreferrer">Usein kysytyt kysymykset</a></li>
                             <li>- <a href="/hoks" rel="noopener noreferrer">Hyvä tietää</a></li>
                             <li>- <a href="/yllapito" rel="noopener noreferrer">Ylläpito</a></li>
-                            <li>- <a href="dynmap" target="_blank" rel="noopener noreferrer">Dynmap</a></li>
+                            <li>- <a href="http://map.karanteeni.net/" target="_blank" rel="noopener noreferrer">Dynmap</a></li>
                             <li>- <a href="/unban" target="_blank" rel="noopener noreferrer">Unban-hakemus</a></li>
                         </ul>
                         <div id="switcher" className="mt-2"></div>

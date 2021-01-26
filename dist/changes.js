@@ -118,10 +118,70 @@ var Changelog = function (_React$Component3) {
                 { className: 'accordion text-left' },
                 React.createElement(
                     Month,
+                    { month: 'tammikuu2021', btntext: 'Tammikuu 2021' },
+                    React.createElement(
+                        Body,
+                        { month: 'tammikuu2021', showing: true },
+                        React.createElement(Dated, { date: '21.1.2021' }),
+                        React.createElement(
+                            'ul',
+                            null,
+                            React.createElement(
+                                Change,
+                                null,
+                                'Lis\xE4tty mail komennot '
+                            )
+                        ),
+                        React.createElement(Dated, { date: '13.1.2021' }),
+                        React.createElement(
+                            'ul',
+                            null,
+                            React.createElement(
+                                Change,
+                                null,
+                                'Lis\xE4tty  ',
+                                React.createElement(
+                                    'a',
+                                    { href: 'http://map.karanteeni.net', target: '_blank' },
+                                    'dynmap'
+                                ),
+                                ' '
+                            )
+                        ),
+                        React.createElement(Dated, { date: '8.1.2021' }),
+                        React.createElement(
+                            'ul',
+                            null,
+                            React.createElement(
+                                Change,
+                                null,
+                                'Uusi ',
+                                React.createElement(
+                                    'a',
+                                    { href: '/ominaisuudet' },
+                                    'ominaisuudet'
+                                ),
+                                ' sivu'
+                            )
+                        ),
+                        React.createElement(Dated, { date: '1.1.2021' }),
+                        React.createElement(
+                            'ul',
+                            null,
+                            React.createElement(
+                                Change,
+                                null,
+                                'Unbanneja voi nyt hakea nettisivuilta! https://karanteeni.net/unban'
+                            )
+                        )
+                    )
+                ),
+                React.createElement(
+                    Month,
                     { month: 'joulukuu2020', btntext: 'Joulukuu 2020' },
                     React.createElement(
                         Body,
-                        { month: 'joulukuu2020', showing: true },
+                        { month: 'joulukuu2020' },
                         React.createElement(Dated, { date: '31.12.2020' }),
                         React.createElement(
                             'ul',

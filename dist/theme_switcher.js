@@ -14,28 +14,28 @@ var ThemeSwitcher = function ThemeSwitcher() {
         'winter': {
             id: 'winter',
             name: 'Winter',
-            href: 'vendor/css/style_winter.min.css',
+            href: 'vendor/css/style_winter.css',
             image: './assets/images/16833.jpg',
             desc: 'Talven ulkoasu'
         },
         'nether': {
             id: 'nether',
             name: 'Nether',
-            href: 'vendor/css/style_minecraft.min.css',
+            href: 'vendor/css/style_nether.css',
             image: './assets/images/hell.jpg',
             desc: 'Alankomainen ulkoasu'
         },
         'flat-light': {
             id: 'flat-light',
             name: 'Flat Light',
-            href: 'vendor/css/flat_light.min.css',
+            href: 'vendor/css/flat_light.css',
             image: './assets/images/flat-light.png',
             desc: 'Yksinkertainen vaalea teema'
         },
         'flat-dark': {
             id: 'flat-dark',
             name: 'Flat Dark',
-            href: 'vendor/css/flat_dark.min.css',
+            href: 'vendor/css/flat_dark.css',
             image: './assets/images/flat-dark.png',
             desc: 'Yksinkertainen tumma teema'
         },

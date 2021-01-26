@@ -1,247 +1,12 @@
 'use-strict';
 
-class Owners extends React.Component {
-
-    constructor(props) {
-        super(props);
-
-        this.state = {
-            data: [],
-            debug: {}
-        }
-    }
-
-    componentDidMount() {
-        const request = new Request('https://karanteeni.net/modules/Operators/operators.json');
-    
-        fetch(request)
-            .then(response => response.json())
-            .then(
-                (result) => {
-                    this.setState({
-                        data: result.omistajat,
-                        debug: result
-                    })
-                }
-            )
-    }
-
-    render() {
-        const debug = this.state.debug;
-        const array = this.state.data;
-        const rank = []
-
-        for (key of Object.keys(debug)) {
-            rank.push(key)
-        }
-        
-        return (
-            <YpWrapper>
-                {array.map((item, key) => (
-                    <YpCard key={key} rank={rank[0]} uuid={item.uuid} name={item.nimi} desc={item.kuvaus}>
-                            {array[key].vahvuudet.map((str, index) => (
-                                <Strength key={index}>{str}</Strength>
-                            ))}
-                    </YpCard>
-                ))}
-            </YpWrapper>
-        )
-    }
-}
-
-class Admins extends React.Component {
-
-    constructor(props) {
-        super(props);
-
-        this.state = {
-            data: [],
-            debug: {}
-        }
-    }
-
-    componentDidMount() {
-        const request = new Request('https://karanteeni.net/modules/Operators/operators.json');
-    
-        fetch(request)
-            .then(response => response.json())
-            .then(
-                (result) => {
-                    this.setState({
-                        data: result.adminit,
-                        debug: result
-                    })
-                }
-            )
-    }
-
-    render() {
-        const debug = this.state.debug;
-        const array = this.state.data;
-        const rank = []
-
-        for (key of Object.keys(debug)) {
-            rank.push(key)
-        }
-        
-        return (
-            <YpWrapper>
-                {array.map((item, key) => (
-                    <YpCard key={key} rank={rank[1]} uuid={item.uuid} name={item.nimi} desc={item.kuvaus}>
-                            {array[key].vahvuudet.map((str, index) => (
-                                <Strength key={index}>{str}</Strength>
-                            ))}
-                    </YpCard>
-                ))}
-            </YpWrapper>
-        )
-    }
-}
-
-class Operators extends React.Component {
-
-    constructor(props) {
-        super(props);
-
-        this.state = {
-            data: [],
-            debug: {}
-        }
-    }
-
-    componentDidMount() {
-        const request = new Request('https://karanteeni.net/modules/Operators/operators.json');
-    
-        fetch(request)
-            .then(response => response.json())
-            .then(
-                (result) => {
-                    this.setState({
-                        data: result.operaattorit,
-                        debug: result
-                    })
-                }
-            )
-    }
-
-    render() {
-        const debug = this.state.debug;
-        const array = this.state.data;
-        const rank = []
-
-        for (key of Object.keys(debug)) {
-            rank.push(key)
-        }
-        
-        return (
-            <YpWrapper>
-                {array.map((item, key) => (
-                    <YpCard key={key} rank={rank[2]} uuid={item.uuid} name={item.nimi} desc={item.kuvaus}>
-                            {array[key].vahvuudet.map((str, index) => (
-                                <Strength key={index}>{str}</Strength>
-                            ))}
-                    </YpCard>
-                ))}
-            </YpWrapper>
-        )
-    }
-}
-
-class Moderators extends React.Component {
-
-    constructor(props) {
-        super(props);
-
-        this.state = {
-            data: [],
-            debug: {}
-        }
-    }
-
-    componentDidMount() {
-        const request = new Request('https://karanteeni.net/modules/Operators/operators.json');
-    
-        fetch(request)
-            .then(response => response.json())
-            .then(
-                (result) => {
-                    this.setState({
-                        data: result.moderaattorit,
-                        debug: result
-                    })
-                }
-            )
-    }
-
-    render() {
-        const debug = this.state.debug;
-        const array = this.state.data;
-        const rank = []
-
-        for (key of Object.keys(debug)) {
-            rank.push(key)
-        }
-        
-        return (
-            <YpWrapper>
-                {array.map((item, key) => (
-                    <YpCard key={key} rank={rank[3]} uuid={item.uuid} name={item.nimi} desc={item.kuvaus}>
-                            {array[key].vahvuudet.map((str, index) => (
-                                <Strength key={index}>{str}</Strength>
-                            ))}
-                    </YpCard>
-                ))}
-            </YpWrapper>
-        )
-    }
-}
-
-class Builders extends React.Component {
-
-    constructor(props) {
-        super(props);
-
-        this.state = {
-            data: [],
-            debug: {}
-        }
-    }
-
-    componentDidMount() {
-        const request = new Request('https://karanteeni.net/modules/Operators/operators.json');
-    
-        fetch(request)
-            .then(response => response.json())
-            .then(
-                (result) => {
-                    this.setState({
-                        data: result.rakentajat,
-                        debug: result
-                    })
-                }
-            )
-    }
-
-    render() {
-        const debug = this.state.debug;
-        const array = this.state.data;
-        const rank = []
-
-        for (key of Object.keys(debug)) {
-            rank.push(key)
-        }
-        
-        return (
-            <YpWrapper>
-                {array.map((item, key) => (
-                    <YpCard key={key} rank={rank[4]} uuid={item.uuid} name={item.nimi} desc={item.kuvaus}>
-                            {array[key].vahvuudet.map((str, index) => (
-                                <Strength key={index}>{str}</Strength>
-                            ))}
-                    </YpCard>
-                ))}
-            </YpWrapper>
-        )
+const rankToMissingText = (rank) => {
+    switch (rank) {
+        case "omistajat": return 'Sellout'
+        case "adminit": return 'Olisikohan jostakin operaattorista tähän hommaan?'
+        case "operaattorit": return 'Operaattoreita ei näkyvillä'
+        case "moderaattorit": return 'Hmm.. moderaattoreistahan on pulaa! Haku ylläpitoon on aina auki!'
+        case "rakentajat": return 'Ei rakentajia? Kuka nyt rakentaa Gauriksen spawnit?'
     }
 }
 
@@ -254,37 +19,37 @@ const YpWrapper = (props) => {
 }
 
 const YpCard = (props) => {
-        return (
-            <div className={'admin-card-container ' + props.rank}>
-                <div className={'admin-card ' + props.rank}>
-                    <div className={'background ' + props.rank}>
-                        <div className={'avatar ' + props.rank}>
-                            <img src={'https://visage.surgeplay.com/full/' + props.uuid}/>
-                        </div>
-                    </div>
-                    <div className={'admin-content ' + props.rank}>
-                        <div className={'admin-type ' + props.rank}>
-                            {props.rank}
-                        </div>
-                        <div className={'admin-name ' + props.rank}>
-                            {props.name}
-                        </div>
-                        <div className={'admin-strength ' + props.rank}>
-                            {props.children}
-                        </div>
-                    </div>
-                    <div className="admin-footer">
-                        <p>
-                            {props.desc}
-                        </p>
+    return (
+        <div className={'admin-card-container ' + props.rank}>
+            <div className={'admin-card ' + props.rank}>
+                <div className={'background ' + props.rank}>
+                    <div className={'avatar ' + props.rank}>
+                        <img src={'https://visage.surgeplay.com/full/' + props.uuid} />
                     </div>
                 </div>
+                <div className={'admin-content ' + props.rank}>
+                    <div className={'admin-type ' + props.rank}>
+                        {props.rank}
+                    </div>
+                    <div className={'admin-name ' + props.rank}>
+                        {props.name}
+                    </div>
+                    <div className={'admin-strength ' + props.rank}>
+                        {props.children}
+                    </div>
+                </div>
+                <div className="admin-footer">
+                    <p>
+                        {props.desc}
+                    </p>
+                </div>
             </div>
-        )
+        </div>
+    )
 }
 
 const Strength = (props) => {
-    return(
+    return (
         <p>
             <i className="far fa-arrow-alt-circle-right admin-strength-bullet"></i>
             {props.children}
@@ -292,8 +57,46 @@ const Strength = (props) => {
     )
 }
 
-ReactDOM.render(<Owners/>, document.getElementById("owners"));
-ReactDOM.render(<Admins/>, document.getElementById("admins"));
-ReactDOM.render(<Operators/>, document.getElementById("operators"));
-ReactDOM.render(<Moderators/>, document.getElementById("mods"));
-ReactDOM.render(<Builders/>, document.getElementById("builders"));
+
+const Rank = ({ data, rank }) => {
+    return (
+        <div>
+            <h3 className={`tag ${rank} yp-header`} >{rank}</h3>
+            <YpWrapper>
+                {data.length === 0 && <p>{rankToMissingText(rank)}</p>}
+                {data.length >= 0 && data.map((item, key) => (
+
+                    <YpCard key={key} rank={rank} uuid={item.uuid} name={item.nimi} desc={item.kuvaus}>
+                        {item.vahvuudet.map((str, index) => (
+                            <Strength key={index}>{str}</Strength>
+                        ))}
+                    </YpCard>
+                ))}
+            </YpWrapper>
+        </div>
+
+    )
+}
+
+const Admininstration = () => {
+    let [adminData, setAdminData] = React.useState(null)
+    let [adminRanksArray, setAdminRanksArray] = React.useState([])
+
+    React.useEffect(() => {
+        const request = new Request('/modules/Operators/operators.json');
+        fetch(request)
+            .then(response => response.json())
+            .then(data => {
+                setAdminData(data)
+                setAdminRanksArray(Object.keys(data))
+            })
+    }, [])
+
+    return (
+        <div>
+            {adminData && adminRanksArray && adminRanksArray.map(rank => <Rank key={rank} rank={rank} data={adminData[rank]} />)}
+        </div>
+    )
+}
+
+ReactDOM.render(<Admininstration />, document.getElementById("adminstration"));
