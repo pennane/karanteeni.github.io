@@ -41,10 +41,18 @@ var ThemeSwitcher = function ThemeSwitcher() {
         },
         'modern-flat-light': {
             id: 'modern-flat-light',
-            name: 'Susse Flat',
+            name: 'Susse Light',
             href: 'vendor/css/modern_flat_light.css',
             image: './assets/images/sussetheme.jpg',
             desc: 'Sussen visio maailmasta'
+        },
+
+        'modern-flat-dark': {
+            id: 'modern-flat-dark',
+            name: 'Susse Dark',
+            href: 'vendor/css/modern_flat_dark.css',
+            image: './assets/images/sussedark.png',
+            desc: 'Sussen visio yöstä'
         }
     };
 
