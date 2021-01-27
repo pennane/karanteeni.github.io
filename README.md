@@ -2,8 +2,6 @@
 
 Peruspaske sivut (HTML, CSS, JS) :D
 
-Versio: 4.3.0
-
 ## Esivaatimukset
 
 -   Node.js >= 12
