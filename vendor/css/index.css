@@ -831,6 +831,12 @@ h6 {
     float: right;
 }
 
+@media screen and (max-width: 800px) {
+    .main-content {
+        padding: 2.5em 1.8em;
+    }
+}
+
 /* Finetuning End */
 
 /* Accordion Start */
@@ -998,8 +1004,8 @@ h3.moderaattorit {
 
 .admin-card-container {
     width: 21em;
-    margin: 1.5em;
-    margin-bottom: 2.4em;
+    margin: 4.5% 2.25%;
+    margin-top: 0;
     padding: 0.625em;
     border-radius: 0.625em;
     box-shadow: 0 0 10px #000;
@@ -1027,6 +1033,7 @@ h3.moderaattorit {
 }
 
 .admin-card {
+    color: white;
 }
 
 .background {
@@ -1060,7 +1067,9 @@ h3.moderaattorit {
     padding: 0.625em;
     border-bottom-left-radius: 0.625em;
     border-bottom-right-radius: 0.625em;
-    min-height: 10.5em;
+    min-height: 10.1em;
+    display: flex;
+    flex-direction: column;
 }
 
 .admin-content.omistajat {
@@ -1086,19 +1095,18 @@ h3.moderaattorit {
 .admin-name {
     text-align: center;
     font-size: 1.4em;
-    padding: 0.625em;
+    padding: 0.625em 0.2em;
     margin-top: -2em;
     font-weight: 700;
-    font-family: 'inter';
+    font-family: 'Inter';
     letter-spacing: 0.01em;
 }
 
 .admin-type {
     display: block;
     background-color: #000;
-    padding: 0.4375em;
+    padding: 0.44em 0.65em;
     color: white;
-    width: 5.875em;
     font-size: 0.75em;
     border-radius: 0.3125em;
     text-align: center;
@@ -1107,6 +1115,10 @@ h3.moderaattorit {
     text-transform: capitalize;
     font-weight: 700;
     text-shadow: 2px 1px 0 #000;
+    align-self: baseline;
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgba(243, 244, 246, 0.1);
 }
 
 .admin-type.omistajat {
@@ -1137,6 +1149,7 @@ h3.moderaattorit {
     font-weight: 300;
     display: flex;
     align-items: center;
+    margin-bottom: 0.5em;
 }
 
 .admin-strength-bullet {
@@ -1148,7 +1161,7 @@ h3.moderaattorit {
 }
 
 .avatar > img {
-    max-height: 10em;
+    max-height: 9em;
     margin: 1.25rem;
 }
 
@@ -1159,10 +1172,56 @@ h3.moderaattorit {
     min-height: 7.4em;
 }
 
+.admin-footer p {
+    margin-bottom: 0;
+
+    color: #e8e8e8;
+}
+
+.yp h3 {
+    font-family: 'Minecraftia' !important;
+    text-align: center !important;
+}
+
+.yp-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 3em;
+}
+
+@media screen and (max-width: 1000px) {
+    .admin-strength > p {
+        margin-bottom: 0.2em;
+        font-size: 0.95em;
+        color: #e5e5e5;
+    }
+    .admin-strength > p:last-of-type {
+        margin-bottom: 0;
+    }
+
+    .admin-content {
+        min-height: 9.5em;
+    }
+
+    .admin-name {
+        margin-top: -2.1em;
+        padding-bottom: 0.9em;
+    }
+
+    .admin-footer p {
+        font-size: 0.95em;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .admin-card-container {
+        font-size: 0.9em;
+    }
+}
+
 /* Admin End */
-
 /* Yp Start */
-
 .yp-jutut {
     font-size: 1rem !important;
     font-family: 'Minecraftia';
@@ -1207,17 +1266,6 @@ h3.moderaattorit {
 
 .c-card-dark {
     color: #e0e0e0;
-}
-
-.yp-wrapper {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-
-.yp h3 {
-    font-family: 'Minecraftia';
-    text-align: center;
 }
 
 /* Yp End */
@@ -1404,9 +1452,6 @@ h3.moderaattorit {
     .rule-content {
         margin-right: 0.5em;
         text-align: center;
-    }
-    .main-content {
-        padding: 3em 1em;
     }
     #rankit .row > div:nth-of-type(odd) {
         margin-left: 0.5em;

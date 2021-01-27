@@ -206,11 +206,6 @@ body {
     text-shadow: none !important;
 }
 
-.main-content {
-    padding: 3em 3em;
-    margin-bottom: 5em;
-}
-
 .lead {
     font-size: 1.4em;
     font-family: 'Inter', sans-serif;
@@ -333,30 +328,6 @@ h6 {
  *
 */
 
-.admin-strength {
-    margin-left: 0.4em;
-}
-
-.admin-strength > p {
-    font-family: 'Inter', sans-serif;
-    font-weight: 300;
-    display: flex;
-    align-items: center;
-}
-
-.admin-strength-bullet {
-    font-size: 0.7em;
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
-    margin-right: 0.6em;
-}
-
-.avatar > img {
-    max-height: 150px;
-    margin: 1.25rem;
-}
-
 /* Admin End */
 
 /* Yp Start */
@@ -377,11 +348,6 @@ h6 {
     box-sizing: border-box;
     height: 130px;
     z-index: 10;
-}
-
-.yp > h3 {
-    font-family: 'Minecraftia';
-    text-align: center;
 }
 
 /* Yp End */
