@@ -4,159 +4,159 @@ class CommonRules extends React.Component {
             <React.Fragment>
                 <RuleContainer>
                     <Rule>
-                    <Icon icon="denied"/>
-                    <Content>
-                        <Heading>Hack-clientit ovat kiellettyjä</Heading>
-                        <Description>
-                            Huijausohjelmien (esim. Xray) käyttäminen on kiellettyä.
+                        <Icon icon="denied" />
+                        <Content>
+                            <Heading>Hack-clientit ovat kiellettyjä</Heading>
+                            <Description>
+                                Huijausohjelmien (esim. Xray) käyttäminen on kiellettyä.
                         </Description>
-                    </Content>
+                        </Content>
                     </Rule>
                 </RuleContainer>
 
 
                 <RuleContainer>
                     <Rule>
-                    <Icon icon="denied"/>
-                    <Content>
-                        <Heading>Bugien hyväksikäyttö on kiellettyä</Heading>
-                        <Description>
-                            Bugien tai palvelinvirheiden hyväksikäyttö on ankarasti kiellettyä.
-                            Mikäli löydät peliä rikkovan bugin tai virheen, voidaan sinua palkita
-                            peliajalla.
+                        <Icon icon="denied" />
+                        <Content>
+                            <Heading>Bugien hyväksikäyttö on kiellettyä</Heading>
+                            <Description>
+                                Bugien tai palvelinvirheiden hyväksikäyttö on ankarasti kiellettyä.
+                                Mikäli löydät peliä rikkovan bugin tai virheen, voidaan sinua palkita
+                                peliajalla.
                         </Description>
-                    </Content>
+                        </Content>
                     </Rule>
                 </RuleContainer>
 
 
                 <RuleContainer>
                     <Rule>
-                    <Icon icon="denied"/>
-                    <Content>
-                        <Heading>Modit ovat kiellettyjä</Heading>
-                        <Description>
-                            Pelin etenemistä edistävien modien käyttäminen (esim. schematica) on kiellettyä.
+                        <Icon icon="denied" />
+                        <Content>
+                            <Heading>Modit ovat kiellettyjä</Heading>
+                            <Description>
+                                Pelin etenemistä edistävien modien käyttäminen (esim. schematica) on kiellettyä.
                         </Description>
-                    </Content>
+                        </Content>
                     </Rule>
                 </RuleContainer>
 
                 <RuleContainer>
                     <Rule>
-                    <Icon icon="notice"/>
-                    <Content>
-                        <Heading>TNT-monistajat ovat osittain sallittuja</Heading>
-                        <Description>
-                            TNT-duplikaattoreita voi käyttää hyödyksi farmaamisessa. Kuitenkin muu käyttö on yhä toistaiseksi kielletty.
+                        <Icon icon="notice" />
+                        <Content>
+                            <Heading>TNT-monistajat ovat osittain sallittuja</Heading>
+                            <Description>
+                                TNT-duplikaattoreita voi käyttää hyödyksi farmaamisessa. Kuitenkin muu käyttö on yhä toistaiseksi kielletty.
                         </Description>
-                    </Content>
-                    </Rule>
-                </RuleContainer>
-
-
-                <RuleContainer>
-                    <Rule>
-                    <Icon icon="allowed"/>
-                    <Content>
-                        <Heading>OptiFine & Sodium</Heading>
-                        <Description>
-                            OptiFinen ja Sodiumin kaltaiset suoritustehoa parantavat modit ovat sallittuja.
-                        </Description>
-                    </Content>
+                        </Content>
                     </Rule>
                 </RuleContainer>
 
 
                 <RuleContainer>
                     <Rule>
-                    <Icon icon="denied"/>
-                    <Content>
-                        <Heading>Asiattoman skinin tai käyttäjänimen käyttäminen on kiellettyä</Heading>
-                        <Description>
-                            Jos nimesi tai skinisi on rasistinen, alatyylinen, loukkaava, tai muuten asiaton, sinua pyydetään vaihtamaan se.
-                            Muuten käyttäjäsi bannitaan skinin tai nimen vaihdon ajaksi.
+                        <Icon icon="allowed" />
+                        <Content>
+                            <Heading>OptiFine & Sodium</Heading>
+                            <Description>
+                                OptiFinen ja Sodiumin kaltaiset suoritustehoa parantavat modit ovat sallittuja.
                         </Description>
-                    </Content>
+                        </Content>
                     </Rule>
                 </RuleContainer>
 
 
                 <RuleContainer>
                     <Rule>
-                    <Icon icon="denied"/>
-                    <Content>
-                        <Heading>Alt-accounttien hyväksikäyttäminen kielletty</Heading>
-                        <Description>
-                            Et saa käyttää alt-accountteja pääkäyttäjän edun hyväksi (esimerkiksi rahan siirtämistä, tai rankkien ominaisuuksien jakamista).
+                        <Icon icon="denied" />
+                        <Content>
+                            <Heading>Asiattoman skinin tai käyttäjänimen käyttäminen on kiellettyä</Heading>
+                            <Description>
+                                Jos nimesi tai skinisi on rasistinen, alatyylinen, loukkaava, tai muuten asiaton, sinua pyydetään vaihtamaan se.
+                                Muuten käyttäjäsi bannitaan skinin tai nimen vaihdon ajaksi.
                         </Description>
-                    </Content>
+                        </Content>
                     </Rule>
                 </RuleContainer>
 
 
                 <RuleContainer>
                     <Rule>
-                    <Icon icon="denied"/>
-                    <Content>
-                        <Heading>Afkaaminen kielletty</Heading>
-                        <Description>
-                            Palvelimella afkaaminen on kielletty. Afkikoneiden rakentaminen tästä syystä myös ankarasti kielletty. <br/>
-                            
-                            Mobifarmeilla afkaaminen keräten mobeja on myös kiellettyä. Kuitenkin automaattiset mobifarmit on sallittuja,
-                            kunhan entiteettejä ei keräänny liikaa aiheuttaakseen lagia.
+                        <Icon icon="denied" />
+                        <Content>
+                            <Heading>Alt-accounttien hyväksikäyttäminen kielletty</Heading>
+                            <Description>
+                                Et saa käyttää alt-accountteja pääkäyttäjän edun hyväksi (esimerkiksi rahan siirtämistä, tai rankkien ominaisuuksien jakamista).
                         </Description>
-                    </Content>
+                        </Content>
                     </Rule>
                 </RuleContainer>
 
 
                 <RuleContainer>
                     <Rule>
-                    <Icon icon="denied"/>
-                    <Content>
-                        <Heading>Palvelimen lagittaminen kielletty</Heading>
-                        <Description>
-                            Palvelinta rasittavien ja lagittavien redstonerakennelmien teko on kielletty (esim. loputtomiin käyvät kellot, 0-tick farmit).
-                            Lisää rakennelmaan sulkemisvipu ja pidä laite suljettuna, jos se ei ole käytössä. <br/><br/>
-                            Palvelimen lagittamiseen kuuluu myös entiteetit (hostile mobit, lemmikit, kyläläiset).
+                        <Icon icon="denied" />
+                        <Content>
+                            <Heading>Afkaaminen kielletty</Heading>
+                            <Description>
+                                Palvelimella afkaaminen on kielletty. Afkikoneiden rakentaminen tästä syystä myös ankarasti kielletty. <br />
+
+                                Mobifarmeilla afkaaminen keräten mobeja on myös kiellettyä. Kuitenkin automaattiset mobifarmit on sallittuja,
+                                kunhan entiteettejä ei keräänny liikaa aiheuttaakseen lagia.
+                        </Description>
+                        </Content>
+                    </Rule>
+                </RuleContainer>
+
+
+                <RuleContainer>
+                    <Rule>
+                        <Icon icon="denied" />
+                        <Content>
+                            <Heading>Palvelimen lagittaminen kielletty</Heading>
+                            <Description>
+                                Palvelinta rasittavien ja lagittavien redstonerakennelmien teko on kielletty (esim. loputtomiin käyvät kellot, 0-tick farmit).
+                            Lisää rakennelmaan sulkemisvipu ja pidä laite suljettuna, jos se ei ole käytössä. <br /><br />
+                                Palvelimen lagittamiseen kuuluu myös entiteetit (hostile mobit, lemmikit, kyläläiset).
                             <strong>
-                            &nbsp;Ylläpidolla on oikeus tappaa suojauksestasi eläimiä, mikäli ne kuormittavat palvelinta.
-                            </strong> <br/>
-                            Tämän lisäksi teleporttailu matrixin ulkopuolelle (esimerkiksi koordinaatit yli Endin ja Netherin generointirajan, sekä mapin ulkopuolelle
-                            jonka rajat ovat +-10k) on kiellettyä. Palvelimen tahallisesta lagittamisesta seuraa aina ikuinen porttikielto.
+                                    &nbsp;Ylläpidolla on oikeus tappaa suojauksestasi eläimiä, mikäli ne kuormittavat palvelinta.
+                            </strong> <br />
+                                Tämän lisäksi teleporttailu matrixin ulkopuolelle (esimerkiksi koordinaatit yli Endin ja Netherin generointirajan, sekä mapin ulkopuolelle
+                                jonka rajat ovat +-10k) on kiellettyä. Palvelimen tahallisesta lagittamisesta seuraa aina ikuinen porttikielto.
                         </Description>
-                    </Content>
+                        </Content>
                     </Rule>
                 </RuleContainer>
 
 
                 <RuleContainer>
                     <Rule>
-                    <Icon icon="denied"/>
-                    <Content>
-                        <Heading>Ansaitun rankin hyväksikäyttäminen kielletty</Heading>
-                        <Description>
-                            Sinua alempirankkiset pelaajat eivät saa hyötyä rankkisi ominaisuuksista. Et saa esimerkiksi muuntaa spawnerin tyyppiä toisten puolesta,
-                            tai myydä spawnereita, joihin pelaajalla ei ole vielä oikeutta.
+                        <Icon icon="denied" />
+                        <Content>
+                            <Heading>Ansaitun rankin hyväksikäyttäminen kielletty</Heading>
+                            <Description>
+                                Sinua alempirankkiset pelaajat eivät saa hyötyä rankkisi ominaisuuksista. Et saa esimerkiksi muuntaa spawnerin tyyppiä toisten puolesta,
+                                tai myydä spawnereita, joihin pelaajalla ei ole vielä oikeutta.
                         </Description>
-                    </Content>
+                        </Content>
                     </Rule>
                 </RuleContainer>
 
 
                 <RuleContainer>
                     <Rule>
-                    <Icon icon="notice"/>
-                    <Content>
-                        <Heading>Olet velvoitettu ilmoittamaan rikkeestä</Heading>
-                        <Description>
-                            Jos havaitset sääntöjen rikkomista, välitä tieto välittömästi ylläpidolle. Pyri hankkimaan todisteita, kuten screenshotteja tai videoita.
+                        <Icon icon="notice" />
+                        <Content>
+                            <Heading>Olet velvoitettu ilmoittamaan rikkeestä</Heading>
+                            <Description>
+                                Jos havaitset sääntöjen rikkomista, välitä tieto välittömästi ylläpidolle. Pyri hankkimaan todisteita, kuten screenshotteja tai videoita.
                         </Description>
-                    </Content>
+                        </Content>
                     </Rule>
                 </RuleContainer>
-           </React.Fragment>
+            </React.Fragment>
         )
     }
 }
@@ -167,51 +167,51 @@ class ChatRules extends React.Component {
             <React.Fragment>
                 <RuleContainer>
                     <Rule>
-                    <Icon icon="important"/>
-                    <Content>
-                        <Heading>Pidetään keskustelut asiallisena</Heading>
-                        <Description>
-                            Muista, että keskustelet oikeiden ihmisten kanssa. Pyritään olemaan mahdollisimman ystävällisiä toisillemme.
+                        <Icon icon="important" />
+                        <Content>
+                            <Heading>Pidetään keskustelut asiallisena</Heading>
+                            <Description>
+                                Muista, että keskustelet oikeiden ihmisten kanssa. Pyritään olemaan mahdollisimman ystävällisiä toisillemme.
                         </Description>
-                    </Content>
+                        </Content>
                     </Rule>
                 </RuleContainer>
 
                 <RuleContainer>
                     <Rule>
-                    <Icon icon="important"/>
-                    <Content>
-                        <Heading>Pidetään kieli kurissa</Heading>
-                        <Description>
-                            Turha kiroilu ja toisten pelaajien härnäminen tai kiusaaminen ei ole asianmukaista. Ollaanhan ihmisiksi.
+                        <Icon icon="important" />
+                        <Content>
+                            <Heading>Pidetään kieli kurissa</Heading>
+                            <Description>
+                                Turha kiroilu ja toisten pelaajien härnäminen tai kiusaaminen ei ole asianmukaista. Ollaanhan ihmisiksi.
                         </Description>
-                    </Content>
+                        </Content>
                     </Rule>
                 </RuleContainer>
 
                 <RuleContainer>
                     <Rule>
-                    <Icon icon="important"/>
-                    <Content>
-                        <Heading>Pidetään chatti siistinä</Heading>
-                        <Description>
-                            Turha spammaaminen, floodaaminen, ja CAPSILLA KIRJOITTAMINEN on kiellettyä.
+                        <Icon icon="important" />
+                        <Content>
+                            <Heading>Pidetään chatti siistinä</Heading>
+                            <Description>
+                                Turha spammaaminen, floodaaminen, ja CAPSILLA KIRJOITTAMINEN on kiellettyä.
                         </Description>
-                    </Content>
+                        </Content>
                     </Rule>
                 </RuleContainer>
 
 
                 <RuleContainer>
                     <Rule>
-                    <Icon icon="denied"/>
-                    <Content>
-                        <Heading>Mainostaminen on kiellettyä</Heading>
-                        <Description>
-                            Älä mainosta (varsinkaan toisia palvelimia). Tämä ei kuitenkaan tarkoita sitä ettetkö saisi kertoa minkä merkkinen hiiri tai auto sinulla on,
-                            mutta siinä se raja sitten kulkeekin.
+                        <Icon icon="denied" />
+                        <Content>
+                            <Heading>Mainostaminen on kiellettyä</Heading>
+                            <Description>
+                                Älä mainosta (varsinkaan toisia palvelimia). Tämä ei kuitenkaan tarkoita sitä ettetkö saisi kertoa minkä merkkinen hiiri tai auto sinulla on,
+                                mutta siinä se raja sitten kulkeekin.
                         </Description>
-                    </Content>
+                        </Content>
                     </Rule>
                 </RuleContainer>
             </React.Fragment>
@@ -225,76 +225,76 @@ class AdditionalRules extends React.Component {
             <React.Fragment>
                 <RuleContainer>
                     <Rule>
-                    <Icon icon="denied"/>
-                    <Content>
-                        <Heading>Grieffaaminen on kielletty</Heading>
-                        <Description>
-                            Toisten pelaajien rakennelmien tuhoaminen ja omaisuuden varastaminen on kielletty. Mikäli tielläsi on rakennus, pyydä ylläpitoa rikkomaan
-                            tai siirtämään sitä.
+                        <Icon icon="denied" />
+                        <Content>
+                            <Heading>Grieffaaminen on kielletty</Heading>
+                            <Description>
+                                Toisten pelaajien rakennelmien tuhoaminen ja omaisuuden varastaminen on kielletty. Mikäli tielläsi on rakennus, pyydä ylläpitoa rikkomaan
+                                tai siirtämään sitä.
                         </Description>
-                    </Content>
+                        </Content>
                     </Rule>
                 </RuleContainer>
 
 
                 <RuleContainer>
                     <Rule>
-                    <Icon icon="denied"/>
-                    <Content>
-                        <Heading>Pelaajien vedättäminen, skämmääminen on kiellettyä</Heading>
-                        <Description>
-                            Et saa esimerkiksi huijata toiselta tavaraa.
+                        <Icon icon="denied" />
+                        <Content>
+                            <Heading>Pelaajien vedättäminen, skämmääminen on kiellettyä</Heading>
+                            <Description>
+                                Et saa esimerkiksi huijata toiselta tavaraa.
                         </Description>
-                    </Content>
+                        </Content>
                     </Rule>
                 </RuleContainer>
 
 
                 <RuleContainer>
                     <Rule>
-                    <Icon icon="denied"/>
-                    <Content>
-                        <Heading>Maisemagrieffaaminen kielletty</Heading>
-                        <Description>
-                            Maaston ja maiseman turmeleminen on kiellettyä. Puut on kasvatettava takaisin, hiekan hakkuu ei saa jättää rumia jälkiä ympäristöön,
-                            turhien epäesteettisten rakennelmien rakentaminen on kielletty (esim. 1x1 dirt tornit).
+                        <Icon icon="denied" />
+                        <Content>
+                            <Heading>Maisemagrieffaaminen kielletty</Heading>
+                            <Description>
+                                Maaston ja maiseman turmeleminen on kiellettyä. Puut on kasvatettava takaisin, hiekan hakkuu ei saa jättää rumia jälkiä ympäristöön,
+                                turhien epäesteettisten rakennelmien rakentaminen on kielletty (esim. 1x1 dirt tornit).
                         </Description>
-                    </Content>
+                        </Content>
                     </Rule>
                 </RuleContainer>
 
 
                 <RuleContainer>
                     <Rule>
-                    <Icon icon="notice"/>
-                    <Content>
-                        <Heading>Villager kylät ovat rauhoitettuja</Heading>
-                        <Description>
-                            Villager kyliä ei saa grieffata. Kylistä ei saa viedä sänkyjä tai <Tooltip work><strong>workstationeja.</strong></Tooltip> Kylien peltoja
-                            saa käyttää, kunhan ne muistaa täyttää takaisin. Kylien heinäpaalut, sekä kellot saa ottaa itselleen. Kylän voi ottaa kodikseen, jolloin
-                            kyliä koskevat säännöt eivät enää päde.
+                        <Icon icon="notice" />
+                        <Content>
+                            <Heading>Villager kylät ovat rauhoitettuja</Heading>
+                            <Description>
+                                Villager kyliä ei saa grieffata. Kylistä ei saa viedä sänkyjä tai <Tooltip work><strong>workstationeja.</strong></Tooltip> Kylien peltoja
+                                saa käyttää, kunhan ne muistaa täyttää aina takaisin. Kylien heinäpaalut, kirjahyllyt, sekä kellot saa ottaa itselleen. Kylän voi ottaa kodikseen, jolloin
+                                víllager kyliä koskevat säännöt eivät enää päde.
                         </Description>
-                    </Content>
+                        </Content>
                     </Rule>
                 </RuleContainer>
 
 
                 <RuleContainer>
                     <Rule>
-                    <Icon icon="denied"/>
-                    <Content>
-                        <Heading>Pelaajien tappaminen ja pelaaja-ansojen rakentaminen kielletty</Heading>
-                        <Description>
-                            Et saa aiheuttaa vahinkoa toisiin pelaajiin. Rakennelmat, jotka voivat tappaa pelaajan, ovat ankarasti kiellettyjä.
+                        <Icon icon="denied" />
+                        <Content>
+                            <Heading>Pelaajien tappaminen ja pelaaja-ansojen rakentaminen kielletty</Heading>
+                            <Description>
+                                Et saa aiheuttaa vahinkoa toisiin pelaajiin. Rakennelmat, jotka voivat tappaa pelaajan, ovat ankarasti kiellettyjä.
                         </Description>
-                    </Content>
+                        </Content>
                     </Rule>
                 </RuleContainer>
 
 
                 <RuleContainer>
                     <Rule>
-                        <Icon icon="notice"/>
+                        <Icon icon="notice" />
                         <Content>
                             <Heading>Karanteeni on poliittisesti neutraali palvelin</Heading>
                             <Description>
@@ -317,7 +317,7 @@ class PlayerTownRules extends React.Component {
 
                 <RuleContainer>
                     <Rule>
-                        <Icon icon="notice"/>
+                        <Icon icon="notice" />
                         <Content>
                             <Heading>Kylän mainostaminen julkisesti</Heading>
                             <Description>
@@ -331,7 +331,7 @@ class PlayerTownRules extends React.Component {
 
                 <RuleContainer>
                     <Rule>
-                        <Icon icon="denied"/>
+                        <Icon icon="denied" />
                         <Content>
                             <Heading>Kylän mainostaminen yksityisesti</Heading>
                             <Description>
@@ -345,7 +345,7 @@ class PlayerTownRules extends React.Component {
 
                 <RuleContainer>
                     <Rule>
-                        <Icon icon="denied"/>
+                        <Icon icon="denied" />
                         <Content>
                             <Heading>Copy &amp; Paste viestit ovat kiellettyjä</Heading>
                             <Description>
@@ -360,7 +360,7 @@ class PlayerTownRules extends React.Component {
 
                 <RuleContainer>
                     <Rule>
-                        <Icon icon="important"/>
+                        <Icon icon="important" />
                         <Content>
                             <Heading>Mainosta kylääsi spawnilla!</Heading>
                             <Description>
@@ -374,7 +374,7 @@ class PlayerTownRules extends React.Component {
 
                 <RuleContainer>
                     <Rule>
-                        <Icon icon="allowed"/>
+                        <Icon icon="allowed" />
                         <Content>
                             <Heading>Xp-farmit ja /spawner</Heading>
                             <Description>
@@ -387,7 +387,7 @@ class PlayerTownRules extends React.Component {
 
                 <RuleContainer>
                     <Rule>
-                        <Icon icon="notice"/>
+                        <Icon icon="notice" />
                         <Content>
                             <Heading>Kylästä häätäminen</Heading>
                             <Description>
@@ -402,7 +402,7 @@ class PlayerTownRules extends React.Component {
 
                 <RuleContainer>
                     <Rule>
-                        <Icon icon="important"/>
+                        <Icon icon="important" />
                         <Content>
                             <Heading>Rakennusten purkaminen</Heading>
                             <Description>
@@ -418,7 +418,7 @@ class PlayerTownRules extends React.Component {
 
                 <RuleContainer>
                     <Rule>
-                        <Icon icon="important"/>
+                        <Icon icon="important" />
                         <Content>
                             <Heading>Maksut / verotus</Heading>
                             <Description>
@@ -433,7 +433,7 @@ class PlayerTownRules extends React.Component {
 
                 <RuleContainer>
                     <Rule>
-                        <Icon icon="denied"/>
+                        <Icon icon="denied" />
                         <Content>
                             <Heading>Asumattomien asukkaiden lisääminen on kiellettyä</Heading>
                             <Description>
@@ -453,8 +453,8 @@ class PlayerTownRules extends React.Component {
 class Tooltip extends React.Component {
     render() {
 
-        const workstations = "Bed, Lectern, Composter, Grindstone, Blast Furnace, Smoker, Fletching Table, Cartography Table, Brewing Stand, Smithing Table, " + 
-        "Barrel, Loom, Stonecutter"
+        const workstations = "Bed, Lectern, Composter, Grindstone, Blast Furnace, Smoker, Fletching Table, Cartography Table, Brewing Stand, Smithing Table, " +
+            "Barrel, Loom, Stonecutter"
 
         const work = this.props.work;
 
@@ -550,7 +550,7 @@ const Icon = (props) => {
     }
 }
 
-ReactDOM.render(<CommonRules/>, document.getElementById('common'));
-ReactDOM.render(<ChatRules/>, document.getElementById('behavior'));
-ReactDOM.render(<AdditionalRules/>, document.getElementById('addon'));
-ReactDOM.render(<PlayerTownRules/>, document.getElementById('playertown'));
+ReactDOM.render(<CommonRules />, document.getElementById('common'));
+ReactDOM.render(<ChatRules />, document.getElementById('behavior'));
+ReactDOM.render(<AdditionalRules />, document.getElementById('addon'));
+ReactDOM.render(<PlayerTownRules />, document.getElementById('playertown'));
