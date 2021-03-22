@@ -194,6 +194,7 @@ h3.moderaattorit {
     display: flex;
     align-items: center;
     margin-bottom: 0.5em;
+    color: #e5e5e5;
 }
 
 .admin-strength-bullet {
