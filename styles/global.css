@@ -11,10 +11,17 @@
     --color-link: hsl(46, 95%, 85%);
     --color-accent: #ffc000;
     --color-icon: white;
+    --color-nav-link: #fff9e5;
     --background-primary: #10131f;
     --background-secondary: #0e101b;
     --gradient-primary: linear-gradient(45deg, #ffeb3b, #f3b12a);
     --gradient-secondary: linear-gradient(45deg, #ffef00, #ff6c05);
+    --primary-border-color: #171b2b;
+    --secondary-border-color: #151928;
+}
+
+.secondary-color {
+    color: var(--color-secondary);
 }
 
 html,
@@ -54,7 +61,6 @@ span {
 
 a {
     background: none;
-    text-shadow: none;
     font-weight: 400;
     text-decoration: underline;
 }
@@ -120,9 +126,8 @@ nav {
 }
 
 .nav-link {
-    text-shadow: none;
     border: none;
-    color: var(--color-secondary);
+    color: var(--color-nav-link);
     background: none;
     letter-spacing: 0.2px;
     font-weight: 400;
@@ -167,7 +172,7 @@ nav {
     left: 0;
     background-color: var(--background-primary);
     border-radius: 0.3em;
-    border: 1px solid #090a11;
+    border: 1px solid var(--primary-border-color);
     padding: 0.6rem;
     padding-bottom: 1rem;
     width: 180px;
@@ -249,7 +254,7 @@ footer {
     padding: 1rem;
     justify-content: space-evenly;
     align-items: stretch;
-    border-top: 1px solid #151928;
+    border-top: 1px solid var(--secondary-border-color);
     background: var(--background-secondary);
 }
 
@@ -268,7 +273,7 @@ footer {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    border-top: 1px solid #0b0d14;
+    border-top: 1px solid var(--secondary-border-color);
 }
 
 .footer-end > div {
@@ -299,7 +304,7 @@ footer {
     grid-gap: 1rem;
     gap: 1rem;
     padding-bottom: 3rem;
-    background: url(../public/images/kansi.jpg) 45% 70% !important;
+    background: url(../public/images/kansi.jpg) 45% 70%;
 }
 
 .home-hero > div {
@@ -317,7 +322,6 @@ footer {
     font-family: 'Inter', sans-serif;
     line-height: 0.475;
     padding: 1.2rem 0;
-    text-shadow: none;
     font-weight: 700;
     font-style: normal;
     letter-spacing: -3px;
@@ -329,7 +333,6 @@ footer {
 .home-hero-main p {
     font-size: 1.21rem;
     font-weight: 500;
-    text-shadow: none;
     font-style: unset;
     margin: 0;
     margin-bottom: 1.8rem;
@@ -403,7 +406,7 @@ h1 {
 .home-grid > div {
     display: flex;
     flex-direction: column;
-    border-right: 1px solid #171b2b;
+    border-right: 1px solid var(--primary-border-color);
 }
 
 .home-grid > div:last-child {
@@ -527,54 +530,6 @@ li {
     background-color: transparent;
 }
 
-@media screen and (max-width: 1000px) {
-    .minecraft-citation {
-        font-size: 0.86em;
-        height: 120px;
-        min-width: 270px;
-    }
-
-    .minecraft-citation figcaption {
-        margin-bottom: 0.5em;
-    }
-
-    main.home {
-        padding-top: 0;
-    }
-    .wrappedlist {
-        flex-wrap: nowrap;
-        height: unset;
-    }
-
-    .home-grid-main {
-        order: -1;
-    }
-
-    main.post {
-        padding: 2rem;
-        padding-bottom: 4rem;
-        max-width: 900px;
-    }
-
-    .home-grid,
-    .home-hero,
-    main.post > div {
-        grid-auto-flow: row;
-        grid-template-columns: auto;
-        gap: 1rem;
-    }
-    .home-grid > div {
-        border-right: none;
-        border-bottom: 1px solid #171b2b;
-        padding-bottom: 0.8rem;
-        flex-direction: row;
-        flex-wrap: wrap;
-    }
-    .home-grid section {
-        flex: 1;
-    }
-}
-
 .server-ip,
 .server-address {
     color: #ff9999;
@@ -632,11 +587,13 @@ li {
 
 .rank-card-body {
     padding: 1.2em;
+    padding-bottom: 2.5em;
     display: flex;
     flex-direction: column;
     height: 100%;
     box-sizing: border-box;
     border-radius: 6px;
+    min-height: 250px;
 }
 
 .rank-tooltip {
@@ -690,6 +647,7 @@ li {
     margin-bottom: 1rem;
     display: flex;
     flex-direction: column;
+    overflow: hidden;
 }
 
 .rank-grid {
@@ -752,13 +710,9 @@ button {
     text-align: center;
     display: inline-block;
     font-size: 0.85em;
-}
-
-.button a,
-.button span {
     color: #000;
     text-decoration: none;
-    font-weight: 700;
+    font-weight: 600;
     white-space: nowrap;
     letter-spacing: 0.5px;
 }
@@ -831,103 +785,6 @@ time {
     animation-delay: -4000ms;
 }
 
-.modal-container:not(.show) {
-    display: none;
-}
-
-.modal {
-    display: block;
-    background: var(--gradient-primary);
-    color: black;
-    max-width: 660px;
-    border-radius: 0.4rem;
-    margin: 2rem;
-    animation: modal-appear 0.8s ease-in-out;
-}
-
-@keyframes modal-appear {
-    0% {
-        transform: translateY(-6%);
-        opacity: 0;
-    }
-    70% {
-        opacity: 1;
-    }
-    100% {
-        transform: translateY(0);
-    }
-}
-
-.modal p,
-.modal span {
-    color: black;
-}
-
-.modal a {
-    color: hsl(225deg 93% 58%);
-}
-
-.modal-content {
-    color: #595959;
-    padding: 1rem;
-    max-height: 60vh;
-    overflow-y: scroll;
-}
-
-.modal-header {
-    display: flex;
-    align-items: center;
-    padding: 1rem;
-}
-
-.modal-title {
-    line-height: 1.5;
-    font-weight: 400;
-    font-size: 1rem;
-    color: black;
-    margin: 0;
-}
-
-.modal-footer {
-    padding: 1rem;
-    display: flex;
-}
-
-.modal-footer-close {
-    margin-left: auto;
-    cursor: pointer;
-}
-
-.modal-header-close {
-    margin-left: auto;
-    cursor: pointer;
-    width: 48px;
-    height: 48px;
-    font-weight: 600;
-    font-size: 1.5rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.modal-container {
-    overflow-x: hidden;
-    overflow-y: auto;
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: 1050;
-    width: 100%;
-    height: 100%;
-    overflow: hidden;
-    outline: 0;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    background: rgba(0, 0, 0, 0.25);
-}
-
 .lahjoitusdokumentti {
     background: white;
     border: 20px ridge hsla(47, 46%, 43%, 1);
@@ -954,7 +811,7 @@ time {
 }
 
 .navbar-toggler-icon {
-    background: none !important;
+    background: none;
 }
 
 .navbar-toggler {
@@ -1068,7 +925,7 @@ time {
     font-weight: 500;
     margin: 0;
     margin-bottom: 0.2em;
-    color: #f5f5f5 !important;
+    color: #f5f5f5;
     font-size: 2.1em;
 }
 
@@ -1167,7 +1024,7 @@ time {
 
 .rule-heading {
     font-size: 1.2em;
-    color: #fefefe !important;
+    color: #fefefe;
     font-weight: 500;
     margin: 0;
 }
@@ -1178,7 +1035,72 @@ time {
     font-weight: 300;
 }
 
-@media (max-width: 800px) {
+.card-header h4 {
+    margin-bottom: 0;
+}
+
+@media screen and (max-width: 1000px) {
+    .rank-grid {
+        grid-auto-flow: row;
+        grid-template-columns: auto;
+        gap: 1rem;
+    }
+
+    .rank-card-body {
+        padding: 1.2em 2em;
+        padding-bottom: 2.5em;
+        max-width: 450px;
+        width: 100%;
+        margin: auto;
+        min-height: 230px;
+    }
+
+    .minecraft-citation {
+        font-size: 0.86em;
+        height: 120px;
+        min-width: 270px;
+    }
+
+    .minecraft-citation figcaption {
+        margin-bottom: 0.5em;
+    }
+
+    main.home {
+        padding-top: 0;
+    }
+    .wrappedlist {
+        flex-wrap: nowrap;
+        height: unset;
+    }
+
+    .home-grid-main {
+        order: -1;
+    }
+
+    main.post {
+        padding: 2rem;
+        padding-bottom: 4rem;
+        max-width: 900px;
+    }
+
+    .home-grid,
+    .home-hero,
+    main.post > div {
+        grid-auto-flow: row;
+        grid-template-columns: auto;
+        gap: 1rem;
+    }
+    .home-grid > div {
+        border-right: none;
+        border-bottom: 1px solid var(--primary-border-color);
+        padding-bottom: 0.8rem;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    .home-grid section {
+        flex: 1;
+    }
+
     .rule {
         flex-direction: column;
         padding-top: 0.3em;
@@ -1193,8 +1115,4 @@ time {
     #rankit .row > div:nth-of-type(odd) {
         margin-left: 0.5em;
     }
-}
-
-.card-header h4 {
-    margin-bottom: 0;
 }

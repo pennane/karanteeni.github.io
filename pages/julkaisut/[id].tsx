@@ -34,7 +34,7 @@ export default function SeparatedPost({
                                 <a>{title}</a>
                             </Link>
 
-                            <small className={utilStyles.lightText}>
+                            <small className="secondary-color">
                                 <Date dateString={date} />
                             </small>
                         </li>

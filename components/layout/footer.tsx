@@ -70,7 +70,7 @@ const Footer = () => {
                     </p>
                 </div>
                 <div>
-                    <a href="https://github.com/Pennane/karanteeni-next" target="_bank" title="github">
+                    <a href="https://github.com/Karanteeni/karanteeni.github.io" rel="noreferrer noopener" target="_bank" title="github">
                         Github
                         <FontAwesomeIcon className="icon" icon={faGithub} />
                     </a>

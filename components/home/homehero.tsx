@@ -8,9 +8,10 @@ const HomeHead = () => {
             <div className="home-hero-main">
                 <h1>Karanteeni</h1>
                 <p className="lead"> Serveri, joka vangitsee sinut!</p>
-                <div className="button changelog">
-                    <Link href="/muutokset">Muutosloki</Link>
-                </div>
+
+                <Link href="/muutokset">
+                    <div className="button changelog">Muutosloki</div>
+                </Link>
             </div>
             <div>
                 <MinecraftCitation />

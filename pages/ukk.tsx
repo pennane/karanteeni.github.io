@@ -30,11 +30,6 @@ const CommonQuestions = (props) => {
                 <Answer id="yle3" target="ylecol3">
                     Koita poistua palvelimelta ja liittyä uudelleen. Mikäli ongelma ei korjaantunut, nykäise ylläpitäjää hihasta.
                     Vaihtoehtoisesti mikäli ylläpitäjiä ei ole palvelimella, tee tiketti Discordiin ja katsotaan kuinka asian voi hoitaa.
-                    Voit myös luoda uuden asian{' '}
-                    <a href="https://bugs.karanteeni.net" target="_blank">
-                        Karanteenin ongelmanhallinnassa
-                    </a>
-                    .
                 </Answer>
             </Card>
 
@@ -53,10 +48,7 @@ const CommonQuestions = (props) => {
                 </Question>
                 <Answer id="yle5" target="ylecol5">
                     Ota yhteyttä ylläpitäjään joko palvelimella tai liity Karanteenin Discordiin ja valitse sieltä kanava "Bugit ja
-                    parannusehdotukset". Voit myös luoda uuden asian{' '}
-                    <a href="https://bugs.karanteeni.net" target="_blank">
-                        Karanteenin ongelmanhallinnassa
-                    </a>
+                    parannusehdotukset".
                     <strong>Mikäli bugia voi hyväksikäyttää, pidä se omana tietonasi, äläkä kerro muille pelaajille.</strong>
                     Bugin hyväksikäyttö on <strong>ankarasti kiellettyä</strong>. Mikäli jäät siitä kiinni, saat siitä automaattisesti
                     tuntuvan porttikiellon. Hyväksikäytettävän / peliärikkovan bugin ilmiantamisesta saa yleensä korvauksen.
