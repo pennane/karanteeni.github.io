@@ -19,7 +19,7 @@ const Julkaisut = ({ allPostsData }) => {
                             <a>{title}</a>
                         </Link>
 
-                        <small className={utilStyles.lightText}>
+                        <small className="secondary-color">
                             <Date dateString={date} />
                         </small>
                     </li>

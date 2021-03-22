@@ -1,6 +1,5 @@
 import React from 'react'
 
-import Head from 'next/head'
 import Link from 'next/link'
 import { GetStaticProps } from 'next'
 
@@ -8,12 +7,10 @@ import utilStyles from '../styles/utils.module.css'
 import { getPostData, getSortedPostsData } from '../lib/posts'
 
 import Date from '../components/date'
-import Layout, { siteTitle } from '../components/layout/layout'
+import Layout from '../components/layout/layout'
 import ServerStatus from '../components/home/serverstatus'
 import VoteButtons from '../components/home/votebuttons'
 import Post from '../components/post'
-
-import serverEvents from '../data/serverevents.json'
 
 export default function Home({ visiblePost, olderPosts, serverStatus }) {
     return (
@@ -42,7 +39,7 @@ export default function Home({ visiblePost, olderPosts, serverStatus }) {
                                         <a>{title}</a>
                                     </Link>
 
-                                    <small className={utilStyles.lightText}>
+                                    <small className="secondary-color">
                                         <Date dateString={date} />
                                     </small>
                                 </li>

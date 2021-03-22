@@ -13,7 +13,7 @@ export default function Post({
     return (
         <article>
             <h2 className={utilStyles.headingXl}>{postData.title}</h2>
-            <div className={utilStyles.lightText}>
+            <div className="secondary-color">
                 <Date dateString={postData.date} />
             </div>
             <div dangerouslySetInnerHTML={{ __html: postData.contentHtml }} />

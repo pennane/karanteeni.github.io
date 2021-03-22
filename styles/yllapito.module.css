@@ -109,7 +109,7 @@ h3.moderaattorit {
     padding: 0.625em;
     border-bottom-left-radius: 0.625em;
     border-bottom-right-radius: 0.625em;
-    min-height: 10.1em;
+    min-height: 9em;
     display: flex;
     flex-direction: column;
 }
@@ -215,7 +215,7 @@ h3.moderaattorit {
     text-align: center;
     font-size: 0.875em;
     padding: 1.25em;
-    min-height: 7.4em;
+    min-height: 6.9em;
 }
 
 .admin-footer p {
