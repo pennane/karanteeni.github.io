@@ -1,49 +1,8 @@
-.omistaja {
-    color: #335fff !important;
-}
-
-.admin {
-    color: #ff476c !important;
-}
-
-.operator {
-    color: #dc3588 !important;
-}
-
-.buildmod {
-    color: #b922a3 !important;
-}
-
-h3.omistajat {
-    color: #335fff;
-}
-
-h3.adminit {
-    color: #ff476c;
-}
-
-h3.operaattorit {
-    color: #dc3588;
-}
-
-h3.rakentajat,
-h3.moderaattorit {
-    color: #b922a3;
-}
-
-.yp h3 {
-    font-family: 'Minecraftia';
-    text-align: center;
-    font-size: 1.75rem;
-    text-transform: capitalize;
-    font-weight: 400;
-}
-
-.admin-card-heading {
+.card-heading {
     font-weight: 600;
 }
 
-.admin-card-container {
+.card-container {
     width: 21em;
     margin: 2rem 1rem;
     margin-top: 0;
@@ -54,27 +13,31 @@ h3.moderaattorit {
     font-size: 0.8em;
 }
 
-.admin-card-container.omistajat {
+.card-container.omistaja {
     background: linear-gradient(to right, #274dcc, #142c85);
 }
 
-.admin-card-container.adminit {
+.card-container.admin {
     background: linear-gradient(to right, #d90647, #910028);
 }
 
-.admin-card-container.operaattorit {
+.card-container.operator {
     background: linear-gradient(to right, #cb077d, #900153);
 }
 
-.admin-card-container.moderaattorit {
+.card-container.moderator {
     background: linear-gradient(to right, #a025b2, #72147b);
 }
 
-.admin-card-container.rakentajat {
+.card-container.builder {
     background: linear-gradient(to right, #a025b2, #72147b);
 }
 
-.admin-card {
+.card-container.kuolematon {
+    background: linear-gradient(to right, #ff4a9a, #ff2888);
+}
+
+.card {
     color: white;
 }
 
@@ -85,27 +48,31 @@ h3.moderaattorit {
     border-top-right-radius: 0.625rem;
 }
 
-.background.omistajat {
+.background.omistaja {
     background: linear-gradient(to right, #2445bd, #2242b8);
 }
 
-.background.adminit {
+.background.admin {
     background: linear-gradient(to right, #ca013f, #c5003c);
 }
 
-.background.operaattorit {
+.background.operator {
     background: linear-gradient(to right, #c20075, #bd0071);
 }
 
-.background.moderaattorit {
+.background.moderator {
     background: linear-gradient(to right, #991ea8, #951ea3);
 }
 
-.background.rakentajat {
+.background.builder {
     background: linear-gradient(to right, #991ea8, #951ea3);
 }
 
-.admin-content {
+.background.kuolematon {
+    background: linear-gradient(to right, #ff61a8, hsl(333, 100%, 60%));
+}
+
+.content {
     padding: 0.625em;
     border-bottom-left-radius: 0.625em;
     border-bottom-right-radius: 0.625em;
@@ -114,27 +81,31 @@ h3.moderaattorit {
     flex-direction: column;
 }
 
-.admin-content.omistajat {
+.content.omistaja {
     background: linear-gradient(to right, #253abe, #2345ba);
 }
 
-.admin-content.adminit {
+.content.admin {
     background: linear-gradient(to bottom, #c80033, #b70337);
 }
 
-.admin-content.operaattorit {
+.content.operator {
     background: linear-gradient(to bottom, #c2006a, #b00367);
 }
 
-.admin-content.moderaattorit {
+.content.moderator {
     background: linear-gradient(to bottom, #9d1c9f, #8d1c97);
 }
 
-.admin-content.rakentajat {
+.content.builder {
     background: linear-gradient(to bottom, #9d1c9f, #8d1c97);
 }
 
-.admin-name {
+.content.kuolematon {
+    background: linear-gradient(to bottom, #ff4598, #ff3d94);
+}
+
+.name {
     text-align: center;
     font-size: 1.4em;
     padding: 0.625em 0.2em;
@@ -146,7 +117,7 @@ h3.moderaattorit {
     letter-spacing: 0.01em;
 }
 
-.admin-type {
+.type {
     display: block;
     background-color: #000;
     padding: 0.44em 0.65em;
@@ -157,39 +128,43 @@ h3.moderaattorit {
     top: -2em;
     position: relative;
     text-transform: capitalize;
-    font-weight: 700;
-    text-shadow: 2px 1px 0 #000;
+    font-weight: 600;
+    text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.6);
     align-self: baseline;
     border-width: 1px;
     border-style: solid;
-    border-color: rgba(243, 244, 246, 0.1);
+    border-color: rgba(0, 0, 0, 0.01);
 }
 
-.admin-type.omistajat {
+.type.omistaja {
     background-color: #335fff;
 }
 
-.admin-type.adminit {
+.type.admin {
     background-color: #ff476c;
 }
 
-.admin-type.operaattorit {
+.type.operator {
     background-color: #dc3588;
 }
 
-.admin-type.moderaattorit {
-    background-color: #b922a3;
+.type.moderator {
+    background-color: #aa2eb8;
 }
 
-.admin-type.rakentajat {
-    background-color: #b922a3;
+.type.builder {
+    background-color: #aa2eb8;
 }
 
-.admin-strength {
+.type.kuolematon {
+    background-color: #ff6bae;
+}
+
+.strength {
     margin-left: 0.4em;
 }
 
-.admin-strength > p {
+.strength > p {
     font-weight: 300;
     display: flex;
     align-items: center;
@@ -197,7 +172,7 @@ h3.moderaattorit {
     color: #e5e5e5;
 }
 
-.admin-strength-bullet {
+.strength-bullet {
     font-size: 0.7em;
     display: inline-flex;
     justify-content: center;
@@ -212,41 +187,27 @@ h3.moderaattorit {
     margin: 1.25rem;
 }
 
-.admin-footer {
+.footer {
     text-align: center;
     font-size: 0.875em;
     padding: 1.25em;
     min-height: 6.9em;
 }
 
-.admin-footer p {
+.footer p {
     margin-bottom: 0;
     color: #e8e8e8;
 }
 
-.yp h3 {
-    font-family: 'Minecraftia';
-    text-align: center;
-}
-
-.yp-wrapper {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    margin-top: 3em;
-}
-
 @media screen and (max-width: 1000px) {
-    .admin-strength > p {
+    .strength > p {
         margin-bottom: 0.2em;
         color: #e5e5e5;
     }
-    .admin-strength > p:last-of-type {
+    .strength > p:last-of-type {
         margin-bottom: 0;
     }
-    .admin-content {
+    .content {
         min-height: 9.5em;
     }
 }
-
-/* Admin End */

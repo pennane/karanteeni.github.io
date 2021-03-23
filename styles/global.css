@@ -235,7 +235,8 @@ main.yllapito {
     max-width: 1100px;
 }
 
-main.yllapito p {
+main.yllapito p,
+main.yllapito ul {
     max-width: 800px;
     margin: auto;
 }
@@ -1029,6 +1030,42 @@ time {
 
 .card-header h4 {
     margin-bottom: 0;
+}
+
+.omistaja {
+    color: #335fff !important;
+}
+
+.admin {
+    color: #ff476c !important;
+}
+
+.operator {
+    color: #dc3588 !important;
+}
+
+.moderator,
+.builder {
+    color: #b922a3 !important;
+}
+
+.kuolematon {
+    color: #ff61a8 !important;
+}
+
+h3.minecraft {
+    font-family: 'Minecraftia';
+    text-align: center;
+    font-size: 1.75rem;
+    text-transform: capitalize;
+    font-weight: 400;
+}
+
+.admin-card-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 3em;
 }
 
 @media screen and (max-width: 1000px) {
