@@ -1,5 +1,5 @@
 {
-  "omistajat": [
+  "omistaja": [
     {
       "name": "Jomeee",
       "description": "Toimii yhteisön hyväksi kaikin tavoin. Opettelee piakkoin Javaa ja alkaa ohjelmoimaan plugineita (aamen).",
@@ -19,7 +19,7 @@
       "uuid": "d4ef4bc2db26462c9793389ba56d2818"
     }
   ],
-  "adminit": [
+  "admin": [
     {
       "name": "Susse",
       "description": "Hoitelee nettijuttuja, ja kuka ties mitä.",
@@ -55,7 +55,7 @@
       "uuid": "d347193d8b794a389158074681bc32f8"
     }
   ],
-  "operaattorit": [
+  "operator": [
     {
       "name": "RetuPoika",
       "description": "\"Oispa kahvia.\"",
@@ -81,8 +81,8 @@
       "uuid": "5db3cb0e4ae847dc91594cc10079190d"
     }
   ],
-  "moderaattorit": [],
-  "rakentajat": [
+  "moderator": [],
+  "builder": [
     {
       "name": "PreGauris",
       "description": "\"Kuvaus? No jos sitten kun en tee lohisalaattia.\"",
@@ -117,7 +117,7 @@
     },
     {
       "name": "Oonakuni",
-      "description": "\"joo, äööh äööh wäwäw ok (niin että mitä että) käykö :3\"",
+      "description": "\"olen kanalintu, pot pot\"",
       "strengths": [
         "Rakentaminen"
       ],

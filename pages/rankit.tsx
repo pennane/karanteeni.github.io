@@ -1,24 +1,26 @@
 import Heading from '../components/layout/heading'
 import Layout from '../components/layout/layout'
 import ReactTooltip from 'react-tooltip'
+import kuolemattomat from '../data/kuolemattomat.json'
 
 import { faInfoCircle } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import AdminCard from '../components/admincard'
 
-const Rank = (props) => {
+const Rank = ({ color, name, time, children }) => {
     return (
         <div className="rank card">
-            <div className={'rank-card-body ' + props.color}>
+            <div className={'rank-card-body ' + color}>
                 <h2 className={'card-title'}>
-                    <span className={props.bgColor + ' rank-name-text'}>{props.name}</span> <span className="time">({props.time})</span>
+                    <span className={'rank-name-text'}>{name}</span> <span className="time">({time})</span>
                 </h2>
-                {props.children}
+                {children}
             </div>
         </div>
     )
 }
 
-const Body = ({ children }) => {
+const CommandTable = ({ children }) => {
     return (
         <table className="table table-striped table-dark">
             <tbody>{children}</tbody>
@@ -30,40 +32,40 @@ const CommandRow = (props) => {
     return <tr>{props.children}</tr>
 }
 
-const Command = (props) => {
-    const info = props.info
-
-    if (info) {
-        return (
-            <td>
-                {props.command}{' '}
-                <span className="rank-tooltip" data-tip={props.title} data-toggle="tooltip" data-placement="right" title={props.title}>
-                    <FontAwesomeIcon className="icon" icon={faInfoCircle} />
-                </span>
-                <ReactTooltip />
-            </td>
-        )
-    }
-    return <td>{props.command}</td>
-}
-
-const SetHome = (props) => {
-    return <Command info title={props.count + ' kpl'} command="/sethome" />
-}
-
-const Others = (props) => {
+const Command = ({ info, command, title }: { info?: boolean; command?: string; title?: string }) => {
     return (
-        <p>
-            {props.text} &nbsp;
-            {props.tip && (
+        <td>
+            {command}
+            {info && (
                 <>
-                    <span data-tip={props.tip} data-toggle="tooltip" data-placement="right" title={props.tip}>
+                    {' '}
+                    <span className="rank-tooltip" data-tip={title} data-toggle="tooltip" data-placement="right" title={title}>
                         <FontAwesomeIcon className="icon" icon={faInfoCircle} />
                     </span>
                     <ReactTooltip />
                 </>
             )}
-        </p>
+        </td>
+    )
+}
+
+const SetHome = ({ count }) => {
+    return <Command info title={count + ' kpl'} command="/sethome" />
+}
+
+const Others = ({ text, tip }: { text: string; tip?: string }) => {
+    return (
+        <div>
+            {text} &nbsp;
+            {tip && (
+                <>
+                    <span data-tip={tip} data-toggle="tooltip" data-placement="right" title={tip}>
+                        <FontAwesomeIcon className="icon" icon={faInfoCircle} />
+                    </span>
+                    <ReactTooltip />
+                </>
+            )}
+        </div>
     )
 }
 
@@ -71,12 +73,12 @@ const ElotonRaihnas = (props) => {
     return (
         <div className="rank-grid">
             <Rank name="Eloton" time="0h" color="c-eloton ">
-                <Body>
+                <CommandTable>
                     <CommandRow>
                         <SetHome count="1" />
-                        <Command info={false} />
+                        <Command />
                     </CommandRow>
-                </Body>
+                </CommandTable>
                 <div className="rank-others">
                     <h3>Muuta:</h3>
                     <p>
@@ -85,29 +87,29 @@ const ElotonRaihnas = (props) => {
                 </div>
             </Rank>
             <Rank name="Raihnas" time="5h" color="c-raihnas ">
-                <Body>
+                <CommandTable>
                     <CommandRow>
                         <SetHome count="2" />
-                        <Command info={false} command="/workbench" />
+                        <Command command="/workbench" />
                     </CommandRow>
                     <CommandRow>
-                        <Command info={false} command="/hat" />
-                        <Command info={false} command="/calculate" />
+                        <Command command="/hat" />
+                        <Command command="/calculate" />
                     </CommandRow>
-                </Body>
+                </CommandTable>
             </Rank>
         </div>
     )
 }
 
-const SisukasParantuva = (props) => {
+const SisukasParantuva = () => {
     return (
         <div className="rank-grid">
             <Rank name="Sisukas" time="1d" color="c-sisukas ">
-                <Body>
+                <CommandTable>
                     <CommandRow>
                         <SetHome count="6" />
-                        <Command info={false} command="/near" />
+                        <Command command="/near" />
                     </CommandRow>
                     <CommandRow>
                         <Command
@@ -118,10 +120,10 @@ const SisukasParantuva = (props) => {
                         <Command info title="Suunnittele oma taikamattosi!" command="/mc design" />
                     </CommandRow>
                     <CommandRow>
-                        <Command info={false} command="/enderchest" />
-                        <Command info={false} />
+                        <Command command="/enderchest" />
+                        <Command />
                     </CommandRow>
-                </Body>
+                </CommandTable>
                 <div className="rank-others">
                     <h3>Muuta:</h3>
                     <p>
@@ -131,10 +133,10 @@ const SisukasParantuva = (props) => {
                 </div>
             </Rank>
             <Rank name="Parantuva" time="5d" color="c-parantuva ">
-                <Body>
+                <CommandTable>
                     <CommandRow>
                         <SetHome count="8" />
-                        <Command info={false} command="/feed" />
+                        <Command command="/feed" />
                     </CommandRow>
                     <CommandRow>
                         <Command
@@ -144,7 +146,7 @@ const SisukasParantuva = (props) => {
                         />
                         <Command info title="Voit teleportata koordinaatteihin." command="/tp <x> <y> <z>" />
                     </CommandRow>
-                </Body>
+                </CommandTable>
                 <div className="rank-others">
                     <h3>Muuta:</h3>
                     <Others text="Neljä uutta väriä taikamattoon (mc)" tip="Valkoinen, harmaa, vaalean harmaa ja sininen" />
@@ -155,36 +157,36 @@ const SisukasParantuva = (props) => {
     )
 }
 
-const ImmuuniParantaja = (props) => {
+const ImmuuniParantaja = () => {
     return (
         <div className="rank-grid">
             <Rank name="Immuuni" time="10d" color="c-immuuni ">
-                <Body>
+                <CommandTable>
                     <CommandRow>
                         <SetHome count="12" />
                         <Command info title="Estää pelaajien teleporttipyynnöt ja teleporttaukset" command="/tptoggle" />
                     </CommandRow>
                     <CommandRow>
-                        <Command info={false} command="/fly" />
+                        <Command command="/fly" />
                         <Command info title="Nimeää kädessäsi olevan esineen!" command="/nimeä" />
                     </CommandRow>
                     <CommandRow>
                         <Command info title="Vaihtaa spawnerin tyyppiä. Ota spawner käteen kun suoritat komentoa." command="/spawner" />
-                        <Command info={false} command="/tp <pelaaja>" />
+                        <Command command="/tp <pelaaja>" />
                     </CommandRow>
-                </Body>
+                </CommandTable>
                 <div className="rank-others">
                     <h3>Muuta:</h3>
                     <Others text="Kaksi uutta väriä taikamattoon (mc)" tip="Keltainen ja ruskea" />
                 </div>
             </Rank>
             <Rank name="Parantaja" time="30d" color="c-parantaja ">
-                <Body>
+                <CommandTable>
                     <CommandRow>
                         <SetHome count="16" />
-                        <Command info={false} />
+                        <Command />
                     </CommandRow>
-                </Body>
+                </CommandTable>
                 <div className="rank-others">
                     <h3>Muuta:</h3>
                     <Others
@@ -198,16 +200,16 @@ const ImmuuniParantaja = (props) => {
     )
 }
 
-const NekroKuolematon = (props) => {
+const NekroKuolematon = () => {
     return (
         <div className="rank-grid">
             <Rank name="Nekromantikko" time="60d" color="c-nekromantikko ">
-                <Body>
+                <CommandTable>
                     <CommandRow>
                         <SetHome count="18" />
                         <Command info title="Kyky tarkastella blockeja" command="/co i" />
                     </CommandRow>
-                </Body>
+                </CommandTable>
                 <div className="rank-others">
                     <h3>Muuta:</h3>
                     <Others text="Kyky asettaa täys RGB värillinen nick." tip="Syntaksilla &amp;#rrggbb" />
@@ -217,12 +219,12 @@ const NekroKuolematon = (props) => {
                 </div>
             </Rank>
             <Rank name="Kuolematon" time="100d" color="c-kuolematon ">
-                <Body>
+                <CommandTable>
                     <CommandRow>
                         <SetHome count="18" />
-                        <Command info={false} />
+                        <Command />
                     </CommandRow>
-                </Body>
+                </CommandTable>
                 <div className="rank-others">
                     <h3>Muuta:</h3>
                     <Others text="Kuusi uutta väriä taikamattoon (mc)" tip="Pinkki, syaani, purppura, oranssi, vihreä ja vaalean sininen" />
@@ -233,7 +235,7 @@ const NekroKuolematon = (props) => {
     )
 }
 
-const RankTables = (props) => {
+const RankTables = () => {
     return (
         <div>
             <ElotonRaihnas />
@@ -263,6 +265,16 @@ const Rankit = () => {
                 ylläpidolta!
             </p>
             <RankTables />
+            {/* {kuolemattomat && (
+                <div className="rank">
+                    <h3 className="tag kuolematon minecraft">Kuolemattomat</h3>
+                    <div className="admin-card-wrapper">
+                        {kuolemattomat.map((player, i) => (
+                            <AdminCard {...player} rank={'kuolematon'} key={i} />
+                        ))}
+                    </div>
+                </div>
+            )} */}
         </Layout>
     )
 }
