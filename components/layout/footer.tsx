@@ -1,7 +1,7 @@
 import { faGithub } from '@fortawesome/free-brands-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
-const Footer = () => {
+const Footer = ({ home }: { home?: boolean }) => {
     const year = new Date().getFullYear()
     return (
         <footer>
@@ -65,10 +65,13 @@ const Footer = () => {
             </div>
             <div className="footer-end">
                 <div>
-                    <p>
-                        <small>&copy; Karanteeni {year}</small>
-                    </p>
+                    <p>&copy; Karanteeni {year}</p>
                 </div>
+                {home && (
+                    <div>
+                        <p>Kiitos taustakuvasta juhkulariteetille!</p>
+                    </div>
+                )}
                 <div>
                     <a href="https://github.com/Karanteeni/karanteeni.github.io" rel="noreferrer noopener" target="_bank" title="github">
                         Github

@@ -39,7 +39,7 @@ export default function Layout({
                 <main className={`${home ? 'home ' : ''}${className ? className + ' ' : ''}`}>{children}</main>{' '}
             </div>
 
-            <Footer />
+            <Footer home={home} />
         </div>
     )
 }

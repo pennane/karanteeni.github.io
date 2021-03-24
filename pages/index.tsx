@@ -3,7 +3,6 @@ import React from 'react'
 import Link from 'next/link'
 import { GetStaticProps } from 'next'
 
-import utilStyles from '../styles/utils.module.css'
 import { getPostData, getSortedPostsData } from '../lib/posts'
 
 import Date from '../components/date'
@@ -34,7 +33,7 @@ export default function Home({ visiblePost, olderPosts, serverStatus }) {
                         <h3>Vanhempia julkaisuja</h3>
                         <ul className="posts">
                             {olderPosts.map(({ id, date, title }) => (
-                                <li className={utilStyles.listItem} key={id}>
+                                <li className="list-item" key={id}>
                                     <Link href={`/julkaisut/${id}`}>
                                         <a>{title}</a>
                                     </Link>

@@ -1,7 +1,6 @@
 import { GetStaticProps } from 'next'
 import React from 'react'
 import { getSortedPostsData } from '../lib/posts'
-import utilStyles from '../styles/utils.module.css'
 
 import Layout from '../components/layout/layout'
 import Date from '../components/date'
@@ -14,7 +13,7 @@ const Julkaisut = ({ allPostsData }) => {
             <Heading heading="Julkaisut" />
             <ul>
                 {allPostsData.map(({ id, date, title }) => (
-                    <li className={utilStyles.listItem} key={id}>
+                    <li className="list-item" key={id}>
                         <Link href={`/julkaisut/${id}`}>
                             <a>{title}</a>
                         </Link>

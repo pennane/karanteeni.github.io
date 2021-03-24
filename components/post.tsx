@@ -1,4 +1,3 @@
-import utilStyles from '../styles/utils.module.css'
 import Date from './date'
 
 export default function Post({
@@ -12,7 +11,7 @@ export default function Post({
 }) {
     return (
         <article>
-            <h2 className={utilStyles.headingXl}>{postData.title}</h2>
+            <h2 className="post-title">{postData.title}</h2>
             <div className="secondary-color">
                 <Date dateString={postData.date} />
             </div>
