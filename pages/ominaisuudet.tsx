@@ -1,3 +1,4 @@
+import Link from 'next/link'
 import React from 'react'
 import Heading from '../components/layout/heading'
 import Layout from '../components/layout/layout'
@@ -41,7 +42,7 @@ const Ominaisuudet = () => {
                     <code>/mc design</code>.
                 </p>
                 <p>
-                    Rankit avaavat maton muokkaukseen lisää blockkeja. Katso aukeavat blockit <a href="rankit">rankit sivulta</a>.
+                    Rankit avaavat maton muokkaukseen lisää blockkeja. Katso aukeavat blockit <Link href="rankit">rankit sivulta</Link>.
                 </p>
             </Feature>
 
@@ -52,8 +53,8 @@ const Ominaisuudet = () => {
             <Feature title="Rakentajan taikasauva">
                 <Video source="/feature/builderswand.mp4" />
                 <p>
-                    Sisukas rankista ylöspäin pelaajat voivat craftata <a href="/recipes#builderswand">Builders Wandin</a>. Tämä työkalu
-                    edesauttaa suurien rakennusten rakennuksessa!
+                    Sisukas rankista ylöspäin pelaajat voivat craftata <Link href="/recipes#builderswand">Builders Wandin</Link>. Tämä
+                    työkalu edesauttaa suurien rakennusten rakennuksessa!
                 </p>
                 <p>
                     Taikasauva toimii kun laitat sen pelaajan vasempaan käteen, ja rakennuspalikat oikeaan, tai päinvastoin, jos hahmosi on
@@ -130,7 +131,7 @@ const Ominaisuudet = () => {
                     myös hankalampi spawnata uudelleen.
                 </p>
                 <p>
-                    End crystalleilla on Karanteenissa vaikeampi craftrecipe. Sen näet <a href="recipes#endcrystal">täältä</a>
+                    End crystalleilla on Karanteenissa vaikeampi craftrecipe. Sen näet <Link href="recipes#endcrystal">täältä</Link>
                 </p>
             </Feature>
 
@@ -183,7 +184,7 @@ const Ominaisuudet = () => {
             <Feature title="Yleiset komennot" id="komennot">
                 <p>Survivalissa toimii isoläjä komentoja jotka ovat pelaajilla auki Eloton rankista asti!</p>
                 <p>
-                    Rankkikohtaiset komennot ja ominaisuudet löytyvät <a href="rankit">täältä</a>.
+                    Rankkikohtaiset komennot ja ominaisuudet löytyvät <Link href="rankit">täältä</Link>.
                 </p>
                 <ul className="wrappedlist">
                     <li>

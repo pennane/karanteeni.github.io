@@ -37,8 +37,8 @@
 .modal-content {
     color: #595959;
     padding: 1rem;
-    max-height: 60vh;
-    overflow-y: scroll;
+    max-height: 62vh;
+    overflow-y: auto;
 }
 
 .modal-header {

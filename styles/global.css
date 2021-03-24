@@ -293,6 +293,10 @@ footer {
     padding: 0;
 }
 
+.footer-links ul > li {
+    margin-bottom: 3px;
+}
+
 .footer-end {
     display: flex;
     justify-content: space-evenly;
@@ -327,7 +331,7 @@ footer {
     padding: 1rem;
     grid-gap: 1rem;
     gap: 1rem;
-    padding-bottom: 3rem;
+    padding: 4.5em 0;
     background: url(../public/images/kansi.jpg) 45% 70%;
 }
 
@@ -336,10 +340,6 @@ footer {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-}
-
-.home-hero-main {
-    margin-top: 3rem;
 }
 
 .home-hero-main h1 {
@@ -1193,5 +1193,15 @@ h3.minecraft {
     }
     #rankit .row > div:nth-of-type(odd) {
         margin-left: 0.5em;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    main {
+        padding: 1em;
+    }
+
+    .home-grid {
+        padding: 0.5rem;
     }
 }

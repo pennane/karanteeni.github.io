@@ -6,6 +6,7 @@ import kuolemattomat from '../data/kuolemattomat.json'
 import { faInfoCircle } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import AdminCard from '../components/admincard'
+import Link from 'next/link'
 
 const Rank = ({ color, name, time, children }) => {
     return (
@@ -82,7 +83,7 @@ const ElotonRaihnas = (props) => {
                 <div className="rank-others">
                     <h3>Muuta:</h3>
                     <p>
-                        Kaikilla pelaajilla olevat komennot ja toiminnot löytyvät <a href="ominaisuudet">ominaisuudet</a> sivulta.
+                        Kaikilla pelaajilla olevat komennot ja toiminnot löytyvät <Link href="ominaisuudet">ominaisuudet</Link> sivulta.
                     </p>
                 </div>
             </Rank>
@@ -127,7 +128,7 @@ const SisukasParantuva = () => {
                 <div className="rank-others">
                     <h3>Muuta:</h3>
                     <p>
-                        Kyky käyttää ja craftata <a href="/recipes#builderswand">Builders Wand</a>.
+                        Kyky käyttää ja craftata <Link href="/recipes#builderswand">Builders Wand</Link>.
                     </p>
                     <Others text="Kaksi uutta väriä taikamattoon (mc)" tip="Vaalean harmaa (oletus) ja läpinäkyvä" />
                 </div>
@@ -258,7 +259,7 @@ const Rankit = () => {
             </p>
             <p className="text-left text-lg-justify">
                 Karanteenissa kaikilla pelaajilla on rankkiominaisuuksien lisäksi käytössään muita komentoja ja toimintoja. Niistä voit
-                lukea <a href="ominaisuudet">täällä</a>.
+                lukea <Link href="/ominaisuudet">täällä</Link>.
             </p>
             <p className="text-left text-lg-justify">
                 Alla nähtävissä kunkin rankin peliaikavaatimus sekä avautuvat oikeudet. Jos joku komento askarruttaa, niin kysy rohkeasti

@@ -1,5 +1,7 @@
 import { faGithub } from '@fortawesome/free-brands-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import Link from 'next/link'
+import React from 'react'
 
 const Footer = ({ home }: { home?: boolean }) => {
     const year = new Date().getFullYear()
@@ -10,17 +12,17 @@ const Footer = ({ home }: { home?: boolean }) => {
                     <h4>Yhteisö</h4>
                     <ul>
                         <li>
-                            <a href="https://discord.gg/fZqqysM" target="_blank">
+                            <a href="https://discord.gg/fZqqysM" target="_blank" rel="noreferrer">
                                 Discord
                             </a>
                         </li>
                         <li>
-                            <a href="https://twitter.com/Karanteeni" target="_blank">
+                            <a href="https://twitter.com/Karanteeni" target="_blank" rel="noreferrer">
                                 Twitter
                             </a>
                         </li>
                         <li>
-                            <a href="https://www.youtube.com/c/Karanteeni" target="_blank">
+                            <a href="https://www.youtube.com/c/Karanteeni" target="_blank" rel="noreferrer">
                                 YouTube
                             </a>
                         </li>
@@ -30,37 +32,24 @@ const Footer = ({ home }: { home?: boolean }) => {
                     <h4>Pikalinkit</h4>
                     <ul>
                         <li>
-                            -{' '}
-                            <a href="/ukk" rel="noopener noreferrer">
-                                Usein kysytyt kysymykset
-                            </a>
+                            - <Link href="/ukk">Usein kysytyt kysymykset</Link>
                         </li>
                         <li>
-                            -{' '}
-                            <a href="/hoks" rel="noopener noreferrer">
-                                Hyvä tietää
-                            </a>
+                            - <Link href="/hoks">Hyvä tietää</Link>
                         </li>
                         <li>
-                            -{' '}
-                            <a href="/yllapito" rel="noopener noreferrer">
-                                Ylläpito
-                            </a>
+                            - <Link href="/yllapito">Ylläpito</Link>
                         </li>
                         <li>
-                            -{' '}
+                            {'- '}
                             <a href="http://map.karanteeni.net/" target="_blank" rel="noopener noreferrer">
                                 Dynmap
                             </a>
                         </li>
                         <li>
-                            -{' '}
-                            <a href="/unban" target="_blank" rel="noopener noreferrer">
-                                Unban-hakemus
-                            </a>
+                            - <Link href="/unban">Unban-hakemus</Link>
                         </li>
                     </ul>
-                    <div id="switcher"></div>
                 </div>
             </div>
             <div className="footer-end">
