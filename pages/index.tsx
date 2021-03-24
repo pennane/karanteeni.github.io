@@ -11,13 +11,13 @@ import ServerStatus from '../components/home/serverstatus'
 import VoteButtons from '../components/home/votebuttons'
 import Post from '../components/post'
 
-export default function Home({ visiblePost, olderPosts, serverStatus }) {
+export default function Home({ visiblePost, olderPosts }) {
     return (
         <Layout home description="Karanteeni on suomalainen minecraft palvelin.">
             <div className="home-grid">
                 <div>
                     <section>
-                        <ServerStatus status={serverStatus} />
+                        <ServerStatus />
                     </section>
                     <section>
                         <VoteButtons />
@@ -58,14 +58,10 @@ export const getStaticProps: GetStaticProps = async () => {
     const visiblePost = await getPostData(allPostsData[0].id)
     const olderPosts = allPostsData.slice(1, 6)
 
-    const res = await fetch(`https://api.mcsrvstat.us/2/95.217.120.173`)
-    const data = await res.json()
-
     return {
         props: {
             visiblePost,
-            olderPosts,
-            serverStatus: data
+            olderPosts
         }
     }
 }
