@@ -7,8 +7,6 @@ import Date from '../../components/date'
 import { GetStaticPaths, GetStaticProps } from 'next'
 import { getAllPostIds, getPostData, getSortedPostsData } from '../../lib/posts'
 
-import utilStyles from '../../styles/utils.module.css'
-
 export default function SeparatedPost({
     postData,
     otherPosts
@@ -29,7 +27,7 @@ export default function SeparatedPost({
                     {/* <ServerEvents events={serverEvents} /> */}
                     <h3>Uusimmat julkaisut</h3>
                     {otherPosts.map(({ id, date, title }) => (
-                        <li className={utilStyles.listItem} key={id}>
+                        <li className="list-item" key={id}>
                             <Link href={`/julkaisut/${id}`}>
                                 <a>{title}</a>
                             </Link>
