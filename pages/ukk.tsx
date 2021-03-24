@@ -1,3 +1,4 @@
+import Link from 'next/link'
 import Heading from '../components/layout/heading'
 import Layout from '../components/layout/layout'
 
@@ -19,7 +20,7 @@ const CommonQuestions = (props) => {
                     Tahtoisin ylläpitäjäksi. Kuinka voin saavuttaa sen?
                 </Question>
                 <Answer id="yle2" target="ylecol2">
-                    Käy lukemassa ohjeet <a href="/yphaku">täältä</a> ja lähetä hakemus käyttäen annettua lomaketta.
+                    Käy lukemassa ohjeet <Link href="/yphaku">täältä</Link> ja lähetä hakemus käyttäen annettua lomaketta.
                 </Answer>
             </Card>
 
@@ -38,7 +39,7 @@ const CommonQuestions = (props) => {
                     Kuinka pääsen korkeammalle tasolle?
                 </Question>
                 <Answer id="yle4" target="ylecol4">
-                    Pelaamalla. Rankeista löydät lisätietoa <a href="/rankit">täältä</a>.
+                    Pelaamalla. Rankeista löydät lisätietoa <Link href="/rankit">täältä</Link>.
                 </Answer>
             </Card>
 
@@ -93,11 +94,7 @@ const CommonQuestions = (props) => {
                 </Question>
                 <Answer id="yle9" target="ylecol9">
                     Koska Karanteenissa ei ole käytössä vippejä, vaan kaikki perustuu peliaikaan, voit tehdä vapaamuotoisen lahjoituksen mm.
-                    PayPalilla. Tarkemmat ohjeet löydät{' '}
-                    <a href="/lahjoitus" target="blank">
-                        täältä
-                    </a>
-                    .
+                    PayPalilla. Tarkemmat ohjeet löydät <Link href="/lahjoitus">täältä</Link>.
                 </Answer>
             </Card>
 
@@ -106,8 +103,11 @@ const CommonQuestions = (props) => {
                     Mitä teen jos tarvitsen ylläpidon apua, mutta he eivät ole juuri nyt paikalla?
                 </Question>
                 <Answer id="yle10" target="ylecol10">
-                    Voit liittyä Karanteenin <a href="https://discord.gg/dxCtuY7">Discord</a> -palvelimelle ja pyytää apua luomalla tiketin
-                    #apua kanavalta.
+                    Voit liittyä Karanteenin{' '}
+                    <a href="https://discord.gg/dxCtuY7" target="_blank" rel="noreferrer">
+                        Discord
+                    </a>{' '}
+                    -palvelimelle ja pyytää apua luomalla tiketin #apua kanavalta.
                 </Answer>
             </Card>
         </>

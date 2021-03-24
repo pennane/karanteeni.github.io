@@ -1,3 +1,4 @@
+import Link from 'next/link'
 import React from 'react'
 import Heading from '../components/layout/heading'
 import Layout from '../components/layout/layout'
@@ -19,14 +20,14 @@ const Hoks = () => {
             </p>
             <p>
                 Palvelimen toimintaidea on se, että mitä pidempään pelaat serverillä, sitä parempia ominaisuuksia saat käyttöösi. Peliajalla
-                kerättävistä ominaisuuksista voi lukea lisää <a href="/rankit">täällä</a>.
+                kerättävistä ominaisuuksista voi lukea lisää <Link href="/rankit">täällä</Link>.
             </p>
             <p>
-                Muita Karanteenille ominaisia ominaisuuksia voit ihmetellä <a href="ominaisuudet">ominaisuudet</a> sivulla.
+                Muita Karanteenille ominaisia ominaisuuksia voit ihmetellä <Link href="ominaisuudet">ominaisuudet</Link> sivulla.
             </p>
             <p>
                 Palvelin on täysin omakustanteinen. Halutessasi voit kuitenkin tukea toimintaa lahjoittamalla. Lahjoittajat kuitenkin saavat
-                itselleen pieniä kivoja ominaisuuksia. Lahjoittamisesta voi lukea lisää <a href="/lahjoitus">täällä</a>.
+                itselleen pieniä kivoja ominaisuuksia. Lahjoittamisesta voi lukea lisää <Link href="/lahjoitus">täällä</Link>.
             </p>
 
             <h3>Pointteja joilla parantaa pelikokemusta!</h3>

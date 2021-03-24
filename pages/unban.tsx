@@ -28,8 +28,11 @@ const Unban = () => {
 
             <h4>Lähetä hakemus</h4>
             <p>
-                Pääset kirjoittamaan unbanhakemuksen <a href="https://forms.gle/3Mpcbxx1Axxxh1R6A">täällä</a>. Hakemuksesi käsitellään
-                mahdollisimman pian.
+                Pääset kirjoittamaan unbanhakemuksen{' '}
+                <a href="https://forms.gle/3Mpcbxx1Axxxh1R6A" target="_blank" rel="noreferrer">
+                    täällä
+                </a>
+                . Hakemuksesi käsitellään mahdollisimman pian.
             </p>
         </Layout>
     )

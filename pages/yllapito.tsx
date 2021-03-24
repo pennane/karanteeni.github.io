@@ -1,3 +1,4 @@
+import Link from 'next/link'
 import React from 'react'
 import AdminCard from '../components/admincard'
 import Heading from '../components/layout/heading'
@@ -62,10 +63,7 @@ const Yllapito = () => {
                     <li>
                         <p>
                             <span className="tag moderator">Rakentaja</span>, meidän visuaalisten ja luovien ihmisten arvo, johon voi päästä{' '}
-                            <a href="yphaku" target="_blank">
-                                hakemalla
-                            </a>
-                            ! Heidän tehtävä on rakentaa palvelimen
+                            <Link href="/yphaku">hakemalla</Link>! Heidän tehtävä on rakentaa palvelimen
                             <span data-toggle="tooltip" data-placement="top" title="Spawnit, hubit, erilaiset huoneet">
                                 <b> päärakennukset</b>
                             </span>
@@ -76,12 +74,9 @@ const Yllapito = () => {
                     </li>
                     <li>
                         <p>
-                            <span className="tag builder">Moderator</span> on arvo, johon pääset' '
-                            <a href="yphaku" target="_blank">
-                                hakemalla
-                            </a>
-                            . Heidän tehtävänä on pitää chat siistinä, suojata alueita, tarkistaa grieffit ja viedä ne eteenpäin, sekä
-                            purkaa nahisteluita pelaajien välillä.
+                            <span className="tag builder">Moderator</span> on arvo, johon pääset' '<Link href="/yphaku">hakemalla</Link>.
+                            Heidän tehtävänä on pitää chat siistinä, suojata alueita, tarkistaa grieffit ja viedä ne eteenpäin, sekä purkaa
+                            nahisteluita pelaajien välillä.
                         </p>
                     </li>
                     <li>

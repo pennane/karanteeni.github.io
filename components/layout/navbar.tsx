@@ -13,7 +13,8 @@ import {
     faScroll,
     faGift,
     faFileAlt,
-    faHome
+    faHome,
+    faUserShield
 } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
@@ -139,7 +140,7 @@ const Navbar = () => {
                 icon={faUsers}
                 itemIndex={2}
             >
-                <DropDownItem icon={faFileAlt} url="/yllapito" title="Ylläpito" />
+                <DropDownItem icon={faUserShield} url="/yllapito" title="Ylläpito" />
                 <DropDownItem icon={faFileAlt} url="/yphaku" title="Hae ylläpitoon!" />
             </DropDownCollapseMenu>
 

@@ -12,6 +12,12 @@ interface Donator {
     heart: string
 }
 
+// Forces zeroes before single number date parts
+const formatDate = (d: string): string => {
+    let dateParts = d.split('.')
+    return dateParts.map((part) => part.padStart(2, '0')).join('.')
+}
+
 export default function Lahjoitus() {
     return (
         <Layout
@@ -26,7 +32,9 @@ export default function Lahjoitus() {
                 <p>
                     Jos haluaisit lahjoittaa, voit lahjoittaa sen suoraan{' '}
                     <b>
-                        <a href="https://www.paypal.me/karanteeni">Karanteenin PayPaliin</a>
+                        <a href="https://www.paypal.me/karanteeni" target="_blank" rel="noreferrer">
+                            Karanteenin PayPaliin
+                        </a>
                     </b>{' '}
                     tai ota yhteyttä Discordissa Jome#7320, niin katsotaan kuinka voit lahjoituksen tehdä. Parhaat tavat ovat Paysafecard ja
                     PayPal. (<b>HUOM!</b> Lahjoittaessasi muista kertoa discord/minecraft nimesi)
@@ -57,7 +65,7 @@ export default function Lahjoitus() {
                             {donators &&
                                 donators.map((donator: Donator, i) => (
                                     <tr key={i}>
-                                        <th>{donator.date}</th>
+                                        <th>{formatDate(donator.date)}</th>
                                         <td>{donator.name}</td>
                                         <td>{donator.amount}</td>
                                         <td>{donator.heart}</td>

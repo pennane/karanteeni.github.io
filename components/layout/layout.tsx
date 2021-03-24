@@ -22,16 +22,22 @@ export default function Layout({
     return (
         <div>
             <Head>
+                <meta name="theme-color" content="#ffdd00" />
+                <meta name="apple-mobile-web-app-status-bar" content="#ffdd00" />
+                <meta name="og:title" content={title ? `${title} | ${siteTitle}` : siteTitle} />
+
+                <link rel="manifest" href="/manifest.json" />
                 <link rel="icon" href="/favicon.ico" />
+                <link rel="apple-touch-icon" href="/icons/apple-touch-icon.png" />
+
+                <title>{title ? `${title} | ${siteTitle}` : siteTitle}</title>
+
                 {description && (
                     <>
                         <meta name="og:description" content={description} />
                         <meta name="description" content={description} />
                     </>
                 )}
-
-                <title>{title ? `${title} | ${siteTitle}` : siteTitle}</title>
-                <meta name="og:title" content={title ? `${title} | ${siteTitle}` : siteTitle} />
             </Head>
             {home && <HomeHero />}
             <Navbar />

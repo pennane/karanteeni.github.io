@@ -1,3 +1,4 @@
+import Link from 'next/link'
 import React, { useState } from 'react'
 import Heading from '../components/layout/heading'
 import Layout from '../components/layout/layout'
@@ -76,7 +77,7 @@ const Changelog = () => {
 
                 <Changelist date="8.1.2021">
                     <Change>
-                        Uusi <a href="/ominaisuudet">ominaisuudet</a> sivu
+                        Uusi <Link href="/ominaisuudet">ominaisuudet</Link> sivu
                     </Change>
                 </Changelist>
 

@@ -1,3 +1,4 @@
+import Link from 'next/link'
 import Heading from '../components/layout/heading'
 import Layout from '../components/layout/layout'
 
@@ -64,11 +65,8 @@ const Yphaku = () => {
                 Viimeisen osion on tarkoitus olla tekstiboksi, johon kerrot <b>itsestäsi.</b>
             </p>
             <p>
-                Mikäli osoitat meille olevasi arvon ja{' '}
-                <a href="yllapito" target="_blank">
-                    ylläpitokortin
-                </a>{' '}
-                arvoinen, olet todennäköisesti tervetullut joukkoomme, <b>jossa pääset kantamaan vastuuta. </b>
+                Mikäli osoitat meille olevasi arvon ja <Link href="yllapito">ylläpitokortin</Link> arvoinen, olet todennäköisesti
+                tervetullut joukkoomme, <b>jossa pääset kantamaan vastuuta. </b>
                 Ylläpidossa on rento meininki, eikä kaikkea tarvitse ottaa vakavasti, vaikka kuria pitää ollakin. Nauraa saa, itkeäkin
                 korkeintaan silloin kun servu kaatuu. :D
             </p>
@@ -86,7 +84,7 @@ const Yphaku = () => {
             <h2>Lopputeksti</h2>
             <p>
                 Mikäli koet olevasi sopiva henkilö, voit aloittaa hakemisen{' '}
-                <a target="_blank" href="https://forms.gle/rd5JLv7Gvx7HQYT96">
+                <a rel="noreferrer" target="_blank" href="https://forms.gle/rd5JLv7Gvx7HQYT96">
                     tästä
                 </a>
                 . Kiitämme etukäteen kaikista lähetetyistä hakemuksista ja toivotamme onnea matkaan. :)
