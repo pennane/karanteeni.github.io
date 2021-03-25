@@ -21,8 +21,8 @@ const AdminCard = ({
     rank: string
     uuid: string
     name: string
-    description: string
-    strengths: string[]
+    description?: string
+    strengths?: string[]
 }) => {
     console.log(rank)
     return (
@@ -37,14 +37,10 @@ const AdminCard = ({
                     <div className={`${style['type']} ${style[rank]}`}>{rank}</div>
                     <div className={`${style['name']} ${style[rank]}`}>{name}</div>
                     <div className={`${style['strength']} ${style[rank]}`}>
-                        {strengths.map((strength, i) => (
-                            <AdminStrength key={i}>{strength}</AdminStrength>
-                        ))}
+                        {strengths && strengths.map((strength, i) => <AdminStrength key={i}>{strength}</AdminStrength>)}
                     </div>
                 </div>
-                <div className={`${style['footer']}`}>
-                    <p>{description}</p>
-                </div>
+                <div className={`${style['footer']}`}>{description && <p>{description}</p>}</div>
             </div>
         </div>
     )

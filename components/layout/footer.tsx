@@ -56,13 +56,18 @@ const Footer = ({ home }: { home?: boolean }) => {
                 <div>
                     <p>&copy; Karanteeni {year}</p>
                 </div>
-                {home && (
+                {false && (
                     <div>
                         <p>Kiitos taustakuvasta juhkulariteetille!</p>
                     </div>
                 )}
                 <div>
-                    <a href="https://github.com/Karanteeni/karanteeni.github.io" rel="noreferrer noopener" target="_bank" title="github">
+                    <a
+                        href="https://github.com/Karanteeni/karanteeni.github.io"
+                        rel="noreferrer noopener"
+                        target="_bank"
+                        title="github"
+                    >
                         Github
                         <FontAwesomeIcon className="icon" icon={faGithub} />
                     </a>

@@ -1,27 +1,14 @@
 [
   {
     "name": "Tiiaaw",
-    "description": "testi123",
-    "strengths": [
-      "emmä kyl näille",
-      "vahvuuksia osaa keksiä"
-    ],
     "uuid": "58ef985f9a804391946fd97633938dd0"
   },
   {
     "name": "RetuPoika",
-    "description": "\"Oispa kahvia.\"",
-    "strengths": [
-      "varmaa vois"
-    ],
     "uuid": "02518a1790f740e8940251d8ae348991"
   },
   {
     "name": "jafarin",
-    "description": "Aiemman sukupolven supersotilas.",
-    "strengths": [
-      "olla jopa laittamatta"
-    ],
     "uuid": "0dc20ee9778746ceabecf208098484d7"
   }
 ]
