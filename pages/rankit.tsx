@@ -40,7 +40,13 @@ const Command = ({ info, command, title }: { info?: boolean; command?: string; t
             {info && (
                 <>
                     {' '}
-                    <span className="rank-tooltip" data-tip={title} data-toggle="tooltip" data-placement="right" title={title}>
+                    <span
+                        className="rank-tooltip"
+                        data-tip={title}
+                        data-toggle="tooltip"
+                        data-placement="right"
+                        title={title}
+                    >
                         <FontAwesomeIcon className="icon" icon={faInfoCircle} />
                     </span>
                     <ReactTooltip />
@@ -83,7 +89,8 @@ const ElotonRaihnas = (props) => {
                 <div className="rank-others">
                     <h3>Muuta:</h3>
                     <p>
-                        Kaikilla pelaajilla olevat komennot ja toiminnot löytyvät <Link href="ominaisuudet">ominaisuudet</Link> sivulta.
+                        Kaikilla pelaajilla olevat komennot ja toiminnot löytyvät{' '}
+                        <Link href="ominaisuudet">ominaisuudet</Link> sivulta.
                     </p>
                 </div>
             </Rank>
@@ -150,8 +157,14 @@ const SisukasParantuva = () => {
                 </CommandTable>
                 <div className="rank-others">
                     <h3>Muuta:</h3>
-                    <Others text="Neljä uutta väriä taikamattoon (mc)" tip="Valkoinen, harmaa, vaalean harmaa ja sininen" />
-                    <Others text="Kyky hakata spawnereita ilman Silk Touchia" tip="Tarvitset silti hakun kerätäksesi sen!" />
+                    <Others
+                        text="Neljä uutta väriä taikamattoon (mc)"
+                        tip="Valkoinen, harmaa, vaalean harmaa ja sininen"
+                    />
+                    <Others
+                        text="Kyky hakata spawnereita ilman Silk Touchia"
+                        tip="Tarvitset silti hakun kerätäksesi sen!"
+                    />
                 </div>
             </Rank>
         </div>
@@ -165,14 +178,22 @@ const ImmuuniParantaja = () => {
                 <CommandTable>
                     <CommandRow>
                         <SetHome count="12" />
-                        <Command info title="Estää pelaajien teleporttipyynnöt ja teleporttaukset" command="/tptoggle" />
+                        <Command
+                            info
+                            title="Estää pelaajien teleporttipyynnöt ja teleporttaukset"
+                            command="/tptoggle"
+                        />
                     </CommandRow>
                     <CommandRow>
                         <Command command="/fly" />
                         <Command info title="Nimeää kädessäsi olevan esineen!" command="/nimeä" />
                     </CommandRow>
                     <CommandRow>
-                        <Command info title="Vaihtaa spawnerin tyyppiä. Ota spawner käteen kun suoritat komentoa." command="/spawner" />
+                        <Command
+                            info
+                            title="Vaihtaa spawnerin tyyppiä. Ota spawner käteen kun suoritat komentoa."
+                            command="/spawner"
+                        />
                         <Command command="/tp <pelaaja>" />
                     </CommandRow>
                 </CommandTable>
@@ -213,7 +234,11 @@ const NekroKuolematon = () => {
                 </CommandTable>
                 <div className="rank-others">
                     <h3>Muuta:</h3>
-                    <Others text="Kyky asettaa täys RGB värillinen nick." tip="Syntaksilla &amp;#rrggbb" />
+                    <Others text="Kyky asettaa täys RGB värillinen nick." tip="Syntaksilla &amp;#RRGGBBteksti" />
+                    <Others
+                        text="Kyky nimetä tavaroita /nimeä käyttäen täys RGB värejä"
+                        tip="Syntaksilla &amp;#RRGGBBteksti"
+                    />
                     <Others text="Nekromatikkoja ei voi hiljentää /ignore komennolla." />
                     <Others text="Kaksi uutta väriä taikamattoon (mc)" tip="Magenta ja punainen" />
                     <Others text="Lisäpalikoita taikamattoon (mc)" tip="jääblock" />
@@ -228,7 +253,10 @@ const NekroKuolematon = () => {
                 </CommandTable>
                 <div className="rank-others">
                     <h3>Muuta:</h3>
-                    <Others text="Kuusi uutta väriä taikamattoon (mc)" tip="Pinkki, syaani, purppura, oranssi, vihreä ja vaalean sininen" />
+                    <Others
+                        text="Kuusi uutta väriä taikamattoon (mc)"
+                        tip="Pinkki, syaani, purppura, oranssi, vihreä ja vaalean sininen"
+                    />
                     <Others text="Lisäpalikka taikamattoon" tip="Barrier block" />
                 </div>
             </Rank>
@@ -252,27 +280,45 @@ const Rankit = () => {
         <Layout title="Rankit" description="Karanteenin pelaaja-arvot">
             <Heading heading="Rankit" lead="Tiedot Karanteenin rankeista" />
 
-            <p className="text-left text-lg-justify">
-                Karanteenissa on kahdeksan peliaikaan perustuvaa rankkia, jotka tuovat <b>lisäominaisuuksia</b> ajan kuluessa. Rankki nousee
-                automaattisesti, kun vaadittu peliaika on saavutettu. Peliaika ei keräänny afkatessa. Peliajan näkee komennolla{' '}
-                <code>/peliaika</code>, ja toisten pelaajien <code>/peliaika pelaajan_nimi</code>.
+            <p>
+                Karanteenissa on kahdeksan peliaikaan perustuvaa rankkia, jotka tuovat <b>lisäominaisuuksia</b> ajan
+                kuluessa. Rankki nousee automaattisesti, kun vaadittu peliaika on saavutettu. Peliaika ei keräänny
+                afkatessa. Peliajan näkee komennolla <code>/peliaika</code>, ja toisten pelaajien{' '}
+                <code>/peliaika pelaajan_nimi</code>.
             </p>
-            <p className="text-left text-lg-justify">
-                Karanteenissa kaikilla pelaajilla on rankkiominaisuuksien lisäksi käytössään muita komentoja ja toimintoja. Niistä voit
-                lukea <Link href="/ominaisuudet">täällä</Link>.
+            <p>Peliaikaan perustuvien rakkien lisäksi, Karanteenissa on myös muutama muu eritysrankki.</p>
+            <ul>
+                <li>
+                    Lahjoittaja (kaikille, jotka lahjoittavat vähintään 10€ palvelimelle Ks.{' '}
+                    <Link href="/lahjoitus">lahjoitus sivu</Link>)
+                </li>
+                <li>
+                    Rikkoja (sellaisille pelaajille, jotka auttavat ylläpitoa löytämään palvelimelta sitä hajottavia
+                    asioita)
+                </li>
+            </ul>
+            <p>
+                Karanteenissa kaikilla pelaajilla on rankkiominaisuuksien lisäksi käytössään muita komentoja ja
+                toimintoja. Niistä voit lukea <Link href="/ominaisuudet">täällä</Link>.
             </p>
-            <p className="text-left text-lg-justify">
-                Alla nähtävissä kunkin rankin peliaikavaatimus sekä avautuvat oikeudet. Jos joku komento askarruttaa, niin kysy rohkeasti
-                ylläpidolta!
+            <p>
+                Alla nähtävissä kunkin rankin peliaikavaatimus sekä avautuvat oikeudet. Jos joku komento askarruttaa,
+                niin kysy rohkeasti ylläpidolta!
             </p>
             <RankTables />
             {/* {kuolemattomat && (
-                <div className="rank">
-                    <h3 className="tag kuolematon minecraft">Kuolemattomat</h3>
-                    <div className="admin-card-wrapper">
-                        {kuolemattomat.map((player, i) => (
-                            <AdminCard {...player} rank={'kuolematon'} key={i} />
-                        ))}
+                <div>
+                    <p className="lead">
+                        Viimeisenä kunniamainintana kaikki Karanteenin pelaajat, jotka ovat pelanneet itsensä Kuolematon
+                        rankkiin asti!
+                    </p>
+                    <div className="rank">
+                        <h3 className="tag kuolematon minecraft">Kuolemattomat</h3>
+                        <div className="admin-card-wrapper">
+                            {kuolemattomat.map((player, i) => (
+                                <AdminCard {...player} rank={'kuolematon'} key={i} />
+                            ))}
+                        </div>
                     </div>
                 </div>
             )} */}

@@ -3,16 +3,14 @@ import React, { useState } from 'react'
 import Heading from '../components/layout/heading'
 import Layout from '../components/layout/layout'
 
-const Month = ({ month, showingMonth, updateShowing, label, children }) => {
-    const showing = month === showingMonth
+const Month = ({ month, showId, updateShowing, label, children }) => {
+    const showing = month === showId
     return (
         <div className="card bg-transparent border-gold">
             <div className="card-header" id={month + '_1'}>
                 <h4>
                     <button
                         type="button"
-                        data-toggle="collapse"
-                        data-target={'#' + month}
                         aria-expanded="false"
                         aria-controls={month}
                         onClick={(e) => updateShowing(showing ? 'null' : month)}
@@ -21,7 +19,7 @@ const Month = ({ month, showingMonth, updateShowing, label, children }) => {
                     </button>
                 </h4>
             </div>
-            <div id={month} className={'collapse ' + (showing ? 'show' : '')} aria-labelledby={month + '_1'} data-parent="#muutokset">
+            <div id={month} className={'collapse ' + (showing ? 'show' : '')}>
                 <div className="card-body">{children}</div>
             </div>
         </div>
@@ -42,26 +40,40 @@ const Changelist = ({ date, children }: { date: string; children: React.ReactNod
 }
 
 const Changelog = () => {
-    const [showingMonth, setShowingMonth] = useState('maaliskuu2021')
+    const [showId, setShowId] = useState('maaliskuu2021')
     const updateShowing = (val) => {
-        setShowingMonth(val)
+        setShowId(val)
     }
     return (
         <div>
-            <Month showingMonth={showingMonth} updateShowing={updateShowing} month="maaliskuu2021" label="Maaliskuu 2021">
+            <Month showId={showId} updateShowing={updateShowing} month="maaliskuu2021" label="Maaliskuu 2021">
+                <Changelist date="26.3.2021">
+                    <Change>Päivitetty /clearcache</Change>
+                    <Change>Lisätty erilainen liittymisviesti ensimmäistä kertaa liittyville</Change>
+                    <Change>Päivitetty permiplugari, todennäköisesti ei mitään muutosta mutta menee testinä</Change>
+                    <Change>
+                        Lisätty tuki /nimeä &amp; /setname komennon RGB väreille nekromantikkoon ja siitä ylöspäin
+                    </Change>
+                </Changelist>
+                <Changelist date="25.3.2021">
+                    <Change>
+                        Lisätty uusi rank Rikkoja, jonka voi saada jos löytää servulta sitä hajottavia asioita ja
+                        positiivisella tavalla kertoo/auttaa ylläpitoa korjaamaan sen.
+                    </Change>
+                </Changelist>
                 <Changelist date="22.3.2021">
                     <Change>Päivitetty afk-kickkiä</Change>
                     <Change>Päivitetty palvelinta</Change>
                     <Change>Päivitetty nettisivut React sivuiksi</Change>
                 </Changelist>
             </Month>
-            <Month showingMonth={showingMonth} updateShowing={updateShowing} month="helmikuu2021" label="Helmikuu 2021">
+            <Month showId={showId} updateShowing={updateShowing} month="helmikuu2021" label="Helmikuu 2021">
                 <Changelist date="2.6.2021">
                     <Change>uwu</Change>
                 </Changelist>
             </Month>
 
-            <Month showingMonth={showingMonth} updateShowing={updateShowing} month="tammikuu2021" label="Tammikuu 2021">
+            <Month showId={showId} updateShowing={updateShowing} month="tammikuu2021" label="Tammikuu 2021">
                 <Changelist date="21.1.2021">
                     <Change>Lisätty mail komennot</Change>
                 </Changelist>
@@ -86,7 +98,7 @@ const Changelog = () => {
                 </Changelist>
             </Month>
 
-            <Month showingMonth={showingMonth} updateShowing={updateShowing} month="joulukuu2020" label="Joulukuu 2020">
+            <Month showId={showId} updateShowing={updateShowing} month="joulukuu2020" label="Joulukuu 2020">
                 <Changelist date="31.12.2020">
                     <Change>Lisätty hidden groupit. Mahdollistavat lisärankit muuttamatta pelaajan päärankkia.</Change>
                     <Change>Lisätty lahjoittajille tabiin oranssit [] merkit.</Change>
@@ -101,7 +113,7 @@ const Changelog = () => {
                 </Changelist>
             </Month>
 
-            <Month showingMonth={showingMonth} updateShowing={updateShowing} month="marraskuu2020" label="Marraskuu 2020">
+            <Month showId={showId} updateShowing={updateShowing} month="marraskuu2020" label="Marraskuu 2020">
                 <Changelist date="27.11.2020">
                     <Change>Vähennetty mobien määrää per pelaaja 28 -&gt; 24.</Change>
                 </Changelist>
@@ -126,8 +138,8 @@ const Changelog = () => {
                         Lisätty <code>/iita</code>.
                     </Change>
                     <Change>
-                        <code>/tptoggle</code> toimii oletettavasti. Ylempirankkiset eivät enää yliaja, vaan heitä kohdellaan
-                        tasavertaisesti.
+                        <code>/tptoggle</code> toimii oletettavasti. Ylempirankkiset eivät enää yliaja, vaan heitä
+                        kohdellaan tasavertaisesti.
                     </Change>
                     <Change>Potentiaalinen palvelinvirhe korjattu.</Change>
                 </Changelist>
@@ -158,7 +170,7 @@ const Changelog = () => {
                 </Changelist>
             </Month>
 
-            <Month showingMonth={showingMonth} updateShowing={updateShowing} month="lokakuu2020" label="Lokakuu 2020">
+            <Month showId={showId} updateShowing={updateShowing} month="lokakuu2020" label="Lokakuu 2020">
                 <Changelist date="10.10.2020">
                     <Change>Halloween teemainen tabi.</Change>
                     <Change>Spawn on nyt halloween teemainen.</Change>
@@ -170,13 +182,15 @@ const Changelog = () => {
                 </Changelist>
             </Month>
 
-            <Month showingMonth={showingMonth} updateShowing={updateShowing} month="syyskuu2020" label="Syyskuu 2020">
+            <Month showId={showId} updateShowing={updateShowing} month="syyskuu2020" label="Syyskuu 2020">
                 <Changelist date="19.9.2020">
                     <Change>Päivitetty tabista palvelimen alkukirjain isoksi.</Change>
                 </Changelist>
 
                 <Changelist date="14.9.2020">
-                    <Change>Sisukas-rankkisten (ja alempien) virheellinen viesti-ilmoitus oikeuksista on nyt korjattu.</Change>
+                    <Change>
+                        Sisukas-rankkisten (ja alempien) virheellinen viesti-ilmoitus oikeuksista on nyt korjattu.
+                    </Change>
                     <Change>Paranneltu turvallista teleporttia (onnistuu teleporttaamaan slabien päälle)</Change>
                 </Changelist>
 
@@ -190,13 +204,18 @@ const Changelog = () => {
                 </Changelist>
 
                 <Changelist date="1.9.2020">
-                    <Change>Lisätty oikeus Nekromantikosta ylöspäin + lahjoittajille käyttää RGB-värejä pelinimessä.</Change>
-                    <Change>Korjattu kääntäjässä bugi, joka rikkoi kääntäjän pelaajalla ollessa ei-tuettu kieli tietokannassa.</Change>
+                    <Change>
+                        Lisätty oikeus Nekromantikosta ylöspäin + lahjoittajille käyttää RGB-värejä pelinimessä.
+                    </Change>
+                    <Change>
+                        Korjattu kääntäjässä bugi, joka rikkoi kääntäjän pelaajalla ollessa ei-tuettu kieli
+                        tietokannassa.
+                    </Change>
                     <Change>Lisätty tapa tehdä lätäköitä.</Change>
                 </Changelist>
             </Month>
 
-            <Month showingMonth={showingMonth} updateShowing={updateShowing} month="elokuu2020" label="Elokuu 2020">
+            <Month showId={showId} updateShowing={updateShowing} month="elokuu2020" label="Elokuu 2020">
                 <Changelist date="31.8.2020">
                     <Change>Chat-värit on tullut takaisin rgb tuella.</Change>
                     <Change>Parempi käyttäjien maininta chatissa.</Change>
@@ -211,7 +230,9 @@ const Changelog = () => {
                     <Change>Lisätty ylösalaisin oleva kieli.</Change>
                     <Change>Päivitetty palvelin versioon 1.16.2!</Change>
                     <Change>Nether ja End resetattu.</Change>
-                    <Change>Fixattu bugi, jossa kodin koordinaatti on negatiivinen ja jaollinen 16 =&gt; nakkaa virheen.</Change>
+                    <Change>
+                        Fixattu bugi, jossa kodin koordinaatti on negatiivinen ja jaollinen 16 =&gt; nakkaa virheen.
+                    </Change>
                     <Change>Rankkien välimuisti päivittyy -&gt; jos rankup ja relog, niin rankki pysyy samana.</Change>
                     <Change>Nettisivut päivitetty.</Change>
                     <Change>Uusi tabin gradient.</Change>
@@ -247,7 +268,7 @@ const Changelog = () => {
                 </Changelist>
             </Month>
 
-            <Month showingMonth={showingMonth} updateShowing={updateShowing} month="heinäkuu2020" label="Heinäkuu 2020">
+            <Month showId={showId} updateShowing={updateShowing} month="heinäkuu2020" label="Heinäkuu 2020">
                 <Changelist date="22.7.2020">
                     <Change>
                         Spawnille avattu parkour! <code>/warp parkour</code>
@@ -270,16 +291,20 @@ const Changelog = () => {
                 </Changelist>
             </Month>
 
-            <Month showingMonth={showingMonth} updateShowing={updateShowing} month="kesäkuu2020" label="Kesäkuu 2020">
+            <Month showId={showId} updateShowing={updateShowing} month="kesäkuu2020" label="Kesäkuu 2020">
                 <Changelist date="25.6.2020">
                     <Change>Lisätty 1.16.1 tuki servulle!</Change>
-                    <Change>Toisen pelaajan pelaaja-arvon klikkaaminen chatissa näyttää nyt kyseisen pelaajan peliajan oman sijaan.</Change>
+                    <Change>
+                        Toisen pelaajan pelaaja-arvon klikkaaminen chatissa näyttää nyt kyseisen pelaajan peliajan oman
+                        sijaan.
+                    </Change>
                 </Changelist>
 
                 <Changelist date="18.6.2020">
                     <Change>Karanteenissa toimii VR</Change>
                     <Change>
-                        Palvelimella voi nyt antaa lemmikkejä ja vapauttaa niitä komennoilla <code>/lemmikki anna &lt;pelaaja&gt;</code> ja
+                        Palvelimella voi nyt antaa lemmikkejä ja vapauttaa niitä komennoilla{' '}
+                        <code>/lemmikki anna &lt;pelaaja&gt;</code> ja
                         <code>/lemmikki vapauta</code>.
                     </Change>
                     <Change>
@@ -306,7 +331,7 @@ const Changelog = () => {
                 </Changelist>
             </Month>
 
-            <Month showingMonth={showingMonth} updateShowing={updateShowing} month="toukokuu2020" label="Toukokuu 2020">
+            <Month showId={showId} updateShowing={updateShowing} month="toukokuu2020" label="Toukokuu 2020">
                 <Changelist date="31.5.2020">
                     <Change>Lisätty info voteen, että siitä saa rahaa.</Change>
                 </Changelist>
@@ -329,7 +354,7 @@ const Changelog = () => {
                 </Changelist>
             </Month>
 
-            <Month showingMonth={showingMonth} updateShowing={updateShowing} month="maaliskuu2020" label="Maaliskuu 2020">
+            <Month showId={showId} updateShowing={updateShowing} month="maaliskuu2020" label="Maaliskuu 2020">
                 <Changelist date="27.3.2020">
                     <Change>
                         Lisätty seuraavat komennot: <code>/jöms /retu /tank /ash</code>
@@ -345,12 +370,15 @@ const Changelog = () => {
 
                 <Changelist date="18.3.2020">
                     <Change>
-                        lisätty uusia shortcutkomentoja <code>/nax /nubbe /skidaddleskidoodle [/nou /reverse /unoreverse]</code>
+                        lisätty uusia shortcutkomentoja{' '}
+                        <code>/nax /nubbe /skidaddleskidoodle [/nou /reverse /unoreverse]</code>
                     </Change>
                 </Changelist>
 
                 <Changelist date="12.3.2020">
-                    <Change>Granite, diorite, andesite, cobble, stone voi nyt sulattaa blast furnacessa graveliksi</Change>
+                    <Change>
+                        Granite, diorite, andesite, cobble, stone voi nyt sulattaa blast furnacessa graveliksi
+                    </Change>
                 </Changelist>
 
                 <Changelist date="9.3.2020">
@@ -360,7 +388,7 @@ const Changelog = () => {
                 </Changelist>
             </Month>
 
-            <Month showingMonth={showingMonth} updateShowing={updateShowing} month="helmikuu2020" label="Helmikuu 2020">
+            <Month showId={showId} updateShowing={updateShowing} month="helmikuu2020" label="Helmikuu 2020">
                 <Changelist date="24.2.2020">
                     <Change>
                         <code>/radio</code> toimii taas
@@ -376,7 +404,7 @@ const Changelog = () => {
                 </Changelist>
             </Month>
 
-            <Month showingMonth={showingMonth} updateShowing={updateShowing} month="tammikuu2020" label="Tammikuu 2020">
+            <Month showId={showId} updateShowing={updateShowing} month="tammikuu2020" label="Tammikuu 2020">
                 <Changelist date="16.1.2020">
                     <Change>
                         <code>/tk</code> tuotu takaisin
@@ -388,7 +416,7 @@ const Changelog = () => {
                 </Changelist>
             </Month>
 
-            <Month showingMonth={showingMonth} updateShowing={updateShowing} month="joulukuu2019" label="Joulukuu 2019">
+            <Month showId={showId} updateShowing={updateShowing} month="joulukuu2019" label="Joulukuu 2019">
                 <Changelist date="13.12.2019">
                     <Change>
                         Lisätty <code>/ignore</code> (<code>/ignore add &lt;nimi&gt;</code>, <code>/ignore list</code>,{' '}
@@ -411,12 +439,14 @@ const Changelog = () => {
                     <Change>Tabin servervärejä paranneltu</Change>
                     <Change>Taikamaton kanssa ei enää ota fall damagea</Change>
                     <Change>Entiteetit eivät ota damagea taikamaton sivuista</Change>
-                    <Change>Permiplugin osaa käsitellä offline pelaajia, ja pystyy asettamaan oikeuksia ilman relogia</Change>
+                    <Change>
+                        Permiplugin osaa käsitellä offline pelaajia, ja pystyy asettamaan oikeuksia ilman relogia
+                    </Change>
                     <Change>Korjattu coreplugarin komennonsuorittajasta komponenttibugi</Change>
                 </Changelist>
             </Month>
 
-            <Month showingMonth={showingMonth} updateShowing={updateShowing} month="marraskuu2019" label="Marraskuu 2019">
+            <Month showId={showId} updateShowing={updateShowing} month="marraskuu2019" label="Marraskuu 2019">
                 <Changelist date="30.11.2019">
                     <Change>Korjattu prismarine slabien muunaminen täys blockeiksi</Change>
                     <Change>Lisätty mahdollisuus muuntaa Blast Furnacella hiilipalikoista mustaa väriainetta</Change>
@@ -433,7 +463,7 @@ const Changelog = () => {
                 </Changelist>
             </Month>
 
-            <Month showingMonth={showingMonth} updateShowing={updateShowing} month="lokakuu2019" label="Lokakuu 2019">
+            <Month showId={showId} updateShowing={updateShowing} month="lokakuu2019" label="Lokakuu 2019">
                 <Changelist date="31.10.2019">
                     <Change>
                         <code>/sit</code> tuotu takaisin
@@ -463,7 +493,7 @@ const Changelog = () => {
                 </Changelist>
             </Month>
 
-            <Month showingMonth={showingMonth} updateShowing={updateShowing} month="syyskuu2019" label="Syyskuu 2019">
+            <Month showId={showId} updateShowing={updateShowing} month="syyskuu2019" label="Syyskuu 2019">
                 <Changelist date="25.09.2019">
                     <Change>
                         Tpa:n <code>/back</code> fixattu oikeiden pelaajien sijaintiin
@@ -485,7 +515,7 @@ const Changelog = () => {
                 </Changelist>
             </Month>
 
-            <Month showingMonth={showingMonth} updateShowing={updateShowing} month="elokuu2019" label="Elokuu 2019">
+            <Month showId={showId} updateShowing={updateShowing} month="elokuu2019" label="Elokuu 2019">
                 <Changelist date="19.08.2019">
                     <Change>Coreprotect osaa nyt tallentaa lentävät blockit</Change>
                     <Change>Tnt ja tnt_minecart ei enää lennätä niin paljon blockei -&gt; parempia raivaukseen</Change>
@@ -495,16 +525,17 @@ const Changelog = () => {
                 <Changelist date="17.08.2019">
                     <Change>Paranneltu databasen käyttöö: StatManager, Karanteenials, KaranteeniPerms, Chatar</Change>
                     <Change>
-                        Mahdollisesti vähennetty joinauksesta seuraavaa lagia: KaranteeniPerms, Karanteenials, KaranteeniCore, StatManager,
-                        Chatar (vaihdettu db sync -&gt; async. jos ongelmia ilmenee niin ilmoittakaa)
+                        Mahdollisesti vähennetty joinauksesta seuraavaa lagia: KaranteeniPerms, Karanteenials,
+                        KaranteeniCore, StatManager, Chatar (vaihdettu db sync -&gt; async. jos ongelmia ilmenee niin
+                        ilmoittakaa)
                     </Change>
                     <Change>
                         Lisätty automaattinen restart (yp käyttäkää komentoa <code>/restarter:restart</code>)
                     </Change>
                     <Change>Poistettu virheellisiä blockeja taikamatosta</Change>
                     <Change>
-                        Löydetty ISO bugi timereista joka johti siihen että kaikki timerit ajettiin joka tickillä. Nyt fixattu, hyvällä
-                        tuurilla isoja vaikutuksia tehokkuuteen
+                        Löydetty ISO bugi timereista joka johti siihen että kaikki timerit ajettiin joka tickillä. Nyt
+                        fixattu, hyvällä tuurilla isoja vaikutuksia tehokkuuteen
                     </Change>
                     <Change>
                         Operaattorista ylöspäin oikat <code>/player kill &lt;nimi&gt;</code>

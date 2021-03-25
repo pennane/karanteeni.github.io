@@ -13,6 +13,22 @@
     --secondary-border-color: #e2e1d4;
 }
 
+#__next > div {
+    --bg: #fffbe0;
+    --fg: rgba(130, 180, 80, 0.1);
+    --percentage: 25%;
+    --size: 120px;
+    --half: 60px;
+    background-color: var(--bg);
+    background-image: linear-gradient(135deg, var(--fg) var(--percentage), transparent var(--percentage)),
+        linear-gradient(225deg, var(--fg) var(--percentage), transparent var(--percentage)),
+        linear-gradient(45deg, var(--fg) var(--percentage), transparent var(--percentage)),
+        linear-gradient(315deg, var(--fg) var(--percentage), var(--bg) var(--percentage));
+    background-position: var(--half) 0, var(--half) 0, 0 0, 0 0;
+    background-size: var(--size) var(--size);
+    background-repeat: repeat;
+}
+
 .online {
     color: #4caf50;
 }
