@@ -36,8 +36,6 @@ const ServerEvents = () => {
     )
     let upcoming = events.filter((event) => parseDate(event.dates.startDate) > now)
 
-    console.log(events, ongoing, upcoming)
-
     if (!ongoing && !upcoming) return null
 
     return (
