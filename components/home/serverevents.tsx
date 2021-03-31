@@ -31,9 +31,11 @@ const ServerEvents = () => {
     let events: ServerEvent[] = serverEvents
     let now = Date.now()
 
-    let ongoing = events.filter(
-        (event) => parseDate(event.dates.startDate) < now && parseDate(event.dates.endDate) > now
-    )
+    let ongoing = events.filter((event) => {
+        let startDate = parseDate(event.dates.startDate)
+        let endDate = event.dates.endDate ? parseDate(event.dates.endDate) : startDate + 86_400_000
+        return startDate < now && endDate > now
+    })
     let upcoming = events.filter((event) => parseDate(event.dates.startDate) > now)
 
     if (!ongoing && !upcoming) return null
