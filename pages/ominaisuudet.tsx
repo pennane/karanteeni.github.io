@@ -25,10 +25,16 @@ const Feature = ({ id, title, children }: { id?: string; title: string; children
 const Ominaisuudet = () => {
     return (
         <Layout title="Ominaisuudet" description="Karanteenin omat ominaisuudet listattuna.">
-            <Heading heading="Karanteenin Ominaisuudet" lead="Lue nämä huolella. Avaat itsellesi mielenkiintoisia pelimahdollisuuksia!" />
+            <Heading
+                heading="Karanteenin Ominaisuudet"
+                lead="Lue nämä huolella. Avaat itsellesi mielenkiintoisia pelimahdollisuuksia!"
+            />
 
             <h2>Survivalin lisäominaisuudet</h2>
-            <p>Suuri osa erityisistä toiminnoista, komennoista ja muista jutuista, jotka toimivat Karanteenin survivalissa</p>
+            <p>
+                Suuri osa erityisistä toiminnoista, komennoista ja muista jutuista, jotka toimivat Karanteenin
+                survivalissa
+            </p>
             <Feature title="Emeraldhissi">
                 <Video source="/feature/emeraldvator.mp4" />
                 <p>Voit rakentaa toimivan hissin emerald palikoilla. Hissit kytketään päälle redstonevirralla. </p>
@@ -36,33 +42,61 @@ const Ominaisuudet = () => {
 
             <Feature title="Taikamatto">
                 <Video source="/feature/magiccarpet.mp4" />
-                <p>Sisukas rankista ylöspäin pelaajat voivat aktivoida taikamaton, jolla pystyy lentämään kuin Aladdin konsanaan!</p>
+                <p>
+                    Sisukas rankista ylöspäin pelaajat voivat aktivoida taikamaton, jolla pystyy lentämään kuin Aladdin
+                    konsanaan!
+                </p>
                 <p>
                     Matto aktivoituu komennolla <code>/mc</code>, ja sen ulkonäköä voi muokata komennolla
                     <code>/mc design</code>.
                 </p>
                 <p>
-                    Rankit avaavat maton muokkaukseen lisää blockkeja. Katso aukeavat blockit <Link href="rankit">rankit sivulta</Link>.
+                    Rankit avaavat maton muokkaukseen lisää blockkeja. Katso aukeavat blockit{' '}
+                    <Link href="rankit">rankit sivulta</Link>.
                 </p>
             </Feature>
 
             <Feature title="Puun kaataminen">
                 <Video source="/feature/woodchop.mp4" />
                 <p>Puu kaatuu alhaalta ylös kokonaan, kunhan sen hakkaa kirveellä!</p>
+                <p>(muistathan kasvattaa puut aina seikkaillessasi takaisin)</p>
             </Feature>
+
+            <Feature title="Alueen suojaaminen">
+                <p>
+                    Ylläpito suojaa alueesi pyydettäessä. Kun alue on suojattu, alueen tiedot voi tarkastaa
+                    <code>/alue</code>
+                    -komennolla.
+                </p>
+                <p>
+                    Voit lisätä alueeseesi jäseniä komennolla{' '}
+                    <code>
+                        /trust {'{'}alueen_nimi{'}'} {'{'}pelaajan_nimi{'}'}
+                    </code>{' '}
+                    ja poistaa jäseniä{' '}
+                    <code>
+                        /untrust {'{'}alueen_nimi{'}'} {'{'}pelaajan_nimi{'}'}
+                    </code>
+                </p>
+                <p>
+                    Jos kylässäsi on vähintään 15 asukasta, voit pyytää sille warppia <code>/warps</code> listaan.
+                </p>
+            </Feature>
+
             <Feature title="Rakentajan taikasauva">
                 <Video source="/feature/builderswand.mp4" />
                 <p>
-                    Sisukas rankista ylöspäin pelaajat voivat craftata <Link href="/recipes#builderswand">Builders Wandin</Link>. Tämä
-                    työkalu edesauttaa suurien rakennusten rakennuksessa!
+                    Sisukas rankista ylöspäin pelaajat voivat craftata{' '}
+                    <Link href="/recipes#builderswand">Builders Wandin</Link>. Tämä työkalu edesauttaa suurien
+                    rakennusten rakennuksessa!
                 </p>
                 <p>
-                    Taikasauva toimii kun laitat sen pelaajan vasempaan käteen, ja rakennuspalikat oikeaan, tai päinvastoin, jos hahmosi on
-                    vasenkätinen.
+                    Taikasauva toimii kun laitat sen pelaajan vasempaan käteen, ja rakennuspalikat oikeaan, tai
+                    päinvastoin, jos hahmosi on vasenkätinen.
                 </p>
                 <p>
-                    Taikasauvassa on neljä eri rakentamismuotoa. Muotojen välillä voi vaihdella lyömällä kyykyssä ilmaa taikasauvan ollessa
-                    kakkoskädessä.
+                    Taikasauvassa on neljä eri rakentamismuotoa. Muotojen välillä voi vaihdella lyömällä kyykyssä ilmaa
+                    taikasauvan ollessa kakkoskädessä.
                 </p>
                 <p>Rakentamismuodot ovat:</p>
                 <ul>
@@ -92,55 +126,13 @@ const Ominaisuudet = () => {
                     </li>
                 </ul>
             </Feature>
-            <Feature title="Armorstand kustomointi">
-                <Video source="/feature/armorstand.mp4" />
-                <p>
-                    Karanteenissa voi kustomoida armostandien asentoa. Asentojen välillä voi vaihdella klikkaamalla armostandia kyykyssä
-                    oikealla klikillä.
-                </p>
-                <p>Saatavilla olvat asennot:</p>
-                <ul>
-                    <li>Tavallinen (minen oma)</li>
-                    <li>Tavallinen, mutta lisätty kädet ja poistettu laatta</li>
-                    <li>T-pose</li>
-                    <li>Tavaran pito kädessä (näyttää ihan kivalta vaikkapa miekan kanssa)</li>
-                    <li>Kävely/juoksu</li>
-                    <li>Zombi</li>
-                    <li>Dab</li>
-                    <li>Facepalm</li>
-                </ul>
-            </Feature>
+
             <Feature title="Arkkukaupat">
                 <Video source="/feature/chestshop.mp4" />
                 <p>
-                    Pelaajien väliseen kauppaan työkaluna on arkkukaupat! Lyö arkkua tavaralla, jota haluat myydä, kirjoita chattiin tavaran
-                    hinta, ja kauppa on valmis!
+                    Pelaajien väliseen kauppaan työkaluna on arkkukaupat! Lyö arkkua tavaralla, jota haluat myydä,
+                    kirjoita chattiin tavaran hinta, ja kauppa on valmis!
                 </p>
-            </Feature>
-
-            <Feature title="Yön ohittaminen">
-                <p>
-                    Yöt voi ohittaa Karanteenissa uudella tavalla. Mitä useampi pelaaja on nukkumassa yön aikana, sitä nopeammin yö kuluu ja
-                    aamu koittaa!
-                </p>
-            </Feature>
-
-            <Feature title="Enderdragonin munien kerääminen">
-                <p>
-                    Karanteenissa jokainen uudelleenkin spawnattu Ender dragon pudottaa Ender dragonin munan. Tästä syystä Ender dragon on
-                    myös hankalampi spawnata uudelleen.
-                </p>
-                <p>
-                    End crystalleilla on Karanteenissa vaikeampi craftrecipe. Sen näet <Link href="recipes#endcrystal">täältä</Link>
-                </p>
-            </Feature>
-
-            <Feature title="Spawnerien kerääminen">
-                <p>
-                    Karanteenissa pystyy hakkaamaan mobspawnerit itselleen, kunhan käyttää hakkua jossa on Silk Touch (silkkinen kosketus)
-                    enchantti.
-                </p>
-                <p>Parantuva rankista ylöspäin pelkkä hakku riittää!</p>
             </Feature>
 
             <Feature title="Arkkujen lukittuminen">
@@ -160,25 +152,61 @@ const Ominaisuudet = () => {
                 </ul>
             </Feature>
 
-            <Feature title="Alueen suojaaminen">
+            <Feature title="Armorstand kustomointi">
+                <Video source="/feature/armorstand.mp4" />
                 <p>
-                    Ylläpito suojaa alueesi pyydettäessä. Kun alue on suojattu, alueen tiedot voi tarkastaa
-                    <code>/alue</code>
-                    -komennolla.
+                    Karanteenissa voi kustomoida armostandien asentoa. Asentojen välillä voi vaihdella klikkaamalla
+                    armostandia kyykyssä oikealla klikillä.
+                </p>
+                <p>Saatavilla olvat asennot:</p>
+                <ul>
+                    <li>Tavallinen (minen oma)</li>
+                    <li>Tavallinen, mutta lisätty kädet ja poistettu laatta</li>
+                    <li>T-pose</li>
+                    <li>Tavaran pito kädessä (näyttää ihan kivalta vaikkapa miekan kanssa)</li>
+                    <li>Kävely/juoksu</li>
+                    <li>Zombi</li>
+                    <li>Dab</li>
+                    <li>Facepalm</li>
+                </ul>
+            </Feature>
+
+            <Feature title="Yön ohittaminen">
+                <p>
+                    Yöt voi ohittaa Karanteenissa uudella tavalla. Mitä useampi pelaaja on nukkumassa yön aikana, sitä
+                    nopeammin yö kuluu ja aamu koittaa!
+                </p>
+            </Feature>
+
+            <Feature title="Villan peseminen">
+                <p>
+                    Värjätyt villat voi valkaista takaisin valkoiseksi samalla tavalla kuin bannerit. Laita värjätyt
+                    villat cauldroniin !
+                </p>
+            </Feature>
+
+            <Feature title="Enderdragonin munien kerääminen">
+                <p>
+                    Karanteenissa jokainen uudelleenkin spawnattu Ender dragon pudottaa Ender dragonin munan. Tästä
+                    syystä Ender dragon on myös hankalampi spawnata uudelleen.
                 </p>
                 <p>
-                    Voit lisätä alueeseesi jäseniä komennolla{' '}
-                    <code>
-                        /trust {'{'}alueen_nimi{'}'} {'{'}pelaajan_nimi{'}'}
-                    </code>{' '}
-                    ja poistaa jäseniä{' '}
-                    <code>
-                        /untrust {'{'}alueen_nimi{'}'} {'{'}pelaajan_nimi{'}'}
-                    </code>
+                    End crystalleilla on Karanteenissa vaikeampi craftrecipe. Sen näet{' '}
+                    <Link href="recipes#endcrystal">täältä</Link>
                 </p>
+            </Feature>
+
+            <Feature title="Spawnerien kerääminen">
                 <p>
-                    Jos kylässäsi on vähintään 15 asukasta, voit pyytää sille warppia <code>/warps</code> listaan.
+                    Karanteenissa pystyy hakkaamaan mobspawnerit itselleen, kunhan käyttää hakkua jossa on Silk Touch
+                    (silkkinen kosketus) enchantti.
                 </p>
+                <p>Parantuva rankista ylöspäin pelkkä hakku riittää!</p>
+            </Feature>
+
+            <Feature title="Näkymättömät itemframet">
+                <Video source="/feature/invisiframe.mp4" />
+                <p>Itemframet voi muuttaa pysyvästi näkymättömiksi näkymättömyyspotioneilla!</p>
             </Feature>
 
             <Feature title="Yleiset komennot" id="komennot">
@@ -324,6 +352,9 @@ const Ominaisuudet = () => {
                     <li>
                         <code>/avaa</code>
                     </li>
+                    <li>
+                        <code>/trash (/roskis /roskakori)</code>
+                    </li>
 
                     <li>
                         <code>/kms</code>
@@ -378,7 +409,10 @@ const Ominaisuudet = () => {
                 </ul>
             </Feature>
             <Feature title="Chatkoodit">
-                <p>Karanteenissa on käytössä tiettyjä chatkoodeja, jotka chattiin kirjoittaessa muuttuvat automaattisesti emojeiksi.</p>
+                <p>
+                    Karanteenissa on käytössä tiettyjä chatkoodeja, jotka chattiin kirjoittaessa muuttuvat
+                    automaattisesti emojeiksi.
+                </p>
                 <ul>
                     <li>
                         <code>*penni</code> =&gt; ❂

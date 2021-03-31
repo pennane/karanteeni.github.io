@@ -47,6 +47,17 @@ const Changelog = () => {
     return (
         <div>
             <Month showId={showId} updateShowing={updateShowing} month="maaliskuu2021" label="Maaliskuu 2021">
+                <Changelist date="30.3.2021">
+                    <Change>Poistuessa servulta ja takaisin liittyessä taikamatto pysyy päällä.</Change>
+                    <Change>Lisätty/korjattu näkymättömät itemframet</Change>
+                    <Change>Vaihdettu /msg formaattia nätimmäksi</Change>
+                    <Change>Poistettu ylimääräinen rivivaihto rankin hoverista, muotoiltu nätimmäksi</Change>{' '}
+                    <Change>Lisätty roskakori turhille tavaroille /trash /roskis /roskakori</Change>
+                    <Change>
+                        Lisätty karan skriptiajoilta seuraavat asiat: itemit joiden nimi on troll, chatissa asiat alt +
+                        f4, anna op
+                    </Change>
+                </Changelist>
                 <Changelist date="26.3.2021">
                     <Change>Päivitetty /clearcache</Change>
                     <Change>Lisätty erilainen liittymisviesti ensimmäistä kertaa liittyville</Change>
