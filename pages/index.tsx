@@ -10,6 +10,7 @@ import Layout from '../components/layout/layout'
 import ServerStatus from '../components/home/serverstatus'
 import VoteButtons from '../components/home/votebuttons'
 import Post from '../components/post'
+import ServerEvents from '../components/home/serverevents'
 
 export default function Home({ visiblePost, olderPosts }) {
     return (
@@ -29,6 +30,9 @@ export default function Home({ visiblePost, olderPosts }) {
                     </section>
                 </div>
                 <div>
+                    <section>
+                        <ServerEvents />
+                    </section>
                     <section>
                         <h3>Vanhempia julkaisuja</h3>
                         <ul className="posts">

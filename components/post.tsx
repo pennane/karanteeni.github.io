@@ -10,7 +10,7 @@ export default function Post({
     }
 }) {
     return (
-        <article>
+        <article className="post">
             <h2 className="post-title">{postData.title}</h2>
             <div className="secondary-color">
                 <Date dateString={postData.date} />

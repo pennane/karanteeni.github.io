@@ -49,8 +49,8 @@ html,
 body {
     padding: 0;
     margin: 0;
-    font-family: Inter, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans,
-        Helvetica Neue, sans-serif;
+    font-family: Inter, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans,
+        Droid Sans, Helvetica Neue, sans-serif;
     line-height: 1.6;
     background: var(--background-primary);
 }
@@ -270,6 +270,28 @@ main.yllapito li {
     line-height: 2;
 }
 
+.server-event {
+    padding: 0.6em;
+    border-radius: 6px;
+    background: var(--background-secondary);
+    border: 1px solid var(--secondary-border-color);
+}
+
+.server-event h4 {
+    margin: 0;
+}
+
+.server-event p {
+    font-size: 0.9em;
+}
+
+.server-event time {
+    display: block;
+    font-size: 0.88em;
+    color: var(--color-primary);
+    opacity: 0.8;
+}
+
 footer {
     display: flex;
     flex-direction: column;
@@ -322,6 +344,16 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.post img {
+    width: 95%;
+    max-width: 500px;
+    border: 1px solid var(--primary-border-color);
+    border-radius: 6px;
+    margin: 0.5em;
+    display: block;
+    box-sizing: border-box;
 }
 
 .home-hero {
@@ -438,6 +470,10 @@ h1 {
 }
 
 .home-grid section {
+    padding: 0.5rem 0.25rem;
+}
+
+.home-grid-main section {
     padding: 0.8rem;
 }
 
@@ -1178,6 +1214,7 @@ h3.minecraft {
     }
     .home-grid section {
         flex: 1;
+        min-width: 180px;
     }
 
     .rule {

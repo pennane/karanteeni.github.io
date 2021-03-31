@@ -24,7 +24,6 @@ const AdminCard = ({
     description?: string
     strengths?: string[]
 }) => {
-    console.log(rank)
     return (
         <div className={`${style['card-container']} ${style[rank]}`}>
             <div className={`${style['card']} ${style[rank]}`}>
