@@ -1,15 +1,63 @@
-const ServerEvent = ({ serverEvent }: { serverEvent: any }) => {
-    return <div></div>
+import serverEvents from '../../data/serverevents.json'
+
+interface ServerEvent {
+    title: string
+    description: string
+    dates: {
+        startDate: string
+        endDate?: string
+    }
 }
 
-const ServerEvents = ({ events }) => {
+const parseDate = (dateString: string | null): number | null => {
+    if (!dateString) return null
+    let [day, month, year] = dateString.split('.')
+    return Date.parse([month, day, year].join('.'))
+}
+
+const ServerEvent = ({ title, description, dates: { startDate, endDate } }: ServerEvent) => {
+    let dateString = endDate ? startDate + ' - ' + endDate : startDate
+
+    return (
+        <div className="server-event">
+            <h4>{title}</h4>
+            <p>{description}</p>
+            <time>{dateString}</time>
+        </div>
+    )
+}
+
+const ServerEvents = () => {
+    let events: ServerEvent[] = serverEvents
+    let now = Date.now()
+
+    let ongoing = events.filter(
+        (event) => parseDate(event.dates.startDate) < now && parseDate(event.dates.endDate) > now
+    )
+    let upcoming = events.filter((event) => parseDate(event.dates.startDate) > now)
+
+    console.log(events, ongoing, upcoming)
+
+    if (!ongoing && !upcoming) return null
+
     return (
         <div className="server-events">
-            <h3>Tapahtumat</h3>
-            {events &&
-                events.filter().map((serverEvent, i) => {
-                    ;<ServerEvent serverEvent={serverEvent} />
-                })}
+            {ongoing.length > 0 && (
+                <>
+                    <h3>Meneillään olevat tapahtumat</h3>
+                    {ongoing.map((event, i) => (
+                        <ServerEvent key={i} title={event.title} description={event.description} dates={event.dates} />
+                    ))}
+                </>
+            )}
+            {upcoming.length > 0 && (
+                <>
+                    <h3>Tulevat tapahtumat</h3>
+                    {upcoming.map((event, i) => (
+                        <ServerEvent key={i} title={event.title} description={event.description} dates={event.dates} />
+                    ))}
+                </>
+            )}
         </div>
     )
 }
