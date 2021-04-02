@@ -28,7 +28,9 @@ export default function Lahjoitus() {
                 <title>{siteTitle}</title>
             </Head>
             <Modal title="Lahjoitukset">
-                <p>Koska serveri maksetaan täysin omilla rahoilla, pienetkin lahjoitukset ovat erittäin tervetulleita.</p>
+                <p>
+                    Koska serveri maksetaan täysin omilla rahoilla, pienetkin lahjoitukset ovat erittäin tervetulleita.
+                </p>
                 <p>
                     Jos haluaisit lahjoittaa, voit lahjoittaa sen suoraan{' '}
                     <b>
@@ -36,21 +38,27 @@ export default function Lahjoitus() {
                             Karanteenin PayPaliin
                         </a>
                     </b>{' '}
-                    tai ota yhteyttä Discordissa Jome#7320, niin katsotaan kuinka voit lahjoituksen tehdä. Parhaat tavat ovat Paysafecard ja
-                    PayPal. (<b>HUOM!</b> Lahjoittaessasi muista kertoa discord/minecraft nimesi)
+                    tai ota yhteyttä Discordissa Jome#7320, niin katsotaan kuinka voit lahjoituksen tehdä. Parhaat tavat
+                    ovat Paysafecard ja PayPal. (<b>HUOM!</b> Lahjoittaessasi muista kertoa discord/minecraft nimesi)
                 </p>
                 <p>
-                    Lahjoittajat saavat Discordiin lahjoittajaroolin, sekä palvelimelle kyvyn asettaa nimeen{' '}
+                    Kaikki vähintään 10 € lahjoittavat saavat Discordiin sekä palvelimelle lahjoittaja roolin.
+                    Palvelimella aukeaa kyky asettaa nimeen{' '}
                     <span className="rgb">
                         <span className="offset1">R</span>
                         <span className="offset2">G</span>
                         <span className="offset3">B</span>
                     </span>{' '}
                     värejä, kyltteihin värejä värikoodeilla, sekä tabiin näkyvyyttä (värikkäät hakasulkeet).
+                    Ominaisuuksia tulee ajankanssa lisää, ja ne aukeavat automaattisesti kaikille vanhoille
+                    lahjoittajille.
                 </p>
             </Modal>
             <div className="lahjoitusdokumentti">
-                <Heading heading="Lahjoittajat" lead="Tälle sivulle on kerätty lahjoittajat. Kiitos tuesta ja uskollisuudestanne! ♥" />
+                <Heading
+                    heading="Lahjoittajat"
+                    lead="Tälle sivulle on kerätty lahjoittajat. Kiitos tuesta ja uskollisuudestanne! ♥"
+                />
                 <div className="lahjoitustablewrapper">
                     <table>
                         <thead>
