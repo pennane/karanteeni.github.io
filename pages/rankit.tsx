@@ -135,7 +135,7 @@ const SisukasParantuva = () => {
                 <div className="rank-others">
                     <h3>Muuta:</h3>
                     <p>
-                        Kyky käyttää ja craftata <Link href="/recipes#builderswand">Builders Wand</Link>.
+                        Kyky käyttää ja craftata <Link href="/reseptit#builderswand">Builders Wand</Link>.
                     </p>
                     <Others text="Kaksi uutta väriä taikamattoon (mc)" tip="Vaalean harmaa (oletus) ja läpinäkyvä" />
                 </div>

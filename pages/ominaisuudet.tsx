@@ -87,7 +87,7 @@ const Ominaisuudet = () => {
                 <Video source="/feature/builderswand.mp4" />
                 <p>
                     Sisukas rankista ylöspäin pelaajat voivat craftata{' '}
-                    <Link href="/recipes#builderswand">Builders Wandin</Link>. Tämä työkalu edesauttaa suurien
+                    <Link href="/reseptit#builderswand">Builders Wandin</Link>. Tämä työkalu edesauttaa suurien
                     rakennusten rakennuksessa!
                 </p>
                 <p>
@@ -192,7 +192,7 @@ const Ominaisuudet = () => {
                 </p>
                 <p>
                     End crystalleilla on Karanteenissa vaikeampi craftrecipe. Sen näet{' '}
-                    <Link href="recipes#endcrystal">täältä</Link>
+                    <Link href="reseptit#endcrystal">täältä</Link>
                 </p>
             </Feature>
 

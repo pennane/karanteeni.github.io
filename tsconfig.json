@@ -8,7 +8,6 @@
     ],
     "allowJs": true,
     "skipLibCheck": true,
-    "strict": false,
     "forceConsistentCasingInFileNames": true,
     "noEmit": true,
     "esModuleInterop": true,
@@ -16,7 +15,13 @@
     "moduleResolution": "node",
     "resolveJsonModule": true,
     "isolatedModules": true,
-    "jsx": "preserve"
+    "jsx": "preserve",
+    "strict": true,                         
+    "noImplicitAny": true,               
+    "strictNullChecks": true,             
+    "strictBindCallApply": true,           
+    "strictPropertyInitialization": true, 
+    "alwaysStrict": true,                  
   },
   "include": [
     "next-env.d.ts",

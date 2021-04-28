@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react'
+import { SetStateAction, useEffect, useState } from 'react'
 import { randomFromArray } from '../../lib/util'
 import citations from '../../data/citations.json'
 
@@ -9,8 +9,8 @@ interface Citation {
 
 const MinecraftCitation = () => {
     const initialCitation = randomFromArray(citations)
-    const [citation, setCitation]: [Citation, any] = useState(initialCitation)
-    const [intervalId, setIntervalId] = useState(null)
+    const [citation, setCitation] = useState<Citation>(initialCitation)
+    const [intervalId, setIntervalId] = useState<any>()
 
     useEffect(() => {
         setIntervalId(setInterval(() => updateCitation(), 9000))
