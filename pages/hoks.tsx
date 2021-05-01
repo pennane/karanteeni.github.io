@@ -14,30 +14,32 @@ const Hoks = () => {
             <Heading heading="Hyvä tietää!" />
             <h3>Pieni palvelintiivistelmä</h3>
             <p>
-                Karanteeni on vuodesta 2016 asti toiminut Minecraft-palvelin, jonka on perustanut Emmazki, Jomeee ja Nuubles. Palvelimella
-                pyörii keskimäärin 15-20 pelaajaa joka päivä. Tällä hetkellä palvelimella pyörii vain Survival maailma, mutta Creative on
-                palaamassa ajan mittaan.
+                Karanteeni on vuodesta 2016 asti toiminut Minecraft-palvelin, jonka on perustanut Emmazki, Jomeee ja
+                Nuubles. Palvelimella pyörii keskimäärin 15-20 pelaajaa joka päivä. Tällä hetkellä palvelimella pyörii
+                vain Survival maailma, mutta Creative on palaamassa ajan mittaan.
             </p>
             <p>
-                Palvelimen toimintaidea on se, että mitä pidempään pelaat serverillä, sitä parempia ominaisuuksia saat käyttöösi. Peliajalla
-                kerättävistä ominaisuuksista voi lukea lisää <Link href="/rankit">täällä</Link>.
+                Palvelimen toimintaidea on se, että mitä pidempään pelaat serverillä, sitä parempia ominaisuuksia saat
+                käyttöösi. Peliajalla kerättävistä ominaisuuksista voi lukea lisää <Link href="/rankit">täällä</Link>.
             </p>
             <p>
-                Muita Karanteenille ominaisia ominaisuuksia voit ihmetellä <Link href="ominaisuudet">ominaisuudet</Link> sivulla.
+                Muita Karanteenille ominaisia ominaisuuksia voit ihmetellä <Link href="ominaisuudet">ominaisuudet</Link>{' '}
+                sivulla.
             </p>
             <p>
-                Palvelin on täysin omakustanteinen. Halutessasi voit kuitenkin tukea toimintaa lahjoittamalla. Lahjoittajat kuitenkin saavat
-                itselleen pieniä kivoja ominaisuuksia. Lahjoittamisesta voi lukea lisää <Link href="/lahjoitus">täällä</Link>.
+                Palvelin on täysin omakustanteinen. Halutessasi voit kuitenkin tukea toimintaa lahjoittamalla.
+                Lahjoittajat kuitenkin saavat itselleen pieniä kivoja ominaisuuksia. Lahjoittamisesta voi lukea lisää{' '}
+                <Link href="/lahjoitus">täällä</Link>.
             </p>
 
             <h3>Pointteja joilla parantaa pelikokemusta!</h3>
             <ul>
                 <li>Karanteenissa voit tällä hetkellä pelata Survivalia, Creative on palaamassa ajan myötä.</li>
                 <li>
-                    Rahavaluuttana toimii pennit (❂). Voit ansaita rahaa käymällä kauppaa toisten pelaajien kanssa, tai äänestämällä
-                    Karanteenia <code>/vote</code>.
+                    Rahavaluuttana toimii pennit (❂). Voit ansaita rahaa käymällä kauppaa toisten pelaajien kanssa, tai
+                    äänestämällä Karanteenia <code>/vote</code>.
                 </li>
-                <li>Karanteenissa ylläpito suojaa alueesi. Pyydä suojaustak niin alueesi suojataan.</li>
+                <li>Karanteenissa ylläpito suojaa alueesi. Pyydä suojausta, niin alueesi suojataan.</li>
             </ul>
         </Layout>
     )
