@@ -17,7 +17,7 @@
     "isolatedModules": true,
     "jsx": "preserve",
     "strict": true,                         
-    "noImplicitAny": true,               
+    "noImplicitAny": false,               
     "strictNullChecks": true,             
     "strictBindCallApply": true,           
     "strictPropertyInitialization": true, 
