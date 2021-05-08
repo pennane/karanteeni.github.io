@@ -81,7 +81,14 @@
       "uuid": "5db3cb0e4ae847dc91594cc10079190d"
     }
   ],
-  "moderator": [],
+  "moderator": [
+    {
+      "name": "Jokune",
+      "description": "\"miten tätä ajetaan?\"",
+      "strengths": [],
+      "uuid": "bbd2bc4c9fe64ffeb69b767c0df3db4f"
+    }
+  ],
   "builder": [
     {
       "name": "PreGauris",

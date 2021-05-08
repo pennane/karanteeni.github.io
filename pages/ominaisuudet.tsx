@@ -158,7 +158,7 @@ const Ominaisuudet = () => {
                     Karanteenissa voi kustomoida armostandien asentoa. Asentojen välillä voi vaihdella klikkaamalla
                     armostandia kyykyssä oikealla klikillä.
                 </p>
-                <p>Saatavilla olvat asennot:</p>
+                <p>Saatavilla olevat asennot:</p>
                 <ul>
                     <li>Tavallinen (minen oma)</li>
                     <li>Tavallinen, mutta lisätty kädet ja poistettu laatta</li>
