@@ -15,12 +15,17 @@ const Hoks = () => {
             <h3>Pieni palvelintiivistelmä</h3>
             <p>
                 Karanteeni on vuodesta 2016 asti toiminut Minecraft-palvelin, jonka on perustanut Emmazki, Jomeee ja
-                Nuubles. Palvelimella pyörii keskimäärin 15-20 pelaajaa joka päivä. Tällä hetkellä palvelimella pyörii
-                vain Survival maailma, mutta Creative on palaamassa ajan mittaan.
+                Nuubles. Palvelimella vaikuttavin pelimuoto on omilla ominaisuuksilla höystetty Survival maailma.
+                Creative sekä erilaiset minipelit ovat palaamassa ajan mittaan. Karanteenissa pyörii päivittäin
+                keskimäärin 15-30 pelaajaa.
             </p>
             <p>
                 Palvelimen toimintaidea on se, että mitä pidempään pelaat serverillä, sitä parempia ominaisuuksia saat
                 käyttöösi. Peliajalla kerättävistä ominaisuuksista voi lukea lisää <Link href="/rankit">täällä</Link>.
+            </p>
+            <p>
+                Palvelimella järjestetään erilaisia juhlia (esim joulujuhlat, synttärit ja juhannusbileet). Survivalin
+                kartta resetoidaan noin kaksi kertaa vuodessa.
             </p>
             <p>
                 Muita Karanteenille ominaisia ominaisuuksia voit ihmetellä <Link href="ominaisuudet">ominaisuudet</Link>{' '}
@@ -39,7 +44,10 @@ const Hoks = () => {
                     Rahavaluuttana toimii pennit (❂). Voit ansaita rahaa käymällä kauppaa toisten pelaajien kanssa, tai
                     äänestämällä Karanteenia <code>/vote</code>.
                 </li>
-                <li>Karanteenissa ylläpito suojaa alueesi. Pyydä suojausta, niin alueesi suojataan.</li>
+                <li>
+                    Karanteenissa ylläpito suojaa alueesi. Pyydäthän ylläpitoa suojausta, niin vältytään turhilta grief
+                    tapauksilta.
+                </li>
             </ul>
         </Layout>
     )

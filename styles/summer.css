@@ -16,9 +16,9 @@
 
 #__next > div,
 body {
-    --bg: hsl(217, 59%, 33%);
-    --fg: hsl(225, 43%, 43%);
-    --fg-transparent: hsla(225, 43%, 43%, 0.333);
+    --bg: #1a3f9e;
+    --fg: #294eae;
+    --fg-transparent: #294eae54;
 
     background: var(--bg);
     --size: 55px;
@@ -32,15 +32,6 @@ body {
         linear-gradient(45deg, var(--fg) 25%, var(--bg) 25%) 0px 0 / calc(2 * var(--size)) calc(2 * var(--size));
 }
 
-/* #__next > div,
-body {
-    background-color: #accff6;
-    background: linear-gradient(135deg, #146eb855 25%, transparent 25%) -40px 0/ 80px 80px,
-        linear-gradient(225deg, #146eb8 25%, transparent 25%) -40px 0/ 80px 80px,
-        linear-gradient(315deg, #146eb855 25%, transparent 25%) 0px 0/ 80px 80px,
-        linear-gradient(45deg, #146eb8 25%, #accff6 25%) 0px 0/ 80px 80px;
-} */
-
 .home-hero-main h1,
 .home-hero-main p {
     color: white;
@@ -53,6 +44,7 @@ body {
     border-radius: 6px;
     gap: 1.2em;
     background: var(--background-accent);
+    margin-top: 1em;
 }
 
 .home-grid > div {
@@ -137,14 +129,14 @@ body {
 .dropdown-item .icon {
     color: var(--background-accent);
 }
-
+/* 
 .rank h2 span,
 .rank h3,
 .rank .icon,
 .rank p,
 .rank table {
     color: white;
-}
+} */
 
 @media screen and (max-width: 900px) {
     .home-grid > div,

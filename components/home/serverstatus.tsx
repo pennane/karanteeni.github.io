@@ -13,8 +13,6 @@ const ServerStatus = () => {
             .then((data) => setStatus(data))
     }, [])
 
-    console.log(addToast)
-
     const copyIpToClipboard = () => {
         navigator.clipboard.writeText(textIp)
         addToast('IP tallennettu leikepöydälle', { appearance: 'success', autoDismiss: true })
