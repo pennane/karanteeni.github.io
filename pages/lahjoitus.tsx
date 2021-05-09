@@ -4,6 +4,7 @@ import Heading from '../components/layout/heading'
 import Layout, { siteTitle } from '../components/layout/layout'
 import Modal from '../components/modal'
 import donators from '../data/donators.json'
+import useMediaQuery from '../lib/useMediaquery'
 
 interface Donator {
     date: string
@@ -13,12 +14,33 @@ interface Donator {
 }
 
 // Forces zeroes before single number date parts
-const formatDate = (d: string): string => {
+const getDateParts = (d: string): string[] => {
     let dateParts = d.split('.')
-    return dateParts.map((part) => part.padStart(2, '0')).join('.')
+    return dateParts.map((part) => part.padStart(2, '0'))
+}
+
+const TableRow = ({ donator, width }: { donator: Donator; width: number }) => {
+    let dateParts = getDateParts(donator.date)
+    let dateString
+    if (width > 500) {
+        dateString = dateParts.join('.')
+    } else {
+        dateString = dateParts.slice(1).join('.')
+    }
+
+    return (
+        <tr>
+            <th>{dateString}</th>
+            <td>{donator.name}</td>
+            <td>{donator.amount}</td>
+            <td>{donator.heart}</td>
+        </tr>
+    )
 }
 
 export default function Lahjoitus() {
+    const [width] = useMediaQuery()
+
     return (
         <Layout
             title="Lahjoittaminen"
@@ -72,12 +94,7 @@ export default function Lahjoitus() {
                         <tbody>
                             {donators &&
                                 donators.map((donator: Donator, i) => (
-                                    <tr key={i}>
-                                        <th>{formatDate(donator.date)}</th>
-                                        <td>{donator.name}</td>
-                                        <td>{donator.amount}</td>
-                                        <td>{donator.heart}</td>
-                                    </tr>
+                                    <TableRow key={i} donator={donator} width={width} />
                                 ))}
                         </tbody>
                     </table>

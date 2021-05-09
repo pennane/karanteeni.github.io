@@ -1,5 +1,4 @@
 import '../styles/global.css'
-import '../styles/easter.css'
 
 import { AppProps } from 'next/app'
 

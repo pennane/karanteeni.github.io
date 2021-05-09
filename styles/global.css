@@ -495,6 +495,15 @@ h1 {
     height: 140px;
 }
 
+.minecraft-citation > * {
+    transition: opacity 2s;
+    opacity: 1;
+}
+
+.minecraft-citation.transitioning > * {
+    opacity: 0;
+}
+
 .minecraft-citation blockquote {
     display: flex;
     justify-content: center;
@@ -893,9 +902,11 @@ time {
     margin-bottom: 1rem;
 }
 
-.lahjoitustablewrapper table td {
+.lahjoitustablewrapper table td,
+.lahjoitustablewrapper table th {
     text-align: center;
     line-height: 2.5;
+    padding: 0 0.2em;
 }
 
 .navbar-toggler-icon {
