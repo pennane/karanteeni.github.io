@@ -6,7 +6,7 @@ import { AppProps } from 'next/app'
 
 function App({ Component, pageProps }: AppProps) {
     return (
-        <ToastProvider placement={'bottom-center'} portalTargetSelector={'#layout'}>
+        <ToastProvider placement={'bottom-center'}>
             <Component {...pageProps} />
         </ToastProvider>
     )
