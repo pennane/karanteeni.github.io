@@ -94,7 +94,7 @@ nav {
     background-position-y: 50%;
 }
 
-main:not(.home):not(.lahjoitus) {
+main:not(.home):not(.lahjoitus):not(.not-found) {
     max-width: 900px;
 
     margin: 2em;

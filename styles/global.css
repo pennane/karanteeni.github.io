@@ -120,6 +120,36 @@ nav {
     display: none;
 }
 
+main.not-found {
+    background: transparent;
+    text-align: center;
+    position: relative;
+    z-index: 2;
+    margin: 2em 0;
+}
+
+main.not-found .main-heading {
+    margin-bottom: 0.7em;
+}
+
+.not-found-back {
+    padding-bottom: 1.9em;
+}
+
+main.not-found img {
+    z-index: -1;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+    filter: grayscale(1) opacity(0.5);
+}
+
 .nav {
     display: flex;
     list-style: none;
@@ -1221,6 +1251,7 @@ h3.minecraft {
     main.home {
         padding-top: 0;
     }
+
     .wrappedlist {
         flex-wrap: nowrap;
         height: unset;
