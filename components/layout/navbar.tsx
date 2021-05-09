@@ -1,4 +1,5 @@
 import Link from 'next/link'
+import { useRouter } from 'next/router'
 import { useEffect, useState } from 'react'
 import {
     faThumbsUp,
@@ -14,21 +15,40 @@ import {
     faGift,
     faFileAlt,
     faHome,
-    faUserShield
+    faUserShield,
+    IconDefinition
 } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
-const Icon = (props) => {
-    return <FontAwesomeIcon className="icon" icon={props.icon} />
+const Icon = ({ icon }: { icon: IconDefinition }) => {
+    return <FontAwesomeIcon className="icon" icon={icon} />
 }
 
-const NavLink = (props) => {
+const NavLink = ({
+    close,
+    url,
+    icon,
+    title
+}: {
+    close: () => void
+    url: string
+    icon: IconDefinition
+    title: string
+}) => {
+    const router = useRouter()
     return (
         <li className="nav-item">
-            <Link href={props.url}>
-                <a className="nav-link">
-                    <Icon icon={props.icon} />
-                    {props.title}
+            <Link href={url}>
+                <a
+                    className="nav-link"
+                    onClick={() => {
+                        if (router.pathname === url) {
+                            close()
+                        }
+                    }}
+                >
+                    <Icon icon={icon} />
+                    {title}
                 </a>
             </Link>
         </li>
@@ -59,20 +79,37 @@ const DropDownCollapseMenu = ({ selected, setSelected, itemIndex, icon, title, c
     )
 }
 
-const DropDownItem = (props) => {
+const DropDownItem = ({
+    close,
+    url,
+    icon,
+    title
+}: {
+    close: () => void
+    url: string
+    icon: IconDefinition
+    title: string
+}) => {
+    const router = useRouter()
     return (
-        <Link href={props.url}>
-            <a className="dropdown-item">
-                <Icon icon={props.icon} />
-                {props.title}
+        <Link href={url}>
+            <a
+                className="dropdown-item"
+                onClick={() => {
+                    if (router.pathname === url) {
+                        close()
+                    }
+                }}
+            >
+                <Icon icon={icon} />
+                {title}
             </a>
         </Link>
     )
 }
 
-const Nav = (props) => {
+const Nav = ({ children, show, setShow }) => {
     const [windowDimension, setWindowDimension] = useState(null)
-    const [show, setShow] = useState(false)
 
     useEffect(() => {
         setWindowDimension(window.innerWidth)
@@ -104,16 +141,23 @@ const Nav = (props) => {
                     <div className="burger-lines"></div>
                 </div>
             </button>
-            <ul className="nav">{props.children}</ul>
+            <ul className="nav">{children}</ul>
         </nav>
     )
 }
 
 const Navbar = () => {
     const [selectedDropdown, setSelectedDropdown] = useState(null)
+    const [show, setShow] = useState(false)
+
+    const closeNav = () => {
+        setSelectedDropdown(null)
+        setShow(false)
+    }
+
     return (
-        <Nav>
-            <NavLink icon={faHome} url="/" title="Etusivu" />
+        <Nav show={show} setShow={setShow}>
+            <NavLink close={closeNav} icon={faHome} url="/" title="Etusivu" />
 
             <DropDownCollapseMenu
                 selected={selectedDropdown}
@@ -122,16 +166,16 @@ const Navbar = () => {
                 icon={faInfo}
                 itemIndex={1}
             >
-                <DropDownItem icon={faThumbsUp} url="/hoks" title="Hyvä tietää!" />
-                <DropDownItem icon={faPuzzlePiece} url="/ominaisuudet" title="Ominaisuudet" />
-                <DropDownItem icon={faHammer} url="/reseptit" title="Custom reseptit" />
-                <DropDownItem icon={faQuestionCircle} url="/ukk" title="UKK" />
-                <DropDownItem icon={faEnvelope} url="/julkaisut" title="Julkaisut" />
+                <DropDownItem close={closeNav} icon={faThumbsUp} url="/hoks" title="Hyvä tietää!" />
+                <DropDownItem close={closeNav} icon={faPuzzlePiece} url="/ominaisuudet" title="Ominaisuudet" />
+                <DropDownItem close={closeNav} icon={faHammer} url="/reseptit" title="Custom reseptit" />
+                <DropDownItem close={closeNav} icon={faQuestionCircle} url="/ukk" title="UKK" />
+                <DropDownItem close={closeNav} icon={faEnvelope} url="/julkaisut" title="Julkaisut" />
             </DropDownCollapseMenu>
 
-            <NavLink icon={faExclamation} url="/saannot" title="Säännöt" />
+            <NavLink close={closeNav} icon={faExclamation} url="/saannot" title="Säännöt" />
 
-            <NavLink icon={faMedal} url="/rankit" title="Rankit" />
+            <NavLink close={closeNav} icon={faMedal} url="/rankit" title="Rankit" />
 
             <DropDownCollapseMenu
                 selected={selectedDropdown}
@@ -140,11 +184,11 @@ const Navbar = () => {
                 icon={faUsers}
                 itemIndex={2}
             >
-                <DropDownItem icon={faUserShield} url="/yllapito" title="Ylläpito" />
-                <DropDownItem icon={faFileAlt} url="/yphaku" title="Hae ylläpitoon!" />
+                <DropDownItem close={closeNav} icon={faUserShield} url="/yllapito" title="Ylläpito" />
+                <DropDownItem close={closeNav} icon={faFileAlt} url="/yphaku" title="Hae ylläpitoon!" />
             </DropDownCollapseMenu>
 
-            <NavLink icon={faGift} url="/lahjoitus" title="Lahjoitukset" />
+            <NavLink close={closeNav} icon={faGift} url="/lahjoitus" title="Lahjoitukset" />
 
             <DropDownCollapseMenu
                 selected={selectedDropdown}
@@ -153,8 +197,8 @@ const Navbar = () => {
                 icon={faScroll}
                 itemIndex={3}
             >
-                <DropDownItem icon={faFileAlt} url="/yphaku" title="Hae ylläpitoon!" />
-                <DropDownItem icon={faFileAlt} url="/unban" title="Unban-hakemus" />
+                <DropDownItem close={closeNav} icon={faFileAlt} url="/yphaku" title="Hae ylläpitoon!" />
+                <DropDownItem close={closeNav} icon={faFileAlt} url="/unban" title="Unban-hakemus" />
             </DropDownCollapseMenu>
         </Nav>
     )
