@@ -247,7 +247,7 @@ const NekroKuolematon = () => {
             <Rank name="Kuolematon" time="100d" color="c-kuolematon ">
                 <CommandTable>
                     <CommandRow>
-                        <SetHome count="18" />
+                        <SetHome count="20" />
                         <Command />
                     </CommandRow>
                 </CommandTable>
