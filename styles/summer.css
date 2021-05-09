@@ -1,35 +1,35 @@
 :root {
     --color-primary: #f9fafb;
-    --color-secondary: #b1cef6;
+    --color-secondary: #a8d2f0;
     --color-link: #ffffff;
-    --color-accent: #c2dbff;
+    --color-accent: #baddfb;
     --color-icon: white;
     --color-nav-link: white;
     --background-primary: #fffdf5;
-    --background-secondary: #2b4297;
-    --background-accent: #0a336b;
+    --background-secondary: #124791;
+    --background-accent: #0d3a5e;
     --gradient-primary: linear-gradient(45deg, hsl(215, 93%, 69%), hsl(215, 100%, 67%));
     --gradient-secondary: linear-gradient(45deg, hsl(205deg 100% 82%), hsl(210deg 91% 65%));
     --primary-border-color: rgb(0 0 0 / 11%);
     --secondary-border-color: rgb(0 0 0 / 10%);
 }
 
-body {
-    filter: hue-rotate(349deg);
-}
-
 #__next > div,
 body {
-    --bg: #294491;
+    --bg: hsl(217, 59%, 33%);
+    --fg: hsl(225, 43%, 43%);
+    --fg-transparent: hsla(225, 43%, 43%, 0.333);
+
     background: var(--bg);
     --size: 55px;
 
-    background: linear-gradient(135deg, #474ea255 25%, transparent 25%) calc(-1 * var(--size)) 0 / calc(2 * var(--size))
+    background: linear-gradient(135deg, var(--fg-transparent) 25%, transparent 25%) calc(-1 * var(--size)) 0 /
+            calc(2 * var(--size)) calc(2 * var(--size)),
+        linear-gradient(225deg, var(--fg) 25%, transparent 25%) calc(-1 * var(--size)) 0 / calc(2 * var(--size))
             calc(2 * var(--size)),
-        linear-gradient(225deg, #474ea2 25%, transparent 25%) calc(-1 * var(--size)) 0 / calc(2 * var(--size))
+        linear-gradient(315deg, var(--fg-transparent) 25%, transparent 25%) 0px 0 / calc(2 * var(--size))
             calc(2 * var(--size)),
-        linear-gradient(315deg, #474ea255 25%, transparent 25%) 0px 0 / calc(2 * var(--size)) calc(2 * var(--size)),
-        linear-gradient(45deg, #474ea2 25%, var(--bg) 25%) 0px 0 / calc(2 * var(--size)) calc(2 * var(--size));
+        linear-gradient(45deg, var(--fg) 25%, var(--bg) 25%) 0px 0 / calc(2 * var(--size)) calc(2 * var(--size));
 }
 
 /* #__next > div,
