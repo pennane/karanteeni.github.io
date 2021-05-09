@@ -1,4 +1,5 @@
 import '../styles/global.css'
+import '../styles/summer.css'
 
 import { AppProps } from 'next/app'
 

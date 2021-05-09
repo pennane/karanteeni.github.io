@@ -43,6 +43,7 @@ export default function Lahjoitus() {
 
     return (
         <Layout
+            className="lahjoitus"
             title="Lahjoittaminen"
             description="Tue karanteenia lahjoittamalla! Palvelin maksetaan täysin omilla rahoilla, pienetkin lahjoitukset ovat erittäin tervetulleita."
         >
