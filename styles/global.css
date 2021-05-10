@@ -20,6 +20,10 @@
     --secondary-border-color: #151928;
 }
 
+b {
+    font-weight: 600;
+}
+
 html,
 body,
 #__next {
@@ -61,6 +65,11 @@ h3,
 h4,
 h4 {
     color: var(--color-accent);
+}
+
+.home h2,
+.home h3 {
+    margin-top: 0;
 }
 
 li,
@@ -111,7 +120,39 @@ nav {
     display: none;
 }
 
+main.not-found {
+    background: transparent;
+    text-align: center;
+    position: relative;
+    z-index: 2;
+    margin: 2em 0;
+}
+
+main.not-found .main-heading {
+    margin-bottom: 0.7em;
+}
+
+.not-found-back {
+    padding-bottom: 1.9em;
+}
+
+main.not-found img {
+    z-index: -1;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+    filter: grayscale(1) opacity(0.5);
+}
+
 .nav {
+    min-height: 64px;
+    box-sizing: border-box;
     display: flex;
     list-style: none;
     justify-content: space-evenly;
@@ -270,6 +311,10 @@ main.yllapito li {
     line-height: 2;
 }
 
+.yp-page-info > * {
+    margin: 1em 0;
+}
+
 .server-event {
     padding: 0.6em;
     border-radius: 6px;
@@ -300,7 +345,6 @@ footer {
     align-items: stretch;
     border-top: 1px solid var(--secondary-border-color);
     background: var(--background-secondary);
-    font-size: smaller;
     margin-top: auto;
 }
 
@@ -493,6 +537,15 @@ h1 {
     max-width: 70%;
     min-width: 325px;
     height: 140px;
+}
+
+.minecraft-citation > * {
+    transition: opacity 2s;
+    opacity: 1;
+}
+
+.minecraft-citation.transitioning > * {
+    opacity: 0;
 }
 
 .minecraft-citation blockquote {
@@ -778,6 +831,16 @@ button {
     letter-spacing: 0.5px;
 }
 
+.button:hover {
+    transform: translateY(0.5px);
+    opacity: 0.9;
+}
+
+.button:active {
+    transform: translateY(2px);
+    opacity: 0.8;
+}
+
 .button.changelog {
     margin-bottom: 1.5rem;
 }
@@ -808,6 +871,11 @@ time {
     animation-fill-mode: both;
     text-shadow: 0px 0px 8px rgb(255 255 255 / 20%);
     font-weight: 600;
+}
+
+.ip-to-clipboard {
+    margin-top: 0.5em;
+    width: 180px;
 }
 
 .loading-spinner-container {
@@ -893,9 +961,11 @@ time {
     margin-bottom: 1rem;
 }
 
-.lahjoitustablewrapper table td {
+.lahjoitustablewrapper table td,
+.lahjoitustablewrapper table th {
     text-align: center;
     line-height: 2.5;
+    padding: 0 0.2em;
 }
 
 .navbar-toggler-icon {
@@ -1126,12 +1196,12 @@ time {
     color: #ff476c !important;
 }
 
-.operator {
+.operaattori {
     color: #dc3588 !important;
 }
 
-.moderator,
-.builder {
+.moderaattori,
+.rakentaja {
     color: #b922a3 !important;
 }
 
@@ -1183,6 +1253,7 @@ h3.minecraft {
     main.home {
         padding-top: 0;
     }
+
     .wrappedlist {
         flex-wrap: nowrap;
         height: unset;

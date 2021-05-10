@@ -247,7 +247,7 @@ const NekroKuolematon = () => {
             <Rank name="Kuolematon" time="100d" color="c-kuolematon ">
                 <CommandTable>
                     <CommandRow>
-                        <SetHome count="18" />
+                        <SetHome count="20" />
                         <Command />
                     </CommandRow>
                 </CommandTable>
@@ -289,7 +289,7 @@ const Rankit = () => {
             <p>Peliaikaan perustuvien rakkien lisäksi, Karanteenissa on myös muutama muu eritysrankki.</p>
             <ul>
                 <li>
-                    Lahjoittaja (kaikille, jotka lahjoittavat vähintään 10€ palvelimelle Ks.{' '}
+                    Lahjoittaja (kaikille, jotka lahjoittavat vähintään 10€ palvelimelle ks.{' '}
                     <Link href="/lahjoitus">lahjoitus sivu</Link>)
                 </li>
                 <li>
@@ -301,10 +301,7 @@ const Rankit = () => {
                 Karanteenissa kaikilla pelaajilla on rankkiominaisuuksien lisäksi käytössään muita komentoja ja
                 toimintoja. Niistä voit lukea <Link href="/ominaisuudet">täällä</Link>.
             </p>
-            <p>
-                Alla nähtävissä kunkin rankin peliaikavaatimus sekä avautuvat oikeudet. Jos joku komento askarruttaa,
-                niin kysy rohkeasti ylläpidolta!
-            </p>
+            <p>Alla on nähtävissä jokaisen rankin peliaikavaatimus sekä avautuvat ominaisuudet.</p>
             <RankTables />
             {/* {kuolemattomat && (
                 <div>

@@ -1,12 +1,22 @@
 import { useEffect, useState } from 'react'
+import { useToasts } from 'react-toast-notifications'
 
 const ServerStatus = () => {
+    const { addToast } = useToasts()
     let [status, setStatus] = useState(null)
+
+    let textIp = 'mc.karanteeni.net'
+    let numberIp = '95.217.120.173'
     useEffect(() => {
-        fetch(`https://api.mcsrvstat.us/2/95.217.120.173`)
+        fetch(`https://api.mcsrvstat.us/2/${numberIp}`)
             .then((response) => response.json())
             .then((data) => setStatus(data))
     }, [])
+
+    const copyIpToClipboard = () => {
+        navigator.clipboard.writeText(textIp)
+        addToast('IP tallennettu leikepöydälle', { appearance: 'success', autoDismiss: true })
+    }
 
     return (
         <div className="server-status">
@@ -27,6 +37,9 @@ const ServerStatus = () => {
                     <span className="server-player-count">Pelaajia paikalla: {status?.players?.online || 0}</span>
                 </>
             )}
+            <button className="ip-to-clipboard button" onClick={copyIpToClipboard}>
+                Kopioi IP leikepöydälle
+            </button>
         </div>
     )
 }

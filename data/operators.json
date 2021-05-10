@@ -55,7 +55,7 @@
       "uuid": "d347193d8b794a389158074681bc32f8"
     }
   ],
-  "operator": [
+  "operaattori": [
     {
       "name": "RetuPoika",
       "description": "\"Oispa kahvia.\"",
@@ -81,7 +81,7 @@
       "uuid": "5db3cb0e4ae847dc91594cc10079190d"
     }
   ],
-  "moderator": [
+  "moderaattori": [
     {
       "name": "Jokune",
       "description": "\"miten tätä ajetaan?\"",
@@ -89,7 +89,7 @@
       "uuid": "bbd2bc4c9fe64ffeb69b767c0df3db4f"
     }
   ],
-  "builder": [
+  "rakentaja": [
     {
       "name": "PreGauris",
       "description": "\"Kuvaus? No jos sitten kun en tee lohisalaattia.\"",

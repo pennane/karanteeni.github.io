@@ -1,10 +1,13 @@
 import { useState } from 'react'
+import useKeyboardInput from '../lib/useKeyboardInput'
 
 import modalStyles from '../styles/modal.module.css'
 
 const Modal = ({ children, title }) => {
+    useKeyboardInput(() => close(), ['Escape'])
     const [show, setShow] = useState(true)
     const close = () => {
+        if (!show) return
         setShow(false)
     }
     return (

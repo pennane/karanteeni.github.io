@@ -21,15 +21,15 @@
     background: linear-gradient(to right, #d90647, #910028);
 }
 
-.card-container.operator {
+.card-container.operaattori {
     background: linear-gradient(to right, #cb077d, #900153);
 }
 
-.card-container.moderator {
+.card-container.moderaattori {
     background: linear-gradient(to right, #a025b2, #72147b);
 }
 
-.card-container.builder {
+.card-container.rakentaja {
     background: linear-gradient(to right, #a025b2, #72147b);
 }
 
@@ -56,15 +56,15 @@
     background: linear-gradient(to right, #ca013f, #c5003c);
 }
 
-.background.operator {
+.background.operaattori {
     background: linear-gradient(to right, #c20075, #bd0071);
 }
 
-.background.moderator {
+.background.moderaattori {
     background: linear-gradient(to right, #991ea8, #951ea3);
 }
 
-.background.builder {
+.background.rakentaja {
     background: linear-gradient(to right, #991ea8, #951ea3);
 }
 
@@ -89,15 +89,15 @@
     background: linear-gradient(to bottom, #c80033, #b70337);
 }
 
-.content.operator {
+.content.operaattori {
     background: linear-gradient(to bottom, #c2006a, #b00367);
 }
 
-.content.moderator {
+.content.moderaattori {
     background: linear-gradient(to bottom, #9d1c9f, #8d1c97);
 }
 
-.content.builder {
+.content.rakentaja {
     background: linear-gradient(to bottom, #9d1c9f, #8d1c97);
 }
 
@@ -144,15 +144,15 @@
     background-color: #ff476c;
 }
 
-.type.operator {
+.type.operaattori {
     background-color: #dc3588;
 }
 
-.type.moderator {
+.type.moderaattori {
     background-color: #aa2eb8;
 }
 
-.type.builder {
+.type.rakentaja {
     background-color: #aa2eb8;
 }
 
