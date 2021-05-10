@@ -3,7 +3,9 @@
 }
 
 .modal {
-    display: block;
+    display: grid;
+    grid-auto-rows: 1fr 7fr 1fr;
+    max-height: 85vh;
     background: var(--gradient-primary);
     color: black;
     max-width: 660px;
@@ -37,7 +39,6 @@
 .modal-content {
     color: #595959;
     padding: 1rem;
-    max-height: 62vh;
     overflow-y: auto;
 }
 
