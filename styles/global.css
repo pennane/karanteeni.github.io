@@ -14,8 +14,8 @@
     --color-nav-link: #fff9e5;
     --background-primary: #10131f;
     --background-secondary: #0e101b;
-    --gradient-primary: linear-gradient(45deg, #7cb0f8, #68abfd);
-    --gradient-secondary: linear-gradient(45deg, hsl(215deg 90% 73%), #aed8e6);
+    --gradient-primary: linear-gradient(45deg, #ffeb3b, #f3b12a);
+    --gradient-secondary: linear-gradient(45deg, #ffef00, #ff6c05);
     --primary-border-color: #171b2b;
     --secondary-border-color: #151928;
 }
