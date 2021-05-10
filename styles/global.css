@@ -151,6 +151,8 @@ main.not-found img {
 }
 
 .nav {
+    min-height: 64px;
+    box-sizing: border-box;
     display: flex;
     list-style: none;
     justify-content: space-evenly;
