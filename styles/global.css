@@ -875,7 +875,9 @@ time {
 
 .ip-to-clipboard {
     margin-top: 0.5em;
-    width: 180px;
+    width: 210px;
+    box-sizing: border-box;
+    padding: 11px 10px;
 }
 
 .loading-spinner-container {
