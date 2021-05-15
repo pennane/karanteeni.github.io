@@ -831,7 +831,7 @@ button {
     letter-spacing: 0.5px;
 }
 
-.button:hover {
+.button:hover:not(.changelog) {
     transform: translateY(0.5px);
     opacity: 0.9;
 }
