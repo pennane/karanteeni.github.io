@@ -21,12 +21,12 @@ const getDateParts = (d: string): string[] => {
 
 const TableRow = ({ donator, width }: { donator: Donator; width: number }) => {
     let dateParts = getDateParts(donator.date)
-    let dateString
-    if (width > 500) {
-        dateString = dateParts.join('.')
-    } else {
-        dateString = dateParts.slice(1).join('.')
-    }
+    let dateString = dateParts.join('.')
+    // if (width > 500) {
+    //     dateString = dateParts.join('.')
+    // } else {
+    //     dateString = `${dateParts[1]}, 20${dateParts[2]}`
+    // }
 
     return (
         <tr>
