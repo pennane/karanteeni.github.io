@@ -15,7 +15,7 @@ const MinecraftCitation = () => {
 
     useInterval(() => {
         updateCitation()
-    }, 11000)
+    }, 9000)
 
     const updateCitation = () => {
         setTransitioning(() => true)

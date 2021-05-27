@@ -7,42 +7,40 @@ const Hoks = () => {
     return (
         <Layout
             title="Hyvä tietää"
-            description="Karanteeni on vuodesta 2016 asti toiminut Minecraft-palvelin, jonka on perustanut Emmazki, Jomeee ja Nuubles. Palvelimella
-        pyörii keskimäärin 15-20 pelaajaa joka päivä. Tällä hetkellä palvelimella pyörii vain Survival maailma, mutta Creative on
-        palaamassa ajan mittaan."
+            description="Karanteeni on vuodesta 2016 asti toiminut suomalainen Minecraft palvelin. Karanteenin alkuperäiset perustajat ovat Emmazki, Jomeee ja
+            Nuubles, joista Jomeee ja Nuubles ovat vielä aktiivisina pyörimässä. Palvelimella keskeisin pelimuoto on omilla ominaisuuksilla paranneltu Survival.
+            Palvelimelle on palaamassa Creative ja erinäköiset minipelit."
         >
-            <Heading heading="Hyvä tietää!" />
-            <h3>Pieni palvelintiivistelmä</h3>
+            <Heading heading="Hyvä tietää!" lead="Karanteeni tiivistettynä" />
             <p>
-                Karanteeni on vuodesta 2016 asti toiminut Minecraft-palvelin, jonka on perustanut Emmazki, Jomeee ja
-                Nuubles. Palvelimella vaikuttavin pelimuoto on omilla ominaisuuksilla höystetty Survival maailma.
-                Creative sekä erilaiset minipelit ovat palaamassa ajan mittaan. Karanteenissa pyörii päivittäin
-                keskimäärin 15-30 pelaajaa.
+                Karanteeni on vuodesta 2016 asti toiminut suomalainen Minecraft palvelin. Karanteenin alkuperäiset
+                perustajat ovat Emmazki, Jomeee ja Nuubles, joista Jomeee ja Nuubles ovat vielä aktiivisina pyörimässä.
+                Palvelimella keskeisin pelimuoto on omilla ominaisuuksilla paranneltu Survival. Palvelimelle on
+                palaamassa Creative ja erinäköiset minipelit.
             </p>
             <p>
-                Palvelimen toimintaidea on se, että mitä pidempään pelaat serverillä, sitä parempia ominaisuuksia saat
-                käyttöösi. Peliajalla kerättävistä ominaisuuksista voi lukea lisää <Link href="/rankit">täällä</Link>.
+                Palvelimen toimintaidea on se, että mitä pidempään pelaat serverillä, sitä parempia ominaisuuksia avaat
+                käyttöösi. Peliajalla kerättävistä ominaisuuksista voi lukea lisää{' '}
+                <Link href="/rankit">rankit sivulta</Link>. Muista Karanteenin ominaisuukista voi lukea{' '}
+                <Link href="ominaisuudet">ominaisuudet sivulla</Link>.
             </p>
             <p>
-                Palvelimella järjestetään erilaisia juhlia (esim joulujuhlat, synttärit ja juhannusbileet). Survivalin
-                kartta resetoidaan noin kaksi kertaa vuodessa.
+                Palvelimella järjestetään vuosittain erilaisia juhlia (esim joulujuhlat, synttärit ja juhannusbileet).
+                Survival resetoidaan suunnilleen aina 7 kuukauden välein jota ennen aina pelaajien annetaan räjäyttää
+                vanha mappi uuden tieltä.
             </p>
             <p>
-                Muita Karanteenille ominaisia ominaisuuksia voit ihmetellä <Link href="ominaisuudet">ominaisuudet</Link>{' '}
-                sivulla.
-            </p>
-            <p>
-                Palvelin on täysin omakustanteinen. Halutessasi voit kuitenkin tukea toimintaa lahjoittamalla.
-                Lahjoittajat kuitenkin saavat itselleen pieniä kivoja ominaisuuksia. Lahjoittamisesta voi lukea lisää{' '}
-                <Link href="/lahjoitus">täällä</Link>.
+                Palvelin on täysin omakustanteinen, eli lahjoitusten ja ylläpitäjien varassa. Lahjoitukset käytetään
+                palvelimen käynnissäpitämiseen sekä erinäköisten tapahtumien järjestämiseen. Kaikki vähintään 10 euroa
+                lahjoittavat saavat itselleen kivoja ominaisuuksia palvelimelle sekä Discordiin. Lahjoittamisesta voi
+                lukea lisää <Link href="/lahjoitus">lahjoitus sivulta</Link>.
             </p>
 
-            <h3>Pointteja joilla parantaa pelikokemusta!</h3>
+            <h3>Muita pointteja</h3>
             <ul>
-                <li>Karanteenissa voit tällä hetkellä pelata Survivalia, Creative on palaamassa ajan myötä.</li>
                 <li>
-                    Rahavaluuttana toimii pennit (❂). Voit ansaita rahaa käymällä kauppaa toisten pelaajien kanssa, tai
-                    äänestämällä Karanteenia <code>/vote</code>.
+                    Karanteenissa valuuttana toimii pennit (❂). Pennejä voi ansaita äänestämällä Karanteenia{' '}
+                    <code>/vote</code> ja käymällä kauppaa toisten pelaajien kanssa.
                 </li>
                 <li>
                     Karanteenissa ylläpito suojaa alueesi. Pyydäthän ylläpitoa suojausta, niin vältytään turhilta grief
