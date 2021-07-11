@@ -124,7 +124,7 @@ const Nav = ({ children, show, setShow }) => {
         return () => window.removeEventListener('resize', handleResize)
     }, [])
 
-    const isMobile = windowDimension <= 1000
+    const isMobile = windowDimension <= 1100
 
     return (
         <nav className={'navbar ' + (isMobile ? 'mobile' : '') + (show ? ' show' : '')}>

@@ -1,4 +1,5 @@
-import Link from 'next/link'
+import { faCheck } from '@fortawesome/free-solid-svg-icons'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import React, { useState } from 'react'
 import Heading from '../components/layout/heading'
 import Layout from '../components/layout/layout'
@@ -10,7 +11,8 @@ changes.forEach((change) => {
     let dateParts = change.date.split('.')
     let key = `${dateParts[2]}${dateParts[1].padStart(2, '0')}`
     if (key in mappedChanges) {
-        mappedChanges[key].concat(change)
+        console.log('yes is')
+        mappedChanges[key] = mappedChanges[key].concat(change)
     } else {
         mappedChanges[key] = [change]
     }
@@ -21,7 +23,7 @@ const Month = ({ month, showId, updateShowing, label, children }) => {
     return (
         <div className="card bg-transparent border-gold">
             <div className="card-header" id={month + '_1'}>
-                <h4>
+                <h4 className={showing ? 'active month' : 'month'}>
                     <button
                         type="button"
                         aria-expanded="false"
@@ -40,14 +42,23 @@ const Month = ({ month, showId, updateShowing, label, children }) => {
 }
 
 const Change = ({ children }) => {
-    return <li>{children}</li>
+    return (
+        <div className="change">
+            <div className="change-icon">
+                <div className="rule-icon accepted">
+                    <FontAwesomeIcon className="icon" icon={faCheck} />
+                </div>
+            </div>
+            <div className="change-content">{children}</div>
+        </div>
+    )
 }
 
 const ChangeDate = ({ date, children }: { date: string; children: React.ReactNode }) => {
     return (
-        <div>
-            <p>{date}</p>
-            <ul>{children}</ul>
+        <div className="change-date">
+            <span className="date-header">{date}</span>
+            {children}
         </div>
     )
 }
