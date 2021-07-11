@@ -213,7 +213,6 @@ main.not-found img {
 .collapse.show {
     opacity: 1;
     max-height: 1000px;
-    transition: max-height 0.5s ease-out, opacity 0.1s ease-in-out;
     pointer-events: all;
 }
 
@@ -757,6 +756,13 @@ li {
     margin-top: 0;
 }
 
+.month {
+    color: var(--color-accent);
+}
+.active.month {
+    color: var(--color-primary);
+}
+
 .rank.card {
     margin: 0;
     margin-bottom: 1rem;
@@ -861,6 +867,43 @@ button {
 
 .button.changelog:hover::after {
     transform: translateX(2px);
+}
+
+.change-date {
+    margin-bottom: 1.2em;
+    margin-top: 0.2em;
+}
+
+.date-header {
+    color: var(--color-accent);
+}
+
+.change {
+    display: flex;
+    justify-content: flex-start;
+    align-content: center;
+    margin-top: 0.18em;
+}
+
+.change-icon {
+    margin-right: 0.4rem;
+}
+
+.change-icon .rule-icon {
+    width: 22px;
+    height: 22px;
+}
+
+.change-icon .icon {
+    height: 0.65em;
+    width: 0.77em;
+    margin: 0;
+}
+
+.change-content {
+    color: var(--color-primary);
+    display: flex;
+    align-items: center;
 }
 
 time {
