@@ -28,5 +28,28 @@
     "dates": {
       "startDate": "3.4.2021"
     }
+  },
+  {
+    "title": "Maailmanloppu",
+    "description": "Haha, TNT printer go brrr.",
+    "dates": {
+      "startDate": "10.7.2021",
+      "endDate": "11.7.2021"
+    }
+  },
+  {
+    "title": "Mapreset servu",
+    "description": "11.7 klo 15:00 nykyinen survimap sulkeutuu ja väliaikainen mapreset servu aukeaa",
+    "dates": {
+      "startDate": "11.7.2021",
+      "endDate": "13.7.2021"
+    }
+  },
+  {
+    "title": "Map reset",
+    "description": "Uusi survimap aukeaa 1.17.1 versiossa klo 15:00",
+    "dates": {
+      "startDate": "13.7.2021"
+    }
   }
 ]

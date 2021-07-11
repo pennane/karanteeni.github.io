@@ -318,6 +318,7 @@ main.yllapito li {
 .server-event {
     padding: 0.6em;
     border-radius: 6px;
+    margin-bottom: 0.9em;
     background: var(--background-secondary);
     border: 1px solid var(--secondary-border-color);
 }
