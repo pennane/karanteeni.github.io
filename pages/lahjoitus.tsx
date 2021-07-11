@@ -61,7 +61,7 @@ export default function Lahjoitus() {
                             Karanteenin PayPaliin
                         </a>
                     </b>
-                    . Voit myös ottaa Discordissa yhteyttä Jome#7320, niin voimme katsoa kuinka voit tehdä mahdollisen
+                    . Voit myös ottaa Discordissa yhteyttä Jomeen, niin voimme katsoa kuinka voit tehdä mahdollisen
                     lahjoituksen. Helpoimmat tavat ovat Paysafecard ja PayPal.{' '}
                     <b>Muistathan kertoa lahjoittaessasi discord/minecraft nimesi.</b>
                 </p>

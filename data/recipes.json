@@ -1,0 +1,66 @@
+[
+    {
+        "caption": "End Crystal. Karanteenissa Ender dragon pudottaa joka spawnaus kerran jälkeen lohikäärmeen munan. Siksi end crystalleille on asetettu uusi vaikeampi resepti.",
+        "image": "endcrystal.png"
+    },
+    {
+        "caption": "Onnenkeksi",
+        "image": "fortunecookie.png"
+    },
+    {
+        "caption": "Rakentajan essentiaalinen työkalu. Käytössä sisukkaasta ylöspäin.",
+        "image": "builders_wand.png"
+    },
+    {
+        "caption": "Kaikki lasipaneelityypit voi muuttaa takaisin palikoiksi.",
+        "image": "glasspane.png"
+    },
+    {
+        "caption": "Värjättyä lasia voi sulattaa takaisin värjäämättömäksi.",
+        "image": "smelt_tempered_glass.png"
+    },
+    {
+        "caption": "Blast furnacella hiiliblockista voi sulattaa mustan väriaineen.",
+        "image": "black_dye.png"
+    },
+    {
+        "caption": "Nyt myös eri prismarine tyyppejä voi muuntaa täys blockeiksi.",
+        "image": "prismarine_block.png"
+    },
+    {
+        "caption": "Chainmail Armorit rakennetaan iron bareista samalla tavalla kuin normaalit armorit. Tarvittava raaka-aine on iron bar.",
+        "image": "chainmail_armor.png"
+    },
+    {
+        "caption": "Coral faneja voi muuttaa Coraleiksi.",
+        "image": "fire_coral.png"
+    },
+    {
+        "caption": "Laittamalla kaksi slabia päällekkäin mistä tahansa puumateriaalista tekee siitä kokonaisen plankin.",
+        "image": "plank.png"
+    },
+    {
+        "caption": "Voit tehdä pelaajan pään. :) Raaka-aineina Bone block, Emerald, Diamond, Golden Apple ja Rotten flesh.",
+        "image": "player_head.png"
+    },
+    {
+        "caption": "Ja Zombien pään. Raaka-aineina Golden Apple, Bone block ja Rotten flesh. :o",
+        "image": "zombie_head.png"
+    },
+    {
+        "caption": "Voit tehdä myös Skeletonin pään. Raaka-aineina Golden Apple, Bone ja Bone block.",
+        "image": "skeleton_head.png"
+    },
+    {
+        "caption": "Voit sulattaa smooth stonea hiekaksi.",
+        "image": "sand_smooth_stone.png"
+    },
+    {
+        "caption": "Enchanted Bottle on myös mahdollista koota. ;)",
+        "image": "xp_bottle.png"
+    },
+    {
+        "caption": "Meemi.",
+        "image": "dirt.png"
+    }
+]

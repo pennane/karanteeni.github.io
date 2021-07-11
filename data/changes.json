@@ -1,0 +1,574 @@
+[
+    {
+        "date": "7.8.2021",
+        "changes": [
+            "Servulla 1.17.1 tuki!"
+        ]
+    },
+    {
+        "date": "6.8.2021",
+        "changes": [
+            "et enää vedä kaikkien eläinten painovoimaa ittees (eläinten hidas kävely kantobugi korjattu, nyt ei jää enää hitaus päälle)"
+        ]
+    },
+    {
+        "date": "28.5.2021",
+        "changes": [
+            "/tk (tai nykyään /welcome tai /tervetuloa myös) voi nyt /tk edit <teksti %player%>"
+        ]
+    },
+    {
+        "date": "3.5.2021",
+        "changes": [
+            "nostettu kuolemattomien kotien määrää 18 -&#62; 20"
+        ]
+    },
+    {
+        "date": "15.4.2021",
+        "changes": [
+            "Rankkikohtaset rankup-viestit ja yllättäen unohti mainita niistä :3",
+            "Lisää vanhoja ominaisuuksia servulle takaisin! Ylläpidolla lukee nyt [YP] ennen pelinimeä pään yläpuolella"
+        ]
+    },
+    {
+        "date": "5.4.2021",
+        "changes": [
+            "Estetty maailmanrajojen ulkopuolelle teleporttaaminen",
+            "Chatissa toimii nyt samalla myös se jos asetuksista on laitettu \"show commands only\"",
+            "Lisätty *tableflip ja muita pieniä"
+        ]
+    },
+    {
+        "date": "31.3.2021",
+        "changes": [
+            "Lisätty partikkelit taikamattoihin, ne näkee editorista /mc design",
+            "Lisätty roskakori turhille tavaroille /trash /roskis /roskakori",
+            "Lisätty karan skriptiajoilta seuraavat asiat: itemit joiden nimi on troll, chatissa asiat alt + f4, anna op",
+            "Lisätty/korjattu näkymättömät itemframet",
+            "Vaihdettu /msg formaattia nätimmäksi",
+            "Poistettu ylimääräinen rivivaihto rankin hoverista, muotoiltu nätimmäksi",
+            "Lisätty roskakori turhille tavaroille /trash /roskis /roskakori",
+            "Lisätty karan skriptiajoilta seuraavat asiat: itemit joiden nimi on troll, chatissa asiat alt + f4, anna op"
+        ]
+    },
+    {
+        "date": "30.3.2021",
+        "changes": [
+            "Poistuessa servulta ja takaisin liittyessä taikamatto pysyy päällä.",
+            "Lisätty/korjattu näkymättömät itemframet",
+            "Vaihdettu /msg formaattia nätimmäksi",
+            "Poistettu ylimääräinen rivivaihto rankin hoverista, muotoiltu nätimmäksi",
+            "Lisätty roskakori turhille tavaroille /trash /roskis /roskakori",
+            "Lisätty karan skriptiajoilta seuraavat asiat: itemit joiden nimi on troll, chatissa asiat alt + f4, anna op"
+        ]
+    },
+    {
+        "date": "26.3.2021",
+        "changes": [
+            "Päivitetty /clearcache",
+            "Lisätty erilainen liittymisviesti ensimmäistä kertaa liittyville",
+            "Päivitetty permiplugari, todennäköisesti ei mitään muutosta mutta menee testinä",
+            "Lisätty tuki /nimeä &amp; /setname komennon RGB väreille nekromantikkoon ja siitä ylöspäin"
+        ]
+    },
+    {
+        "date": "25.3.2021",
+        "changes": [
+            "Lisätty uusi rank Rikkoja, jonka voi saada jos löytää servulta sitä hajottavia asioita ja positiivisella tavalla kertoo/auttaa ylläpitoa korjaamaan sen."
+        ]
+    },
+    {
+        "date": "22.3.2021",
+        "changes": [
+            "Päivitetty afk-kickkiä",
+            "Päivitetty palvelinta",
+            "Päivitetty nettisivut React sivuiksi"
+        ]
+    },
+    {
+        "date": "6.2.2021",
+        "changes": [
+            "uwu"
+        ]
+    },
+    {
+        "date": "21.1.2021",
+        "changes": [
+            "Lisätty mail komennot"
+        ]
+    },
+    {
+        "date": "13.1.2021",
+        "changes": [
+            "Lisätty http://map.karanteeni.net"
+        ]
+    },
+    {
+        "date": "8.1.2021",
+        "changes": [
+            "Uusi ominaisuudet sivu"
+        ]
+    },
+    {
+        "date": "1.1.2021",
+        "changes": [
+            "Unbanneja voi nyt hakea nettisivuilta! https://karanteeni.net/unban"
+        ]
+    },
+    {
+        "date": "31.12.2020",
+        "changes": [
+            "Lisätty hidden groupit. Mahdollistavat lisärankit muuttamatta pelaajan päärankkia.",
+            "Lisätty lahjoittajille tabiin oranssit [] merkit."
+        ]
+    },
+    {
+        "date": "27.12.2020",
+        "changes": [
+            "Palvelin osaa tulkita kirjoitetut komennot, jotka on alkavat / sijasta 7 merkillä."
+        ]
+    },
+    {
+        "date": "19.12.2020",
+        "changes": [
+            "Lisätty resepti nametagille"
+        ]
+    },
+    {
+        "date": "27.11.2020",
+        "changes": [
+            "Vähennetty mobien määrää per pelaaja 28 -> 24."
+        ]
+    },
+    {
+        "date": "25.11.2020",
+        "changes": [
+            "Lisätty respawniin tuki respawn anchoreille, ei joudu enää spawnille kun respawnaa."
+        ]
+    },
+    {
+        "date": "22.11.2020",
+        "changes": [
+            "Lisätty kaksi (2) automaattista uudelleenkäynnistystä."
+        ]
+    },
+    {
+        "date": "17.11.2020",
+        "changes": [
+            "Lisätty vinkkeihin lyhyt ohje mitä tehdä, jos joku häiriköi"
+        ]
+    },
+    {
+        "date": "14.11.2020",
+        "changes": [
+            "Poistettu /lakanakana.",
+            "Lisätty /iita.",
+            "/tptoggle toimii oletettavasti. Ylempirankkiset eivät enää yliaja, vaan heitä kohdellaan tasavertaisesti.",
+            "Potentiaalinen palvelinvirhe korjattu."
+        ]
+    },
+    {
+        "date": "9.11.2020",
+        "changes": [
+            "Mobien spawnratea on pienennetty."
+        ]
+    },
+    {
+        "date": "8.11.2020",
+        "changes": [
+            "Palautettu discordin minecraft-chattiin /list"
+        ]
+    },
+    {
+        "date": "7.11.2020",
+        "changes": [
+            "Armorstandin asentoja voi muuttaa oikeaklikkaamalla kyykyssä!"
+        ]
+    },
+    {
+        "date": "4.11.2020",
+        "changes": [
+            "Palvelin päivitetty 1.16.4!",
+            "Palvelimella voi nyt craftaa onnenkeksejä."
+        ]
+    },
+    {
+        "date": "1.11.2020",
+        "changes": [
+            "Tab on palautettu Halloween ulkoasusta.",
+            "Lisätty etukäteen tilapäinen onnentoivotus uuteen mappiin.",
+            "Aikaisemmin hidastelleet votet pitäisi nyt toimia."
+        ]
+    },
+    {
+        "date": "10.10.2020",
+        "changes": [
+            "Halloween teemainen tabi.",
+            "Spawn on nyt halloween teemainen.",
+            "Aikaisemmin hidastelleet votet pitäisi nyt toimia."
+        ]
+    },
+    {
+        "date": "9.10.2020",
+        "changes": [
+            "Discord bot näyttää nyt roolit Minecraftin chatissa."
+        ]
+    },
+    {
+        "date": "19.9.2020",
+        "changes": [
+            "Päivitetty tabista palvelimen alkukirjain isoksi."
+        ]
+    },
+    {
+        "date": "14.9.2020",
+        "changes": [
+            "Sisukas-rankkisten (ja alempien) virheellinen viesti-ilmoitus oikeuksista on nyt korjattu.",
+            "Paranneltu turvallista teleporttia (onnistuu teleporttaamaan slabien päälle)"
+        ]
+    },
+    {
+        "date": "12.9.2020",
+        "changes": [
+            "Added Russian language (thanks Inferdy &#x2764;).",
+            "Muutettu arvojen värit tukemaan RGB."
+        ]
+    },
+    {
+        "date": "3.9.2020",
+        "changes": [
+            "Päivitetty Jesari"
+        ]
+    },
+    {
+        "date": "1.9.2020",
+        "changes": [
+            "Lisätty oikeus Nekromantikosta ylöspäin + lahjoittajille käyttää RGB-värejä pelinimessä.",
+            "Korjattu kääntäjässä bugi, joka rikkoi kääntäjän pelaajalla ollessa ei-tuettu kieli tietokannassa.",
+            "Lisätty tapa tehdä lätäköitä."
+        ]
+    },
+    {
+        "date": "31.8.2020",
+        "changes": [
+            "Chat-värit on tullut takaisin rgb tuella.",
+            "Parempi käyttäjien maininta chatissa.",
+            "Fixattu bugi, jossa pelaajalla oli ei-tuettu kieli ja hajotti kääntäjän."
+        ]
+    },
+    {
+        "date": "30.8.2020",
+        "changes": [
+            "Builders wand on nyt palvelimella"
+        ]
+    },
+    {
+        "date": "29.8.2020",
+        "changes": [
+            "Lisätty ylösalaisin oleva kieli.",
+            "Päivitetty palvelin versioon 1.16.2!",
+            "Nether ja End resetattu.",
+            "Fixattu bugi, jossa kodin koordinaatti on negatiivinen ja jaollinen 16 => nakkaa virheen.",
+            "Rankkien välimuisti päivittyy -> jos rankup ja relog, niin rankki pysyy samana.",
+            "Nettisivut päivitetty.",
+            "Uusi tabin gradient.",
+            "/music on lisätty uudet Netherin musiikit.",
+            "/music kuuluvuutta on parannettu.",
+            "Lisätty vanhat \"koodit\" takaisin palvelimelle.",
+            "Lisätty ääniviestejä palvelimelle.",
+            "Iron Golem pakottaa sinut pudottamaan housusi, kun lyö sinua.",
+            "Kuolinviestit jakautuu nyt maailmojen välillä."
+        ]
+    },
+    {
+        "date": "15.8.2020",
+        "changes": [
+            "Lisätty 1.16.2 tuki"
+        ]
+    },
+    {
+        "date": "13.8.2020",
+        "changes": [
+            "Korjattu vinkki Netherin ja Endin resettaamisesta"
+        ]
+    },
+    {
+        "date": "7.8.2020",
+        "changes": [
+            "Fixattu bugi yp-chatissa.",
+            "Lisätty ilmoitus muistuttamaan pelaajia liittymisen yhteydessä /warns -komennosta."
+        ]
+    },
+    {
+        "date": "5.8.2020",
+        "changes": [
+            "Palvelimen render distance nostettu 10 chunkkiin (+2 chunkkia edellisestä)."
+        ]
+    },
+    {
+        "date": "22.7.2020",
+        "changes": [
+            "Spawnille avattu parkour! /warp parkour,"
+        ]
+    },
+    {
+        "date": "5.7.2020",
+        "changes": [
+            "/alue näyttää nyt jäsenten ja omistajien määrän suojauksessa.",
+            "/alue näyttää molemmat XY pisteet suojauksen koosta.",
+            "Lisätty /manu",
+            "Poistettu /tank"
+        ]
+    },
+    {
+        "date": "25.6.2020",
+        "changes": [
+            "Lisätty 1.16.1 tuki servulle!",
+            "Toisen pelaajan pelaaja-arvon klikkaaminen chatissa näyttää nyt kyseisen pelaajan peliajan oman sijaan."
+        ]
+    },
+    {
+        "date": "18.6.2020",
+        "changes": [
+            "Karanteenissa toimii VR",
+            "Palvelimella voi nyt antaa lemmikkejä ja vapauttaa niitä komennoilla /lemmikki anna <pelaaja>, ja /lemmikki vapauta,.",
+            "Palvelimella voi nyt tägätä ihmisiä chatissa käyttäen ,@pelaajanimi,.",
+            "Lisätty /säännöt, komento."
+        ]
+    },
+    {
+        "date": "3.6.2020",
+        "changes": [
+            "Entity Activation Range nostettu.",
+            "Villagerin tradet pitäisi nyt restockaa nopeammin.",
+            "Fixattu ongelma, jossa pelaajat satunnaisesti jäivät jumiin chunkille."
+        ]
+    },
+    {
+        "date": "1.6.2020",
+        "changes": [
+            "Mobien tracking range on default.",
+            "Nether-portaalista voi nyt kuljettaa mobeja.",
+            "Lumouspöytä ehdottaa nyt oikeat lumoukset.",
+            "Spam fishing problem solved.",
+            "Villagereiden töiden resettaus fixed.",
+            "Netherin katolle on taas mahdollista päästä."
+        ]
+    },
+    {
+        "date": "31.5.2020",
+        "changes": [
+            "Lisätty info voteen, että siitä saa rahaa."
+        ]
+    },
+    {
+        "date": "15.5.2020",
+        "changes": [
+            "Yö kelautuu nopeammin. Mitä useampi nukkuu, sitä nopeampi yö."
+        ]
+    },
+    {
+        "date": "14.5.2020",
+        "changes": [
+            "Lisätty komento /votestreak [nimi ],. Ilman nimeä näkee oman voteputken."
+        ]
+    },
+    {
+        "date": "11.5.2020",
+        "changes": [
+            "/discord komento korjattu",
+            "Voten määrä pienennetty 75 -> 50 ja lisäksi tehty voteputket"
+        ]
+    },
+    {
+        "date": "27.3.2020",
+        "changes": [
+            "Lisätty seuraavat komennot: /jöms /retu /tank /ash"
+        ]
+    },
+    {
+        "date": "22.3.2020",
+        "changes": [
+            "Spawnereita voi taas muuttaa creeper- ja squid-spawnereiksi",
+            "/vote ei avaa enää valikkoa. Chattiin tulee molemmat linkit."
+        ]
+    },
+    {
+        "date": "18.3.2020",
+        "changes": [
+            "lisätty uusia shortcutkomentoja /nax /nubbe /skidaddleskidoodle [/nou /reverse /unoreverse ],"
+        ]
+    },
+    {
+        "date": "12.3.2020",
+        "changes": [
+            "Granite, diorite, andesite, cobble, stone voi nyt sulattaa blast furnacessa graveliksi"
+        ]
+    },
+    {
+        "date": "9.3.2020",
+        "changes": [
+            "Uusi komento /alue. Näyttää alueen nimen."
+        ]
+    },
+    {
+        "date": "24.2.2020",
+        "changes": [
+            "/radio toimii taas",
+            "Uusi komento /music",
+            "Sillanrakennus poistettu käytöstä monistusglitchin takia"
+        ]
+    },
+    {
+        "date": "16.2.2020",
+        "changes": [
+            "Map reset"
+        ]
+    },
+    {
+        "date": "16.1.2020",
+        "changes": [
+            "/tk tuotu takaisin"
+        ]
+    },
+    {
+        "date": "13.1.2020",
+        "changes": [
+            "Vote korjattu"
+        ]
+    },
+    {
+        "date": "13.12.2019",
+        "changes": [
+            "Lisätty /ignore (/ignore add <nimi>, /ignore list,  /ignore remove <nimi>,)"
+        ]
+    },
+    {
+        "date": "11.12.2019",
+        "changes": [
+            "Lisätty Bedrock versiosta tuttu sillanrakennusominaisuus",
+            "Lisätty uusi resepti: 6 lasipaneelia -> glass block ",
+            "Lisätty uusi resepti uuniin: stainded glass -> glass block"
+        ]
+    },
+    {
+        "date": "10.12.2019",
+        "changes": [
+            "Rankkikohtaiset kotien määrät korjattu",
+            "Spawnerien otto silktouchilla ja ilman silktouchia korjattu"
+        ]
+    },
+    {
+        "date": "7.12.2019",
+        "changes": [
+            "Tabin servervärejä paranneltu",
+            "Taikamaton kanssa ei enää ota fall damagea",
+            "Entiteetit eivät ota damagea taikamaton sivuista",
+            "Permiplugin osaa käsitellä offline pelaajia, ja pystyy asettamaan oikeuksia ilman relogia",
+            "Korjattu coreplugarin komennonsuorittajasta komponenttibugi"
+        ]
+    },
+    {
+        "date": "30.11.2019",
+        "changes": [
+            "Korjattu prismarine slabien muunaminen täys blockeiksi",
+            "Lisätty mahdollisuus muuntaa Blast Furnacella hiilipalikoista mustaa väriainetta"
+        ]
+    },
+    {
+        "date": "22.11.2019",
+        "changes": [
+            "Discord chatin värit korjattu"
+        ]
+    },
+    {
+        "date": "16.11.2019",
+        "changes": [
+            "Tuomas veturi päivitetty",
+            "Looppaus + random toimii nyt",
+            "Voikukat korjattu"
+        ]
+    },
+    {
+        "date": "31.10.2019",
+        "changes": [
+            "/sit tuotu takaisin"
+        ]
+    },
+    {
+        "date": "26.10.2019",
+        "changes": [
+            "/vote toimii taas",
+            "(Realistinen) eläintenkanto takaisin servulla"
+        ]
+    },
+    {
+        "date": "25.10.2019",
+        "changes": [
+            "/nimeä, komento lisätty palvelimelle",
+            "Lisätty ylläpidolle /setsign",
+            "Korjattu viestibugi /nick player nick, -komennossa (koskien ylläpitoa)",
+            "/baltop korjattu"
+        ]
+    },
+    {
+        "date": "25.09.2019",
+        "changes": [
+            "Tpa:n /back fixattu oikeiden pelaajien sijaintiin",
+            "mobGriefing asetettu takaisin päälle"
+        ]
+    },
+    {
+        "date": "24.09.2019",
+        "changes": [
+            "Tp:n ja /spawn komennon /back tallentaa nyt sijainnin"
+        ]
+    },
+    {
+        "date": "21.09.2019",
+        "changes": [
+            "/kms ja /kys lisätty",
+            "Spawnerit putoaa taas Silk Touch -enchantilla"
+        ]
+    },
+    {
+        "date": "19.08.2019",
+        "changes": [
+            "Coreprotect osaa nyt tallentaa lentävät blockit",
+            "Tnt ja tnt_minecart ei enää lennätä niin paljon blockei > parempia raivaukseen",
+            "Lisätty custom recipet servulle"
+        ]
+    },
+    {
+        "date": "17.08.2019",
+        "changes": [
+            "Paranneltu databasen käyttöö: StatManager, Karanteenials, KaranteeniPerms, Chatar",
+            "Mahdollisesti vähennetty joinauksesta seuraavaa lagia: KaranteeniPerms, Karanteenials, KaranteeniCore, StatManager, Chatar (vaihdettu db sync -> async. jos ongelmia ilmenee niin ilmoittakaa)",
+            "Lisätty automaattinen restart (yp käyttäkää komentoa /restarter:restart,)",
+            "Poistettu virheellisiä blockeja taikamatosta",
+            "Löydetty ISO bugi timereista joka johti siihen että kaikki timerit ajettiin joka tickillä. Nyt fixattu, hyvällä tuurilla isoja vaikutuksia tehokkuuteen",
+            "Operaattorista ylöspäin oikat /player kill <nimi>,"
+        ]
+    },
+    {
+        "date": "16.08.2019",
+        "changes": [
+            "/rtp toimii, aiempaa nopeampi ja ei mene veden alle"
+        ]
+    },
+    {
+        "date": "13.08.2019",
+        "changes": [
+            "Fixattu \"epäturvallinen sijainti\" teleportatessa",
+            "Fixattu puuttunut ääni kotiin teleportatessa",
+            "/rtp tehostettu",
+            "Fixattu rtp veden alle vienti"
+        ]
+    },
+    {
+        "date": "11.08.2019",
+        "changes": [
+            "Uusi versio ja uudet kujeet. 1.14 on saapunut."
+        ]
+    }
+]
