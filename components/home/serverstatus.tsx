@@ -31,9 +31,15 @@ const ServerStatus = () => {
                     <span className={'server-state' + status.online ? ' online' : ' offline'}>
                         {status.online ? 'Päällä' : 'Pois päältä'}
                     </span>
-                    <span className="server-version">Versio: {status.version}</span>
-                    <span className="server-address">mc.karanteeni.net</span>
-                    <span className="server-ip">{status.ip}</span>
+                    <span className="server-version-wrapper">
+                        Versio:
+                        <span className="server-version"> {status.version}</span>
+                    </span>
+
+                    <span className="ip-wrapper">
+                        ip: <span className="server-address">mc.karanteeni.net</span>
+                    </span>
+
                     <span className="server-player-count">Pelaajia paikalla: {status?.players?.online || 0}</span>
                 </>
             )}
