@@ -12,6 +12,22 @@
         "image": "builders_wand.png"
     },
     {
+        "caption": "Sammalta",
+        "image": "moss.PNG"
+    },
+    {
+        "caption": "Rooted dirt juurilla ja mullalla.",
+        "image": "rooted_dirt.PNG"
+    },
+    {
+        "caption": "Suuren dripleafin voi muuntaa pieneksi",
+        "image": "small_dripleaf.PNG"
+    },
+    {
+        "caption": "Spore blossomin voi luoda siemenillä, alliumilla ja flowering azalea lehdillä",
+        "image": "spore_blossom.png"
+    },
+    {
         "caption": "Kaikki lasipaneelityypit voi muuttaa takaisin palikoiksi.",
         "image": "glasspane.png"
     },
