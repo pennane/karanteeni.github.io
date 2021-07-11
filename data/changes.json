@@ -1,14 +1,21 @@
 [
     {
-        "date": "7.8.2021",
+        "date": "13.7.2021",
         "changes": [
-            "Servulla 1.17.1 tuki!"
+            "Server siirtynyt kokonaan versioon 1.17.1",
+            "Mapreset",
+            "Pluginit saaneet päivitystä",
+            "Palvelimen uudelleenkäynnistyessä pelaajien ei tarvitse enää poistua uudelleenkäynnistyksen ajaksi.",
+            "Lento pysyy päällä liittyessä palvelimelle",
+            "Lentoa nerfattu - damagea ottaessa lento lakkaa hetkeksi",
+            "Taikamaton bugeja korjattu",
+            "Taikamaton blockeissa uudet kuvaukset"
         ]
     },
     {
-        "date": "6.8.2021",
+        "date": "8.7.2021",
         "changes": [
-            "et enää vedä kaikkien eläinten painovoimaa ittees (eläinten hidas kävely kantobugi korjattu, nyt ei jää enää hitaus päälle)"
+            "Kaikkien eläinten painovoimaa ei enää vedä pelaajaan (eläinten hidas kävely kantobugi korjattu, hitaus ei enää jää päälle)"
         ]
     },
     {
