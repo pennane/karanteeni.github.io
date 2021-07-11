@@ -87,7 +87,7 @@ const Ominaisuudet = () => {
                 <Video source="/feature/builderswand.mp4" />
                 <p>
                     Sisukas rankista ylöspäin pelaajat voivat craftata{' '}
-                    <Link href="/reseptit#builderswand">Builders Wandin</Link>. Tämä työkalu edesauttaa suurien
+                    <Link href="/reseptit#builders_wand">Builders Wandin</Link>. Tämä työkalu edesauttaa suurien
                     rakennusten rakennuksessa!
                 </p>
                 <p>
