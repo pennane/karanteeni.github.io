@@ -40,13 +40,29 @@ const ChangeDate = ({ date, children }: { date: string; children: React.ReactNod
 }
 
 const Changelog = () => {
-    const [showId, setShowId] = useState('toukokuu2021')
+    const [showId, setShowId] = useState('kesäkuu2021')
     const updateShowing = (val) => {
         setShowId(val)
     }
     return (
         <div>
+            <Month showId={showId} updateShowing={updateShowing} month="kesäkuu2021" label="Kesäkuu 2021">
+                <ChangeDate date="7.8.2021">
+                    <Change>Servulla 1.17.1 tuki!</Change>
+                </ChangeDate>
+                <ChangeDate date="6.8.2021">
+                    <Change>
+                        et enää vedä kaikkien eläinten painovoimaa ittees (eläinten hidas kävely kantobugi korjattu, nyt
+                        ei jää enää hitaus päälle)
+                    </Change>
+                </ChangeDate>
+            </Month>
             <Month showId={showId} updateShowing={updateShowing} month="toukokuu2021" label="Toukokuu 2021">
+                <ChangeDate date="28.5.2021">
+                    <Change>
+                        /tk (tai nykyään /welcome tai /tervetuloa myös) voi nyt /tk edit &lt;teksti %player%&gt;
+                    </Change>
+                </ChangeDate>
                 <ChangeDate date="3.5.2021">
                     <Change>nostettu kuolemattomien kotien määrää 18 -&#62; 20</Change>
                 </ChangeDate>
