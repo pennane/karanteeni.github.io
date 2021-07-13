@@ -6,10 +6,13 @@
             "Mapreset",
             "Pluginit saaneet päivitystä",
             "Palvelimen uudelleenkäynnistyessä pelaajien ei tarvitse enää poistua uudelleenkäynnistyksen ajaksi.",
-            "Lento pysyy päällä liittyessä palvelimelle",
+            "Lento pysyy nyt päällä liittyessäsi serverille",
             "Lentoa nerfattu - damagea ottaessa lento lakkaa hetkeksi",
             "Taikamaton bugeja korjattu",
-            "Taikamaton blockeissa uudet kuvaukset"
+            "Taikamaton blockeissa uudet kuvaukset",
+            "Voit nyt istua portailla",
+            "Istumiseen liittyvä bugi korjattu (ei enää hajoa, jos pelaaja istuu slabin alla)",
+            "4 uutta reseptiä 1.17 tavaroille!"
         ]
     },
     {
