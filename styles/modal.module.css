@@ -11,7 +11,7 @@
     max-width: 660px;
     border-radius: 0.4rem;
     margin: 2rem;
-    animation: modal-appear 0.8s ease-in-out;
+    animation: modal-appear 1.3s cubic-bezier(0.04, 0.5, 0.37, 0.99);
 }
 
 @keyframes modal-appear {

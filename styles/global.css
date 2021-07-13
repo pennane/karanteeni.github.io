@@ -391,7 +391,7 @@ footer {
 }
 
 .post img {
-    width: 95%;
+    width: auto;
     max-width: 500px;
     border: 1px solid var(--primary-border-color);
     border-radius: 6px;
@@ -478,6 +478,11 @@ h1 {
     flex-direction: column;
 }
 
+.online,
+.offline {
+    font-weight: 600;
+}
+
 .online {
     color: #99ffb8;
 }
@@ -498,9 +503,10 @@ h1 {
 .home-grid {
     display: grid;
     grid-auto-flow: column;
-    grid-template-columns: 2fr 5fr 2fr;
+    grid-template-columns: 3fr 9fr 4fr;
     padding: 1rem;
     gap: 1.6rem;
+    max-width: 1750px;
 }
 
 .home-grid > div {
@@ -644,9 +650,22 @@ li {
     background-color: transparent;
 }
 
+.ip-wrapper {
+    font-weight: 600;
+    color: var(--color-primary);
+    text-transform: uppercase;
+    margin-bottom: 0.4rem;
+}
+
 .server-ip,
 .server-address {
     color: #ff9999;
+    text-transform: initial;
+}
+
+.server-version-wrapper {
+    font-weight: 600;
+    color: var(--color-primary);
 }
 
 .c-eloton {
@@ -794,13 +813,11 @@ li {
 .recipe img {
     width: 100%;
     box-sizing: border-box;
-    height: auto;
     object-fit: contain;
     background-color: #c6c6c6;
     padding: 0.4em;
     height: 250px;
     image-rendering: pixelated;
-    object-fit: scale-down;
     border-radius: 6px;
     padding: 0.6rem;
     display: block;
@@ -922,6 +939,7 @@ time {
     width: 210px;
     box-sizing: border-box;
     padding: 11px 10px;
+    margin-bottom: 0.3rem;
 }
 
 .loading-spinner-container {
