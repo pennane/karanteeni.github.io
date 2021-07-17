@@ -1,5 +1,9 @@
 [
     {
+        "caption": "Nametagille on Karanteenissa oma resepti.",
+        "image": "nametag.png"
+    },
+    {
         "caption": "End Crystal. Karanteenissa Ender dragon pudottaa joka spawnaus kerran jälkeen lohikäärmeen munan. Siksi end crystalleille on asetettu uusi vaikeampi resepti.",
         "image": "endcrystal.png"
     },
@@ -20,12 +24,20 @@
         "image": "rooted_dirt.PNG"
     },
     {
+        "caption": "Suuri dripleaf",
+        "image": "big_dripleaf.png"
+    },
+    {
         "caption": "Suuren dripleafin voi muuntaa pieneksi",
         "image": "small_dripleaf.PNG"
     },
     {
         "caption": "Spore blossomin voi luoda siemenillä, alliumilla ja flowering azalea lehdillä",
         "image": "spore_blossom.png"
+    },
+    {
+        "caption": "Powder snow ansablock",
+        "image": "powder_snow.png"
     },
     {
         "caption": "Kaikki lasipaneelityypit voi muuttaa takaisin palikoiksi.",
