@@ -108,8 +108,8 @@
                 "icon": "denied"
             },
             {
-                "short": "Villager kylät ovat rauhoitettuja",
-                "long": "Villager kyliä ei saa grieffata. Kylistä ei saa viedä sänkyjä tai workstationeja. Kylien peltoja saa käyttää, kunhan ne muistaa täyttää takaisin. Kylien heinäpaalut, sekä kellot saa ottaa itselleen. Kylän voi ottaa kodikseen, jolloin kyliä koskevat säännöt eivät enää päde.",
+                "short": "Villager kyliä ei saa tuhota",
+                "long": "Villager kyliä ei saa grieffata, mutta heinäpaalut, työasemat, kellot, sekä sängyt saa ottaa itselleen. Kylien peltoja saa käyttää, kunhan muistaa istuttaa ruoat takaisin. Kylän voi ottaa kodikseen, jolloin kyliä koskevat säännöt eivät enää päde.",
                 "icon": "notice"
             },
             {
