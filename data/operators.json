@@ -79,6 +79,12 @@
         "Riitojen sovittelu"
       ],
       "uuid": "5db3cb0e4ae847dc91594cc10079190d"
+    },
+        {
+      "name": "Orianteri",
+      "description": "\"Väsyttää just sopivasti\"",
+      "strengths": [],
+      "uuid": "d253032a753f44eb951461ca49e77d80"
     }
   ],
   "moderaattori": [
@@ -87,12 +93,6 @@
       "description": "\"miten tätä ajetaan?\"",
       "strengths": [],
       "uuid": "bbd2bc4c9fe64ffeb69b767c0df3db4f"
-    },
-    {
-      "name": "Orianteri",
-      "description": "\"Väsyttää just sopivasti\"",
-      "strengths": [],
-      "uuid": "d253032a753f44eb951461ca49e77d80"
     }
   ],
   "rakentaja": [
