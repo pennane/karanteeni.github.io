@@ -18,6 +18,22 @@
     --gradient-secondary: linear-gradient(45deg, #ffef00, #ff6c05);
     --primary-border-color: #171b2b;
     --secondary-border-color: #151928;
+    --c-eloton: #9ba0ab;
+    --g-eloton: linear-gradient(0deg, #9ba0ab, hsl(221, 9%, 59%));
+    --c-raihnas: #e8543a;
+    --g-raihnas: linear-gradient(0deg, #e8543a, hsl(9, 79%, 50%));
+    --c-sisukas: #41cb34;
+    --g-sisukas: linear-gradient(0deg, hsl(115, 59%, 48%), hsl(115, 59%, 52%));
+    --c-parantuva: #ff9f38;
+    --g-parantuva: linear-gradient(0deg, #ff9f38, hsl(31, 100%, 55%));
+    --c-immuuni: #5794ff;
+    --g-immuuni: linear-gradient(0deg, #5794ff, hsl(218, 100%, 60%));
+    --c-parantaja: #faf200;
+    --g-parantaja: linear-gradient(0deg, #feda02, hsl(50deg 100% 51%));
+    --c-nekromantikko: #ba8fff;
+    --g-nekromantikko: linear-gradient(0deg, #ba8fff, hsl(263, 100%, 70%));
+    --c-kuolematon: #ff61a8;
+    --g-kuolematon: linear-gradient(0deg, #ff61a8, hsl(333, 100%, 60%));
 }
 
 b {
@@ -669,43 +685,43 @@ li {
 }
 
 .c-eloton {
-    background: #9ba0ab;
-    background: linear-gradient(0deg, #9ba0ab, hsl(221, 9%, 59%));
+    background: var(--c-eloton);
+    background: var(--g-eloton);
 }
 
 .c-raihnas {
-    background: #e8543a;
-    background: linear-gradient(0deg, #e8543a, hsl(9, 79%, 50%));
+    background: var(--c-raihnas);
+    background: var(--g-raihnas);
 }
 
 .c-sisukas {
-    background: #41cb34;
-    background: linear-gradient(0deg, hsl(115, 59%, 48%), hsl(115, 59%, 52%));
+    background: var(--c-sisukas);
+    background: var(--g-sisukas);
 }
 
 .c-parantuva {
-    background: #ff9f38;
-    background: linear-gradient(0deg, #ff9f38, hsl(31, 100%, 55%));
+    background: var(--c-paratuva);
+    background: var(--g-paratuva);
 }
 
 .c-immuuni {
-    background: #5794ff;
-    background: linear-gradient(0deg, #5794ff, hsl(218, 100%, 60%));
+    background: var(--c-immuuni);
+    background: var(--g-immuuni);
 }
 
 .c-parantaja {
-    background: #faf200;
-    background: linear-gradient(0deg, #feda02, hsl(50deg 100% 51%));
+    background: var(--c-parantaja);
+    background: var(--g-parantaja);
 }
 
 .c-nekromantikko {
-    background: #ba8fff;
-    background: linear-gradient(0deg, #ba8fff, hsl(263, 100%, 70%));
+    background: var(--c-nekromantikko);
+    background: var(--g-nekromantikko);
 }
 
 .c-kuolematon {
-    background: #ff61a8;
-    background: linear-gradient(0deg, #ff61a8, hsl(333, 100%, 60%));
+    background: var(--c-kuolematon);
+    background: var(--g-kuolematon);
 }
 
 .tag::before {

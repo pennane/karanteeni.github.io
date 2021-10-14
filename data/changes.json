@@ -1,5 +1,37 @@
 [
     {
+        "date": "18.9.2021",
+        "changes": [
+            "Pävitetty moden ja operaattorin rank tekstit suomenkielisiksi"
+        ]
+    },
+    {
+        "date": "6.8.2021",
+        "changes": [
+            "1.16 ja 1.17 slabit voi muuntaa kokonaisiksi"
+        ]
+    },
+    {
+        "date": "25.7.2021",
+        "changes": [
+            "Päivitetty tietokannan pöytien rakennetta"
+        ]
+    },
+    {
+        "date": "21.7.2021",
+        "changes": [
+            "Päivitetty anti-xray",
+            "Muutettu vauvazombin toimintaa hieman",
+            "Endin lopputekstit pois päältä"
+        ]
+    },
+    {
+        "date": "17.7.2021",
+        "changes": [
+            "uusia custom reseptejä"
+        ]
+    },
+    {
         "date": "13.7.2021",
         "changes": [
             "Server siirtynyt kokonaan versioon 1.17.1",
