@@ -121,6 +121,11 @@
                 "short": "Karanteeni on poliittisesti neutraali palvelin",
                 "long": "Tämä tarkoittaa sitä, että chatissa ja palvelimella pyritään välttämään poliittisia aatteita, symboleita tai ideologioita. Myös yleistä keskustelua politiikasta pyritään välttämään, koska se yleensä aiheuttaa väittelyitä ja eripuraa.",
                 "icon": "denied"
+            },
+            {
+                "short": "Älä rakenna liian lähelle toisia ilman lupaa",
+                "long": "Ylläpito suojaa alueen ja suojaukseen vaaditaan talon alku. Huomaathan, että talosi täytyy olla vähintään sadan (100) blockin päässä lähimmästä talosta. Endiin ei pääsääntöisesti suojata alueita.",
+                "icon": "notice"
             }
         ]
     },
