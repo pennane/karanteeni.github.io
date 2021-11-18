@@ -11,7 +11,6 @@ changes.forEach((change) => {
     let dateParts = change.date.split('.')
     let key = `${dateParts[2]}${dateParts[1].padStart(2, '0')}`
     if (key in mappedChanges) {
-        console.log('yes is')
         mappedChanges[key] = mappedChanges[key].concat(change)
     } else {
         mappedChanges[key] = [change]
@@ -65,7 +64,6 @@ const ChangeDate = ({ date, children }: { date: string; children: React.ReactNod
 
 const Changelog = () => {
     let mostRecent = String(Math.max(...Object.keys(mappedChanges).map((key) => Number(key))))
-    console.log(mostRecent)
     const [showId, setShowId] = useState(mostRecent)
 
     const updateShowing = (val) => {
