@@ -1,5 +1,19 @@
 [
     {
+        "date": "4.11.2021",
+        "changes": [
+            "Tähtipermit viimein korjattu",
+            "Ylläpidolla kaikki taikamaton muokkausvaihtoehdot",
+            "Kaikki ylläpitolaiset voi nyt muokkaa pelaajien suojauksia ( /rg redefine <nimi> )",
+            "Kaikki ypläiset voi nyt nähä regionin infot ( /rg i ), mahdollisesti sama pelaajilla",
+            "ypläisillä toimii nyt /setsign komento kaikilla",
+            "Operaattorit ja siitä ylöspäin voi nyt lisää ja poistaa suojauksista pelaajia ja omistaja (/rg <remove/add><member/owner> <suojaus> <nimi> ). esim /rg addowner AA omananimi",
+            "Operaattorit yliajaa worldeditin chestisuojaukset, saavat kaikki chestit auki",
+            "Adminilla täydet quickshop permit",
+            "Raihnaalla ja siitä ylöspäin täydet /hat komentojen permit"
+        ]
+    },
+    {
         "date": "18.9.2021",
         "changes": [
             "Pävitetty moden ja operaattorin rank tekstit suomenkielisiksi"
