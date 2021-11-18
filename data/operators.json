@@ -80,7 +80,7 @@
       ],
       "uuid": "5db3cb0e4ae847dc91594cc10079190d"
     },
-        {
+    {
       "name": "Orianteri",
       "description": "\"Väsyttää just sopivasti\"",
       "strengths": [],
@@ -135,6 +135,14 @@
         "Rakentaminen"
       ],
       "uuid": "fcc6a1f38457404daed5206e467ec3ff"
+    },
+    {
+      "name": "Jenniii",
+      "description": "\"tykkään kissoista ja nukkumisesta\"",
+      "strengths": [
+        "Rakentaminen"
+      ],
+      "uuid": "c9427421eb1f468aaff457f9f2a7e2f5"
     }
   ]
 }
