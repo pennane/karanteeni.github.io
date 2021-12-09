@@ -1,5 +1,5 @@
 import '../styles/global.css'
-import '../styles/autumn.css'
+import '../styles/winter.css'
 
 import { ToastProvider } from 'react-toast-notifications'
 import { AppProps } from 'next/app'

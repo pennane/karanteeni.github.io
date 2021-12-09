@@ -6,7 +6,7 @@
     display: grid;
     grid-auto-rows: 1fr 6fr 1fr;
     max-height: 85vh;
-    background: var(--gradient-primary);
+    background: var(--gradient-secondary);
     color: black;
     max-width: 660px;
     border-radius: 0.4rem;
