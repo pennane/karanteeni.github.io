@@ -2,7 +2,7 @@
   "omistaja": [
     {
       "name": "Jomeee",
-      "description": "Toimii yhteisön hyväksi kaikin tavoin. Opettelee piakkoin Javaa ja alkaa ohjelmoimaan plugineita (aamen).",
+      "description": "Toimii yhteisön hyväksi kaikin tavoin. Opettelee piakkoin Javaa ja alkaa ohjelmoimaan plugineita (juksu).",
       "strengths": [
         "Konfigurointi",
         "Palvelimen ylläpito"
@@ -22,7 +22,7 @@
   "admin": [
     {
       "name": "Susse",
-      "description": "Hoitelee nettijuttuja, ja kuka ties mitä.",
+      "description": "Hoitelee nettijuttuja, ja Discordissa jotain kummia.",
       "strengths": [
         "Nettisivut",
         "Discord botit"
@@ -83,7 +83,9 @@
     {
       "name": "Orianteri",
       "description": "\"Väsyttää just sopivasti\"",
-      "strengths": [],
+      "strengths": [
+        "Tapahtumat"
+      ],
       "uuid": "d253032a753f44eb951461ca49e77d80"
     }
   ],

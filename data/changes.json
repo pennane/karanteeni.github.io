@@ -1,5 +1,14 @@
 [
     {
+        "date": "3.12.2021",
+        "changes": [
+            "/server joulu",
+            "palvelin pelattavissa 1.18 versiolla",
+            "skaalaava render distance",
+            "permien lataaminen korjattu"
+        ]
+    },
+    {
         "date": "4.11.2021",
         "changes": [
             "Tähtipermit viimein korjattu",
