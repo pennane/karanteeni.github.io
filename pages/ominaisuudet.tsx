@@ -4,6 +4,14 @@ import Heading from '../components/layout/heading'
 import Layout from '../components/layout/layout'
 
 const Video = ({ source }: { source: string }) => {
+    if (source.endsWith('.gif')) {
+        return (
+            <div className="video gif">
+                <img src={source}></img>
+            </div>
+        )
+    }
+
     return (
         <div className="video">
             <video autoPlay={true} loop={true} muted={true} playsInline={true}>
@@ -35,6 +43,14 @@ const Ominaisuudet = () => {
                 Suuri osa erityisistä toiminnoista, komennoista ja muista jutuista, jotka toimivat Karanteenin
                 survivalissa
             </p>
+            <Feature title="Pelaaja partikkelit">
+                <Video source="/feature/particles1.gif" />
+                <p>
+                    Komennolla /partikkelit (tai /particles tai /pp) pystyy ottamaan käyttöön erilaisia partikkeleita,
+                    jotka seuraavat pelaajahahmoa.
+                </p>
+                <p>Partikkeleita saa uusista rankeista, lahjoittamisesta, sekä erilaisista tapahtumista.</p>
+            </Feature>
             <Feature title="Emeraldhissi">
                 <Video source="/feature/emeraldvator.mp4" />
                 <p>Voit rakentaa toimivan hissin emerald palikoilla. Hissit kytketään päälle redstonevirralla. </p>
@@ -230,21 +246,18 @@ const Ominaisuudet = () => {
                     <li>
                         <code>/vote</code>
                     </li>
-
                     <li>
                         <code>/dynmap hide (piilottaa pelaajan dynmapista)</code>{' '}
                     </li>
                     <li>
                         <code>/dynmap show (palauttaa pelaajan takaisin dynmappiin)</code>{' '}
                     </li>
-
                     <li>
                         <code>/kieli fi-Fi</code>
                     </li>
                     <li>
                         <code>/kieli en-US </code>
                     </li>
-
                     <li>
                         <code>/spawn</code>
                     </li>
@@ -266,7 +279,6 @@ const Ominaisuudet = () => {
                     <li>
                         <code>/rtp (random tp)</code>
                     </li>
-
                     <li>
                         <code>
                             /sethome {'{'}kodin_nimi{'}'}
@@ -285,7 +297,6 @@ const Ominaisuudet = () => {
                     <li>
                         <code>/back</code>
                     </li>
-
                     <li>
                         <code>/mail read [&lt;sivu&gt;]</code>
                     </li>
@@ -295,7 +306,6 @@ const Ominaisuudet = () => {
                     <li>
                         <code>/mail send &lt;nimi&gt; &lt;viesti&gt;</code>
                     </li>
-
                     <li>
                         <code>/msg (/m, /message)</code>
                     </li>
@@ -312,7 +322,6 @@ const Ominaisuudet = () => {
                             /ignore {'{'}list{'}'}
                         </code>
                     </li>
-
                     <li>
                         <code>/quickshop (kauppa-arkkuopas)</code>
                     </li>
@@ -330,7 +339,6 @@ const Ominaisuudet = () => {
                     <li>
                         <code>/peliaika (/pa, /playtime)</code>
                     </li>
-
                     <li>
                         <code>
                             /trust {'{'}alueen_nimi{'}'} {'{'}pelaajan_nimi{'}'}
@@ -340,29 +348,38 @@ const Ominaisuudet = () => {
                         <code>/alue (näyttää tietoja alueesta)</code>
                     </li>
                     <li>
-                        <code>
-                            /+oikeudet {'{'}pelaajan_nimi{'}'}{' '}
-                        </code>
+                        <code>/rg i (näyttää tietoja alueesta)</code>
                     </li>
                     <li>
-                        <code>
-                            /-oikeudet {'{'}pelaajan_nimi{'}'}
-                        </code>
+                        <code>/lukitus add-member &lt;nimi&gt;</code>
                     </li>
                     <li>
-                        <code>/avaa</code>
+                        <code>/lukitus remove-member &lt;nimi&gt;</code>
+                    </li>
+                    <li>
+                        <code>/lukitus unlock</code>
+                    </li>
+                    <li>
+                        <code>/lukitus lock</code>
+                    </li>
+                    <li>
+                        <code>/lukitus public</code>
+                    </li>
+                    <li>
+                        <code>/lukitus private</code>
+                    </li>
+                    <li>
+                        <code>/lukitus info</code>
                     </li>
                     <li>
                         <code>/trash (/roskis /roskakori)</code>
                     </li>
-
                     <li>
                         <code>/kms</code>
                     </li>
                     <li>
                         <code>/sit</code>
                     </li>
-
                     <li>
                         <code>/lemmikki (lemmikkiopas)</code>
                     </li>
@@ -372,7 +389,9 @@ const Ominaisuudet = () => {
                     <li>
                         <code>/radio</code>
                     </li>
-
+                    <li>
+                        <code>/missions</code>
+                    </li>
                     <li>
                         <code>/tk</code>
                     </li>
