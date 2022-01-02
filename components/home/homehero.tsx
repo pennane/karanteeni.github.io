@@ -1,6 +1,8 @@
 import Link from 'next/link'
+import dynamic from 'next/dynamic'
 import React from 'react'
-import MinecraftCitation from './minecraftcitation'
+
+const MinecraftCitation = dynamic(() => import('./minecraftcitation'), { ssr: false })
 
 const HomeHead = () => {
     return (
