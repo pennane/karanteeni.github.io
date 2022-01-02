@@ -624,6 +624,11 @@ h1 {
     border-radius: 6px;
 }
 
+.video.gif img {
+    max-height: 400px;
+    max-width: 500px;
+}
+
 video {
     max-height: 400px;
     max-width: 500px;

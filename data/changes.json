@@ -1,5 +1,37 @@
 [
     {
+        "date": "1.1.2022",
+        "changes": [
+            "1.18 map reset - Server on nyt täysin versiossa 1.18.1",
+            "Powertool toimii (yp only)",
+            "Uudet musat musiikkivalikossa (minen uudet musiikit + otherside levy)",
+            "Restartmusiikki uusittu + ääni ei ole enää korvan juuressa",
+            "Karan musiikkien äänenvoimakkuutta voit vaihtaa muuttamalla ääniasetuksista Jukebox/Note blocks -slideria",
+            "About kaikki plugarit on päivitetty viimesimpään versioon",
+            "Azalea puut kaatuu kirveellä mosauttaessa normipuiden tapaan",
+            "Lisätty partikkeleihin tieto siitä, montako omistaa kokoelmasta",
+            "Chestien suojausplugin on koodattu uusiksi: 1.14 jälkeiset blockit suojautuvat",
+            "Voit lisätä toisia pelaajia arkkujen omistajiksi itsesi lisäksi => muut pelaajat voivat kanssa antaa oikeuksia arkkuusi, vaikka et itse olisi paikalla",
+            "Voit tutustua itse plugariin komennolla /lukitus",
+            "/+oikeudet <nimi> -> /lukitus add-member <nimi>",
+            "/-oikeudet <nimi> -> /lukitus remove-member <nimi>",
+            "/avaa -> /lukitus unlock",
+            "/lukitse -> /lukitus lock",
+            "/avaakaikille -> /lukitus public",
+            "/-oikeudet kaikki -> /lukitus private",
+            "/lukitus -> /lukitus info",
+            "Estetty pelaajaa lähettämästä uutta tpa pyyntöä, jos edellinen on voimassa => estää siis tpa-spammin",
+            "Rewardien tallennusongelma MNPC-plugariin korjattu"
+        ]
+    },
+    {
+        "date": "21.12.2021",
+        "changes": [
+            "Lisätty partikkelit /particles /partikkelit tai /pp",
+            "NPC tehtävät näkee komennolla /missions"
+        ]
+    },
+    {
         "date": "3.12.2021",
         "changes": [
             "/server joulu",
