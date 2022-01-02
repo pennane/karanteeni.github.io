@@ -20,7 +20,7 @@
     "next": "^10.0.0",
     "react": "17.0.1",
     "react-dom": "17.0.1",
-    "react-toast-notifications": "^2.4.4",
+    "react-toast-notifications": "^2.5.1",
     "react-tooltip": "^4.2.15",
     "remark": "^12.0.0",
     "remark-html": "^12.0.0"
