@@ -30,7 +30,7 @@ let mappedChanges: {
 changes.forEach((change) => {
     const dateParts = change.date.split('.').map(Number)
     if (!dateParts[2]) return
-    const key = String(new Date(dateParts[2], dateParts[1]).getTime())
+    const key = String(new Date(dateParts[2], dateParts[1] - 1).getTime())
     if (key in mappedChanges) {
         mappedChanges[key].push(change)
     } else {
