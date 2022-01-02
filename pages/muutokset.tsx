@@ -5,13 +5,34 @@ import Heading from '../components/layout/heading'
 import Layout from '../components/layout/layout'
 import changes from '../data/changes.json'
 
-let mappedChanges = {}
+const months = [
+    'tammikuu',
+    'helmikuu',
+    'maaliskuu',
+    'huhtikuu',
+    'toukokuu',
+    'kesäkuu',
+    'heinäkuu',
+    'elokuu',
+    'syyskuu',
+    'lokakuu',
+    'marraskuu',
+    'joulukuu'
+]
+
+let mappedChanges: {
+    [key: string]: {
+        date: string
+        changes: string[]
+    }[]
+} = {}
 
 changes.forEach((change) => {
-    let dateParts = change.date.split('.')
-    let key = `${dateParts[2]}${dateParts[1].padStart(2, '0')}`
+    const dateParts = change.date.split('.').map(Number)
+    if (!dateParts[2]) return
+    const key = String(new Date(dateParts[2], dateParts[1]).getTime())
     if (key in mappedChanges) {
-        mappedChanges[key] = mappedChanges[key].concat(change)
+        mappedChanges[key].push(change)
     } else {
         mappedChanges[key] = [change]
     }
@@ -73,11 +94,12 @@ const Changelog = () => {
         <div>
             {mappedChanges &&
                 Object.keys(mappedChanges)
-                    .sort((a, b) => (Number(a) < Number(b) ? 1 : -1))
+                    .sort((a, b) => (a < b ? 1 : -1))
                     .map((key, i) => {
-                        let month = mappedChanges[key]
-                        let dateForKey = new Date(`${key.substring(4)}.1.${key.substring(0, 4)}`)
-                        let label = Intl.DateTimeFormat('fi-FI', { month: 'long', year: 'numeric' }).format(dateForKey)
+                        const month = mappedChanges[key]
+                        const keyDate = new Date(Number(key))
+                        const label = months[keyDate.getMonth()] + ' ' + keyDate.getFullYear()
+
                         return (
                             <Month
                                 key={`${key}${i}`}

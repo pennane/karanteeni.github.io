@@ -36,6 +36,10 @@
     --g-kuolematon: linear-gradient(0deg, #ff61a8, hsl(333, 100%, 60%));
 }
 
+pre {
+    white-space: break-spaces;
+}
+
 b {
     font-weight: 600;
 }
@@ -1371,7 +1375,7 @@ h3.minecraft {
     }
     .home-grid section {
         flex: 1;
-        min-width: 180px;
+        /* min-width: 180px; */
     }
 
     .rule {
