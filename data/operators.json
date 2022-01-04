@@ -45,6 +45,14 @@
         "Hack-clientit"
       ],
       "uuid": "d347193d8b794a389158074681bc32f8"
+    },
+    {
+      "name": "Orianteri",
+      "description": "\"Onko tämä todellisuus?\"",
+      "strengths": [
+        "Tapahtumat"
+      ],
+      "uuid": "d253032a753f44eb951461ca49e77d80"
     }
   ],
   "operaattori": [
@@ -71,14 +79,6 @@
         "Riitojen sovittelu"
       ],
       "uuid": "5db3cb0e4ae847dc91594cc10079190d"
-    },
-    {
-      "name": "Orianteri",
-      "description": "\"Väsyttää just sopivasti\"",
-      "strengths": [
-        "Tapahtumat"
-      ],
-      "uuid": "d253032a753f44eb951461ca49e77d80"
     }
   ],
   "moderaattori": [
