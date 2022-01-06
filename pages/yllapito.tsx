@@ -85,7 +85,7 @@ const Yllapito = () => {
                         <span className="tag operaattori">Operaattori</span> on moderaattorista seuraava ylläpitoarvo.
                         Tähän arvoon pääsee vain, mikäli muu ylläpito on vakuuttunut moderaattorin osaamisesta,
                         aktiivisuudesta ja motivaatiosta. Operaattorit siirtyvät vastuullisempiin hommiin (mm. grief,
-                        varastus, kotien palautus) kerätyn luottamuksen ansiosta. He eivät kiinnitä huomiota niin paljon
+                        varastus, kotien palautus, tapahtumasuunnittelu) kerätyn luottamuksen ansiosta. He eivät kiinnitä huomiota niin paljon
                         nahisteluun chatissa, vaikka tarpeen tullen voivat ottaa ohjat ja antaa vinkkejä modeille. :)
                     </p>
                 </div>
