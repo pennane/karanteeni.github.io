@@ -50,7 +50,9 @@
       "name": "Orianteri",
       "description": "\"Onko tämä todellisuus?\"",
       "strengths": [
-        "Tapahtumat"
+        "Tapahtumapaikat",
+        "Rakentaminen",
+        "Pelaajien auttaminen"
       ],
       "uuid": "d253032a753f44eb951461ca49e77d80"
     }
