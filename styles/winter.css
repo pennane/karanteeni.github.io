@@ -97,8 +97,9 @@ nav {
 }
 
 .home-hero {
-    background-size: cover;
     background-position-y: 50%;
+    background: url(../public/images/joulu21.jpg) 40% 10%;
+    background-size: cover;
 }
 
 main:not(.home):not(.lahjoitus):not(.not-found) {
@@ -125,9 +126,6 @@ body {
     background-color: var(--bg);
 }
 
-.home-hero {
-    background: url(../public/images/joulu21.jpg) 40% 10%;
-}
 
 .lahjoitusdokumentti {
     background-color: var(--background-secondary);
