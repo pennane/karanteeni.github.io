@@ -33,6 +33,9 @@
             },
             {
                 "command": "calculate"
+            },
+            {
+                "command": "trash"
             }
         ]
     },
@@ -68,6 +71,10 @@
             {
                 "content": "Kaksi uutta väri taikamattoon (mc)",
                 "hover": "Vaalean harmaa ja läpinäkyvä"
+            },
+            {
+                "content": "Lisäpalikka taikamattoon (mc)",
+                "hover": "lasi block"
             }
         ]
     },
@@ -100,6 +107,9 @@
             {
                 "content": "Neljä uutta väri taikamattoon (mc)",
                 "hover": "Valkoinen, harmaa, vaalean harmaa ja sininen"
+            },
+            {
+                "content": "Uudet partikkelit taikamattoon"
             }
         ]
     },
@@ -126,12 +136,19 @@
             {
                 "command": "spawner",
                 "hover": "Vaihtaa spawnerin tyyppiä. Ota spawner käteen kun suoritat komentoa."
+            },
+            {
+                "command": "tp pelaaja",
+                "hover": "Voit teleportata muihin ilman /tpa"
             }
         ],
         "other": [
             {
                 "content": "Kaksi uutta väriä taikamattoon (mc)",
                 "hover": "Keltainen ja ruskea"
+            },
+            {
+                "content": "Uudet partikkelit taikamattoon"
             }
         ]
     },
@@ -153,6 +170,12 @@
             {
                 "content": "Kaksi uutta väriä taikamattoon (mc)",
                 "hover": "Lime ja musta"
+            },
+            {
+                "content": "Uudet partikkelit taikamattoon"
+            },
+            {
+                "content": "Uudet kenkien partikkelit"
             }
         ]
     },
@@ -189,6 +212,12 @@
             {
                 "content": "Lisäpalikka taikamattoon (mc)",
                 "hover": "jääblock"
+            },
+            {
+                "content": "Uudet partikkelit taikamattoon"
+            },
+            {
+                "content": "Uudet elytra partikkelit"
             }
         ]
     },
@@ -210,6 +239,12 @@
             {
                 "content": "Lisäpalikka taikamattoon (mc)",
                 "hover": "barrier block"
+            },
+            {
+                "content": "Uudet partikkelit taikamattoon"
+            },
+            {
+                "content": "Uudet elytra partikkelit"
             }
         ]
     }
