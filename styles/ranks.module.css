@@ -1,0 +1,90 @@
+.ranks {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2em 1.5em;
+}
+
+.rank {
+    display: flex;
+    flex-direction: column;
+    flex: 0 0 48%;
+}
+
+.body {
+    padding: 1.2em 1.2em 2.5em;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    box-sizing: border-box;
+    border-radius: 6px;
+    min-height: 250px;
+}
+
+.title {
+    font-family: Inter;
+    font-weight: 700;
+    font-size: 1.25em;
+    margin-top: 0;
+}
+
+.rank-name {
+    color: #000;
+    font-weight: 600;
+}
+
+.time {
+    color: #2e3137;
+    font-size: 1.1rem;
+    margin-left: 0.3em;
+    font-weight: 300;
+}
+
+.other [data-id='tooltip'] {
+    background: white;
+}
+
+.icon {
+    color: #000;
+    height: 0.9em;
+    margin-left: 0.5rem;
+}
+
+.others {
+    /* margin-top: auto; */
+}
+
+.others > h3 {
+    padding-bottom: 0.5rem;
+    padding-top: 1.5rem;
+    margin: 0;
+    font-size: 1rem;
+    color: #000;
+}
+
+.others a {
+    color: #ffffffd9;
+}
+
+.command {
+    flex: 50%;
+    margin-bottom: 0.2em;
+}
+
+.commands {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.tooltip {
+}
+
+@media screen and (max-width: 900px) {
+    .ranks {
+        flex-direction: column;
+        flex-wrap: nowrap;
+        align-items: stretch;
+    }
+    .rank {
+        flex: 1 1 auto;
+    }
+}
