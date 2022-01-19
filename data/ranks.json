@@ -1,0 +1,216 @@
+{
+    "eloton": {
+        "name": "Eloton",
+        "time": "0h",
+        "color": "c-eloton",
+        "commands": [
+            {
+                "command": "sethome",
+                "hover": "1 kpl"
+            }
+        ],
+        "other": [
+            {
+                "content": "Kaikilla pelaajilla olevat komennot ja toiminnot löytyvät täältä",
+                "link": "ominaisuudet"
+            }
+        ]
+    },
+    "raihnas": {
+        "name": "Raihnas",
+        "time": "5h",
+        "color": "c-raihnas",
+        "commands": [
+            {
+                "command": "sethome",
+                "hover": "2 kpl"
+            },
+            {
+                "command": "workbench"
+            },
+            {
+                "command": "hat"
+            },
+            {
+                "command": "calculate"
+            }
+        ]
+    },
+    "sisukas": {
+        "name": "Sisukas",
+        "time": "1d",
+        "color": "c-sisukas",
+        "commands": [
+            {
+                "command": "sethome",
+                "hover": "6 kpl"
+            },
+            {
+                "command": "near"
+            },
+            {
+                "command": "mc",
+                "hover": "Taikamatto, 5x5 kokoinen lasimatto allasi, jolla voit leijua ilmassa, sekä lentää."
+            },
+            {
+                "command": "mc design",
+                "hover": "Suunnittele oma taikamattosi!"
+            },
+            {
+                "command": "enderchest"
+            }
+        ],
+        "other": [
+            {
+                "content": "Kyky käyttää ja craftata Builders Wand",
+                "link": "/reseptit#builderswand"
+            },
+            {
+                "content": "Kaksi uutta väri taikamattoon (mc)",
+                "hover": "Vaalean harmaa ja läpinäkyvä"
+            }
+        ]
+    },
+    "parantuva": {
+        "name": "Parantuva",
+        "time": "5d",
+        "color": "c-parantuva",
+        "commands": [
+            {
+                "command": "sethome",
+                "hover": "8 kpl"
+            },
+            {
+                "command": "feed"
+            },
+            {
+                "command": "nick",
+                "hover": "Nimen täytyy olla samankaltainen Minecraft nimesi kanssa tunnistautumisen vuoksi."
+            },
+            {
+                "command": "tp <x> <y> <z>",
+                "hover": "Voit teleportata koordinaatteihin."
+            }
+        ],
+        "other": [
+            {
+                "content": "Kyky hakata spawnereita ilman Silk Touchia",
+                "hover": "Tarvitset silti keräykseen hakun"
+            },
+            {
+                "content": "Neljä uutta väri taikamattoon (mc)",
+                "hover": "Valkoinen, harmaa, vaalean harmaa ja sininen"
+            }
+        ]
+    },
+    "immuuni": {
+        "name": "Immuuni",
+        "time": "10d",
+        "color": "c-immuuni",
+        "commands": [
+            {
+                "command": "sethome",
+                "hover": "12 kpl"
+            },
+            {
+                "command": "tptoggle",
+                "hover": "Estää pelaajien teleporttipyynnöt ja teleporttaukset"
+            },
+            {
+                "command": "fly"
+            },
+            {
+                "command": "nimeä",
+                "hover": "Nimeää kädessäsi olevan esineen!"
+            },
+            {
+                "command": "spawner",
+                "hover": "Vaihtaa spawnerin tyyppiä. Ota spawner käteen kun suoritat komentoa."
+            }
+        ],
+        "other": [
+            {
+                "content": "Kaksi uutta väriä taikamattoon (mc)",
+                "hover": "Keltainen ja ruskea"
+            }
+        ]
+    },
+    "parantaja": {
+        "name": "Parantaja",
+        "time": "30d",
+        "color": "c-parantaja",
+        "commands": [
+            {
+                "command": "sethome",
+                "hover": "16 kpl"
+            }
+        ],
+        "other": [
+            {
+                "content": "Uusia tapoja nimetä tavaroita /nimeä komennolla",
+                "hover": "Lihavointi, kursivointi, randomisointi ja alleviivaus"
+            },
+            {
+                "content": "Kaksi uutta väriä taikamattoon (mc)",
+                "hover": "Lime ja musta"
+            }
+        ]
+    },
+    "nekromantikko": {
+        "name": "Nekromantikko",
+        "time": "60d",
+        "color": "c-nekromantikko",
+        "commands": [
+            {
+                "command": "sethome",
+                "hover": "18 kpl"
+            },
+            {
+                "command": "co i",
+                "hover": "Kyky tarkastella blockkeja"
+            }
+        ],
+        "other": [
+            {
+                "content": "Kyky asettaa täys RGB värillinen nick.",
+                "hover": "Syntaksilla &#RRGGBBteksti"
+            },
+            {
+                "content": "Kyky nimetä tavaroita /nimeä käyttäen täys RGB värejä",
+                "hover": "Syntaksilla &#RRGGBBteksti"
+            },
+            {
+                "content": "Nekromatikkoja ei voi hiljentää /ignore komennolla."
+            },
+            {
+                "content": "Kaksi uutta väriä taikamattoon (mc)",
+                "hover": "Magenta ja punainen"
+            },
+            {
+                "content": "Lisäpalikka taikamattoon (mc)",
+                "hover": "jääblock"
+            }
+        ]
+    },
+    "kuolematon": {
+        "name": "Kuolematon",
+        "time": "100d",
+        "color": "c-kuolematon",
+        "commands": [
+            {
+                "command": "sethome",
+                "hover": "20 kpl"
+            }
+        ],
+        "other": [
+            {
+                "content": "Kuusi uutta väriä taikamattoon (mc)",
+                "hover": "Pinkki, syaani, purppura, oranssi, vihreä ja vaalean sininen"
+            },
+            {
+                "content": "Lisäpalikka taikamattoon (mc)",
+                "hover": "barrier block"
+            }
+        ]
+    }
+}
