@@ -36,8 +36,8 @@ const SearchBar = () => {
                     setSearch(e.target.value)
                     performSearch()
                 }}
+                placeholder="haku"
             ></input>
-            <button onClick={performSearch}>hae</button>
             {focus && search.length > 2 && results.length > 0 && (
                 <div className={style['search-results']}>
                     {results.map((p) => (
