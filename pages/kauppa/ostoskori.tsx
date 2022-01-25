@@ -34,7 +34,7 @@ const Ostoskori = () => {
     const totalPlayTimeHs = totalPlayTimeMs && totalPlayTimeMs / 1000 / 60 / 60
 
     function test() {
-        if (inputCode === 'kara22') {
+        if (inputCode.toLowerCase() === 'kara22') {
             addToast("20% etukoodi 'kara22' on nyt käytössä", { appearance: 'success', autoDismiss: true })
             setApplyCode(true)
             setInputCode('')
@@ -53,7 +53,7 @@ const Ostoskori = () => {
             <StoreNavigation />
             <Heading heading="Ostoskori" />
 
-            {productsInCart <= 0 && <p>Ei tuotteita ostoskorissa.</p>}
+            {productsInCart <= 0 && <p>Ei tuotteita ostoskorissa. Käy shoppailemassa jotakin.</p>}
             {productsInCart > 0 && (
                 <div>
                     <h2>Tuotteet</h2>
@@ -118,7 +118,7 @@ const Ostoskori = () => {
                         <section className={style['emphasize']}>
                             <p>
                                 Olet ostamassa pelin sisäisiä tuotteita. Tarvitsemme minecraft käyttäjänimesi, jotta
-                                saamme annettua ne käyttäjällesi.
+                                saamme annettua tuotteet käyttäjällesi.
                             </p>
                             {buyingPlaytime && (
                                 <p>

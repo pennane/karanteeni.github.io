@@ -24,7 +24,7 @@ export default function Tuotetyypit({ products }: { products: { [type: string]: 
                                     ))}
                                 </div>
                                 <div className={style['open-type-link']}>
-                                    <Link href={'/kauppa/tuotteet/' + type}>Kaikki tyypin tuotteet</Link>
+                                    <Link href={'/kauppa/tuotteet/' + type}>Kaikki tuotetyypin tuotteet</Link>
                                 </div>
                             </section>
                         )

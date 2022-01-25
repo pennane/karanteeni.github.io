@@ -22,7 +22,7 @@ export default function Tuote({ product, similar }: { product: Product; similar:
                 </div>
 
                 <aside className={style['similar-products-aside']}>
-                    <h2>Samankaltaisia tuotteita:</h2>
+                    <h2>Samantyyppisiä tuotteita:</h2>
                     <div className={style['aside-products-list']}>
                         {similar && similar.map((p) => <SmallProduct key={p.id} product={p} />)}
                     </div>

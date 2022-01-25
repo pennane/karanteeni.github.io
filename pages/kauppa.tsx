@@ -14,18 +14,18 @@ import Link from 'next/link'
 
 const Kauppa = ({ products }: { products: { [type: string]: Product[] } }) => {
     return (
-        <Layout title="Kauppa" description="Osta peliaikaa palvelimelle tai kaunista merchiä omaan kotiin!">
+        <Layout title="Kauppa" description="Osta minecraft tavaroita, peliaikaa tai Karanteeni mechiä!">
             <StoreNavigation />
             <Heading
                 heading="Kauppa"
-                lead="Tarjoamme peliaikaa palvelimelle, sekä tarkasti suunniteltua Karanteeni merchiä™"
+                lead="Tarjoamme pelinsisäisiä tuotteita palvelimelle, sekä tarkasti suunniteltua Karanteenimerchiä™"
             />
             <section className={style['emphasize']}>
                 <ul>
-                    <li>Osta peliaikaa, ja speedrunaa kuolemattomaksi!</li>
-                    <li>Myynnissä tuotteita palvelimelle sekä oikeaankin elämään</li>
-                    <li>Yli 100€ tilauksiin ei peritä postimaksua. Muuten 5€</li>
-                    <li>Monta maksutapaa. Myös CSGO skineillä voi maksaa</li>
+                    <li>Osta peliaikaa, ja speedrunaa vaikka kuolemattomaksi!</li>
+                    <li>Myynnissä kotiin tilattavia tuotteita, sekä pelinsisäisiä tuotteita palvelimelle</li>
+                    <li>Ilmaiset postikulut yli 100€ tilauksiin. Muuten maksu on 7€.</li>
+                    <li>Monta maksutapaa. Myös CSGO skineillä voi maksaa.</li>
                 </ul>
             </section>
 
@@ -40,7 +40,7 @@ const Kauppa = ({ products }: { products: { [type: string]: Product[] } }) => {
                                 {products && products.slice(0, 3).map((p) => <SmallProduct product={p} key={p.id} />)}
                             </div>
                             <div className={style['open-type-link']}>
-                                <Link href={'/kauppa/tuotteet/' + type}>Kaikki tyypin tuotteet</Link>
+                                <Link href={'/kauppa/tuotteet/' + type}>Kaikki tuotetyypin tuotteet</Link>
                             </div>
                         </section>
                     )
