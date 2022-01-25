@@ -155,15 +155,14 @@ const dataProducts: DataProduct[] = [
     },
     {
         name: 'Tuplachestillinen timanttia',
-        description: 'Tuplachesti täynnä timanttia. Kotiinkuljetuksella',
+        description: 'Tuplachesti täynnä timanttia. Kerro vain koordinaatit.',
         image: 'diamond.png',
         price: 9000,
         type: ProductType.ITEM
     },
     {
         name: 'Sikaa säkissä',
-        description:
-            'Tuplachesti täynnä täysin satunnaisia stäkkejä tuotteita. Voit saada täysin mitä tahansa! Kotiinkuljetuksella',
+        description: 'Tuplachesti täynnä täysin satunnaisia stäkkejä tavaraa. Voit saada täysin mitä tahansa!',
         image: 'random.jpg',
         price: 1900,
         type: ProductType.ITEM
