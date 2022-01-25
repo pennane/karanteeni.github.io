@@ -1,5 +1,20 @@
 .crumb {
     text-transform: capitalize;
+    display: inline-flex;
+}
+
+.breadcrumbs {
+    gap: 1em;
+    scroll-padding: 1em;
+    display: flex;
+    overflow-x: auto;
+    overscroll-behavior-x: contain;
+    scroll-snap-type: x proximity;
+    padding-bottom: 1em;
+}
+
+.crumb.last {
+    scroll-snap-align: end;
 }
 
 .price {
@@ -191,10 +206,7 @@
 }
 
 .navigation {
-    display: flex;
-    gap: 1em;
     margin-top: 1em;
-    justify-content: flex-start;
 }
 
 .navigation a {
@@ -244,6 +256,9 @@
 
 .product-image img {
     object-fit: contain;
+    display: block;
+    max-width: 100%;
+    max-height: 100%;
 }
 
 .increment-decrement {

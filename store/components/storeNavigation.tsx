@@ -22,7 +22,7 @@ export default function StoreNavigation() {
     return (
         <div className={style['navigation-container']}>
             <SearchBar />
-            <div className={style['navigation']}>
+            <div className={style['navigation'] + ' ' + style['breadcrumbs']}>
                 {crumbs &&
                     crumbs.map((crumb, i) => (
                         <Link href={crumb} key={i}>
@@ -30,7 +30,7 @@ export default function StoreNavigation() {
                         </Link>
                     ))}
 
-                <div className={style['right']}>
+                <div className={style['right'] + ' ' + style['crumb'] + ' ' + style['last']}>
                     {showCartButton && (
                         <>
                             <Link href="/kauppa/ostoskori">
