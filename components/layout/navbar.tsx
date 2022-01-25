@@ -55,7 +55,7 @@ const NavLink = ({
     )
 }
 
-const DropDownCollapseMenu = ({ selected, setSelected, itemIndex, icon, title, children }) => {
+const DropDownCollapseMenu = ({ selected, setSelected, itemIndex, icon, title, children }: any) => {
     let show = selected === itemIndex
     let className = show ? 'dropdown-menu collapse show' : 'dropdown-menu collapse'
     return (
