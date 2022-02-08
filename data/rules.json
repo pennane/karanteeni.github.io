@@ -178,5 +178,15 @@
                 "icon": "denied"
             }
         ]
+    },
+    {
+        "heading": "Tietosuoja ja muut",
+        "ruleset": [
+            {
+                "short": "Ylläpito näkee komennot, viestit, ja datan",
+                "long": "Turvallisuussyistä ylläpito näkee kaikki pelaajien komennot ja viestit, joilla estetään esimerkiksi toisten häiriköintiä ja mahdollista lähentelyä. Tämä on yleisesti käytössä kaikilla Minecraft-palvelimilla, vaikka he eivät toisikaan sitä esille millään tavalla, näin toimien harmaalla alueella. (esimerkiksi: /socialspy). Vaikka ylläpito näkeekin pelaajan datan kuten muilla palvelimilla, yksityistä tietoa näistä ei levitetä ulkopuolelle, kuten muillakin palvelimilla.",
+                "icon": "notice"
+            }
+        ]
     }
 ]
