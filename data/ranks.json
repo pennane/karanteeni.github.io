@@ -105,8 +105,8 @@
                 "hover": "Tarvitset silti keräykseen hakun"
             },
             {
-                "content": "Neljä uutta väri taikamattoon (mc)",
-                "hover": "Valkoinen, harmaa, vaalean harmaa ja sininen"
+                "content": "Kolme uutta väri taikamattoon (mc)",
+                "hover": "Valkoinen, harmaa, ja sininen"
             },
             {
                 "content": "Uudet partikkelit taikamattoon"
@@ -144,8 +144,8 @@
         ],
         "other": [
             {
-                "content": "Kaksi uutta väriä taikamattoon (mc)",
-                "hover": "Keltainen ja ruskea"
+                "content": "Kolme uutta väriä taikamattoon (mc)",
+                "hover": "Keltainen, ruskea, sekä violetti"
             },
             {
                 "content": "Uudet partikkelit taikamattoon"
@@ -168,8 +168,8 @@
                 "hover": "Lihavointi, kursivointi, randomisointi ja alleviivaus"
             },
             {
-                "content": "Kaksi uutta väriä taikamattoon (mc)",
-                "hover": "Lime ja musta"
+                "content": "Kolme uutta väriä taikamattoon (mc)",
+                "hover": "Oranssi, lime, sekä musta"
             },
             {
                 "content": "Uudet partikkelit taikamattoon"
@@ -206,8 +206,8 @@
                 "content": "Nekromatikkoja ei voi hiljentää /ignore komennolla."
             },
             {
-                "content": "Kaksi uutta väriä taikamattoon (mc)",
-                "hover": "Magenta ja punainen"
+                "content": "Neljä uutta väriä taikamattoon (mc)",
+                "hover": "Syaani, magenta, vaaleanpunainen sekä punainen"
             },
             {
                 "content": "Lisäpalikka taikamattoon (mc)",
@@ -233,8 +233,8 @@
         ],
         "other": [
             {
-                "content": "Kuusi uutta väriä taikamattoon (mc)",
-                "hover": "Pinkki, syaani, purppura, oranssi, vihreä ja vaalean sininen"
+                "content": "Kolme uutta väriä taikamattoon (mc)",
+                "hover": "Itkevä obsidiaani, vihreä, sekä vaalean sininen"
             },
             {
                 "content": "Lisäpalikka taikamattoon (mc)",
