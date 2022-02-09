@@ -126,6 +126,11 @@
                 "short": "Älä rakenna liian lähelle toisia ilman lupaa",
                 "long": "Ylläpito suojaa alueen ja suojaukseen vaaditaan talon alku. Huomaathan, että talosi täytyy olla vähintään sadan (100) blockin päässä lähimmästä talosta. Endiin ei pääsääntöisesti suojata alueita.",
                 "icon": "notice"
+            },
+            {
+                "short": "Ylläpito voi siirtää rakennuksia tarvittaessa",
+                "long": "Mikäli olet vahingossa rakentanut väärään paikkaan tai muuten haluat siirtää rakennustasi, voidaan se sääntöjä noudattaen siirtää 2000 pennin hinnasta. Näin sinun ei itse tarvitse rakentaa koko rakennusta uudelleen",
+                "icon": "notice"
             }
         ]
     },
