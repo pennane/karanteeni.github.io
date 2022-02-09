@@ -155,15 +155,18 @@ const Ominaisuudet = () => {
                 <p>Laittaessasi arkun maahan menee se automaattisesti lukkoon.</p>
                 <ul>
                     <li>
-                        Halutessasi poistaa arkun lukituksen, katso sitä ja tee komento <code>/avaa</code>.
+                        Halutessasi poistaa arkun lukituksen, katso sitä ja tee komento <code>/lukitus unlock</code>.
                     </li>
                     <li>
                         Halutessasi antaa arkkuun jollekkin oikeudet, katso arkkua ja tee komento
-                        <code>/+oikeudet &lt;pelaajan_nimi&gt;</code>
+                        <code>/lukitus add-member &lt;pelaajan_nimi&gt;</code>
                     </li>
                     <li>
                         Halutessasi poistaa arkusta jonkin oikeudet, katso arkkua ja tee komento
-                        <code>/-oikeudet &lt;pelaajan_nimi&gt;</code>
+                        <code>/lukitus remove-member &lt;pelaajan_nimi&gt;</code>
+                    </li>
+                    <li>
+                        Voit tehdä lukituksista kaikille avonaisen, mutta ilman muokkaus/rikkomisoikeuksia komennolla <code>/lukitus public</code>.
                     </li>
                 </ul>
             </Feature>
