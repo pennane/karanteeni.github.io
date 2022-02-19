@@ -3,6 +3,13 @@ type DataProduct = Omit<Product, 'id'>
 
 const dataProducts: DataProduct[] = [
     {
+        name: 'Unban servulle',
+        description: 'Poistaa käyttäjän bannit palvelimelta',
+        image: 'unban.png',
+        price: 1000,
+        type: ProductType.ITEM
+    },
+    {
         name: '5h peliaikaa',
         description: 'Nostaa käyttäjän peliaikaa 5 tunnilla tai Eloton tasoisen suoraan Raihnaaksi.',
         image: 'pa5h.png',
