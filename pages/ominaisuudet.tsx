@@ -51,6 +51,13 @@ const Ominaisuudet = () => {
                 Suuri osa erityisistä toiminnoista, komennoista ja muista jutuista, jotka toimivat Karanteenin
                 survivalissa
             </p>
+            <Feature title="Valikko">
+                <Image src="/feature/inventory.png" />
+                <p>
+                    Komennolla /valikko pääsee muuttamaan pieniä erinäköisiä Karanteenilla pelaamiseen vaikuttavia
+                    asetuksia sekä käyttämään muita Karanteenin komentoja nopeasti.
+                </p>
+            </Feature>
             <Feature title="Pelaaja partikkelit">
                 <Video source="/feature/particles1.gif" />
                 <p>
@@ -151,6 +158,14 @@ const Ominaisuudet = () => {
                 </ul>
             </Feature>
 
+            <Feature title="Kuolinchestit">
+                <Image src="/feature/deathchest.png" />
+                <p>
+                    Pelaajan kuollessa kaikki tavarat päätyvät pieneen arkkuun, jonka pelaaja voi noutaa kuolinpaikalta.
+                </p>
+                <p>Kukaan muu ei voi koskea toisen pelaajan kuolinchestiin.t</p>
+            </Feature>
+
             <Feature title="Arkkukaupat">
                 <Video source="/feature/chestshop.mp4" />
                 <p>
@@ -239,6 +254,9 @@ const Ominaisuudet = () => {
                     Rankkikohtaiset komennot ja ominaisuudet löytyvät <Link href="rankit">täältä</Link>.
                 </p>
                 <ul className="wrappedlist">
+                    <li>
+                        <code>/playtimetop (/patop)</code>
+                    </li>
                     <li>
                         <code>/discord</code>
                     </li>
