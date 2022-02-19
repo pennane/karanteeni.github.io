@@ -21,6 +21,14 @@ const Video = ({ source }: { source: string }) => {
     )
 }
 
+const Image = ({ src }: { src: string }) => {
+    return (
+        <div className="image">
+            <img src={src}></img>
+        </div>
+    )
+}
+
 const Feature = ({ id, title, children }: { id?: string; title: string; children: React.ReactNode }) => {
     return (
         <div className="feature" id={id || ''}>
