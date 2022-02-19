@@ -1,5 +1,124 @@
 [
     {
+        "date": "19.2.2022",
+        "changes": [
+            "Uusittu kokonaan Karanteenin ylläpitohakemuslomake :3"
+        ]
+    },
+    {
+        "date": "18.2.2022",
+        "changes": [
+            "korjattu invtweaks asetus blockeilt, aiemmi esti vaa esineet",
+            "korjattu grassin siirto suojatuil alueil",
+            "korjattu eloton rankin lyhennetty nimi"
+        ]
+    },
+    {
+        "date": "16.2.2022",
+        "changes": [
+            "lisätty karan 'invtweaks' asetuksiin",
+            "isätty komentojen kirjoitusäänet asetuksiin"
+        ]
+    },
+    {
+        "date": "13.2.2022",
+        "changes": [
+            "lisätty tptoggle /valikko -> asetukset (also kaikki tptogglet resetoinu!!)",
+            "lisätty vinkit /valikko -> asetukset (ens restartis)",
+            "lisätty suojausten lukitusten infon näyttö blockeihin joita ei omista /valikko -> asetukset jos jotain noista ei nää ni ei oo permei siihe asetuksee auki viel"
+        ]
+    },
+    {
+        "date": "12.2.2022",
+        "changes": [
+            "lisätty asetukset servulle",
+            "lisätty tuplaovien automaattinen avaus klikatessa servulle (saa asetuksista pois päältä)",
+            "lisätty rankkien lyhennys servulle (saa asetuksista päälle)",
+            "lisätty /playtimetop (/patop)"
+        ]
+    },
+    {
+        "date": "5.2.2022",
+        "changes": [
+            "Yp voi nyt säätää bungeen servuja ja permejä ilman et pitää jatkuvasti restarttailla bungeeta",
+            "Taikamaton permit mycket wonky, päivitin noi blockpermit paikoilleen ja osalle matalempia rankkeja tuli ehk lisää blockei, osa lähti pois (ollu näkyvil kumminki aiemmi ne mitä saa). Kuolemattomalle lisätty 1 uus block taikamattoon (crying obsidian)"
+        ]
+    },
+    {
+        "date": "24.1.2022",
+        "changes": [
+            "lisätty miinaharava (warp miinaharava)",
+            "korjattu miinaharavan lataus",
+            "lisätty infon näyttö suojauksiin ylläpidolle r-clickil",
+            "lisätty boostereille, donaajille ja ylläpidolle karan logo discord nimeen",
+            "lisätty 5min koodi joka jakaa pelaajie viestit servuje välil"
+        ]
+    },
+    {
+        "date": "21.1.2022",
+        "changes": [
+            "Vaikka alue olisi suojattu, voit silti käyttää toisten työpöytiä :3",
+            "lisätty /valikko (/menu)",
+            "korjattu  invivalikoist muistivuoto",
+            "korjattu bug jolla taikamaton editoris ei pystyny muokkaa partikkeleit jos oli blockvalikos käyny"
+        ]
+    },
+    {
+        "date": "18.1.2022",
+        "changes": [
+            "lisätty 2 korjaust permiplugarin pelaajie register ja unregister metodeihi, hyväl tuuril vähentää tai korjaa noi permiongelmat (also jos korjaa ni nää 2 oli syyn siihe miks aiemmat fixit ei korjannu vaik vaikutti korjaava, also tää pätkä koodii jos se borkes oli nii specific ku olla ja voi borkeemisee) ",
+            "isätty varalta error catcher pelaajan unloadauksee et jos joku menee pielee ni sen pitäs ens relogil päästää normisti silti sisää",
+            "lisätty chatban plugariin ilmotus warnin syystä (aka. mistä viestistä tuli warn) jonka yp näkee ja voi undoo jos tarttee"
+        ]
+    },
+    {
+        "date": "15.1.2022",
+        "changes": [
+            "lisätty korjaus coren cachen hallintaan joka esti loginin (käytännössä pitäs olla mahoton ellei joku toinen paikka failannu latausta, eli just sillo ku pelaaja quitannu samaa aikaa ku joinannu). nyt pitäs vaa kerran sanoo et dataa ladataa ja koklaa uusiks login ni päästää sisää",
+            "lisätty ConcurrentModificationException korjaus permiplugarin rankkien sammutukseen",
+            " lisätty null check chatarin login koodiin",
+            "lisätty null check partikkeliplugarin koodiin",
+            " lisätty fix siihe et KPlayer ei asetettu koodissa -> johtaen siihe et se on null -> johtaen edellisee kahtee errorii"
+        ]
+    },
+    {
+        "date": "13.1.2022",
+        "changes": [
+            "korjattu taikamatosta 1 tickin partikkelinpiirtoviive",
+            "korjattu tpa komennon vanhenemisvirhe jos pelaaja offline",
+            "korjattu pelaajan datan latausta joka estäny myöhemmän datan latauksen (esim permit, tää on iha vaa et oon päästäny nullina läpi sen sijaa et laittanu arvon paikoillee, nyt se menee paikoillee)",
+            "korjattu bugi jossa irongolem on kadottanu itemin lyödessä"
+        ]
+    },
+    {
+        "date": "11.1.2022",
+        "changes": [
+            "korjattu dupeglitch kuolinchestis",
+            "avattu tää partikkeli 6080 pelaajalle (muistin jokasen ulkoo ja naputtelin teidä nimet uwu)",
+            "lisätty /translation reload"
+        ]
+    },
+    {
+        "date": "10.1.2022",
+        "changes": [
+            "lisätty kuolinchestit takas"
+        ]
+    },
+    {
+        "date": "7.1.2022",
+        "changes": [
+            "/qs find korjattu",
+            "fly ei sammu kun tp netheriin"
+        ]
+    },
+    {
+        "date": "2.1.2022",
+        "changes": [
+            "lisätty barebones automaattine chatin ja pelaajanimien valvonta, helpottaa ylläpitoo pahimmis tyypeis",
+            "korjattu min ja max koordit komennoista jokka tp, tulee ens automaattises restartis"
+        ]
+    },
+    {
         "date": "1.1.2022",
         "changes": [
             "1.18 map reset - Server on nyt täysin versiossa 1.18.1",
