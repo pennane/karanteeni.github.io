@@ -135,7 +135,7 @@ const ProtectionQuestions = (props) => {
                 <Question>Kuinka annan kaverilleni oikeudet chesteihin ja uuneihin?</Question>
                 <Answer>
                     Voit antaa oikeudet kyseisiin blockeihin katsomalla blockia ja kirjoittamalla komennon{' '}
-                    <code>/+oikeudet &lt;pelaajan_nimi&gt;</code>. Tämän jälkeen kaverillasi on oikeudet avata kyseinen
+                    <code>/lukitus add-member &lt;pelaajan_nimi&gt;</code>. Tämän jälkeen kaverillasi on oikeudet avata kyseinen
                     arkku. Komento toimii myös muihin container blockeihin.
                 </Answer>
             </div>

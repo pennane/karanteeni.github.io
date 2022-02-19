@@ -1,7 +1,7 @@
 @import url('https://rsms.me/inter/inter.css');
 @font-face {
     font-family: Minecraftia;
-    src: url(../public/fonts/Minecraftia.woff2);
+    src: url('/fonts/Minecraftia.woff2');
     font-display: swap;
 }
 
