@@ -95,7 +95,7 @@ const Yphaku = () => {
             <h2>Lopputeksti</h2>
             <p>
                 Mikäli koet olevasi sopiva henkilö, voit aloittaa hakemisen{' '}
-                <a rel="noreferrer" target="_blank" href="https://forms.gle/rd5JLv7Gvx7HQYT96">
+                <a rel="noreferrer" target="_blank" href="https://forms.gle/GD2oDHwzkzeW6LHo9">
                     tästä
                 </a>
                 . Kiitämme etukäteen kaikista lähetetyistä hakemuksista ja toivotamme onnea matkaan. :)
