@@ -126,6 +126,11 @@
                 "short": "Älä rakenna liian lähelle toisia ilman lupaa",
                 "long": "Ylläpito suojaa alueen ja suojaukseen vaaditaan talon alku. Huomaathan, että talosi täytyy olla vähintään sadan (100) blockin päässä lähimmästä talosta. Endiin ei pääsääntöisesti suojata alueita.",
                 "icon": "notice"
+            },
+            {
+                "short": "Ylläpito voi siirtää rakennuksia tarvittaessa",
+                "long": "Mikäli olet vahingossa rakentanut väärään paikkaan tai muuten haluat siirtää rakennustasi, voidaan se sääntöjä noudattaen siirtää 2000 pennin hinnasta. Näin sinun ei itse tarvitse rakentaa koko rakennusta uudelleen",
+                "icon": "notice"
             }
         ]
     },
@@ -176,6 +181,16 @@
                 "short": "Asumattomien asukkaiden lisääminen on kiellettyä",
                 "long": "Asukkaiden lisääminen, jotka eivät tule asumaan kylässä on ankarasti kiellettyä. Tätä perustellaan sillä, että kylät eivät näytä isommilta, eivätkä pienet kylät saa warppia huijaamalla.",
                 "icon": "denied"
+            }
+        ]
+    },
+    {
+        "heading": "Tietosuoja ja muut",
+        "ruleset": [
+            {
+                "short": "Ylläpito näkee komennot, viestit, ja datan",
+                "long": "Turvallisuussyistä ylläpito näkee kaikki pelaajien komennot ja viestit, jotta voidaan estää esimerkiksi toisten häiriköintiä ja mahdollista lähentelyä. Tämä on yleisesti käytössä kaikilla Minecraft-palvelimilla, vaikka he eivät toisikaan sitä esille millään tavalla, näin toimien harmaalla alueella. (esimerkiksi: /socialspy). Vaikka ylläpito näkeekin pelaajan datan kuten muillakin palvelimilla, yksityistä tietoa näistä ei levitetä ulkopuolelle, kuten muillakin palvelimilla.",
+                "icon": "notice"
             }
         ]
     }

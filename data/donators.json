@@ -1,5 +1,22 @@
 [
-
+    {
+        "date": "6.2.22",
+        "name": "Duckiva",
+        "amount": "10€",
+        "heart": "♥"
+    },
+    {
+        "date": "5.2.22",
+        "name": "Surkimus",
+        "amount": "15€",
+        "heart": "♥"
+    },
+    {
+        "date": "21.1.22",
+        "name": "Vaapukkax",
+        "amount": "50€",
+        "heart": "♥"
+    },
     {
         "date": "9.1.22",
         "name": "Siika22",

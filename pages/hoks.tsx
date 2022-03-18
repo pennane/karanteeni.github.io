@@ -31,9 +31,7 @@ const Hoks = () => {
             </p>
             <p>
                 Palvelin on täysin omakustanteinen, eli lahjoitusten ja ylläpitäjien varassa. Lahjoitukset käytetään
-                palvelimen käynnissäpitämiseen sekä erinäköisten tapahtumien järjestämiseen. Kaikki vähintään 10 euroa
-                lahjoittavat saavat itselleen kivoja ominaisuuksia palvelimelle sekä Discordiin. Lahjoittamisesta voi
-                lukea lisää <Link href="/lahjoitus">lahjoitus sivulta</Link>.
+                palvelimen käynnissäpitämiseen sekä erinäköisten tapahtumien järjestämiseen.
             </p>
 
             <h3>Muita pointteja</h3>
@@ -45,6 +43,9 @@ const Hoks = () => {
                 <li>
                     Karanteenissa ylläpito suojaa alueesi. Pyydäthän ylläpitoa suojausta, niin vältytään turhilta grief
                     tapauksilta.
+                </li>
+                <li>
+                    Kaikki viestit ja komennot joita laitetaan palvelimella, ovat ylläpidon nähtävissä turvallisuussyistä.
                 </li>
             </ul>
         </Layout>
