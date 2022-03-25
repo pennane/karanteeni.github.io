@@ -25,9 +25,12 @@ export default function StoreNavigation() {
             <div className={style['navigation'] + ' ' + style['breadcrumbs']}>
                 {crumbs &&
                     crumbs.map((crumb, i) => (
-                        <Link href={crumb} key={i}>
-                            <a className={style['crumb']}>{crumb.split('/')[crumb.split('/').length - 1]}</a>
-                        </Link>
+                        <>
+                            <Link href={crumb} key={i}>
+                                <a className={style['crumb']}>{crumb.split('/')[crumb.split('/').length - 1]}</a>
+                            </Link>
+                            <span className={style['crumb-arrow']}>→</span>
+                        </>
                     ))}
 
                 <div className={style['right'] + ' ' + style['crumb'] + ' ' + style['last']}>
