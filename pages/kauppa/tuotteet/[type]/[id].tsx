@@ -47,7 +47,10 @@ export const getStaticProps: GetStaticProps = async ({ params }) => {
     const id = (params as ParsedUrlQuery).id as string
     const type = (params as ParsedUrlQuery).type as string
     const product = products.get(id) as Product
-    const similar = [...products.values()].filter((p) => p.type === type && p.id !== id).slice(0, 6)
+    const similar = [...products.values()]
+        .sort(() => (Math.random() > 0.5 ? 1 : -1))
+        .filter((p) => p.type === type && p.id !== id)
+        .slice(0, 6)
 
     return {
         props: {
