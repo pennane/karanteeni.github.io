@@ -43,6 +43,38 @@
     color: var(--color-secondary);
 }
 
+.old-price {
+    position: relative;
+    text-decoration: none;
+    margin: 0;
+    font-size: 1.5rem;
+    display: inline;
+    color: gray;
+    padding: 0;
+}
+
+.old-price::after {
+    bottom: 50%;
+    content: '';
+    display: block;
+    height: 1px;
+    left: 0px;
+    position: absolute;
+    width: 100%;
+    background-color: black;
+}
+
+.small-product .sale,
+.small-product .price {
+    display: inline-block;
+    margin-right: 0.5rem;
+}
+
+.small-product .old-price {
+    font-size: 0.9rem;
+    padding: 0;
+}
+
 .emphasize {
     background-color: var(--background-secondary);
     padding: 0.8em;

@@ -14,6 +14,8 @@ export interface Product {
     image: string | null
     type: ProductType
     playtime?: number
+    sale?: boolean
+    originalPrice?: number
 }
 
 export interface CartProduct {

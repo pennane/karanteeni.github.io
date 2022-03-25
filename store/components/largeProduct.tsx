@@ -12,7 +12,18 @@ const LargeProduct = ({ product }: { product: Product }) => {
             <ProductImage product={product} height={200} width={400} />
 
             <div className={style['large-product-center']}>
-                <p className={style['price']}>{centsToEur(product.price)}</p>
+                {product.sale && (
+                    <>
+                        <p className={style['price']}>{centsToEur(product.price)}</p>
+                        <div className={style['sale']}>
+                            {product.originalPrice && (
+                                <p className={style['old-price']}>{centsToEur(product.originalPrice)}</p>
+                            )}
+                        </div>
+                    </>
+                )}
+                {!product.sale && <p className={style['price']}>{centsToEur(product.price)}</p>}
+
                 <AddToCartButton product={product} />
             </div>
 

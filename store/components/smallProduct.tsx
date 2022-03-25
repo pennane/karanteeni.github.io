@@ -16,7 +16,17 @@ const SmallProduct = ({ product }: { product: Product }) => {
             <ProductImage product={product} height={100} width={200} />
 
             <p className={style['product-description']}>{product.description}</p>
-            <p className={style['price']}>{centsToEur(product.price)}</p>
+            {product.sale && (
+                <div>
+                    <p className={style['price']}>{centsToEur(product.price)}</p>
+                    <div className={style['sale']}>
+                        {product.originalPrice && (
+                            <p className={style['old-price']}>{centsToEur(product.originalPrice)}</p>
+                        )}
+                    </div>
+                </div>
+            )}
+            {!product.sale && <p className={style['price']}>{centsToEur(product.price)}</p>}
         </div>
     )
 }
