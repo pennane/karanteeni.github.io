@@ -14,7 +14,11 @@ import Link from 'next/link'
 
 const Kauppa = ({ products }: { products: { [type: string]: Product[] } }) => {
     return (
-        <Layout title="Kauppa" description="Osta minecraft tavaroita, peliaikaa tai Karanteeni mechiä!">
+        <Layout
+            title="Kauppa"
+            description="Osta minecraft tavaroita, peliaikaa tai Karanteeni mechiä!"
+            className={style[`store-page`]}
+        >
             <StoreNavigation />
             <Heading
                 heading="Kauppa"

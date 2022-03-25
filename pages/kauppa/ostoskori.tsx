@@ -44,7 +44,7 @@ const Ostoskori = () => {
     }
 
     return (
-        <Layout title="Ostoskori" description="Karanteenin verkkokaupan ostoskori">
+        <Layout title="Ostoskori" description="Karanteenin verkkokaupan ostoskori" className={style[`store-page`]}>
             <link
                 rel="preload"
                 href="https://www.youtube.com/embed/dQw4w9WgXcQ?autoplay=1&controls=0"

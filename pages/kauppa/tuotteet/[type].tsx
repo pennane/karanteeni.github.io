@@ -10,7 +10,7 @@ import style from '../../../store/store.module.css'
 
 export default function Tuotetyyppi({ type, products }: { type: string; products: Product[] }) {
     return (
-        <Layout title={type + ' tuotteet'}>
+        <Layout title={type + ' tuotteet'} className={style[`store-page`]}>
             <StoreNavigation />
             <div className={style['type-page']}>
                 <h2>{type}</h2>

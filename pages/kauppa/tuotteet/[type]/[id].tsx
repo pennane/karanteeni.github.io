@@ -14,7 +14,7 @@ import StoreNavigation from '../../../../store/components/storeNavigation'
 
 export default function Tuote({ product, similar }: { product: Product; similar: Product[] }) {
     return (
-        <Layout title="Kauppa" description={product.name}>
+        <Layout title="Kauppa" description={product.name} className={style[`store-page`]}>
             <StoreNavigation />
             <div className={style['product-page']}>
                 <div className={style['product-page-main']}>

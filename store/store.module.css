@@ -1,3 +1,15 @@
+.store-page {
+    max-width: 900px;
+    margin: 2em 2em 3.5rem;
+    padding: 0.5em 2.4em 2.4em;
+    border-radius: 6px;
+    background-color: var(--background-accent);
+}
+
+.store-page a {
+    color: var(--color-accent);
+}
+
 .crumb {
     text-transform: capitalize;
     display: inline-flex;

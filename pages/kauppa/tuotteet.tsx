@@ -10,7 +10,7 @@ import { Product } from '../../store/types'
 
 export default function Tuotetyypit({ products }: { products: { [type: string]: Product[] } }) {
     return (
-        <Layout title={'Tuotetyypit'}>
+        <Layout title={'Tuotetyypit'} className={style[`store-page`]}>
             <StoreNavigation />
             <div className={style['type-page']}>
                 {products &&
