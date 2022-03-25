@@ -6,9 +6,8 @@ const ServerStatus = () => {
     let [status, setStatus] = useState<any>(null)
 
     let textIp = 'mc.karanteeni.net'
-    let numberIp = '95.217.120.173'
     useEffect(() => {
-        fetch(`https://api.mcsrvstat.us/2/${numberIp}`)
+        fetch(`https://api.mcsrvstat.us/2/${textIp}`)
             .then((response) => response.json())
             .then((data) => setStatus(data))
     }, [])
@@ -35,7 +34,7 @@ const ServerStatus = () => {
                         Versio:
                         <span className="server-version">
                             {' '}
-                            {status.version === '1.7.x-1.18.x' ? '1.18' : status.version}
+                            {status.version === '1.7.x-1.18.x' ? '1.18.2' : status.version}
                         </span>
                     </span>
 
