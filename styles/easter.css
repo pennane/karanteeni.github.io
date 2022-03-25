@@ -7,6 +7,7 @@
     --color-nav-link: #ffffff;
     --background-primary: #fefbe0;
     --background-secondary: hsl(54deg 90% 96%);
+    --background-accent: hsl(62deg 58% 89%);
     --gradient-primary: linear-gradient(45deg, #d34f2d, #e96841);
     --gradient-secondary: linear-gradient(45deg, #ff5721, #ff9800);
     --primary-border-color: #c6c99c;
@@ -79,6 +80,22 @@ nav {
     -webkit-text-stroke: 1px rgba(0, 0, 0, 0.1);
     text-stroke: 1px rgba(0, 0, 0, 0.1);
     background: transparent;
+}
+
+.home-grid {
+    border-radius: 6px;
+    grid-gap: 1.2em;
+    gap: 1.2em;
+    background: var(--background-primary);
+    margin-top: 1em;
+}
+
+main:not(.home):not(.lahjoitus):not(.not-found) {
+    max-width: 900px;
+    margin: 2em 2em 3.5rem;
+    padding: 0.5em 2.4em 2.4em;
+    border-radius: 6px;
+    background: var(--background-accent);
 }
 
 body {
