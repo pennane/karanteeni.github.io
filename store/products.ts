@@ -52,7 +52,7 @@ const dataProducts: DataProduct[] = [
         name: 'Jafarin Rintamerkki',
         description: 'Jafarin:n skinillä varustettu rintamerkki',
         image: 'button_jafarin.png',
-        price: 550,
+        price: 400,
         sale: true,
         originalPrice: 700,
         type: ProductType.BUTTON
@@ -215,7 +215,7 @@ const dataProducts: DataProduct[] = [
         name: 'Jafarin Jääkaappimagneetti',
         description: 'Jafarin:n skinillä varustettu jääkaappimagneetti',
         image: 'magneetti_jafarin.png',
-        price: 900,
+        price: 700,
         sale: true,
         originalPrice: 1200,
         type: ProductType.MAGNET
