@@ -63,7 +63,7 @@ const dataProducts: DataProduct[] = [
         type: ProductType.BUTTON
     },
     {
-        name: 'Jokunen Rintamerkki',
+        name: 'Jokune Rintamerkki',
         description: 'Jokusen skinillä varustettu rintamerkki',
         image: 'button_jokunen.png',
         price: 700,
@@ -224,7 +224,7 @@ const dataProducts: DataProduct[] = [
         type: ProductType.MAGNET
     },
     {
-        name: 'Jokunen Jääkaappimagneetti',
+        name: 'Jokune Jääkaappimagneetti',
         description: 'Jokusen skinillä varustettu jääkaappimagneetti',
         image: 'magneetti_jokunen.png',
         price: 1200,
