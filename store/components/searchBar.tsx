@@ -1,10 +1,9 @@
-import { GetStaticProps } from 'next'
 import { useState } from 'react'
 import { products } from '../products'
 import style from '../store.module.css'
 import { Product } from '../types'
-import Link from 'next/link'
 import { useRouter } from 'next/router'
+import ChildrenBlur from './ChildrenBlur'
 
 const productsArray = [...products.values()]
 
@@ -23,7 +22,7 @@ const SearchBar = () => {
     }
 
     return (
-        <div
+        <ChildrenBlur
             className={style['search-bar']}
             onFocus={() => setFocus(true)}
             onBlur={() => setTimeout(() => setFocus(false), 200)}
@@ -46,8 +45,10 @@ const SearchBar = () => {
                             onClick={(e) => {
                                 e.preventDefault()
                                 setSearch('')
+
                                 router.push('/kauppa/tuotteet/' + p.type + '/' + p.id)
                             }}
+                            tabIndex={0}
                         >
                             {p.name}
                         </a>
@@ -59,7 +60,7 @@ const SearchBar = () => {
                     <span>ei löytöjä</span>
                 </div>
             )}
-        </div>
+        </ChildrenBlur>
     )
 }
 export default SearchBar
