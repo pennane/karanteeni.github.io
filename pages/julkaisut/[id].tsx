@@ -6,6 +6,7 @@ import Post from '../../components/post'
 import Date from '../../components/date'
 import { GetStaticPaths, GetStaticProps } from 'next'
 import { getAllPostIds, getPostData, getSortedPostsData } from '../../lib/posts'
+import { ParsedUrlQuery } from 'querystring'
 
 export default function SeparatedPost({
     postData,
@@ -24,7 +25,6 @@ export default function SeparatedPost({
                     <Post postData={postData} />
                 </section>
                 <section>
-                    {/* <ServerEvents events={serverEvents} /> */}
                     <h3>Uusimmat julkaisut</h3>
                     {otherPosts.map(({ id, date, title }) => (
                         <li className="list-item" key={id}>
@@ -56,7 +56,7 @@ export const getStaticProps: GetStaticProps = async ({ params }) => {
     const allPostsData = getSortedPostsData()
     const newestPosts = allPostsData.slice(0, 6)
 
-    const postData = await getPostData(params.id as string)
+    const postData = await getPostData((params as ParsedUrlQuery).id as string)
     return {
         props: {
             postData,

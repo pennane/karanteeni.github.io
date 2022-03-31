@@ -20,7 +20,7 @@ const MinecraftCitation = () => {
     const updateCitation = () => {
         setTransitioning(() => true)
 
-        let newCitation
+        let newCitation: { content: string; name: string }
 
         do {
             newCitation = randomFromArray(citations)

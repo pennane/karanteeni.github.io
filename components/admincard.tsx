@@ -3,7 +3,7 @@ import { faArrowAltCircleRight } from '@fortawesome/free-regular-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { useRef, useState } from 'react'
 
-const AdminStrength = ({ children }) => {
+const AdminStrength = ({ children }: any) => {
     return (
         <p>
             <FontAwesomeIcon icon={faArrowAltCircleRight} className={`${style['strength-bullet']}`} />

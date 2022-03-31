@@ -10,9 +10,23 @@ import Layout from '../components/layout/layout'
 import ServerStatus from '../components/home/serverstatus'
 import VoteButtons from '../components/home/votebuttons'
 import Post from '../components/post'
-import ServerEvents from '../components/home/serverevents'
 
-export default function Home({ visiblePost, olderPosts }) {
+export default function Home({
+    visiblePost,
+    olderPosts
+}: {
+    visiblePost: {
+        date: string
+        title: string
+        id: string
+        contentHtml: string
+    }
+    olderPosts: {
+        date: string
+        title: string
+        id: string
+    }[]
+}) {
     return (
         <Layout home description="Karanteeni on suomalainen minecraft palvelin.">
             <div className="home-grid">
@@ -30,9 +44,6 @@ export default function Home({ visiblePost, olderPosts }) {
                     </section>
                 </div>
                 <div>
-                    <section>
-                        <ServerEvents />
-                    </section>
                     <section>
                         <h3>Vanhempia julkaisuja</h3>
                         <ul className="posts">

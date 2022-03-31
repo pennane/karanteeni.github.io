@@ -3,7 +3,7 @@ import { useToasts } from 'react-toast-notifications'
 
 const ServerStatus = () => {
     const { addToast } = useToasts()
-    let [status, setStatus] = useState(null)
+    let [status, setStatus] = useState<any>(null)
 
     let textIp = 'mc.karanteeni.net'
     useEffect(() => {
