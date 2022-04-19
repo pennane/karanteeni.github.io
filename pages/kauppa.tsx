@@ -25,6 +25,7 @@ const Kauppa = ({ products }: { products: { [type: string]: Product[] } }) => {
                 lead="Tarjoamme pelinsisäisiä tuotteita palvelimelle, sekä tarkasti suunniteltua Karanteenimerchiä™"
             />
             <section className={style['emphasize']}>
+                <h2>(Aprillia, aprillia)</h2>
                 <ul>
                     <li>Osta peliaikaa, ja speedrunaa vaikka kuolemattomaksi!</li>
                     <li>Myynnissä kotiin tilattavia tuotteita, sekä pelinsisäisiä tuotteita palvelimelle</li>
