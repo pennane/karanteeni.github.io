@@ -129,6 +129,14 @@
         "Rakentaminen"
       ],
       "uuid": "c9427421eb1f468aaff457f9f2a7e2f5"
+    },
+    {
+      "name": "Jafarin",
+      "description": "Jaffa.",
+      "strengths": [
+        "Rakentaminen"
+      ],
+      "uuid": "0dc20ee9778746ceabecf208098484d7"
     }
   ]
 }
