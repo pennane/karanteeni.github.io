@@ -163,7 +163,7 @@ const Ominaisuudet = () => {
                 <p>
                     Pelaajan kuollessa kaikki tavarat päätyvät pieneen arkkuun, jonka pelaaja voi noutaa kuolinpaikalta.
                 </p>
-                <p>Kukaan muu ei voi koskea toisen pelaajan kuolinchestiin.t</p>
+                <p>Kukaan muu ei voi koskea toisen pelaajan kuolinchestiin.</p>
             </Feature>
 
             <Feature title="Arkkukaupat">
