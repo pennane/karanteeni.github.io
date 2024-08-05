@@ -2,292 +2,312 @@
     Oon pahoillani tästä koodista, ja kaikesta.
 */
 
+const API_URL =
+  'https://raw.githubusercontent.com/Karanteeni/karanteeni.github.io/master/data/operators.json'
+const IMAGE_URL = 'https://visage.surgeplay.com/full/'
+const FRONT_IMAGE_URL = 'https://visage.surgeplay.com/frontfull/'
+const CHARACTER_CLASS = 'character'
+const CHARACTER_MENU_SELECTOR = '.character-menu'
+const STARTING_SCREEN_SELECTOR = '.starting-screen'
+const END_SCREEN_SELECTOR = '.end-screen'
+const SCORE_SELECTOR = '.score'
+const JOME_SELECTOR = '.jome'
+const GAME_SELECTOR = '#game'
+const PIPE_SELECTOR = '.pipe'
+const PIPE_PARENT_SELECTOR = '.pipe-parent'
+const SCORE_AMOUNT_SELECTOR = '.score-amount'
+const HAPPY_FLAPPY_ID = '#HappyFlappyYp'
+const OPEN_CHARACTER_MENU_SELECTOR = '.open-character-menu'
+const CLOSE_CHARACTER_MENU_SELECTOR = '.close-character-menu'
+const START_GAME_SELECTOR = '.start-game'
+const PLAYER_INITIAL = {
+  size: 120,
+  x: 150,
+  y: 100,
+  acceleration: 0
+}
+const PIPE_ANIMATION_DURATION = 3000
+const PLAYER_ACCELERATION = -5
+const GRAVITY = 0.21
+const PLAYER_MAX_Y = 900
+const PLAYER_MIN_Y = -50
+const RANDOM_MIN = 25
+const RANDOM_MAX = 300
+
 let currentCharacter
 let lostTimestamp
 
-const jome = document.querySelector('.jome')
-const game = document.querySelector('#game')
-
-function loadJSON(path) {
-  let req = new XMLHttpRequest()
-  return new Promise((resolve, reject) => {
-    try {
-      req.overrideMimeType('application/json')
-      req.open('GET', path, true)
-
-      req.onreadystatechange = () => {
-        if (req.readyState == 4 && req.status == '200') {
-          let response = JSON.parse(req.responseText)
-          return resolve(response)
-        }
-      }
-
-      req.send(null)
-    } catch (err) {
-      return reject()
-    }
-  })
-}
+const jomeElement = document.querySelector(JOME_SELECTOR)
+const gameElement = document.querySelector(GAME_SELECTOR)
 
 function randomInteger(min, max) {
   return Math.floor(Math.random() * (max - min + 1)) + min
 }
 
-function setElementVisibility(element, state) {
-  if (typeof state === 'undefined') {
-    return
-  }
-
-  if (state == true) {
-    element.style.display = ''
-    element.style.pointerEvents = 'auto'
-  } else {
-    element.style.display = 'none'
-    element.style.pointerEvents = 'none'
+function setElementVisibility(element, visible) {
+  if (element) {
+    element.style.display = visible ? '' : 'none'
+    element.style.pointerEvents = visible ? 'auto' : 'none'
   }
 }
 
-function setInitialVisibilities() {
-  setElementVisibility(document.querySelector('.jome'), false)
-  setElementVisibility(document.querySelector('.character-menu'), false)
-  setElementVisibility(document.querySelector('.score'), false)
-  setElementVisibility(document.querySelector('.end-screen'), false)
+function initialVisibilities() {
+  return [
+    JOME_SELECTOR,
+    CHARACTER_MENU_SELECTOR,
+    SCORE_SELECTOR,
+    END_SCREEN_SELECTOR
+  ].forEach((selector) =>
+    setElementVisibility(document.querySelector(selector), false)
+  )
 }
 
-function gameCharacterDiv(character) {
-  let body = document.createElement('div')
-  body.className = 'character'
-  let image = document.createElement('img')
-  let name = document.createElement('span')
+function createGameCharacterElement(character) {
+  const body = document.createElement('div')
+  body.className = CHARACTER_CLASS
+
+  const image = document.createElement('img')
+  image.src = `${IMAGE_URL}${character.uuid}`
+
+  const name = document.createElement('span')
   name.textContent = character.nimi
-  image.src = 'https://visage.surgeplay.com/full/' + character.uuid
-  body.appendChild(image)
-  body.appendChild(name)
+
+  body.append(image, name)
+
   body.addEventListener('click', () => {
     currentCharacter = character.uuid
-    jome.style.backgroundImage =
-      'url(https://visage.surgeplay.com/frontfull/' + currentCharacter + ')'
-    setElementVisibility(document.querySelector('.character-menu'), false)
-    setElementVisibility(document.querySelector('.starting-screen'), true)
+    jomeElement.style.backgroundImage = `url(${FRONT_IMAGE_URL}${currentCharacter})`
+    setElementVisibility(document.querySelector(CHARACTER_MENU_SELECTOR), false)
+    setElementVisibility(document.querySelector(STARTING_SCREEN_SELECTOR), true)
   })
+
   return body
 }
 
 function createCharacterMenu(characters) {
-  try {
-    let destination = document.querySelector('.character-menu')
-    Object.keys(characters).forEach(function (type) {
-      let parent = document.createElement('div')
+  const destination = document.querySelector(CHARACTER_MENU_SELECTOR)
+  if (destination) {
+    Object.entries(characters).forEach(([type, characters]) => {
+      const parent = document.createElement('div')
       parent.className = 'character-type'
-      let head = document.createElement('div')
+
+      const head = document.createElement('div')
       head.className = 'type-head'
-      let body = document.createElement('div')
-      body.className = 'characters'
-      let typeCharacters = characters[type]
-      let heading = document.createElement('span')
+
+      const heading = document.createElement('span')
       heading.textContent = type
       head.appendChild(heading)
-      typeCharacters.forEach((character) => {
-        body.appendChild(gameCharacterDiv(character))
-      })
-      parent.appendChild(head)
-      parent.appendChild(body)
+
+      const body = document.createElement('div')
+      body.className = 'characters'
+
+      characters.forEach((character) =>
+        body.appendChild(createGameCharacterElement(character))
+      )
+
+      parent.append(head, body)
       destination.appendChild(parent)
     })
-  } catch (err) {
-    console.log('ERROR' + err)
   }
 }
 
-async function runGame(options) {
-  lostTimestamp = Date.now()
-  ;[...document.querySelectorAll('.pipe-parent')].forEach((pipe) => {
-    pipe.remove()
-  })
-  ;[...document.querySelectorAll('.score-amount')].forEach((el) => {
-    el.textContent = 0
-  })
+function resetDOM() {
+  document
+    .querySelectorAll(PIPE_PARENT_SELECTOR)
+    .forEach((pipe) => pipe.remove())
+  document
+    .querySelectorAll(SCORE_AMOUNT_SELECTOR)
+    .forEach((el) => (el.textContent = '0'))
 
-  setElementVisibility(document.querySelector('.starting-screen'), false)
-  setElementVisibility(document.querySelector('.end-screen'), false)
-  setElementVisibility(document.querySelector('.score'), true)
-  setElementVisibility(document.querySelector('.jome'), true)
+  setElementVisibility(document.querySelector(STARTING_SCREEN_SELECTOR), false)
+  setElementVisibility(document.querySelector(END_SCREEN_SELECTOR), false)
+  setElementVisibility(document.querySelector(SCORE_SELECTOR), true)
+  setElementVisibility(jomeElement, true)
+}
 
-  let player = {
-    size: 120,
-    x: 150,
-    y: 100,
-    acceleration: 0
+function acceleratePlayer(state, player) {
+  if (!state.lost) player.acceleration = PLAYER_ACCELERATION
+}
+
+function collides(pipe, player) {
+  const rect = pipe.getBoundingClientRect()
+  return !(
+    rect.y + rect.height < player.y ||
+    rect.y > player.y + player.size ||
+    rect.x + rect.width < player.x ||
+    rect.x > player.x + player.size
+  )
+}
+
+function anyCollision(player) {
+  return Array.from(document.querySelectorAll(PIPE_SELECTOR)).some((pipe) =>
+    collides(pipe, player)
+  )
+}
+
+function checkPassed(state, player) {
+  document.querySelectorAll('.not-passed').forEach((pipe) => {
+    const rect = pipe.getBoundingClientRect()
+    if (rect.x + rect.width / 2 < player.x) {
+      state.points++
+      pipe.classList.remove('not-passed')
+      document.querySelectorAll(SCORE_AMOUNT_SELECTOR).forEach((el) => {
+        el.textContent = state.points.toString()
+      })
+    }
+  })
+}
+
+function removePipe(state, event) {
+  state.pipes.shift()
+  event.target.remove()
+  createPipe(state)
+}
+
+function resetPipes(state) {
+  document
+    .querySelectorAll(PIPE_PARENT_SELECTOR)
+    .forEach((pipe) => pipe.remove())
+  state.pipes = []
+}
+
+function createPipe(state, delay, timestamp) {
+  const parent = document.createElement('div')
+  const random = randomInteger(RANDOM_MIN, RANDOM_MAX)
+  parent.className = 'pipe-parent not-passed'
+
+  const upper = document.createElement('div')
+  upper.className = 'pipe upper'
+  upper.style.height = `${random}px`
+
+  const lower = document.createElement('div')
+  lower.className = 'pipe lower'
+
+  parent.append(upper, lower)
+  parent.addEventListener('animationend', (event) => removePipe(state, event))
+
+  if (delay && timestamp) {
+    setTimeout(() => {
+      if (lostTimestamp !== timestamp) return
+      state.pipes.push(parent)
+      gameElement.appendChild(parent)
+    }, delay)
+  } else {
+    state.pipes.push(parent)
+    gameElement.appendChild(parent)
   }
-  let state = {
+}
+
+function animate(state, player) {
+  player.acceleration += GRAVITY
+  player.y += player.acceleration
+
+  if (!state.lost && (player.y > 450 || anyCollision(player))) {
+    state.lost = true
+    jomeElement.classList.add('down')
+  }
+
+  if (!state.lost) {
+    checkPassed(state, player)
+  }
+
+  if (player.y < PLAYER_MIN_Y) {
+    player.y = PLAYER_MIN_Y
+  }
+
+  if (player.y > PLAYER_MAX_Y) {
+    player.y = 1000
+    player.acceleration = 0
+    lostTimestamp = Date.now()
+    resetPipes(state)
+    jomeElement.classList.remove('down')
+    setElementVisibility(document.querySelector(END_SCREEN_SELECTOR), true)
+  } else {
+    requestAnimationFrame(() => animate(state, player))
+  }
+
+  jomeElement.style.top = `${player.y}px`
+  jomeElement.classList.toggle('up', player.acceleration < 0)
+}
+
+async function runGame() {
+  lostTimestamp = Date.now()
+
+  resetDOM()
+
+  const player = { ...PLAYER_INITIAL }
+
+  const state = {
     lost: false,
     pipes: [],
     points: 0
   }
 
-  window.addEventListener('keypress', (event) => {
-    event.preventDefault()
-    if (event.key !== ' ') return
-    acceleratePlayer()
-  })
+  createPipe(state)
+  createPipe(state, PIPE_ANIMATION_DURATION, lostTimestamp)
+  requestAnimationFrame(() => animate(state, player))
 
+  const keyPressHandler = (event) => {
+    if (event.key === ' ') {
+      event.preventDefault()
+      acceleratePlayer(state, player)
+    }
+  }
+
+  const clickHandler = (event) => {
+    if (event.button === 0) {
+      acceleratePlayer(state, player)
+    }
+  }
+
+  window.addEventListener('keypress', keyPressHandler)
   document
-    .querySelector('#HappyFlappyYp')
-    .addEventListener('click', (event) => {
-      if (event.button !== 0) return
-      acceleratePlayer()
-    })
+    .querySelector(HAPPY_FLAPPY_ID)
+    ?.addEventListener('click', clickHandler)
 
-  function acceleratePlayer() {
-    if (state.lost) return
-    player.acceleration = -5
+  // Clean up event listeners when game ends
+  if (state.lost) {
+    window.removeEventListener('keypress', keyPressHandler)
+    document
+      .querySelector(HAPPY_FLAPPY_ID)
+      ?.removeEventListener('click', clickHandler)
   }
-
-  function isPipeCollide(pipe) {
-    let __pipe = pipe
-    pipe = pipe.getBoundingClientRect()
-    pipe.y = __pipe.offsetTop
-    return !(
-      pipe.y + pipe.height < player.y ||
-      pipe.y > player.y + player.size ||
-      pipe.x + pipe.width < player.x ||
-      pipe.x > player.x + player.size
-    )
-  }
-
-  function checkCollisions() {
-    return [...document.querySelectorAll('.pipe')].some((pipe) =>
-      isPipeCollide(pipe)
-    )
-  }
-
-  function checkPassed() {
-    ;[...document.querySelectorAll('.not-passed')].forEach((pipe) => {
-      let rect = pipe.getBoundingClientRect()
-
-      if (rect.x + rect.width / 2 < player.x) {
-        state.points++
-        pipe.classList.toggle('not-passed', false)
-        ;[...document.querySelectorAll('.score-amount')].forEach((el) => {
-          el.textContent = state.points
-        })
-      }
-    })
-  }
-
-  function removePipe(event) {
-    state.pipes.shift()
-    event.target.remove()
-    createPipe()
-  }
-
-  function resetPipes() {
-    ;[...document.querySelectorAll('.pipe-parent')].forEach((pipe) => {
-      pipe.remove()
-    })
-    state.pipes = []
-  }
-
-  function createPipe(delay, timestamp) {
-    let parent = document.createElement('div')
-    let random = randomInteger(25, 300)
-    parent.className = 'pipe-parent not-passed'
-    let upper = document.createElement('div')
-    upper.className = 'pipe upper'
-    upper.style.height = random + 'px'
-    let lower = document.createElement('div')
-    lower.className = 'pipe lower'
-    parent.appendChild(upper)
-    parent.appendChild(lower)
-    parent.addEventListener('animationend', removePipe)
-
-    if (delay) {
-      setTimeout(() => {
-        if (lostTimestamp !== timestamp) return
-        state.pipes.push(parent)
-        game.appendChild(parent)
-      }, delay)
-    } else {
-      state.pipes.push(parent)
-      game.appendChild(parent)
-    }
-  }
-
-  function animate(time) {
-    player.acceleration += 0.21
-    player.y += player.acceleration
-
-    if (!state.lost && (player.y > 450 || checkCollisions())) {
-      state.lost = true
-      jome.classList.toggle('down', true)
-    }
-
-    if (!state.lost) {
-      checkPassed()
-    }
-
-    if (player.y < -50) {
-      player.y = -50
-    }
-
-    if (player.y > 900) {
-      player.y = 1000
-      player.acceleration = 0
-      lostTimestamp = Date.now()
-      resetPipes()
-      jome.classList.toggle('down', false)
-      setElementVisibility(document.querySelector('.end-screen'), true)
-    } else {
-      animationRequest = requestAnimationFrame((newTime) =>
-        animate(newTime, time)
-      )
-    }
-
-    jome.style.top = player.y + 'px'
-
-    if (player.acceleration < 0) {
-      jome.classList.toggle('up', true)
-    } else {
-      jome.classList.toggle('up', false)
-    }
-  }
-
-  createPipe()
-  createPipe(3000, lostTimestamp)
-  animationRequest = requestAnimationFrame(animate)
 }
 
-let characterLoadFailed = null
+initialVisibilities()
 
-setInitialVisibilities()
-fetch(
-  'https://raw.githubusercontent.com/Karanteeni/karanteeni.github.io/master/data/operators.json'
-)
-  .then((data) => data.json())
+fetch(API_URL)
+  .then((response) => response.json())
   .then((data) => {
     createCharacterMenu(data)
   })
-  .catch((err) => {
-    console.log('Failed to retrieve gamecharacters. Only jomeee available')
-    ;[...document.querySelectorAll('.open-character-menu')].forEach((el) => {
+  .catch(() => {
+    console.log('Failed to retrieve game characters. Only jomeee available')
+    document.querySelectorAll(OPEN_CHARACTER_MENU_SELECTOR).forEach((el) => {
       setElementVisibility(el, false)
     })
   })
-;[...document.querySelectorAll('.close-character-menu')].forEach((el) => {
+
+document.querySelectorAll(CLOSE_CHARACTER_MENU_SELECTOR).forEach((el) => {
   el.addEventListener('click', () => {
-    setElementVisibility(document.querySelector('.character-menu'), false)
-    setElementVisibility(document.querySelector('.starting-screen'), true)
+    setElementVisibility(document.querySelector(CHARACTER_MENU_SELECTOR), false)
+    setElementVisibility(document.querySelector(STARTING_SCREEN_SELECTOR), true)
   })
 })
-;[...document.querySelectorAll('.open-character-menu')].forEach((el) => {
+
+document.querySelectorAll(OPEN_CHARACTER_MENU_SELECTOR).forEach((el) => {
   el.addEventListener('click', () => {
-    setElementVisibility(document.querySelector('.character-menu'), true)
-    setElementVisibility(document.querySelector('.starting-screen'), false)
-    setElementVisibility(document.querySelector('.end-screen'), false)
-    setElementVisibility(document.querySelector('.score'), false)
+    setElementVisibility(document.querySelector(CHARACTER_MENU_SELECTOR), true)
+    setElementVisibility(
+      document.querySelector(STARTING_SCREEN_SELECTOR),
+      false
+    )
+    setElementVisibility(document.querySelector(END_SCREEN_SELECTOR), false)
+    setElementVisibility(document.querySelector(SCORE_SELECTOR), false)
   })
 })
-;[...document.querySelectorAll('.start-game')].forEach((el) => {
+
+document.querySelectorAll(START_GAME_SELECTOR).forEach((el) => {
   el.addEventListener('click', () => {
     runGame()
   })
